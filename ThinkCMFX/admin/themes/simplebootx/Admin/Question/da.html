@@ -1,0 +1,29 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+<ul class="nav nav-tabs">
+    <li><a href="{:U('Question/itembank')}">所有试题</a></li>
+    <li class="active"><a href="{:U('Question/itembankadd')}"  target="_self">试题修改</a></li>
+</ul>
+<form class="form-horizontal js-ajax-form" action="{:U('Question/itembankedit_post')}" method="post">
+  <table>
+      <foreach name="item" item="vo">
+      <tr>
+          <td>{$vo.question}</td>
+      </tr>
+      <tr>
+          <td>
+              
+          </td>
+      </tr>
+      </foreach>
+  </table>
+<div class="form-actions">
+    <button class="btn btn_submit J_ajax_submit_btn" type="submit">提交</button>
+    <a class="btn" href="/index.php/Admin/Question">返回</a>
+</div>
+</form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>

@@ -1,0 +1,136 @@
+<admintpl file="header"/>
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="{:U('Course/update')}" target="_self">创建课堂</a></li>
+    <li><a href="{:U('Course/show')}" target="_self">课堂列表</a></li>
+
+</ul>
+<!--<div class="wrap js-check-wrap">-->
+<form action="{:U('Course/update')}" class="well form-search" method="post">
+    <!--<div class="col-auto">-->
+    <!--<div class="table_full">-->
+    <div class="box box-default">
+
+        <div class="box-body">
+            <table width="100%" cellpadding="2" cellspacing="2">
+                <tr>
+                    <td>
+                        <input type="hidden" name="subject"  value = "{$array['subject']}">
+                        <input type="hidden" name="class_id"  value = "{$array['class_id']}">
+                        <input type="hidden" name="startDate" id="" value = "$array['startdate']">
+                        <input type="hidden" name="id"  value = "{$id}">
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">课堂类型</th>
+                    <td>
+                        <label><input name="type" type="radio" value="{$data.type}"/>&nbsp&nbsp&nbsp大讲堂
+                            <input name="type" type="radio" value="{$data.type}"/>&nbsp&nbsp&nbsp小班课 </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">是否实时</th>
+                    <td>
+                        <label><input name="realtime" type="radio" value="1"/>&nbsp&nbsp&nbsp是
+                            <input name="realtime" type="radio" value="0"/>&nbsp&nbsp&nbsp否 </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">收否收费</th>
+                    <td>
+                        <label><input name="is_free" type="radio" value="{$data.is_free}"/>&nbsp&nbsp&nbsp公开课
+                            <input name="is_free" type="radio" value="{$data.is_free}"/>&nbsp&nbsp&nbspvip </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">课时数量</th>
+                    <td>
+                        <input name="num_class" type="text" value="{$data.num_class}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">课程主题</th>
+                    <td>
+                        <input type="text" name="subject" value="{$data.subject}" style="width: 300px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">现价</th>
+                    <td>
+                        <input name="now_price" type="text" value="{$data.now_price}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">原价</th>
+                    <td>
+                        <input name="old_price" type="text" value="{$data.old_price}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">开始时间</th>
+                    <td>
+                        <input type="text" name="startDate" value="{$data.startdate}">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th width="80">结束时间</th>
+                    <td>
+                        <input type="text" name="invalidDate" value="{$data.invaliddate}">
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">课程简介</th>
+                    <td>
+                        <textarea name='introduction' id='e_answer'
+                                  style='width:50%;height:100px;'>{$data.introduction}</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">讲师</th>
+                    <td>
+                        <select name="lector_id" class="normal_select">
+                            <option value="{$data.l_id}">{$data.name}</option>
+                            <foreach name="array['lector']" item="vo">
+                                <option value="{$vo.l_id}">{$vo.name}</option>
+                            </foreach>
+
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">适用人群</th>
+                    <td>
+                        <select name="people_id" class="normal_select">
+                            <option value="{$data.p_id}">{$data.people}</option>
+                            <foreach name="array['people']" item="va">
+                                <option value="{$va.p_id}">{$va.people}</option>
+                            </foreach>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">配发图书</th>
+                    <td>
+                        <select name="book_id" class="normal_select">
+                            <option value="{$data.b_id}">{$data.book}</option>
+                            <foreach name="array['book']" item="value">
+                                <option value="{$value.b_id}">{$value.book}</option>
+                            </foreach>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="form-actions">
+        <button class="btn btn-success" type="submit">提交</button>
+        <button type="reset" class="btn btn-danger">重置</button>
+    </div>
+</form>
+</div>
+</body>
+</html>
