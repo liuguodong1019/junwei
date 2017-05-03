@@ -1,0 +1,118 @@
+[ 2017-04-28T09:53:40+08:00 ] 127.0.0.1 /api
+ERR: 无法加载控制器:Index
+
+[ 2017-04-28T10:00:35+08:00 ] 127.0.0.1 /api/jiekou/index
+ERR: 无法加载控制器:Jiekou
+
+[ 2017-04-28T10:26:05+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected '$this' (T_VARIABLE)
+
+[ 2017-04-28T10:30:09+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'A' (T_STRING)
+
+[ 2017-04-28T10:37:26+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'sendTemplateSMS' (T_STRING)
+
+[ 2017-04-28T10:38:26+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected '$class' (T_VARIABLE)
+
+[ 2017-04-28T10:46:17+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'include_once' (T_INCLUDE_ONCE), expecting function (T_FUNCTION)
+
+[ 2017-04-28T10:47:53+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'include_once' (T_INCLUDE_ONCE), expecting function (T_FUNCTION)
+
+[ 2017-04-28T10:57:19+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'include_once' (T_INCLUDE_ONCE), expecting function (T_FUNCTION)
+
+[ 2017-04-28T11:00:38+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'echo' (T_ECHO), expecting function (T_FUNCTION)
+
+[ 2017-04-28T11:00:43+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'echo' (T_ECHO), expecting function (T_FUNCTION)
+
+[ 2017-04-28T11:01:01+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'echo' (T_ECHO), expecting function (T_FUNCTION)
+
+[ 2017-04-28T11:13:30+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'include_once' (T_INCLUDE_ONCE), expecting function (T_FUNCTION)
+
+[ 2017-04-28T11:14:17+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'require_once' (T_REQUIRE_ONCE), expecting function (T_FUNCTION)
+
+[ 2017-04-28T11:15:48+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'require_once' (T_REQUIRE_ONCE), expecting function (T_FUNCTION)
+
+[ 2017-04-28T11:15:51+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'require_once' (T_REQUIRE_ONCE), expecting function (T_FUNCTION)
+
+[ 2017-04-28T11:18:35+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected '.', expecting ',' or ';'
+
+[ 2017-04-28T11:18:59+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'require_once' (T_REQUIRE_ONCE), expecting function (T_FUNCTION)
+
+[ 2017-04-28T13:26:16+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'vendor' (T_STRING), expecting function (T_FUNCTION)
+
+[ 2017-04-28T13:26:24+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'vendor' (T_STRING), expecting function (T_FUNCTION)
+
+[ 2017-04-28T13:30:13+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected 'vendor' (T_STRING), expecting function (T_FUNCTION)
+
+[ 2017-04-28T13:30:37+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected '$accountSid' (T_VARIABLE), expecting function (T_FUNCTION)
+
+[ 2017-04-28T13:31:51+08:00 ] 127.0.0.1 /api/user
+ERR: Class 'Api\Controller\REST' not found
+
+[ 2017-04-28T13:35:48+08:00 ] 127.0.0.1 /api/user
+ERR: Class 'Api\Controller\REST' not found
+
+[ 2017-04-28T13:40:40+08:00 ] 127.0.0.1 /api/user
+ERR: Class 'Api\Controller\REST' not found
+
+[ 2017-04-28T13:41:30+08:00 ] 127.0.0.1 /api/user
+ERR: Class 'Api\Controller\REST' not found
+
+[ 2017-04-28T13:45:58+08:00 ] 127.0.0.1 /api/user
+ERR: Class 'Api\Controller\REST' not found
+
+[ 2017-04-28T14:38:56+08:00 ] 127.0.0.1 /api/user/index/
+ERR: syntax error, unexpected '分钟' (T_STRING)
+
+[ 2017-04-28T16:54:50+08:00 ] 127.0.0.1 /Api/User
+ERR: syntax error, unexpected '$data' (T_VARIABLE)
+
+[ 2017-04-28T16:55:06+08:00 ] 127.0.0.1 /Api/User
+ERR: 1146:Table 'thinkcmf.cmf_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_user`
+
+[ 2017-04-28T17:01:27+08:00 ] 127.0.0.1 /Api/User
+ERR: 1146:Table 'thinkcmf.cmf_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_user`
+
+[ 2017-04-28T17:04:06+08:00 ] 127.0.0.1 /Api/User/add
+ERR: 1146:Table 'thinkcmf.cmf_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_user`
+
+[ 2017-04-28T17:09:18+08:00 ] 127.0.0.1 /Api/User/add
+ERR: 1146:Table 'thinkcmf.cmf_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_user`
+
+[ 2017-04-28T22:24:23+08:00 ] 127.0.0.1 /api/user
+ERR: syntax error, unexpected ')'
+
+[ 2017-04-28T22:35:49+08:00 ] 127.0.0.1 /api/register
+ERR: 无法加载控制器:Register
+
+[ 2017-04-28T22:36:03+08:00 ] 127.0.0.1 /api/user/register
+ERR: syntax error, unexpected '$user_pass' (T_VARIABLE)
+
+[ 2017-04-28T22:36:25+08:00 ] 127.0.0.1 /api/user/register
+ERR: syntax error, unexpected '$user_pass' (T_VARIABLE)
+
+[ 2017-04-28T22:36:50+08:00 ] 127.0.0.1 /api/user/register
+ERR: syntax error, unexpected '$user_pass' (T_VARIABLE)
+
