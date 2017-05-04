@@ -45,7 +45,7 @@ class CourseController extends AdminbaseController
                 ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                 ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                 ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                ->order('cmf_course.id')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+                ->where("status = 1")->order('cmf_course.id')->limit($Page->firstRow . ',' . $Page->listRows)->select();
         }
         $this->assign('loginName', $loginName);
         $this->assign('password', $password);
@@ -211,9 +211,37 @@ class CourseController extends AdminbaseController
     /**
      * 获取课堂列表
      */
-    public function get_class_list ()
+    public function get_class_list()
     {
-        $course = M('course')->select();
+        $succ = C('succ');
+        $mess = C('mess');
+        $model = new SubmitController();
+        if (IS_GET) {
+            $course = M('course');
+            $page = I('get.page');
+            if ($page !== NULL) {
+                $data = $course
+                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->where("status = 1")->order('cmf_course.id')->page($page.',10')->select();
+                if (!empty($data)) {
+                    echo json_encode([
+                        'code' => $succ[0],
+                        'mess' => $mess[0],
+                        'data' => $data
+                    ]);
+                } else {
+                    echo $model::state($succ[1], $mess[1]);
+                }
+            } else {
+                echo $model::state($succ[2], $mess[2]);
+            }
+        } else {
+            echo $model::state($succ[3], $mess[3]);
+        }
+
+
     }
     /**
      * 获取课堂信息
@@ -237,6 +265,68 @@ class CourseController extends AdminbaseController
             }
         }else {
             echo $model::state($succ[3],$mess[3]);
+        }
+    }
+    /**
+     * 生成回放
+     */
+    public function playback ()
+    {
+        $course = M('course');
+        if (IS_GET) {
+            $id = I('get.id');
+            if (is_numeric($id)) {
+                $class_id = $course->where("id = $id")->getField('class_id');
+                $junwei = M('junwei')->find();
+                $response = new ResponseController();
+                $loginName = $junwei['loginname'];
+                $password = sp_authcode($junwei['password']);
+                $resource = $response::get_past($loginName,$password,$class_id);
+                if ($resource['code'] == 0) {
+                    $res = $resource['coursewares'][0];
+                    $data['number'] = $res['number'];
+                    $data['status'] = 3;
+                    $data['reply_url'] = $res['url'];
+                    if ($course->where("id = $id")->save($data)) {
+                        $this->success(L('ADD_SUCCESS'), U("Course/show"));exit();
+                    }else {
+                        $this->error(L('ADD_FAILED'));exit();
+                    }
+                }
+            }
+        }
+    }
+    /**
+     * 往期直播
+     */
+    public function past_live ()
+    {
+        $succ = C('succ');
+        $mess = C('mess');
+        $course = M('course');
+        $model = new SubmitController();
+        if (IS_GET) {
+            $page = I('get.page');
+            if ($page !== NULL) {
+                $data = $course
+                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->where("status = 3")->order('cmf_course.id')->page($page.',10')->select();
+                if (!empty($data)) {
+                    echo json_encode([
+                        'code' => $succ[0],
+                        'mess' => $mess[0],
+                        'data' => $data
+                    ]);
+                } else {
+                    echo $model::state($succ[1], $mess[1]);
+                }
+            } else {
+                echo $model::state($succ[2], $mess[2]);
+            }
+        }else {
+            echo $model::state($succ[3], $mess[3]);
         }
     }
 }

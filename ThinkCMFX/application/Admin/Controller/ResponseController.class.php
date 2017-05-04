@@ -64,4 +64,22 @@ class ResponseController extends AdminbaseController
         $result = json_decode($result,true);
         return $result;
     }
+    /**
+     * 生成回放
+     */
+    public static function get_past ($loginName,$password,$class_id)
+    {
+        $url = "http://junwei.gensee.com/integration/site/training/courseware/list";
+        $model = new SubmitController();
+        $data = array(
+            'loginName' => $loginName,
+            'password' => $password,
+            'roomId' => $class_id
+        );
+        $result = $model->post($url,$data);
+        $result = json_decode($result,true);
+
+
+        return $result;
+    }
 }
