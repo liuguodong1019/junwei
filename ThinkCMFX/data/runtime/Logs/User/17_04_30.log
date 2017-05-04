@@ -1,0 +1,8 @@
+[ 2017-04-30T12:03:00+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001944s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004171s ]
+NOTIC: [8] Undefined index: url D:\laragon\www\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
+
