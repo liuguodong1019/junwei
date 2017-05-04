@@ -76,6 +76,9 @@
                                                 <?php else: ?>
                                                    <option value="<?php echo ($vo["sid"]); ?>" ><?php echo ($vo["stitle"]); ?></option><?php endif; endforeach; endif; else: echo "" ;endif; ?> 
                     </select>
+                   <!--  <select name="sid" onchange="show_class(this.value)" class="normal_select">
+                       <?php if(is_array($su)): foreach($su as $key=>$vo): ?><option value="<?php echo ($vo["sid"]); ?>"><?php echo ($vo["stitle"]); ?></option><?php endforeach; endif; ?>                    
+                    </select> -->
                 </td>
             </tr>
 
@@ -89,14 +92,14 @@
             <tr>
                 <th width="80">选项</th>
                 <td>
-                    <?php if(is_array($options)): foreach($options as $key=>$v): ?><input type="text" name="option[]" id="" value="<?php echo ($v["options"]); ?>" style="width:400px;"></br><?php endforeach; endif; ?>
+                    <textarea name='options' id='e_answer' style='width:98%;height:150px;'><?php echo ($option["0"]); ?>;<?php echo ($option["1"]); ?>;<?php echo ($option["2"]); ?>;<?php echo ($option["3"]); ?>;</textarea>A,B,C,D各个选项用英文';'隔开
                 </td>
             </tr>
 
             <tr>
                 <th width="80">答案</th>
                 <td>
-                    <input type="text" style="width:400px;" name="answer" id="e_result" value="<?php echo ($answer); ?>" style="color:"
+                    <input type="text" style="width:400px;" name="answer" id="e_result" value="<?php echo ($item["answer"]); ?>" style="color:"
                            class="input input_hd J_title_color" placeholder="请输入答案"
                            onkeyup="strlen_verify(this, 'title_len', 160)"/>输入正确的答案单选 如：A多选A,B多个选项用英文逗号隔开 
                 </td>
@@ -106,29 +109,6 @@
                 <th width="80">试题解析</th>
                 <td>
                     <textarea name='parsing' id='parsing' style='width:98%;height:150px;'><?php echo ($item["parsing"]); ?></textarea>
-                </td>
-            </tr>
-            <tr>
-                <th width="80">考点</th>
-                <td>
-                    <input type="text" value="暂无" name="point" value="<?php echo ($item["ncertain"]); ?>" />
-                </td>
-            </tr>
-            <tr>
-            <th width="80">难易度</th>
-                <td>
-                    <select name="difficulty" class="normal_select">
-                        <option value="0" <?php if($item["difficulty"] == 0): ?>selected<?php endif; ?>>简单</option>
-                        <option value="1" <?php if($item["difficulty"] == 1): ?>selected<?php endif; ?>>一般</option>
-                        <option value="2" <?php if($item["difficulty"] == 2): ?>selected<?php endif; ?>>困难</option>
-                    </select>
-                </td>
-            </tr>
-             <tr>
-                <th width="80">是否为不定项</th>
-                <td>
-                    <input type="radio" name="ncertain" value="0" <?php if($item["point"] == 0): ?>checked="checked"<?php endif; ?>>否
-                    <input type="radio" name="ncertain" value="1" <?php if($item["point"] == 1): ?>checked="checked"<?php endif; ?>>是
                 </td>
             </tr>
             <tr>

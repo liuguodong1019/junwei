@@ -70,14 +70,14 @@
                 <tr>
                     <th width="80">开始时间</th>
                     <td>
-                        <input type="text" name="startDate" value="{$data.startdate}">
+                        <input class="datainp" name = "startDate"  value="{$data.startdate}" id="datebut" type="text" placeholder="双击选择时间"  onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
                 </tr>
 
                 <tr>
                     <th width="80">结束时间</th>
                     <td>
-                        <input type="text" name="invalidDate" value="{$data.invaliddate}">
+                        <input class="datainp" name = "invalidDate" value="{$data.invaliddate}" id="datebut1" type="text" placeholder="双击选择时间"  onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
                 </tr>
                 <tr>

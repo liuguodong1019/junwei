@@ -104,7 +104,7 @@
 				</tfoot>
 			</table>
 			<div class="table-actions">
-				<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="<?php echo U('Question/itembankdelete');?>" data-subcheck="true" data-msg="你确定删除吗？"><?php echo L('DELETE');?></button>
+				<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="<?php echo U('Question/itenbankdelete');?>" data-subcheck="true" data-msg="你确定删除吗？"><?php echo L('DELETE');?></button>
 			</div>
 			<div class="pagination"><?php echo ($page); ?></div>
 		</form>

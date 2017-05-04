@@ -31,7 +31,6 @@ class CourseController extends AdminbaseController
         $count = $course->count();
         $Page = new \Think\Page($count, 25);
         $show = $Page->show();
-
         if (IS_POST) {
             $keyword = I('post.keyword');
             if (!empty($keyword)) {
@@ -45,7 +44,7 @@ class CourseController extends AdminbaseController
                 ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                 ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                 ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                ->where("status = 1")->order('cmf_course.id')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+                ->order('cmf_course.id')->limit($Page->firstRow . ',' . $Page->listRows)->select();
         }
         $this->assign('loginName', $loginName);
         $this->assign('password', $password);
@@ -71,8 +70,10 @@ class CourseController extends AdminbaseController
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             $startDate = I('post.startDate');
+            $invalidDate = I('post.invalidDate');
             //调用创建实时课堂接口
-            $resource = $response::create_course($subject, $loginName, $password, $startDate);
+            $resource = $response::create_course($subject, $loginName, $password, $startDate,$invalidDate);
+//            print_r($resource);die;
             $data['number'] = $resource['number'];
             $data['stu_token'] = $resource['studentClientToken'];
             $data['class_id'] = $resource['id'];
@@ -84,7 +85,7 @@ class CourseController extends AdminbaseController
                     $this->error(L('ADD_FAILED'));
                     exit();
                 }
-            }else {
+            } else {
                 $this->error(L('ADD_FAILED'));
                 exit();
             }
@@ -243,10 +244,11 @@ class CourseController extends AdminbaseController
 
 
     }
+
     /**
      * 获取课堂信息
      */
-    public function get_class ()
+    public function get_class()
     {
         $succ = C('succ');
         $mess = C('mess');
@@ -259,14 +261,16 @@ class CourseController extends AdminbaseController
                     'code' => $succ[0],
                     'mess' => $mess[0],
                     'data' => $data
-                ]);exit();
-            }else {
-                echo $model::state($succ[2],$mess[2]);
+                ]);
+                exit();
+            } else {
+                echo $model::state($succ[2], $mess[2]);
             }
-        }else {
-            echo $model::state($succ[3],$mess[3]);
+        } else {
+            echo $model::state($succ[3], $mess[3]);
         }
     }
+
     /**
      * 生成回放
      */

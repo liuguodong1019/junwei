@@ -11,14 +11,15 @@ class ResponseController extends AdminbaseController
     /**
      * 创建实时课堂
      */
-    public static function create_course ($subject,$loginName,$password,$startDate)
+    public static function create_course ($subject,$loginName,$password,$startDate,$invalidDate)
     {
         $url = "http://junwei.gensee.com/integration/site/training/room/created";
         $data = array(
             'loginName' => $loginName,
             'password' => $password,
             'subject' => $subject,
-            'startDate' => $startDate
+            'startDate' => $startDate,
+            'invalidDate' => $invalidDate
         );
         $model = new SubmitController();
         $result = $model->post($url,$data);
@@ -64,6 +65,7 @@ class ResponseController extends AdminbaseController
         $result = json_decode($result,true);
         return $result;
     }
+
     /**
      * 生成回放
      */
@@ -71,13 +73,13 @@ class ResponseController extends AdminbaseController
     {
         $url = "http://junwei.gensee.com/integration/site/training/courseware/list";
         $model = new SubmitController();
-        $data = array(
-            'loginName' => $loginName,
-            'password' => $password,
-            'roomId' => $class_id
-        );
-        $result = $model->post($url,$data);
-        $result = json_decode($result,true);
+            $data = array(
+                'loginName' => $loginName,
+                'password' => $password,
+                'roomId' => $class_id
+            );
+            $result = $model->post($url,$data);
+            $result = json_decode($result,true);
 
 
         return $result;

@@ -108,29 +108,6 @@
 
             </tr>
             <tr>
-                <th width="80">考点</th>
-                <td>
-                    <input type="text" value="暂无" name="point" />
-                </td>
-            </tr>
-            <tr>
-             <th width="80">难易度</th>
-                <td>
-                    <select name="difficulty" class="normal_select">
-                        <option value="0">简单</option>
-                        <option value="1">一般</option>
-                        <option value="2">困难</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th width="80">是否为不定项</th>
-                <td>
-                    <input type="radio" name="ncertain" value="0" checked="checked">否
-                    <input type="radio" name="ncertain" value="1">是
-                </td>
-            </tr>
-            <tr>
                 <th width="80">试题解析</th>
                 <td>
                     <textarea name='parsing' id='parsing' style='width:98%;height:150px;'>暂无</textarea>
