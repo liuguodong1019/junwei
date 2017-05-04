@@ -244,6 +244,7 @@ class CourseController extends AdminbaseController
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
                     ->where("status = 1")->order('cmf_course.id')->page($page.',10')->select();
+
                 if (!empty($data)) {
                     echo json_encode([
                         'code' => $succ[0],
