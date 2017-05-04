@@ -41,7 +41,8 @@ return array (
     "EDIT_SUCCESS" => '保存成功！',
     "EDIT_FAILED" => '保存失败！',
     "NO_DATA" => '没有数据',
-    "MOBILE" => '手机'
+    "MOBILE" => '手机',
+    "LOOK" => '查看'
     
 		
 );

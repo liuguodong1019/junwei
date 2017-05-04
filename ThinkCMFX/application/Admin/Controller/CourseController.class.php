@@ -54,6 +54,24 @@ class CourseController extends AdminbaseController
     }
 
     /**
+     * 查看课堂详细信息
+     */
+    public function look ()
+    {
+       if (IS_GET) {
+           $id = I('get.id');
+           if (!empty($id)) {
+                $data = M('course')
+                   ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                   ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                   ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                   ->where("id = $id")->find();
+           }
+       }
+       $this->assign('data',$data);
+       $this->display();
+    }
+    /**
      * 创建课堂
      */
     public function create()
