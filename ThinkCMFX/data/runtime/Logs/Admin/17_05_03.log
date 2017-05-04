@@ -61,3 +61,33 @@ NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
 NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
 NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
 
+[ 2017-05-03T18:56:21+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=admin&m=public&a=login
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
+[ 2017-05-03T18:59:07+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001592s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003353s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.006866s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.006941s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0408s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0396s ]
+
+[ 2017-05-03T18:59:22+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004515s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007137s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003872s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003961s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0423s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0387s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0382s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0390s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-03 18:59:22',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0403s ]
+
