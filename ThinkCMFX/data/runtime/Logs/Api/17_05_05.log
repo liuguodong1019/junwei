@@ -28,3 +28,6 @@ ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
 [ 2017-05-05T14:45:44+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=live_end&id=9
 ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
 
+[ 2017-05-05T14:47:17+08:00 ] 192.168.50.69 /junwei1/ThinkCMFX/index.php?g=api&m=course&a=get_class&id=1
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
