@@ -79,7 +79,6 @@
         <li><a href="<?php echo U('Course/show');?>">课堂列表</a></li>
         <li><a href="<?php echo U('Course/create');?>">添加课堂</a></li>
     </ul>
-
     <table class="table table-hover table-bordered table-list">
         <tr>
             <th width="60">ID</th>

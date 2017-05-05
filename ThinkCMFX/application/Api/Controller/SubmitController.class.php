@@ -1,9 +1,9 @@
 <?php
-namespace Admin\Controller;
+namespace Api\Controller;
 
-use Common\Controller\AdminbaseController;
+use Think\Controller;
 
-class SubmitController extends AdminbaseController
+class SubmitController extends Controller
 {
    public function post ($url,$data){
         $ch = curl_init();

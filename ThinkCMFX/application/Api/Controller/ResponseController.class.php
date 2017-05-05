@@ -1,12 +1,12 @@
 <?php
 
-namespace Admin\Controller;
+namespace Api\Controller;
 
-use Common\Controller\AdminbaseController;
+use Think\Controller;
 
-use Admin\Controller\SubmitController;
+use Api\Controller\SubmitController;
 
-class ResponseController extends AdminbaseController
+class ResponseController extends Controller
 {
     /**
      * 创建实时课堂
