@@ -1,0 +1,30 @@
+[ 2017-05-05T12:45:36+08:00 ] 127.0.0.1 /api/rcheck?18033696192
+ERR: 无法加载控制器:Rcheck
+
+[ 2017-05-05T12:45:52+08:00 ] 127.0.0.1 /api/user/rcheck?18033696192
+ERR: syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-05-05T14:42:40+08:00 ] 192.168.50.69 /junwei1/ThinkCMFX/index.php?g=api&m=course&a=get_class_list
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
+[ 2017-05-05T14:43:34+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
+[ 2017-05-05T14:43:58+08:00 ] 192.168.50.69 /junwei1/ThinkCMFX/index.php?g=api&m=course&a=get_class&id=1
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
+[ 2017-05-05T14:44:14+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
+[ 2017-05-05T14:44:16+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
+[ 2017-05-05T14:45:05+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
+[ 2017-05-05T14:45:13+08:00 ] 192.168.50.69 /junwei1/ThinkCMFX/index.php?g=api&m=course&a=get_class&id=1
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
+[ 2017-05-05T14:45:44+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=live_end&id=9
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
