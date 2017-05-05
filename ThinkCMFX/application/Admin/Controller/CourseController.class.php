@@ -29,7 +29,7 @@ class CourseController extends AdminbaseController
         $loginName = $junwei['loginName'];
         $password = $junwei['password'];
         $count = $course->count();
-        $Page = new \Think\Page($count, 25);
+        $Page = new \Think\Page($count, 10);
         $show = $Page->show();
         if (IS_POST) {
             $keyword = I('post.keyword');
@@ -247,7 +247,6 @@ class CourseController extends AdminbaseController
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
                     ->order('cmf_course.id')->page($page . ',10')->select();
-
                 if (!empty($data)) {
                     echo json_encode([
                         'code' => $succ[0],
