@@ -11,32 +11,32 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
-	<link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/junwei1/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
+	<link href="/junwei1/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/junwei1/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/junwei1/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/junwei1/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
 		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
 		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
 		.table-list{margin-bottom: 0px;}
 	</style>
 	<!--[if IE 7]>
-	<!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+	<!--<link rel="stylesheet" href="/junwei1/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/junwei1/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
 	<![endif]-->
 	<script type="text/javascript">
 	//全局变量
 	var GV = {
-	    ROOT: "/ThinkCMFX/",
-	    WEB_ROOT: "/ThinkCMFX/",
+	    ROOT: "/junwei1/ThinkCMFX/",
+	    WEB_ROOT: "/junwei1/ThinkCMFX/",
 	    JS_ROOT: "public/js/",
 	    APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
 	};
 	</script>
-    <script src="/ThinkCMFX/public/js/jquery.js"></script>
-    <script src="/ThinkCMFX/public/js/wind.js"></script>
-    <script src="/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/junwei1/ThinkCMFX/public/js/jquery.js"></script>
+    <script src="/junwei1/ThinkCMFX/public/js/wind.js"></script>
+    <script src="/junwei1/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
     	$(function(){
     		$("[data-toggle='tooltip']").tooltip();
@@ -88,7 +88,7 @@ li {
 		<h4 class="well"><?php echo L('SYSTEM_NOTIFICATIONS');?></h4>
 		<div class="home_info">
 			<ul id="thinkcmf_notices">
-				<li><img src="/ThinkCMFX/admin/themes/simplebootx/Public/assets/images/loading.gif"style="vertical-align: middle;" /><span style="display: inline-block; vertical-align: middle;">加载中...</span></li>
+				<li><img src="/junwei1/ThinkCMFX/admin/themes/simplebootx/Public/assets/images/loading.gif"style="vertical-align: middle;" /><span style="display: inline-block; vertical-align: middle;">加载中...</span></li>
 			</ul>
 		</div>
 		<h4 class="well"><?php echo L('SYSTEM_INFORMATIONS');?></h4>
@@ -126,7 +126,7 @@ li {
 			</ul>
 		</div>
 	</div>
-	<script src="/ThinkCMFX/public/js/common.js"></script>
+	<script src="/junwei1/ThinkCMFX/public/js/common.js"></script>
 	<?php $lang_set=defined('LANG_SET')?LANG_SET:''; $thinkcmf_version=defined('THINKCMF_VERSION')?THINKCMF_VERSION:''; ?>
 	<script>
 		//获取官方通知

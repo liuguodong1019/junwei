@@ -56,21 +56,23 @@ class CourseController extends AdminbaseController
     /**
      * 查看课堂详细信息
      */
-    public function look ()
+    public function look()
     {
-       if (IS_GET) {
-           $id = I('get.id');
-           if (!empty($id)) {
+        if (IS_GET) {
+            $id = I('get.id');
+            if (!empty($id)) {
                 $data = M('course')
-                   ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                   ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                   ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                   ->where("id = $id")->find();
-           }
-       }
-       $this->assign('data',$data);
-       $this->display();
+                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->where("id = $id")->find();
+
+            }
+        }
+        $this->assign('data', $data);
+        $this->display();
     }
+
     /**
      * 创建课堂
      */
@@ -90,7 +92,7 @@ class CourseController extends AdminbaseController
             $startDate = I('post.startDate');
             $invalidDate = I('post.invalidDate');
             //调用创建实时课堂接口
-            $resource = $response::create_course($subject, $loginName, $password, $startDate,$invalidDate);
+            $resource = $response::create_course($subject, $loginName, $password, $startDate, $invalidDate);
 //            print_r($resource);die;
             $data['number'] = $resource['number'];
             $data['stu_token'] = $resource['studentClientToken'];
@@ -240,10 +242,11 @@ class CourseController extends AdminbaseController
             $page = I('get.page');
             if ($page !== NULL) {
                 $data = $course
+                    ->field('id,subject,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_free')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("status = 1")->order('cmf_course.id')->page($page.',10')->select();
+                    ->order('cmf_course.id')->page($page . ',10')->select();
 
                 if (!empty($data)) {
                     echo json_encode([
@@ -293,7 +296,7 @@ class CourseController extends AdminbaseController
     /**
      * 生成回放
      */
-    public function playback ()
+    public function playback()
     {
         $course = M('course');
         if (IS_GET) {
@@ -304,25 +307,28 @@ class CourseController extends AdminbaseController
                 $response = new ResponseController();
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
-                $resource = $response::get_past($loginName,$password,$class_id);
+                $resource = $response::get_past($loginName, $password, $class_id);
                 if ($resource['code'] == 0) {
                     $res = $resource['coursewares'][0];
                     $data['number'] = $res['number'];
                     $data['status'] = 3;
                     $data['reply_url'] = $res['url'];
                     if ($course->where("id = $id")->save($data)) {
-                        $this->success(L('ADD_SUCCESS'), U("Course/show"));exit();
-                    }else {
-                        $this->error(L('ADD_FAILED'));exit();
+                        $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                        exit();
+                    } else {
+                        $this->error(L('ADD_FAILED'));
+                        exit();
                     }
                 }
             }
         }
     }
+
     /**
      * 往期直播
      */
-    public function past_live ()
+    public function past_live()
     {
         $succ = C('succ');
         $mess = C('mess');
@@ -335,7 +341,7 @@ class CourseController extends AdminbaseController
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("status = 3")->order('cmf_course.id')->page($page.',10')->select();
+                    ->where("status = 3")->order('cmf_course.id')->page($page . ',10')->select();
                 if (!empty($data)) {
                     echo json_encode([
                         'code' => $succ[0],
@@ -348,7 +354,7 @@ class CourseController extends AdminbaseController
             } else {
                 echo $model::state($succ[2], $mess[2]);
             }
-        }else {
+        } else {
             echo $model::state($succ[3], $mess[3]);
         }
     }
