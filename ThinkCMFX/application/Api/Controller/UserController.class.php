@@ -3,16 +3,16 @@ namespace Api\Controller;
 
 use Think\Controller;
 
-class UserController extends Controller 
+class UserapiController extends Controller 
 {    
   /**
    * 注册验证码接口调用
    * @return [type] [description]
    */
      public function rcheck()
-  {
+  { 
   	    vendor('SMS.CCPRestSmsSDK');
-		$to=I('post.phone');
+		$to=I('phone');
 		$da=rand(100000,999999);
 		$time="1分钟";
         $datas=array($da,$time);
@@ -299,7 +299,7 @@ class UserController extends Controller
 	     	  $mobile=$to;
 	     	  $dat['check']=$datas['0'];;
 	     	  $user=M('Users');
-	     	  $res=$user->save("mobile=$mobile")->($dat);
+	     	  $res=$user->where("mobile=$mobile")->save($dat);
 	     	  if($res)
 	     	  {
 		     	  $data['status']=1;

@@ -58,7 +58,7 @@
 	<div>
 		 <table width="100%" cellpadding="2" cellspacing="2">
 		  <tr>
-                <th width="80">试题材料</th>
+                <th width="80">真题材料</th>
                 <td>
                     <textarea name='content' style='width:98%;height:100px;'></textarea>
                 </td>

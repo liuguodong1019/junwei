@@ -47,14 +47,16 @@
             <tr>
                 <th width="80">选项</th>
                 <td>
-                    <textarea name='options' id='e_answer' style='width:98%;height:150px;'>{$option.0};{$option.1};{$option.2};{$option.3};</textarea>A,B,C,D各个选项用英文';'隔开
+                    <foreach name='options' item='v'>
+                    <input type="text" name="option[]" id="" value="{$v.options}" style="width:400px;"></br>
+                    </foreach>
                 </td>
             </tr>
 
             <tr>
                 <th width="80">答案</th>
                 <td>
-                    <input type="text" style="width:400px;" name="answer" id="e_result" value="{$item.answer}" style="color:"
+                    <input type="text" style="width:400px;" name="answer" id="e_result" value="{$answer}" style="color:"
                            class="input input_hd J_title_color" placeholder="请输入答案"
                            onkeyup="strlen_verify(this, 'title_len', 160)"/>输入正确的答案单选 如：A多选A,B多个选项用英文逗号隔开 
                 </td>
@@ -66,6 +68,22 @@
                         <textarea name='parsing' id='parsing' style='width:98%;height:150px;'>{$item.parsing}</textarea>
                     </td>
                 </tr>
+                 <tr>
+                <th width="80">考点</th>
+                <td>
+                    <input type="text" value="暂无" name="point" value="{$item.ncertain}" />
+                </td>
+            </tr>
+            <tr>
+            <th width="80">难易度</th>
+                <td>
+                    <select name="difficulty" class="normal_select">
+                        <option value="0" <if condition="$item.difficulty eq 0">selected</if>>简单</option>
+                        <option value="1" <if condition="$item.difficulty eq 1">selected</if>>一般</option>
+                        <option value="2" <if condition="$item.difficulty eq 2">selected</if>>困难</option>
+                    </select>
+                </td>
+            </tr>
                 <tr>
                     <th width="80">分值</th>
                     <td>

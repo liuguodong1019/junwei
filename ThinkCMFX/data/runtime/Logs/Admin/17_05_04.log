@@ -1,59 +1,481 @@
-[ 2017-05-04T09:18:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+[ 2017-05-04T09:18:03+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001153s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000416s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002769s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001725s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003329s ]
 INFO: [ admin_begin ] --START--
-INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001978s ]
-INFO: [ admin_begin ] --END-- [ RunTime:0.002035s ]
-SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0020s ]
-SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
-SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0605s ]
-SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0119s ]
-SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-04 09:18:49',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0831s ]
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002062s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002156s ]
 
-[ 2017-05-04T10:06:44+08:00 ] 127.0.0.1 /index.php?g=Admin&m=course&a=playback&id=1
-ERR: 1048:Column 'number' cannot be null
- [ SQL语句 ] : UPDATE `cmf_course` SET `number`=NULL,`status`='3',`reply_url`=NULL WHERE ( id = 1 )
-
-[ 2017-05-04T10:07:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=course&a=playback&id=1
-ERR: 1048:Column 'number' cannot be null
- [ SQL语句 ] : UPDATE `cmf_course` SET `number`=NULL,`status`='3',`reply_url`=NULL WHERE ( id = 1 )
-
-[ 2017-05-04T10:51:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=playback&id=1
-ERR: 1048:Column 'number' cannot be null
- [ SQL语句 ] : UPDATE `cmf_course` SET `number`=NULL,`status`='3',`reply_url`=NULL WHERE ( id = 1 )
-
-[ 2017-05-04T10:52:08+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=playback&id=1
-ERR: 1048:Column 'number' cannot be null
- [ SQL语句 ] : UPDATE `cmf_course` SET `number`=NULL,`status`='3',`reply_url`=NULL WHERE ( id = 1 )
-
-[ 2017-05-04T12:34:25+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=get_class&page=1
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
- [ SQL语句 ] : SELECT * FROM `cmf_course` WHERE ( id =  ) LIMIT 1  
-
-[ 2017-05-04T13:47:30+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
-ERR: Call to a member function select() on null
-
-[ 2017-05-04T14:02:09+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
-ERR: Call to a member function select() on null
-
-[ 2017-05-04T14:02:15+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
-ERR: Call to a member function select() on null
-
-[ 2017-05-04T14:05:59+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+[ 2017-05-04T09:18:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001768s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000537s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.003628s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001288s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002767s ]
 INFO: [ admin_begin ] --START--
-INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001554s ]
-INFO: [ admin_begin ] --END-- [ RunTime:0.001624s ]
-SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
-SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
-SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0012s ]
-SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0011s ]
-SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-04 14:05:58',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0612s ]
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001396s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001461s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0578s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0462s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0232s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-04 09:18:12',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`check`='0',`token`='',`identity`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-05-04T09:18:16+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T09:18:18+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T09:18:19+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=mater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T09:18:57+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T09:20:22+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T09:21:16+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T09:22:08+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T09:25:52+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T09:38:36+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T09:58:48+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:01:21+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:05:31+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:06:23+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:07:04+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:07:45+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:08:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:13:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:14:09+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T13:58:48+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T13:58:50+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T13:58:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=mater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T13:59:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:06:58+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:07:01+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:07:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=mater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:07:19+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:08:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:18:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:18:50+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:18:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=mater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:19:56+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:20:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:56:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:56:39+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:56:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=mater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:57:57+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T16:59:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:00:14+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:01:04+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:02:27+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:04:01+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:04:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:06:10+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+ERR: 1364:Field 'options' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `cmf_option` (`qid`,`key`) VALUES ('13',1)
+
+[ 2017-05-04T17:08:23+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+ERR: 1364:Field 'qid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `cmf_answer` () VALUES ()
+
+[ 2017-05-04T17:10:15+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+ERR: 1364:Field 'qid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `cmf_answer` () VALUES ()
+
+[ 2017-05-04T17:12:37+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:17:19+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:22:44+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:30:15+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:30:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:30:18+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=mater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:31:56+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T17:34:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T18:50:48+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T18:50:50+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T18:50:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=mater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T18:58:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:01:42+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:06:16+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:11:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:11:44+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:12:18+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:13:05+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:13:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=truekadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:13:18+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:13:19+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:13:21+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=mater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:13:25+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:13:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:29:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:29:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:29:55+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=test
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:29:57+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:29:58+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:29:59+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:06+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=ture
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:10+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:10+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:14+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=ture
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:20+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=truekadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:21+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:23+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:30:23+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:31:54+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:31:56+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:31:57+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=ture
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:32:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=ture
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T19:32:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Question&a=truemater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
 

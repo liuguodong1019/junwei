@@ -3,7 +3,7 @@ namespace Api\Controller;
 
 use Api\Controller\SubmitController;
 use Think\Controller;
-use Admin\Controller\ResponseController;
+use Api\Controller\ResponseController;
 class CourseController extends Controller
 {
     /**

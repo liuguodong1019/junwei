@@ -50,9 +50,9 @@
 <body class="J_scroll_fixed">
 <div class="wrap J_check_wrap">
 <ul class="nav nav-tabs">
-    <li><a href="<?php echo U('Question/ture');?>">所有真题</a></li>
+    <li><a href="<?php echo U('Question/true');?>">所有真题</a></li>
     <li class="active"><a href="<?php echo U('Question/truekadd');?>"  target="_self">添加真题</a></li>
-    <li><a href="#">添加材料试题</a></li>
+    <li><a href="<?php echo U('Question/truemater');?>">添加材料试题</a></li>
 </ul>
 <form class="form-horizontal js-ajax-form" action="<?php echo U('Question/trueadd_post');?>" method="post">
 
@@ -106,6 +106,29 @@
                            onkeyup="strlen_verify(this, 'title_len', 160)"/>输入正确的答案单选 如：A多选A,B多个选项用英文逗号隔开 
                 </td>
 
+            </tr>
+            <tr>
+                <th width="80">考点</th>
+                <td>
+                    <input type="text" value="暂无" name="point" />
+                </td>
+            </tr>
+            <tr>
+             <th width="80">难易度</th>
+                <td>
+                    <select name="difficulty" class="normal_select">
+                        <option value="0">简单</option>
+                        <option value="1">一般</option>
+                        <option value="2">困难</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="80">是否为不定项</th>
+                <td>
+                    <input type="radio" name="ncertain" value="0" checked="checked">否
+                    <input type="radio" name="ncertain" value="1">是
+                </td>
             </tr>
             <tr>
                 <th width="80">试题解析</th>

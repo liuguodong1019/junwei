@@ -42,8 +42,7 @@ return array (
     "EDIT_SUCCESS" => 'Save success！',
     "EDIT_FAILED" => 'Save failed！',
     "NO_DATA" => 'No data!',
-    "MOBILE" => 'Mobile',
-    "LOOK" => 'look'
+    "MOBILE" => 'Mobile'
 		
 	
 );
