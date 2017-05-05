@@ -35,3 +35,6 @@ ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
 ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
  [ SQL语句 ] : SELECT `id`,`subject`,`now_price`,`name`,`num_class`,`cover`,`people`,`book`,`introduction` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( id =  ) LIMIT 1  
 
+[ 2017-05-05T19:31:59+08:00 ] 192.168.50.69 /junwei1/ThinkCMFX/index.php?g=api&m=Index&a=index
+ERR: 无法加载控制器:Index
+
