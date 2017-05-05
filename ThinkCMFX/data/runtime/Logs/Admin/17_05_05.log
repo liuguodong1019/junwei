@@ -698,3 +698,69 @@ SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0362s ]
 SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0139s ]
 SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='192.168.50.79',`last_login_time`='2017-05-05 18:01:08',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0947s ]
 
+[ 2017-05-05T18:39:43+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-05T18:39:55+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-05T18:40:08+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=menu&a=edit&id=205
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-05T18:40:20+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002692s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006045s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003233s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003323s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0436s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0016s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\junwei1\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `id` FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'courseware' AND `action` = 'show' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\junwei1\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_menu` SET `parentid`='199',`name`='课时管理',`app`='admin',`model`='courseware',`action`='show',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 205 [ RunTime:0.0381s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/courseware/show' LIMIT 1   [ RunTime:0.0645s ]
+SQL: UPDATE `cmf_auth_rule` SET `name`='admin/courseware/show',`module`='admin',`type`='admin_url',`title`='课时管理' WHERE `name` = 'admin/courseware/show' [ RunTime:0.0343s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0027s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-05-05T18:40:20+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=menu&a=edit&id=205
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-05T18:46:43+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001603s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002991s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.018212s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.018290s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0276s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `id` = 205 LIMIT 1   [ RunTime:0.0075s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\junwei1\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `id` FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'courseware' AND `action` = 'show' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\junwei1\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_menu` SET `parentid`='199',`name`='课时管理',`app`='admin',`model`='courseware',`action`='show',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 205 [ RunTime:0.0376s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/courseware/show' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_auth_rule` SET `name`='admin/courseware/show',`module`='admin',`type`='admin_url',`title`='课时管理' WHERE `name` = 'admin/courseware/show' [ RunTime:0.0319s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0032s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-05-05T18:46:44+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=menu&a=edit&id=205
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-05T18:51:25+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=Courseware&a=show
+ERR: 无法加载控制器:Courseware
+
