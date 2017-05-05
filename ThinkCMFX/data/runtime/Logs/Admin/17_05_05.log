@@ -650,3 +650,21 @@ ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
 [ 2017-05-05T14:46:30+08:00 ] 192.168.50.149 /junwei1/ThinkCMFX/index.php?g=admin&m=course&a=get_class_list
 ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
 
+[ 2017-05-05T14:50:17+08:00 ] 192.168.50.149 /junwei1/ThinkCMFX/index.php?g=admin&m=course&a=get_class_list
+ERR: SQLSTATE[HY000] [1049] Unknown database 'thinkcmf'
+
+[ 2017-05-05T15:06:47+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001541s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003441s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001668s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001720s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.1456s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.1622s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-05 15:06:47',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.1060s ]
+

@@ -1,52 +1,52 @@
 <?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<!-- Set render engine for 360 browser -->
-	<meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- HTML5 shim for IE8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
     <script src="/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
-	<link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
     <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
     <link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
     <link href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
-		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
-		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
-		.table-list{margin-bottom: 0px;}
-	</style>
-	<!--[if IE 7]>
-	<!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+        form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
+        .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
+        .table-list{margin-bottom: 0px;}
+    </style>
+    <!--[if IE 7]>
+    <!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
     <link  href="/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
-	<![endif]-->
-	<script type="text/javascript">
-	//全局变量
-	var GV = {
-	    ROOT: "/ThinkCMFX/",
-	    WEB_ROOT: "/ThinkCMFX/",
-	    JS_ROOT: "public/js/",
-	    APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
-	};
-	</script>
+    <![endif]-->
+    <script type="text/javascript">
+        //全局变量
+        var GV = {
+            ROOT: "/ThinkCMFX/",
+            WEB_ROOT: "/ThinkCMFX/",
+            JS_ROOT: "public/js/",
+            APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
+        };
+    </script>
     <script src="/ThinkCMFX/public/js/jquery.js"></script>
     <script src="/ThinkCMFX/public/js/wind.js"></script>
     <script src="/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
-    	$(function(){
-    		$("[data-toggle='tooltip']").tooltip();
-    	});
+        $(function(){
+            $("[data-toggle='tooltip']").tooltip();
+        });
     </script>
-<?php if(APP_DEBUG): ?><style>
-		#think_page_trace_open{
-			z-index:9999;
-		}
-	</style><?php endif; ?>
+    <?php if(APP_DEBUG): ?><style>
+            #think_page_trace_open{
+                z-index:9999;
+            }
+        </style><?php endif; ?>
     <style>
         body{ padding:50px 0 0 50px;}
         .datainp{ width:200px; height:30px; border:1px #ccc solid;}
@@ -79,7 +79,7 @@
     <li ><a href="<?php echo U('Course/show');?>"  target="_self">课堂列表</a></li>
 
 </ul>
-    <form action="<?php echo U('Course/create');?>" class="well form-search" method="post" >
+<form action="<?php echo U('Course/create');?>" class="well form-search" method="post" >
 
     <div class="box box-default">
 
@@ -89,7 +89,7 @@
                     <th width="80">课堂类型</th>
                     <td>
                         <label><input name="type" type="radio" value="0" />&nbsp&nbsp&nbsp大讲堂
-                        <input name="type" type="radio" value="1" />&nbsp&nbsp&nbsp小班课 </label>
+                            <input name="type" type="radio" value="1" />&nbsp&nbsp&nbsp小班课 </label>
                     </td>
                 </tr>
                 <tr>
@@ -102,7 +102,7 @@
                 <tr>
                     <th width="80">课时数量</th>
                     <td>
-                            <input name="num_class" type="text"  />
+                        <input name="num_class" type="text"  />
                     </td>
                 </tr>
                 <tr>
@@ -146,7 +146,7 @@
                     <th width="80">讲师</th>
                     <td>
                         <select name="lector_id"  class="normal_select">
-                                <option value="请选择">请选择</option>
+                            <option value="请选择">请选择</option>
                             <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$vo): ?><option value="<?php echo ($vo["l_id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
 
 
@@ -157,8 +157,8 @@
                     <th width="80">适用人群</th>
                     <td>
                         <select name="people_id"  class="normal_select">
-                                <option value="请选择">请选择</option>
-                                <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): ?><option value="<?php echo ($va["p_id"]); ?>"><?php echo ($va["people"]); ?></option><?php endforeach; endif; ?>
+                            <option value="请选择">请选择</option>
+                            <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): ?><option value="<?php echo ($va["p_id"]); ?>"><?php echo ($va["people"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </td>
                 </tr>
@@ -179,6 +179,6 @@
         <button class="btn btn-success" type="submit">提交</button>
         <button type="reset"  class="btn btn-danger">重置</button>
     </div>
-    </form>
+</form>
 </div>
 </body>

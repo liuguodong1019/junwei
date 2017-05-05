@@ -11,7 +11,7 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
+
 	<link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
     <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
     <link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
@@ -22,8 +22,7 @@
 		.table-list{margin-bottom: 0px;}
 	</style>
 	<!--[if IE 7]>
-	<!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
 	<![endif]-->
 	<script type="text/javascript">
 	//全局变量
@@ -47,30 +46,6 @@
 			z-index:9999;
 		}
 	</style><?php endif; ?>
-    <style>
-        body{ padding:50px 0 0 50px;}
-        .datainp{ width:200px; height:30px; border:1px #ccc solid;}
-        .datep{ margin-bottom:40px;}
-    </style>
-</html>
-<script type="text/javascript">
-    //jeDate.skin('gray');
-    jeDate({
-        dateCell:"#indate",//isinitVal:true,
-        format:"YYYY-MM",
-        isTime:false, //isClear:false,
-        minDate:"2015-10-19 00:00:00",
-        maxDate:"2016-11-8 00:00:00"
-    })
-    jeDate({
-        dateCell:"#dateinfo",
-        format:"YYYY年MM月DD日 hh:mm:ss",
-        isinitVal:true,
-        isTime:true, //isClear:false,
-        minDate:"2014-09-19 00:00:00",
-        okfun:function(val){alert(val)}
-    })
-</script>
 </head>
 <body>
 <div class="wrap js-check-wrap">

@@ -7,7 +7,7 @@
     <li ><a href="{:U('Course/show')}"  target="_self">课堂列表</a></li>
 
 </ul>
-    <form action="{:U('Course/create')}" class="well form-search" method="post" >
+<form action="{:U('Course/create')}" class="well form-search" method="post" >
 
     <div class="box box-default">
 
@@ -17,7 +17,7 @@
                     <th width="80">课堂类型</th>
                     <td>
                         <label><input name="type" type="radio" value="0" />&nbsp&nbsp&nbsp大讲堂
-                        <input name="type" type="radio" value="1" />&nbsp&nbsp&nbsp小班课 </label>
+                            <input name="type" type="radio" value="1" />&nbsp&nbsp&nbsp小班课 </label>
                     </td>
                 </tr>
                 <tr>
@@ -30,7 +30,7 @@
                 <tr>
                     <th width="80">课时数量</th>
                     <td>
-                            <input name="num_class" type="text"  />
+                        <input name="num_class" type="text"  />
                     </td>
                 </tr>
                 <tr>
@@ -74,7 +74,7 @@
                     <th width="80">讲师</th>
                     <td>
                         <select name="lector_id"  class="normal_select">
-                                <option value="请选择">请选择</option>
+                            <option value="请选择">请选择</option>
                             <foreach name = "array['lector']" item = "vo">
                                 <option value="{$vo.l_id}">{$vo.name}</option>
                             </foreach>
@@ -87,10 +87,10 @@
                     <th width="80">适用人群</th>
                     <td>
                         <select name="people_id"  class="normal_select">
-                                <option value="请选择">请选择</option>
-                                <foreach name = "array['people']" item = "va">
-                                    <option value="{$va.p_id}">{$va.people}</option>
-                                </foreach>
+                            <option value="请选择">请选择</option>
+                            <foreach name = "array['people']" item = "va">
+                                <option value="{$va.p_id}">{$va.people}</option>
+                            </foreach>
                         </select>
                     </td>
                 </tr>
@@ -113,6 +113,6 @@
         <button class="btn btn-success" type="submit">提交</button>
         <button type="reset"  class="btn btn-danger">重置</button>
     </div>
-    </form>
+</form>
 </div>
 </body>
