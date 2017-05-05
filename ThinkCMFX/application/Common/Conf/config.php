@@ -94,18 +94,18 @@ $configs= array(
         	'__STATICS__' => __ROOT__.'/statics/',
             '__WEB_ROOT__'=>__ROOT__
         ),
-            'succ' => array(
-            0 => 0,
-            1 => -1,
+        'succ' => array(
+            0 => 1,
+            1 => 0,
             2 => 101,
             3 => 102,
         ),
-                'mess' =>array(
+        'mess' =>array(
             0 => '调用成功',
             1 => '调用失败',
             2 => '参数错误',
             3 => '请求方式错误',
-),
+        ),
 );
 
 return  array_merge($configs,$db,$runtime_config);

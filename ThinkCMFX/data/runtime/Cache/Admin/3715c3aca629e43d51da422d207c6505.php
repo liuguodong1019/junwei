@@ -79,17 +79,16 @@
     <li ><a href="<?php echo U('Course/show');?>"  target="_self">课堂列表</a></li>
 
 </ul>
-<form action="<?php echo U('Course/create');?>" class="well form-search" method="post" >
+    <form action="<?php echo U('Course/create');?>" class="well form-search" method="post" >
 
     <div class="box box-default">
-
         <div class="box-body">
             <table width="100%" cellpadding="2" cellspacing="2" >
                 <tr>
                     <th width="80">课堂类型</th>
                     <td>
                         <label><input name="type" type="radio" value="0" />&nbsp&nbsp&nbsp大讲堂
-                            <input name="type" type="radio" value="1" />&nbsp&nbsp&nbsp小班课 </label>
+                        <input name="type" type="radio" value="1" />&nbsp&nbsp&nbsp小班课 </label>
                     </td>
                 </tr>
                 <tr>
@@ -102,7 +101,7 @@
                 <tr>
                     <th width="80">课时数量</th>
                     <td>
-                        <input name="num_class" type="text"  />
+                            <input name="num_class" type="text"  />
                     </td>
                 </tr>
                 <tr>
@@ -146,7 +145,7 @@
                     <th width="80">讲师</th>
                     <td>
                         <select name="lector_id"  class="normal_select">
-                            <option value="请选择">请选择</option>
+                                <option value="请选择">请选择</option>
                             <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$vo): ?><option value="<?php echo ($vo["l_id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
 
 
@@ -157,8 +156,8 @@
                     <th width="80">适用人群</th>
                     <td>
                         <select name="people_id"  class="normal_select">
-                            <option value="请选择">请选择</option>
-                            <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): ?><option value="<?php echo ($va["p_id"]); ?>"><?php echo ($va["people"]); ?></option><?php endforeach; endif; ?>
+                                <option value="请选择">请选择</option>
+                                <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): ?><option value="<?php echo ($va["p_id"]); ?>"><?php echo ($va["people"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </td>
                 </tr>
@@ -179,6 +178,6 @@
         <button class="btn btn-success" type="submit">提交</button>
         <button type="reset"  class="btn btn-danger">重置</button>
     </div>
-</form>
+    </form>
 </div>
 </body>

@@ -25,6 +25,6 @@ class SubmitController extends Controller
             'code'=>$code,
             'mess'=>$mess,
             'data'=>NULL
-        ]);die;
+        ]);
     }
 }

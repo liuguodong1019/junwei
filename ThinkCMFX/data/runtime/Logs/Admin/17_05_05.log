@@ -668,3 +668,33 @@ SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.1456s ]
 SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.1622s ]
 SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-05 15:06:47',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.1060s ]
 
+[ 2017-05-05T15:32:25+08:00 ] 192.168.50.171 /junwei1/ThinkCMFX/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001356s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003453s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001750s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001800s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0300s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0106s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='192.168.50.171',`last_login_time`='2017-05-05 15:32:25',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0397s ]
+
+[ 2017-05-05T18:01:08+08:00 ] 192.168.50.79 /junwei1/ThinkCMFX/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008012s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010355s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.006931s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.007029s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.1103s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0362s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0139s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='192.168.50.79',`last_login_time`='2017-05-05 18:01:08',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0947s ]
+
