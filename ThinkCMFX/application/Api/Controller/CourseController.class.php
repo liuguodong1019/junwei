@@ -10,7 +10,7 @@ class CourseController extends Controller
     public function get_class_list()
     {
         $succ = C('status');
-        $mess = C('meg');
+        $mess = C('msg');
         $model = new SubmitController();
         if (IS_GET) {
             $course = M('course');
@@ -45,7 +45,7 @@ class CourseController extends Controller
     public function get_class()
     {
         $succ = C('status');
-        $mess = C('meg');
+        $mess = C('msg');
         $model = new SubmitController();
         if (IS_GET) {
             $id = I('get.id');
@@ -78,7 +78,7 @@ class CourseController extends Controller
     public function open_class ()
     {
         $succ = C('status');
-        $mess = C('meg');
+        $mess = C('msg');
         $model = new SubmitController();
         if (IS_GET) {
             $course = M('course');
@@ -113,7 +113,7 @@ class CourseController extends Controller
     public function vip ()
     {
         $succ = C('status');
-        $mess = C('meg');
+        $mess = C('msg');
         $model = new SubmitController();
         if (IS_GET) {
             $course = M('course');
@@ -148,7 +148,7 @@ class CourseController extends Controller
     public function live_end ()
     {
         $succ = C('status');
-        $mess = C('meg');
+        $mess = C('msg');
         $model = new SubmitController();
         if (IS_GET) {
             $id = I('get.id');
@@ -179,7 +179,7 @@ class CourseController extends Controller
     public function past_live()
     {
         $succ = C('status');
-        $mess = C('meg');
+        $mess = C('msg');
         $course = M('course');
         $model = new SubmitController();
         if (IS_GET) {
