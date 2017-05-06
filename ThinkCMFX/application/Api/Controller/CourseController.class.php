@@ -9,8 +9,8 @@ class CourseController extends Controller
      */
     public function get_class_list()
     {
-        $succ = C('succ');
-        $mess = C('mess');
+        $succ = C('status');
+        $mess = C('meg');
         $model = new SubmitController();
         if (IS_GET) {
             $course = M('course');
@@ -44,8 +44,8 @@ class CourseController extends Controller
      */
     public function get_class()
     {
-        $succ = C('succ');
-        $mess = C('mess');
+        $succ = C('status');
+        $mess = C('meg');
         $model = new SubmitController();
         if (IS_GET) {
             $id = I('get.id');
@@ -77,8 +77,8 @@ class CourseController extends Controller
      */
     public function open_class ()
     {
-        $succ = C('succ');
-        $mess = C('mess');
+        $succ = C('status');
+        $mess = C('meg');
         $model = new SubmitController();
         if (IS_GET) {
             $course = M('course');
@@ -112,8 +112,8 @@ class CourseController extends Controller
      */
     public function vip ()
     {
-        $succ = C('succ');
-        $mess = C('mess');
+        $succ = C('status');
+        $mess = C('meg');
         $model = new SubmitController();
         if (IS_GET) {
             $course = M('course');
@@ -147,8 +147,8 @@ class CourseController extends Controller
      */
     public function live_end ()
     {
-        $succ = C('succ');
-        $mess = C('mess');
+        $succ = C('status');
+        $mess = C('meg');
         $model = new SubmitController();
         if (IS_GET) {
             $id = I('get.id');
@@ -178,8 +178,8 @@ class CourseController extends Controller
      */
     public function past_live()
     {
-        $succ = C('succ');
-        $mess = C('mess');
+        $succ = C('status');
+        $mess = C('meg');
         $course = M('course');
         $model = new SubmitController();
         if (IS_GET) {

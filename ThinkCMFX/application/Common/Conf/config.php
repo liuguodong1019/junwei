@@ -94,13 +94,13 @@ $configs= array(
         	'__STATICS__' => __ROOT__.'/statics/',
             '__WEB_ROOT__'=>__ROOT__
         ),
-        'succ' => array(
+        'status' => array(
             0 => 1,
             1 => 0,
             2 => 101,
             3 => 102,
         ),
-        'mess' =>array(
+        'msg' =>array(
             0 => '调用成功',
             1 => '调用失败',
             2 => '参数错误',
