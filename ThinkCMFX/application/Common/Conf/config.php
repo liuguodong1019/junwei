@@ -94,6 +94,7 @@ $configs= array(
         	'__STATICS__' => __ROOT__.'/statics/',
             '__WEB_ROOT__'=>__ROOT__
         ),
+
         'status' => array(
             0 => 1,
             1 => 0,
