@@ -17,7 +17,7 @@ class CourseController extends Controller
             $page = htmlspecialchars(trim(I('get.page')));
             if ($page !== NULL) {
                 $data = $course
-                    ->field('id,subject,now_price,old_price,name,cover,num_class,status,is_free')
+                    ->field('id,subject,startDate,invalidDate,now_price,old_price,name,cover,num_class,status,is_free')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
@@ -29,13 +29,13 @@ class CourseController extends Controller
                         'data' => $data
                     ]);die;
                 } else {
-                    echo $model::state($succ[1], $mess[1]);
+                    echo $model::state($succ[0], $mess[0],$data = null);die;
                 }
             } else {
-                echo $model::state($succ[2], $mess[2]);
+                echo $model::state($succ[2], $mess[2]);die;
             }
         } else {
-            echo $model::state($succ[3], $mess[3]);
+            echo $model::state($succ[3], $mess[3]);die;
         }
     }
 
@@ -65,10 +65,10 @@ class CourseController extends Controller
                 ]);die;
 
             } else {
-                echo $model::state($succ[2], $mess[2]);
+                echo $model::state($succ[2], $mess[2]);die;
             }
         } else {
-            echo $model::state($succ[3], $mess[3]);
+            echo $model::state($succ[3], $mess[3]);die;
         }
     }
 
@@ -97,13 +97,13 @@ class CourseController extends Controller
                         'data' => $data
                     ]);die;
                 } else {
-                    echo $model::state($succ[1], $mess[1]);
+                    echo $model::state($succ[0], $mess[0],$data = null);die;
                 }
             } else {
-                echo $model::state($succ[2], $mess[2]);
+                echo $model::state($succ[2], $mess[2]);die;
             }
         } else {
-            echo $model::state($succ[3], $mess[3]);
+            echo $model::state($succ[3], $mess[3]);die;
         }
     }
 
@@ -132,13 +132,13 @@ class CourseController extends Controller
                         'data' => $data
                     ]);die;
                 } else {
-                    echo $model::state($succ[1], $mess[1]);
+                    echo $model::state($succ[0], $mess[0],$data = null);die;
                 }
             } else {
-                echo $model::state($succ[2], $mess[2]);
+                echo $model::state($succ[2], $mess[2]);die;
             }
         } else {
-            echo $model::state($succ[3], $mess[3]);
+            echo $model::state($succ[3], $mess[3]);die;
         }
     }
 
@@ -164,13 +164,13 @@ class CourseController extends Controller
                         ]);die;
                     }
                 }else {
-                    echo $model::state($succ[2], $mess[2]);
+                    echo $model::state($succ[2], $mess[2]);die;
                 }
             }else {
-                echo $model::state($succ[2], $mess[2]);
+                echo $model::state($succ[2], $mess[2]);die;
             }
         }else {
-            echo $model::state($succ[3], $mess[3]);
+            echo $model::state($succ[3], $mess[3]);die;
         }
     }
     /**
@@ -198,13 +198,13 @@ class CourseController extends Controller
                         'data' => $data
                     ]);die;
                 } else {
-                    echo $model::state($succ[1], $mess[1]);
+                    echo $model::state($succ[0], $mess[0],$data = null);die;
                 }
             } else {
-                echo $model::state($succ[2], $mess[2]);
+                echo $model::state($succ[2], $mess[2]);die;
             }
         } else {
-            echo $model::state($succ[3], $mess[3]);
+            echo $model::state($succ[3], $mess[3]);die;
         }
     }
 }

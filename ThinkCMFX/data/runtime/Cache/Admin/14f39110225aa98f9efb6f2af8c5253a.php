@@ -11,32 +11,56 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
+<<<<<<< HEAD
     <script src="/public/simpleboot/jedate/jedate.js"></script>
     <link href="/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
     <link href="/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
     <link href="/public/js/artDialog/skins/default.css" rel="stylesheet" />
     <link href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+=======
+    <script src="/junwei1/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/junwei1/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/junwei1/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/junwei1/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/junwei1/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+>>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
+<<<<<<< HEAD
     <!--<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
     <link  href="/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+=======
+    <!--<link rel="stylesheet" href="/junwei1/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/junwei1/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+>>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
+<<<<<<< HEAD
             ROOT: "/",
             WEB_ROOT: "/",
+=======
+            ROOT: "/junwei1/ThinkCMFX/",
+            WEB_ROOT: "/junwei1/ThinkCMFX/",
+>>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
+<<<<<<< HEAD
     <script src="/public/js/jquery.js"></script>
     <script src="/public/js/wind.js"></script>
     <script src="/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+=======
+    <script src="/junwei1/ThinkCMFX/public/js/jquery.js"></script>
+    <script src="/junwei1/ThinkCMFX/public/js/wind.js"></script>
+    <script src="/junwei1/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+>>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -88,7 +112,11 @@ li {
 		<h4 class="well"><?php echo L('SYSTEM_NOTIFICATIONS');?></h4>
 		<div class="home_info">
 			<ul id="thinkcmf_notices">
+<<<<<<< HEAD
 				<li><img src="/admin/themes/simplebootx/Public/assets/images/loading.gif"style="vertical-align: middle;" /><span style="display: inline-block; vertical-align: middle;">加载中...</span></li>
+=======
+				<li><img src="/junwei1/ThinkCMFX/admin/themes/simplebootx/Public/assets/images/loading.gif"style="vertical-align: middle;" /><span style="display: inline-block; vertical-align: middle;">加载中...</span></li>
+>>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
 			</ul>
 		</div>
 		<h4 class="well"><?php echo L('SYSTEM_INFORMATIONS');?></h4>
@@ -126,7 +154,11 @@ li {
 			</ul>
 		</div>
 	</div>
+<<<<<<< HEAD
 	<script src="/public/js/common.js"></script>
+=======
+	<script src="/junwei1/ThinkCMFX/public/js/common.js"></script>
+>>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
 	<?php $lang_set=defined('LANG_SET')?LANG_SET:''; $thinkcmf_version=defined('THINKCMF_VERSION')?THINKCMF_VERSION:''; ?>
 	<script>
 		//获取官方通知
