@@ -14,10 +14,10 @@ class CourseController extends Controller
         $model = new SubmitController();
         if (IS_GET) {
             $course = M('course');
-            $page = htmlspecialchars(trim(I('get.page')));
+            $page = I('get.page');
             if ($page !== NULL) {
                 $data = $course
-                    ->field('id,subject,startDate,invalidDate,now_price,old_price,name,cover,num_class,status,is_free')
+                    ->field('id,subject,startDate,invalidDate,now_price,old_price,name,cover,num_class,status,is_free,number,stu_token')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
@@ -48,7 +48,7 @@ class CourseController extends Controller
         $mess = C('mess');
         $model = new SubmitController();
         if (IS_GET) {
-            $id = htmlspecialchars(trim(I('get.id')));
+            $id = I('get.id');
 
             $data = M('course')
                 ->field('id,subject,now_price,name,num_class,cover,people,book,introduction')
@@ -56,7 +56,7 @@ class CourseController extends Controller
                 ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                 ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
                 ->where("id = $id")->find();
-            $data = htmlspecialchars(trim($data));
+
             if (!empty($data)) {
                 echo json_encode([
                     'code' => $succ[0],
@@ -85,7 +85,7 @@ class CourseController extends Controller
             $page = I('get.page');
             if ($page !== NULL) {
                 $data = $course
-                    ->field('id,subject,now_price,old_price,name,startdate,invaliddate,cover,num_class,status')
+                    ->field('id,subject,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,number,stu_token')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
@@ -120,7 +120,7 @@ class CourseController extends Controller
             $page = I('get.page');
             if ($page !== NULL) {
                 $data = $course
-                    ->field('id,subject,now_price,old_price,name,startdate,invaliddate,cover,num_class,status')
+                    ->field('id,subject,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,number,stu_token')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
@@ -186,7 +186,7 @@ class CourseController extends Controller
             $page = I('get.page');
             if ($page !== NULL) {
                 $data = $course
-                    ->field('id,subject,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_free')
+                    ->field('id,subject,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_free,number,stu_token,reply_url')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')

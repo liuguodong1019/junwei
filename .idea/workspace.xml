@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Classhour/create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClasshourController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/lang/Admin/Lang/zh-cn/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/lang/Admin/Lang/zh-cn/admin_menu.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/14f39110225aa98f9efb6f2af8c5253a.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/14f39110225aa98f9efb6f2af8c5253a.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/92f738679a8b52d9d9d6545eeacc3b7f.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/92f738679a8b52d9d9d6545eeacc3b7f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/Menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/Menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_05.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_05.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Api/17_05_05.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Api/17_05_05.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,17 +24,17 @@
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="42" />
+              <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClasshourController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClasshourController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClasshourController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            <state relative-caret-position="320">
+              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -50,18 +43,18 @@
       <file leaf-file-name="create.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Classhour/create.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+            <state relative-caret-position="1173">
+              <caret line="51" column="33" lean-forward="false" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CourseController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+            <state relative-caret-position="4255">
+              <caret line="188" column="144" lean-forward="false" selection-start-line="188" selection-start-column="144" selection-end-line="188" selection-end-column="144" />
               <folding />
             </state>
           </provider>
@@ -70,7 +63,7 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
+            <state relative-caret-position="2461">
               <caret line="107" column="24" lean-forward="false" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
               <folding />
             </state>
@@ -105,10 +98,10 @@
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/header.html" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/SubmitController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/Classhour.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClasshourController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Classhour/create.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" />
       </list>
     </option>
   </component>
@@ -142,6 +135,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,8 +303,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,17 +391,18 @@
       <workItem from="1493876010851" duration="13035000" />
       <workItem from="1493945748587" duration="25714000" />
       <workItem from="1493981791157" duration="4398000" />
+      <workItem from="1494031689614" duration="2813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43147000" />
+    <option name="totallyTimeSpent" value="45960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25725192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2610687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -440,6 +434,46 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClasshourController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Classhour/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2461">
+          <caret line="107" column="24" lean-forward="false" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
@@ -458,7 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1265">
           <caret line="55" column="52" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -489,7 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1587">
           <caret line="69" column="48" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -512,10 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1449">
           <caret line="65" column="23" lean-forward="false" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
-          <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
-            <marker date="1493966058131" expanded="true" signature="2414:2490" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -625,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-828">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2461">
           <caret line="4" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,16 +689,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1288">
           <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
-            <marker date="1493966058131" expanded="true" signature="2414:2490" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
+        <state relative-caret-position="2461">
           <caret line="107" column="24" lean-forward="false" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
           <folding />
         </state>
@@ -682,7 +703,7 @@
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="42" />
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -691,30 +712,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="60" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Classhour/create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        <state relative-caret-position="1173">
+          <caret line="51" column="33" lean-forward="false" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClasshourController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        <state relative-caret-position="320">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4255">
+          <caret line="188" column="144" lean-forward="false" selection-start-line="188" selection-start-column="144" selection-end-line="188" selection-end-column="144" />
           <folding />
         </state>
       </provider>
