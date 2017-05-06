@@ -9,7 +9,6 @@
 namespace Admin\Controller;
 
 use Common\Controller\AdminbaseController;
-
 use Api\Controller\ResponseController;
 
 /**
@@ -92,7 +91,7 @@ class CourseController extends AdminbaseController
             $invalidDate = I('post.invalidDate');
             //调用创建实时课堂接口
             $resource = $response::create_course($subject, $loginName, $password, $startDate, $invalidDate);
-//            print_r($resource);die;
+
             $data['number'] = $resource['number'];
             $data['stu_token'] = $resource['studentClientToken'];
             $data['class_id'] = $resource['id'];
