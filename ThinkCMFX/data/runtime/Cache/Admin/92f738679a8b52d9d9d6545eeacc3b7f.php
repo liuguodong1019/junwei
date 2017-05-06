@@ -11,6 +11,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <<<<<<< HEAD
+<link href="/junwei/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+<link href="/junwei/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+<link href="/junwei/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css?page=index"  rel="stylesheet" type="text/css">
+=======
+<<<<<<< HEAD
 <link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
 <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
 <link href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css?page=index"  rel="stylesheet" type="text/css">
@@ -31,18 +36,23 @@
 <link href="/junwei1/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
 <link href="/junwei1/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css?page=index"  rel="stylesheet" type="text/css">
 >>>>>>> 8157ddf7b167fd1663bd0eb83ce3b2822e2cd7a2
+>>>>>>> a971add2b08a5472b406af0e26ca3ff8004ca6a8
 <!--[if IE 7]>
-	<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+	<link rel="stylesheet" href="/junwei/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
 <![endif]-->
-<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/simplebootadminindex.min.css?">
-<link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
+<link rel="stylesheet" href="/junwei/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/simplebootadminindex.min.css?">
+<link href="/junwei/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
 <!--[if lte IE 8]>
+<<<<<<< HEAD
+	<link rel="stylesheet" href="/junwei/ThinkCMFX/public/simpleboot/css/simplebootadminindex-ie.css?" />
+=======
 <<<<<<< HEAD
 	<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/css/simplebootadminindex-ie.css?" />
 =======
 	<link rel="stylesheet" href="/junwei1/ThinkCMFX/public/simpleboot/css/simplebootadminindex-ie.css?" />
 >>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
 >>>>>>> 8157ddf7b167fd1663bd0eb83ce3b2822e2cd7a2
+>>>>>>> a971add2b08a5472b406af0e26ca3ff8004ca6a8
 <![endif]-->
 <style>
 .navbar .nav_shortcuts .btn{margin-top: 5px;}
@@ -64,6 +74,10 @@
 var GV = {
 	HOST:"<?php echo ($_SERVER['HTTP_HOST']); ?>",
 <<<<<<< HEAD
+    ROOT: "/junwei/ThinkCMFX/",
+    WEB_ROOT: "/junwei/ThinkCMFX/",
+=======
+<<<<<<< HEAD
     ROOT: "/ThinkCMFX/",
     WEB_ROOT: "/ThinkCMFX/",
 =======
@@ -75,6 +89,7 @@ var GV = {
     WEB_ROOT: "/junwei1/ThinkCMFX/",
 >>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
 >>>>>>> 8157ddf7b167fd1663bd0eb83ce3b2822e2cd7a2
+>>>>>>> a971add2b08a5472b406af0e26ca3ff8004ca6a8
     JS_ROOT: "public/js/"
 };
 </script>
@@ -182,6 +197,9 @@ right: initial !important;}
 				<div class="pull-left nav_shortcuts" >
 					
 <<<<<<< HEAD
+					<a class="btn btn-small btn-warning" href="/junwei/ThinkCMFX/" title="<?php echo L('WEBSITE_HOME_PAGE');?>" target="_blank">
+=======
+<<<<<<< HEAD
 					<a class="btn btn-small btn-warning" href="/ThinkCMFX/" title="<?php echo L('WEBSITE_HOME_PAGE');?>" target="_blank">
 =======
 <<<<<<< HEAD
@@ -190,6 +208,7 @@ right: initial !important;}
 					<a class="btn btn-small btn-warning" href="/junwei1/ThinkCMFX/" title="<?php echo L('WEBSITE_HOME_PAGE');?>" target="_blank">
 >>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
 >>>>>>> 8157ddf7b167fd1663bd0eb83ce3b2822e2cd7a2
+>>>>>>> a971add2b08a5472b406af0e26ca3ff8004ca6a8
 						<i class="fa fa-home"></i>
 					</a>
 					
@@ -215,6 +234,9 @@ right: initial !important;}
     						<?php if($admin['avatar']): ?><img class="nav-user-photo" width="30" height="30" src="<?php echo sp_get_user_avatar_url($admin['avatar']);?>" alt="<?php echo ($admin["user_login"]); ?>">
 							<?php else: ?>
 <<<<<<< HEAD
+								<img class="nav-user-photo" width="30" height="30" src="/junwei/ThinkCMFX/admin/themes/simplebootx/Public/assets/images/logo-18.png" alt="<?php echo ($admin["user_login"]); ?>"><?php endif; ?>
+=======
+<<<<<<< HEAD
 								<img class="nav-user-photo" width="30" height="30" src="/ThinkCMFX/admin/themes/simplebootx/Public/assets/images/logo-18.png" alt="<?php echo ($admin["user_login"]); ?>"><?php endif; ?>
 =======
 <<<<<<< HEAD
@@ -223,6 +245,7 @@ right: initial !important;}
 								<img class="nav-user-photo" width="30" height="30" src="/junwei1/ThinkCMFX/admin/themes/simplebootx/Public/assets/images/logo-18.png" alt="<?php echo ($admin["user_login"]); ?>"><?php endif; ?>
 >>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
 >>>>>>> 8157ddf7b167fd1663bd0eb83ce3b2822e2cd7a2
+>>>>>>> a971add2b08a5472b406af0e26ca3ff8004ca6a8
 							<span class="user-info">
 								<?php echo L('WELCOME_USER',array('username'=>empty($admin['user_nicename'])?$admin['user_login']:$admin['user_nicename']));?>
 							</span>
@@ -274,6 +297,11 @@ right: initial !important;}
 	</div>
 	
 <<<<<<< HEAD
+	<script src="/junwei/ThinkCMFX/public/js/jquery.js"></script>
+	<script src="/junwei/ThinkCMFX/public/js/wind.js"></script>
+	<script src="/junwei/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+=======
+<<<<<<< HEAD
 	<script src="/ThinkCMFX/public/js/jquery.js"></script>
 	<script src="/ThinkCMFX/public/js/wind.js"></script>
 	<script src="/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
@@ -288,6 +316,7 @@ right: initial !important;}
 	<script src="/junwei1/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
 >>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
 >>>>>>> 8157ddf7b167fd1663bd0eb83ce3b2822e2cd7a2
+>>>>>>> a971add2b08a5472b406af0e26ca3ff8004ca6a8
 	<script>
 	var ismenumin = $("#sidebar").hasClass("menu-min");
 	$(".nav-list").on( "click",function(event) {
@@ -324,6 +353,10 @@ right: initial !important;}
 	});
 	</script>
 <<<<<<< HEAD
+	<script src="/junwei/ThinkCMFX/public/js/common.js"></script>
+	<script src="/junwei/ThinkCMFX/admin/themes/simplebootx/Public/assets/js/index.js"></script>
+=======
+<<<<<<< HEAD
 	<script src="/ThinkCMFX/public/js/common.js"></script>
 	<script src="/ThinkCMFX/admin/themes/simplebootx/Public/assets/js/index.js"></script>
 =======
@@ -335,5 +368,6 @@ right: initial !important;}
 	<script src="/junwei1/ThinkCMFX/admin/themes/simplebootx/Public/assets/js/index.js"></script>
 >>>>>>> 732f6552d780b6d336a798cf0325a188e1db7bcf
 >>>>>>> 8157ddf7b167fd1663bd0eb83ce3b2822e2cd7a2
+>>>>>>> a971add2b08a5472b406af0e26ca3ff8004ca6a8
 </body>
 </html>
