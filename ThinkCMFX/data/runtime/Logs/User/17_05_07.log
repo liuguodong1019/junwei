@@ -1,0 +1,16 @@
+[ 2017-05-07T15:53:51+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000923s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002354s ]
+NOTIC: [8] Undefined index: url D:\laragon\www\junwei1\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2017-05-07T15:55:17+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000929s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002556s ]
+NOTIC: [8] Undefined index: url D:\laragon\www\junwei1\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
+
