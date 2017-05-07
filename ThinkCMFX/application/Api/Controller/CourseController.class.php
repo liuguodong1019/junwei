@@ -9,6 +9,7 @@ class CourseController extends Controller
      */
     public function get_class_list()
     {
+
         $succ = C('status');
         $mess = C('msg');
         $model = new SubmitController();
