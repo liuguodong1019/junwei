@@ -3,11 +3,11 @@
 <body>
 <div class="wrap js-check-wrap">
     <ul class="nav nav-tabs">
-        <li class="active"><a href="{:U('Course/show')}">课堂列表</a></li>
-        <li><a href="{:U('Course/create')}">添加课堂</a></li>
+        <li class="active"><a href="{:U('ClassHour/show')}">课时列表</a></li>
+        <li><a href="{:U('ClassHour/create')}">添加课时</a></li>
     </ul>
-    <form class="well form-search" method="post" action="{:U('Course/show')}">
-        课堂名称：
+    <form class="well form-search" method="post" action="{:U('ClassHour/show')}">
+        课时名称：
         <input type="text" name="keyword" style="width: 200px;" value="{$formget.keyword|default=''}"
                placeholder="请输入关键字...">
         <input type="submit" class="btn btn-primary" value="搜索"/>
@@ -23,11 +23,7 @@
                                              data-checklist="js-check-x"></label></th>
                 <th width="60">ID</th>
                 <th width="80">课堂主题</th>
-                <th width="80">现价</th>
-                <th width="80">原价</th>
-                <th width="80">讲师</th>
-                <th width="80">适用人群</th>
-                <th width="80">配发图书</th>
+                <th width="80">课时名称</th>
                 <th width="80">开始时间</th>
                 <th width="80">结束时间</th>
                 <th width="125">{:L('ACTIONS')}</th>
@@ -39,24 +35,20 @@
                                name="ids[]" value="{$vo.id}"></td>
                     <td><a>{$vo.id}</a></td>
                     <td>{$vo.course_name}</td>
-                    <td>{$vo.now_price}</td>
-                    <td>{$vo.old_price}</td>
-                    <td>{$vo.name}</td>
-                    <td>{$vo.people}</td>
-                    <td>{$vo.book}</td>
-                    <td>{$vo.startdate}</td>
-                    <td>{$vo.invaliddate}</td>
+                    <td>{$vo.subject}</td>
+                    <td>{$vo.startdate|date='Y-m-d H:i:s',###}</td>
+                    <td>{$vo.invaliddate|date='Y-m-d H:i:s',###}</td>
                     <td>
-                        <a href="{:U('Course/look',array('id'=>$vo['id']))}">{:L('LOOK')}</a>|
-                        <a href="{:U('Course/update',array('id'=>$vo['id']))}">{:L('EDIT')}</a>|
-                        <a href="{:U('Course/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+                        <a href="{:U('ClassHour/look',array('id'=>$vo['id']))}">{:L('LOOK')}</a>|
+                        <a href="{:U('ClassHour/update',array('id'=>$vo['id']))}">{:L('EDIT')}</a>|
+                        <a href="{:U('ClassHour/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
                     </td>
                 </tr>
             </foreach>
 
         </table>
         <div class="table-actions">
-            <button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Course/delete')}" data-subcheck="true" data-msg="你确定删除吗？">{:L('DELETE')}</button>
+            <button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('ClassHour/delete')}" data-subcheck="true" data-msg="你确定删除吗？">{:L('DELETE')}</button>
         </div>
         <div class="pagination">{$page}</div>
     </form>

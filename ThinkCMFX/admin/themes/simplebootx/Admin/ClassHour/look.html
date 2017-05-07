@@ -1,0 +1,47 @@
+<admintpl file="header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('ClassHour/look')}">课时信息</a></li>
+        <li><a href="{:U('ClassHour/show')}">课时列表</a></li>
+        <li><a href="{:U('ClassHour/create')}">添加课时</a></li>
+    </ul>
+    <table class="table table-hover table-bordered table-list">
+        <tr>
+            <th width="60">ID</th>
+            <th width="80">课堂主题</th>
+            <th width="80">课时名称</th>
+            <th width="80">开始时间</th>
+            <th width="80">结束时间</th>
+            <th width="80">讲师</th>
+            <th width="80">房间号</th>
+            <th width="80">学生口令</th>
+            <th width="80">课堂ID</th>
+            <th width="80">直播状态</th>
+            <th width="80">回放地址</th>
+        </tr>
+        <tr>
+            <td><a>{$data.id}</a></td>
+            <td>{$data.course_name}</td>
+            <td>{$data.subject}</td>
+            <td>{$data.startdate}</td>
+            <td>{$data.invaliddate}</td>
+            <td>{$data.name}</td>
+            <td>{$data.number}</td>
+            <td>{$data.class_id}</td>
+            <td>{$data.stu_token}</td>
+            <td>
+                <if condition="($data.status eq 1) "> 正在直播
+                    <elseif condition="$data.status eq 2"/> 直播结束
+                    <elseif condition="$data.status eq 3"/> 生成回放
+                    <else /> 未开始
+                </if>
+            </td>
+            <td>{$data.reply_url}</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

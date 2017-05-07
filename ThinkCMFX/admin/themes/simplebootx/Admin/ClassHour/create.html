@@ -3,20 +3,19 @@
 </head>
 <body>
 <ul class="nav nav-tabs">
-    <li class="active"><a href="{:U('Classhour/create')}"  target="_self">创建课时</a></li>
-    <li ><a href="{:U('Classhour/show')}"  target="_self">课时列表</a></li>
+    <li class="active"><a href="{:U('ClassHour/create')}"  target="_self">创建课时</a></li>
+    <li ><a href="{:U('ClassHour/show')}"  target="_self">课时列表</a></li>
 
 </ul>
-<form action="{:U('Classhour/create')}" class="well form-search" method="post" >
+<form action="{:U('ClassHour/create')}" class="well form-search" method="post" >
 
     <div class="box box-default">
         <div class="box-body">
             <table width="100%" cellpadding="2" cellspacing="2" >
-
                 <tr>
                     <th width="80">课时名称</th>
                     <td>
-                        <input type="text" name="name" value="" style="width: 300px"/>
+                        <input type="text" name="subject" value="" style="width: 300px"/>
                     </td>
                 </tr>
 
@@ -34,20 +33,23 @@
                     </td>
                 </tr>
                 <tr>
-                    <th width="80">课程简介</th>
-                    <td>
-                        <textarea name='introduction' id='e_answer' style='width:50%;height:100px;'></textarea>
-                    </td>
-                </tr>
-
-
-                <tr>
                     <th width="80">课堂名称</th>
                     <td>
-                        <select name="class_id"  class="normal_select">
+                        <select name="course_id"  class="normal_select">
                             <option value="请选择">请选择</option>
-                            <foreach name = "array['book']" item = "value">
-                                <option value="{$value.b_id}">{$value.book}</option>
+                            <foreach name = "course" item = "value">
+                                <option value="{$value.id}">{$value.course_name}</option>
+                            </foreach>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">讲师</th>
+                    <td>
+                        <select name="lector_id"  class="normal_select">
+                            <option value="请选择">请选择</option>
+                            <foreach name = "lector" item = "va">
+                                <option value="{$va.l_id}">{$va.name}</option>
                             </foreach>
                         </select>
                     </td>

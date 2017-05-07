@@ -16,31 +16,41 @@
             <table width="100%" cellpadding="2" cellspacing="2">
                 <tr>
                     <td>
-                        <input type="hidden" name="subject"  value = "{$array['subject']}">
-                        <input type="hidden" name="class_id"  value = "{$array['class_id']}">
-                        <input type="hidden" name="startDate" id="" value = "$array['startdate']">
-                        <input type="hidden" name="id"  value = "{$id}">
+                        <input type="hidden" name="subject" value="{$array['subject']}">
+                        <input type="hidden" name="class_id" value="{$array['class_id']}">
+                        <input type="hidden" name="startDate" id="" value="$array['startdate']">
+                        <input type="hidden" name="id" value="{$id}">
                     </td>
                 </tr>
                 <tr>
                     <th width="80">课堂类型</th>
                     <td>
-                        <label><input name="type" type="radio" value="{$data.type}"/>&nbsp&nbsp&nbsp大讲堂
+                        <if condition="($data.is_free eq 0)">
+                        <label><input name="type" type="radio" value="{$data.type}" checked/>&nbsp&nbsp&nbsp大讲堂
                             <input name="type" type="radio" value="{$data.type}"/>&nbsp&nbsp&nbsp小班课 </label>
+                            <else />
+                            <label><input name="type" type="radio" value="{$data.type}"/>&nbsp&nbsp&nbsp大讲堂
+                                <input name="type" type="radio" value="{$data.type}" checked/>&nbsp&nbsp&nbsp小班课 </label>
+                        </if>
                     </td>
                 </tr>
                 <tr>
                     <th width="80">是否实时</th>
                     <td>
-                        <label><input name="realtime" type="radio" value="1"/>&nbsp&nbsp&nbsp是
+                        <label><input name="realtime" type="radio" value="1" checked/>&nbsp&nbsp&nbsp是
                             <input name="realtime" type="radio" value="0"/>&nbsp&nbsp&nbsp否 </label>
                     </td>
                 </tr>
                 <tr>
                     <th width="80">收否收费</th>
                     <td>
-                        <label><input name="is_free" type="radio" value="{$data.is_free}"/>&nbsp&nbsp&nbsp公开课
-                            <input name="is_free" type="radio" value="{$data.is_free}"/>&nbsp&nbsp&nbspvip </label>
+                        <if condition="($data.is_free eq 1)">
+                            <label><input name="is_free" type="radio" value="{$data.is_free}" checked/>&nbsp&nbsp&nbsp公开课
+                                <input name="is_free" type="radio" value="{$data.is_free}"/>&nbsp&nbsp&nbspvip </label>
+                            <else />
+                            <label><input name="is_free" type="radio" value="{$data.is_free}"/>&nbsp&nbsp&nbsp公开课
+                                <input name="is_free" type="radio" value="{$data.is_free}" checked/>&nbsp&nbsp&nbspvip </label>
+                        </if>
                     </td>
                 </tr>
                 <tr>
@@ -52,7 +62,7 @@
                 <tr>
                     <th width="80">课程主题</th>
                     <td>
-                        <input type="text" name="subject" value="{$data.subject}" style="width: 300px"/>
+                        <input type="text" name="course_name" value="{$data.course_name}" style="width: 300px"/>
                     </td>
                 </tr>
                 <tr>
@@ -70,14 +80,18 @@
                 <tr>
                     <th width="80">开始时间</th>
                     <td>
-                        <input class="datainp" name = "startDate"  value="{$data.startdate}" id="datebut" type="text" placeholder="双击选择时间"  onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
+                        <input class="datainp" name="startDate" value="{$data.startdate}" id="datebut" type="text"
+                               placeholder="双击选择时间"
+                               onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
                 </tr>
 
                 <tr>
                     <th width="80">结束时间</th>
                     <td>
-                        <input class="datainp" name = "invalidDate" value="{$data.invaliddate}" id="datebut1" type="text" placeholder="双击选择时间"  onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
+                        <input class="datainp" name="invalidDate" value="{$data.invaliddate}" id="datebut1" type="text"
+                               placeholder="双击选择时间"
+                               onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
                 </tr>
                 <tr>

@@ -1,1 +1,1 @@
-a:0:{}
+a:1:{s:6:"static";a:5:{s:25:"api/course/get_class_list";s:14:"get_class_list";s:20:"api/course/get_class";s:9:"get_class";s:21:"api/course/open_class";s:10:"open_class";s:14:"api/course/vip";s:3:"vip";s:20:"api/course/past_live";s:9:"past_live";}}

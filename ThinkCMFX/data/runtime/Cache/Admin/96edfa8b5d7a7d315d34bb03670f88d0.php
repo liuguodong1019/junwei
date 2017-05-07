@@ -81,44 +81,37 @@
     </ul>
     <table class="table table-hover table-bordered table-list">
         <tr>
-            <th width="60">ID</th>
             <th width="80">课堂主题</th>
             <th width="80">现价</th>
             <th width="80">原价</th>
             <th width="80">讲师</th>
             <th width="80">课时数量</th>
             <th width="80">课堂类型</th>
-            <th width="80">直播状态</th>
-            <th width="80">是否收费</th>
+
         </tr>
         <tr>
-            <td><a><?php echo ($data["id"]); ?></a></td>
-            <td><?php echo ($data["subject"]); ?></td>
+            <td><?php echo ($data["course_name"]); ?></td>
             <td><?php echo ($data["now_price"]); ?></td>
             <td><?php echo ($data["old_price"]); ?></td>
             <td><?php echo ($data["name"]); ?></td>
             <td><?php echo ($data["num_class"]); ?></td>
             <td><?php echo ($data["type"]); ?></td>
-            <td><?php echo ($data["status"]); ?></td>
-            <td><?php echo ($data["is_free"]); ?></td>
+
         </tr>
         <tr>
-            <th width="80">课堂编号</th>
-            <th width="80">学生口令</th>
-            <th width="80">课堂ID</th>
-            <th width="80">回放地址</th>
-            <th width="80">回放口令</th>
+
+            <th width="80">直播状态</th>
+            <th width="80">是否收费</th>
             <th width="80">适用人群</th>
             <th width="80">配发图书</th>
             <th width="80">开始时间</th>
             <th width="80">结束时间</th>
+
         </tr>
         <tr>
-            <td><?php echo ($data["number"]); ?></td>
-            <td><?php echo ($data["stu_token"]); ?></td>
-            <td><?php echo ($data["class_id"]); ?></td>
-            <td><?php echo ($data["reply_url"]); ?></td>
-            <td><?php echo ($data["token"]); ?></td>
+
+            <td><?php echo ($data["status"]); ?></td>
+            <td><?php echo ($data["is_free"]); ?></td>
             <td><?php echo ($data["people"]); ?></td>
             <td><?php echo ($data["book"]); ?></td>
             <td><?php echo ($data["startdate"]); ?></td>

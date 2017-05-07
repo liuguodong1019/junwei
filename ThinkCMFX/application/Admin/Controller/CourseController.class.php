@@ -43,7 +43,7 @@ class CourseController extends AdminbaseController
                 ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                 ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                 ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                ->order('cmf_course.id')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+                ->order('UNIX_TIMESTAMP(startdate)')->limit($Page->firstRow . ',' . $Page->listRows)->select();
         }
         $this->assign('loginName', $loginName);
         $this->assign('password', $password);
@@ -84,30 +84,13 @@ class CourseController extends AdminbaseController
         $response = new ResponseController();
         if (IS_POST) {
             $data = I('');
-            $subject = I('post.subject');
-            $loginName = $junwei['loginname'];
-            $password = sp_authcode($junwei['password']);
-            $startDate = I('post.startDate');
-            $invalidDate = I('post.invalidDate');
-            //调用创建实时课堂接口
-            $resource = $response::create_course($subject, $loginName, $password, $startDate, $invalidDate);
-
-            $data['number'] = $resource['number'];
-            $data['stu_token'] = $resource['studentClientToken'];
-            $data['class_id'] = $resource['id'];
-            if ($resource['code'] == 0) {
-                if ($course->add($data)) {
-                    $this->success(L('ADD_SUCCESS'), U("Course/show"));
-                    exit();
-                } else {
-                    $this->error(L('ADD_FAILED'));
-                    exit();
-                }
+            if ($course->add($data)) {
+                $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                exit();
             } else {
                 $this->error(L('ADD_FAILED'));
                 exit();
             }
-
         }
         $array['lector'] = $lector->select();
         $array['people'] = $people->select();
@@ -126,7 +109,6 @@ class CourseController extends AdminbaseController
         $lector = M('lector');
         $people = M('people');
         $book = M('book');
-        $junwei = M('junwei')->find();
         if (IS_GET) {
             $id = I('get.id');
             if (!empty($id)) {
@@ -136,9 +118,6 @@ class CourseController extends AdminbaseController
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
                     ->where("id = $id")
                     ->find();
-                $array['subject'] = $data['subject'];
-                $array['class_id'] = $data['class_id'];
-                $array['startDate'] = $data['startdate'];
                 $lector = $lector->select();
                 $people = $people->select();
                 $book = $book->select();
@@ -153,23 +132,12 @@ class CourseController extends AdminbaseController
         if (IS_POST) {
             $id = I('post.id');
             $data = I('');
-            $loginName = $junwei['loginname'];
-            $password = sp_authcode($junwei['password']);
-            $realtime = I('post.realtime');
-            $startDate = I('post.startDate');
-            $subject = I('post.subject');
-            $class_id = I('post.class_id');
-            //调用修改实时课堂接口
-            $resource = $response::update_course($loginName, $password, $realtime, $startDate, $subject, $class_id);
-            $data['update_time'] = date('Y-m-d H:i:s');
-            if ($resource['code'] == 0) {
-                if ($course->where("id = $id")->save($data)) {
-                    $this->success(L('ADD_SUCCESS'), U("Course/show"));
-                    exit();
-                } else {
-                    $this->error(L("ADD_FAILED"));
-                    exit();
-                }
+            if ($course->where("id = $id")->save($data)) {
+                $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                exit();
+            } else {
+                $this->error(L("ADD_FAILED"));
+                exit();
             }
         }
         $this->display();
@@ -184,59 +152,35 @@ class CourseController extends AdminbaseController
         $response = new ResponseController();
         if (IS_GET) {
             if (isset($_GET['id'])) {
-                $class_id = I('class_id');
-                $junwei = M('junwei')->find();
-                $loginName = $junwei['loginname'];
-                $password = sp_authcode($junwei['password']);
-                //调用删除实时课堂接口
-                $resourec = $response::delete($loginName, $password, $class_id);
                 $id = intval(I("get.id"));
-                if ($resourec['code'] == 0) {
                     if ($course->where("id = $id")->delete() !== false) {
                         $this->success("删除成功！");
                     } else {
                         $this->error("删除失败！");
                     }
-                }
-
             }
         }
         if (isset($_POST['ids'])) {
             $ids = join(",", $_POST['ids']);
-            $rew = $course->where("id in ($ids)")->select();
-            $len = count($rew);
-            $junwei = M('junwei')->find();
-            $loginName = $junwei['loginname'];
-            $password = sp_authcode($junwei['password']);
-            foreach ($rew as $value) {
-                $class_id[] = $value['class_id'];
-            }
-            //调用删除实时课堂接口批量删除
-            $resourec = $response::delete($loginName, $password, $class_id);
-            $ids = join(",", $_POST['ids']);
-            if ($resourec['code'] == 0) {
-                if ($course->where("id in ($ids)")->delete() !== false) {
-                    $this->success("删除成功！");
-                } else {
-                    $this->error("删除失败！");
-                }
+            if ($course->where("id in ($ids)")->delete() !== false) {
+                $this->success("删除成功！");
             } else {
-                $this->error("操作有误");
+                $this->error("删除失败！");
             }
         }
     }
 
 
     /**
-     * 生成回放
+     * 直播结束生成回放
      */
     public function playback()
     {
-        $course = M('course');
+        $live = M('live');
         if (IS_GET) {
             $id = I('get.id');
             if (is_numeric($id)) {
-                $class_id = $course->where("id = $id")->getField('class_id');
+                $class_id = $live->where("id = $id")->getField('class_id');
                 $junwei = M('junwei')->find();
                 $response = new ResponseController();
                 $loginName = $junwei['loginname'];
@@ -247,8 +191,8 @@ class CourseController extends AdminbaseController
                     $data['number'] = $res['number'];
                     $data['status'] = 3;
                     $data['reply_url'] = $res['url'];
-                    if ($course->where("id = $id")->save($data)) {
-                        $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                    if ($live->where("id = $id")->save($data)) {
+                        $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
                         exit();
                     } else {
                         $this->error(L('ADD_FAILED'));

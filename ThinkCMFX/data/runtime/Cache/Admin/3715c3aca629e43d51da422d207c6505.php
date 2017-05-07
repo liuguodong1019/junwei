@@ -107,7 +107,7 @@
                 <tr>
                     <th width="80">课程主题</th>
                     <td>
-                        <input type="text" name="subject" value="" style="width: 300px"/>
+                        <input type="text" name="course_name" value="" style="width: 300px"/>
                     </td>
                 </tr>
                 <tr>
