@@ -22,8 +22,8 @@ class SubmitController extends Controller
 
     public static function state($code,$mess){
         return json_encode([
-            'code'=>$code,
-            'mess'=>$mess,
+            'status'=>$code,
+            'msg'=>$mess,
             'data'=>NULL
         ]);
     }

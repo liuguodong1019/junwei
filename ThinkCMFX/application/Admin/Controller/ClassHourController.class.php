@@ -88,9 +88,7 @@ class ClassHourController extends AdminbaseController
             $data['startDate'] = strtotime(I('post.startDate'));
             $data['invalidDate'] = strtotime(I('post.invalidDate'));
             $subject = I('post.subject');
-//            if (count($subject) < 2) {
-//                $this->redirect('create');exit();
-//            }
+
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             $startDate = I('post.startDate');
