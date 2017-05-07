@@ -317,3 +317,18 @@ ERR: 无法加载控制器:ThinkCMFX
 [ 2017-05-07T21:55:09+08:00 ] 127.0.0.1 /ThinkCMFX/ThinkCMFX/Lector/create_lector
 ERR: 无法加载控制器:ThinkCMFX
 
+[ 2017-05-07T22:46:47+08:00 ] 127.0.0.1 /ThinkCMFX/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001600s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003416s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001720s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001769s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0377s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0230s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-07 22:46:47',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0282s ]
+

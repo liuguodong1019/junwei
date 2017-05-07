@@ -1,0 +1,749 @@
+[ 2017-04-28T09:08:34+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001153s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002639s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001571s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001627s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0458s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0371s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-04-28 09:08:34',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.2008s ]
+
+[ 2017-04-28T09:30:36+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:15+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:15+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:15+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:16+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:16+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:16+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:16+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:16+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:18+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:31:18+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 1146:Table 'jun_wei.cmf_people' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_people`
+
+[ 2017-04-28T09:34:34+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2017-04-28T09:34:44+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2017-04-28T09:34:45+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2017-04-28T09:34:45+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2017-04-28T09:34:45+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2017-04-28T09:34:45+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: Think\Controller:assgin方法不存在！
+
+[ 2017-04-28T09:35:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=createLive
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Live/createLive.html
+
+[ 2017-04-28T09:35:41+08:00 ] 127.0.0.1 /index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T09:35:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T09:35:59+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=200
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T09:35:59+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=200
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T09:36:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001516s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002940s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001742s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001793s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0013s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `id` = 200 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `id` FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Live' AND `action` = 'create_live' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_menu` SET `parentid`='199',`name`='创建实时课堂',`app`='admin',`model`='Live',`action`='create_live',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 200 [ RunTime:0.1040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/live/create_live' LIMIT 1   [ RunTime:0.0679s ]
+SQL: SELECT `id` FROM `cmf_auth_rule` WHERE `name` = 'admin/live/createlive' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_auth_rule` SET `name`='admin/live/create_live',`module`='admin',`type`='admin_url',`title`='创建实时课堂' WHERE `id` = 186 [ RunTime:0.0342s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0020s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-28T09:36:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=200
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:10:42+08:00 ] 127.0.0.1 /index.php?g=Admin&m=People&a=update&id=1
+ERR: 模板不存在:admin/themes/simplebootx/Admin/People/update.html
+
+[ 2017-04-28T10:13:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=People&a=update
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_people` SET `people`='搞',`update_time`='1493345623' WHERE ( id =  )
+
+[ 2017-04-28T10:18:31+08:00 ] 127.0.0.1 /index.php?g=Admin&m=People&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001176s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002493s ]
+NOTIC: [2] Declaration of Admin\Controller\PeopleController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\ThinkCMFX\application\Admin\Controller\PeopleController.class.php 第 12 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001769s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001809s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_people` [ RunTime:0.0012s ]
+SQL: DELETE FROM `cmf_people` WHERE ( id in (1,2) ) [ RunTime:0.2473s ]
+
+[ 2017-04-28T10:18:42+08:00 ] 127.0.0.1 /index.php?g=Admin&m=People&a=delete&id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001092s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002575s ]
+NOTIC: [2] Declaration of Admin\Controller\PeopleController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\ThinkCMFX\application\Admin\Controller\PeopleController.class.php 第 12 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001281s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_people` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cmf_people` WHERE ( id = 3 ) [ RunTime:0.1641s ]
+
+[ 2017-04-28T10:30:49+08:00 ] 127.0.0.1 /index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:30:53+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=add&parentid=199&menuid=
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:31:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001573s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003923s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.004399s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004494s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0009s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'People' AND `action` = 'show' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `parentid` FROM `cmf_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','适用人群','admin','People','show','','','','1','0') [ RunTime:0.0481s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/people/show' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/people/show','admin','admin_url','适用人群') [ RunTime:0.0295s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0022s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-28T10:31:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:31:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=add&parentid=199&menuid=
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:32:21+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001648s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004307s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002276s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002348s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0013s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Book' AND `action` = 'show' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `parentid` FROM `cmf_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','配发图书','admin','Book','show','','','','1','0') [ RunTime:0.1223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/book/show' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `cmf_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/book/show','admin','admin_url','配发图书') [ RunTime:0.0575s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0020s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-28T10:32:21+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:32:28+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=add&parentid=199&menuid=
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:33:25+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002005s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003922s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001844s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001897s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0014s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'courseware' AND `action` = 'show' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `parentid` FROM `cmf_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','课件管理','admin','courseware','show','','','','1','0') [ RunTime:0.0490s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/courseware/show' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `cmf_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/courseware/show','admin','admin_url','课件管理') [ RunTime:0.0574s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0020s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-28T10:33:25+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:33:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Courseware&a=show
+ERR: 无法加载控制器:Courseware
+
+[ 2017-04-28T10:34:28+08:00 ] 127.0.0.1 /index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:34:33+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:34:44+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=200
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:34:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001889s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004074s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.004851s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004929s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `id` = 200 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `id` FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Live' AND `action` = 'create_live' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_menu` SET `parentid`='199',`name`='实时课堂',`app`='admin',`model`='Live',`action`='create_live',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 200 [ RunTime:0.0399s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/live/create_live' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_auth_rule` SET `name`='admin/live/create_live',`module`='admin',`type`='admin_url',`title`='实时课堂' WHERE `name` = 'admin/live/create_live' [ RunTime:0.0291s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0021s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-28T10:34:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=200
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:38:25+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Book&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001339s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002949s ]
+NOTIC: [2] Declaration of Admin\Controller\BookController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\ThinkCMFX\application\Admin\Controller\BookController.class.php 第 12 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001630s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001660s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_book` [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_book` WHERE ( id in (2) ) [ RunTime:0.1358s ]
+
+[ 2017-04-28T10:38:39+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Book&a=show
+ERR: 1054:Unknown column 'people' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_book` WHERE ( people like '%爱%' ) ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T10:51:42+08:00 ] 127.0.0.1 /index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:51:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:51:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:51:50+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:51:58+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=201
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:52:14+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001792s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004050s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002921s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003041s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0014s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `id` = 201 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `id` FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Lector' AND `action` = 'lector' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_menu` SET `parentid`='199',`name`='讲师列表',`app`='admin',`model`='Lector',`action`='lector',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 201 [ RunTime:0.0578s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/lector/lector' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cmf_auth_rule` WHERE `name` = 'admin/live/lector' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_auth_rule` SET `name`='admin/lector/lector',`module`='admin',`type`='admin_url',`title`='讲师列表' WHERE `id` = 187 [ RunTime:0.0187s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0025s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-28T10:52:14+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=201
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:58:07+08:00 ] 127.0.0.1 /index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:58:11+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:58:22+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=200
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T10:58:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001403s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002735s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002233s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002284s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0015s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `id` = 200 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `id` FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Live' AND `action` = 'show' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_menu` SET `parentid`='199',`name`='实时课堂',`app`='admin',`model`='Live',`action`='show',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 200 [ RunTime:0.1041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/live/show' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `cmf_auth_rule` WHERE `name` = 'admin/live/create_live' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_auth_rule` SET `name`='admin/live/show',`module`='admin',`type`='admin_url',`title`='实时课堂' WHERE `id` = 186 [ RunTime:0.0557s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0020s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-28T10:58:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=200
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T11:44:08+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_live` INNER JOIN cmf_people ON cmf_live.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_live.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_live.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T12:05:28+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_live` INNER JOIN cmf_people ON cmf_live.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_live.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_live.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T12:05:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_live` INNER JOIN cmf_people ON cmf_live.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_live.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_live.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T12:05:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_live` INNER JOIN cmf_people ON cmf_live.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_live.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_live.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T12:05:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_live` INNER JOIN cmf_people ON cmf_live.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_live.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_live.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:05:48+08:00 ] 127.0.0.1 /index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T13:05:52+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T13:06:03+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=200
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T13:06:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001073s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002895s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001955s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002024s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0023s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `id` = 200 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `id` FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Course' AND `action` = 'show' LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_menu` SET `parentid`='199',`name`='实时课堂',`app`='admin',`model`='Course',`action`='show',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 200 [ RunTime:0.0748s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/course/show' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id` FROM `cmf_auth_rule` WHERE `name` = 'admin/live/show' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_auth_rule` SET `name`='admin/course/show',`module`='admin',`type`='admin_url',`title`='实时课堂' WHERE `id` = 186 [ RunTime:0.0242s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0029s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-28T13:06:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=200
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T13:19:42+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=show
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:19:53+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 无法加载控制器:Course
+
+[ 2017-04-28T13:20:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:20:22+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:29:13+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:29:15+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:30:37+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:30:49+08:00 ] 127.0.0.1 /index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T13:30:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-28T13:36:07+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:36:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:36:30+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:22+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:22+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:23+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:23+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:23+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:23+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:23+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:23+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:24+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:24+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:24+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:25+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:25+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:27+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:28+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:28+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:29+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:38:29+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:41:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:41:50+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:42:23+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:42:23+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:42:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:42:39+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:42:39+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:42:39+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:42:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:42:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T13:47:50+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:23+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:24+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:24+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:24+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:24+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:24+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:24+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:25+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:25+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:25+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:26+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:26+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:26+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:27+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:27+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:27+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:28+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:28+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:28+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:28+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T13:52:29+08:00 ] 127.0.0.1 /index.php?g=&&g=Admin&m=Live&a=create_lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T15:06:03+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 无法加载控制器:Live
+
+[ 2017-04-28T15:06:06+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T15:11:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-28T16:01:07+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
+ERR: 1364:Field 'reply_url' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `cmf_live` (`lector_id`,`people_id`,`book_id`) VALUES ('2','1','3')
+
+[ 2017-04-28T16:02:10+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
+ERR: 1364:Field 'reply_url' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `cmf_live` (`lector_id`,`people_id`,`book_id`) VALUES ('2','1','3')
+
+[ 2017-04-28T16:04:19+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
+ERR: 1364:Field 'reply_url' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `cmf_live` (`lector_id`,`people_id`,`book_id`) VALUES ('1','1','3')
+
+[ 2017-04-28T16:08:06+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
+ERR: 1364:Field 'reply_url' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `cmf_course` (`num_class`,`subject`,`now_price`,`old_price`,`introduction`,`lector_id`,`people_id`,`book_id`) VALUES ('45','','880','660','','1','1','3')
+
+[ 2017-04-28T16:13:59+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:01+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:03+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:03+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:03+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:04+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:14:05+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_course.create_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.create_time LIMIT 0,25  
+
+[ 2017-04-28T16:53:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: syntax error, unexpected '/'
+
+[ 2017-04-28T16:53:54+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: syntax error, unexpected '/'
+
+[ 2017-04-28T16:53:56+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: syntax error, unexpected '/'
+
+[ 2017-04-28T16:53:56+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: syntax error, unexpected '/'
+
+[ 2017-04-28T16:53:56+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: syntax error, unexpected '/'
+
+[ 2017-04-28T16:58:22+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=show
+ERR: 1054:Unknown column 'cmf_people.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.id  ORDER BY cmf_course.startDate LIMIT 0,25  
+
