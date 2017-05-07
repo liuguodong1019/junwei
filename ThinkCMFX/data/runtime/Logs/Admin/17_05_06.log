@@ -1,0 +1,119 @@
+[ 2017-05-06T23:25:14+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001612s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003312s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.005082s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.005141s ]
+
+[ 2017-05-06T23:25:20+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001297s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002640s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001501s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001549s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0007s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-06 23:25:20',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0259s ]
+
+[ 2017-05-06T23:25:34+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001435s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004140s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001938s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001985s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0013s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003252s ]
+INFO: [ admin_begin ] --END-- [ RunTime:-0.030315s ]
+NOTIC: [8] Constant TMPL_PATH already defined D:\laragon\www\ThinkCMFX\application\Common\Controller\AdminbaseController.class.php 第 23 行.
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (1,10,11,12,13,14) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001273s ]
+INFO: [ admin_begin ] --END-- [ RunTime:-0.060989s ]
+NOTIC: [8] Constant TMPL_PATH already defined D:\laragon\www\ThinkCMFX\application\Common\Controller\AdminbaseController.class.php 第 23 行.
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-05-06T23:25:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003332s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005775s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001904s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001938s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0014s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001207s ]
+INFO: [ admin_begin ] --END-- [ RunTime:-0.015784s ]
+NOTIC: [8] Constant TMPL_PATH already defined D:\laragon\www\ThinkCMFX\application\Common\Controller\AdminbaseController.class.php 第 23 行.
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (1,10,11,12,13,14) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001212s ]
+INFO: [ admin_begin ] --END-- [ RunTime:-0.021704s ]
+NOTIC: [8] Constant TMPL_PATH already defined D:\laragon\www\ThinkCMFX\application\Common\Controller\AdminbaseController.class.php 第 23 行.
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-05-06T23:25:46+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001745s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003546s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001422s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001476s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0014s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001690s ]
+INFO: [ admin_begin ] --END-- [ RunTime:-0.020004s ]
+NOTIC: [8] Constant TMPL_PATH already defined D:\laragon\www\ThinkCMFX\application\Common\Controller\AdminbaseController.class.php 第 23 行.
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (14) )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: class_id D:\laragon\www\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 195 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001017s ]
+INFO: [ admin_begin ] --END-- [ RunTime:-0.026576s ]
+NOTIC: [8] Constant TMPL_PATH already defined D:\laragon\www\ThinkCMFX\application\Common\Controller\AdminbaseController.class.php 第 23 行.
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0010s ]
+

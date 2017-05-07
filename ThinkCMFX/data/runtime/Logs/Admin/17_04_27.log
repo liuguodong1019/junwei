@@ -1,0 +1,451 @@
+[ 2017-04-27T09:39:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` WHERE ( status=1 ) ORDER BY create_time LIMIT 0,20  
+
+[ 2017-04-27T09:39:52+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` WHERE ( status=1 ) ORDER BY create_time LIMIT 0,20  
+
+[ 2017-04-27T09:39:53+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` WHERE ( status=1 ) ORDER BY create_time LIMIT 0,20  
+
+[ 2017-04-27T09:39:54+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` WHERE ( status=1 ) ORDER BY create_time LIMIT 0,20  
+
+[ 2017-04-27T09:39:54+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` WHERE ( status=1 ) ORDER BY create_time LIMIT 0,20  
+
+[ 2017-04-27T09:39:54+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` WHERE ( status=1 ) ORDER BY create_time LIMIT 0,20  
+
+[ 2017-04-27T09:40:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` WHERE ( status=1 ) ORDER BY create_time LIMIT 0,20  
+
+[ 2017-04-27T09:45:42+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `cmf_lector` WHERE ( status=1 ) LIMIT 1  
+
+[ 2017-04-27T09:45:44+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `cmf_lector` WHERE ( status=1 ) LIMIT 1  
+
+[ 2017-04-27T10:25:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=update_lector&id=2
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.id  WHERE ( id = $id ) LIMIT 1  
+
+[ 2017-04-27T10:25:23+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=update_lector&id=2
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.id  WHERE ( id = $id ) LIMIT 1  
+
+[ 2017-04-27T10:26:24+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=update_lector&id=2
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.id  WHERE ( id = 2 ) LIMIT 1  
+
+[ 2017-04-27T10:36:31+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=update_lector&id=2
+ERR: XML标签语法错误 : {$list.teaching_id} gt 0 
+
+[ 2017-04-27T10:38:39+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=update_lector&id=2
+ERR: syntax error, unexpected '<'
+
+[ 2017-04-27T10:39:41+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=update_lector&id=2
+ERR: syntax error, unexpected '<'
+
+[ 2017-04-27T10:40:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=update_lector&id=1
+ERR: syntax error, unexpected '<'
+
+[ 2017-04-27T10:53:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=update_lector&id=2
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Live/update_lector.html
+
+[ 2017-04-27T13:50:19+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'cmf_teaching.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T13:58:42+08:00 ] 127.0.0.1 /index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-27T13:58:47+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=add&parentid=199&menuid=
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-27T14:00:36+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001504s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003206s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001670s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001726s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0014s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Teaching' AND `action` = 'list' LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT `parentid` FROM `cmf_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','授课列表','admin','Teaching','list','','','','1','0') [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/teaching/list' LIMIT 1   [ RunTime:0.0540s ]
+SQL: INSERT INTO `cmf_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/teaching/list','admin','admin_url','授课列表') [ RunTime:0.0347s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0027s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-27T14:00:36+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-27T14:00:42+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=list
+ERR: 无法加载控制器:Teaching
+
+[ 2017-04-27T14:04:49+08:00 ] 127.0.0.1 /index.php?g=admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-27T14:04:55+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-27T14:04:55+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-27T14:05:32+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=202
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-27T14:05:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002452s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.002046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006188s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002510s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002590s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0015s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `id` = 202 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `id` FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Teaching' AND `action` = 'index' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_menu` SET `parentid`='199',`name`='授课列表',`app`='admin',`model`='Teaching',`action`='index',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 202 [ RunTime:0.0315s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/teaching/index' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `cmf_auth_rule` WHERE `name` = 'admin/teaching/list' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_auth_rule` SET `name`='admin/teaching/index',`module`='admin',`type`='admin_url',`title`='授课列表' WHERE `id` = 188 [ RunTime:0.0300s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0020s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-04-27T14:05:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=edit&id=202
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-04-27T14:16:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: Call to a member function order() on null
+
+[ 2017-04-27T14:20:11+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' like '`%我%` ) ORDER BY create_time LIMIT 0,25' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  WHERE ( question' like '`%我%` ) ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:20:35+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' like '`%我%` ) ORDER BY create_time LIMIT 0,25' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  WHERE ( name' like '`%我%` ) ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:32:10+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=create_teaching
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Teaching/create_teaching.html
+
+[ 2017-04-27T14:40:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` WHERE ( status=1 ) ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:41:06+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:41:31+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:41:32+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:41:32+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:41:33+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:41:33+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:41:33+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:41:33+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:11+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:13+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:14+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T14:42:14+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T15:19:25+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T15:19:26+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T15:19:26+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T15:19:26+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T15:19:27+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T15:19:27+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T15:19:27+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T15:19:28+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Live&a=lector
+ERR: 1052:Column 'create_time' in order clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T15:28:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` ORDER BY id LIMIT 0,25  
+
+[ 2017-04-27T15:37:46+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` ORDER BY id LIMIT 0,25  
+
+[ 2017-04-27T15:51:28+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` ORDER BY id LIMIT 0,25  
+
+[ 2017-04-27T15:51:28+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` ORDER BY id LIMIT 0,25  
+
+[ 2017-04-27T15:51:28+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` ORDER BY id LIMIT 0,25  
+
+[ 2017-04-27T15:51:28+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` ORDER BY id LIMIT 0,25  
+
+[ 2017-04-27T15:51:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` ORDER BY id LIMIT 0,25  
+
+[ 2017-04-27T15:51:29+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` ORDER BY id LIMIT 0,25  
+
+[ 2017-04-27T17:26:10+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: syntax error, unexpected '<'
+
+[ 2017-04-27T17:56:44+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=create_teaching&t_id=1
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` WHERE ( id = 1 ) LIMIT 1  
+
+[ 2017-04-27T19:27:36+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=index
+ERR: 1054:Unknown column '%123%' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_teaching` WHERE ( course_name like `%123%` ) ORDER BY create_time LIMIT 0,25  
+
+[ 2017-04-27T19:32:55+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete&t_id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001408s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002987s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001125s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_teaching` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-04-27T19:32:59+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete&t_id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001043s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002711s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001013s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_teaching` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2017-04-27T19:46:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete&t_id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001676s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003442s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001296s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_teaching` [ RunTime:0.0010s ]
+SQL: DELETE FROM `cmf_teaching` WHERE ( t_id = 2 ) [ RunTime:0.1211s ]
+
+[ 2017-04-27T19:48:14+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete&t_id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001533s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003521s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002127s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002204s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_teaching` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cmf_teaching` WHERE ( t_id = 6 ) [ RunTime:0.1467s ]
+
+[ 2017-04-27T19:56:27+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002049s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004462s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002284s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002377s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_teaching` [ RunTime:0.0011s ]
+
+[ 2017-04-27T19:58:27+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.019294s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021490s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001776s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001856s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-04-27T19:58:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001805s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004649s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001863s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001974s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-04-27T20:00:03+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001009s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002495s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002988s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003071s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_teaching` [ RunTime:0.0010s ]
+SQL: DELETE FROM `cmf_teaching` WHERE ( t_id in (5) ) [ RunTime:0.1154s ]
+
+[ 2017-04-27T20:00:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001439s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003005s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001148s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_teaching` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cmf_teaching` WHERE ( t_id in (1,3,4) ) [ RunTime:0.3365s ]
+
+[ 2017-04-27T20:01:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Teaching&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001367s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003509s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002502s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002612s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_teaching` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cmf_teaching` WHERE ( t_id in (7,8) ) [ RunTime:0.1432s ]
+
