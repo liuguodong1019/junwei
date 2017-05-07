@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_06.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_06.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_07.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_07.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Common/17_05_07.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Common/17_05_07.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_06.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_06.log" />
-    </list>
+    <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -272,12 +266,12 @@
       <workItem from="1494078993962" duration="6909000" />
       <workItem from="1494128537021" duration="9990000" />
       <workItem from="1494150725491" duration="1326000" />
-      <workItem from="1494152694864" duration="10586000" />
+      <workItem from="1494152694864" duration="10874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102244000" />
+    <option name="totallyTimeSpent" value="102532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
