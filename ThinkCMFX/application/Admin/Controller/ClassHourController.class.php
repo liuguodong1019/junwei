@@ -238,7 +238,6 @@ class ClassHourController extends AdminbaseController
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
                 $resource = $response::get_past($loginName, $password, $class_id);
-                print_r($resource);die;
                 if ($resource['code'] == 0) {
                     $res = $resource['coursewares'][0];
                     $data['number'] = $res['number'];
