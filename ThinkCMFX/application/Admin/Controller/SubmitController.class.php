@@ -22,8 +22,8 @@ class SubmitController extends AdminbaseController
 
     public static function state($code,$mess){
         return json_encode([
-            'code'=>$code,
-            'mess'=>$mess,
+            'status'=>$code,
+            'msg'=>$mess,
             'data'=>NULL
         ]);die;
     }

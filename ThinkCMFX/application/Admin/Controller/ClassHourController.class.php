@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: 刘国栋
+ * User: 锟斤拷锟斤拷锟斤拷
  * Date: 2017/4/26
  * Time: 11:47
  */
@@ -14,12 +14,12 @@ use Api\Controller\ResponseController;
 /**
  * Class LiveController
  * @package Admin\Controller
- * 直播系统管理
+ *
  */
 class ClassHourController extends AdminbaseController
 {
     /**
-     * 课时列表
+     * 璇炬椂鍒楄〃
      */
     public function show()
     {
@@ -55,7 +55,7 @@ class ClassHourController extends AdminbaseController
     }
 
     /**
-     * 查看课时详细信息
+     * 鏌ョ湅璇炬椂
      */
     public function look()
     {
@@ -74,7 +74,7 @@ class ClassHourController extends AdminbaseController
     }
 
     /**
-     * 创建课时
+     * 鍒涘缓璇炬椂
      */
     public function create()
     {
@@ -93,7 +93,7 @@ class ClassHourController extends AdminbaseController
             $password = sp_authcode($junwei['password']);
             $startDate = I('post.startDate');
             $invalidDate = I('post.invalidDate');
-            //调用创建实时课堂接口
+            //锟斤拷锟矫达拷锟斤拷实时锟斤拷锟矫接匡拷
             $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
             $data['number'] = $resource['number'];
             $data['stu_token'] = $resource['studentClientToken'];
@@ -117,7 +117,7 @@ class ClassHourController extends AdminbaseController
     }
 
     /**
-     * 修改课时信息
+     * 璇炬椂淇敼
      */
     public function update()
     {
@@ -155,7 +155,7 @@ class ClassHourController extends AdminbaseController
             $invalidDate = I('post.invaliddate');
             $subject = I('post.subject');
             $class_id = I('post.class_id');
-            //调用修改实时课堂接口
+            //璋冪敤淇敼璇炬椂鎺ュ彛
             $resource = $response::update_course($loginName,$password,$realtime,$startDate,$invalidDate,$subject,$class_id);
             if ($resource['code'] == 0) {
                 if ($live->where("id = $id")->save($data)) {
@@ -171,7 +171,7 @@ class ClassHourController extends AdminbaseController
     }
 
     /**
-     * 删除课时
+     * 璇炬椂鍒犻櫎
      */
     public function delete()
     {
@@ -183,14 +183,14 @@ class ClassHourController extends AdminbaseController
                 $junwei = M('junwei')->find();
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
-                //调用删除实时课堂接口
+                //璋冪敤璇炬椂鍒犻櫎鎺ュ彛
                 $resourec = $response::delete($loginName,$password,$class_id);
                 $id = intval(I("get.id"));
                 if ($resourec['code'] == 0) {
                     if ($live->where("id = $id")->delete() !== false) {
-                        $this->success("删除成功！");exit();
+                        $this->success(L('ADD_SUCCESS'));exit();
                     } else {
-                        $this->error("删除失败！");exit();
+                        $this->error(L("ADD_FAILED"));exit();
                     }
                 }
 
@@ -205,24 +205,24 @@ class ClassHourController extends AdminbaseController
             foreach ($rew as $value) {
                 $class_id[] = $value['class_id'];
             }
-            //调用删除实时课堂接口批量删除
+            //璋冪敤鍒犻櫎璇炬椂鎺ュ彛
             $resourec = $response::delete($loginName, $password, $class_id);
             $ids = join(",", $_POST['ids']);
             if ($resourec['code'] == 0) {
                 if ($live->where("id in ($ids)")->delete() !== false) {
-                    $this->success("删除成功！");exit();
+                    $this->success(L('ADD_SUCCESS'));exit();
                 } else {
-                    $this->error("删除失败！");exit();
+                    $this->error(L("ADD_FAILED"));exit();
                 }
             } else {
-                $this->error("操作有误");exit();
+                $this->error(L("ADD_FAILED"));exit();
             }
         }
     }
 
 
     /**
-     * 生成回放
+     * 鐢熸垚鍥炴斁
      */
     public function playback()
     {
