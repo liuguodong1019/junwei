@@ -2,6 +2,7 @@
 namespace Api\Controller;
 
 use Think\Controller;
+
 class CourseController extends Controller
 {
     /**
@@ -129,8 +130,8 @@ class CourseController extends Controller
                     ->where("is_free = '2'")->order('cmf_course.id')->page($page . ',10')->select();
                 if (!empty($data)) {
                     echo json_encode([
-                        'code' => $succ[0],
-                        'mess' => $mess[0],
+                        'status' => $succ[0],
+                        'msg' => $mess[0],
                         'data' => $data
                     ]);die;
                 } else {
