@@ -95,7 +95,6 @@ class ResponseController extends Controller
     }
 
     /**
-     * @return mixed
      * 创建讲师接口
      */
     public static function create_lector($loginName,$password,$name,$teacherLoginName,$teacherPassword)

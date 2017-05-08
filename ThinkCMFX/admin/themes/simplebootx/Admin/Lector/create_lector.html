@@ -32,14 +32,10 @@
                     <th width="80">授课类型</th>
                     <td>
                         <select name="teaching_id" id="">
-                            <foreach>
                                 <option value="请选择">请选择</option>
                                 <foreach name = 'list' item = "value">
                                     <option value="{$value.t_id}">{$value.course_name}</option>
                                 </foreach>
-
-                            </foreach>
-
                         </select>
                     </td>
                 </tr>
