@@ -1,16 +1,16 @@
-[ 2017-05-04T09:18:39+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+[ 2017-05-04T10:42:18+08:00 ] 115.33.50.74 /junwei/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001415s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000897s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.004047s ]
-NOTIC: [8] Undefined index: url D:\laragon\www\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000047s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
 
-[ 2017-05-04T14:02:01+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+[ 2017-05-04T11:02:04+08:00 ] 115.33.50.74 /junwei/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001309s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001538s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.004116s ]
-NOTIC: [8] Undefined index: url D:\laragon\www\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000044s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
 

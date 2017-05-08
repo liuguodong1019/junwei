@@ -4,7 +4,7 @@
 <div class="wrap J_check_wrap">
 <ul class="nav nav-tabs">
     <li><a href="{:U('Question/itembank')}">所有试题</a></li>
-    <li class="active"><a href="{:U('Question/itembankadd')}"  target="_self">试题修改</a></li>
+    <li class="active"><a href="{:U('Question/itembankedit')}"  target="_self">试题修改</a></li>
 </ul>
 <form class="form-horizontal js-ajax-form" action="{:U('Question/itembankedit_post')}" method="post">
 
@@ -37,7 +37,22 @@
                     </select>
                 </td>
             </tr>
+            <tr>
+                <th width="80">所属章节</th>
+                <td>
+                    <select name="cid" onchange="show_class(this.value)" class="normal_select">
+                       <volist name="ch" id="vo">
 
+                                               <eq name="vo.cid" value="$item.cid">
+                                                   <option value="{$vo.cid}" selected >{$vo.ctitle}</option>
+                                                <else />
+                                                   <option value="{$vo.cid}" >{$vo.ctitle}</option>
+                                               </eq> 
+
+                                        </volist>   
+                    </select>
+                </td>
+            </tr>
             <tr>
                 <th width="80">题干</th>
                 <td>
@@ -48,7 +63,7 @@
             <tr>
                 <th width="80">选项</th>
                 <td>
-                    <foreach name='options' item='v'>
+                    <foreach name='option' item='v'>
                     <input type="text" name="option[]" id="" value="{$v.options}" style="width:400px;"></br>
                     </foreach>
                 </td>
@@ -72,7 +87,7 @@
             <tr>
                 <th width="80">考点</th>
                 <td>
-                    <input type="text" value="暂无" name="point" value="{$item.ncertain}" />
+                    <input type="text" value="暂无" name="point" value="{$item.point}" />
                 </td>
             </tr>
             <tr>
@@ -88,8 +103,8 @@
              <tr>
                 <th width="80">是否为不定项</th>
                 <td>
-                    <input type="radio" name="ncertain" value="0" <if condition="$item.point eq 0">checked="checked"</if>>否
-                    <input type="radio" name="ncertain" value="1" <if condition="$item.point eq 1">checked="checked"</if>>是
+                    <input type="radio" name="ncertain" value="0" <if condition="$item.ncertain eq 0">checked="checked"</if>>否
+                    <input type="radio" name="ncertain" value="1" <if condition="$item.ncertain eq 1">checked="checked"</if>>是
                 </td>
             </tr>
             <tr>

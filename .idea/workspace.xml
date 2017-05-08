@@ -1,7 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="" />
+    <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin,Api/index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/.htaccess" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/itembank.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/itembank.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/itembankadd.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/itembankadd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/itembankedit.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/itembankedit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/mater.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/mater.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/true.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/true.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/trueadd.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/trueadd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/trueedit.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/trueedit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/truemater.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/truemater.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Api/Guestbookadmin/index.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Api/Guestbookadmin/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Api/Oauthadmin/setting.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Api/Oauthadmin/setting.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Comment/index.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Comment/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/add.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/edit.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/index.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/recyclebin.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPage/recyclebin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/add.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/copy.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/copy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/edit.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/index.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/move.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/move.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/recyclebin.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminPost/recyclebin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminTerm/add.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminTerm/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminTerm/edit.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Portal/AdminTerm/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Public/assets/css/admin_login.css" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Public/assets/css/admin_login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/User/index.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/User/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/AdController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/AdController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/IndexController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/LinkController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/LinkController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/MailerController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/MailerController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/MainController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/MainController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/MenuController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/MenuController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/NavController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/NavController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/NavcatController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/NavcatController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/PluginController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/PluginController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/PublicController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/PublicController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/QuestionController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/QuestionController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/RbacController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/RbacController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/RouteController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/RouteController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/SettingController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/SettingController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/SlideController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/SlideController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/SlidecatController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/SlidecatController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/StorageController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/StorageController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/UserController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/en-us/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/en-us/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/en-us/main.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/en-us/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/en-us/storage.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/en-us/storage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/en-us/user.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/en-us/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/zh-cn/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/zh-cn/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/zh-cn/main.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/zh-cn/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/zh-cn/storage.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/zh-cn/storage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/zh-cn/user.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Lang/zh-cn/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Menu/admin_content.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Menu/admin_content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Menu/admin_extension.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Menu/admin_extension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Menu/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Menu/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Menu/admin_setting.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Menu/admin_setting.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UserController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Event/CCPRestSmsSDK.clsaa.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Event/CCPRestSmsSDK.clsaa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Event/TypeEvent.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Event/TypeEvent.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Lang/en-us/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Lang/en-us/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Lang/zh-cn/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Lang/zh-cn/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/hooks.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/hooks.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Asset/Controller/AssetController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Asset/Controller/AssetController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Asset/Controller/UeditorController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Asset/Controller/UeditorController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Controller/CommentController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Controller/CommentController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Controller/CommentadminController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Controller/CommentadminController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Controller/WidgetController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Controller/WidgetController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Lang/en-us/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Lang/en-us/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Lang/zh-cn/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Comment/Lang/zh-cn/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Behavior/AdminDefaultLangBehavior.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Behavior/AdminDefaultLangBehavior.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Behavior/InitHookBehavior.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Behavior/InitHookBehavior.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Behavior/TmplStripSpaceBehavior.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Behavior/TmplStripSpaceBehavior.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Behavior/UrldecodeGetBehavior.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Behavior/UrldecodeGetBehavior.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Common/function.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Common/function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Controller/AdminbaseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Controller/AdminbaseController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Controller/AppframeController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Controller/AppframeController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Controller/HomebaseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Controller/HomebaseController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Controller/MemberbaseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Controller/MemberbaseController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/Plugin.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/Plugin.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/RSS/Rss.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/RSS/Rss.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/Taglib/TagLibHome.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/Taglib/TagLibHome.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/Taglib/TagLibSpadmin.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/Taglib/TagLibSpadmin.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/iAuth.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Lib/iAuth.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CommentsModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CommentsModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CommonModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CommonModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/GuestbookModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/GuestbookModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/LinksModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/LinksModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/MenuModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/MenuModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/NavModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/NavModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/PluginsModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/PluginsModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/RouteModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/RouteModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/SlideModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/SlideModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/UsersModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/UsersModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Demo/Conf/config.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Demo/Conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Common/function.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Common/function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Conf/config.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/AdminPageController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/AdminPageController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/AdminPostController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/AdminPostController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/AdminTermController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/AdminTermController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/ArticleController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/ArticleController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/IndexController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/ListController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/ListController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/PageController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/PageController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/SearchController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Controller/SearchController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Lang/en-us/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Lang/en-us/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Lang/zh-cn/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Lang/zh-cn/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Lib/Taglib/Portal.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Lib/Taglib/Portal.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Model/PostsModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Model/PostsModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Model/TermRelationshipsModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Model/TermRelationshipsModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Model/TermsModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Model/TermsModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Service/ApiService.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Portal/Service/ApiService.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/CenterController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/CenterController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/FavoriteController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/FavoriteController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/IndexController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/IndexadminController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/IndexadminController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/LoginController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/LoginController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/OauthadminController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/OauthadminController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/ProfileController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/ProfileController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/PublicController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/PublicController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/RegisterController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Controller/RegisterController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Lang/en-us/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Lang/en-us/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Lang/zh-cn/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Lang/zh-cn/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/User/Menu/admin_indexadmin.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/User/Menu/admin_indexadmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/conf/db.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/conf/db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/lang/Admin/Lang/zh-cn/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/lang/Admin/Lang/zh-cn/admin_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/14f39110225aa98f9efb6f2af8c5253a.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/14f39110225aa98f9efb6f2af8c5253a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/1c7ea420ab36cd51f570cf923c03ce6c.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/1c7ea420ab36cd51f570cf923c03ce6c.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/2c04e98d9c0194fbf94ea40a98790cd8.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/2c04e98d9c0194fbf94ea40a98790cd8.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3042f7cf79ea468f002ba2fb70c7b0c6.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3042f7cf79ea468f002ba2fb70c7b0c6.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3715c3aca629e43d51da422d207c6505.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3715c3aca629e43d51da422d207c6505.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3cd4973c4cd4e6c766bebfe03f47abe3.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3cd4973c4cd4e6c766bebfe03f47abe3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/4d2f267f7a6ca5a6338863902785536f.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/4d2f267f7a6ca5a6338863902785536f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/4e73d16b5ea54aeb7c9c3da86b49caeb.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/4e73d16b5ea54aeb7c9c3da86b49caeb.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/50614a2b3b13f61218805e44b3b35834.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/50614a2b3b13f61218805e44b3b35834.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6815af850fbbc51e5c33d8f10fa47e79.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6815af850fbbc51e5c33d8f10fa47e79.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6b37070e0199ee521f06667a1469f88c.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6b37070e0199ee521f06667a1469f88c.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/71c39a6e2f69db033fc7335dfae3619e.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/71c39a6e2f69db033fc7335dfae3619e.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/764d9eaa39b8c46e1f2dc510a2aa9540.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/764d9eaa39b8c46e1f2dc510a2aa9540.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/85d40f2b78cb3182dc422f13dc0f3640.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/85d40f2b78cb3182dc422f13dc0f3640.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/86646a3b7cb8b7b7ec4e394f75de342e.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/86646a3b7cb8b7b7ec4e394f75de342e.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/873888a030c0407a7593288b1f8e0500.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/873888a030c0407a7593288b1f8e0500.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/8845c419b4eec234ce9cdee054e82daf.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/8845c419b4eec234ce9cdee054e82daf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/92f738679a8b52d9d9d6545eeacc3b7f.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/92f738679a8b52d9d9d6545eeacc3b7f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/9517d10f1714afb7dc1352ba2aa26c3f.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/9517d10f1714afb7dc1352ba2aa26c3f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/99926d1374d3d00b4c5e1cc9712ced98.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/99926d1374d3d00b4c5e1cc9712ced98.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/9d98fb0485a59bff8fa8c61a9b08e375.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/9d98fb0485a59bff8fa8c61a9b08e375.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/a0c60485a94b058a0263302d0de4e474.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/a0c60485a94b058a0263302d0de4e474.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/d3676ba82e39d6608bdaccb9cab8b893.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/d3676ba82e39d6608bdaccb9cab8b893.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/d49945bf421f989fb6a3bc4b192a21b7.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/d49945bf421f989fb6a3bc4b192a21b7.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/d7e0f7c55a290950e51c4624fbeacd58.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/d7e0f7c55a290950e51c4624fbeacd58.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/d885eabd40027199da890d24fd398b40.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/d885eabd40027199da890d24fd398b40.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/e2ce742aaad6dc4cd4baddc6d19a8701.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/e2ce742aaad6dc4cd4baddc6d19a8701.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/ec27c8be7768902312b31cffaa06d026.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/ec27c8be7768902312b31cffaa06d026.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/f14099b31d2b2c447a7c2e4f19827af9.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/f14099b31d2b2c447a7c2e4f19827af9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/fcb422bd236bc2f2ddc43c521af2f925.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/fcb422bd236bc2f2ddc43c521af2f925.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/fd6b6d7afdcfd2c874fa6e15c4ca7850.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/fd6b6d7afdcfd2c874fa6e15c4ca7850.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/febd323d5b96242f3d55d1d47ba011cf.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/febd323d5b96242f3d55d1d47ba011cf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Portal/b38d1014a632cf5d5e26dc69ef89f859.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Portal/b38d1014a632cf5d5e26dc69ef89f859.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Portal/dcfd77cc2a66aa329bea8bf80c3020a1.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Portal/dcfd77cc2a66aa329bea8bf80c3020a1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/User/1476a52e20875abfdfb4b2119b26fba8.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/User/1476a52e20875abfdfb4b2119b26fba8.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/Menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/Menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_04_26.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_04_26.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_04_27.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_04_27.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_04_28.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_04_28.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_03.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_03.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_04.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_04.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_06.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_06.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_07.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_07.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_08.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_08.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Api/17_05_05.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Api/17_05_05.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Api/17_05_07.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Api/17_05_07.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_04_26.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_04_26.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_04.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_04.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_05.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_05.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_06.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_06.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_07.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/User/17_05_07.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/install/css/install.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/install/css/install.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/ajaxForm.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/ajaxForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/artDialog/artDialog.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/artDialog/artDialog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/artDialog/iframeTools.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/artDialog/iframeTools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/artDialog/skins/blue.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/artDialog/skins/blue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/artDialog/skins/default.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/artDialog/skins/default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/common.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/cookie.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/cookie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/datePicker/datePicker.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/datePicker/datePicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/datePicker/style.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/datePicker/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/draggable.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/draggable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/echarts/echarts.min.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/echarts/echarts.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/frontend.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/frontend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/head.min.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/head.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/imgready.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/imgready.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/jcrop/css/jquery.Jcrop.min.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/jcrop/css/jquery.Jcrop.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/jcrop/js/jcrop.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/jcrop/js/jcrop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/jquery.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/jquery.validate/additional-methods.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/jquery.validate/additional-methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/jquery.validate/jquery.validate.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/jquery.validate/jquery.validate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/layer/layer.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/layer/layer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/layer/skin/layer.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/layer/skin/layer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/layer/skin/layer.ext.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/layer/skin/layer.ext.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/layer/skin/mono/style.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/layer/skin/mono/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/lazyload.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/lazyload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/noty/noty.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/noty/noty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/plupload/i18n/en.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/plupload/i18n/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/plupload/i18n/zh_CN.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/plupload/i18n/zh_CN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/plupload/i18n/zh_TW.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/plupload/i18n/zh_TW.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/plupload/plupload.full.min.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/plupload/plupload.full.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/tabs/tabs.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/tabs/tabs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/treeTable/treeTable.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/treeTable/treeTable.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/treeTable/treeTable.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/treeTable/treeTable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/treeview.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/treeview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/dialogs/video/video.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/dialogs/video/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/lang/en/en.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/lang/en/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/themes/default/css/ueditor.min.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/themes/default/css/ueditor.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/ueditor.all.min.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/ueditor.all.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/ueditor.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/ueditor.parse.min.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/ueditor/ueditor.parse.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/validate.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/validate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/wind.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/wind.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/js/xd.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/js/xd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/font-awesome/4.2.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/font-awesome/4.2.0/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/themes/bluesky/theme.min.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/themes/bluesky/theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/themes/flat/theme.min.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/themes/flat/theme.min.css" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,17 +246,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create_lector.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="create_lector.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/create_lector.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
@@ -60,12 +281,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CourseController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="1357">
               <caret line="128" column="76" lean-forward="false" selection-start-line="128" selection-start-column="76" selection-end-line="128" selection-end-column="76" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4692">
+              <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+              <folding>
+                <marker date="1494148338000" expanded="true" signature="6329:6332" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +306,8 @@
       <file leaf-file-name="ClassHourController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="388">
+              <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -108,7 +341,6 @@
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/header.html" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/Classhour.class.php" />
         <option value="$PROJECT_DIR$/../junwei2/junwei/ThinkCMFX/data/conf/db.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/data/conf/db.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Classhour/create.html" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClasshourController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/look.html" />
@@ -120,16 +352,17 @@
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/look.html" />
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/update.html" />
         <option value="$PROJECT_DIR$/ThinkCMFX/.htaccess" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/SubmitController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/LectorController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/create_lector.html" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ResponseController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" />
         <option value="$USER_HOME$/Desktop/新建文件夹/接口文档管理工具/apisystem release/Application/Common/Conf/config.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/data/conf/db.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php" />
       </list>
     </option>
   </component>
@@ -217,7 +450,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Api" />
+              <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -239,11 +472,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Api" />
+              <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Conf" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,15 +577,15 @@
       <workItem from="1494128537021" duration="9990000" />
       <workItem from="1494150725491" duration="1326000" />
       <workItem from="1494152694864" duration="11040000" />
-      <workItem from="1494205404306" duration="10136000" />
+      <workItem from="1494205404306" duration="11859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112834000" />
+    <option name="totallyTimeSpent" value="114557000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1370" height="744" extended-state="1" />
+    <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2091603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -385,14 +618,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/SubmitController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/public/simpleboot/jedate/skin/red.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -474,13 +699,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../junwei2/junwei/ThinkCMFX/data/conf/db.php" />
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/data/conf/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="963">
@@ -606,13 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="87" column="67" lean-forward="true" selection-start-line="87" selection-start-column="67" selection-end-line="87" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -687,9 +898,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-          <folding>
-            <element signature="e#115#157#0#PHP" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -697,41 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="96" column="7" lean-forward="false" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/create_lector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/data/conf/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -746,9 +920,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="1357">
           <caret line="128" column="76" lean-forward="false" selection-start-line="128" selection-start-column="76" selection-end-line="128" selection-end-column="76" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4692">
+          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+          <folding>
+            <marker date="1494148338000" expanded="true" signature="6329:6332" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/data/conf/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../junwei/application/Admin/Controller/CourseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1380">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/data/conf/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-477">
+          <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/create_lector.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

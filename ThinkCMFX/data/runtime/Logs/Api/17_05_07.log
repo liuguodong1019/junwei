@@ -1,94 +1,16 @@
-[ 2017-05-07T00:03:28+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
-ERR: 1052:Column 'id' in field list is ambiguous
- [ SQL语句 ] : SELECT `id`,`subject`,`startDate`,`invalidDate`,`now_price`,`old_price`,`name`,`cover`,`num_class`,`status`,`is_free`,`number`,`stu_token` FROM `cmf_live` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id INNER JOIN cmf_course ON cmf_live.course_id = cmf_course.id  ORDER BY cmf_course.id LIMIT 0,20  
+[ 2017-05-07T11:38:20+08:00 ] 111.199.186.214 /junwei/index.php?g=api&m=user&a=register
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_users` SET `mobile`='',`user_pass`='###b14971056de15552bac4d769f88288a0',`token`='xKvX7tImtBmpZh4X96bC',`create_time`='2017-05-07 11:38:20' WHERE ( mobile= )
 
-[ 2017-05-07T00:03:42+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
-ERR: 1052:Column 'id' in field list is ambiguous
- [ SQL语句 ] : SELECT `id`,`subject`,`startDate`,`invalidDate`,`now_price`,`old_price`,`name`,`cover`,`num_class`,`status`,`is_free`,`number`,`stu_token` FROM `cmf_live` INNER JOIN cmf_course ON cmf_live.course_id = cmf_course.id  ORDER BY cmf_course.id LIMIT 0,20  
+[ 2017-05-07T11:40:50+08:00 ] 111.199.186.214 /junwei/index.php?g=api&m=user&a=register
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_users` SET `mobile`='',`user_pass`='###b14971056de15552bac4d769f88288a0',`token`='MLwKbHBeBfQOtQB7mVrx',`create_time`='2017-05-07 11:40:50' WHERE ( mobile= )
 
-[ 2017-05-07T00:04:51+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
-ERR: 1054:Unknown column 'cmf_course.people_id' in 'on clause'
- [ SQL语句 ] : SELECT * FROM `cmf_live` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_course ON cmf_live.course_id = cmf_course.id  ORDER BY cmf_course.id LIMIT 0,20  
+[ 2017-05-07T11:41:09+08:00 ] 111.199.186.214 /junwei/index.php?g=api&m=user&a=rcheck
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile= ) LIMIT 1  
 
-[ 2017-05-07T00:05:40+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
-ERR: 1052:Column 'id' in field list is ambiguous
- [ SQL语句 ] : SELECT `id`,`subject`,`startDate`,`invalidDate`,`now_price`,`old_price`,`name`,`cover`,`num_class`,`status`,`is_free`,`number`,`stu_token` FROM `cmf_live` INNER JOIN cmf_course ON cmf_live.course_id = cmf_course.id INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,20  
-
-[ 2017-05-07T00:09:46+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
-ERR: 1054:Unknown column 'cmf_course_status' in 'field list'
- [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,`now_price`,`old_price`,cmf_lector.name,cmf_course.cover,cmf_course.num_class,`cmf_course_status`,cmf_course.is_free FROM `cmf_live` INNER JOIN cmf_course ON cmf_live.course_id = cmf_course.id INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,20  
-
-[ 2017-05-07T00:12:35+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class&id=1
-ERR: 1054:Unknown column 'subject' in 'field list'
- [ SQL语句 ] : SELECT `id`,`subject`,`now_price`,`name`,`num_class`,`cover`,`people`,`book`,`introduction` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( id = 1 ) LIMIT 1  
-
-[ 2017-05-07T00:13:10+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class&id=1
-ERR: 1054:Unknown column 'subject' in 'field list'
- [ SQL语句 ] : SELECT `id`,`subject`,`now_price`,`name`,`num_class`,`cover`,`people`,`book`,`introduction` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( id = 1 ) LIMIT 1  
-
-[ 2017-05-07T00:13:12+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class&id=1
-ERR: 1054:Unknown column 'subject' in 'field list'
- [ SQL语句 ] : SELECT `id`,`subject`,`now_price`,`name`,`num_class`,`cover`,`people`,`book`,`introduction` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( id = 1 ) LIMIT 1  
-
-[ 2017-05-07T00:15:43+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=open_class
-ERR: 1054:Unknown column 'number' in 'field list'
- [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`number`,`stu_token` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = 1 ) ORDER BY cmf_course.id LIMIT 0,20  
-
-[ 2017-05-07T00:15:50+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=open_class&page=1
-ERR: 1054:Unknown column 'number' in 'field list'
- [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`number`,`stu_token` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = 1 ) ORDER BY cmf_course.id LIMIT 0,10  
-
-[ 2017-05-07T00:16:17+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=open_class&page=1
-ERR: 1054:Unknown column 'number' in 'field list'
- [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startDate`,`invalidDate`,`cover`,`num_class`,`status`,`number`,`stu_token` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = 1 ) ORDER BY cmf_course.id LIMIT 0,10  
-
-[ 2017-05-07T00:18:16+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=live_end&id=10
-ERR: 1054:Unknown column 'class_id' in 'field list'
- [ SQL语句 ] : SELECT `class_id` FROM `cmf_course` WHERE ( id = 10 ) LIMIT 1  
-
-[ 2017-05-07T00:19:19+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=live_end&id=10
-ERR: 1054:Unknown column 'class_id' in 'field list'
- [ SQL语句 ] : SELECT `class_id` FROM `cmf_course` WHERE ( id = 10 ) LIMIT 1  
-
-[ 2017-05-07T00:19:21+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=live_end&id=10
-ERR: 1054:Unknown column 'class_id' in 'field list'
- [ SQL语句 ] : SELECT `class_id` FROM `cmf_course` WHERE ( id = 10 ) LIMIT 1  
-
-[ 2017-05-07T14:46:59+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=playback&id=4
-ERR: 非法操作:playback
-
-[ 2017-05-07T14:49:14+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=playback&id=4
-ERR: 非法操作:playback
-
-[ 2017-05-07T14:49:17+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=playback&id=4
-ERR: 非法操作:playback
-
-[ 2017-05-07T14:49:27+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=playback&id=4
-ERR: 非法操作:playback
-
-[ 2017-05-07T16:46:27+08:00 ] 127.0.0.1 /ThinkCMFX/
-ERR: 无法加载控制器:Index
-
-[ 2017-05-07T16:50:52+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/past_live&page=1
-ERR: 非法操作:past_live&page=1
-
-[ 2017-05-07T20:34:12+08:00 ] 127.0.0.1 /ThinkCMFX/api/class_hour/class_hour/?page=1
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY cmf_live.id LIMIT 0,20' at line 1
- [ SQL语句 ] : SELECT `id`,`subject`,`reply_url`,`status`,`startDate`,`invalidDate`,`number`,`stu_token`,`class_id` FROM `cmf_live` WHERE ( course_id =  ) ORDER BY cmf_live.id LIMIT 0,20  
-
-[ 2017-05-07T20:34:15+08:00 ] 127.0.0.1 /ThinkCMFX/api/class_hour/class_hour/?page=1
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY cmf_live.id LIMIT 0,20' at line 1
- [ SQL语句 ] : SELECT `id`,`subject`,`reply_url`,`status`,`startDate`,`invalidDate`,`number`,`stu_token`,`class_id` FROM `cmf_live` WHERE ( course_id =  ) ORDER BY cmf_live.id LIMIT 0,20  
-
-[ 2017-05-07T20:35:32+08:00 ] 127.0.0.1 /ThinkCMFX/api/class_hour/class_hour/?page=1
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY cmf_live.id LIMIT 0,20' at line 1
- [ SQL语句 ] : SELECT `id`,`subject`,`reply_url`,`status`,`startDate`,`invalidDate`,`number`,`stu_token`,`class_id` FROM `cmf_live` WHERE ( course_id =  ) ORDER BY cmf_live.id LIMIT 0,20  
-
-[ 2017-05-07T20:35:46+08:00 ] 127.0.0.1 /ThinkCMFX/api/class_hour/class_hour/?page=1
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY cmf_live.id LIMIT 0,20' at line 1
- [ SQL语句 ] : SELECT `id`,`subject`,`reply_url`,`status`,`startDate`,`invalidDate`,`number`,`stu_token`,`class_id` FROM `cmf_live` WHERE ( course_id =  ) ORDER BY cmf_live.id LIMIT 0,20  
-
-[ 2017-05-07T20:57:43+08:00 ] 127.0.0.1 /ThinkCMFX/api/class_hour/vip/?id=10&page=2
-ERR: 1052:Column 'id' in field list is ambiguous
- [ SQL语句 ] : SELECT `id`,`subject`,`reply_url`,`status`,`startDate`,`invalidDate`,`number`,`stu_token`,`class_id` FROM `cmf_live` INNER JOIN cmf_course ON cmf_live.course_id = cmf_course.id  WHERE ( is_free = 2 ) ORDER BY cmf_live.id LIMIT 10,10  
+[ 2017-05-07T13:20:36+08:00 ] 111.199.186.214 /junwei/index.php?g=api&m=user&a=register
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_users` SET `mobile`='',`user_pass`='###b14971056de15552bac4d769f88288a0',`token`='jxep8Ts9U3yWUi9N5azh',`create_time`='2017-05-07 13:20:36' WHERE ( mobile= )
 

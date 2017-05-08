@@ -1,212 +1,207 @@
 <?php
-namespace Api\Controller;
+/**
+ * Created by PhpStorm.
+ * User: åˆ˜å›½æ ‹
+ * Date: 2017/4/26
+ * Time: 11:47
+ */
 
-use Think\Controller;
+namespace Admin\Controller;
 
-class CourseController extends Controller
+use Common\Controller\AdminbaseController;
+use Api\Controller\ResponseController;
+
+/**
+ * Class LiveController
+ * @package Admin\Controller
+ * ç›´æ’­ç³»ç»Ÿç®¡ç†
+ */
+class CourseController extends AdminbaseController
 {
     /**
-     * »ñÈ¡¿ÎÌÃÁÐ±í
+     * è¯¾å ‚åˆ—è¡¨
      */
-    public function get_class_list()
+    public function show()
     {
-        $succ = C('status');
-        $mess = C('msg');
-        $model = new SubmitController();
-        if (IS_GET) {
-            $course = M('course');
-            $page = I('get.page');
-            if (is_numeric($page)) {
-                $data = $course
-                    ->field('cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free')
-                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->order('cmf_course.id')->page($page.',10')->select();
-                if (!empty($data)) {
-                    echo json_encode([
-                        'status' => $succ[0],
-                        'msg' => $mess[0],
-                        'data' => $data
-                    ]);die;
-                } else {
-                    echo $model::state($succ[0], $mess[0],$data = null);die;
-                }
+        $course = M('course');
+        $junwei = M('junwei')->find();
+        $loginName = $junwei['loginName'];
+        $password = $junwei['password'];
+        $count = $course->count();
+        $Page = new \Think\Page($count, 10);
+        $show = $Page->show();
+        if (IS_POST) {
+            $keyword = I('post.keyword');
+            if (!empty($keyword)) {
+                $data = $course->where("subject like '%$keyword%'")
+                    ->order('startDate')->limit($Page->firstRow . ',' . $Page->listRows)->select();
             } else {
-                echo $model::state($succ[2], $mess[2]);die;
+                $this->redirect('show');
             }
         } else {
-            echo $model::state($succ[3], $mess[3]);die;
+            $data = $course
+                ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                ->order('UNIX_TIMESTAMP(startdate)')->limit($Page->firstRow . ',' . $Page->listRows)->select();
         }
+        $this->assign('loginName', $loginName);
+        $this->assign('password', $password);
+        $this->assign('data', $data);
+        $this->assign('page', $show);
+        $this->display();
     }
 
     /**
-     * »ñÈ¡¿ÎÌÃÐÅÏ¢
+     * æŸ¥çœ‹è¯¾å ‚è¯¦ç»†ä¿¡æ¯
      */
-    public function get_class()
+    public function look()
     {
-        $succ = C('status');
-        $mess = C('msg');
-        $model = new SubmitController();
         if (IS_GET) {
             $id = I('get.id');
-            if (is_numeric($id)) {
+            if (!empty($id)) {
                 $data = M('course')
-                    ->field('id,course_name,now_price,name,num_class,cover,people,book,introduction')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
                     ->where("id = $id")->find();
-                if (!empty($data)) {
-                    echo json_encode([
-                        'status' => $succ[0],
-                        'msg' => $mess[0],
-                        'data' => $data
-                    ]);die;
-                } else {
-                    echo $model::state($succ[2], $mess[2]);die;
-                }
-            }else {
-                echo $model::state($succ[2], $mess[2]);die;
             }
-        } else {
-            echo $model::state($succ[3], $mess[3]);die;
         }
+        $this->assign('data', $data);
+        $this->display();
     }
 
     /**
-     * ¹«¿ª¿Î
+     * åˆ›å»ºè¯¾å ‚
      */
-    public function open_class ()
+    public function create()
     {
-        $succ = C('status');
-        $mess = C('msg');
-        $model = new SubmitController();
+        $course = M('course');
+        $lector = M('lector');
+        $people = M('people');
+        $book = M('book');
+        $junwei = M('junwei')->find();
+        $response = new ResponseController();
+        if (IS_POST) {
+            $data = I('');
+            if ($course->add($data)) {
+                $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                exit();
+            } else {
+                $this->error(L('ADD_FAILED'));
+                exit();
+            }
+        }
+        $array['lector'] = $lector->select();
+        $array['people'] = $people->select();
+        $array['book'] = $book->select();
+        $this->assign('array', $array);
+        $this->display();
+    }
+
+    /**
+     * ä¿®æ”¹è¯¾å ‚ä¿¡æ¯
+     */
+    public function update()
+    {
+        $response = new ResponseController();
+        $course = M('course');
+        $lector = M('lector');
+        $people = M('people');
+        $book = M('book');
         if (IS_GET) {
-            $course = M('course');
-            $page = I('get.page');
-            if (is_numeric($page)) {
+            $id = I('get.id');
+            if (!empty($id)) {
                 $data = $course
-                    ->field('id,course_name,now_price,old_price,name,startDate,invalidDate,cover,num_class,status')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("is_free = '1'")->order('cmf_course.id')->page($page . ',10')->select();
-                if (!empty($data)) {
-                    echo json_encode([
-                        'status' => $succ[0],
-                        'msg' => $mess[0],
-                        'data' => $data
-                    ]);die;
-                } else {
-                    echo $model::state($succ[0], $mess[0],$data = null);die;
-                }
-            } else {
-                echo $model::state($succ[2], $mess[2]);die;
+                    ->where("id = $id")
+                    ->find();
+                $lector = $lector->select();
+                $people = $people->select();
+                $book = $book->select();
+                $array['lector'] = $lector;
+                $array['people'] = $people;
+                $array['book'] = $book;
             }
-        } else {
-            echo $model::state($succ[3], $mess[3]);die;
+            $this->assign('id', $id);
+            $this->assign('array', $array);
+            $this->assign('data', $data);
         }
+        if (IS_POST) {
+            $id = I('post.id');
+            $data = I('');
+            if ($course->where("id = $id")->save($data)) {
+                $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                exit();
+            } else {
+                $this->error(L("ADD_FAILED"));
+                exit();
+            }
+        }
+        $this->display();
     }
 
     /**
-     * vip¿Î³Ì
+     * åˆ é™¤è¯¾å ‚
      */
-    public function vip ()
+    public function delete()
     {
-        $succ = C('status');
-        $mess = C('msg');
-        $model = new SubmitController();
+        $course = M("course");
+        $response = new ResponseController();
         if (IS_GET) {
-            $course = M('course');
-            $page = I('get.page');
-            if (is_numeric($page)) {
-                $data = $course
-                    ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status')
-                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("is_free = '2'")->order('cmf_course.id')->page($page . ',10')->select();
-                if (!empty($data)) {
-                    echo json_encode([
-                        'code' => $succ[0],
-                        'mess' => $mess[0],
-                        'data' => $data
-                    ]);die;
-                } else {
-                    echo $model::state($succ[0], $mess[0],$data = null);die;
-                }
-            } else {
-                echo $model::state($succ[2], $mess[2]);die;
+            if (isset($_GET['id'])) {
+                $id = intval(I("get.id"));
+                    if ($course->where("id = $id")->delete() !== false) {
+                        $this->success("åˆ é™¤æˆåŠŸï¼");
+                    } else {
+                        $this->error("åˆ é™¤å¤±è´¥ï¼");
+                    }
             }
-        } else {
-            echo $model::state($succ[3], $mess[3]);die;
+        }
+        if (isset($_POST['ids'])) {
+            $ids = join(",", $_POST['ids']);
+            if ($course->where("id in ($ids)")->delete() !== false) {
+                $this->success("åˆ é™¤æˆåŠŸï¼");
+            } else {
+                $this->error("åˆ é™¤å¤±è´¥ï¼");
+            }
         }
     }
 
+
     /**
-     * ¿ÎÊ±Ö±²¥½áÊø
+     * ç›´æ’­ç»“æŸç”Ÿæˆå›žæ”¾
      */
-    public function live_end ()
+    public function playback()
     {
-        $succ = C('status');
-        $mess = C('msg');
-        $model = new SubmitController();
+        $live = M('live');
         if (IS_GET) {
             $id = I('get.id');
             if (is_numeric($id)) {
-                $live = M('live');
-                $rew = $live->where("id = $id")->getField('class_id');
-                if ($rew) {
-                    $live->status = 2;
-                    if ($live->where("id = $id")->save()) {
-                        echo json_encode([
-                            'status' => $succ[0],
-                            'msg' => $mess[0],
-                        ]);die;
+                $class_id = $live->where("id = $id")->getField('class_id');
+                $junwei = M('junwei')->find();
+                $response = new ResponseController();
+                $loginName = $junwei['loginname'];
+                $password = sp_authcode($junwei['password']);
+                $resource = $response::get_past($loginName, $password, $class_id);
+                if ($resource['code'] == 0) {
+                    $res = $resource['coursewares'][0];
+                    $data['number'] = $res['number'];
+                    $data['status'] = 3;
+                    $data['reply_url'] = $res['url'];
+                    if ($live->where("id = $id")->save($data)) {
+                        $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
+                        exit();
+                    } else {
+                        $this->error(L('ADD_FAILED'));
+                        exit();
                     }
-                }else {
-                    echo $model::state($succ[2], $mess[2]);die;
                 }
-            }else {
-                echo $model::state($succ[2], $mess[2]);die;
             }
-        }else {
-            echo $model::state($succ[3], $mess[3]);die;
         }
     }
-    /**
-     * ÍùÆÚÖ±²¥
-     */
-    public function past_live()
-    {
-        $succ = C('status');
-        $mess = C('msg');
-        $course = M('course');
-        $model = new SubmitController();
-        if (IS_GET) {
-            $page = I('get.page');
-            if (is_numeric($page)) {
-                $data = $course
-                    ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_free')
-                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("status = '3'")->order('cmf_course.id')->page($page . ',10')->select();
-                if (!empty($data)) {
-                    echo json_encode([
-                        'status' => $succ[0],
-                        'meg' => $mess[0],
-                        'data' => $data
-                    ]);die;
-                } else {
-                    echo $model::state($succ[0], $mess[0],$data = null);die;
-                }
-            } else {
-                echo $model::state($succ[2], $mess[2]);die;
-            }
-        } else {
-            echo $model::state($succ[3], $mess[3]);die;
-        }
-    }
+
+
 }

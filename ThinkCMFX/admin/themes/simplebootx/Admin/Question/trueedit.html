@@ -5,7 +5,6 @@
 <ul class="nav nav-tabs">
     <li><a href="{:U('Question/ture')}">所有真题</a></li>
     <li class="active"><a href="{:U('Question/truekedit')}"  target="_self">真题修改</a></li>
-    <li><a href="#">添加材料试题</a></li>
 </ul>
 <form class="form-horizontal js-ajax-form" action="{:U('Question/trueedit_post')}" method="post">
 
@@ -22,9 +21,9 @@
                 <th width="80">试卷类型</th>
                 <td>
                     <select name="etid" class="normal_select">
-                        <option <if condition="$item.te_type eq 0">selected</if>>卷一</option>
-                        <option <if condition="$item.te_type eq 1">selected</if>>卷二</option>
-                        <option <if condition="$item.te_type eq 2">selected</if>>卷三</option>
+                        <option value="0" <if condition="$item.te_type eq 0">selected</if>>卷一</option>
+                        <option value="1" <if condition="$item.te_type eq 1">selected</if>>卷二</option>
+                        <option value="2" <if condition="$item.te_type eq 2">selected</if>>卷三</option>
                     </select>
                 </td>
             </tr>
@@ -37,6 +36,12 @@
                     </select>
                 </td>
             </tr>
+			 <tr>
+                <th width="80">题号</th>
+                <td>
+                    <input type="text" name="no" value="{$item.no}" style="width: 100px"/>
+                </td>
+            </tr>
             <tr>
                 <th width="80">题干</th>
                 <td>
@@ -47,7 +52,7 @@
             <tr>
                 <th width="80">选项</th>
                 <td>
-                    <foreach name='options' item='v'>
+                    <foreach name='option' item='v'>
                     <input type="text" name="option[]" id="" value="{$v.options}" style="width:400px;"></br>
                     </foreach>
                 </td>
@@ -71,7 +76,7 @@
                  <tr>
                 <th width="80">考点</th>
                 <td>
-                    <input type="text" value="暂无" name="point" value="{$item.ncertain}" />
+                    <input type="text"  name="point" value="{$item.point}" />
                 </td>
             </tr>
             <tr>

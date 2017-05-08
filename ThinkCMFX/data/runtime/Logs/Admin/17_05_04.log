@@ -1,74 +1,110 @@
-[ 2017-05-04T09:18:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+[ 2017-05-04T10:42:40+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=public&a=dologin
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001153s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000416s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002769s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000068s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
 INFO: [ admin_begin ] --START--
-INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001978s ]
-INFO: [ admin_begin ] --END-- [ RunTime:0.002035s ]
-SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0020s ]
-SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
-SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0605s ]
-SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0119s ]
-SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-04 09:18:49',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0831s ]
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000049s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.50.74',`last_login_time`='2017-05-04 10:42:40',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0002s ]
 
-[ 2017-05-04T10:06:44+08:00 ] 127.0.0.1 /index.php?g=Admin&m=course&a=playback&id=1
-ERR: 1048:Column 'number' cannot be null
- [ SQL语句 ] : UPDATE `cmf_course` SET `number`=NULL,`status`='3',`reply_url`=NULL WHERE ( id = 1 )
+[ 2017-05-04T10:42:45+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Course&a=show
+ERR: 无法加载控制器:Course
 
-[ 2017-05-04T10:07:38+08:00 ] 127.0.0.1 /index.php?g=Admin&m=course&a=playback&id=1
-ERR: 1048:Column 'number' cannot be null
- [ SQL语句 ] : UPDATE `cmf_course` SET `number`=NULL,`status`='3',`reply_url`=NULL WHERE ( id = 1 )
+[ 2017-05-04T10:42:47+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Lector&a=lector
+ERR: 无法加载控制器:Lector
 
-[ 2017-05-04T10:51:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=playback&id=1
-ERR: 1048:Column 'number' cannot be null
- [ SQL语句 ] : UPDATE `cmf_course` SET `number`=NULL,`status`='3',`reply_url`=NULL WHERE ( id = 1 )
+[ 2017-05-04T10:42:48+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Teaching&a=index
+ERR: 无法加载控制器:Teaching
 
-[ 2017-05-04T10:52:08+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=playback&id=1
-ERR: 1048:Column 'number' cannot be null
- [ SQL语句 ] : UPDATE `cmf_course` SET `number`=NULL,`status`='3',`reply_url`=NULL WHERE ( id = 1 )
+[ 2017-05-04T10:42:48+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=People&a=show
+ERR: 无法加载控制器:People
 
-[ 2017-05-04T12:34:25+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=get_class&page=1
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
- [ SQL语句 ] : SELECT * FROM `cmf_course` WHERE ( id =  ) LIMIT 1  
+[ 2017-05-04T10:42:49+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Book&a=show
+ERR: 无法加载控制器:Book
 
-[ 2017-05-04T13:47:30+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
-ERR: Call to a member function select() on null
+[ 2017-05-04T10:42:49+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Courseware&a=show
+ERR: 无法加载控制器:Courseware
 
-[ 2017-05-04T14:02:09+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
-ERR: Call to a member function select() on null
+[ 2017-05-04T10:42:51+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Course&a=show
+ERR: 无法加载控制器:Course
 
-[ 2017-05-04T14:02:15+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Course&a=create
-ERR: Call to a member function select() on null
+[ 2017-05-04T10:42:52+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Lector&a=lector
+ERR: 无法加载控制器:Lector
 
-[ 2017-05-04T14:05:59+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001768s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000537s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.003628s ]
-INFO: [ admin_begin ] --START--
-INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001554s ]
-INFO: [ admin_begin ] --END-- [ RunTime:0.001624s ]
-SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
-SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
-SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0012s ]
-SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0011s ]
-SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-04 14:05:58',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0612s ]
+[ 2017-05-04T10:42:53+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Teaching&a=index
+ERR: 无法加载控制器:Teaching
 
-[ 2017-05-04T18:59:35+08:00 ] 192.168.50.173 /ThinkCMFX/index.php?g=Admin&m=public&a=dologin
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001824s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000512s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.003608s ]
-INFO: [ admin_begin ] --START--
-INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001449s ]
-INFO: [ admin_begin ] --END-- [ RunTime:0.001502s ]
-SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0020s ]
-SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
-SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.1029s ]
-SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0479s ]
-SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='192.168.50.173',`last_login_time`='2017-05-04 18:59:35',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0777s ]
+[ 2017-05-04T10:42:54+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=People&a=show
+ERR: 无法加载控制器:People
+
+[ 2017-05-04T10:42:54+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Book&a=show
+ERR: 无法加载控制器:Book
+
+[ 2017-05-04T10:42:55+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Courseware&a=show
+ERR: 无法加载控制器:Courseware
+
+[ 2017-05-04T10:42:55+08:00 ] 180.153.201.15 /junwei/index.php?g=Admin&m=Course&a=show
+ERR: 无法加载控制器:Course
+
+[ 2017-05-04T10:42:57+08:00 ] 180.153.214.198 /junwei/index.php?g=Admin&m=Lector&a=lector
+ERR: 无法加载控制器:Lector
+
+[ 2017-05-04T10:42:58+08:00 ] 180.153.201.15 /junwei/index.php?g=Admin&m=People&a=show
+ERR: 无法加载控制器:People
+
+[ 2017-05-04T10:42:58+08:00 ] 101.226.125.103 /junwei/index.php?g=Admin&m=Teaching&a=index
+ERR: 无法加载控制器:Teaching
+
+[ 2017-05-04T10:42:59+08:00 ] 101.226.89.120 /junwei/index.php?g=Admin&m=Courseware&a=show
+ERR: 无法加载控制器:Courseware
+
+[ 2017-05-04T10:42:59+08:00 ] 61.151.218.118 /junwei/index.php?g=Admin&m=Book&a=show
+ERR: 无法加载控制器:Book
+
+[ 2017-05-04T10:42:59+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:43:00+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:43:01+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T10:43:15+08:00 ] 42.51.203.204 /junwei/index.php?g=Admin&m=Teaching&a=index
+ERR: 无法加载控制器:Teaching
+
+[ 2017-05-04T11:00:55+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Courseware&a=show
+ERR: 无法加载控制器:Courseware
+
+[ 2017-05-04T11:01:54+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Question&a=test
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T11:01:57+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T11:01:59+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-04T11:02:02+08:00 ] 115.33.50.74 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
 

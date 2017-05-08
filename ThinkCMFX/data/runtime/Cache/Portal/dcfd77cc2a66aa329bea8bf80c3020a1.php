@@ -7,11 +7,11 @@
 		<b>后台管理:</b><a href ="<?php echo sp_plugin_url('Demo://AdminIndex/index');?>" target="_blank" >访问</a>
 	</p>
 	<p>
-		<b>插件根目录:</b>/plugins/Demo
+		<b>插件根目录:</b>/junwei/plugins/Demo
 	</p>
 
 	<p>
-		<b>插件模板根目录:</b>/plugins/Demo/View/
+		<b>插件模板根目录:</b>/junwei/plugins/Demo/View/
 	</p>
 
 	<p>

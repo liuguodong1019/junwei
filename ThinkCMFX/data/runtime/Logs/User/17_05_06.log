@@ -1,30 +1,32 @@
-<<<<<<< HEAD
-[ 2017-05-06T09:57:59+08:00 ] ::1 /junwei/ThinkCMFX/index.php?g=user&m=index&a=is_login
+[ 2017-05-06T10:28:18+08:00 ] 115.33.19.66 /junwei/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.042944s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000926s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.047200s ]
-NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent F:\phpStudy\WWW\junwei\ThinkCMFX\simplewind\Core\Common\functions.php 第 1288 行.
-NOTIC: [8] Undefined index: url F:\phpStudy\WWW\junwei\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
-NOTIC: [2] Cannot modify header information - headers already sent F:\phpStudy\WWW\junwei\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 29 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000050s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
 
-[ 2017-05-06T13:56:30+08:00 ] ::1 /junwei/ThinkCMFX/index.php?g=user&m=index&a=is_login
+[ 2017-05-06T10:31:08+08:00 ] 115.33.19.66 /junwei/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000910s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000339s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002340s ]
-NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent F:\phpStudy\WWW\junwei\ThinkCMFX\simplewind\Core\Common\functions.php 第 1288 行.
-NOTIC: [8] Undefined index: url F:\phpStudy\WWW\junwei\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
-NOTIC: [2] Cannot modify header information - headers already sent F:\phpStudy\WWW\junwei\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 29 行.
-=======
-[ 2017-05-06T23:25:03+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000054s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
+
+[ 2017-05-06T11:51:02+08:00 ] 115.33.19.66 /junwei/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.050184s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000857s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.052688s ]
-NOTIC: [8] Undefined index: url D:\laragon\www\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
->>>>>>> f25310abebdbebd6cc75c2d551f1658e696aeb8e
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000043s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
+
+[ 2017-05-06T15:18:02+08:00 ] 115.33.19.66 /junwei/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000050s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
 

@@ -5,6 +5,7 @@
 		<ul class="nav nav-tabs">
 			<li class="active"><a href="{:U('Question/itembank')}">题库管理</a></li>
 			<li><a href="{:U('Question/itembankadd')}">考题添加</a></li>
+			<li><a href="{:U('Question/subjectivelist')}">主观题列表</a></li>
 		</ul>
 		<form class="well form-search" method="post" action="{:U('Question/itembank')}">
 			 题干： 
@@ -33,7 +34,7 @@
 				<tr>
 					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="item_ids[]" value="{$vo.item_id}"></td>
 					<td><a>{$vo.item_id}</a></td>
-					<td><a href="{:U('Question/itembankshow',array('id'=>$vo['item_id']))}">{$vo.question}</a></td>
+					<td><a href="#">{$vo.question}</a></td>
 					<td>{$vo.itime|date='Y-m-d H:i:s',###}</td>
 					<td>
 						<if condition="$vo.te_type eq 1"> 多选题 

@@ -16,7 +16,7 @@
     <li><a href="{:U('Question/trueadd')}"  >添加真题</a></li>
     <li class="active"><a href="{:U('Question/truemater')}"target="_self">添加材料试题</a></li>
 </ul>
-<form class="form-horizontal js-ajax-form" action="{:U('Question/materadd_post')}" method="post">
+<form class="form-horizontal js-ajax-form" action="{:U('Question/truemateradd_post')}" method="post">
 	<div>
 		 <table width="100%" cellpadding="2" cellspacing="2">
 		  <tr>
@@ -67,7 +67,7 @@
             <tr>
                 <th width="80">选项</th>
                 <td>
-                    <textarea name='options' id='e_answer' style='width:98%;height:150px;'></textarea>A,B,C,D各个选项用英文';'隔开
+                    <textarea name='options[]' id='e_answer' style='width:98%;height:150px;'></textarea>A,B,C,D各个选项用英文';'隔开
                 </td>
             </tr>
 

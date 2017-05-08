@@ -1,81 +1,52 @@
 <?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<!-- Set render engine for 360 browser -->
-	<meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- HTML5 shim for IE8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-<<<<<<< HEAD
-    <script src="/junwei/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
-    <link href="/junwei/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/junwei/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/junwei/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/junwei/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/junwei/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/junwei/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/junwei/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/junwei/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
-    <!--<link rel="stylesheet" href="/junwei/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/junwei/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <!--<link rel="stylesheet" href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/junwei/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
-            ROOT: "/junwei/ThinkCMFX/",
-            WEB_ROOT: "/junwei/ThinkCMFX/",
+            ROOT: "/junwei/",
+            WEB_ROOT: "/junwei/",
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
-    <script src="/junwei/ThinkCMFX/public/js/jquery.js"></script>
-    <script src="/junwei/ThinkCMFX/public/js/wind.js"></script>
-    <script src="/junwei/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
-=======
-    <script src="/public/simpleboot/jedate/jedate.js"></script>
-	<link href="/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
-    <style>
-		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
-		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
-		.table-list{margin-bottom: 0px;}
-	</style>
-	<!--[if IE 7]>
-	<!--<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
-	<![endif]-->
-	<script type="text/javascript">
-	//全局变量
-	var GV = {
-	    ROOT: "/",
-	    WEB_ROOT: "/",
-	    JS_ROOT: "public/js/",
-	    APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
-	};
-	</script>
-    <script src="/public/js/jquery.js"></script>
-    <script src="/public/js/wind.js"></script>
-    <script src="/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
->>>>>>> f25310abebdbebd6cc75c2d551f1658e696aeb8e
+    <script src="/junwei/public/js/jquery.js"></script>
+    <script src="/junwei/public/js/wind.js"></script>
+    <script src="/junwei/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
-    	$(function(){
-    		$("[data-toggle='tooltip']").tooltip();
-    	});
+        $(function(){
+            $("[data-toggle='tooltip']").tooltip();
+        });
     </script>
-<?php if(APP_DEBUG): ?><style>
-		#think_page_trace_open{
-			z-index:9999;
-		}
-	</style><?php endif; ?>
+    <?php if(APP_DEBUG): ?><style>
+            #think_page_trace_open{
+                z-index:9999;
+            }
+        </style><?php endif; ?>
     <style>
         body{ padding:50px 0 0 50px;}
         .datainp{ width:200px; height:30px; border:1px #ccc solid;}
@@ -111,7 +82,6 @@
     <form action="<?php echo U('Course/create');?>" class="well form-search" method="post" >
 
     <div class="box box-default">
-
         <div class="box-body">
             <table width="100%" cellpadding="2" cellspacing="2" >
                 <tr>

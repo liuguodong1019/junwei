@@ -6,6 +6,7 @@
     <li><a href="{:U('Question/true')}">所有真题</a></li>
     <li class="active"><a href="{:U('Question/truekadd')}"  target="_self">添加真题</a></li>
     <li><a href="{:U('Question/truemater')}">添加材料试题</a></li>
+    <li><a href="{:U('Question/truesubjective')}">添加主观试题</a></li>
 </ul>
 <form class="form-horizontal js-ajax-form" action="{:U('Question/trueadd_post')}" method="post">
 
@@ -37,6 +38,12 @@
                     </select>
                 </td>
             </tr>
+			 <tr>
+                <th width="80">题号</th>
+                <td>
+                    <input type="text" name="no" value="" style="width: 100px"/>
+                </td>
+            </tr>
             <tr>
                 <th width="80">题干</th>
                 <td>
@@ -63,7 +70,7 @@
             <tr>
                 <th width="80">考点</th>
                 <td>
-                    <input type="text" value="暂无" name="point" />
+                    <input type="text" value="" name="point" />
                 </td>
             </tr>
             <tr>
@@ -86,7 +93,7 @@
             <tr>
                 <th width="80">试题解析</th>
                 <td>
-                    <textarea name='parsing' id='parsing' style='width:98%;height:150px;'>暂无</textarea>
+                    <textarea name='parsing' id='parsing' style='width:98%;height:150px;'></textarea>
                 </td>
             </tr>
             <tr>
