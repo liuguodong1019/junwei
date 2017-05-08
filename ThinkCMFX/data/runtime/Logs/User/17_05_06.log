@@ -1,0 +1,20 @@
+[ 2017-05-06T09:57:59+08:00 ] ::1 /junwei/ThinkCMFX/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.042944s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.047200s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent F:\phpStudy\WWW\junwei\ThinkCMFX\simplewind\Core\Common\functions.php 第 1288 行.
+NOTIC: [8] Undefined index: url F:\phpStudy\WWW\junwei\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
+NOTIC: [2] Cannot modify header information - headers already sent F:\phpStudy\WWW\junwei\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 29 行.
+
+[ 2017-05-06T13:56:30+08:00 ] ::1 /junwei/ThinkCMFX/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000910s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002340s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent F:\phpStudy\WWW\junwei\ThinkCMFX\simplewind\Core\Common\functions.php 第 1288 行.
+NOTIC: [8] Undefined index: url F:\phpStudy\WWW\junwei\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
+NOTIC: [2] Cannot modify header information - headers already sent F:\phpStudy\WWW\junwei\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 29 行.
+
