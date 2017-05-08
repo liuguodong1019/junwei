@@ -73,69 +73,42 @@
 </script>
 </head>
 <body>
-<div class="wrap js-check-wrap">
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="<?php echo U('Course/show');?>">课堂列表</a></li>
-        <li><a href="<?php echo U('Course/show');?>">课堂列表</a></li>
-        <li><a href="<?php echo U('Course/create');?>">添加课堂</a></li>
-    </ul>
-    <table class="table table-hover table-bordered table-list">
-        <tr>
-            <th width="60">ID</th>
-            <th width="80">课堂主题</th>
-            <th width="80">现价</th>
-            <th width="80">原价</th>
-            <th width="80">讲师</th>
-            <th width="80">课时数量</th>
-            <th width="80">课堂类型</th>
-            <th width="80">直播状态</th>
-            <th width="80">是否收费</th>
-        </tr>
-        <tr>
-            <td><a><?php echo ($data["id"]); ?></a></td>
-            <td><?php echo ($data["subject"]); ?></td>
-            <td><?php echo ($data["now_price"]); ?></td>
-            <td><?php echo ($data["old_price"]); ?></td>
-            <td><?php echo ($data["name"]); ?></td>
-            <td><?php echo ($data["num_class"]); ?></td>
-            <td><?php echo ($data["type"]); ?></td>
-            <td><?php echo ($data["status"]); ?></td>
-            <td><?php echo ($data["is_free"]); ?></td>
-        </tr>
-        <tr>
-            <th width="80">课堂编号</th>
-            <th width="80">学生口令</th>
-            <th width="80">课堂ID</th>
-            <th width="80">回放地址</th>
-            <th width="80">回放口令</th>
-            <th width="80">适用人群</th>
-            <th width="80">配发图书</th>
-            <th width="80">开始时间</th>
-            <th width="80">结束时间</th>
-        </tr>
-        <tr>
-            <td><?php echo ($data["number"]); ?></td>
-            <td><?php echo ($data["stu_token"]); ?></td>
-            <td><?php echo ($data["class_id"]); ?></td>
-            <td><?php echo ($data["reply_url"]); ?></td>
-            <td><?php echo ($data["token"]); ?></td>
-            <td><?php echo ($data["people"]); ?></td>
-            <td><?php echo ($data["book"]); ?></td>
-            <td><?php echo ($data["startdate"]); ?></td>
-            <td><?php echo ($data["invaliddate"]); ?></td>
-        </tr>
-
-    </table>
-    <table class="table table-hover table-bordered table-list">
-        <tr>
-            <th width="80">课程简介</th>
-        </tr>
-        <tr>
-            <td><textarea style='width:50%;height:100px;'><?php echo ($data["introduction"]); ?></textarea></td>
-        </tr>
-    </table>
-
-</div>
-
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="<?php echo U('setting/site');?>">网站信息</a></li>
+			<li><a href="<?php echo U('route/index');?>">URL美化</a></li>
+			<li class="active"><a href="<?php echo U('route/add');?>">添加URL规则</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="<?php echo U('route/add_post');?>">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">原始网址:</label>
+					<div class="controls">
+						<input type="text" name="full_url" value=""><span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">显示网址:</label>
+					<div class="controls">
+						<input type="text" name="url" value=""><span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">是否启用:</label>
+					<div class="controls">
+						<select name="status">
+							<option value="1">启用</option>
+							<option value="0">禁用</option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">添加</button>
+				<a class="btn" href="javascript:history.back(-1);">返回</a>
+			</div>
+		</form>
+	</div>
+	<script src="/ThinkCMFX/public/js/common.js"></script>
 </body>
 </html>

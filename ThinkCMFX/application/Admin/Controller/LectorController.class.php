@@ -1,6 +1,7 @@
 <?php
 namespace Admin\Controller;
 
+use Api\Controller\ResponseController;
 use Common\Controller\AdminbaseController;
 
 class LectorController extends AdminbaseController
@@ -18,7 +19,6 @@ class LectorController extends AdminbaseController
             $keyword = I('post.keyword');
             if (!empty($keyword)) {
                 $list = $lector
-                    ->join('cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id')
                     ->where("name like '%$keyword%'")
                     ->order('create_time')->limit($Page->firstRow.','.$Page->listRows)
                     ->select();
@@ -28,11 +28,11 @@ class LectorController extends AdminbaseController
                 ->join('cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id')
                 ->order('l_id')->limit($Page->firstRow.','.$Page->listRows)
                 ->select();
+            if (empty($list)) {
+                $this->error('暂时还没有数据',U('Lector/create_lector'));
+            }
         }
 
-        if (empty($list)) {
-            $this->redirect(U('Lector/create_lector'));
-        }
         $this->assign('list', $list);
         $this->assign('page',$show);
         $this->display('lector');
@@ -45,17 +45,27 @@ class LectorController extends AdminbaseController
     {
         $model = M('teaching');
         $lector = M('lector');
+        $response = new ResponseController();
         $list = $model->select();
         $this->assign('list', $list);
+        $junWei = M('junwei')->field('loginName,password')->find();
         if (IS_POST) {
-            $data['name'] = I('post.name');
-            $data['teaching_id'] = I('post.teaching_id');
+            $data = I('');
+            $data['password'] = sp_authencode(I('post.password'));
             $data['create_time'] = date('Y-m-d H:i:s');
-
-            if ($lector->add($data)) {
-                $this->success(L('ADD_SUCCESS'), U("Lector/lector"));exit();
-            } else {
-                $this->error(L('ADD_FAILED'));exit();
+            $loginName = $junWei['loginname'];
+            $password = sp_authcode($junWei['password']);
+            $name = I('post.name');
+            $teacherLoginName = I('post.login_name');
+            $teacherPassword = I('post.password');
+            //调用创建老师接口
+            $resource = $response::create_lector($loginName,$password,$name,$teacherLoginName,$teacherPassword);
+            if ($resource['code'] == 0) {
+                if ($lector->add($data)) {
+                    $this->success(L('ADD_SUCCESS'), U("Lector/lector"));exit();
+                } else {
+                    $this->error(L('ADD_FAILED'));exit();
+                }
             }
         }
         $this->assign('list', $list);

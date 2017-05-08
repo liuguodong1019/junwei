@@ -11,32 +11,56 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
+<<<<<<< HEAD
     <script src="/junwei/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
     <link href="/junwei/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
     <link href="/junwei/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
     <link href="/junwei/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
     <link href="/junwei/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+=======
+    <script src="/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+>>>>>>> f25310abebdbebd6cc75c2d551f1658e696aeb8e
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
+<<<<<<< HEAD
     <!--<link rel="stylesheet" href="/junwei/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
     <link  href="/junwei/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+=======
+    <!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+>>>>>>> f25310abebdbebd6cc75c2d551f1658e696aeb8e
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
+<<<<<<< HEAD
             ROOT: "/junwei/ThinkCMFX/",
             WEB_ROOT: "/junwei/ThinkCMFX/",
+=======
+            ROOT: "/ThinkCMFX/",
+            WEB_ROOT: "/ThinkCMFX/",
+>>>>>>> f25310abebdbebd6cc75c2d551f1658e696aeb8e
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
+<<<<<<< HEAD
     <script src="/junwei/ThinkCMFX/public/js/jquery.js"></script>
     <script src="/junwei/ThinkCMFX/public/js/wind.js"></script>
     <script src="/junwei/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+=======
+    <script src="/ThinkCMFX/public/js/jquery.js"></script>
+    <script src="/ThinkCMFX/public/js/wind.js"></script>
+    <script src="/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+>>>>>>> f25310abebdbebd6cc75c2d551f1658e696aeb8e
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -88,7 +112,11 @@ li {
 		<h4 class="well"><?php echo L('SYSTEM_NOTIFICATIONS');?></h4>
 		<div class="home_info">
 			<ul id="thinkcmf_notices">
+<<<<<<< HEAD
 				<li><img src="/junwei/ThinkCMFX/admin/themes/simplebootx/Public/assets/images/loading.gif"style="vertical-align: middle;" /><span style="display: inline-block; vertical-align: middle;">加载中...</span></li>
+=======
+				<li><img src="/ThinkCMFX/admin/themes/simplebootx/Public/assets/images/loading.gif"style="vertical-align: middle;" /><span style="display: inline-block; vertical-align: middle;">加载中...</span></li>
+>>>>>>> f25310abebdbebd6cc75c2d551f1658e696aeb8e
 			</ul>
 		</div>
 		<h4 class="well"><?php echo L('SYSTEM_INFORMATIONS');?></h4>
@@ -126,7 +154,11 @@ li {
 			</ul>
 		</div>
 	</div>
+<<<<<<< HEAD
 	<script src="/junwei/ThinkCMFX/public/js/common.js"></script>
+=======
+	<script src="/ThinkCMFX/public/js/common.js"></script>
+>>>>>>> f25310abebdbebd6cc75c2d551f1658e696aeb8e
 	<?php $lang_set=defined('LANG_SET')?LANG_SET:''; $thinkcmf_version=defined('THINKCMF_VERSION')?THINKCMF_VERSION:''; ?>
 	<script>
 		//获取官方通知

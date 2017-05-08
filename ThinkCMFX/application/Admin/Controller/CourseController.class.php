@@ -1,264 +1,212 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 刘国栋
- * Date: 2017/4/26
- * Time: 11:47
- */
+namespace Api\Controller;
 
-namespace Admin\Controller;
+use Think\Controller;
 
-use Common\Controller\AdminbaseController;
-
-use Api\Controller\ResponseController;
-
-/**
- * Class LiveController
- * @package Admin\Controller
- * 直播系统管理
- */
-class CourseController extends AdminbaseController
+class CourseController extends Controller
 {
     /**
-     * 课堂列表
+     * ��ȡ�����б�
      */
-    public function show()
+    public function get_class_list()
     {
-        $course = M('course');
-        $junwei = M('junwei')->find();
-        $loginName = $junwei['loginName'];
-        $password = $junwei['password'];
-        $count = $course->count();
-        $Page = new \Think\Page($count, 10);
-        $show = $Page->show();
-        if (IS_POST) {
-            $keyword = I('post.keyword');
-            if (!empty($keyword)) {
-                $data = $course->where("subject like '%$keyword%'")
-                    ->order('startDate')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+        $succ = C('status');
+        $mess = C('msg');
+        $model = new SubmitController();
+        if (IS_GET) {
+            $course = M('course');
+            $page = I('get.page');
+            if (is_numeric($page)) {
+                $data = $course
+                    ->field('cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free')
+                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->order('cmf_course.id')->page($page.',10')->select();
+                if (!empty($data)) {
+                    echo json_encode([
+                        'status' => $succ[0],
+                        'msg' => $mess[0],
+                        'data' => $data
+                    ]);die;
+                } else {
+                    echo $model::state($succ[0], $mess[0],$data = null);die;
+                }
             } else {
-                $this->redirect('show');
+                echo $model::state($succ[2], $mess[2]);die;
             }
         } else {
-            $data = $course
-                ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                ->order('cmf_course.id')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+            echo $model::state($succ[3], $mess[3]);die;
         }
-        $this->assign('loginName', $loginName);
-        $this->assign('password', $password);
-        $this->assign('data', $data);
-        $this->assign('page', $show);
-        $this->display();
     }
 
     /**
-     * 查看课堂详细信息
+     * ��ȡ������Ϣ
      */
-    public function look()
+    public function get_class()
     {
+        $succ = C('status');
+        $mess = C('msg');
+        $model = new SubmitController();
         if (IS_GET) {
             $id = I('get.id');
-            if (!empty($id)) {
+            if (is_numeric($id)) {
                 $data = M('course')
+                    ->field('id,course_name,now_price,name,num_class,cover,people,book,introduction')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
                     ->where("id = $id")->find();
-            }
-        }
-        $this->assign('data', $data);
-        $this->display();
-    }
-
-    /**
-     * 创建课堂
-     */
-    public function create()
-    {
-        $course = M('course');
-        $lector = M('lector');
-        $people = M('people');
-        $book = M('book');
-        $junwei = M('junwei')->find();
-        $response = new ResponseController();
-        if (IS_POST) {
-            $data = I('');
-            $subject = I('post.subject');
-            $loginName = $junwei['loginname'];
-            $password = sp_authcode($junwei['password']);
-            $startDate = I('post.startDate');
-            $invalidDate = I('post.invalidDate');
-            //调用创建实时课堂接口
-            $resource = $response::create_course($subject, $loginName, $password, $startDate, $invalidDate);
-//            print_r($resource);die;
-            $data['number'] = $resource['number'];
-            $data['stu_token'] = $resource['studentClientToken'];
-            $data['class_id'] = $resource['id'];
-            if ($resource['code'] == 0) {
-                if ($course->add($data)) {
-                    $this->success(L('ADD_SUCCESS'), U("Course/show"));
-                    exit();
+                if (!empty($data)) {
+                    echo json_encode([
+                        'status' => $succ[0],
+                        'msg' => $mess[0],
+                        'data' => $data
+                    ]);die;
                 } else {
-                    $this->error(L('ADD_FAILED'));
-                    exit();
+                    echo $model::state($succ[2], $mess[2]);die;
                 }
-            } else {
-                $this->error(L('ADD_FAILED'));
-                exit();
+            }else {
+                echo $model::state($succ[2], $mess[2]);die;
             }
-
+        } else {
+            echo $model::state($succ[3], $mess[3]);die;
         }
-        $array['lector'] = $lector->select();
-        $array['people'] = $people->select();
-        $array['book'] = $book->select();
-        $this->assign('array', $array);
-        $this->display();
     }
 
     /**
-     * 修改课堂信息
+     * ������
      */
-    public function update()
+    public function open_class ()
     {
-        $response = new ResponseController();
-        $course = M('course');
-        $lector = M('lector');
-        $people = M('people');
-        $book = M('book');
-        $junwei = M('junwei')->find();
+        $succ = C('status');
+        $mess = C('msg');
+        $model = new SubmitController();
         if (IS_GET) {
-            $id = I('get.id');
-            if (!empty($id)) {
+            $course = M('course');
+            $page = I('get.page');
+            if (is_numeric($page)) {
                 $data = $course
+                    ->field('id,course_name,now_price,old_price,name,startDate,invalidDate,cover,num_class,status')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("id = $id")
-                    ->find();
-                $array['subject'] = $data['subject'];
-                $array['class_id'] = $data['class_id'];
-                $array['startDate'] = $data['startdate'];
-                $lector = $lector->select();
-                $people = $people->select();
-                $book = $book->select();
-                $array['lector'] = $lector;
-                $array['people'] = $people;
-                $array['book'] = $book;
-            }
-            $this->assign('id', $id);
-            $this->assign('array', $array);
-            $this->assign('data', $data);
-        }
-        if (IS_POST) {
-            $id = I('post.id');
-            $data = I('');
-            $loginName = $junwei['loginname'];
-            $password = sp_authcode($junwei['password']);
-            $realtime = I('post.realtime');
-            $startDate = I('post.startDate');
-            $subject = I('post.subject');
-            $class_id = I('post.class_id');
-            //调用修改实时课堂接口
-            $resource = $response::update_course($loginName, $password, $realtime, $startDate, $subject, $class_id);
-            $data['update_time'] = date('Y-m-d H:i:s');
-            if ($resource['code'] == 0) {
-                if ($course->where("id = $id")->save($data)) {
-                    $this->success(L('ADD_SUCCESS'), U("Course/show"));
-                    exit();
+                    ->where("is_free = '1'")->order('cmf_course.id')->page($page . ',10')->select();
+                if (!empty($data)) {
+                    echo json_encode([
+                        'status' => $succ[0],
+                        'msg' => $mess[0],
+                        'data' => $data
+                    ]);die;
                 } else {
-                    $this->error(L("ADD_FAILED"));
-                    exit();
-                }
-            }
-        }
-        $this->display();
-    }
-
-    /**
-     * 删除课堂
-     */
-    public function delete()
-    {
-        $course = M("course");
-        $response = new ResponseController();
-        if (IS_GET) {
-            if (isset($_GET['id'])) {
-                $class_id = I('class_id');
-                $junwei = M('junwei')->find();
-                $loginName = $junwei['loginname'];
-                $password = sp_authcode($junwei['password']);
-                //调用删除实时课堂接口
-                $resourec = $response::delete($loginName, $password, $class_id);
-                $id = intval(I("get.id"));
-                if ($resourec['code'] == 0) {
-                    if ($course->where("id = $id")->delete() !== false) {
-                        $this->success("删除成功！");
-                    } else {
-                        $this->error("删除失败！");
-                    }
-                }
-
-            }
-        }
-        if (isset($_POST['ids'])) {
-            $ids = join(",", $_POST['ids']);
-            $rew = $course->where("id in ($ids)")->select();
-            $len = count($rew);
-            $junwei = M('junwei')->find();
-            $loginName = $junwei['loginname'];
-            $password = sp_authcode($junwei['password']);
-            foreach ($rew as $value) {
-                $class_id[] = $value['class_id'];
-            }
-            //调用删除实时课堂接口批量删除
-            $resourec = $response::delete($loginName, $password, $class_id);
-            $ids = join(",", $_POST['ids']);
-            if ($resourec['code'] == 0) {
-                if ($course->where("id in ($ids)")->delete() !== false) {
-                    $this->success("删除成功！");
-                } else {
-                    $this->error("删除失败！");
+                    echo $model::state($succ[0], $mess[0],$data = null);die;
                 }
             } else {
-                $this->error("操作有误");
+                echo $model::state($succ[2], $mess[2]);die;
             }
+        } else {
+            echo $model::state($succ[3], $mess[3]);die;
         }
     }
 
+    /**
+     * vip�γ�
+     */
+    public function vip ()
+    {
+        $succ = C('status');
+        $mess = C('msg');
+        $model = new SubmitController();
+        if (IS_GET) {
+            $course = M('course');
+            $page = I('get.page');
+            if (is_numeric($page)) {
+                $data = $course
+                    ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status')
+                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->where("is_free = '2'")->order('cmf_course.id')->page($page . ',10')->select();
+                if (!empty($data)) {
+                    echo json_encode([
+                        'code' => $succ[0],
+                        'mess' => $mess[0],
+                        'data' => $data
+                    ]);die;
+                } else {
+                    echo $model::state($succ[0], $mess[0],$data = null);die;
+                }
+            } else {
+                echo $model::state($succ[2], $mess[2]);die;
+            }
+        } else {
+            echo $model::state($succ[3], $mess[3]);die;
+        }
+    }
 
     /**
-     * 生成回放
+     * ��ʱֱ������
      */
-    public function playback()
+    public function live_end ()
     {
-        $course = M('course');
+        $succ = C('status');
+        $mess = C('msg');
+        $model = new SubmitController();
         if (IS_GET) {
             $id = I('get.id');
             if (is_numeric($id)) {
-                $class_id = $course->where("id = $id")->getField('class_id');
-                $junwei = M('junwei')->find();
-                $response = new ResponseController();
-                $loginName = $junwei['loginname'];
-                $password = sp_authcode($junwei['password']);
-                $resource = $response::get_past($loginName, $password, $class_id);
-                if ($resource['code'] == 0) {
-                    $res = $resource['coursewares'][0];
-                    $data['number'] = $res['number'];
-                    $data['status'] = 3;
-                    $data['reply_url'] = $res['url'];
-                    if ($course->where("id = $id")->save($data)) {
-                        $this->success(L('ADD_SUCCESS'), U("Course/show"));
-                        exit();
-                    } else {
-                        $this->error(L('ADD_FAILED'));
-                        exit();
+                $live = M('live');
+                $rew = $live->where("id = $id")->getField('class_id');
+                if ($rew) {
+                    $live->status = 2;
+                    if ($live->where("id = $id")->save()) {
+                        echo json_encode([
+                            'status' => $succ[0],
+                            'msg' => $mess[0],
+                        ]);die;
                     }
+                }else {
+                    echo $model::state($succ[2], $mess[2]);die;
                 }
+            }else {
+                echo $model::state($succ[2], $mess[2]);die;
             }
+        }else {
+            echo $model::state($succ[3], $mess[3]);die;
         }
     }
-
-
+    /**
+     * ����ֱ��
+     */
+    public function past_live()
+    {
+        $succ = C('status');
+        $mess = C('msg');
+        $course = M('course');
+        $model = new SubmitController();
+        if (IS_GET) {
+            $page = I('get.page');
+            if (is_numeric($page)) {
+                $data = $course
+                    ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_free')
+                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->where("status = '3'")->order('cmf_course.id')->page($page . ',10')->select();
+                if (!empty($data)) {
+                    echo json_encode([
+                        'status' => $succ[0],
+                        'meg' => $mess[0],
+                        'data' => $data
+                    ]);die;
+                } else {
+                    echo $model::state($succ[0], $mess[0],$data = null);die;
+                }
+            } else {
+                echo $model::state($succ[2], $mess[2]);die;
+            }
+        } else {
+            echo $model::state($succ[3], $mess[3]);die;
+        }
+    }
 }

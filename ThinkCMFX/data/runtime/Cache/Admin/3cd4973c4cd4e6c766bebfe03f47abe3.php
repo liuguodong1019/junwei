@@ -102,7 +102,6 @@
                 <th width="80">配发图书</th>
                 <th width="80">开始时间</th>
                 <th width="80">结束时间</th>
-                <th width="80">课程简介</th>
                 <th width="125"><?php echo L('ACTIONS');?></th>
             </tr>
             </thead>
@@ -110,7 +109,7 @@
                     <td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x"
                                name="ids[]" value="<?php echo ($vo["id"]); ?>"></td>
                     <td><a><?php echo ($vo["id"]); ?></a></td>
-                    <td><?php echo ($vo["subject"]); ?></td>
+                    <td><?php echo ($vo["course_name"]); ?></td>
                     <td><?php echo ($vo["now_price"]); ?></td>
                     <td><?php echo ($vo["old_price"]); ?></td>
                     <td><?php echo ($vo["name"]); ?></td>
@@ -118,7 +117,6 @@
                     <td><?php echo ($vo["book"]); ?></td>
                     <td><?php echo ($vo["startdate"]); ?></td>
                     <td><?php echo ($vo["invaliddate"]); ?></td>
-                    <td><?php echo ($vo["introduction"]); ?></td>
                     <td>
                         <a href="<?php echo U('Course/look',array('id'=>$vo['id']));?>"><?php echo L('LOOK');?></a>|
                         <a href="<?php echo U('Course/update',array('id'=>$vo['id']));?>"><?php echo L('EDIT');?></a>|

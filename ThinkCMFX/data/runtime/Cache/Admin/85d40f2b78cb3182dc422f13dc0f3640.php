@@ -94,14 +94,14 @@
             <tr>
                 <th width="80">选项</th>
                 <td>
-                    <?php if(is_array($options)): foreach($options as $key=>$v): ?><input type="text" name="option[]" id="" value="<?php echo ($v["options"]); ?>" style="width:400px;"></br><?php endforeach; endif; ?>
+                    <textarea name='options' id='e_answer' style='width:98%;height:150px;'><?php echo ($option["0"]); ?>;<?php echo ($option["1"]); ?>;<?php echo ($option["2"]); ?>;<?php echo ($option["3"]); ?>;</textarea>A,B,C,D各个选项用英文';'隔开
                 </td>
             </tr>
 
             <tr>
                 <th width="80">答案</th>
                 <td>
-                    <input type="text" style="width:400px;" name="answer" id="e_result" value="<?php echo ($answer); ?>" style="color:"
+                    <input type="text" style="width:400px;" name="answer" id="e_result" value="<?php echo ($item["answer"]); ?>" style="color:"
                            class="input input_hd J_title_color" placeholder="请输入答案"
                            onkeyup="strlen_verify(this, 'title_len', 160)"/>输入正确的答案单选 如：A多选A,B多个选项用英文逗号隔开 
                 </td>
@@ -113,12 +113,6 @@
                         <textarea name='parsing' id='parsing' style='width:98%;height:150px;'><?php echo ($item["parsing"]); ?></textarea>
                     </td>
                 </tr>
-                 <tr>
-                <th width="80">考点</th>
-                <td>
-                    <input type="text" value="暂无" name="point" value="<?php echo ($item["ncertain"]); ?>" />
-                </td>
-            </tr>
                 <tr>
                     <th width="80">分值</th>
                     <td>
