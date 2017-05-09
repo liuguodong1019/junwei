@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/create.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/create.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/lang/Admin/Lang/zh-cn/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/lang/Admin/Lang/zh-cn/admin_menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/1c7ea420ab36cd51f570cf923c03ce6c.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/1c7ea420ab36cd51f570cf923c03ce6c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3715c3aca629e43d51da422d207c6505.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3715c3aca629e43d51da422d207c6505.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/50614a2b3b13f61218805e44b3b35834.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/50614a2b3b13f61218805e44b3b35834.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/a0c60485a94b058a0263302d0de4e474.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/a0c60485a94b058a0263302d0de4e474.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/e878ac14a40716fe586d6e9966ff8bb1.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/e878ac14a40716fe586d6e9966ff8bb1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/fcb422bd236bc2f2ddc43c521af2f925.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/fcb422bd236bc2f2ddc43c521af2f925.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/Menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/Menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_08.log" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_08.log" />
-    </list>
+    <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +51,8 @@
       <file leaf-file-name="CourseController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-707">
-              <caret line="129" column="72" lean-forward="false" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
+            <state relative-caret-position="282">
+              <caret line="172" column="24" lean-forward="true" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -341,12 +325,12 @@
       <workItem from="1494150725491" duration="1326000" />
       <workItem from="1494152694864" duration="11040000" />
       <workItem from="1494205404306" duration="21174000" />
-      <workItem from="1494290727603" duration="29000" />
+      <workItem from="1494290727603" duration="195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123901000" />
+    <option name="totallyTimeSpent" value="124067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="1" />
@@ -706,8 +690,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-707">
-          <caret line="129" column="72" lean-forward="false" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
+        <state relative-caret-position="282">
+          <caret line="172" column="24" lean-forward="true" selection-start-line="172" selection-start-column="24" selection-end-line="172" selection-end-column="24" />
           <folding />
         </state>
       </provider>
