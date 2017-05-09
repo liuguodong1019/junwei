@@ -3158,3 +3158,54 @@ NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
 [ 2017-05-08T14:20:11+08:00 ] 127.0.0.1 /ThinkCMFX/
 ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
 
+[ 2017-05-08T15:24:50+08:00 ] 127.0.0.1 /ThinkCMFX/ClassHour/create
+ERR: Function name must be a string
+
+[ 2017-05-08T16:34:18+08:00 ] 127.0.0.1 /ThinkCMFX/admin/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-08T16:34:28+08:00 ] 127.0.0.1 /ThinkCMFX/Menu/add/parentid/199
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-08T16:54:51+08:00 ] 127.0.0.1 /ThinkCMFX/admin/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-08T16:54:54+08:00 ] 127.0.0.1 /ThinkCMFX/Menu/add/parentid/199
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-08T16:56:18+08:00 ] 127.0.0.1 /ThinkCMFX/Menu/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003197s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005384s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002421s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002496s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0023s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: validate D:\laragon\www\junwei1\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Data' AND `action` = 'show' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `parentid` FROM `cmf_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto D:\laragon\www\junwei1\ThinkCMFX\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','课堂资料','admin','Data','show','','fa-paint-brush','','1','0') [ RunTime:0.1064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/data/show' LIMIT 1   [ RunTime:0.0197s ]
+SQL: INSERT INTO `cmf_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/data/show','admin','admin_url','课堂资料') [ RunTime:0.0537s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0021s ]
+NOTIC: [2] mkdir(): File exists D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\MenuController.class.php 第 247 行.
+
+[ 2017-05-08T16:56:18+08:00 ] 127.0.0.1 /ThinkCMFX/Menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-08T16:56:33+08:00 ] 127.0.0.1 /ThinkCMFX/Admin/Data/show
+ERR: 无法加载控制器:Data
+
+[ 2017-05-08T16:56:44+08:00 ] 127.0.0.1 /ThinkCMFX/Admin/Data/show
+ERR: 无法加载控制器:Data
+
+[ 2017-05-08T16:56:45+08:00 ] 127.0.0.1 /ThinkCMFX/Admin/Data/show
+ERR: 无法加载控制器:Data
+

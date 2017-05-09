@@ -93,7 +93,7 @@ class ClassHourController extends AdminbaseController
             $password = sp_authcode($junwei['password']);
             $startDate = I('post.startDate');
             $invalidDate = I('post.invalidDate');
-            //���ô���ʵʱ���ýӿ�
+            //调用课时修改接口
             $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
             $data['number'] = $resource['number'];
             $data['stu_token'] = $resource['studentClientToken'];

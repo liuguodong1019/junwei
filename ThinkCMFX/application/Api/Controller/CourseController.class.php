@@ -19,7 +19,7 @@ class CourseController extends Controller
             $page = I('get.page');
             if (is_numeric($page)) {
                 $data = $course
-                    ->field('cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free')
+                    ->field('cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,is_payment')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
@@ -121,61 +121,31 @@ class CourseController extends Controller
         if (IS_GET) {
             $course = M('course');
             $page = I('get.page');
-            if (is_numeric($page)) {
-                $data = $course
-                    ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status')
-                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("is_free = '2'")->order('cmf_course.id')->page($page . ',10')->select();
-                if (!empty($data)) {
-                    echo json_encode([
-                        'status' => $succ[0],
-                        'msg' => $mess[0],
-                        'data' => $data
-                    ]);die;
+                if (is_numeric($page)) {
+                    $data = $course
+                        ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_payment')
+                        ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                        ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                        ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                        ->where("is_free = '2'")->order('cmf_course.id')->page($page . ',10')->select();
+                    if (!empty($data)) {
+                        echo json_encode([
+                            'status' => $succ[0],
+                            'msg' => $mess[0],
+                            'data' => $data
+                        ]);die;
+                    } else {
+                        echo $model::state($succ[0], $mess[0],$data = null);die;
+                    }
                 } else {
-                    echo $model::state($succ[0], $mess[0],$data = null);die;
+                    echo $model::state($succ[2], $mess[2]);die;
                 }
-            } else {
-                echo $model::state($succ[2], $mess[2]);die;
-            }
         } else {
             echo $model::state($succ[3], $mess[3]);die;
         }
     }
 
-    /**
-     * 课时直播结束
-     */
-    public function live_end ()
-    {
-        $succ = C('status');
-        $mess = C('msg');
-        $model = new SubmitController();
-        if (IS_GET) {
-            $id = I('get.id');
-            if (is_numeric($id)) {
-                $live = M('live');
-                $rew = $live->where("id = $id")->getField('class_id');
-                if ($rew) {
-                    $live->status = 2;
-                    if ($live->where("id = $id")->save()) {
-                        echo json_encode([
-                            'status' => $succ[0],
-                            'msg' => $mess[0],
-                        ]);die;
-                    }
-                }else {
-                    echo $model::state($succ[2], $mess[2]);die;
-                }
-            }else {
-                echo $model::state($succ[2], $mess[2]);die;
-            }
-        }else {
-            echo $model::state($succ[3], $mess[3]);die;
-        }
-    }
+
     /**
      * 往期直播
      */
@@ -189,7 +159,7 @@ class CourseController extends Controller
             $page = I('get.page');
             if (is_numeric($page)) {
                 $data = $course
-                    ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_free')
+                    ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_free,is_payment')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
