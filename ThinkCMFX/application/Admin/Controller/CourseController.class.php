@@ -80,16 +80,49 @@ class CourseController extends AdminbaseController
         $lector = M('lector');
         $people = M('people');
         $book = M('book');
-        $junwei = M('junwei')->find();
-        $response = new ResponseController();
+        $photo = C('upload');
+        $upload = new \Think\Upload($photo);// 实例化上传类
         if (IS_POST) {
+            $info = $upload->upload();
+            foreach($info as $file){
+                $cover = $file['savepath'].$file['savename'];
+            }
             $data = I('');
-            if ($course->add($data)) {
-                $this->success(L('ADD_SUCCESS'), U("Course/show"));
-                exit();
-            } else {
-                $this->error(L('ADD_FAILED'));
-                exit();
+            $data['cover'] = $cover;
+            $is_free = I('post.is_free');
+            if ($is_free == 1) {
+                $junwei = M('junwei')->find();
+                $loginName = $junwei['loginname'];
+                $password = sp_authcode($junwei['password']);
+                $startDate = I('post.startDate');
+                $invalidDate = I('post.invalidDate');
+                $subject = I('post.course_name');
+                $response = new ResponseController();
+                //调用课时修改接口
+                $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
+                $data['number'] = $resource['number'];
+                $data['stu_token'] = $resource['studentClientToken'];
+                $data['class_id'] = $resource['id'];
+                if ($resource['code'] == 0) {
+                    if ($course->add($data)) {
+                        $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                        exit();
+                    }else {
+                        $this->error(L('ADD_FAILED'));
+                        exit();
+                    }
+                }else {
+                    $this->error(L('ADD_FAILED'));
+                    exit();
+                }
+            }else {
+                if ($course->add($data)) {
+                    $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                    exit();
+                } else {
+                    $this->error(L('ADD_FAILED'));
+                    exit();
+                }
             }
         }
         $array['lector'] = $lector->select();
@@ -104,11 +137,12 @@ class CourseController extends AdminbaseController
      */
     public function update()
     {
-        $response = new ResponseController();
         $course = M('course');
         $lector = M('lector');
         $people = M('people');
         $book = M('book');
+        $photo = C('upload');
+        $upload = new \Think\Upload($photo);// 实例化上传类
         if (IS_GET) {
             $id = I('get.id');
             if (!empty($id)) {
@@ -130,14 +164,57 @@ class CourseController extends AdminbaseController
             $this->assign('data', $data);
         }
         if (IS_POST) {
-            $id = I('post.id');
-            $data = I('');
-            if ($course->where("id = $id")->save($data)) {
-                $this->success(L('ADD_SUCCESS'), U("Course/show"));
-                exit();
-            } else {
-                $this->error(L("ADD_FAILED"));
-                exit();
+            $is_free = I('post.is_free');
+            if ($is_free == 1) {
+                $id = I('post.id');
+                $data = I('');
+                $info = $upload->upload();
+                foreach($info as $file){
+                    $cover = $file['savepath'].$file['savename'];
+                }
+                $data['cover'] = $cover;
+                $junwei = M('junwei')->find();
+                $loginName = $junwei['loginname'];
+                $password = sp_authcode($junwei['password']);
+                $realtime = I('post.realtime');
+                $startDate = I('post.startDate');
+                $invalidDate = I('post.invaliddate');
+                $subject = I('post.course_name');
+                $class_id = I('post.class_id');
+                $response = new ResponseController();
+                //调用修改课时接口
+                $resource = $response::update_course($loginName,$password,$realtime,$startDate,$invalidDate,$subject,$class_id);
+                if ($resource['code'] == 0) {
+                    if ($course->where("id = $id")->save($data)) {
+                        $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                        exit();
+                    } else {
+                        $this->error(L("ADD_FAILED"));
+                        exit();
+                    }
+                }else {
+                    $this->error(L("ADD_FAILED"));
+                    exit();
+                }
+            }else {
+                $cover = I('post.cover');
+                if (empty($cover)) {
+                    $info = $upload->upload();
+                    foreach($info as $file){
+                        $cover = $file['savepath'].$file['savename'];
+                    }
+                }else {
+                    $data['cover'] = $cover;
+                }
+                $id = I('post.id');
+                $data = I('');
+                if ($course->where("id = $id")->save($data)) {
+                    $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                    exit();
+                } else {
+                    $this->error(L("ADD_FAILED"));
+                    exit();
+                }
             }
         }
         $this->display();
@@ -151,16 +228,63 @@ class CourseController extends AdminbaseController
         $course = M("course");
         $response = new ResponseController();
         if (IS_GET) {
-            if (isset($_GET['id'])) {
-                $id = intval(I("get.id"));
+            $class_id = I('get.class_id');
+            if (empty($class_id)) {
+                if (isset($_GET['id'])) {
+                    $id = intval(I("get.id"));
                     if ($course->where("id = $id")->delete() !== false) {
                         $this->success("删除成功！");
                     } else {
                         $this->error("删除失败！");
                     }
+                }
+            }else {
+                $class_id = I('class_id');
+                $junwei = M('junwei')->find();
+                $loginName = $junwei['loginname'];
+                $password = sp_authcode($junwei['password']);
+                //调用课时删除接口
+                $resourec = $response::delete($loginName,$password,$class_id);
+                $id = intval(I("get.id"));
+                if ($resourec['code'] == 0) {
+                    if ($course->where("id = $id")->delete() !== false) {
+                        $this->success(L('ADD_SUCCESS'));exit();
+                    } else {
+                        $this->error(L("ADD_FAILED"));exit();
+                    }
+                }else {
+                    $this->error(L("ADD_FAILED"));exit();
+                }
             }
         }
+
         if (isset($_POST['ids'])) {
+            $ids = join(",", $_POST['ids']);
+            $rew = $course->where("id in ($ids)")->select();
+            $junwei = M('junwei')->find();
+            $loginName = $junwei['loginname'];
+            $password = sp_authcode($junwei['password']);
+            foreach ($rew as $value) {
+                $class_id[] = $value['class_id'];
+                $is_free[] = $value['is_free'];
+            }
+            $len = count($is_free);
+            for ($j = 0; $j < $len; $j++) {
+                 if ($is_free[$j] == 1) {
+                     //调用删除课时接口
+                     $resourec = $response::delete($loginName, $password, $class_id);
+                     $ids = join(",", $_POST['ids']);
+                     if ($resourec['code'] == 0) {
+                         if ($course->where("id in ($ids)")->delete() !== false) {
+                             $this->success(L('ADD_SUCCESS'));exit();
+                         } else {
+                             $this->error(L("ADD_FAILED"));exit();
+                         }
+                     } else {
+                         $this->error(L("ADD_FAILED"));exit();
+                     }
+                 }
+            }
             $ids = join(",", $_POST['ids']);
             if ($course->where("id in ($ids)")->delete() !== false) {
                 $this->success("删除成功！");

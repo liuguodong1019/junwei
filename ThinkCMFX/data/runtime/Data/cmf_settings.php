@@ -1,1 +1,1 @@
-a:0:{}
+a:1:{s:7:"storage";a:2:{s:4:"type";s:5:"Local";s:5:"Qiniu";a:6:{s:9:"accessKey";s:0:"";s:9:"secretKey";s:0:"";s:6:"upHost";s:0:"";s:7:"setting";a:4:{s:8:"protocol";s:4:"http";s:22:"enable_picture_protect";s:1:"0";s:15:"style_separator";s:1:"!";s:6:"styles";a:6:{s:9:"watermark";s:9:"watermark";s:6:"avatar";s:9:"watermark";s:16:"thumbnail120x120";s:16:"thumbnail120x120";s:16:"thumbnail300x300";s:16:"thumbnail300x300";s:16:"thumbnail640x640";s:16:"thumbnail640x640";s:18:"thumbnail1080x1080";s:18:"thumbnail1080x1080";}}s:6:"domain";s:0:"";s:6:"bucket";s:0:"";}}}

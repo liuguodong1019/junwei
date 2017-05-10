@@ -98,6 +98,18 @@
                         <input type="text" name="subject" value="<?php echo ($data["subject"]); ?>" style="width: 300px"/>
                     </td>
                 </tr>
+                <!--<tr>-->
+                    <!--<th width="80">收否收费</th>-->
+                    <!--<td>-->
+                        <!--<?php if(($data["is_free"] == 1)): ?>-->
+                            <!--<label><input name="is_free" type="radio" value="1" checked/>&nbsp&nbsp&nbsp公开课-->
+                                <!--<input name="is_free" type="radio" value="2" />&nbsp&nbsp&nbspvip </label>-->
+                            <!--<?php else: ?>-->
+                            <!--<label><input name="is_free" type="radio" value="1" />&nbsp&nbsp&nbsp公开课-->
+                                <!--<input name="is_free" type="radio" value="2" checked/>&nbsp&nbsp&nbspvip </label>-->
+                        <!--<?php endif; ?>-->
+                    <!--</td>-->
+                <!--</tr>-->
                 <tr>
                     <th width="80">是否实时</th>
                     <td>
@@ -126,9 +138,10 @@
                     <th width="80">课堂名称</th>
                     <td>
                         <select name="course_id" class="normal_select">
+                            <?php if(($data["course_id"] == 'null')): ?><option value="请选择">请选择</option>
+                                <?php else: ?>
                             <option value="<?php echo ($data["course_id"]); ?>">
-                                    <?php echo ($data["course_name"]); ?>
-                            </option>
+                                    <?php echo ($data["course_name"]); endif; ?>
                             <?php if(is_array($array['course'])): foreach($array['course'] as $key=>$va): ?><option value="<?php echo ($va["id"]); ?>"><?php echo ($va["course_name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </td>

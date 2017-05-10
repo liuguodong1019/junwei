@@ -1,52 +1,52 @@
 <?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<!-- Set render engine for 360 browser -->
-	<meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- HTML5 shim for IE8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/public/simpleboot/jedate/jedate.js"></script>
-	<link href="/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
-		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
-		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
-		.table-list{margin-bottom: 0px;}
-	</style>
-	<!--[if IE 7]>
-	<!--<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
-	<![endif]-->
-	<script type="text/javascript">
-	//全局变量
-	var GV = {
-	    ROOT: "/",
-	    WEB_ROOT: "/",
-	    JS_ROOT: "public/js/",
-	    APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
-	};
-	</script>
-    <script src="/public/js/jquery.js"></script>
-    <script src="/public/js/wind.js"></script>
-    <script src="/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
-    <script>
-    	$(function(){
-    		$("[data-toggle='tooltip']").tooltip();
-    	});
+        form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
+        .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
+        .table-list{margin-bottom: 0px;}
+    </style>
+    <!--[if IE 7]>
+    <!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <![endif]-->
+    <script type="text/javascript">
+        //全局变量
+        var GV = {
+            ROOT: "/ThinkCMFX/",
+            WEB_ROOT: "/ThinkCMFX/",
+            JS_ROOT: "public/js/",
+            APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
+        };
     </script>
-<?php if(APP_DEBUG): ?><style>
-		#think_page_trace_open{
-			z-index:9999;
-		}
-	</style><?php endif; ?>
+    <script src="/ThinkCMFX/public/js/jquery.js"></script>
+    <script src="/ThinkCMFX/public/js/wind.js"></script>
+    <script src="/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
+    <?php if(APP_DEBUG): ?><style>
+            #think_page_trace_open{
+                z-index:9999;
+            }
+        </style><?php endif; ?>
     <style>
         body{ padding:50px 0 0 50px;}
         .datainp{ width:200px; height:30px; border:1px #ccc solid;}
@@ -79,40 +79,57 @@
 
 </ul>
 <!--<div class="wrap js-check-wrap">-->
-<form action="<?php echo U('Course/update');?>" class="well form-search" method="post">
+<form action="<?php echo U('Course/update');?>" enctype="multipart/form-data" class="well form-search" method="post">
     <!--<div class="col-auto">-->
     <!--<div class="table_full">-->
     <div class="box box-default">
 
         <div class="box-body">
             <table width="100%" cellpadding="2" cellspacing="2">
+                <!--<tr>-->
+                    <!--<td>-->
+                        <!--<input type="hidden" name="course_name"  value = "<?php echo ($array['course_name']); ?>">-->
+                        <!--<input type="hidden" name="class_id"  value = "<?php echo ($array['class_id']); ?>">-->
+                        <!--&lt;!&ndash;<input type="hidden" name="startDate" id="" value = "$array['startdate']">&ndash;&gt;-->
+                        <!--<input type="hidden" name="id"  value = "<?php echo ($id); ?>">-->
+                    <!--</td>-->
+                <!--</tr>-->
+
+                <!--<tr>-->
+                    <!--<th width="80">课堂类型</th>-->
+                    <!--<td>-->
+                        <!--<?php if(($data["is_free"] == 0)): ?>-->
+                        <!--<label><input name="type" type="radio" value="<?php echo ($data["type"]); ?>" checked/>&nbsp&nbsp&nbsp大讲堂-->
+                            <!--<input name="type" type="radio" value="<?php echo ($data["type"]); ?>"/>&nbsp&nbsp&nbsp小班课 </label>-->
+                            <!--<?php else: ?>-->
+                            <!--<label><input name="type" type="radio" value="<?php echo ($data["type"]); ?>"/>&nbsp&nbsp&nbsp大讲堂-->
+                                <!--<input name="type" type="radio" value="<?php echo ($data["type"]); ?>" checked/>&nbsp&nbsp&nbsp小班课 </label>-->
+                        <!--<?php endif; ?>-->
+                    <!--</td>-->
+                <!--</tr>-->
                 <tr>
                     <td>
-                        <input type="hidden" name="subject"  value = "<?php echo ($array['subject']); ?>">
-                        <input type="hidden" name="class_id"  value = "<?php echo ($array['class_id']); ?>">
-                        <input type="hidden" name="startDate" id="" value = "$array['startdate']">
-                        <input type="hidden" name="id"  value = "<?php echo ($id); ?>">
-                    </td>
-                </tr>
-                <tr>
-                    <th width="80">课堂类型</th>
-                    <td>
-                        <label><input name="type" type="radio" value="<?php echo ($data["type"]); ?>"/>&nbsp&nbsp&nbsp大讲堂
-                            <input name="type" type="radio" value="<?php echo ($data["type"]); ?>"/>&nbsp&nbsp&nbsp小班课 </label>
+                        <input type="hidden" name="course_name" value="<?php echo ($data["course_name"]); ?>">
+                        <input type="hidden" name="class_id" value="<?php echo ($data["class_id"]); ?>">
+                        <input type="hidden" name="cover" value = "<?php echo ($data["cover"]); ?>">
+                        <input type="hidden" name="id" value="<?php echo ($id); ?>">
                     </td>
                 </tr>
                 <tr>
                     <th width="80">是否实时</th>
                     <td>
-                        <label><input name="realtime" type="radio" value="1"/>&nbsp&nbsp&nbsp是
+                        <label><input name="realtime" type="radio" value="1" checked/>&nbsp&nbsp&nbsp是
                             <input name="realtime" type="radio" value="0"/>&nbsp&nbsp&nbsp否 </label>
                     </td>
                 </tr>
                 <tr>
                     <th width="80">收否收费</th>
                     <td>
-                        <label><input name="is_free" type="radio" value="<?php echo ($data["is_free"]); ?>"/>&nbsp&nbsp&nbsp公开课
-                            <input name="is_free" type="radio" value="<?php echo ($data["is_free"]); ?>"/>&nbsp&nbsp&nbspvip </label>
+                        <?php if(($data["is_free"] == 1)): ?><label><input name="is_free" type="radio" value="1" checked/>&nbsp&nbsp&nbsp公开课
+                                <input name="is_free" type="radio" value="2"/>&nbsp&nbsp&nbspvip </label>
+                            <?php else: ?>
+                            <label><input name="is_free" type="radio" value="1"/>&nbsp&nbsp&nbsp公开课
+                                <input name="is_free" type="radio" value="2" checked/>&nbsp&nbsp&nbspvip </label><?php endif; ?>
                     </td>
                 </tr>
                 <tr>
@@ -124,7 +141,7 @@
                 <tr>
                     <th width="80">课程主题</th>
                     <td>
-                        <input type="text" name="subject" value="<?php echo ($data["subject"]); ?>" style="width: 300px"/>
+                        <input type="text" name="course_name" value="<?php echo ($data["course_name"]); ?>" style="width: 300px"/>
                     </td>
                 </tr>
                 <tr>
@@ -140,16 +157,27 @@
                     </td>
                 </tr>
                 <tr>
+                    <th width="80">封面图</th>
+                    <td>
+                        <!--<input type="text" name="" id="" value = "<?php echo ($data["cover"]); ?>">-->
+                        <input type="file" name="cover" value = "<?php echo ($data["cover"]); ?>">
+                    </td>
+                </tr>
+                <tr>
                     <th width="80">开始时间</th>
                     <td>
-                        <input class="datainp" name = "startDate"  value="<?php echo ($data["startdate"]); ?>" id="datebut" type="text" placeholder="双击选择时间"  onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
+                        <input class="datainp" name="startDate" value="<?php echo ($data["startdate"]); ?>" id="datebut" type="text"
+                               placeholder="双击选择时间"
+                               onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
                 </tr>
 
                 <tr>
                     <th width="80">结束时间</th>
                     <td>
-                        <input class="datainp" name = "invalidDate" value="<?php echo ($data["invaliddate"]); ?>" id="datebut1" type="text" placeholder="双击选择时间"  onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
+                        <input class="datainp" name="invalidDate" value="<?php echo ($data["invaliddate"]); ?>" id="datebut1" type="text"
+                               placeholder="双击选择时间"
+                               onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
                 </tr>
                 <tr>

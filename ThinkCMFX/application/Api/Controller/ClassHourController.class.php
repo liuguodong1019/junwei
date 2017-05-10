@@ -56,7 +56,7 @@ class ClassHourController extends Controller
                     if ($live->where("id = $id")->save()) {
                         echo json_encode([
                             'status' => $succ[0],
-                            'msg' => $mess[0],
+                            'msg' => $mess[5],
                         ]);die;
                     }
                 }else {

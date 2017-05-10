@@ -10,7 +10,6 @@ class CourseController extends Controller
      */
     public function get_class_list()
     {
-
         $succ = C('status');
         $mess = C('msg');
         $model = new SubmitController();
@@ -18,12 +17,22 @@ class CourseController extends Controller
             $course = M('course');
             $page = I('get.page');
             if (is_numeric($page)) {
+                $live = M('live')->field('id,subject,reply_url,is_free,status,lector_id,cover,startdate,invaliddate,number,stu_token,class_id,cmf_lector.name')
+                    ->join('cmf_lector ON cmf_live.lector_id = cmf_lector.l_id')
+                    ->where("is_free = '1'")->select();
+
                 $data = $course
                     ->field('cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,is_payment')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->order('cmf_course.id')->page($page.',10')->select();
+                    ->order('cmf_course.id')->page($page . ',10')->select();
+
+                $len = count($live);
+                for ($k = 0; $k < $len; $k++) {
+                        $data[] = array_merge($data,$live[$k]);
+                }
+                print_r($data);die;
                 if (!empty($data)) {
                     echo json_encode([
                         'status' => $succ[0],
@@ -31,7 +40,7 @@ class CourseController extends Controller
                         'data' => $data
                     ]);die;
                 } else {
-                    echo $model::state($succ[0], $mess[0],$data = null);die;
+                    echo $model::state($succ[0], $mess[4],$data = null);die;
                 }
             } else {
                 echo $model::state($succ[2], $mess[2]);die;
@@ -100,7 +109,7 @@ class CourseController extends Controller
                         'data' => $data
                     ]);die;
                 } else {
-                    echo $model::state($succ[0], $mess[0],$data = null);die;
+                    echo $model::state($succ[0], $mess[4],$data = null);die;
                 }
             } else {
                 echo $model::state($succ[2], $mess[2]);die;
@@ -135,7 +144,7 @@ class CourseController extends Controller
                             'data' => $data
                         ]);die;
                     } else {
-                        echo $model::state($succ[0], $mess[0],$data = null);die;
+                        echo $model::state($succ[0], $mess[4],$data = null);die;
                     }
                 } else {
                     echo $model::state($succ[2], $mess[2]);die;
@@ -171,7 +180,7 @@ class CourseController extends Controller
                         'data' => $data
                     ]);die;
                 } else {
-                    echo $model::state($succ[0], $mess[0],$data = null);die;
+                    echo $model::state($succ[1], $mess[4],$data = null);die;
                 }
             } else {
                 echo $model::state($succ[2], $mess[2]);die;

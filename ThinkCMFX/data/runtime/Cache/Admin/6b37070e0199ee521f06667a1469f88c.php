@@ -11,32 +11,32 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/junwei/public/simpleboot/jedate/jedate.js"></script>
-    <link href="/junwei/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/junwei/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/junwei/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
-    <!--<link rel="stylesheet" href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/junwei/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
-            ROOT: "/junwei/",
-            WEB_ROOT: "/junwei/",
+            ROOT: "/ThinkCMFX/",
+            WEB_ROOT: "/ThinkCMFX/",
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
-    <script src="/junwei/public/js/jquery.js"></script>
-    <script src="/junwei/public/js/wind.js"></script>
-    <script src="/junwei/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/ThinkCMFX/public/js/jquery.js"></script>
+    <script src="/ThinkCMFX/public/js/wind.js"></script>
+    <script src="/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -94,8 +94,8 @@
                                              data-checklist="js-check-x"></label></th>
                 <th>ID</th>
                 <th>名称</th>
-                <th>授课类型</th>
-                <th width="125"><?php echo L('ACTIONS');?></th>
+                <!--<th>授课类型</th>-->
+                <!--<th width="125"><?php echo L('ACTIONS');?></th>-->
             </tr>
             </thead>
             <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr>
@@ -103,24 +103,24 @@
                                name="l_ids[]" value="<?php echo ($vo["l_id"]); ?>"></td>
                     <td><?php echo ($vo["l_id"]); ?></td>
                     <td><?php echo ($vo["name"]); ?></td>
-                    <td><?php echo ($vo["course_name"]); ?></td>
-                    <td>
-                        <a href="<?php echo U('Lector/update',array('id'=>$vo['l_id']));?>"><?php echo L('EDIT');?></a>|
-                        <a href="<?php echo U('Lector/delete',array('id'=>$vo['l_id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
-                    </td>
+                    <!--<td><?php echo ($vo["course_name"]); ?></td>-->
+                    <!--<td>-->
+                        <!--<a href="<?php echo U('Lector/update',array('id'=>$vo['l_id']));?>"><?php echo L('EDIT');?></a>|-->
+                        <!--<a href="<?php echo U('Lector/delete',array('id'=>$vo['l_id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>-->
+                    <!--</td>-->
                 </tr><?php endforeach; endif; ?>
         </table>
-        <div class="table-actions">
-            <button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="<?php echo U('Lector/delete');?>" data-subcheck="true" data-msg="你确定删除吗？"><?php echo L('DELETE');?></button>
+        <!--<div class="table-actions">-->
+            <!--<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="<?php echo U('Lector/delete');?>" data-subcheck="true" data-msg="你确定删除吗？"><?php echo L('DELETE');?></button>-->
 
 
-        </div>
+        <!--</div>-->
 
 
         <div class="pagination"><?php echo ($page); ?></div>
     </form>
 </div>
-<script src="/junwei/public/js/common.js"></script>
+<script src="/ThinkCMFX/public/js/common.js"></script>
 <script>
     setCookie('refersh_time', 0);
     function refersh_window() {

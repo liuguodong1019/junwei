@@ -75,7 +75,7 @@ class LectorController extends AdminbaseController
     /**
      * 修改讲师信息
      */
-    public function update_lector ()
+    public function update ()
     {
         $lector = M('lector');
         $teaching = M('teaching');
@@ -83,10 +83,9 @@ class LectorController extends AdminbaseController
         $id = I('get.id');
         if (!empty($id)) {
             $list = $lector
-                ->join('cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id')
-                ->where("cmf_lector.id = $id")
+//                ->join('cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id')
+                ->where("cmf_lector.l_id = $id")
                 ->find();
-
         }else {
             if (IS_POST) {
                 $data['name'] = I('post.name');

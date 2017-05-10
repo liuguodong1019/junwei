@@ -95,6 +95,15 @@ $configs= array(
             '__WEB_ROOT__'=>__ROOT__
         ),
 
+        'upload' => array(            //上传图片
+            'maxSize'    =>    3145728,
+            'savePath'   =>    '',
+            'saveName'   =>    array('uniqid',''),
+            'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
+            'autoSub'    =>    false,
+            'subName'    =>    array('date','Ymd'),
+        ),
+
         'status' => array(
             0 => 1,
             1 => 0,
@@ -106,6 +115,8 @@ $configs= array(
             1 => '调用失败',
             2 => '参数错误',
             3 => '请求方式错误',
+            4 => '没有更多数据',
+            5 => '直播已结束',
         ),
 );
 

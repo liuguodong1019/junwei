@@ -87,7 +87,7 @@
 
     </form>
     <form class="js-ajax-form" method="post">
-
+        <h4>vip课</h4>
         <table class="table table-hover table-bordered table-list">
             <thead>
             <tr>
@@ -117,6 +117,7 @@
                 </tr><?php endforeach; endif; ?>
 
         </table>
+
         <div class="table-actions">
             <button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="<?php echo U('ClassHour/delete');?>" data-subcheck="true" data-msg="你确定删除吗？"><?php echo L('DELETE');?></button>
         </div>

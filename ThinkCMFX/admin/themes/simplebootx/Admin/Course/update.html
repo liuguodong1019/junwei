@@ -7,31 +7,40 @@
 
 </ul>
 <!--<div class="wrap js-check-wrap">-->
-<form action="{:U('Course/update')}" class="well form-search" method="post">
+<form action="{:U('Course/update')}" enctype="multipart/form-data" class="well form-search" method="post">
     <!--<div class="col-auto">-->
     <!--<div class="table_full">-->
     <div class="box box-default">
 
         <div class="box-body">
             <table width="100%" cellpadding="2" cellspacing="2">
+                <!--<tr>-->
+                    <!--<td>-->
+                        <!--<input type="hidden" name="course_name"  value = "{$array['course_name']}">-->
+                        <!--<input type="hidden" name="class_id"  value = "{$array['class_id']}">-->
+                        <!--&lt;!&ndash;<input type="hidden" name="startDate" id="" value = "$array['startdate']">&ndash;&gt;-->
+                        <!--<input type="hidden" name="id"  value = "{$id}">-->
+                    <!--</td>-->
+                <!--</tr>-->
+
+                <!--<tr>-->
+                    <!--<th width="80">课堂类型</th>-->
+                    <!--<td>-->
+                        <!--<if condition="($data.is_free eq 0)">-->
+                        <!--<label><input name="type" type="radio" value="{$data.type}" checked/>&nbsp&nbsp&nbsp大讲堂-->
+                            <!--<input name="type" type="radio" value="{$data.type}"/>&nbsp&nbsp&nbsp小班课 </label>-->
+                            <!--<else />-->
+                            <!--<label><input name="type" type="radio" value="{$data.type}"/>&nbsp&nbsp&nbsp大讲堂-->
+                                <!--<input name="type" type="radio" value="{$data.type}" checked/>&nbsp&nbsp&nbsp小班课 </label>-->
+                        <!--</if>-->
+                    <!--</td>-->
+                <!--</tr>-->
                 <tr>
                     <td>
-                        <input type="hidden" name="subject" value="{$array['subject']}">
-                        <input type="hidden" name="class_id" value="{$array['class_id']}">
-                        <input type="hidden" name="startDate" id="" value="$array['startdate']">
+                        <input type="hidden" name="course_name" value="{$data.course_name}">
+                        <input type="hidden" name="class_id" value="{$data.class_id}">
+                        <input type="hidden" name="cover" value = "{$data.cover}">
                         <input type="hidden" name="id" value="{$id}">
-                    </td>
-                </tr>
-                <tr>
-                    <th width="80">课堂类型</th>
-                    <td>
-                        <if condition="($data.is_free eq 0)">
-                        <label><input name="type" type="radio" value="{$data.type}" checked/>&nbsp&nbsp&nbsp大讲堂
-                            <input name="type" type="radio" value="{$data.type}"/>&nbsp&nbsp&nbsp小班课 </label>
-                            <else />
-                            <label><input name="type" type="radio" value="{$data.type}"/>&nbsp&nbsp&nbsp大讲堂
-                                <input name="type" type="radio" value="{$data.type}" checked/>&nbsp&nbsp&nbsp小班课 </label>
-                        </if>
                     </td>
                 </tr>
                 <tr>
@@ -45,11 +54,11 @@
                     <th width="80">收否收费</th>
                     <td>
                         <if condition="($data.is_free eq 1)">
-                            <label><input name="is_free" type="radio" value="{$data.is_free}" checked/>&nbsp&nbsp&nbsp公开课
-                                <input name="is_free" type="radio" value="{$data.is_free}"/>&nbsp&nbsp&nbspvip </label>
+                            <label><input name="is_free" type="radio" value="1" checked/>&nbsp&nbsp&nbsp公开课
+                                <input name="is_free" type="radio" value="2"/>&nbsp&nbsp&nbspvip </label>
                             <else />
-                            <label><input name="is_free" type="radio" value="{$data.is_free}"/>&nbsp&nbsp&nbsp公开课
-                                <input name="is_free" type="radio" value="{$data.is_free}" checked/>&nbsp&nbsp&nbspvip </label>
+                            <label><input name="is_free" type="radio" value="1"/>&nbsp&nbsp&nbsp公开课
+                                <input name="is_free" type="radio" value="2" checked/>&nbsp&nbsp&nbspvip </label>
                         </if>
                     </td>
                 </tr>
@@ -75,6 +84,13 @@
                     <th width="80">原价</th>
                     <td>
                         <input name="old_price" type="text" value="{$data.old_price}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">封面图</th>
+                    <td>
+                        <!--<input type="text" name="" id="" value = "{$data.cover}">-->
+                        <input type="file" name="cover" value = "{$data.cover}">
                     </td>
                 </tr>
                 <tr>

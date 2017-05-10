@@ -79,35 +79,28 @@
     <li ><a href="<?php echo U('Course/show');?>"  target="_self">课堂列表</a></li>
 
 </ul>
-    <form action="<?php echo U('Course/create');?>" class="well form-search" method="post" >
+    <form action="<?php echo U('Course/create');?>" enctype="multipart/form-data" class="well form-search" method="post" >
 
     <div class="box box-default">
         <div class="box-body">
             <table width="100%" cellpadding="2" cellspacing="2" >
                 <tr>
-                    <th width="80">课堂类型</th>
+                    <th width="80">课程主题</th>
                     <td>
-                        <label><input name="type" type="radio" value="0" />&nbsp&nbsp&nbsp大讲堂
-                        <input name="type" type="radio" value="1" />&nbsp&nbsp&nbsp小班课 </label>
-                    </td>
-                </tr>
-                <tr>
-                    <th width="80">收否收费</th>
-                    <td>
-                        <label><input name="is_free" type="radio" value="1" />&nbsp&nbsp&nbsp公开课
-                            <input name="is_free" type="radio" value="2" />&nbsp&nbsp&nbspvip </label>
+                        <input type="text" name="course_name" value="" style="width: 300px"/>
                     </td>
                 </tr>
                 <tr>
                     <th width="80">课时数量</th>
                     <td>
-                            <input name="num_class" type="text"  />
+                        <input name="num_class" type="text"  />
                     </td>
                 </tr>
                 <tr>
-                    <th width="80">课程主题</th>
+                    <th width="80">是否收费</th>
                     <td>
-                        <input type="text" name="course_name" value="" style="width: 300px"/>
+                        <label><input name="is_free" type="radio" value="1" />&nbsp&nbsp&nbsp公开课
+                            <input name="is_free" type="radio" value="2" />&nbsp&nbsp&nbspvip </label>
                     </td>
                 </tr>
                 <tr>
@@ -134,6 +127,10 @@
                     <td>
                         <input class="datainp" name = "invalidDate"  id="datebut1" type="text" placeholder="双击选择时间"  onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
+                </tr>
+                <tr>
+                    <th width="80">封面图</th>
+                    <td><input type="file" name="cover" ></td>
                 </tr>
                 <tr>
                     <th width="80">课程简介</th>

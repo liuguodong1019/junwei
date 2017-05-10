@@ -40,8 +40,9 @@ class ClassHourController extends AdminbaseController
             }
         } else {
             $data = $live
-                ->field('cmf_live.id,subject,course_name,cmf_live.startDate,cmf_live.invalidDate,cmf_live.class_id')
-                ->join('cmf_course ON cmf_live.course_id = cmf_course.id')
+                ->field('cmf_live.id,cmf_live.subject,cmf_course.course_name,cmf_live.startDate,cmf_live.invalidDate,cmf_live.class_id')
+                ->join('left join cmf_course ON cmf_live.course_id = cmf_course.id')
+                ->where("cmf_live.is_free = 2")
                 ->order('cmf_live.id')->limit($Page->firstRow . ',' . $Page->listRows)->select();
             if (empty($data)) {
                 $this->redirect('create');
@@ -95,6 +96,7 @@ class ClassHourController extends AdminbaseController
             $invalidDate = I('post.invalidDate');
             //调用课时修改接口
             $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
+//            print_r($resource);die;
             $data['number'] = $resource['number'];
             $data['stu_token'] = $resource['studentClientToken'];
             $data['class_id'] = $resource['id'];
@@ -130,10 +132,12 @@ class ClassHourController extends AdminbaseController
             $id = I('get.id');
             if (!empty($id)) {
                 $data = $live
-                    ->join('cmf_course ON cmf_live.course_id = cmf_course.id')
+                    ->field('cmf_course.id,cmf_course.course_name,cmf_live.subject,cmf_live.reply_url,cmf_live.is_free,cmf_lector.l_id,cmf_lector.name,cmf_live.startdate,cmf_live.invaliddate,cmf_live.class_id')
+                    ->join('left join cmf_course ON cmf_live.course_id = cmf_course.id')
                     ->join('cmf_lector ON cmf_live.lector_id = cmf_lector.l_id')
                     ->where("cmf_live.id = $id")
                     ->find();
+//                print_r($data);die;
                 $array['subject'] = $data['subject'];
                 $array['class_id'] = $data['class_id'];
                 $array['course'] = $course->field('id,course_name')->select();
@@ -146,6 +150,7 @@ class ClassHourController extends AdminbaseController
         if (IS_POST) {
             $id = I('post.id');
             $data = I('');
+//            print_r($data);die;
             $data['startDate'] = strtotime($data['startDate']);
             $data['invalidDate'] = strtotime($data['invalidDate']);
             $loginName = $junwei['loginname'];
