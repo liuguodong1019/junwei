@@ -1,0 +1,38 @@
+[ 2017-05-09T16:36:39+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.is_free' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-09T16:38:16+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.is_free' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id INNER JOIN cmf_live ON cmf_course.id = cmf_live.course_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-09T17:17:08+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.is_free' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-09T17:17:48+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.is_free' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-09T17:17:49+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.is_free' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-09T17:18:11+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.is_free' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-09T17:18:14+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.is_free' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-09T17:19:47+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.is_free' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-09T20:40:37+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: Cannot use [] for reading
+
+[ 2017-05-09T20:40:39+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: Cannot use [] for reading
+

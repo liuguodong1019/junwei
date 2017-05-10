@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/update.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/update.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/5ebdad20e40b715693f275c091b164c7.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/5ebdad20e40b715693f275c091b164c7.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6d3249f0a352f3c9bfb41ecbf20286c7.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6d3249f0a352f3c9bfb41ecbf20286c7.php" />
-    </list>
+    <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,17 +25,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassHourController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClassHourController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
+            <state relative-caret-position="2274">
               <caret line="106" column="40" lean-forward="false" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CourseController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
@@ -453,12 +443,12 @@
       <workItem from="1494205404306" duration="21174000" />
       <workItem from="1494290727603" duration="13392000" />
       <workItem from="1494307018377" duration="23916000" />
-      <workItem from="1494378488247" duration="15164000" />
+      <workItem from="1494378488247" duration="16360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176344000" />
+    <option name="totallyTimeSpent" value="177540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="1" />
@@ -771,14 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="106" column="40" lean-forward="false" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/show.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-230">
@@ -827,14 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -843,6 +817,22 @@
             <element signature="e#6#84#0#PHP" expanded="true" />
             <element signature="e#115#157#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2274">
+          <caret line="106" column="40" lean-forward="false" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

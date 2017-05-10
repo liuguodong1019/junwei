@@ -1,0 +1,73 @@
+[ 2017-05-09T15:07:02+08:00 ] 127.0.0.1 /ThinkCMFX/storage/setting_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002838s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004582s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002004s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002059s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_options` WHERE ( option_name='cmf_settings' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_options` SET `option_name`='cmf_settings',`option_value`='{\"storage\":{\"type\":\"Local\",\"Qiniu\":{\"accessKey\":\"\",\"secretKey\":\"\",\"upHost\":\"\",\"setting\":{\"protocol\":\"http\",\"enable_picture_protect\":\"0\",\"style_separator\":\"!\",\"styles\":{\"watermark\":\"watermark\",\"avatar\":\"watermark\",\"thumbnail120x120\":\"thumbnail120x120\",\"thumbnail300x300\":\"thumbnail300x300\",\"thumbnail640x640\":\"thumbnail640x640\",\"thumbnail1080x1080\":\"thumbnail1080x1080\"}},\"domain\":\"\",\"bucket\":\"\"}}}' WHERE ( option_name='cmf_settings' ) [ RunTime:0.0252s ]
+NOTIC: [8] Undefined index: Local D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\StorageController.class.php 第 29 行.
+
+[ 2017-05-09T15:56:38+08:00 ] 127.0.0.1 /ThinkCMFX/Lector/update_lector/id/1
+ERR: 1054:Unknown column 'cmf_lector.id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  WHERE ( cmf_lector.id = 1 ) LIMIT 1  
+
+[ 2017-05-09T16:02:17+08:00 ] 127.0.0.1 /ThinkCMFX/Lector/update/id/1
+ERR: 1054:Unknown column 'cmf_lector.id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_lector` INNER JOIN cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id  WHERE ( cmf_lector.id = 1 ) LIMIT 1  
+
+[ 2017-05-09T17:33:36+08:00 ] 127.0.0.1 /ThinkCMFX/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002539s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006347s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002585s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002665s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0678s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0251s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-09 17:33:36',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0905s ]
+
+[ 2017-05-09T17:40:53+08:00 ] 127.0.0.1 /ThinkCMFX/ClassHour/update/id/6
+ERR: 1054:Unknown column 'cmf_live.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_live.id,cmf_live.subject,cmf_live.reply_url,cmf_live.is_free,cmf_live.lector_id,cmf_live.name,cmf_live.startdate,cmf_live.invaliddate,cmf_live.class_id FROM `cmf_live` INNER JOIN cmf_course ON cmf_live.course_id = cmf_course.id INNER JOIN cmf_lector ON cmf_live.lector_id = cmf_lector.l_id  WHERE ( cmf_live.id = 6 ) LIMIT 1  
+
+[ 2017-05-09T17:41:36+08:00 ] 127.0.0.1 /ThinkCMFX/ClassHour/update/id/6
+ERR: 1054:Unknown column 'cmf_live.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_live.subject,cmf_live.reply_url,cmf_live.is_free,cmf_live.lector_id,cmf_live.name,cmf_live.startdate,cmf_live.invaliddate,cmf_live.class_id FROM `cmf_live` INNER JOIN cmf_course ON cmf_live.course_id = cmf_course.id INNER JOIN cmf_lector ON cmf_live.lector_id = cmf_lector.l_id  WHERE ( cmf_live.id = 6 ) LIMIT 1  
+
+[ 2017-05-09T17:42:25+08:00 ] 127.0.0.1 /ThinkCMFX/ClassHour/update/id/6
+ERR: 1054:Unknown column 'cmf_lector.lector_id' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_live.subject,cmf_live.reply_url,cmf_live.is_free,cmf_lector.lector_id,cmf_lector.name,cmf_live.startdate,cmf_live.invaliddate,cmf_live.class_id FROM `cmf_live` INNER JOIN cmf_course ON cmf_live.course_id = cmf_course.id INNER JOIN cmf_lector ON cmf_live.lector_id = cmf_lector.l_id  WHERE ( cmf_live.id = 6 ) LIMIT 1  
+
+[ 2017-05-09T18:19:31+08:00 ] 127.0.0.1 /ThinkCMFX/ClassHour/delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001978s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [2] Declaration of Admin\Controller\ClassHourController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\ClassHourController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001964s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001998s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_live` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_live` WHERE ( id in (4,5,6) )  [ RunTime:0.0278s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_live` WHERE ( id in (4,5,6) ) [ RunTime:0.2035s ]
+
+[ 2017-05-09T18:46:22+08:00 ] 127.0.0.1 /ThinkCMFX/Admin/ClassHour/show
+ERR: 1052:Column 'is_free' in where clause is ambiguous
+ [ SQL语句 ] : SELECT cmf_live.id,cmf_live.subject,cmf_course.course_name,cmf_live.startDate,cmf_live.invalidDate,cmf_live.class_id FROM `cmf_live` left join cmf_course ON cmf_live.course_id = cmf_course.id  WHERE ( is_free = 2 ) ORDER BY cmf_live.id LIMIT 0,10  
+

@@ -1,0 +1,3 @@
+<?php
+//000000000000a:2:{s:16:"FILE_UPLOAD_TYPE";s:5:"Local";s:18:"UPLOAD_TYPE_CONFIG";N;}
+?>
