@@ -65,9 +65,11 @@ class ClassHourController extends AdminbaseController
             $live = M('live');
             if (!empty($id)) {
                 $data = $live
+                    ->field('cmf_live.subject,cmf_live.id,cmf_live.startDate,cmf_live.invalidDate,cmf_live.number,cmf_live.stu_token,cmf_live.class_id,cmf_course.course_name,cmf_lector.name')
                     ->join('cmf_course ON cmf_live.course_id = cmf_course.id')
                     ->join('cmf_lector ON cmf_live.lector_id = cmf_lector.l_id')
-                    ->where("cmf_live.id = $id")->find();
+                    ->where("cmf_live.id = '$id'")->find();
+//                print_r($data);die;
             }
         }
         $this->assign('data', $data);
@@ -88,30 +90,30 @@ class ClassHourController extends AdminbaseController
             $data = I('');
             $data['startDate'] = strtotime(I('post.startDate'));
             $data['invalidDate'] = strtotime(I('post.invalidDate'));
-            $subject = I('post.subject');
-
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             $startDate = I('post.startDate');
             $invalidDate = I('post.invalidDate');
-            //调用课时修改接口
+            $subject = I('post.subject');
+            $response = new ResponseController();
+            //调用课时创建接口
             $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
-//            print_r($resource);die;
             $data['number'] = $resource['number'];
             $data['stu_token'] = $resource['studentClientToken'];
             $data['class_id'] = $resource['id'];
             if ($resource['code'] == 0) {
                 if ($live->add($data)) {
-                    $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
+                    $this->success(L('ADD_SUCCESS'), U("Course/show"));
                     exit();
-                } else {
+                }else {
                     $this->error(L('ADD_FAILED'));
                     exit();
                 }
-            } else {
+            }else {
                 $this->error(L('ADD_FAILED'));
                 exit();
             }
+
         }
         $this->assign('course', $course);
         $this->assign('lector',$lector);
@@ -133,13 +135,11 @@ class ClassHourController extends AdminbaseController
             if (!empty($id)) {
                 $data = $live
                     ->field('cmf_course.id,cmf_course.course_name,cmf_live.subject,cmf_live.reply_url,cmf_live.is_free,cmf_lector.l_id,cmf_lector.name,cmf_live.startdate,cmf_live.invaliddate,cmf_live.class_id')
-                    ->join('left join cmf_course ON cmf_live.course_id = cmf_course.id')
+                    ->join('cmf_course ON cmf_live.course_id = cmf_course.id')
                     ->join('cmf_lector ON cmf_live.lector_id = cmf_lector.l_id')
                     ->where("cmf_live.id = $id")
                     ->find();
-//                print_r($data);die;
-                $array['subject'] = $data['subject'];
-                $array['class_id'] = $data['class_id'];
+
                 $array['course'] = $course->field('id,course_name')->select();
                 $array['lector'] = $lector->field('l_id,name')->select();
             }
@@ -150,9 +150,8 @@ class ClassHourController extends AdminbaseController
         if (IS_POST) {
             $id = I('post.id');
             $data = I('');
-//            print_r($data);die;
-            $data['startDate'] = strtotime($data['startDate']);
-            $data['invalidDate'] = strtotime($data['invalidDate']);
+            $data['startDate'] = strtotime(I('post.startDate'));
+            $data['invalidDate'] = strtotime(I('post.invalidDate'));
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             $realtime = I('post.realtime');
@@ -160,8 +159,10 @@ class ClassHourController extends AdminbaseController
             $invalidDate = I('post.invaliddate');
             $subject = I('post.subject');
             $class_id = I('post.class_id');
+//            print_r($class_id);die;
             //调用修改课时接口
             $resource = $response::update_course($loginName,$password,$realtime,$startDate,$invalidDate,$subject,$class_id);
+//            print_r($resource);die;
             if ($resource['code'] == 0) {
                 if ($live->where("id = $id")->save($data)) {
                     $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));

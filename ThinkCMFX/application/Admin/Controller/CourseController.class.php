@@ -98,7 +98,7 @@ class CourseController extends AdminbaseController
                 $invalidDate = I('post.invalidDate');
                 $subject = I('post.course_name');
                 $response = new ResponseController();
-                //调用课时修改接口
+                //调用课时创建接口
                 $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
                 $data['number'] = $resource['number'];
                 $data['stu_token'] = $resource['studentClientToken'];

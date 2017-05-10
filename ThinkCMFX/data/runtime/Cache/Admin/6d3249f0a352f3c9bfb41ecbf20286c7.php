@@ -87,7 +87,6 @@
 
     </form>
     <form class="js-ajax-form" method="post">
-        <h4>vip课</h4>
         <table class="table table-hover table-bordered table-list">
             <thead>
             <tr>

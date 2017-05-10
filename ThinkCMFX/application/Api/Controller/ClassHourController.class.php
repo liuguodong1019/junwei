@@ -101,4 +101,10 @@ class ClassHourController extends Controller
             }
         }
     }
+
+    public function live_status ()
+    {
+        $url = "http://SiteUrl?ClassNo=*&Operator=*&Action=*& Affected=*&totalusernum=*";
+    }
+
 }

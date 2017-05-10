@@ -86,8 +86,8 @@
             <table width="100%" cellpadding="2" cellspacing="2">
                 <tr>
                     <td>
-                        <input type="hidden" name="subject"  value = "<?php echo ($array['subject']); ?>">
-                        <input type="hidden" name="class_id"  value = "<?php echo ($array['class_id']); ?>">
+                        <input type="hidden" name="subject"  value = "<?php echo ($data["subject"]); ?>">
+                        <input type="hidden" name="class_id"  value = "<?php echo ($data["class_id"]); ?>">
                         <!--<input type="hidden" name="startDate" id="" value = "$array['startdate']">-->
                         <input type="hidden" name="id"  value = "<?php echo ($id); ?>">
                     </td>
@@ -138,10 +138,9 @@
                     <th width="80">课堂名称</th>
                     <td>
                         <select name="course_id" class="normal_select">
-                            <?php if(($data["course_id"] == 'null')): ?><option value="请选择">请选择</option>
-                                <?php else: ?>
-                            <option value="<?php echo ($data["course_id"]); ?>">
-                                    <?php echo ($data["course_name"]); endif; ?>
+
+                                <option value="<?php echo ($data["id"]); ?>"><?php echo ($data["course_name"]); ?></option>
+
                             <?php if(is_array($array['course'])): foreach($array['course'] as $key=>$va): ?><option value="<?php echo ($va["id"]); ?>"><?php echo ($va["course_name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </td>
@@ -150,7 +149,7 @@
                     <th width="80">讲师名称</th>
                     <td>
                         <select name="lector_id" class="normal_select">
-                            <option value="<?php echo ($data["lector_id"]); ?>">
+                            <option value="<?php echo ($data["l_id"]); ?>">
                                     <?php echo ($data["name"]); ?>
                             </option>
                             <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$val): ?><option value="<?php echo ($val["l_id"]); ?>"><?php echo ($val["name"]); ?></option><?php endforeach; endif; ?>

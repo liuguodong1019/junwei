@@ -14,8 +14,8 @@
             <table width="100%" cellpadding="2" cellspacing="2">
                 <tr>
                     <td>
-                        <input type="hidden" name="subject"  value = "{$array['subject']}">
-                        <input type="hidden" name="class_id"  value = "{$array['class_id']}">
+                        <input type="hidden" name="subject"  value = "{$data.subject}">
+                        <input type="hidden" name="class_id"  value = "{$data.class_id}">
                         <!--<input type="hidden" name="startDate" id="" value = "$array['startdate']">-->
                         <input type="hidden" name="id"  value = "{$id}">
                     </td>
@@ -66,13 +66,9 @@
                     <th width="80">课堂名称</th>
                     <td>
                         <select name="course_id" class="normal_select">
-                            <if condition="($data.course_id eq 'null')">
-                                <option value="请选择">请选择</option>
-                                <else />
-                            <option value="{$data.course_id}">
-                                    {$data.course_name}
 
-                            </if>
+                                <option value="{$data.id}">{$data.course_name}</option>
+
                             <foreach name="array['course']" item="va">
                                 <option value="{$va.id}">{$va.course_name}</option>
                             </foreach>
@@ -83,7 +79,7 @@
                     <th width="80">讲师名称</th>
                     <td>
                         <select name="lector_id" class="normal_select">
-                            <option value="{$data.lector_id}">
+                            <option value="{$data.l_id}">
                                     {$data.name}
                             </option>
                             <foreach name="array['lector']" item="val">
