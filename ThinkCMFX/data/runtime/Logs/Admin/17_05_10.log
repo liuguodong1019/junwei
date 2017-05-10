@@ -190,3 +190,68 @@ SQL: DELETE FROM `cmf_live` WHERE ( id = 8 ) [ RunTime:0.1529s ]
 ERR: 1048:Column 'number' cannot be null
  [ SQL语句 ] : INSERT INTO `cmf_live` (`subject`,`startDate`,`invalidDate`,`course_id`,`lector_id`,`number`,`stu_token`,`class_id`) VALUES ('离婚','2017','2017','9','1',NULL,NULL,NULL)
 
+[ 2017-05-10T16:59:29+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=create
+ERR: 1048:Column 'cover' cannot be null
+ [ SQL语句 ] : INSERT INTO `cmf_course` (`course_name`,`num_class`,`is_free`,`now_price`,`old_price`,`startDate`,`invalidDate`,`introduction`,`lector_id`,`people_id`,`book_id`,`cover`,`number`,`stu_token`,`class_id`) VALUES ('三国法4567','88','1','88','99','2017-05-10 16:59:18','2017-05-10 16:59:20','吃点饭我去我去','1','1','1',NULL,'54267122','629842','bEbEpi03Cp')
+
+[ 2017-05-10T17:01:05+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=create
+ERR: 1048:Column 'cover' cannot be null
+ [ SQL语句 ] : INSERT INTO `cmf_course` (`course_name`,`num_class`,`is_free`,`now_price`,`old_price`,`startDate`,`invalidDate`,`introduction`,`lector_id`,`people_id`,`book_id`,`cover`,`number`,`stu_token`,`class_id`) VALUES ('三国法45678','88','1','88','99','2017-05-10 16:59:18','2017-05-10 16:59:20','吃点饭我去我去','1','1','1',NULL,'5010550','633151','DO365ZtAbI')
+
+[ 2017-05-10T17:06:16+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002279s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004705s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002712s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002756s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (8,9,10,11,12) )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id in (8,9,10,11,12) ) [ RunTime:0.1717s ]
+
+[ 2017-05-10T17:09:08+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=update
+ERR: 1048:Column 'cover' cannot be null
+ [ SQL语句 ] : UPDATE `cmf_course` SET `course_name`='三国1',`class_id`='eUTz0OMSGI',`cover`=NULL,`id`='14',`is_free`='1',`num_class`='88',`now_price`='88',`old_price`='99',`startDate`='2017-05-10 17:07:24',`invalidDate`='2017-05-10 18:02:42',`introduction`='带我去服务器服务器',`lector_id`='1',`people_id`='1',`book_id`='1' WHERE ( id = 14 )
+
+[ 2017-05-10T17:16:44+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006366s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010116s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.003129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022865s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.012207s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.012263s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (13,14,15) )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id in (13,14,15) ) [ RunTime:0.6261s ]
+
+[ 2017-05-10T17:19:53+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=delete&id=16&class_id=TQ047pLNB8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011467s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.005851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036097s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.013603s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.013680s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = 16 ) [ RunTime:0.1734s ]
+

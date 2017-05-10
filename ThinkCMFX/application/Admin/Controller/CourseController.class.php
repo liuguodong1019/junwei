@@ -83,14 +83,14 @@ class CourseController extends AdminbaseController
         $photo = C('upload');
         $upload = new \Think\Upload($photo);// 实例化上传类
         if (IS_POST) {
-            $info = $upload->upload();
-            foreach($info as $file){
-                $cover = $file['savepath'].$file['savename'];
-            }
             $data = I('');
-            $data['cover'] = $cover;
             $is_free = I('post.is_free');
             if ($is_free == 1) {
+                $info = $upload->upload();
+                foreach($info as $file){
+                    $cover = $file['savepath'].$file['savename'];
+                    $data['cover'] = $cover;
+                }
                 $junwei = M('junwei')->find();
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
@@ -100,8 +100,8 @@ class CourseController extends AdminbaseController
                 $response = new ResponseController();
                 //调用课时创建接口
                 $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
-                $data['number'] = $resource['number'];
                 $data['stu_token'] = $resource['studentClientToken'];
+                $data['number'] = $resource['number'];
                 $data['class_id'] = $resource['id'];
                 if ($resource['code'] == 0) {
                     if ($course->add($data)) {

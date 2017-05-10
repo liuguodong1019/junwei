@@ -126,7 +126,7 @@
         </tr>
         <tr>
             <td><?php echo ($data["number"]); ?></td>
-            <td><?php echo ($data["stu_class"]); ?></td>
+            <td><?php echo ($data["stu_token"]); ?></td>
             <td><?php echo ($data["reply_url"]); ?></td>
             <td><?php echo ($data["class_id"]); ?></td>
             <td><?php echo ($data["people"]); ?></td>
