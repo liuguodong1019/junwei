@@ -2,7 +2,7 @@
 namespace Api\Controller;
 
 use Think\Controller;
-
+use Api\Controller\ResponseController;
 class CourseController extends Controller
 {
     /**
@@ -163,7 +163,7 @@ class CourseController extends Controller
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("status = '3'")->order('cmf_course.id')->page($page . ',10')->select();
+                    ->where("status = '2'")->order('cmf_course.id')->page($page . ',10')->select();
                 if (!empty($data)) {
                     echo json_encode([
                         'status' => $succ[0],
@@ -178,6 +178,71 @@ class CourseController extends Controller
             }
         } else {
             echo $model::state($succ[3], $mess[3]);die;
+        }
+    }
+
+    /**
+     * 修改直播状态
+     */
+    public function live_status ()
+    {
+        if (IS_GET) {
+            $course = M('course');
+            $live = M('live');
+            $class_id = I('get.ClassNo');
+            $action = I('get.Action');
+            $rew = $course->where("class_id = '$class_id'")->find();
+            if (!empty($rew)) {
+                $id = $rew['id'];
+                switch ($action)
+                {
+                    case 103:
+                        $data['status'] = 1;
+                        $course->where("id = '$id'")->save($data);
+                        break;
+                    case 106:
+                        $junwei = M('junwei')->find();
+                        $loginName = $junwei['loginname'];
+                        $password = sp_authcode($junwei['password']);
+                        $response = new ResponseController();
+                        $resource = $response::get_past($loginName,$password,$class_id);
+//                        print_r($resource);die;
+                        $len = count($resource['coursewares']);
+                        for ($j = 0; $j < $len; $j++) {
+                            $res = $resource['coursewares'][$j];
+                        }
+                        if ($resource['code'] == 0) {
+                            $data['number'] = $res['number'];
+                            $data['status'] = 2;
+                            $data['reply_url'] = $res['url'];
+                        }
+                        break;
+                }
+                $course->where("id = '$id'")->save($data);
+            }else {
+                $ret = $live->where("class_id = '$class_id'")->find();
+                $id = $ret['id'];
+                switch ($action) {
+                    case 103:
+                        $data['status'] = 1;
+                    break;
+                    case 106:
+                        $junwei = M('junwei')->find();
+                        $response = new ResponseController();
+                        $loginName = $junwei['loginname'];
+                        $password = sp_authcode($junwei['password']);
+                        $resource = $response::get_past($loginName,$password,$class_id);
+                        $res = $resource['coursewares'][0];
+                        if ($resource['code'] == 0) {
+                            $data['number'] = $res['number'];
+                            $data['status'] = 2;
+                            $data['reply_url'] = $res['url'];
+                        }
+                    break;
+                }
+                        $live->where("id = '$id'")->save($data);
+
+            }
         }
     }
 }

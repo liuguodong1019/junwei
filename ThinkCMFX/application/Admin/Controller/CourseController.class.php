@@ -84,13 +84,13 @@ class CourseController extends AdminbaseController
         $upload = new \Think\Upload($photo);// 实例化上传类
         if (IS_POST) {
             $data = I('');
+            $info = $upload->upload();
+            foreach($info as $file){
+                $cover = $file['savepath'].$file['savename'];
+                $data['cover'] = $cover;
+            }
             $is_free = I('post.is_free');
             if ($is_free == 1) {
-                $info = $upload->upload();
-                foreach($info as $file){
-                    $cover = $file['savepath'].$file['savename'];
-                    $data['cover'] = $cover;
-                }
                 $junwei = M('junwei')->find();
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
@@ -248,12 +248,12 @@ class CourseController extends AdminbaseController
                 $id = intval(I("get.id"));
                 if ($resourec['code'] == 0) {
                     if ($course->where("id = $id")->delete() !== false) {
-                        $this->success(L('ADD_SUCCESS'));exit();
+                        $this->success('删除成功');exit();
                     } else {
-                        $this->error(L("ADD_FAILED"));exit();
+                        $this->error('删除失败');exit();
                     }
                 }else {
-                    $this->error(L("ADD_FAILED"));exit();
+                    $this->error('删除失败');exit();
                 }
             }
         }
@@ -268,28 +268,25 @@ class CourseController extends AdminbaseController
                 $class_id[] = $value['class_id'];
                 $is_free[] = $value['is_free'];
             }
-            $len = count($is_free);
-            for ($j = 0; $j < $len; $j++) {
-                 if ($is_free[$j] == 1) {
-                     //调用删除课时接口
-                     $resourec = $response::delete($loginName, $password, $class_id);
-                     $ids = join(",", $_POST['ids']);
-                     if ($resourec['code'] == 0) {
-                         if ($course->where("id in ($ids)")->delete() !== false) {
-                             $this->success(L('ADD_SUCCESS'));exit();
-                         } else {
-                             $this->error(L("ADD_FAILED"));exit();
-                         }
-                     } else {
-                         $this->error(L("ADD_FAILED"));exit();
-                     }
-                 }
-            }
-            $ids = join(",", $_POST['ids']);
-            if ($course->where("id in ($ids)")->delete() !== false) {
-                $this->success("删除成功！");
-            } else {
-                $this->error("删除失败！");
+            if (empty($class_id)) {
+                $ids = join(",", $_POST['ids']);
+                if ($course->where("id in ($ids)")->delete() !== false) {
+                    $this->success("删除成功！");
+                } else {
+                    $this->error("删除失败！");
+                }
+            }else {
+                $resourec = $response::delete($loginName, $password, $class_id);
+                $ids = join(",", $_POST['ids']);
+                if ($resourec['code'] == 0) {
+                    if ($course->where("id in ($ids)")->delete() !== false) {
+                        $this->success('删除成功');exit();
+                    } else {
+                        $this->error('删除失败');exit();
+                    }
+                } else {
+                    $this->error('删除失败');exit();
+                }
             }
         }
     }

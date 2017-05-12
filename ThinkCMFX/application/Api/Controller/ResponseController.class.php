@@ -78,7 +78,7 @@ class ResponseController extends Controller
     }
 
     /**
-     * 获取课时录制的课件
+     * 获取录制的课件
      */
     public static function get_past($loginName, $password, $class_id)
     {
@@ -90,8 +90,8 @@ class ResponseController extends Controller
             'roomId' => $class_id
         );
         $result = $model->post($url, $data);
-        $result = json_decode($result, true);
-        return $result;
+        $res = json_decode($result, true);
+        return $res;
     }
 
     /**
