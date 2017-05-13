@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/MessageController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/MessageController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MessageController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/MessageController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -59,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassHourController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClassHourController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-253">
@@ -349,15 +349,23 @@
       <workItem from="1494463570521" duration="28175000" />
       <workItem from="1494549949176" duration="7046000" />
       <workItem from="1494558055506" duration="12739000" />
-      <workItem from="1494636730017" duration="16653000" />
+      <workItem from="1494636730017" duration="16902000" />
     </task>
+    <task id="LOCAL-00001" summary="留言接口">
+      <created>1494661292405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1494661292405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250017000" />
+    <option name="totallyTimeSpent" value="250266000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
+    <frame x="-8" y="0" width="1370" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17557251" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -384,6 +392,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="留言接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="留言接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -699,6 +711,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-730">
+          <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/MessageController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ResponseController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -713,22 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-253">
           <caret line="13" column="24" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
-          <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/MessageController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>

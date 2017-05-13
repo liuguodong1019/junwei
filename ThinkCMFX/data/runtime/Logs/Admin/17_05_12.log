@@ -1,0 +1,120 @@
+[ 2017-05-12T08:53:40+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001370s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003421s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002441s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002517s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0862s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0281s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.1598s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.2447s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2017-05-12 08:53:40',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.2459s ]
+
+[ 2017-05-12T09:37:46+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001262s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002756s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001600s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001643s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (21) )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-05-12T09:37:58+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001029s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002390s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001422s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (21) )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-05-12T09:40:17+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000952s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002346s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001256s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (21) )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion D:\laragon\www\junwei1\ThinkCMFX\application\Api\Controller\SubmitController.class.php 第 15 行.
+
+[ 2017-05-12T09:40:34+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001074s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002661s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001809s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001842s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (21) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Array to string conversion D:\laragon\www\junwei1\ThinkCMFX\application\Api\Controller\SubmitController.class.php 第 15 行.
+
+[ 2017-05-12T09:40:55+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000925s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002209s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001267s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cmf_course` WHERE ( id in (20,21) )  [ RunTime:0.0278s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id in (20,21) ) [ RunTime:0.1703s ]
+
+[ 2017-05-12T09:41:20+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?g=&m=Course&a=delete&id=19&class_id=3uCXSc7ZmC
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001338s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002988s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\CourseController.class.php 第 19 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001828s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001861s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = 19 ) [ RunTime:0.0737s ]
+

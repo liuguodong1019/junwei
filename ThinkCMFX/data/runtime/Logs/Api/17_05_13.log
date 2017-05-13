@@ -1,0 +1,42 @@
+[ 2017-05-13T10:25:22+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/past_live?page=1
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free`,`is_payment`,cmf_course.reply_url FROM `cmf_course` INNER JOIN cmf_live ON cmf_course.id = cmf_live.course_id INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '2' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-13T10:33:04+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/past_live?page=1
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free`,`is_payment`,cmf_course.reply_url FROM `cmf_course` INNER JOIN cmf_live ON cmf_course.id = cmf_live.course_id INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '2' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-13T10:33:23+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/past_live?page=1
+ERR: 1052:Column 'startdate' in field list is ambiguous
+ [ SQL语句 ] : SELECT cmf_course.id,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free`,`is_payment`,cmf_course.reply_url FROM `cmf_course` INNER JOIN cmf_live ON cmf_course.id = cmf_live.course_id INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '2' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-13T10:36:00+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/past_live?page=1
+ERR: 1052:Column 'cover' in field list is ambiguous
+ [ SQL语句 ] : SELECT cmf_course.id,`course_name`,`now_price`,`old_price`,`name`,cmf_course.startdate,cmf_course.invaliddate,cmf_live.startdate,cmf_live.invaliddate,`cover`,`num_class`,cmf_course.status,cmf_live.status,cmf_course.is_free,`is_payment`,cmf_course.reply_url,cmf_live.reply_url FROM `cmf_course` INNER JOIN cmf_live ON cmf_course.id = cmf_live.course_id INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '2' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-13T10:37:07+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/past_live?page=1
+ERR: 1054:Unknown column 'name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,`course_name`,`now_price`,`old_price`,`name`,cmf_course.startdate,cmf_course.invaliddate,cmf_live.startdate,cmf_live.invaliddate,`cover`,`num_class`,cmf_course.status,cmf_live.status,cmf_course.is_free,`is_payment`,cmf_course.reply_url,cmf_live.reply_url FROM `cmf_course` INNER JOIN cmf_live ON cmf_course.id = cmf_live.course_id  WHERE ( cmf_course.status = '2' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-13T10:37:10+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/past_live?page=1
+ERR: 1054:Unknown column 'name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,`course_name`,`now_price`,`old_price`,`name`,cmf_course.startdate,cmf_course.invaliddate,cmf_live.startdate,cmf_live.invaliddate,`cover`,`num_class`,cmf_course.status,cmf_live.status,cmf_course.is_free,`is_payment`,cmf_course.reply_url,cmf_live.reply_url FROM `cmf_course` INNER JOIN cmf_live ON cmf_course.id = cmf_live.course_id  WHERE ( cmf_course.status = '2' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-13T10:38:09+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/past_live?page=1
+ERR: Think\Model:leftjoin方法不存在！
+
+[ 2017-05-13T10:48:27+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/class_hour?id=16
+ERR: 非法操作:class_hour
+
+[ 2017-05-13T10:48:31+08:00 ] 127.0.0.1 /ThinkCMFX/api/course/class_hour?id=30
+ERR: 非法操作:class_hour
+
+[ 2017-05-13T10:59:17+08:00 ] 127.0.0.1 /ThinkCMFX/api/class_hour/class_hour?id=45
+ERR: Call to a member function order() on null
+
+[ 2017-05-13T11:00:15+08:00 ] 127.0.0.1 /ThinkCMFX/api/class_hour/class_hour?id=45
+ERR: Call to a member function order() on null
+
+[ 2017-05-13T11:00:36+08:00 ] 127.0.0.1 /ThinkCMFX/api/class_hour/class_hour?id=45
+ERR: Call to a member function order() on null
+
