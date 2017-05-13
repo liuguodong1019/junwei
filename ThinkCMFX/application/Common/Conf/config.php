@@ -97,7 +97,7 @@ $configs= array(
 
         'upload' => array(            //上传图片
             'maxSize'    =>    3145728,
-            'savePath'   =>    '/Uploads/',
+            'savePath'   =>    '',
             'saveName'   =>    array('uniqid',''),
             'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),
             'autoSub'    =>    false,
