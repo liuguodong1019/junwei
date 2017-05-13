@@ -82,7 +82,7 @@ class ClassHourController extends AdminbaseController
     public function create()
     {
         $live = M('live');
-        $course = M('course')->field('id,course_name')->select();
+        $course = M('course')->field('id,course_name')->where("is_free = 2")->select();
         $junwei = M('junwei')->find();
         $lector = M('lector')->select();
         $response = new ResponseController();
@@ -103,7 +103,7 @@ class ClassHourController extends AdminbaseController
             $data['class_id'] = $resource['id'];
             if ($resource['code'] == 0) {
                 if ($live->add($data)) {
-                    $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                    $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
                     exit();
                 }else {
                     $this->error(L('ADD_FAILED'));

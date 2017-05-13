@@ -146,6 +146,7 @@ class CourseController extends Controller
     }
 
 
+
     /**
      * 往期直播
      */
@@ -159,11 +160,11 @@ class CourseController extends Controller
             $page = I('get.page');
             if (is_numeric($page)) {
                 $data = $course
-                    ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_free,is_payment')
+                    ->field('id,course_name,introduction,num_class,status,is_free,now_price,old_price,number,stu_token,reply_url,class_id,is_payment,startdate,invaliddate,cover,name,people,book')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("status = '2'")->order('cmf_course.id')->page($page . ',10')->select();
+                    ->where("cmf_course.status = '2'")->order('cmf_course.id')->page($page . ',10')->select();
                 if (!empty($data)) {
                     echo json_encode([
                         'status' => $succ[0],
@@ -206,7 +207,6 @@ class CourseController extends Controller
                         $password = sp_authcode($junwei['password']);
                         $response = new ResponseController();
                         $resource = $response::get_past($loginName,$password,$class_id);
-//                        print_r($resource);die;
                         $len = count($resource['coursewares']);
                         for ($j = 0; $j < $len; $j++) {
                             $res = $resource['coursewares'][$j];

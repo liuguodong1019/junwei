@@ -17,10 +17,17 @@ class ClassHourController extends Controller
         if (IS_GET) {
             $id = I('get.id');
             $page = empty(I('get.page')) ? 1:I('get.page');
+            $rew = M('course')->field('status')->where("id = $id")->find();
             if (is_numeric($id)) {
-                $data = $live
-                    ->field('id,subject,reply_url,status,startDate,invalidDate,number,stu_token,class_id')
-                    ->where("course_id = $id")->order('cmf_live.id')->page($page.',10')->select();
+                if ($rew['status'] == 2) {
+                    $data = $live
+                        ->field('id,subject,reply_url,status,startDate,invalidDate,number,stu_token,class_id')
+                        ->where("course_id = $id and status = 2")->order('cmf_live.id')->page($page.',10')->select();
+                }else {
+                    $data = $live
+                        ->field('id,subject,reply_url,status,startDate,invalidDate,number,stu_token,class_id')
+                        ->where("course_id = $id")->order('cmf_live.id')->page($page.',10')->select();
+                }
                 if (!empty($data)) {
                     echo json_encode([
                         'status' => $status[0],
@@ -35,38 +42,6 @@ class ClassHourController extends Controller
             }
         }else {
             echo $response::state($status[3],$msg[3]);exit();
-        }
-    }
-
-    /**
-     * 课时直播结束
-     */
-    public function live_end ()
-    {
-        $succ = C('status');
-        $mess = C('msg');
-        $model = new SubmitController();
-        if (IS_GET) {
-            $id = I('get.id');
-            if (is_numeric($id)) {
-                $live = M('live');
-                $rew = $live->where("id = $id")->getField('class_id');
-                if ($rew) {
-                    $live->status = 2;
-                    if ($live->where("id = $id")->save()) {
-                        echo json_encode([
-                            'status' => $succ[0],
-                            'msg' => $mess[5],
-                        ]);die;
-                    }
-                }else {
-                    echo $model::state($succ[2], $mess[2]);die;
-                }
-            }else {
-                echo $model::state($succ[2], $mess[2]);die;
-            }
-        }else {
-            echo $model::state($succ[3], $mess[3]);die;
         }
     }
 }
