@@ -12,6 +12,7 @@ class MessageController extends Controller
         $status = C('status');
         $msg = C('msg');
         $message = M('message');
+
         if (IS_POST) {
             $token = I('post.token');
             $lector_id = I('post.lector_id');
