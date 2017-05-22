@@ -54,6 +54,7 @@ class AlipayController extends Controller
     {
 //        $token = I('post.token');
         $order = M('order');
+        $status = M('status');
         $msg = C('msg');
         $pay = C('alipay_config');
         $content = array();
@@ -64,7 +65,8 @@ class AlipayController extends Controller
             $data['course_id'] = I('request.course_id');
             $data['total_fee'] = I('request.now_price');
             $data['pay_ways'] = I('request.pay_ways');
-            $data['subject'] = I('request.subject');
+            $data['subject'] = I('request.course_name');
+            $data['boy'] = I('request.introduction');
             $data['create_time'] = time();
             $id = $data['course_id'];
             $course_id = $data['course_id'];
@@ -95,7 +97,13 @@ class AlipayController extends Controller
                     $aop->rsaPrivateKey = $pay['private_key'];
                     $aop->alipayrsaPublicKey = $pay['alipay_public_key'];
                     $response = $aop->sdkExecute($request);
-                    echo htmlspecialchars($response);die;
+//                    echo htmlspecialchars($response);die;
+                    $data = htmlspecialchars($response);
+                    echo json_encode([
+                        'status' => $status[0],
+                        'msg' => $msg[0],
+                        'data' => $data
+                    ]);exit();
                 }else {
                     echo $resource::state(0,'fail');exit();
                 }

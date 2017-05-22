@@ -93,7 +93,8 @@ class WxPayController extends Controller
             $data['course_id'] = I('request.course_id');
             $data['total_fee'] = I('request.now_price');
             $data['pay_ways'] = I('request.pay_ways');
-            $data['subject'] = I('request.subject');
+            $data['subject'] = I('request.course_name');
+            $data['boy'] = I('request.introduction');
             $data['create_time'] = time();
             $id = $data['course_id'];
             $course_id = $data['course_id'];
@@ -144,7 +145,7 @@ class WxPayController extends Controller
                         $res = strtoupper($re1);
                         $json = array();
                         $json['datas'] = $secondSignArray;
-                        print_r($json['datas']);die;
+//                        print_r($json['datas']);die;
                         $json['ordersn'] = $newPara["out_trade_no"];
                         $json['datas']['sign'] = $res;
                         $json['message'] = "预支付完成";
