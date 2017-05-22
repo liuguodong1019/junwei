@@ -43,7 +43,7 @@ class CourseController extends AdminbaseController
                 ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                 ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                 ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                ->order('UNIX_TIMESTAMP(startdate)')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+                ->order('cmf_course.id DESC')->limit($Page->firstRow . ',' . $Page->listRows)->select();
         }
         $this->assign('loginName', $loginName);
         $this->assign('password', $password);

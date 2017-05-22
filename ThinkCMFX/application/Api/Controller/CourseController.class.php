@@ -18,7 +18,7 @@ class CourseController extends Controller
             $page = I('get.page');
             if (is_numeric($page)) {
                 $data = $course
-                    ->field('cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,is_payment')
+                    ->field('cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,is_payment,cmf_course.introduction,cmf_course.number,cmf_course.stu_token,cmf_course.reply_url')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
@@ -51,13 +51,30 @@ class CourseController extends Controller
         $model = new SubmitController();
         if (IS_GET) {
             $id = I('get.id');
-            if (is_numeric($id)) {
-                $data = M('course')
-                    ->field('id,course_name,now_price,name,num_class,cover,people,book,introduction')
-                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                    ->where("id = $id")->find();
+            $uid = I('get.uid');
+            if (is_numeric($id)  && is_numeric($uid)) {
+                $order = M('order')->field('pay_status')->where("uid = $uid")->find();
+                if (empty($order) || $order['pay_status'] == 0 || $order['pay_status'] == 2) {
+                    $collection = M('course_collection')->field('status')->where("uid = $uid")->find();
+                    $data = M('course')
+                        ->field('id,course_name,now_price,name,num_class,cover,people,book,introduction')
+                        ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                        ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                        ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                        ->where("id = $id")->find();
+                    if (empty($collection) || $collection['status'] == 0) {
+                        $data['is_collection'] = 0;
+                    }else {
+                        $data['is_collection'] = 1;
+                    }
+
+                }else {
+                    $data = M('live')
+                        ->field('cmf_live.id,cmf_live.subject,cmf_course.introduction,cmf_live.status,cmf_live.startDate,cmf_live.invalidDate,cmf_live.reply_url,cmf_live.stu_token,cmf_live.number,cmf_live_collection.status')
+                        ->join('cmf_course ON cmf_live.course_id = cmf_course.id')
+                        ->join('left join cmf_live_collection ON cmf_live.id = cmf_live_collection.live_id')
+                        ->where("course_id = $id")->select();
+                }
                 if (!empty($data)) {
                     echo json_encode([
                         'status' => $succ[0],
@@ -88,7 +105,7 @@ class CourseController extends Controller
             $page = I('get.page');
             if (is_numeric($page)) {
                 $data = $course
-                    ->field('id,course_name,now_price,old_price,name,startDate,invalidDate,cover,num_class,status')
+                    ->field('id,course_name,now_price,old_price,name,startDate,invalidDate,cover,status,cmf_course.introduction')
                     ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                     ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
@@ -123,7 +140,7 @@ class CourseController extends Controller
             $page = I('get.page');
                 if (is_numeric($page)) {
                     $data = $course
-                        ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_payment')
+                        ->field('id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,is_payment,cmf_course.introduction')
                         ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
                         ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                         ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
@@ -182,6 +199,37 @@ class CourseController extends Controller
         }
     }
 
+
+    public function reply ()
+    {
+        $course = M('course');
+        $data['status'] =  2;
+        $course->where("id = 17")->save($data);
+//        $course = M('course');
+//        $data['status'] = 2;
+//        $course->where("id = 37")->save($data);
+//        $data = $course->field('id,class_id')->where("status = '2'")->select();
+//
+//        foreach ($data as $value) {
+//            $class_id[] = $value['class_id'];
+//            $id[] = $value['id'];
+//        }
+//        $id = join(",", $id);
+//        $junwei = M('junwei')->find();
+//        $loginName = $junwei['loginname'];
+//        $password = sp_authcode($junwei['password']);
+//        $response = new ResponseController();
+//        $resource = $response::get_past($loginName,$password,$class_id);
+//        $res = $resource['coursewares'][0];
+//        if ($resource['code'] == 0) {
+//            $data['number'] = $res['number'];
+//            $data['reply_url'] = $res['url'];
+//            $data['status'] = 2;
+//        }
+//        $course->where("id in ($id)")->save($data);
+
+
+    }
     /**
      * 修改直播状态
      */
@@ -201,24 +249,31 @@ class CourseController extends Controller
                         $data['status'] = 1;
                         $course->where("id = '$id'")->save($data);
                         break;
+                    case 105:
+                        $data['status'] = 2;
+                        $course->where("id = '$id'")->save($data);
+                        break;
                     case 106:
                         $junwei = M('junwei')->find();
                         $loginName = $junwei['loginname'];
                         $password = sp_authcode($junwei['password']);
                         $response = new ResponseController();
+
                         $resource = $response::get_past($loginName,$password,$class_id);
-                        $len = count($resource['coursewares']);
-                        for ($j = 0; $j < $len; $j++) {
-                            $res = $resource['coursewares'][$j];
-                        }
+
+                        $res = $resource['coursewares'][0];
+                        $number = $res['number'];
+                        $reply_url = $res['url'];
+
                         if ($resource['code'] == 0) {
-                            $data['number'] = $res['number'];
-                            $data['status'] = 2;
-                            $data['reply_url'] = $res['url'];
+                                $data['number'] = $number;
+                                $data['reply_url'] = $reply_url;
+                                $data['status'] = 3;
+                                $course->where("id = '$id'")->save($data);
                         }
                         break;
                 }
-                $course->where("id = '$id'")->save($data);
+
             }else {
                 $ret = $live->where("class_id = '$class_id'")->find();
                 $id = $ret['id'];
