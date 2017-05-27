@@ -49,29 +49,36 @@ class ClassHourController extends Controller
         }
     }
 
-//    /**
-//     * 收藏
-//     */
-//    public function collection()
-//    {
-//        $succ = C('status');
-//        $msg = C('msg');
-//        $response = new SubmitController();
-//        $id = I('request.id');
-//        $uid = I('request.uid');
-//        $course_id = I('request.course_id');
-//        if (is_numeric($id) && is_numeric($uid)) {
-//            $collection = M("live_collection");
-//            $data['live_id'] = $id;
-//            $data['uid'] = $uid;
-//            $data['create_time'] = time();
-//            if ($collection->add($data)) {
-//                echo $response::state($succ[0], $msg[0]);
-//            }
-//            exit();
-//        } else {
-//            echo $response::state($succ[2], $msg[2]);
-//            exit();
-//        }
-//    }
+    /**
+     * vip生成回放
+     */
+    public function vipReply ()
+    {
+        $live = M('live');
+        $data = $live->field('id,class_id')->where("status = '2'")->select();
+        if (!empty($data)) {
+            foreach ($data as $value) {
+                $class_id[] = $value['class_id'];
+                $id[] = $value['id'];
+            }
+            $junwei = M('junwei')->find();
+            $loginName = $junwei['loginname'];
+            $password = sp_authcode($junwei['password']);
+            $response = new ResponseController();
+            $resource = $response::get_past($loginName,$password,$class_id);
+            $len = count($resource);
+            for ($k = 0; $k < $len; $k++) {
+                $rew[] = json_decode($resource[$k],true);
+                $res[] = $rew[$k]['coursewares'][0];
+                if ($rew[$k]['code'] == 0) {
+                    $data['number'] = $res[$k]['number'];
+                    $data['reply_url'] = $res[$k]['url'];
+                    $data['status'] = 3;
+                }
+                $live->where("id = '$id[$k]'")->save($data);
+            }
+        }
+
+    }
+
 }

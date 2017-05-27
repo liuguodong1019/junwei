@@ -65,7 +65,7 @@ class ClassHourController extends AdminbaseController
             $live = M('live');
             if (!empty($id)) {
                 $data = $live
-                    ->field('cmf_live.subject,cmf_live.id,cmf_live.startDate,cmf_live.invalidDate,cmf_live.number,cmf_live.stu_token,cmf_live.class_id,cmf_course.course_name,cmf_lector.name')
+                    ->field('cmf_live.subject,cmf_live.id,cmf_live.startDate,cmf_live.invalidDate,cmf_live.number,cmf_live.stu_token,cmf_live.class_id,cmf_course.course_name,cmf_lector.name,cmf_live.status,cmf_live.reply_url')
                     ->join('cmf_course ON cmf_live.course_id = cmf_course.id')
                     ->join('cmf_lector ON cmf_live.lector_id = cmf_lector.l_id')
                     ->where("cmf_live.id = '$id'")->find();

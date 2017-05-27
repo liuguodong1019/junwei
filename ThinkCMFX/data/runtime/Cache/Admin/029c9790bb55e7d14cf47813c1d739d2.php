@@ -11,32 +11,32 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
-    <link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/thinkcmfx/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/thinkcmfx/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/thinkcmfx/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/thinkcmfx/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
-    <!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <!--<link rel="stylesheet" href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/thinkcmfx/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
-            ROOT: "/ThinkCMFX/",
-            WEB_ROOT: "/ThinkCMFX/",
+            ROOT: "/thinkcmfx/",
+            WEB_ROOT: "/thinkcmfx/",
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
-    <script src="/ThinkCMFX/public/js/jquery.js"></script>
-    <script src="/ThinkCMFX/public/js/wind.js"></script>
-    <script src="/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/thinkcmfx/public/js/jquery.js"></script>
+    <script src="/thinkcmfx/public/js/wind.js"></script>
+    <script src="/thinkcmfx/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -97,8 +97,8 @@
             <td><a><?php echo ($data["id"]); ?></a></td>
             <td><?php echo ($data["course_name"]); ?></td>
             <td><?php echo ($data["subject"]); ?></td>
-            <td><?php echo ($data["startdate"]); ?></td>
-            <td><?php echo ($data["invaliddate"]); ?></td>
+            <td><?php echo (date('Y-m-d H:i:s',$data["startdate"])); ?></td>
+            <td><?php echo (date('Y-m-d H:i:s',$data["invaliddate"])); ?></td>
             <td><?php echo ($data["name"]); ?></td>
             <td><?php echo ($data["number"]); ?></td>
             <td><?php echo ($data["class_id"]); ?></td>

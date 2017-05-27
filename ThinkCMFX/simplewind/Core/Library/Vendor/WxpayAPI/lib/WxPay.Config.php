@@ -2,7 +2,7 @@
 /**
 * 	配置账号信息
 */
-
+vendor('Application\Api.Controller.AopClient');
 class WxPayConfig
 {
 	//=======【基本信息设置】=====================================
@@ -24,9 +24,10 @@ class WxPayConfig
 	 */
 	const APPID = 'wx11367b4000cda893';
 	const MCHID = '1445302502';
-	const KEY = 'BEIJINGjunweideyuanjiaoyu2017518';
+	const KEY = 'BEIJINGjunweideyuanjiaoyu2017524';
 	const APPSECRET = '7813490da6f1265e4901ffb80afaa36f';
-	
+	const PACKAGE = 'Sign=WXPay';
+
 	//=======【证书路径设置】=====================================
 	/**
 	 * TODO：设置商户证书路径

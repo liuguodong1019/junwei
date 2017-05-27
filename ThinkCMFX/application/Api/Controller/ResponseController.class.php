@@ -86,33 +86,19 @@ class ResponseController extends Controller
         $model = new SubmitController();
         $len = count($class_id);
         for ($a = 0; $a < $len; $a++) {
-            $data = array(
+            $data[] = array(
                 'loginName' => $loginName,
                 'password' => $password,
                 'roomId' => $class_id[$a]
             );
         }
-        $result = $model->post($url, $data);
-        $res = json_decode($result, true);
-        return $res;
+        $length = count($data);
+        for ($j = 0; $j < $length; $j++) {
+            $result[] = $model->post($url, $data[$j]);
+        }
+        return $result;
     }
 
-    public static function past($loginName, $password, $class_id)
-    {
-        $url = "http://junwei.gensee.com/integration/site/training/courseware/list";
-        $model = new SubmitController();
-        $len = count($class_id);
-        for ($a = 0; $a < $len; $a++) {
-            $data = array(
-                'loginName' => $loginName,
-                'password' => $password,
-                'roomId' => $class_id[$a]
-            );
-        }
-        $result = $model->post($url, $data);
-        $res = json_decode($result, true);
-        return $res;
-    }
     /**
      * 创建讲师接口
      */
