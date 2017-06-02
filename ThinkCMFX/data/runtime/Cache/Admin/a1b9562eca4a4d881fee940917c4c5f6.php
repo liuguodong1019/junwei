@@ -111,7 +111,7 @@
                     <td>
                         <input type="hidden" name="course_name" value="<?php echo ($data["course_name"]); ?>">
                         <input type="hidden" name="class_id" value="<?php echo ($data["class_id"]); ?>">
-                        <input type="hidden" name="cover" value = "<?php echo ($data["cover"]); ?>">
+                        <!--<input type="hidden" name="cover" value = "<?php echo ($data["cover"]); ?>">-->
                         <input type="hidden" name="id" value="<?php echo ($id); ?>">
                     </td>
                 </tr>
@@ -159,8 +159,10 @@
                 <tr>
                     <th width="80">封面图</th>
                     <td>
-                        <!--<input type="text" name="" id="" value = "<?php echo ($data["cover"]); ?>">-->
-                        <input type="file" name="cover" value = "<?php echo ($data["cover"]); ?>">
+                        <input type="text" name="" id="" value = '<?php echo ($data["cover"]); ?>'>
+                        <input type="file" name="cover" value = "">
+                        <!--<img src="/ThinkCMFX/Uploads/Uploads/5912dff194b9a.jpg" width="30%" height="25%">-->
+                        <img src="/ThinkCMFX/Uploads/<?php echo ($data["cover"]); ?>" width="30%" height="25%">
                     </td>
                 </tr>
                 <tr>

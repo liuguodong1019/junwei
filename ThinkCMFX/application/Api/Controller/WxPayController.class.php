@@ -10,7 +10,7 @@ class WxPayController extends Controller
      */
     public function _initialize()
     {
-        vendor('WxPayAPI.lib.WechatAppPay');
+        vendor('WxpayAPI.lib.WeChatAppPay');
     }
 
     /**
@@ -31,37 +31,42 @@ class WxPayController extends Controller
         $msg = C('msg');
         $wxPay = C('wxPay');
         $order = M('order');
+        $course = M('course');
         $resource = new SubmitController();
         $wxappid = $wxPay['appid'];
         $mch_id = $wxPay['mch_id'];
         $notify_url = $wxPay['notify_url'];;
         $wxkey = $wxPay['key'];
-        $this->wechatAppPay = new \wechatAppPay($wxappid, $mch_id, $notify_url, $wxkey);
-        if (IS_POST) {
+        $wechatAppPay = new \wechatAppPay($wxappid, $mch_id, $notify_url, $wxkey);
+        if (IS_GET) {
             $data['uid'] = I('request.uid');
             $data['course_id'] = I('request.course_id');
-            $data['total_fee'] = I('request.now_price');
             $data['pay_ways'] = I('request.pay_ways');
-            $data['subject'] = I('request.course_name');
-            $data['boy'] = I('request.introduction');
             $data['create_time'] = time();
             $course_id = $data['course_id'];
+            if (!is_numeric($course_id) && empty($course_id)) {
+                echo json_encode($status[2],$msg[2]);exit();
+            }
+            $res = M('course')->field('now_price,course_name,introduction')->where("id = '$course_id'")->find();
+            $data['total_amount'] = $res['now_price'];
+            $data['subject'] = $res['course_name'];
+            $data['boy'] = $res['introduction'];
             if (is_numeric($course_id) && is_numeric($data['uid'])) {
                 if ($order->add($data)) {
-                    $dat = $order->field('id,total_amount,boy')->where("course_id = '$course_id'")->find();
+                    $dat = $order->field('id')->where("course_id = '$course_id'")->find();
                     $out_trade_no = $dat['id'];
-                    $total_amount = $dat['total_amount'];
-                    $boy = $dat['boy'];
+                    $total_amount = $data['total_amount'];
+                    $boy = $data['boy'];
                     $params = array();
                     $params['body'] = $boy;
                     $params['out_trade_no'] = $out_trade_no;
                     $params['total_fee'] = ($total_amount * 100);
                     $params['trade_type'] = 'APP';
 
-                    $wx_result = $this->wechatAppPay->unifiedOrder($params);
+                    $wx_result = $wechatAppPay->unifiedOrder($params);
                     if ($wx_result['return_code'] === 'SUCCESS' && $wx_result['result_code'] === 'SUCCESS') {
                         $prepay_id = $wx_result['prepay_id'];
-                        $sign_array = $this->wechatAppPay->getAppPayParams($prepay_id);
+                        $sign_array = $wechatAppPay->getAppPayParams($prepay_id);
                         echo json_encode([
                             'status' => $status[0],
                             'msg' => '预支付完成',
@@ -69,23 +74,17 @@ class WxPayController extends Controller
                         ]);
                         exit();
                     } else {
-                        echo $resource::state($status[1], $msg[1]);
-                        exit();
+                        echo $resource::state($status[1], $msg[1]);exit();
                     }
                 } else {
-                    echo $resource::state($status[1], $msg[1]);
-                    exit();
+                    echo $resource::state($status[1], $msg[1]);exit();
                 }
             } else {
-                echo $resource::state($status[2], $msg[2]);
-                exit();
+                echo $resource::state($status[2], $msg[2]);exit();
             }
         } else {
-            echo $resource::state($status[3], $msg[3]);
-            exit();
+            echo $resource::state($status[3], $msg[3]);exit();
         }
-
-
     }
 
     /**
@@ -130,9 +129,9 @@ class WxPayController extends Controller
      * @param  string $out_trade_no 订单号
      * @return xml               订单查询结果
      */
-    public function queryOrder($out_trade_no) {
+    public function queryOrder() {
         $wechatAppPay = new \wechatAppPay();
-//        $out_trade_no = I('request.out_trade_no');
+        $out_trade_no = I('request.out_trade_no');
         $result = $wechatAppPay->orderQuery($out_trade_no);
         if ($result['result_code'] == 'SUCCESS') {
             $rew = self::updateOrder($result);

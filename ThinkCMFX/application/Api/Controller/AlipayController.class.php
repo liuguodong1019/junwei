@@ -19,75 +19,62 @@ class AlipayController extends Controller
     /**
      * 集成客户端请求参数
      */
-    public function order ()
+    public function order()
     {
-//        $token = I('post.token');
         $order = M('order');
         $status = C('status');
         $msg = C('msg');
         $pay = C('alipay_config');
         $content = array();
         $resource = new SubmitController();
-//        $rew = M('users')->field('uid')->where("token = '$token'")->find();
-//        if (!empty($rew)) {
-            $data['uid'] = I('request.uid');
-            $data['course_id'] = I('request.course_id');
-            $data['pay_ways'] = I('request.pay_ways');
-            $data['create_time'] = time();
-            $course_id = $data['course_id'];
-            if (is_numeric($course_id) && is_numeric($data['uid'])) {
-                $course = M('course')->field('now_price,course_name,introduction')->where("id = '$course_id'")->find();
-                $data['subject'] = $course['course_name'];
-                $data['boy'] = $course['introduction'];
-                $data['total_amount'] = $course['now_price'];
-                if (!empty($course)) {
-                    if ($order->add($data)) {
-                        $dat = $order->field('id,total_amount,subject,boy')->where("course_id = '$course_id'")->find();
-                        $out_trade_no = $dat['id'];
-                        $total_amount = sprintf('%.2f',$data['total_amount']);
-                        $subject = $data['subject'];
-                        $boy = $data['boy'];
-                        $content['product_code'] = $pay['product_code'];
-                        $content['total_amount'] = $total_amount;
-                        $content['subject'] = $subject;
-                        $content['body'] = $boy;
-                        $content['out_trade_no'] = $out_trade_no;
-                        $con = json_encode($content);//$content是biz_content的值,将之转化成字符串
-                        $aop = new \AopClient;
-                        //实例化具体API对应的request类,类名称和接口名称对应,当前调用接口名称：alipay.trade.app.pay
-                        $request = new \AlipayTradeAppPayRequest();
-                        $aop->appId = $pay['app_id'];
-                        $bizcontent = $con;
-                        $request->setBizContent($bizcontent);
-                        $aop->postCharset = "utf-8";
-                        $aop->format = "json";
-                        $request->setNotifyUrl($pay['notify_url']);
-                        $aop->signType = "RSA2";
-//                    $aop->gatewayUrl = "https://openapi.alipay.com/gateway.do";
-                        $aop->rsaPrivateKey = $pay['private_key'];
-                        $aop->alipayrsaPublicKey = $pay['alipay_public_key'];
-                        $response = $aop->sdkExecute($request);
-//                    echo htmlspecialchars($response);die;
-//                        $data = htmlspecialchars($response);
-                        echo json_encode([
-                            'status' => $status[0],
-                            'msg' => $msg[0],
-                            'data' => $response
-                        ]);exit();
-                    }else {
-                        echo $resource::state(0,'fail');exit();
-                    }
-                }else {
-                    echo $resource::state(0,'fail');exit();
-                }
 
-            }else {
-                echo $resource::state(403,$msg[2]);exit();
+        $data['uid'] = I('request.uid');
+        $data['course_id'] = I('request.course_id');
+        $data['pay_ways'] = I('request.pay_ways');
+        $data['create_time'] = time();
+        $course_id = $data['course_id'];
+        if (is_numeric($course_id) && is_numeric($data['uid'])) {
+            $course = M('course')->field('now_price,course_name,introduction')->where("id = '$course_id'")->find();
+            $data['subject'] = $course['course_name'];
+            $data['boy'] = $course['introduction'];
+            $data['total_amount'] = $course['now_price'];
+            if ($order->add($data)) {
+                $dat = $order->field('id,total_amount,subject,boy')->where("course_id = '$course_id'")->find();
+                $out_trade_no = $dat['id'];
+                $total_amount = sprintf('%.2f', $data['total_amount']);
+                $subject = $data['subject'];
+                $boy = $data['boy'];
+                $content['product_code'] = $pay['product_code'];
+                $content['total_amount'] = $total_amount;
+                $content['subject'] = $subject;
+                $content['body'] = $boy;
+                $content['out_trade_no'] = $out_trade_no;
+                $con = json_encode($content);//$content是biz_content的值,将之转化成字符串
+                $aop = new \AopClient;
+                //实例化具体API对应的request类,类名称和接口名称对应,当前调用接口名称：alipay.trade.app.pay
+                $request = new \AlipayTradeAppPayRequest();
+                $aop->appId = $pay['app_id'];
+                $bizcontent = $con;
+                $request->setBizContent($bizcontent);
+                $aop->postCharset = "utf-8";
+                $aop->format = "json";
+                $request->setNotifyUrl($pay['notify_url']);
+                $aop->signType = "RSA2";
+                $aop->rsaPrivateKey = $pay['private_key'];
+                $aop->alipayrsaPublicKey = $pay['alipay_public_key'];
+                $response = $aop->sdkExecute($request);
+                echo json_encode(['status' => $status[0], 'msg' => $msg[0], 'data' => $response]);
+                exit();
+            } else {
+                echo $resource::state(0, 'fail');
+                exit();
             }
-//        }else {
-//            echo $resource::state(404,$msg[2]);exit();
-//        }
+        } else {
+            echo $resource::state(403, $msg[2]);
+            exit();
+        }
     }
+
     /**
      * 提供给支付宝调用的接口
      */
@@ -95,7 +82,6 @@ class AlipayController extends Controller
     {
         $aop = new \AopClient;
         $pay = C('alipay_config');
-        $status = C("status");
         $aop->alipayrsaPublicKey = $pay['alipay_public_key'];
         $flag = $aop->rsaCheckV1($_POST, NULL, "RSA2");
         if ($flag) {
@@ -124,29 +110,16 @@ class AlipayController extends Controller
             if ($trade_status == 'TRADE_FINISHED') {
 
             } elseif ($trade_status == 'TRADE_SUCCESS') {
-                if ($this->checkOrderStatus($out_trade_no, $total_fee, $seller_email,$app_id)) {
+                if ($this->checkOrderStatus($out_trade_no, $total_fee, $seller_email, $app_id)) {
                     $parameter['pay_status'] = 1;
-                    $orderno = trim($out_trade_no);
-                    $OrderSer = M('order');
-                    if ($OrderSer->where("id = '$orderno'")->save($parameter)) {
-                        echo json_encode([
-                            'status' => $status[0],
-                            'msg'    => '支付成功'
-                        ]);exit();
-                    }else {
-                        echo json_encode([
-                            'status' => $status[0],
-                            'msg'    => '支付成功'
-                        ]);exit();
-                    }
-//                    $this->orderHandle($out_trade_no, $parameter);
+                    $this->orderHandle($out_trade_no, $parameter);
                 } else {
                     echo "fail";
                     exit;
                 }
             }
             echo "success"; // 请不要修改或删除
-        }else {
+        } else {
             // 验证失败
             echo "fail";
         }
@@ -158,7 +131,7 @@ class AlipayController extends Controller
      * @param $seller 收款帐号
      * @return bool  检查支付宝返回的关键数据是否合法
      */
-    private function checkOrderStatus($order_sn, $total_fee, $seller,$app_id)
+    private function checkOrderStatus($order_sn, $total_fee, $seller, $app_id)
     {
         $pay = C('alipay_config');
         $account = $pay['seller_email'];
@@ -181,10 +154,25 @@ class AlipayController extends Controller
     {
         $orderno = trim($orderno);
         $OrderSer = M('order');
-        if ($OrderSer->where("id = '$orderno'")->save($orderData)) {
-            $this->success('修改成功');
-        }else {
-            $this->error('修改失败');
+        $OrderSer->where("id = '$orderno'")->save($orderData);
+    }
+
+    /**
+     * 通知app端支付是否成功
+     */
+    public function queryOrder()
+    {
+        if ($_GET) {
+            $out_trade_no = I('get.out_trade_no');
+            $data = M('order')->field('pay_status')->where("id = '$out_trade_no'")->find();
+            $status = $data['pay_status'];
+            if ($status == 1) {
+                echo json_encode(['status' => $status[0], 'msg' => '支付成功']);
+                exit();
+            } else {
+                echo json_encode(['status' => $status[0], 'msg' => '支付失败']);
+                exit();
+            }
         }
     }
 }

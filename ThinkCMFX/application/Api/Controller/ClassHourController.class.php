@@ -17,17 +17,10 @@ class ClassHourController extends Controller
         if (IS_GET) {
             $id = I('get.id');
             $page = empty(I('get.page')) ? 1 : I('get.page');
-            $rew = M('course')->field('status')->where("id = $id")->find();
             if (is_numeric($id)) {
-                if ($rew['status'] == 2) {
-                    $data = $live
-                        ->field('id,subject,reply_url,status,startDate,invalidDate,number,stu_token,class_id')
-                        ->where("course_id = $id and status = 2")->order('cmf_live.id')->page($page . ',10')->select();
-                } else {
-                    $data = $live
-                        ->field('id,subject,reply_url,status,startDate,invalidDate,number,stu_token,class_id')
-                        ->where("course_id = $id")->order('cmf_live.id')->page($page . ',10')->select();
-                }
+            $data = $live
+                ->field('id,subject,reply_url,status,startDate,invalidDate,number,stu_token,class_id')
+                ->where("course_id = $id")->order('cmf_live.id')->page($page . ',10')->select();
                 if (!empty($data)) {
                     echo json_encode([
                         'status' => $status[0],
@@ -55,12 +48,15 @@ class ClassHourController extends Controller
     public function vipReply ()
     {
         $live = M('live');
-        $data = $live->field('id,class_id')->where("status = '2'")->select();
+        $course = M('course');
+        $data = $live->field('id,class_id,course_id')->where("status = '2'")->select();
         if (!empty($data)) {
             foreach ($data as $value) {
                 $class_id[] = $value['class_id'];
                 $id[] = $value['id'];
+                $course_id[] = $value['course_id'];
             }
+            $course_id = join(",", $course_id);
             $junwei = M('junwei')->find();
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
@@ -75,10 +71,11 @@ class ClassHourController extends Controller
                     $data['reply_url'] = $res[$k]['url'];
                     $data['status'] = 3;
                 }
-                $live->where("id = '$id[$k]'")->save($data);
+                if ($live->where("id = '$id[$k]'")->save($data)) {
+                    $dat['status'] = 3;
+                    $course->where("id in ($course_id)")->save($dat);
+                }
             }
         }
-
     }
-
 }

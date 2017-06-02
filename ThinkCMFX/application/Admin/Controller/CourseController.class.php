@@ -159,6 +159,7 @@ class CourseController extends AdminbaseController
                 $array['people'] = $people;
                 $array['book'] = $book;
             }
+
             $this->assign('id', $id);
             $this->assign('array', $array);
             $this->assign('data', $data);
@@ -197,17 +198,13 @@ class CourseController extends AdminbaseController
                     exit();
                 }
             }else {
-                $cover = I('post.cover');
-                if (empty($cover)) {
-                    $info = $upload->upload();
-                    foreach($info as $file){
-                        $cover = $file['savepath'].$file['savename'];
-                    }
-                }else {
-                    $data['cover'] = $cover;
-                }
                 $id = I('post.id');
                 $data = I('');
+                $info = $upload->upload();
+                foreach($info as $file){
+                    $cover = $file['savepath'].$file['savename'];
+                }
+                $data['cover'] = $cover;
                 if ($course->where("id = $id")->save($data)) {
                     $this->success(L('ADD_SUCCESS'), U("Course/show"));
                     exit();
