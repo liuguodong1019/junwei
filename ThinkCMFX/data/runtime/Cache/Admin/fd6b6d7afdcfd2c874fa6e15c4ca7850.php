@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
 		<meta name="renderer" content="webkit|ie-comp|ie-stand">
 		<meta name="robots" content="noindex,nofollow">
-		<link href="/thinkcmfx/admin/themes/simplebootx/Public/assets/css/admin_login.css" rel="stylesheet" />
+		<link href="/ThinkCMFX/admin/themes/simplebootx/Public/assets/css/admin_login.css" rel="stylesheet" />
 		<style>
 			#login_btn_wraper{
 				text-align: center;
@@ -58,14 +58,14 @@
 
 <script>
 var GV = {
-    ROOT: "/thinkcmfx/",
-    WEB_ROOT: "/thinkcmfx/",
+    ROOT: "/ThinkCMFX/",
+    WEB_ROOT: "/ThinkCMFX/",
     JS_ROOT: "public/js/"
 };
 </script>
-<script src="/thinkcmfx/public/js/wind.js"></script>
-<script src="/thinkcmfx/public/js/jquery.js"></script>
-<script type="text/javascript" src="/thinkcmfx/public/js/common.js"></script>
+<script src="/ThinkCMFX/public/js/wind.js"></script>
+<script src="/ThinkCMFX/public/js/jquery.js"></script>
+<script type="text/javascript" src="/ThinkCMFX/public/js/common.js"></script>
 <script>
 ;(function(){
 	document.getElementById('js-admin-name').focus();

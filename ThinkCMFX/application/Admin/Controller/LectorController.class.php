@@ -13,20 +13,19 @@ class LectorController extends AdminbaseController
     {
         $lector = M('lector');
         $count      = $lector->count();
-        $Page       = new \Think\Page($count,25);
-        $show = $Page->show();
+        $page = $this->page($count,20);
         if (IS_POST) {
             $keyword = I('post.keyword');
             if (!empty($keyword)) {
                 $list = $lector
                     ->where("name like '%$keyword%'")
-                    ->order('create_time')->limit($Page->firstRow.','.$Page->listRows)
+                    ->order('create_time')->limit($page->firstRow.','.$page->listRows)
                     ->select();
             }
         }else {
             $list = $lector
                 ->join('cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id')
-                ->order('l_id')->limit($Page->firstRow.','.$Page->listRows)
+                ->order('l_id')->limit($page->firstRow.','.$page->listRows)
                 ->select();
             if (empty($list)) {
                 $this->error('暂时还没有数据',U('Lector/create_lector'));
@@ -34,7 +33,7 @@ class LectorController extends AdminbaseController
         }
 
         $this->assign('list', $list);
-        $this->assign('page',$show);
+        $this->assign('page',$page->show('Admin'));
         $this->display('lector');
     }
 
@@ -83,7 +82,6 @@ class LectorController extends AdminbaseController
         $id = I('get.id');
         if (!empty($id)) {
             $list = $lector
-//                ->join('cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id')
                 ->where("cmf_lector.l_id = $id")
                 ->find();
         }else {

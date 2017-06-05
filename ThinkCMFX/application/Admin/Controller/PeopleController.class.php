@@ -17,21 +17,19 @@ class PeopleController extends AdminbaseController
     public function show ()
     {
         $people = M('people');
-//        $data = $people->select();
         $count      = $people->count();
-        $Page       = new \Think\Page($count,25);
-        $show = $Page->show();
+        $page = $this->page($count,20);
         if (IS_POST) {
             $keyword = I('post.keyword');
             if (!empty($keyword)) {
                 $data = $people->where("people like '%$keyword%'")
-                    ->order('create_time')->limit($Page->firstRow.','.$Page->listRows)->select();
+                    ->order('create_time')->limit($page->firstRow.','.$page->listRows)->select();
             }
         }else {
-            $data = $people->order('create_time')->limit($Page->firstRow.','.$Page->listRows)->select();
+            $data = $people->order('create_time')->limit($page->firstRow.','.$page->listRows)->select();
         }
         $this->assign('data',$data);
-        $this->assign('page',$show);
+        $this->assign('page',$page->show('Admin'));
         $this->display();
     }
 
@@ -98,7 +96,6 @@ class PeopleController extends AdminbaseController
         }
         if(isset($_POST['p_ids'])){
             $ids=join(",",$_POST['p_ids']);
-//             print_r($ids);die;
             if ($people->where("p_id in ($ids)")->delete()!==false) {
                 $this->success("删除成功！");
             } else {

@@ -28,12 +28,11 @@ class CourseController extends AdminbaseController
         $loginName = $junwei['loginName'];
         $password = $junwei['password'];
         $count = $course->count();
-        $Page = new \Think\Page($count, 10);
-        $show = $Page->show();
+        $Page = $this->page($count, 20);
         if (IS_POST) {
             $keyword = I('post.keyword');
             if (!empty($keyword)) {
-                $data = $course->where("subject like '%$keyword%'")
+                $data = $course->where("course_name like '%$keyword%'")
                     ->order('startDate')->limit($Page->firstRow . ',' . $Page->listRows)->select();
             } else {
                 $this->redirect('show');
@@ -48,7 +47,7 @@ class CourseController extends AdminbaseController
         $this->assign('loginName', $loginName);
         $this->assign('password', $password);
         $this->assign('data', $data);
-        $this->assign('page', $show);
+        $this->assign('page', $Page->show('Admin'));
         $this->display();
     }
 
@@ -159,7 +158,6 @@ class CourseController extends AdminbaseController
                 $array['people'] = $people;
                 $array['book'] = $book;
             }
-
             $this->assign('id', $id);
             $this->assign('array', $array);
             $this->assign('data', $data);
@@ -286,5 +284,63 @@ class CourseController extends AdminbaseController
                 }
             }
         }
+    }
+
+    /**
+     * 已结束课程
+     */
+    public function end ()
+    {
+        $time = time();
+        $course = M('course');
+        $where = "UNIX_TIMESTAMP(invaliddate) < '$time'";
+        $count = $course->where($where)->count();
+        $page = $this->page($count,20);
+        $data = $course->where($where)->limit($page->firstRow . ',' . $page->listRows)->select();
+        $this->assign("page", $page->show('Admin'));
+        $this->assign('data',$data);
+        $url = "{:U('Course/end')}";
+        $describe = "已结束";
+        $this->assign('url',$url);
+        $this->assign('describe',$describe);
+        $this->display();
+    }
+
+    /**
+     * 公开课
+     */
+    public function openClass ()
+    {
+        $course = M('course');
+        $where = "is_free = 1";
+        $count = $course->where($where)->count();
+        $page = $this->page($count,20);
+        $data = $course->where($where)->limit($page->firstRow . ',' . $page->listRows)->select();
+        $this->assign("page", $page->show('Admin'));
+        $this->assign('data',$data);
+        $url = "{:U('Course/openClass')}";
+        $describe = "公开课";
+        $this->assign('url',$url);
+        $this->assign('describe',$describe);
+        $this->display("Course/end");
+    }
+
+    /**
+     * vip课程
+     */
+    public function vip ()
+    {
+        $course = M('course');
+        $where = "is_free = 2";
+        $count = $course->where($where)->count();
+        $page = $this->page($count,20);
+        $data = $course->where($where)->limit($page->firstRow . ',' . $page->listRows)->select();
+        $this->assign("page", $page->show('Admin'));
+        $this->assign('data',$data);
+        $url = "{:U('Course/vip')}";
+        $describe = "vip课";
+        $this->assign('url',$url);
+        $this->assign('describe',$describe);
+        $this->display("Course/end");
     }
 }

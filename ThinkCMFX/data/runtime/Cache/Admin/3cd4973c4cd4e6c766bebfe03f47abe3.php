@@ -77,6 +77,9 @@
     <ul class="nav nav-tabs">
         <li class="active"><a href="<?php echo U('Course/show');?>">课堂列表</a></li>
         <li><a href="<?php echo U('Course/create');?>">添加课堂</a></li>
+        <li><a href="<?php echo U('Course/end');?>">已结束</a></li>
+        <li><a href="<?php echo U('Course/openClass');?>">公开课</a></li>
+        <li><a href="<?php echo U('Course/vip');?>">vip课</a></li>
     </ul>
     <form class="well form-search" method="post" action="<?php echo U('Course/show');?>">
         课堂名称：

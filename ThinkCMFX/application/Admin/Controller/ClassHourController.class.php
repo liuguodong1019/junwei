@@ -28,13 +28,12 @@ class ClassHourController extends AdminbaseController
         $loginName = $junwei['loginName'];
         $password = $junwei['password'];
         $count = $live->count();
-        $Page = new \Think\Page($count, 10);
-        $show = $Page->show();
+        $page = $this->page($count,20);
         if (IS_POST) {
             $keyword = I('post.keyword');
             if (!empty($keyword)) {
                 $data = $live->where("subject like '%$keyword%'")
-                    ->order('startDate')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+                    ->order('startDate')->limit($page->firstRow . ',' . $page->listRows)->select();
             } else {
                 $this->redirect('show');
             }
@@ -43,7 +42,7 @@ class ClassHourController extends AdminbaseController
                 ->field('cmf_live.id,cmf_live.subject,cmf_course.course_name,cmf_live.startDate,cmf_live.invalidDate,cmf_live.class_id')
                 ->join('left join cmf_course ON cmf_live.course_id = cmf_course.id')
                 ->where("cmf_live.is_free = 2")
-                ->order('cmf_live.id')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+                ->order('cmf_live.id')->limit($page->firstRow . ',' . $page->listRows)->select();
             if (empty($data)) {
                 $this->redirect('create');
             }
@@ -51,7 +50,7 @@ class ClassHourController extends AdminbaseController
         $this->assign('loginName', $loginName);
         $this->assign('password', $password);
         $this->assign('data', $data);
-        $this->assign('page', $show);
+        $this->assign('page', $page->show('Admin'));
         $this->display();
     }
 
@@ -69,7 +68,6 @@ class ClassHourController extends AdminbaseController
                     ->join('cmf_course ON cmf_live.course_id = cmf_course.id')
                     ->join('cmf_lector ON cmf_live.lector_id = cmf_lector.l_id')
                     ->where("cmf_live.id = '$id'")->find();
-//                print_r($data);die;
             }
         }
         $this->assign('data', $data);
@@ -225,39 +223,4 @@ class ClassHourController extends AdminbaseController
             }
         }
     }
-
-
-    /**
-     * 生成回放
-     */
-    public function playback()
-    {
-        $live = M('live');
-        if (IS_GET) {
-            $id = I('get.id');
-            if (is_numeric($id)) {
-                $class_id = $live->where("id = $id")->getField('class_id');
-                $junwei = M('junwei')->find();
-                $response = new ResponseController();
-                $loginName = $junwei['loginname'];
-                $password = sp_authcode($junwei['password']);
-                $resource = $response::get_past($loginName, $password, $class_id);
-                if ($resource['code'] == 0) {
-                    $res = $resource['coursewares'][0];
-                    $data['number'] = $res['number'];
-                    $data['status'] = 3;
-                    $data['reply_url'] = $res['url'];
-                    if ($live->where("id = $id")->save($data)) {
-                        $this->success(L('ADD_SUCCESS'), U("Course/show"));
-                        exit();
-                    } else {
-                        $this->error(L('ADD_FAILED'));
-                        exit();
-                    }
-                }
-            }
-        }
-    }
-
-
 }

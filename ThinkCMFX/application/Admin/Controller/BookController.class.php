@@ -18,19 +18,18 @@ class BookController extends AdminbaseController
     {
         $book = M('book');
         $count      = $book->count();
-        $Page       = new \Think\Page($count,1);
-        $show = $Page->show();
+        $page       = $this->page($count,20);
         if (IS_POST) {
             $keyword = I('post.keyword');
             if (!empty($keyword)) {
                 $data = $book->where("book like '%$keyword%'")
-                    ->order('create_time')->limit($Page->firstRow.','.$Page->listRows)->select();
+                    ->order('create_time')->limit($page->firstRow.','.$page->listRows)->select();
             }
         }else {
-            $data = $book->order('create_time')->limit($Page->firstRow.','.$Page->listRows)->select();
+            $data = $book->order('create_time')->limit($page->firstRow.','.$page->listRows)->select();
         }
         $this->assign('data',$data);
-        $this->assign('page',$show);
+        $this->assign('page',$page->show('Admin'));
         $this->display();
     }
 

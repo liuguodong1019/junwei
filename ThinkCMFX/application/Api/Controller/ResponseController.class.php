@@ -27,6 +27,11 @@ class ResponseController extends Controller
                 ->join('STRAIGHT_JOIN cmf_people AS d ON a.people_id = d.p_id')
                 ->join('STRAIGHT_JOIN cmf_book AS e ON a.book_id = e.b_id')
                 ->order('a.id DESC')->select();
+            $len = count($data);
+            for ($c = 0; $c < $len; $c++) {
+                $data[$c]['pay_status'] = 0;
+                $data[$c]['type'] = 0;
+            }
             if (!empty($uid) && is_numeric($uid)) {
                 $rew = $this->gotten($uid, $page, $data);
                 $is_login = 1;
@@ -117,6 +122,11 @@ class ResponseController extends Controller
                 ->field('a.id,course_name,now_price,old_price,startDate,invalidDate,cover,a.status,a.introduction,b.name')
                 ->join('STRAIGHT_JOIN cmf_lector AS b ON a.lector_id = b.l_id')
                 ->where("is_free = '1'")->order('a.id DESC')->select();
+            $len = count($data);
+            for ($c = 0; $c < $len; $c++) {
+                $data[$c]['pay_status'] = 0;
+                $data[$c]['type'] = 0;
+            }
             if (!empty($uid) && is_numeric($uid)) {
                 $rew = $this->open_class($uid,$page,$data);
                 $is_login = 1;
@@ -158,6 +168,11 @@ class ResponseController extends Controller
                 ->join('left join cmf_lector as d ON a.lector_id = d.l_id')
                 ->join('left join cmf_book as e ON a.book_id = e.b_id')
                 ->where("a.is_free = '2'")->order('a.id DESC')->select();
+            $len = count($data);
+            for ($c = 0; $c < $len; $c++) {
+                $data[$c]['pay_status'] = 0;
+                $data[$c]['type'] = 0;
+            }
             if (!empty($uid) && is_numeric($uid)) {
                 $rew = $this->gotten($uid,$page,$data);
                 $is_login = 1;
@@ -180,6 +195,12 @@ class ResponseController extends Controller
         }
     }
 
+    /**
+     * @param $page
+     * @param $uid
+     * @return string
+     * 往期直播
+     */
     public function past_live ($page,$uid)
     {
         $succ = C('status');
@@ -194,18 +215,22 @@ class ResponseController extends Controller
                 ->field('id,course_name,introduction,num_class,status,is_free,now_price,old_price,number,stu_token,reply_url,class_id,startdate,invaliddate,cover,name')
                 ->join('STRAIGHT_JOIN cmf_lector as b ON a.lector_id = b.l_id')
                 ->where($where)->order('a.id DESC')->select();
-
+            $len = count($data);
+            for ($c = 0; $c < $len; $c++) {
+                $data[$c]['pay_status'] = 0;
+                $data[$c]['type'] = 0;
+            }
             if (!empty($uid) && is_numeric($uid)) {
                 $rew = $this->gotten($uid,$page,$data);
                 $is_login = 1;
             } else {
-                $rew = $this->page($uid,$page);
+                $rew = $this->page($data,$page);
                 $is_login = 0;
             }
             if (!empty($data)) {
                 return json_encode([
                     'status' => $succ[0],
-                    'meg' => $mess[0],
+                    'msg' => $mess[0],
                     'is_login' => $is_login,
                     'data' => $rew
                 ]);
@@ -216,6 +241,153 @@ class ResponseController extends Controller
             return $model::state($succ[2], $mess[2], $data = null);
         }
     }
+
+    /**
+     * @param $data
+     * 课程分享
+     */
+    public function courseShare ($data)
+    {
+        $status = C('status');
+        $course_share = M('course_share');
+        $uid = $data['uid'];
+        $rew = $course_share->field('id,num,share_way,course_id')->where("uid = '$uid'")->find();
+        switch ($rew) {
+            case 0:
+                if ($course_share->add($data)) {
+                    return json_encode([$status[0],'分享成功']);
+                }else {
+                    return json_encode([$status[1],'分享失败']);
+                }
+                break;
+            default:
+                if ($data['share_way'] != $rew['share_way']) {
+                    if ($course_share->add($data)) {
+                        return json_encode([$status[0],'分享成功']);
+                    }else {
+                        return json_encode([$status[1],'分享失败']);
+                    }
+                }elseif ($data['course_id'] != $rew['course_id']) {
+                    if ($course_share->add($data)) {
+                        return json_encode([$status[0],'分享成功']);
+                    }else {
+                        return json_encode([$status[1],'分享失败']);
+                    }
+                }
+                $dat['num'] = $rew['num']+1;
+                $dat['create_time'] = time();
+                if ($course_share->where("uid = '$uid'")->save($dat)) {
+                    return json_encode([$status[0],'分享成功']);
+                }else {
+                    return json_encode([$status[1],'分享失败']);
+                }
+                break;
+        }
+    }
+
+    /**
+     * @param $data
+     * @return string
+     * 课时分享
+     */
+    public function liveShare ($data)
+    {
+        $status = C('status');
+        $shareLive = M('live_share');
+        $uid = $data['uid'];
+        $rew = $shareLive->field('course_id,live_id,share_way,num')->where("uid = '$uid'")->find();
+        switch ($rew) {
+            case 0:
+                switch ($shareLive->add($data)) {
+                    case 1:
+                        return json_encode([$status[0],'分享成功']);
+                        break;
+                    default:
+                        return json_encode([$status[1],'分享失败']);
+                        break;
+                }
+                break;
+            default:
+                if ($data['course_id'] != $rew['course_id']) {
+                    switch ($shareLive->add($data)) {
+                        case 1:
+                            return json_encode([$status[0],'分享成功']);
+                            break;
+                        default:
+                            return json_encode([$status[1],'分享失败']);
+                            break;
+                    }
+                }elseif ($data['live_id'] != $rew['live_id']) {
+                    switch ($shareLive->add($data)) {
+                        case 1:
+                            return json_encode([$status[0],'分享成功']);
+                            break;
+                        default:
+                            return json_encode([$status[1],'分享失败']);
+                            break;
+                    }
+                }elseif ($data['share_way'] != $rew['share_way']) {
+                    switch ($shareLive->add($data)) {
+                        case 1:
+                            return json_encode([$status[0],'分享成功']);
+                            break;
+                        default:
+                            return json_encode([$status[1],'分享失败']);
+                            break;
+                    }
+                }else {
+                    $dat['num']         = $rew['num'] + 1;
+                    $dat['create_time'] = time();
+                    switch ($shareLive->where("uid = '$uid'")->save($dat)) {
+                        case 1:
+                            return json_encode([$status[0],'分享成功']);
+                            break;
+                        default:
+                            return json_encode([$status[1],'分享失败']);
+                            break;
+                    }
+                }
+                break;
+        }
+    }
+
+
+    /**
+     * @param $id
+     * @param $uid
+     * @param $page
+     * @return string
+     * 课时列表
+     */
+    public function classHour_list ($id,$uid)
+    {
+        $status = C('status');
+        $msg = C('msg');
+        $live = M('live');
+        $response = new SubmitController();
+        if (is_numeric($id)) {
+            $data = $live
+                ->field('id,subject,reply_url,status,startDate,invalidDate,number,stu_token,class_id')
+                ->where("course_id = '$id'")->order('cmf_live.id')->select();
+            $len = count($data);
+            for ($a = 0; $a < $len; $a++) {
+                $data[$a]['type'] = 0;
+            }
+            $rew = $this->classHour($uid,$data);
+            if (!empty($data)) {
+                return json_encode([
+                    'status' => $status[0],
+                    'msg' => $msg[0],
+                    'data' => $rew
+                ]);
+            } else {
+                return $response::state($status[0], $msg[0], $data = null);
+            }
+        } else {
+            return $response::state($status[2], $msg[2]);
+        }
+    }
+
     /**
      * 数组分页
      */
@@ -235,6 +407,7 @@ class ResponseController extends Controller
         foreach ($data as $va) {
             $id[] = $va['id'];
         }
+
         //是否收藏
         $res = M('course_collection')->field('type,course_id')->where("uid = '$uid' and type = '1'")->select();
         foreach ($res as $value) {
@@ -244,6 +417,7 @@ class ResponseController extends Controller
         for ($a =0; $a < $len2; $a++) {
             $c[] = array_search($course_id[$a],$id);
         }
+
         foreach ($c as $k => $aa) {
             if (!is_numeric($aa)) {
                 unset($c[$k]);
@@ -273,6 +447,7 @@ class ResponseController extends Controller
         for ($j = 0; $j < $len1; $j++) {
             $data[$v[$j]]['pay_status'] = 1;
         }
+
         $rew = $this->page($data,$page);
         return $rew;
     }
@@ -310,37 +485,7 @@ class ResponseController extends Controller
         return $a;
     }
 
-    /**
-     * @param $id
-     * @param $uid
-     * @param $page
-     * @return string
-     * 课时列表
-     */
-    public function classHour_list ($id,$uid,$page)
-    {
-        $status = C('status');
-        $msg = C('msg');
-        $live = M('live');
-        $response = new SubmitController();
-        if (is_numeric($id)) {
-            $data = $live
-                ->field('id,subject,reply_url,status,startDate,invalidDate,number,stu_token,class_id')
-                ->where("course_id = $id")->order('cmf_live.id')->page($page . ',10')->select();
-            $rew = $this->classHour($uid,$data);
-            if (!empty($data)) {
-                return json_encode([
-                    'status' => $status[0],
-                    'msg' => $msg[0],
-                    'data' => $rew
-                ]);
-            } else {
-                return $response::state($status[0], $msg[0], $data = null);
-            }
-        } else {
-            return $response::state($status[2], $msg[2]);
-        }
-    }
+
 //    /**
 //     * @param $uid
 //     * @param $page
@@ -404,6 +549,7 @@ class ResponseController extends Controller
             $id[] = $va['id'];
         }
         $res = M('live_collection')->field('type,live_id')->where("uid = '$uid' and type = '1'")->select();
+
         foreach ($res as $va) {
             $live_id[] = $va['live_id'];
         }
@@ -412,6 +558,7 @@ class ResponseController extends Controller
         for ($k = 0; $k < $len; $k++) {
             $c[] = array_search($live_id[$k],$id);
         }
+
             foreach ($c as $k => $va) {
                 if (!is_numeric($va)) {
                     unset($c[$k]);

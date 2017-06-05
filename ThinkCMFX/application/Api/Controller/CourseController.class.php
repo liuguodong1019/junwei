@@ -76,7 +76,6 @@ class CourseController extends Controller
         $model = new SubmitController();
         $res = new ResponseController();
         if (IS_GET) {
-            $course = M('course');
             $page = I('get.page');
             $uid = I('get.uid');
             $result = $res->vip($page,$uid);
@@ -103,6 +102,26 @@ class CourseController extends Controller
             echo $result;die;
         }else {
             echo $model::state($succ[3], $mess[3], $data = null);die;
+        }
+    }
+
+    /**
+     * 课程分享
+     */
+    public function share ()
+    {
+        $status = C('status');
+        $msg = C('msg');
+        $response = new ResponseController();
+        if ($_GET) {
+            $data['uid'] = I('get.uid');
+            $data['course_id'] = I('get.id');
+            $data['create_time'] = time();
+            $data['share_way'] = I('get.share_way');
+            $result = $response->courseShare($data);
+            echo $result;exit();
+        }else {
+            echo json_encode([$status[3],$msg[3]]);exit();
         }
     }
 
