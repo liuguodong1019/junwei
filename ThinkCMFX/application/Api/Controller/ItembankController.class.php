@@ -30,9 +30,8 @@ class ItembankController extends Controller
     */
    public function page($arr,$p,$pageSize) {
             $count = count($arr);//总记录数
-//            $pagecount = ceil($rows/$pageSize);//总页数
+            $pagecount = ceil($rows/$pagesize);//总页数
             $Page = new \Think\Page($count,$pageSize);
-
             $start=($p- 1) *$pageSize;
             $length= $pageSize;//每页显示条数
             $cut_qa=  array_slice($arr, $start, $length, true);//返回的数据
@@ -172,11 +171,19 @@ class ItembankController extends Controller
 		  break;
 		}
 	  $name=$eid."年国家司法考试".$name."试题";
-	  $record=M('record');
+	  $sheet=M('sheet');
+	  $ic=M('item_collection');//实例化收藏表
+	  $shou=$ic->where("eid='$eid' and etid='$etid'and uid='$uid'and status=1")->getField("status");
+	  if(empty($shou)||$shou==0)
+	  {
+		$dat['collection_type']=0;  
+	  }
+	  else
+	  {
+		$dat['collection_type']=1;  
+	  }
      $where="eid='$eid' and etid='$etid' and type='1'";
      $list=$this->timu($where);
-	 //$res=$this->page($array,$page,1);
-     //$list=$res['list'];
      if($list)
         {
           $data['eid']=$eid;
@@ -184,8 +191,8 @@ class ItembankController extends Controller
 		  $data['uid']=$uid;
 		  $time=time();
 		  $time=date('Y-m-d H:i:s');
-		  $data['record_time']=$time;
-	      $result=$record->add($data);
+		  $data['sheet_time']=$time;
+	      $result=$sheet->add($data);
 		  if($result)
 		  {
 			  $dat['data']=$list;
@@ -215,20 +222,28 @@ class ItembankController extends Controller
    public function kmtimu()
    { 
     //($page == "")? $page = 1 : $page = I('page'); //初始化页码
-	  $subjects=M('subjects');
-	  $chapter=M('chapter');
+	  $subjects=M('subjects');//实例化科目表
+	  $chapter=M('chapter');  //实例化章节表	  
+	  $sheet=M('sheet');  //实例化记录表
+	  $ic=M('item_collection');//实例化收藏表
       $sid=I('sid');
       $cid=I('cid');
 	  $uid=I('uid');
+	  $shou=$ic->where("sid='$sid' and cid='$cid'and uid='$uid'and status=1")->getField("status");
+	  if(empty($shou)||$shou==0)
+	  {
+		$dat['collection_type']=0;  
+	  }
+	  else
+	  {
+		$dat['collection_type']=1;  
+	  }
 	  $stitle=$subjects->where("sid='$sid'")->getField("stitle");
 	  $ctitle=$chapter->where("cid='$cid'")->getField("ctitle");
 	  $name=$stitle.$ctitle."试题";
-	  $record=M('record');
+
      $where="sid='$sid' and cid='$cid'";
      $list=$this->timu($where);
-     //$array=$this->timu($where,$page);
-	   //$list=$this->page($array,$page,1);
-     //$list=$res['list'];
      if($list)
         { 
 	      $data['sid']=$sid;
@@ -236,8 +251,8 @@ class ItembankController extends Controller
 		  $data['uid']=$uid;
 		  $time=time();
 		  $time=date('Y-m-d H:i:s');
-		  $data['record_time']=$time;
-	      $result=$record->add($data);
+		  $data['sheet_time']=$time;
+	      $result=$sheet->add($data);
 		  if($result)
 		  {
 			  $dat['data']=$list;
@@ -370,40 +385,57 @@ class ItembankController extends Controller
    */
   public function check()
   {
-    $data=I();
-	$data=json_decode($data,true);
-    foreach ($data as $k => $v) {
-        $ans=M('Answer');
-        $id=$k;
-        $answer1=$v;
-        $answ1=trim(implode(",",$answer));
-        $answer2=$ans
-            ->where("qid='$id'")
-            ->order('option_id asc')
-            ->getField('option_id',true);
-              $answ2=trim(implode("",$answer));
-       if($answ1==$answ2)
-       { 
-         $array[$k]=$v;
-         $array[$k]['type']=1;
-       }
-       elseif(empty($answ1))
-       {  
-          $array[$k]=$v;
-          $array[$k]['type']=0;
-       }
-	   else
-	   {
-		 $array[$k]=$v;
-          $array[$k]['type']=2;  
-	   }
-    }
-	die;
+    $answer=I('get.answer');
+	$str=html_entity_decode($answer,ENT_QUOTES); //html 单双引号符号转译
+	$data=json_decode($str,true);
+	foreach($data as $k=>$v)
+	{
+		foreach($v as $key=>$value)
+		{
+			foreach($value as $ke=>$va)
+			{
+				$ans=M('Answer');
+				$id=$ke;
+				$answ1=$va;
+				$answer2=$ans
+					->where("qid='$id'")
+					->order('option_id asc')
+					->getField('option_id',true);
+					  $answ2=trim(implode("",$answer2));
+					  $an=str_replace(array("0","1","2","3"),array("A","B","C","D"),$answ2);
+				if($answ1==$an)
+				   { 
+					 $array[$ke]=$va;
+					 $array[$ke]['type']=1;//正确
+				   }
+				   elseif($answ1=='0')
+				   {  
+					  $array[$ke]=$va;
+					  $array[$ke]['type']=0;//没答
+				   }
+				   else
+				   {
+					 $array[$ke]=$va;
+					  $array[$ke]['type']=2;//错误  
+				   }
+			}
+		}
+	}
+	 $ar=array_count_values($array);
+	 $arr['kong']=$ar['0'];
+	 $arr['dui']=$ar['1'];
+	 $arr['cuo']=$ar['2'];
+	 $count=count($array);
+	 $dui=$arr['dui'];
+	 $lv=$dui/$count;
+	 $arra=array_values($array);//试题对错
      if($array)
         {
-          $dat['data']=$array;
+          $dat['data']=$arra;
           $dat['status']=1;
           $dat['msg']="请求成功!";
+		  $dat['result']=$arr;
+		  $dat['lv']=$lv;//正确率
           echo json_encode($dat);die;
         }
         else

@@ -38,7 +38,7 @@ class WxPayController extends Controller
         $notify_url = $wxPay['notify_url'];;
         $wxkey = $wxPay['key'];
         $wechatAppPay = new \wechatAppPay($wxappid, $mch_id, $notify_url, $wxkey);
-        if (IS_GET) {
+        if (IS_POST) {
             $data['uid'] = I('request.uid');
             $data['course_id'] = I('request.course_id');
             $data['pay_ways'] = I('request.pay_ways');
@@ -133,6 +133,7 @@ class WxPayController extends Controller
         $wechatAppPay = new \wechatAppPay();
         $out_trade_no = I('request.out_trade_no');
         $result = $wechatAppPay->orderQuery($out_trade_no);
+        // print_r($result);die;
         if ($result['result_code'] == 'SUCCESS') {
             $rew = self::updateOrder($result);
             echo $rew;exit();
@@ -151,6 +152,7 @@ class WxPayController extends Controller
          $out_trade_no = $result['out_trade_no'];
          $data['pay_status'] = 1;
          $data['pay_trade_no'] = $result['transaction_id'];
+         $data['pay_buyer_email'] = $result['bank_type'];
          $data['pay_notify_id'] = $result['openid'];
          $data['pay_time'] = $result['time_end'];
          if ($order->where("id = $out_trade_no")->save($data)) {

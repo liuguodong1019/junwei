@@ -117,30 +117,13 @@ class WxPayDataBase
 		$string = $this->ToUrlParams();
 		//签名步骤二：在string后加入KEY
 		$string = $string . "&key=".WxPayConfig::KEY;
-//		print_r(htmlspecialchars($string));
 		//签名步骤三：MD5加密
 		$string = md5($string);
 		//签名步骤四：所有字符转为大写
 		$result = strtoupper($string);
-//        print_r($result);die;
 		return $result;
 	}
-
-//	public function MakeSign ()
-//    {
-//        ksort($this->values);//将参数数组按照参数名ASCII码从小到大排序
-//        foreach ($this->values as $key => $item) {
-//            if (!empty($item)) {         //剔除参数值为空的参数
-//                $newArr[] = $key . '=' . $item;     // 整合新的参数数组
-//            }
-//        }
-//        $stringA = implode("&", $newArr);         //使用 & 符号连接参数
-//        $stringSignTemp = $stringA . "&key=" . \WxPayConfig::KEY;        //拼接key
-//        // key是在商户平台API安全里自己设置的
-//        $stringSignTemp = MD5($stringSignTemp);       //将字符串进行MD5加密
-//        $sign = strtoupper($stringSignTemp);
-//        return $sign;
-//    }
+	
 	/**
 	 * 获取设置的值
 	 */

@@ -38,11 +38,11 @@ class ClassHourController extends AdminbaseController
                 $this->redirect('show');
             }
         } else {
-            $data = $live
-                ->field('cmf_live.id,cmf_live.subject,cmf_course.course_name,cmf_live.startDate,cmf_live.invalidDate,cmf_live.class_id')
-                ->join('left join cmf_course ON cmf_live.course_id = cmf_course.id')
-                ->where("cmf_live.is_free = 2")
-                ->order('cmf_live.id')->limit($page->firstRow . ',' . $page->listRows)->select();
+            $data = $live->table('cmf_live as a')
+                ->field('a.id,a.subject,b.course_name,a.startDate,a.invalidDate,a.class_id')
+                ->join('left join cmf_course as b ON a.course_id = b.id')
+                ->where("a.is_free = 2")
+                ->order('a.id')->limit($page->firstRow . ',' . $page->listRows)->order('a.id desc')->select();
             if (empty($data)) {
                 $this->redirect('create');
             }
@@ -63,11 +63,11 @@ class ClassHourController extends AdminbaseController
             $id = I('get.id');
             $live = M('live');
             if (!empty($id)) {
-                $data = $live
-                    ->field('cmf_live.subject,cmf_live.id,cmf_live.startDate,cmf_live.invalidDate,cmf_live.number,cmf_live.stu_token,cmf_live.class_id,cmf_course.course_name,cmf_lector.name,cmf_live.status,cmf_live.reply_url')
-                    ->join('cmf_course ON cmf_live.course_id = cmf_course.id')
-                    ->join('cmf_lector ON cmf_live.lector_id = cmf_lector.l_id')
-                    ->where("cmf_live.id = '$id'")->find();
+                $data = $live->table('cmf_live as a')
+                    ->field('a.subject,a.id,a.startDate,a.invalidDate,a.number,a.stu_token,a.class_id,b.course_name,c.name,a.status,a.reply_url')
+                    ->join('cmf_course as b ON a.course_id = b.id')
+                    ->join('cmf_lector as c ON a.lector_id = c.l_id')
+                    ->where("a.id = '$id'")->find();
             }
         }
         $this->assign('data', $data);
@@ -86,19 +86,21 @@ class ClassHourController extends AdminbaseController
         $response = new ResponseController();
         if (IS_POST) {
             $data = I('');
-            $data['startDate'] = strtotime(I('post.startDate'));
-            $data['invalidDate'] = strtotime(I('post.invalidDate'));
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             $startDate = I('post.startDate');
             $invalidDate = I('post.invalidDate');
+            $data['startDate'] = strtotime(I('post.startDate'));
+            $data['invalidDate'] = strtotime(I('post.invalidDate'));
             $subject = I('post.subject');
             $response = new ResponseController();
             //调用课时创建接口
             $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
+           
             $data['number'] = $resource['number'];
             $data['stu_token'] = $resource['studentClientToken'];
             $data['class_id'] = $resource['id'];
+            
             if ($resource['code'] == 0) {
                 if ($live->add($data)) {
                     $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
@@ -148,19 +150,17 @@ class ClassHourController extends AdminbaseController
         if (IS_POST) {
             $id = I('post.id');
             $data = I('');
-            $data['startDate'] = strtotime(I('post.startDate'));
-            $data['invalidDate'] = strtotime(I('post.invalidDate'));
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             $realtime = I('post.realtime');
-            $startDate = I('post.startDate');
-            $invalidDate = I('post.invaliddate');
+            $startDate = strtotime(I('post.startDate'));
+            $invalidDate = strtotime(I('post.invalidDate'));
+            $data['startDate'] = $startDate;
+            $data['invalidDate'] = $invalidDate;
             $subject = I('post.subject');
             $class_id = I('post.class_id');
-//            print_r($class_id);die;
             //调用修改课时接口
             $resource = $response::update_course($loginName,$password,$realtime,$startDate,$invalidDate,$subject,$class_id);
-//            print_r($resource);die;
             if ($resource['code'] == 0) {
                 if ($live->where("id = $id")->save($data)) {
                     $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
@@ -222,5 +222,50 @@ class ClassHourController extends AdminbaseController
                 $this->error(L("ADD_FAILED"));exit();
             }
         }
+    }
+
+
+    /**
+     * 正在直播
+     */
+    public function play ()
+    {
+        $live = M('live');
+        $where = "a.status = '1'";
+        $count = $live->table('cmf_live as a')->where($where)->count();
+        $page = $this->page($count,20);
+        $data = $live->table('cmf_live as a')
+            ->field('a.id,a.subject,b.course_name,a.startDate,a.invalidDate,a.class_id')
+            ->join('left join cmf_course as b ON a.course_id = b.id')
+            ->where($where)
+            ->order('a.id DESC')->limit($page->firstRow . ',' . $page->listRows)->select();
+        if (empty($data)) {
+            $this->redirect('create');
+        }
+        $this->assign("page", $page->show('Admin'));
+        $this->assign('data',$data);
+        $this->display('ClassHour/show');
+    }
+
+    /**
+     * 点播
+     */
+    public function reply ()
+    {
+        $live = M('live');
+        $where = "a.status = '3'";
+        $count = $live->table('cmf_live as a')->where($where)->count();
+        $page = $this->page($count,20);
+        $data = $live->table('cmf_live as a')
+            ->field('a.id,a.subject,b.course_name,a.startDate,a.invalidDate,a.class_id')
+            ->join('left join cmf_course as b ON a.course_id = b.id')
+            ->where($where)
+            ->order('a.id DESC')->limit($page->firstRow . ',' . $page->listRows)->select();
+        if (empty($data)) {
+            $this->redirect('create');
+        }
+        $this->assign("page", $page->show('Admin'));
+        $this->assign('data',$data);
+        $this->display('ClassHour/show');
     }
 }

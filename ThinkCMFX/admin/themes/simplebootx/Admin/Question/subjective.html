@@ -26,52 +26,54 @@
             <tr>
                 <th width="80">所属科目</th>
                 <td>
-                    <select name="sid[]" onchange="show_class(this.value)" class="normal_select">
-                       <foreach name="su" item="vo">  
-                                        <option value="{$vo.sid}">{$vo.stitle}</option>
-                       </foreach>                
-                    </select>
+                    <select name="sid[]"  class="normal_select oneji">
+                      <option value="">请选择</option>             
+					</select>
                 </td>
             </tr>
              <tr>
                 <th width="80">所属章节</th>
                 <td>
-                    <select name="cid[]" onchange="show_class(this.value)" class="normal_select">
-                       <foreach name="ch" item="v">  
-                                        <option value="{$v.cid}">{$v.ctitle}</option>
-                                      </foreach>                
-                    </select>
+                    <select name="cid[]" class="normal_select twoji">
+                       <option value="">请选择</option>
+					</select>
+                </td>
+            </tr>
+			<tr>
+                <th width="80">题号</th>
+                <td>
+                    <input type="text" autocomplete="off" name="no[]"  style="width: 100px"/>
                 </td>
             </tr>
             <tr>
                 <th width="80">题干</th>
                 <td>
-                    <input type="text" name="question[]" value="" style="width: 500px"/>
+                    <textarea name='question[]' id='e_answer' style='width:98%;height:150px;'></textarea>
                 </td>
             </tr>
 
             <tr>
                 <th width="80">答案</th>
                 <td>
-                    <textarea name='answer[]' id='options' style='width:98%;height:150px;'></textarea>
+                    <textarea name='answer[]' autocomplete="off" id='options' style='width:98%;height:150px;'></textarea>
+                </td>
+            </tr>
+			<tr>
+                <th width="80">考点</th>
+                <td>
+                    <input type="text" autocomplete="off" value="" name="point[]" />
                 </td>
             </tr>
             <tr>
                 <th width="80">试题解析</th>
                 <td>
-                    <textarea name='parsing[]' id='parsing[]' style='width:98%;height:150px;'>暂无</textarea>
-                </td>
-            </tr>
-            <tr>
-                <th width="80">考点</th>
-                <td>
-                    <input type="text" value="暂无" name="point[]" />
+                    <textarea name='parsing[]' id='parsing[]' style='width:98%;height:150px;'></textarea>
                 </td>
             </tr>
              <tr>
                 <th width="80">关键字</th>
                 <td>
-                    <input type="text" style="width:400px;" name="kword[]" id="kword[]" value="" style="color:"
+                    <input type="text" autocomplete="off" style="width:400px;" name="kword[]" id="kword[]" value="" style="color:"
                            class="input input_hd J_title_color" placeholder="请输入答案"
                            onkeyup="strlen_verify(this, 'title_len', 160)"/> 多个关键字用英文逗号隔开 
                 </td>
@@ -96,7 +98,7 @@
             <tr>
                 <th width="80">试题描述</th>
                 <td>
-                    <input type="text" id="e_probability" name="info[]" />
+                    <input type="text" autocomplete="off" id="e_probability" name="info[]" />
                     <input type="hidden" name="type[]" value="0">
                 </td>
             </tr>
@@ -113,6 +115,68 @@
 </form>
 </div>
 <script src="__PUBLIC__/js/common.js"></script>
+<script src="__PUBLIC__/js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+			var add=$("#addshiti");
+			var shitibox=$("#shiti-box");
+			var shiti=document.getElementById("shiti-box").getElementsByTagName("div")[0].innerHTML;
+			//alert (shiti);
+			function addshiti(){
+				var index="list1";
+				var newst=document.createElement("div");
+				newst.innerHTML=shiti;
+				$("#shiti-box").append(newst);
+				
+			}
+			add.click(function(){
+				addshiti();
+				var oneji=$("#shiti-box>div:last-child").find(".oneji");
+				var twoji=$("#shiti-box>div:last-child").find(".twoji");
+				getdata(oneji,twoji);	
+			})
+	function getdata(one,two){
+			$.ajax({
+				type:"get",	
+				url:"http://kf.junweiedu.cn/junwei/index.php?g=api&m=user&a=kzjk",
+				datatype:"json",
+				success:function(data){
+					var jsondata=$.parseJSON(data); 
+					var onejihtml='<option value="">请选择</option>';
+					
+			        for(i in jsondata){
+						onejihtml+="<option value="+jsondata[i].sid+">"+jsondata[i].stitle+"</option>";		
+					}
+					one.html(onejihtml);	
+				}
+			});
+			one.change(function(){
+				var oneval=$(this).val();
+				$.ajax({
+				type:"get",	
+				url:"http://kf.junweiedu.cn/junwei/index.php?g=api&m=user&a=kzjk",
+				datatype:"json",
+				success:function(data){
+					var jsondata=$.parseJSON(data); 
+					var twojihtml='<option value="">请选择</option>';
+			        for(i in jsondata){
+					var onejiname=jsondata[i].sid;
+					if(onejiname==oneval){
+						$.each(jsondata[i].chapter, function(k,v) {
+						 twojihtml+="<option value="+jsondata[i].chapter[k].cid+">"+jsondata[i].chapter[k].ctitle+"</option>";
+					});
+					two.html(twojihtml);				
+					}		
+					}	
+			}
+	});
+})
+};
+var oneji=$(".oneji");
+var twoji=$(".twoji");
+getdata(oneji,twoji);	
+})
+</script>
 </body>
 <style>
     .table_full{
@@ -126,26 +190,3 @@
         margin: 20px 0px;
     }
 </style>
-<script>
-
-        window.onload=function(){
-            var add=document.getElementById("addshiti");
-            var shitibox=document.getElementById("shiti-box");
-            var shiti=document.getElementById("shiti-box").getElementsByTagName("div")[0].innerHTML;
-            function addshiti(){
-                var newst=document.createElement("div");
-                newst.innerHTML=shiti;
-                shitibox.appendChild(newst);
-                
-                
-                
-            }
-            add.onclick=function(){
-                
-                    addshiti();
-                
-            }
-        }
-         
-        
-    </script>

@@ -7,7 +7,7 @@ namespace Admin\Controller;
 use Common\Controller\AdminbaseController;
 
 class QuestionController extends AdminbaseController
-{
+{ 
   protected $itembank_model;
 	
 	public function _initialize() {
@@ -18,6 +18,7 @@ class QuestionController extends AdminbaseController
 		$this->option_model=D("Common/Option");
 		$this->answer_model=D('Common/Answer');
 	}
+	
 
    /**
     *试题列表
@@ -27,13 +28,24 @@ class QuestionController extends AdminbaseController
    	    if(IS_POST){
    	    	$keyword=I('keyword');
    	    	empty($keyword)?"":$keyword;
-	   	    $item=$this->itembank_model->where("'question' like '`%$keyword%`' AND type=0")->select();
+	   	    $item=$this->itembank_model
+			->join('cmf_chapter on cmf_itembank.cid = cmf_chapter.cid')
+			->join('cmf_subjects on cmf_itembank.sid = cmf_subjects.sid')
+			->where("'question' like '`%$keyword%`' AND type=0")
+			->select();
+			//var_dump($item);die;
 			$this->assign("item",$item);
 			$this->display();
 	    }
 	    else
 	    {
-		    $item=$this->itembank_model->where("type=0")->select();
+		    //$item=$this->itembank_model->where("type=0")->select();
+			 $item=$this->itembank_model
+			->join('cmf_chapter on cmf_itembank.cid = cmf_chapter.cid')
+			->join('cmf_subjects on cmf_itembank.sid = cmf_subjects.sid')
+			->order('itime asc')
+			->where("type=0")
+			->select();
 		    //var_dump($item);die;
 			$this->assign("item",$item);
 			$this->display();
@@ -57,6 +69,7 @@ class QuestionController extends AdminbaseController
   {
   	if(IS_POST){
 			$data['te_type']=I('te_type');
+			$data['no']=I('no');
 			$data['sid']=I('sid');
 			$data['question']=I('question');
 			$data['info']=I('info');
@@ -82,7 +95,7 @@ class QuestionController extends AdminbaseController
 			if ($this->itembank_model->create()!==false){
 				if ($res!==false) {
 					$arr=array();
-					$key=array(0,1,2,3);
+					//$key=array(0,1,2,3);
 					foreach($op as $key=>$v)
 					{ 
                       $arr['options']=$v;
@@ -164,6 +177,8 @@ class QuestionController extends AdminbaseController
 		$answ=implode(",",$answer);
 		$an=str_replace(array("0","1","2","3"),array("A","B","C","D"),$answ);
 		$su=$this->subjects_model->select();
+		$ch=$this->chapter_model->select();
+		$this->assign('ch',$ch);
 		$this->assign("su",$su);
 		$this->assign("option",$option);
    	    $this->assign("item",$item);
@@ -194,8 +209,8 @@ class QuestionController extends AdminbaseController
 					if($this->option_model->where("qid=$id")->delete()!==false&&
                        $this->answer_model->where("qid=$id")->delete()!==false)
 					{
-					   $key=array(0,1,2,3);
-						foreach($option as $v)
+					   //$key=array(0,1,2,3);
+						foreach($option as$key=>$v)
 						{ 
 	                      $arr['options']=$v;
 	                      $arr['qid']=$id;
@@ -261,7 +276,7 @@ class QuestionController extends AdminbaseController
 	    }
 	    else
 	    {
-		    $item=$this->itembank_model->where("type=1")->select();
+		    $item=$this->itembank_model->where("type=1")->order('itime asc')->select();
 		    //var_dump($item);die;
 			$this->assign("item",$item);
 			$this->display();
@@ -286,7 +301,7 @@ class QuestionController extends AdminbaseController
 	  {
 	  	if(IS_POST){
 				$data=I();
-				var_dump($data);die;
+				//var_dump($data);die;
 				$data['itime']=time();
 				unset($data['answer']);
 			    unset($data['options']);
@@ -309,7 +324,7 @@ class QuestionController extends AdminbaseController
 	                      $arr['options']=$v;
 	                      $arr['qid']=$res;
 	                      $arr['key']=$key;
-	                      var_dump($arr);
+	                      //var_dump($arr);
 	                      $rec=$this->option_model->add($arr);
 						} 
 						     if($rec)
@@ -403,7 +418,6 @@ class QuestionController extends AdminbaseController
 			$answer=I('answer');
 			$an=str_replace(array("A","B","C","D"),array("0","1","2","3"),$answer);
 			$option=I('option');
-			//var_dump($item);
 			$data['itime']=time();
 		    $re=$this->itembank_model->where("item_id=$id")->save($data);
 			if ($this->itembank_model->create()!==false) {
@@ -412,8 +426,8 @@ class QuestionController extends AdminbaseController
 					if($this->option_model->where("qid=$id")->delete()!==false&&
                        $this->answer_model->where("qid=$id")->delete()!==false)
 					{
-					   $key=array(0,1,2,3);
-						foreach($option as $v)
+					   //$key=array(0,1,2,3);
+						foreach($option as $key=>$v)
 						{ 
 	                      $arr['options']=$v;
 	                      $arr['qid']=$id;
@@ -505,6 +519,7 @@ public function materadd_post()
              $m_id=$mate->add($data);
 
 			 $te_type=I('te_type');
+			 $no=I('no');
 			 $sid=I('sid');
 			 $cid=I('cid');
 			 $question=I('question');
@@ -516,10 +531,10 @@ public function materadd_post()
 			 $type=I('type');
 			 $ncertain=I('ncertain');
 			 $fen=array();
-			 $jian=array("te_type","sid","cid","question","parsing","point","difficulty","score","info","type","ncertain","material_id","itime");
+			 $jian=array("te_type","no","sid","cid","question","parsing","point","difficulty","score","info","type","ncertain","material_id","itime");
             foreach ($te_type as $k=>$v)
             {
-               $fen[]=array($v,$sid[$k],$cid[$k],$question[$k],$parsing[$k],$point[$key],$difficulty[$k],$score[$k],
+               $fen[]=array($v,$no[$k],$sid[$k],$cid[$k],$question[$k],$parsing[$k],$point[$k],$difficulty[$k],$score[$k],
                	            $info[$k],$type[$k],$ncertain[$k],$res,time());
                
             }  
@@ -655,6 +670,7 @@ public function truemateradd_post()
              $m_id=$mate->add($data);
 
 			 $te_type=I('te_type');
+			 $no=I('no');
 			 $eid=I('eid');
 			 $etid=I('etid');
 			 $question=I('question');
@@ -666,10 +682,10 @@ public function truemateradd_post()
 			 $type=I('type');
 			 $ncertain=I('ncertain');
 			 $fen=array();
-			 $jian=array("te_type","eid","etid","question","parsing","point","difficulty","score","info","type","ncertain","material_id","itime");
+			 $jian=array("te_type","no","eid","etid","question","parsing","point","difficulty","score","info","type","ncertain","material_id","itime");
             foreach ($te_type as $k=>$v)
             {
-               $fen[]=array($v,$eid[$k],$etid[$k],$question[$k],$parsing[$k],$point[$key],$difficulty[$k],$score[$k],
+               $fen[]=array($v,$no[$k],$eid[$k],$etid[$k],$question[$k],$parsing[$k],$point[$k],$difficulty[$k],$score[$k],
                	            $info[$k],$type[$k],$ncertain[$k],$res,time());
                
             }  
@@ -781,7 +797,7 @@ public function truemateradd_post()
 	    }
 	    else
 	    {
-		    $item=$sub->where("type=0")->select();
+		    $item=$sub->where("type=0")->order('itime asc')->select();
 		    //var_dump($item);die;
 			$this->assign("item",$item);
 			$this->display();
@@ -810,6 +826,7 @@ public function truemateradd_post()
        $m_id=$mate->add($data);
 
        $sid=I('sid');
+	   $key=I('key');
        $cid=I('cid');
        $question=I('question');
        $answer=I('answer');
@@ -821,10 +838,10 @@ public function truemateradd_post()
        $type=I('type');
        $kword=I('kword');
         $fen=array();
-			 $jian=array("sid","cid","question","answer","parsing","point","difficulty","score","info","type","kword","meterial_id","stime");
+			 $jian=array("sid","key","cid","question","answer","parsing","point","difficulty","score","info","type","kword","meterial_id","stime");
             foreach ($sid as $k=>$v)
             {
-               $fen[]=array($v,$cid[$k],$question[$k],$answer[$k],$parsing[$k],$point[$k],$difficulty[$k],$score[$k],
+               $fen[]=array($v,$key[$k],$cid[$k],$question[$k],$answer[$k],$parsing[$k],$point[$k],$difficulty[$k],$score[$k],
                	            $info[$k],$type[$k],$kword[$k],$m_id,time());
             } 
               $item_id=array();
@@ -857,7 +874,7 @@ public function truemateradd_post()
 	    }
 	    else
 	    {
-		    $item=$sub->where("type=1")->select();
+		    $item=$sub->where("type=1")->order('itime asc')->select();
 			$this->assign("item",$item);
 			$this->display();
 	    }
@@ -884,6 +901,7 @@ public function truemateradd_post()
        $m_id=$mate->add($data);
 
        $eid=I('eid');
+	   $key=I('key');
        $question=I('question');
        $answer=I('answer');
        $parsing=I('parsing');
@@ -894,10 +912,10 @@ public function truemateradd_post()
        $type=I('type');
        $kword=I('kword');
         $fen=array();
-			 $jian=array("eid","question","answer","parsing","point","difficulty","score","info","type","kword","meterial_id","stime");
+			 $jian=array("eid","key","question","answer","parsing","point","difficulty","score","info","type","kword","meterial_id","stime");
             foreach ($eid as $k=>$v)
             {
-               $fen[]=array($v,$question[$k],$answer[$k],$parsing[$k],$point[$k],$difficulty[$k],$score[$k],
+               $fen[]=array($v,$key[$k],$question[$k],$answer[$k],$parsing[$k],$point[$k],$difficulty[$k],$score[$k],
                	            $info[$k],$type[$k],$kword[$k],$m_id,time());
             } 
               $item_id=array();
@@ -1014,5 +1032,6 @@ public function truemateradd_post()
 				}
 			}
 	  }
+	  
   }
   

@@ -193,8 +193,16 @@ class CourseController extends Controller
                         $data['status'] = 2;
                         break;
                 }
-                $live->where("id = '$id'")->save($data);
-
+                if ($live->where("id = '$id'")->save($data)) {
+                   
+                    $rew = $live->field('course_id')->where("id = '$id'")->find();
+                    $course_id = $rew['course_id'];
+                    $res = $course->field('status')->where("id = 'course_id'")->find();
+                    $status = $res['status'];
+                    if (empty($status != 1 && $status != 2 && $status != 3)) {
+                        $course->where("id = '$course_id'")->save($data);
+                    }
+                }
             }
         }
     }

@@ -40,10 +40,10 @@ class wechatAppPay
 
     public function __construct($wxappid, $mch_id, $notify_url, $key)
     {
-        $this->appid = $wxappid;
-        $this->mch_id = $mch_id;
-        $this->notify_url = $notify_url;
-        $this->key = $key;
+        $this->appid = "wx11367b4000cda893";
+        $this->mch_id = "1445302502";
+        $this->notify_url = "http://kf.junweiedu.cn/junwei/api/wxPay/notify";
+        $this->key = "BEIJINGjunweideyuanjiaoyu2017524";
     }
 
     /**
@@ -92,6 +92,7 @@ class wechatAppPay
     public function orderQuery($out_trade_no)
     {
         $this->params['appid'] = $this->appid;
+
         $this->params['mch_id'] = $this->mch_id;
         $this->params['nonce_str'] = $this->genRandomString();
         $this->params['out_trade_no'] = $out_trade_no;
@@ -141,7 +142,8 @@ class wechatAppPay
     public function getNotifyData()
     {
         //获取通知的数据
-        $xml = isset($GLOBALS['HTTP_RAW_POST_DATA']) ? $GLOBALS['HTTP_RAW_POST_DATA'] : file_get_contents('php://input');
+        $xml = isset($GLOBALS['HTTP_RAW_POST_DATA']);
+//        file_get_contents('php://input');
         $data = array();
         if (empty($xml)) {
             return false;

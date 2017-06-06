@@ -30,37 +30,29 @@
                     </select>
                 </td>
             </tr>
-            <tr>
+             
+             <tr>
                 <th width="80">所属科目</th>
                 <td>
-                   <select name="sid">
-                                        <!--  <option value="">选择分类</option> -->
-                                          <volist name="su" id="vo">
-
-                                               <eq name="vo.sid" value="$item.sid">
-                                                   <option value="{$vo.sid}" selected >{$vo.stitle}</option>
-                                                <else />
-                                                   <option value="{$vo.sid}" >{$vo.stitle}</option>
-                                               </eq> 
-
-                                        </volist> 
-                    </select>
+                    <select name="sid"  class="normal_select" id="oneji">
+                      <option value="">请选择</option>             
+					</select>
                 </td>
             </tr>
-            <tr>
+             <tr>
                 <th width="80">所属章节</th>
                 <td>
-                    <select name="cid" onchange="show_class(this.value)" class="normal_select">
-                       <volist name="ch" id="vo">
-
-                                               <eq name="vo.cid" value="$item.cid">
-                                                   <option value="{$vo.cid}" selected >{$vo.ctitle}</option>
-                                                <else />
-                                                   <option value="{$vo.cid}" >{$vo.ctitle}</option>
-                                               </eq> 
-
-                                        </volist>   
-                    </select>
+                    <select name="cid" class="normal_select" id="twoji">
+                       <option value="">请选择</option>
+					</select>
+                </td>
+            </tr>
+             
+             
+			<tr>
+                <th width="80">题号</th>
+                <td>
+                    <input type="text" autocomplete="off" name="no" value="{$rec.key}"  style="width: 100px"/>
                 </td>
             </tr>
             <tr>
@@ -76,18 +68,18 @@
                     <textarea name='answer' id='parsing' style='width:98%;height:150px;'>{$rec.answer}</textarea>
                 </td>
             </tr>
+			 <tr>
+                <th width="80">考点</th>
+                <td>
+                    <input type="text" name="point" value="{$rec.point}" />
+                </td>
+            </tr>
              <tr>
                     <th width="80">试题解析</th>
                     <td>
                         <textarea name='parsing' id='parsing' style='width:98%;height:150px;'>{$rec.parsing}</textarea>
                     </td>
                 </tr>
-                 <tr>
-                <th width="80">考点</th>
-                <td>
-                    <input type="text" name="point" value="{$rec.point}" />
-                </td>
-            </tr>
             <tr>
             <th width="80">难易度</th>
                 <td>
@@ -123,4 +115,44 @@
 </form>
 </div>
 <script src="__PUBLIC__/js/common.js"></script>
+<script src="__PUBLIC__/js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+			$.ajax({
+				type:"get",	
+				url:"http://kf.junweiedu.cn/junwei/index.php?g=api&m=user&a=kzjk",
+				datatype:"json",
+				success:function(data){
+					var jsondata=$.parseJSON(data); 
+					var onejihtml='<option value="">请选择</option>';
+					
+			        for(i in jsondata){
+						onejihtml+="<option value="+jsondata[i].sid+">"+jsondata[i].stitle+"</option>";		
+					}
+				$("#oneji").html(onejihtml);	
+				}
+			});
+			$("#oneji").change(function(){
+				var oneval=$("#oneji").val();
+				$.ajax({
+				type:"get",	
+				url:"http://kf.junweiedu.cn/junwei/index.php?g=api&m=user&a=kzjk",
+				datatype:"json",
+				success:function(data){
+					var jsondata=$.parseJSON(data); 
+					var twojihtml='<option value="">请选择</option>';
+			        for(i in jsondata){
+					var onejiname=jsondata[i].sid;
+					if(onejiname==oneval){
+						$.each(jsondata[i].chapter, function(k,v) {
+						 twojihtml+="<option value="+jsondata[i].chapter[k].cid+">"+jsondata[i].chapter[k].ctitle+"</option>";
+					});
+					$("#twoji").html(twojihtml);				
+					}		
+					}	
+			}
+	});
+})			
+})
+</script>
 </body>

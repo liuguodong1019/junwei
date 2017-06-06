@@ -21,20 +21,24 @@
 				<thead>
 					<tr>
 						<th width="16"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
-						<th width="120">ID</th>
+						<th width="30">题号</th>
 						<th>题干</th>
+						<th width="60">所属科目</th>
+						<th width="60">所属章节</th>
 						<!-- <th>点击量</th> -->
 						<!-- <th width="80">{:L('AUTHOR')}</th> -->
 						<th width="80"><span>添加时间</span></th>
 						<th width="60"><span>考题类型</span></th>
-						<th width="125">{:L('ACTIONS')}</th>
+						<th width="90">{:L('ACTIONS')}</th>
 					</tr>
 				</thead>
 				<foreach name="item" item="vo">
 				<tr>
 					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="item_ids[]" value="{$vo.item_id}"></td>
-					<td><a>{$vo.item_id}</a></td>
+					<td><a>{$vo.no}</a></td>
 					<td><a href="#">{$vo.question}</a></td>
+					<td><a>{$vo.stitle}</a></td>
+					<td><a>{$vo.ctitle}</a></td>
 					<td>{$vo.itime|date='Y-m-d H:i:s',###}</td>
 					<td>
 						<if condition="$vo.te_type eq 1"> 多选题 
@@ -49,13 +53,15 @@
 				<tfoot>
 					<tr>
 						<th width="16"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
-						<th width="120">ID</th>
+						<th width="30">题号</th>
 						<th>题干</th>
+						<th width="60">所属科目</th>
+						<th width="60">所属章节</th>
 						<!-- <th>点击量</th> -->
 						<!-- <th width="80">{:L('AUTHOR')}</th> -->
-						<th width="100"><span>添加时间</span></th>
-						<th width="50"><span>考题类型</span></th>
-						<th width="125">{:L('ACTIONS')}</th>
+						<th width="80"><span>添加时间</span></th>
+						<th width="60"><span>考题类型</span></th>
+						<th width="90">{:L('ACTIONS')}</th>
 					</tr>
 				</tfoot>
 			</table>

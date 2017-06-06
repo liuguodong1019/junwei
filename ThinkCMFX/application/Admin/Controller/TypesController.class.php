@@ -218,11 +218,11 @@ public function majoradd_post(){
  */
 	public function classindex()
 	{
-		$class=$this
-		->subjects_model
-		->join('cmf_types on cmf_subjects.tid = cmf_types.tid')
-        ->join('cmf_professional on cmf_subjects.pid = cmf_professional.pid')
-        ->select();
+		$class=$this->subjects_model->select();
+		
+		//->join('cmf_types on cmf_subjects.tid = cmf_types.tid')
+        //->join('cmf_professional on cmf_subjects.pid = cmf_professional.pid')
+        
 		$this->assign("class",$class);
         $this->display();
 	}
@@ -231,9 +231,8 @@ public function majoradd_post(){
     */
    public function classadd()
    { 
-   	 $pr=$this->professional_model->select();
-
-   	 $this->assign("pr",$pr);
+   	 //$pr=$this->professional_model->select();
+   	 //$this->assign("pr",$pr);
    	 $this->display();
    }
    /**
@@ -243,12 +242,13 @@ public function classadd_post(){
 		if(IS_POST){
 			$data['stitle']=I('stitle');
 			$data['stime']=time();
-			$data['pid']=I('pid');
-			$pid=$data['pid'];
-			$data['tid']=$this
-							->professional_model
-							->where("pid=$pid")
-							->getField('tid');
+			$data['pid']=0;
+			//$pid=$data['pid'];
+			//$data['tid']=$this
+							//->professional_model
+							//->where("pid=$pid")
+							//->getField('tid');
+			$data['tid']=0;
 			if ($this->subjects_model->create($data)!==false){
 				if ($this->subjects_model->add($data)!==false) {
 					$this->success(L('ADD_SUCCESS'), U("types/classindex"));
@@ -290,9 +290,9 @@ public function classadd_post(){
 	public function classedit(){
 		$id=I("get.sid",0,'intval');
 		$su=$this->subjects_model->where(array('sid'=>$id))->find();
-		$pr=$this->professional_model->select();
+		//$pr=$this->professional_model->select();
    	    $this->assign("su",$su);
-		$this->assign('pr',$pr);
+		//$this->assign('pr',$pr);
 		$this->display();
 	}
    /**
@@ -305,11 +305,12 @@ public function classadd_post(){
 			$data['pid']=I('pid');
 			$data['stitle']=I('stitle');
 			$data['ptime']=time();
-			$pid=$data['pid'];
-			$data['tid']=$this
-							->professional_model
-							->where("pid=$pid")
-							->getField('tid');
+			$pid=0;
+			$data['tid']=0;
+			//$data['tid']=$this
+							//->professional_model
+							//->where("pid=$pid")
+							//->getField('tid');
 
 			if ($this->subjects_model->create()!==false) {
 				if ($this->subjects_model->where("sid=$sid")->save($data)!==false) {

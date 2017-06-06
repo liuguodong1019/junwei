@@ -14,16 +14,16 @@
             <tr>
                 <th width="80">试卷名称</th>
                 <td>
-                    <input type="text" name="eid" value="{$item.eid}" style="width: 100px"/>年司国家司法考试试题
+                    <input type="text" name="eid" value="{$item.eid}" style="width: 100px"/>年国家司法考试试题
                 </td>
             </tr>
             <tr>
                 <th width="80">试卷类型</th>
                 <td>
                     <select name="etid" class="normal_select">
-                        <option value="0" <if condition="$item.te_type eq 0">selected</if>>卷一</option>
-                        <option value="1" <if condition="$item.te_type eq 1">selected</if>>卷二</option>
-                        <option value="2" <if condition="$item.te_type eq 2">selected</if>>卷三</option>
+                        <option value="0" <if condition="$item.etid eq 0">selected</if>>卷一</option>
+                        <option value="1" <if condition="$item.etid eq 1">selected</if>>卷二</option>
+                        <option value="2" <if condition="$item.etid eq 2">selected</if>>卷三</option>
                     </select>
                 </td>
             </tr>
@@ -45,7 +45,7 @@
             <tr>
                 <th width="80">题干</th>
                 <td>
-                    <input type="text" name="question" value="{$item.question}" style="width: 500px"/>
+				    <textarea name='question' id='e_answer'  style='width:98%;height:150px;'>{$item.question}</textarea>
                 </td>
             </tr>
 
@@ -76,7 +76,7 @@
                  <tr>
                 <th width="80">考点</th>
                 <td>
-                    <input type="text"  name="point" value="{$item.point}" />
+                    <input type="text" style='width:98%;'  name="point" value="{$item.point}" />
                 </td>
             </tr>
             <tr>

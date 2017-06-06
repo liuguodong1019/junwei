@@ -296,7 +296,7 @@ class CourseController extends AdminbaseController
         $where = "UNIX_TIMESTAMP(invaliddate) < '$time'";
         $count = $course->where($where)->count();
         $page = $this->page($count,20);
-        $data = $course->where($where)->limit($page->firstRow . ',' . $page->listRows)->select();
+        $data = $course->where($where)->limit($page->firstRow . ',' . $page->listRows)->order('id desc')->select();
         $this->assign("page", $page->show('Admin'));
         $this->assign('data',$data);
         $url = "{:U('Course/end')}";
@@ -315,7 +315,7 @@ class CourseController extends AdminbaseController
         $where = "is_free = 1";
         $count = $course->where($where)->count();
         $page = $this->page($count,20);
-        $data = $course->where($where)->limit($page->firstRow . ',' . $page->listRows)->select();
+        $data = $course->where($where)->limit($page->firstRow . ',' . $page->listRows)->order('id desc')->select();
         $this->assign("page", $page->show('Admin'));
         $this->assign('data',$data);
         $url = "{:U('Course/openClass')}";
@@ -334,7 +334,7 @@ class CourseController extends AdminbaseController
         $where = "is_free = 2";
         $count = $course->where($where)->count();
         $page = $this->page($count,20);
-        $data = $course->where($where)->limit($page->firstRow . ',' . $page->listRows)->select();
+        $data = $course->where($where)->limit($page->firstRow . ',' . $page->listRows)->order('id desc')->select();
         $this->assign("page", $page->show('Admin'));
         $this->assign('data',$data);
         $url = "{:U('Course/vip')}";

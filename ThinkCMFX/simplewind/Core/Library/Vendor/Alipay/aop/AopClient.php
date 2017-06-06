@@ -4,13 +4,13 @@ require_once 'AopEncrypt.php';
 
 class AopClient {
 	//应用ID
-	public $appId = "2017031506232267";
+	public $appId;
 	
 	//私钥文件路径
 	public $rsaPrivateKeyFilePath;
 
 	//私钥值
-	public $rsaPrivateKey = "MIIEpAIBAAKCAQEA83gQBUnJcqFm7/C3nFeSAFTU/8MN0Rq6V6AfxPHFjpzRFJovX3bpsKRLGSul56hUvfC5TRECfb5mNXU6fApvsjqQOFF8WrLXj0NHfADZn+lv1DVCJ5AMvToWasCFjTFPjDd4H06LnAfeZNyWWtew7bZMBidROfQQLJISKJDH3d9xdWwYPPyvFRdR/oima6gu2wsKUGMfFQ8tM8gquZU8hEaifpY7qtlpKIFEDkEspGl5Ai9G+JaD8m4QMM6ddBl2b/rOJOI1HameYRUnaCBJZYz0GgSUMIHRDtJkKks/xa2gAFdIOw+izEVuX9gyKY6at5H740PgAvF/kZWYHyBbqQIDAQABAoIBACRnNEYGJVe9aE3B+UIoGc1w4bQoLv2v+GK3r2hcGgTbz6s77o9gkUp3Fj96NkEv+xO3VY1/WJcCi/e8QnVffhnxBbVWAbjx+qcSETMqUV/GoJDjMbQGptD4SXfGt3FICTPW62AK93bp+kesb9K/Y1X3puBYqp12r6Bqasqj8y5qOrxKfTyVScxK0RFh+wUFXVGBiTmtU/cB+J8nLf6NABfaRT+50ox+99zKmbFF09vwkqEZX+CLT5YKDnsYSny2SUC9dCWu7zMUesrYr3ZAbGflfSL8f6Pho5niNZwXNp7oAP5d36NGCntyEilnIufkIECbEVv//Y1cpfQ/gHy06c0CgYEA/Ei4TQ0IXttNUkbVotN+CKapPyEPe3ypR9Kt4EYAyH8Q+5mg+huwWSunh1JddMUZ6INk+9/dNOLp7nnZZ1cXEjSpLnH4aevsvXstZ5QPAJ5X7wPAu+WTKPUIlHxEb+tU9+OFKK/fyi21jAOc3tQh5RokFpzhTcrFGbQN7vPBP28CgYEA9w4am74CTnXO+rjztyb7CWsKH/SOj38O72h5pMXmeCA2pFw+UiPt7pR39uRKnyNNncaA6JS1cFxpZGHLwwGIGczyqXdR2mYTJZ/uAuSo8xRUyYJhWZNywj0Cisevo9Q3evwdmTsLHuIbbcBjPJP3o5h7t3nQ9iOHg5kzaguyimcCgYEA8Af4YkbuGeIplQiUJtF2bqCzEr9Pzbv0C8Plbybrg9dxvxCSWqSRiqXART4WcQ0+8zxgjkyWWMU0sZL5SBtSdh3ogaoqIg04N6fEsXHrPDlrjJtTevKYqzVHro71Rk7vjtLIVMfQ8rm+q7KcRF4syZ+vilxE+RDdqvDm+Nyulr0CgYEA0H2zkNlyQtqC2O36pwcbdaBChCMzp/+3D+1gMuDcFWZCFsTNxy4RHnVnJBEWtGPrnYmmwiC1WeRzAMbTWXdSb0uZQdCzYBcic28bQo/L0I/I2eHQ2/JmN2ubWJkaLazrQTvAks7UHLT+JsnkNXw90W7egUEpSn9DXpiMXiMPAmMCgYBWdZp+tVgUrXg0yyDsptWSNUOmOMwytwKNYuaGmFk17O8w+lS0d01UhyMtXB+wxNv5ZaJW8qoowyfFLn47n960u0svR7Wn/E2iJbjvGikyQ2WuoF1nFedOyYl6cK47TleMk4qHGu+wYZuZGWw6hNSDWKUSmzXx+xEzMnlGaIQjZw==";
+	public $rsaPrivateKey;
 
 	//网关
 	public $gatewayUrl = "https://openapi.alipay.com/gateway.do";
@@ -47,7 +47,7 @@ class AopClient {
 
 
 	//签名类型
-	public $signType = "RSA2";
+	public $signType = "RSA";
 
 
 	//加密密钥和类型

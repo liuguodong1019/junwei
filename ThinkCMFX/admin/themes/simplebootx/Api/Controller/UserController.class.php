@@ -253,7 +253,7 @@ class UserapiController extends Controller
      public function fcheck()
   {
   	    vendor('SMS.CCPRestSmsSDK');
-		$to=I('post.phone');
+		$to=I('phone');
 		$da=rand(100000,999999);
 		$time="1分钟";
         $datas=array($da,$time);

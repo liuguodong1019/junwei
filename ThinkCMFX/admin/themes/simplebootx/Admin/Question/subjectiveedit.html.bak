@@ -1,0 +1,132 @@
+<admintpl file="header" />
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+<ul class="nav nav-tabs">
+    <li><a href="{:U('Question/itembank')}">所有试题</a></li>
+    <li class="active"><a href="{:U('Question/subjectiveedit')}"  target="_self">主观试题修改</a></li>
+</ul>
+<div>
+         <table width="100%" cellpadding="2" cellspacing="2">
+          <tr>
+                <th width="80">试题材料</th>
+                <td>
+                    <textarea name='content' style='width:98%;height:100px;'>{$res.content}</textarea>
+                </td>
+            </tr>
+         </table>
+    </div>
+<form class="form-horizontal js-ajax-form" action="{:U('Question/subjectiveedit_post')}" method="post">
+
+<div class="col-auto">
+    <div class="table_full">
+        <table width="100%" cellpadding="2" cellspacing="2">
+            <tr>
+                <th width="80">试题类型</th>
+                <td>
+                    <select name="te_type" class="normal_select">
+                        <option value="0" <if condition="$item.te_type eq 0">selected</if> >单选题</option>
+                        <option value="1" <if condition="$item.te_type eq 1">selected</if> >多选题</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="80">所属科目</th>
+                <td>
+                   <select name="sid">
+                                        <!--  <option value="">选择分类</option> -->
+                                          <volist name="su" id="vo">
+
+                                               <eq name="vo.sid" value="$item.sid">
+                                                   <option value="{$vo.sid}" selected >{$vo.stitle}</option>
+                                                <else />
+                                                   <option value="{$vo.sid}" >{$vo.stitle}</option>
+                                               </eq> 
+
+                                        </volist> 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="80">所属章节</th>
+                <td>
+                    <select name="cid" onchange="show_class(this.value)" class="normal_select">
+                       <volist name="ch" id="vo">
+
+                                               <eq name="vo.cid" value="$item.cid">
+                                                   <option value="{$vo.cid}" selected >{$vo.ctitle}</option>
+                                                <else />
+                                                   <option value="{$vo.cid}" >{$vo.ctitle}</option>
+                                               </eq> 
+
+                                        </volist>   
+                    </select>
+                </td>
+            </tr>
+			<tr>
+                <th width="80">题号</th>
+                <td>
+                    <input type="text" autocomplete="off" name="no" value="{$rec.key}"  style="width: 100px"/>
+                </td>
+            </tr>
+            <tr>
+                <th width="80">题干</th>
+                <td>
+                    <input type="text" name="question" value="{$rec.question}" style="width: 500px"/>
+                </td>
+            </tr>
+
+            <tr>
+                <th width="80">答案</th>
+                <td>
+                    <textarea name='answer' id='parsing' style='width:98%;height:150px;'>{$rec.answer}</textarea>
+                </td>
+            </tr>
+			 <tr>
+                <th width="80">考点</th>
+                <td>
+                    <input type="text" name="point" value="{$rec.point}" />
+                </td>
+            </tr>
+             <tr>
+                    <th width="80">试题解析</th>
+                    <td>
+                        <textarea name='parsing' id='parsing' style='width:98%;height:150px;'>{$rec.parsing}</textarea>
+                    </td>
+                </tr>
+            <tr>
+            <th width="80">难易度</th>
+                <td>
+                    <select name="difficulty" class="normal_select">
+                        <option value="0" <if condition="$rec.difficulty eq 0">selected</if>>简单</option>
+                        <option value="1" <if condition="$rec.difficulty eq 1">selected</if>>一般</option>
+                        <option value="2" <if condition="$rec.difficulty eq 2">selected</if>>困难</option>
+                    </select>
+                </td>
+            </tr>
+                <tr>
+                    <th width="80">分值</th>
+                    <td>
+                        <input type="text" value="{$rec.score}" name="score" />
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">试题描述</th>
+                    <td>
+                        <input type="text" id="e_probability" name="info" value="{$rec.info}" />
+                        <input type="hidden" name="type" value="{$rec.type}">
+                        <input type="hidden" name="sub_id" value="{$rec.sub_id}">
+                    </td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
+</div>
+<div class="form-actions">
+    <button class="btn btn_submit J_ajax_submit_btn" type="submit">提交</button>
+    <a class="btn" href="/index.php/Admin/Question">返回</a>
+</div>
+</form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>

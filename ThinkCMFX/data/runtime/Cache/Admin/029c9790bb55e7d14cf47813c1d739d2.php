@@ -11,32 +11,32 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/thinkcmfx/public/simpleboot/jedate/jedate.js"></script>
-    <link href="/thinkcmfx/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/thinkcmfx/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/thinkcmfx/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/junwei/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/junwei/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/junwei/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/junwei/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
-    <!--<link rel="stylesheet" href="/thinkcmfx/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/thinkcmfx/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <!--<link rel="stylesheet" href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/junwei/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
-            ROOT: "/thinkcmfx/",
-            WEB_ROOT: "/thinkcmfx/",
+            ROOT: "/junwei/",
+            WEB_ROOT: "/junwei/",
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
-    <script src="/thinkcmfx/public/js/jquery.js"></script>
-    <script src="/thinkcmfx/public/js/wind.js"></script>
-    <script src="/thinkcmfx/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/junwei/public/js/jquery.js"></script>
+    <script src="/junwei/public/js/wind.js"></script>
+    <script src="/junwei/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -88,8 +88,8 @@
             <th width="80">结束时间</th>
             <th width="80">讲师</th>
             <th width="80">房间号</th>
-            <th width="80">学生口令</th>
             <th width="80">课堂ID</th>
+            <th width="80">学生口令</th>
             <th width="80">直播状态</th>
             <th width="80">回放地址</th>
         </tr>

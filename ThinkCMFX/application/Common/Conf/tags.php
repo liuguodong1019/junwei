@@ -5,7 +5,6 @@ return array( // 添加下面一行定义即可
     ),
     'app_begin' => array(
         'Behavior\CheckLangBehavior',
-        'Behavior\CronRunBehavior',
         'Common\Behavior\UrldecodeGetBehavior'
     ),
     'view_filter' => array(
@@ -13,7 +12,6 @@ return array( // 添加下面一行定义即可
     ),
     'admin_begin' => array(
         'Common\Behavior\AdminDefaultLangBehavior'
-    ),
-//    'app_end' => array('Behavior\CronRunBehavior'),
+    )
 )
 ;

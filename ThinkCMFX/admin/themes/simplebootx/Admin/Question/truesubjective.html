@@ -39,6 +39,12 @@
                     <input type="text" name="eid[]" value="" style="width: 100px"/>年司国家司法考试试题
                 </td>
             </tr>
+			<tr>
+                <th width="80">题号</th>
+                <td>
+                    <input type="text" autocomplete="off" name="no[]"  style="width: 100px"/>
+                </td>
+            </tr>
             <tr>
                 <th width="80">题干</th>
                 <td>
@@ -55,13 +61,13 @@
             <tr>
                 <th width="80">考点</th>
                 <td>
-                    <input type="text" value="暂无" name="point[]" />
+                    <input type="text" autocomplete="off" value="暂无" name="point[]" />
                 </td>
             </tr>
             <tr>
                 <th width="80">关键字</th>
                 <td>
-                    <input type="text" style="width:400px;" name="kword[]" id="kword[]" value="" style="color:"
+                    <input type="text" autocomplete="off" style="width:400px;" name="kword[]" id="kword[]" value="" style="color:"
                            class="input input_hd J_title_color" placeholder="请输入答案"
                            onkeyup="strlen_verify(this, 'title_len', 160)"/> 多个关键字用英文逗号隔开 
                 </td>
@@ -92,7 +98,7 @@
 			<tr>
                 <th width="80">试题描述</th>
                 <td>
-					<input type="text" id="e_probability" name="info[]" />
+					<input type="text" autocomplete="off" id="e_probability" name="info[]" />
 					<input type="hidden" name="type[]" value="1">
                 </td>
             </tr>
