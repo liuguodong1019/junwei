@@ -11,32 +11,32 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/junwei/public/simpleboot/jedate/jedate.js"></script>
-    <link href="/junwei/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/junwei/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/junwei/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
-    <!--<link rel="stylesheet" href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/junwei/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
-            ROOT: "/junwei/",
-            WEB_ROOT: "/junwei/",
+            ROOT: "/ThinkCMFX/",
+            WEB_ROOT: "/ThinkCMFX/",
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
-    <script src="/junwei/public/js/jquery.js"></script>
-    <script src="/junwei/public/js/wind.js"></script>
-    <script src="/junwei/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/ThinkCMFX/public/js/jquery.js"></script>
+    <script src="/ThinkCMFX/public/js/wind.js"></script>
+    <script src="/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -133,6 +133,10 @@
                     <td><input type="file" name="cover" ></td>
                 </tr>
                 <tr>
+                    <th width="80">课堂详情封面图</th>
+                    <td><input type="file" name=" detail_cover" ></td>
+                </tr>
+                <tr>
                     <th width="80">课程简介</th>
                     <td>
                         <textarea name='introduction' id='e_answer' style='width:50%;height:100px;'></textarea>
@@ -142,7 +146,7 @@
                     <th width="80">讲师</th>
                     <td>
                         <select name="lector_id"  class="normal_select">
-                                <option value="请选择">请选择</option>
+                                <option value="">请选择</option>
                             <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$vo): ?><option value="<?php echo ($vo["l_id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
 
 

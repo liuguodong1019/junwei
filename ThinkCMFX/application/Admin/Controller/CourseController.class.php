@@ -39,9 +39,9 @@ class CourseController extends AdminbaseController
             }
         } else {
             $data = $course
-                ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                ->join('left join cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                ->join('left join cmf_book ON cmf_course.book_id = cmf_book.b_id')
                 ->order('cmf_course.id DESC')->limit($Page->firstRow . ',' . $Page->listRows)->select();
         }
         $this->assign('loginName', $loginName);
@@ -60,9 +60,9 @@ class CourseController extends AdminbaseController
             $id = I('get.id');
             if (!empty($id)) {
                 $data = M('course')
-                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->join('left join cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                    ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                    ->join('left join cmf_book ON cmf_course.book_id = cmf_book.b_id')
                     ->where("id = $id")->find();
             }
         }
@@ -80,26 +80,30 @@ class CourseController extends AdminbaseController
         $people = M('people');
         $book = M('book');
         $photo = C('upload');
+        $response = new ResponseController();
         $upload = new \Think\Upload($photo);// 实例化上传类
         if (IS_POST) {
             $data = I('');
-            $info = $upload->upload();
-            foreach($info as $file){
-                $cover = $file['savepath'].$file['savename'];
-                $data['cover'] = $cover;
-            }
             $is_free = I('post.is_free');
             if ($is_free == 1) {
+                $info = $upload->upload();
+                foreach($info as $file){
+                    $cover[] = $file['savepath'].$file['savename'];
+                    $data['cover'] = $cover[0];
+                }
+
                 $junwei = M('junwei')->find();
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
                 $startDate = I('post.startDate');
                 $invalidDate = I('post.invalidDate');
+                $studentToken = time();
                 $subject = I('post.course_name');
-                $response = new ResponseController();
+                $studentClientToken = $response->randNum();
                 //调用课时创建接口
-                $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
-                $data['stu_token'] = $resource['studentClientToken'];
+                $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate,$studentToken,$studentClientToken);
+                $data['stu_token'] = $studentClientToken;
+                $data['web_token'] = $studentToken;
                 $data['number'] = $resource['number'];
                 $data['class_id'] = $resource['id'];
                 if ($resource['code'] == 0) {
@@ -115,6 +119,12 @@ class CourseController extends AdminbaseController
                     exit();
                 }
             }else {
+                $info = $upload->upload();
+                foreach($info as $file){
+                    $cover[] = $file['savepath'].$file['savename'];
+                    $data['cover'] = $cover[0];
+                    $data['detail_cover'] = $cover[1];
+                }
                 if ($course->add($data)) {
                     $this->success(L('ADD_SUCCESS'), U("Course/show"));
                     exit();
@@ -146,9 +156,9 @@ class CourseController extends AdminbaseController
             $id = I('get.id');
             if (!empty($id)) {
                 $data = $course
-                    ->join('cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                    ->join('cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                    ->join('cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->join('left join cmf_people ON cmf_course.people_id = cmf_people.p_id')
+                    ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
+                    ->join('left join cmf_book ON cmf_course.book_id = cmf_book.b_id')
                     ->where("id = $id")
                     ->find();
                 $lector = $lector->select();
@@ -166,43 +176,55 @@ class CourseController extends AdminbaseController
             $is_free = I('post.is_free');
             if ($is_free == 1) {
                 $id = I('post.id');
+                $res = $course->field('id,course_name,num_class,class_id,is_free,now_price,old_price,startDate,invalidDate,introduction,lector_id,people_id,book_id,cover')->where("id = '$id'")->find();
                 $data = I('');
                 $info = $upload->upload();
                 foreach($info as $file){
                     $cover = $file['savepath'].$file['savename'];
                 }
                 $data['cover'] = $cover;
-                $junwei = M('junwei')->find();
-                $loginName = $junwei['loginname'];
-                $password = sp_authcode($junwei['password']);
-                $realtime = I('post.realtime');
-                $startDate = I('post.startDate');
-                $invalidDate = I('post.invaliddate');
-                $subject = I('post.course_name');
-                $class_id = I('post.class_id');
-                $response = new ResponseController();
-                //调用修改课时接口
-                $resource = $response::update_course($loginName,$password,$realtime,$startDate,$invalidDate,$subject,$class_id);
-                if ($resource['code'] == 0) {
-                    if ($course->where("id = $id")->save($data)) {
-                        $this->success(L('ADD_SUCCESS'), U("Course/show"));
-                        exit();
-                    } else {
+                $photo = array_diff_assoc($data,$res);
+                $image = $photo['cover'];
+                if (!empty($image)) {
+                    if ($course->where("id = $id")->save($photo)) {
+                        $this->success(L('ADD_SUCCESS'), U("Course/show"));exit();
+                    }
+                    $this->error(L("ADD_FAILED"));exit();
+                }else {
+                    $junwei = M('junwei')->find();
+                    $loginName = $junwei['loginname'];
+                    $password = sp_authcode($junwei['password']);
+                    $realtime = I('post.realtime');
+                    $startDate = I('post.startDate');
+                    $invalidDate = I('post.invaliddate');
+                    $subject = I('post.course_name');
+                    $class_id = I('post.class_id');
+                    $response = new ResponseController();
+                    //调用修改课时接口
+                    $resource = $response::update_course($loginName,$password,$realtime,$startDate,$invalidDate,$subject,$class_id);
+                    if ($resource['code'] == 0) {
+                        if ($course->where("id = $id")->save($data)) {
+                            $this->success(L('ADD_SUCCESS'), U("Course/show"));
+                            exit();
+                        } else {
+                            $this->error(L("ADD_FAILED"));
+                            exit();
+                        }
+                    }else {
                         $this->error(L("ADD_FAILED"));
                         exit();
                     }
-                }else {
-                    $this->error(L("ADD_FAILED"));
-                    exit();
                 }
+
             }else {
                 $id = I('post.id');
                 $data = I('');
                 $info = $upload->upload();
                 foreach($info as $file){
-                    $cover = $file['savepath'].$file['savename'];
+                    $cover[] = $file['savepath'].$file['savename'];
+                    $data['cover'] = $cover[0];
+                    $data['detail_cover'] = $cover[1];
                 }
-                $data['cover'] = $cover;
                 if ($course->where("id = $id")->save($data)) {
                     $this->success(L('ADD_SUCCESS'), U("Course/show"));
                     exit();

@@ -18,7 +18,7 @@ class ClassHourController extends Controller
             $id   = I('get.id');
             $uid  = I('get.uid');
             $page = empty(I('get.page')) ? 1 : I('get.page');
-            $result = $res->classHour_list($id,$uid);
+            $result = $res->classHour_list($id,$uid,$page);
             echo $result;die;
         } else {
             echo $response::state($status[3], $msg[3]);

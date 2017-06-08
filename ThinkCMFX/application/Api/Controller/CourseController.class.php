@@ -40,7 +40,8 @@ class CourseController extends Controller
         if (IS_GET) {
             $id = I('get.id');
             $uid = I('get.uid');
-            $result = $res->get_class($id,$uid);
+            $page = I('get.page');
+            $result = $res->get_class($id,$uid,$page);
             echo $result;die;
         } else {
             echo $model::state($succ[3], $mess[3]);die;
@@ -188,21 +189,12 @@ class CourseController extends Controller
                 switch ($action) {
                     case 103:
                         $data['status'] = 1;
-                    break;
+                        break;
                     case 105:
                         $data['status'] = 2;
                         break;
                 }
-                if ($live->where("id = '$id'")->save($data)) {
-                   
-                    $rew = $live->field('course_id')->where("id = '$id'")->find();
-                    $course_id = $rew['course_id'];
-                    $res = $course->field('status')->where("id = 'course_id'")->find();
-                    $status = $res['status'];
-                    if (empty($status != 1 && $status != 2 && $status != 3)) {
-                        $course->where("id = '$course_id'")->save($data);
-                    }
-                }
+                $live->where("id = '$id'")->save($data);
             }
         }
     }

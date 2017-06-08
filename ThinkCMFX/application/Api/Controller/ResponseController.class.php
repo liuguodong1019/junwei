@@ -60,7 +60,7 @@ class ResponseController extends Controller
      * @return string
      * 课堂详情
      */
-    public function get_class($id,$uid)
+    public function get_class($id,$uid,$page)
     {
         $succ = C('status');
         $mess = C('msg');
@@ -71,7 +71,7 @@ class ResponseController extends Controller
                 if (empty($order) || $order['pay_status'] == 0 || $order['pay_status'] == 2) {
                     $collection = M('course_collection')->field('type')->where("uid = '$uid' and course_id = '$id'")->find();
                     $rew = M('course')->table('cmf_course as a')
-                        ->field('id,course_name,now_price,name,num_class,cover,people,book,introduction')
+                        ->field('id,course_name,now_price,name,num_class,cover,people,book,introduction,detail_cover')
                         ->join('STRAIGHT_JOIN cmf_lector as b ON a.lector_id = b.l_id')
                         ->join('STRAIGHT_JOIN cmf_people as c ON a.people_id = c.p_id')
                         ->join('STRAIGHT_JOIN cmf_book as d ON a.book_id = d.b_id')
@@ -86,7 +86,11 @@ class ResponseController extends Controller
                         ->field('a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number')
                         ->join('STRAIGHT_JOIN cmf_course as b ON a.course_id = b.id')
                         ->where("a.course_id = $id")->select();
-                    $rew = $this->classHour($uid,$data);
+                    $len = count($data);
+                    for ($a = 0; $a < $len; $a++) {
+                        $data[$a]['type'] = 0;
+                    }
+                    $rew = $this->classHour($uid,$data,$page);
                 }
                 if (!empty($rew)) {
                     return json_encode([
@@ -221,7 +225,7 @@ class ResponseController extends Controller
                 $data[$c]['type'] = 0;
             }
             if (!empty($uid) && is_numeric($uid)) {
-                $rew = $this->gotten($uid,$page,$data);
+                $rew = $this->pastLive($uid,$page,$data);
                 $is_login = 1;
             } else {
                 $rew = $this->page($data,$page);
@@ -359,7 +363,7 @@ class ResponseController extends Controller
      * @return string
      * 课时列表
      */
-    public function classHour_list ($id,$uid)
+    public function classHour_list ($id,$uid,$page)
     {
         $status = C('status');
         $msg = C('msg');
@@ -373,7 +377,15 @@ class ResponseController extends Controller
             for ($a = 0; $a < $len; $a++) {
                 $data[$a]['type'] = 0;
             }
-            $rew = $this->classHour($uid,$data);
+
+            if (!empty($uid) && is_numeric($uid)) {
+                $rew = $this->classHour($uid,$data,$page);
+                $is_login = 1;
+            } else {
+                $rew = $this->page($data,$page);
+                $is_login = 0;
+            }
+
             if (!empty($data)) {
                 return json_encode([
                     'status' => $status[0],
@@ -404,6 +416,7 @@ class ResponseController extends Controller
      */
     public function gotten ($uid,$page,$data)
     {
+
         foreach ($data as $va) {
             $id[] = $va['id'];
         }
@@ -413,21 +426,28 @@ class ResponseController extends Controller
         foreach ($res as $value) {
             $course_id[] = $value['course_id'];
         }
+
         $len2 = count($course_id);
         for ($a =0; $a < $len2; $a++) {
             $c[] = array_search($course_id[$a],$id);
         }
-
         foreach ($c as $k => $aa) {
             if (!is_numeric($aa)) {
                 unset($c[$k]);
             }
         }
+        $c = array_values($c);
         $len3 = count($c);
-        for ($x = 0; $x < $len3; $x++) {
-
-            $data[$c[$x]]['type'] = 1;
+        if ($len3 == 0) {
+            for ($x = 0; $x < $len3; $x++) {
+                $data[$c[$x]]['type'] = 0;
+            }
+        }else {
+            for ($x = 0; $x < $len3; $x++) {
+                $data[$c[$x]]['type'] = 1;
+            }
         }
+
         //是否支付
         $rew = M('order')->field('course_id,pay_status')->where("uid = '$uid' and pay_status = '1'")->select();
         foreach ($rew as $val) {
@@ -443,9 +463,16 @@ class ResponseController extends Controller
                 unset($v[$k1]);
             }
         }
+        $v = array_values($v);
         $len1 = count($v);
-        for ($j = 0; $j < $len1; $j++) {
-            $data[$v[$j]]['pay_status'] = 1;
+        if ($len1 == 0) {
+            for ($j = 0; $j < $len1; $j++) {
+                $data[$v[$j]]['pay_status'] = 0;
+            }
+        }else {
+            for ($j = 0; $j < $len1; $j++) {
+                $data[$v[$j]]['pay_status'] = 1;
+            }
         }
 
         $rew = $this->page($data,$page);
@@ -466,6 +493,7 @@ class ResponseController extends Controller
         foreach ($res as $value) {
             $course_id[] = $value['course_id'];
         }
+
         foreach ($data as $va) {
             $id[] = $va['id'];
         }
@@ -473,77 +501,102 @@ class ResponseController extends Controller
         for ($a =0; $a < $len2; $a++) {
             $c[] = array_search($course_id[$a],$id);
         }
-        $len3 = count($c);
-        for ($x = 0; $x < $len3; $x++) {
-            if (!is_numeric($c[$x])) {
-                $a = $this->page($data,$page);
-                return $a;
+
+        foreach ($c as $key => $value) {
+            if (!is_numeric($value)) {
+                unset($c[$key]);
             }
-            $data[$c[$x]]['type'] = 1;
         }
+        $c = array_values($c);
+        $len3 = count($c);
+        if ($len3 == 0) {
+            for ($x = 0; $x < $len3; $x++) {
+                $data[$c[$x]]['type'] = 0;
+            }
+        }else {
+            for ($x = 0; $x < $len3; $x++) {
+                $data[$c[$x]]['type'] = 1;
+            }
+        }
+
         $a = $this->page($data,$page);
         return $a;
     }
 
 
-//    /**
-//     * @param $uid
-//     * @param $page
-//     * @param $data
-//     * @return array|int
-//     * 往期直播列表
-//     */
-//    public function pastLive ($uid,$page,$data)
-//    {
-//        foreach ($data as $va) {
-//            $id[] = $va['id'];
-//        }
-//        $res = M('course_collection')->field('course_id')->where("uid = '$uid' and type = '1'")->select();
-//        $rew = M('order')->field('course_id')->where("uid = '$uid' and pay_status = '1'")->select();
-//        foreach ($res as $value) {
-//            $course_id[] = $value['course_id'];
-//        }
-//        $len = count($id);
-//        for ($a = 0; $a < $len; $a++) {
-//            $c[] = array_search($course_id[$a],$id);
-//        }
-//
-//        foreach ($c as $k => $val) {
-//            if (!is_numeric($val)) {
-//                unset($c[$k]);
-//            }
-//        }
-//        $len2 = count($c);
-//        for ($b = 0; $b < $len2; $b++) {
-//            $data[$c[$b]]['type'] = 1;
-//        }
-//        foreach ($rew as $valu) {
-//            $cid[] = $valu['course_id'];
-//        }
-//        for ($a = 0; $a < $len; $a++) {
-//            $d[] = array_search($cid[$a],$id);
-//        }
-//
-//        foreach ($d as $k1 => $tem) {
-//            if (!is_numeric($tem)) {
-//                unset($d[$k1]);
-//            }
-//        }
-//
-//        $len4 = count($d);
-//        for ($e = 0; $e < $len4; $e++) {
-//            $data[$d[$e]]['pay_status'] = 1;
-//        }
-//        $a = $this->page($data,$page);
-//        return $a;
-//    }
+    /**
+     * @param $uid
+     * @param $page
+     * @param $data
+     * @return array|int
+     * 往期直播列表
+     */
+    public function pastLive ($uid,$page,$data)
+    {
+        foreach ($data as $va) {
+            $id[] = $va['id'];
+        }
+
+        $res = M('course_collection')->field('course_id')->where("uid = '$uid' and type = '1'")->select();
+        $rew = M('order')->field('course_id')->where("uid = '$uid' and pay_status = '1'")->select();
+        foreach ($res as $value) {
+            $course_id[] = $value['course_id'];
+        }
+        $len = count($id);
+        for ($a = 0; $a < $len; $a++) {
+            $c[] = array_search($course_id[$a],$id);
+        }
+
+        foreach ($c as $k => $val) {
+            if (!is_numeric($val)) {
+                unset($c[$k]);
+            }
+        }
+        $c = array_values($c);
+        $len2 = count($c);
+        if ($len2 == 0) {
+            for ($b = 0; $b < $len2; $b++) {
+                $data[$c[$b]]['type'] = 0;
+            }
+        }else {
+            for ($b = 0; $b < $len2; $b++) {
+                $data[$c[$b]]['type'] = 1;
+            }
+        }
+
+        foreach ($rew as $valu) {
+            $cid[] = $valu['course_id'];
+        }
+        for ($a = 0; $a < $len; $a++) {
+            $d[] = array_search($cid[$a],$id);
+        }
+
+        foreach ($d as $k1 => $tem) {
+            if (!is_numeric($tem)) {
+                unset($d[$k1]);
+            }
+        }
+        $d = array_values($d);
+        $len4 = count($d);
+        if ($len4 == 0) {
+            for ($e = 0; $e < $len4; $e++) {
+                $data[$d[$e]]['pay_status'] = 0;
+            }
+        }else {
+            for ($e = 0; $e < $len4; $e++) {
+                $data[$d[$e]]['pay_status'] = 1;
+            }
+        }
+        $a = $this->page($data,$page);
+        return $a;
+    }
 
     /**
      * @param $uid
      * @param $data
      * 课时拼接数据
      */
-    public function classHour ($uid,$data)
+    public function classHour ($uid,$data,$page)
     {
         foreach ($data as $va) {
             $id[] = $va['id'];
@@ -558,22 +611,35 @@ class ResponseController extends Controller
         for ($k = 0; $k < $len; $k++) {
             $c[] = array_search($live_id[$k],$id);
         }
-
-            foreach ($c as $k => $va) {
-                if (!is_numeric($va)) {
-                    unset($c[$k]);
-                }
+        foreach ($c as $k => $va) {
+            if (!is_numeric($va)) {
+                unset($c[$k]);
             }
-        $len2 = count($c);
-        for ($b = 0;$b < $len2; $b++) {
-            $data[$c[$b]]['type'] = 1;
         }
-        return $data;
+        $c = array_values($c);
+        $len2 = count($c);
+        if ($len2 == 0) {
+            for ($b = 0;$b < $len2; $b++) {
+                $data[$c[$b]]['type'] = 0;
+            }
+        }else {
+            for ($b = 0;$b < $len2; $b++) {
+                $data[$c[$b]]['type'] = 1;
+            }
+        }
+        $len3 = count($id);
+        for ($m = 0; $m < $len3; $m++) {
+            $data[$m]['startdate'] = date('Y-m-d H:i:s',$data[$m]['startdate']);
+            $data[$m]['invaliddate'] = date('Y-m-d H:i:s',$data[$m]['invaliddate']);
+        }
+        $a = $this->page($data,$page);
+        return $a;
     }
+
     /**
      * 创建实时课堂
      */
-    public static function create_course($subject, $loginName, $password, $startDate, $invalidDate)
+    public static function create_course($subject, $loginName, $password, $startDate, $invalidDate,$studentToken,$studentClientToken)
     {
         $url = "http://junwei.gensee.com/integration/site/training/room/created";
         $data = array(
@@ -581,7 +647,9 @@ class ResponseController extends Controller
             'password' => $password,
             'subject' => $subject,
             'startDate' => $startDate,
-            'invalidDate' => $invalidDate
+            'invalidDate' => $invalidDate,
+            'studentToken' => $studentToken,
+            'studentClientToken' => $studentClientToken
         );
         $model = new SubmitController();
         $result = $model->post($url, $data);
@@ -615,26 +683,31 @@ class ResponseController extends Controller
      */
     public static function delete($loginName, $password, $class_id)
     {
+        $model = new SubmitController();
         $url = "http://junwei.gensee.com/integration/site/training/room/deleted";
         $len = count($class_id);
         if ($len > 1) {
             for ($k = 0; $k < $len; $k++) {
-                $data = array(
+                $data[] = array(
                     'loginName' => $loginName,
                     'password' => $password,
                     'roomId' => $class_id[$k]
                 );
             }
-        } else {
+            for ($a = 0; $a < $len; $a++) {
+                $result = $model->post($url, $data[$a]);
+            }
+        }else {
             $data = array(
                 'loginName' => $loginName,
                 'password' => $password,
-                'roomId' => $class_id
+                'roomId' => $class_id[0]
             );
+            if ($data['roomId'] == 0) {
+                $data['roomId'] = $class_id;
+            }
+            $result = $model->post($url, $data);
         }
-
-        $model = new SubmitController();
-        $result = $model->post($url, $data);
         $result = json_decode($result, true);
         return $result;
     }
@@ -677,6 +750,25 @@ class ResponseController extends Controller
         );
         $result = $model->post($url, $data);
         $result = json_decode($result, true);
+        return $result;
+    }
+
+    /**
+     * @return array
+     * 6位随机字符串
+     */
+    public function randNum ()
+    {
+        $array= array();
+        for($i=1;$i<=500000;$i++){
+            $string = substr(md5(uniqid($i.'x'.$i.'f'.$i.'s'.$i.rand(), true)),-6);
+            array_push($array,$string);
+        }
+        $result = array_unique($array);
+        $len = count($result);
+        $max = $len-1;
+        $k=mt_rand(0,$max);
+        $result = $result[$k];
         return $result;
     }
 }

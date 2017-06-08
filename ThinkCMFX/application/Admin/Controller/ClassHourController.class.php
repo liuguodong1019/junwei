@@ -92,13 +92,15 @@ class ClassHourController extends AdminbaseController
             $invalidDate = I('post.invalidDate');
             $data['startDate'] = strtotime(I('post.startDate'));
             $data['invalidDate'] = strtotime(I('post.invalidDate'));
+            $studentToken = time();
             $subject = I('post.subject');
-            $response = new ResponseController();
+            $studentClientToken = $response->randNum();
             //调用课时创建接口
-            $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
+            $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate,$studentToken,$studentClientToken);
            
             $data['number'] = $resource['number'];
-            $data['stu_token'] = $resource['studentClientToken'];
+            $data['web_token'] = $studentToken;
+            $data['stu_token'] = $studentClientToken;
             $data['class_id'] = $resource['id'];
             
             if ($resource['code'] == 0) {

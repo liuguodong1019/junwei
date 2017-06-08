@@ -61,6 +61,10 @@
                     <td><input type="file" name="cover" ></td>
                 </tr>
                 <tr>
+                    <th width="80">课堂详情封面图</th>
+                    <td><input type="file" name=" detail_cover" ></td>
+                </tr>
+                <tr>
                     <th width="80">课程简介</th>
                     <td>
                         <textarea name='introduction' id='e_answer' style='width:50%;height:100px;'></textarea>
@@ -70,12 +74,10 @@
                     <th width="80">讲师</th>
                     <td>
                         <select name="lector_id"  class="normal_select">
-                                <option value="请选择">请选择</option>
+                                <option value="">请选择</option>
                             <foreach name = "array['lector']" item = "vo">
                                 <option value="{$vo.l_id}">{$vo.name}</option>
                             </foreach>
-
-
                         </select>
                     </td>
                 </tr>
