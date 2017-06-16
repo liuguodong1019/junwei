@@ -142,8 +142,8 @@ class wechatAppPay
     public function getNotifyData()
     {
         //获取通知的数据
-        $xml = isset($GLOBALS['HTTP_RAW_POST_DATA']);
-//        file_get_contents('php://input');
+        // $xml = $GLOBALS['HTTP_RAW_POST_DATA'];
+        $xml = file_get_contents('php://input');
         $data = array();
         if (empty($xml)) {
             return false;
@@ -322,8 +322,8 @@ class wechatAppPay
         //要求结果为字符串且输出到屏幕上
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         if ($useCert == true) {
-        //设置证书
-        //使用证书：cert 与 key 分别属于两个.pem文件
+            //设置证书
+            //使用证书：cert 与 key 分别属于两个.pem文件
             curl_setopt($ch, CURLOPT_SSLCERTTYPE, 'PEM');
             //curl_setopt($ch,CURLOPT_SSLCERT, WxPayConfig::SSLCERT_PATH);
             curl_setopt($ch, CURLOPT_SSLKEYTYPE, 'PEM');

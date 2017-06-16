@@ -77,6 +77,8 @@
     <ul class="nav nav-tabs">
         <li class="active"><a href="<?php echo U('ClassHour/show');?>">课时列表</a></li>
         <li><a href="<?php echo U('ClassHour/create');?>">添加课时</a></li>
+        <li><a href="<?php echo U('ClassHour/play');?>">正在直播</a></li>
+        <li><a href="<?php echo U('ClassHour/reply');?>">点播</a></li>
     </ul>
     <form class="well form-search" method="post" action="<?php echo U('ClassHour/show');?>">
         课时名称：

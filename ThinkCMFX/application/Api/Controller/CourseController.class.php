@@ -14,6 +14,14 @@ class CourseController extends Controller
      */
     public function get_class_list()
     {
+//        $redis=new \Redis();
+//        $connect=$redis->pconnect("127.0.0.1",6379);
+//        if(!$connect){
+//            echo '连接异常';die;
+//        }else {
+//            echo 'OK';die;
+//        }
+
         $succ = C('status');
         $mess = C('msg');
         $model = new SubmitController();
@@ -118,11 +126,41 @@ class CourseController extends Controller
             $data['uid'] = I('get.uid');
             $data['course_id'] = I('get.id');
             $data['create_time'] = time();
-            $data['share_way'] = I('get.share_way');
+            $data[' '] = I('get.share_way');
             $result = $response->courseShare($data);
             echo $result;exit();
         }else {
             echo json_encode([$status[3],$msg[3]]);exit();
+        }
+    }
+
+    /**
+     * 留言
+     */
+    public function message ()
+    {
+        $message = M('message');
+        $status = C('status');
+        $msg = C('msg');
+        $response = new SubmitController();
+        if (IS_GET) {
+            $lector_id = I('request.lector_id');
+            if (!empty($lector_id)) {
+                $uid = I('request.uid');
+                $live_id = I('request.live_id');
+                $data['lector_id'] = $lector_id;
+                $data['reply_content'] = I('request.reply_content');
+                $data['reply_time'] = time();
+                $message->where("uid = '$uid' and live_id = '$live_id'")->save($data);
+            }else {
+                $data['live_id'] = I('request.live_id');
+                $data['uid'] = I('request.uid');
+                $data['content'] = I('request.content');
+                $data['create_time'] = time();
+                $message->add($data);
+            }
+        }else {
+            echo $response::state($status[3],$msg[3]);exit();
         }
     }
 
@@ -196,6 +234,28 @@ class CourseController extends Controller
                 }
                 $live->where("id = '$id'")->save($data);
             }
+        }
+    }
+
+
+    /**
+     * 获取分享页面课堂信息
+     */
+    public function classDesc()
+    {
+        $succ = C('status');
+        $mess = C('msg');
+        $model = new SubmitController();
+        $res = new ResponseController();
+        if (IS_GET) {
+            $id = I('get.id');
+            $uid = I('get.uid');
+            $page = I('get.page');
+            $jsonp = I('get.callback');
+            $result = $res->classDesc($id,$uid,$page);
+            echo $jsonp."($result)";die;
+        } else {
+            echo $model::state($succ[3], $mess[3]);die;
         }
     }
 }

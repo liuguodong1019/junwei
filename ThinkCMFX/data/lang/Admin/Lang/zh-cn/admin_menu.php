@@ -39,6 +39,7 @@ return array (
   'ADMIN_NAVCAT_DEFAULT1' => '前台菜单',
   'ADMIN_NAVCAT_EDIT_POST' => '提交编辑',
   'ADMIN_NAVCAT_INDEX' => '菜单分类',
+  'ADMIN_ORDER_SHOW' => '订单列表',
   'ADMIN_PEOPLE_SHOW' => '适用人群',
   'ADMIN_PLUGIN_INDEX' => '插件管理',
   'ADMIN_PLUGIN_INSTALL' => '插件安装',

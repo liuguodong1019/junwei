@@ -148,8 +148,6 @@
                         <select name="lector_id"  class="normal_select">
                                 <option value="">请选择</option>
                             <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$vo): ?><option value="<?php echo ($vo["l_id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
-
-
                         </select>
                     </td>
                 </tr>

@@ -92,17 +92,14 @@ class ClassHourController extends AdminbaseController
             $invalidDate = I('post.invalidDate');
             $data['startDate'] = strtotime(I('post.startDate'));
             $data['invalidDate'] = strtotime(I('post.invalidDate'));
-            $studentToken = time();
             $subject = I('post.subject');
-            $studentClientToken = $response->randNum();
             //调用课时创建接口
-            $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate,$studentToken,$studentClientToken);
-           
+            $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
+
             $data['number'] = $resource['number'];
-            $data['web_token'] = $studentToken;
-            $data['stu_token'] = $studentClientToken;
+            $data['stu_token'] = $resource['studentClientToken'];
             $data['class_id'] = $resource['id'];
-            
+
             if ($resource['code'] == 0) {
                 if ($live->add($data)) {
                     $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
@@ -204,24 +201,20 @@ class ClassHourController extends AdminbaseController
         }
         if (isset($_POST['ids'])) {
             $ids = join(",", $_POST['ids']);
-            $rew = $live->where("id in ($ids)")->select();
+            $rew = $live->field('class_id')->where("id in ($ids)")->select();
             $junwei = M('junwei')->find();
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             foreach ($rew as $value) {
                 $class_id[] = $value['class_id'];
             }
-            //调用删除课时接口
+
             $resourec = $response::delete($loginName, $password, $class_id);
-            $ids = join(",", $_POST['ids']);
-            if ($resourec['code'] == 0) {
-                if ($live->where("id in ($ids)")->delete() !== false) {
-                    $this->success(L('ADD_SUCCESS'));exit();
-                } else {
-                    $this->error(L("ADD_FAILED"));exit();
-                }
+
+            if ($live->where("id in ($ids)")->delete() !== false) {
+                $this->success('删除成功');exit();
             } else {
-                $this->error(L("ADD_FAILED"));exit();
+                $this->error('删除失败');exit();
             }
         }
     }

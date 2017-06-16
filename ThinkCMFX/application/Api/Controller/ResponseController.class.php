@@ -21,12 +21,14 @@ class ResponseController extends Controller
         $course = M('course');
         $model = new SubmitController();
         if (is_numeric($page)) {
+
             $data = $course->table('cmf_course  as  a')
-                ->field('a.id,a.course_name,a.startDate,a.invalidDate,a.now_price,a.old_price,b.name,a.cover,a.num_class,a.status,a.is_free,a.introduction,a.number,a.stu_token,a.reply_url')
-                ->join('STRAIGHT_JOIN cmf_lector AS b ON a.lector_id = b.l_id')
-                ->join('STRAIGHT_JOIN cmf_people AS d ON a.people_id = d.p_id')
-                ->join('STRAIGHT_JOIN cmf_book AS e ON a.book_id = e.b_id')
+                ->field('a.id,a.course_name,a.startDate,a.invalidDate,a.now_price,a.old_price,a.cover,a.num_class,a.status,a.is_free,a.introduction,a.number,a.stu_token,a.reply_url,b.name')
+                ->join('left join cmf_lector AS b ON a.lector_id = b.l_id')
+                // ->join('left join cmf_people AS d ON a.people_id = d.p_id')
+                // ->join('left join cmf_book AS e ON a.book_id = e.b_id')
                 ->order('a.id DESC')->select();
+
             $len = count($data);
             for ($c = 0; $c < $len; $c++) {
                 $data[$c]['pay_status'] = 0;
@@ -71,10 +73,10 @@ class ResponseController extends Controller
                 if (empty($order) || $order['pay_status'] == 0 || $order['pay_status'] == 2) {
                     $collection = M('course_collection')->field('type')->where("uid = '$uid' and course_id = '$id'")->find();
                     $rew = M('course')->table('cmf_course as a')
-                        ->field('id,course_name,now_price,name,num_class,cover,people,book,introduction,detail_cover')
-                        ->join('STRAIGHT_JOIN cmf_lector as b ON a.lector_id = b.l_id')
-                        ->join('STRAIGHT_JOIN cmf_people as c ON a.people_id = c.p_id')
-                        ->join('STRAIGHT_JOIN cmf_book as d ON a.book_id = d.b_id')
+                        ->field('id,course_name,now_price,num_class,cover,people,book,introduction,detail_cover,name')
+                        ->join('left join cmf_lector as b ON a.lector_id = b.l_id')
+                        ->join('left join cmf_people as c ON a.people_id = c.p_id')
+                        ->join('left join cmf_book as d ON a.book_id = d.b_id')
                         ->where("a.id = $id")->find();
                     if (empty($collection) || $collection['type'] == 0) {
                         $rew['type'] = 0;
@@ -83,8 +85,9 @@ class ResponseController extends Controller
                     }
                 }else {
                     $data = M('live')->table('cmf_live as a')
-                        ->field('a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number')
-                        ->join('STRAIGHT_JOIN cmf_course as b ON a.course_id = b.id')
+                        ->field('a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name')
+                        ->join('left join cmf_course as b ON a.people_id = b.course_id')
+                        ->join('left join cmf_lector as c ON a.lector_id = c.l_id')
                         ->where("a.course_id = $id")->select();
                     $len = count($data);
                     for ($a = 0; $a < $len; $a++) {
@@ -123,8 +126,8 @@ class ResponseController extends Controller
         $course = M('course');
         if (is_numeric($page)) {
             $data = $course->table('cmf_course as a')
-                ->field('a.id,course_name,now_price,old_price,startDate,invalidDate,cover,a.status,a.introduction,b.name')
-                ->join('STRAIGHT_JOIN cmf_lector AS b ON a.lector_id = b.l_id')
+                ->field('a.id,a.course_name,a.startDate,a.invalidDate,a.now_price,a.old_price,a.cover,a.num_class,a.status,a.is_free,a.introduction,a.number,a.stu_token,a.reply_url,b.name')
+                ->join('INNER JOIN cmf_lector AS b ON a.lector_id = b.l_id')
                 ->where("is_free = '1'")->order('a.id DESC')->select();
             $len = count($data);
             for ($c = 0; $c < $len; $c++) {
@@ -167,10 +170,10 @@ class ResponseController extends Controller
         $course = M('course');
         if (is_numeric($page)) {
             $data = $course->table('cmf_course as a')
-                ->field('a.id,course_name,now_price,old_price,name,startdate,invaliddate,cover,num_class,status,a.introduction')
-                ->join('left join cmf_people as b ON a.people_id = b.p_id')
+                ->field('a.id,a.course_name,a.startDate,a.invalidDate,a.now_price,a.old_price,a.cover,a.num_class,a.status,a.is_free,a.introduction,a.number,a.stu_token,a.reply_url,d.name')
                 ->join('left join cmf_lector as d ON a.lector_id = d.l_id')
-                ->join('left join cmf_book as e ON a.book_id = e.b_id')
+                // ->join('left join cmf_people as b ON a.people_id = b.p_id')
+                // ->join('left join cmf_book as e ON a.book_id = e.b_id')
                 ->where("a.is_free = '2'")->order('a.id DESC')->select();
             $len = count($data);
             for ($c = 0; $c < $len; $c++) {
@@ -181,7 +184,7 @@ class ResponseController extends Controller
                 $rew = $this->gotten($uid,$page,$data);
                 $is_login = 1;
             }else {
-                $rew = $this->page($uid,$page);
+                $rew = $this->page($data,$page);
                 $is_login = 0;
             }
             if (!empty($data)) {
@@ -217,7 +220,7 @@ class ResponseController extends Controller
             $where .= " and UNIX_TIMESTAMP(a.invaliddate) < '$time'";
             $data = $course->table('cmf_course as a')
                 ->field('id,course_name,introduction,num_class,status,is_free,now_price,old_price,number,stu_token,reply_url,class_id,startdate,invaliddate,cover,name')
-                ->join('STRAIGHT_JOIN cmf_lector as b ON a.lector_id = b.l_id')
+                ->join('left join cmf_lector as b ON a.lector_id = b.l_id')
                 ->where($where)->order('a.id DESC')->select();
             $len = count($data);
             for ($c = 0; $c < $len; $c++) {
@@ -370,9 +373,9 @@ class ResponseController extends Controller
         $live = M('live');
         $response = new SubmitController();
         if (is_numeric($id)) {
-            $data = $live
-                ->field('id,subject,reply_url,status,startDate,invalidDate,number,stu_token,class_id')
-                ->where("course_id = '$id'")->order('cmf_live.id')->select();
+            $data = $live->table('cmf_live as a')
+                ->field('a.id,a.subject,a.reply_url,a.status,a.startDate,a.invalidDate,a.number,a.stu_token,a.class_id')
+                ->where("a.course_id = '$id'")->order('a.id')->select();
             $len = count($data);
             for ($a = 0; $a < $len; $a++) {
                 $data[$a]['type'] = 0;
@@ -405,7 +408,7 @@ class ResponseController extends Controller
      */
     public function page ($data,$page)
     {
-        $pageSize = 10;
+        $pageSize = 20;
         $start=($page- 1) *$pageSize;
         $show=array_slice($data,$start,$pageSize);
         return $show;
@@ -639,7 +642,7 @@ class ResponseController extends Controller
     /**
      * 创建实时课堂
      */
-    public static function create_course($subject, $loginName, $password, $startDate, $invalidDate,$studentToken,$studentClientToken)
+    public static function create_course($subject, $loginName, $password, $startDate, $invalidDate)
     {
         $url = "http://junwei.gensee.com/integration/site/training/room/created";
         $data = array(
@@ -648,8 +651,6 @@ class ResponseController extends Controller
             'subject' => $subject,
             'startDate' => $startDate,
             'invalidDate' => $invalidDate,
-            'studentToken' => $studentToken,
-            'studentClientToken' => $studentClientToken
         );
         $model = new SubmitController();
         $result = $model->post($url, $data);
@@ -703,9 +704,6 @@ class ResponseController extends Controller
                 'password' => $password,
                 'roomId' => $class_id[0]
             );
-            if ($data['roomId'] == 0) {
-                $data['roomId'] = $class_id;
-            }
             $result = $model->post($url, $data);
         }
         $result = json_decode($result, true);
@@ -770,5 +768,61 @@ class ResponseController extends Controller
         $k=mt_rand(0,$max);
         $result = $result[$k];
         return $result;
+    }
+
+    /**
+     * @param $id
+     * @param $uid
+     * @return string
+     * 分享页面课堂详情
+     */
+    public function classDesc($id,$uid,$page)
+    {
+        $succ = C('status');
+        $mess = C('msg');
+        $model = new SubmitController();
+        if (!empty($uid)) {
+            if (!empty($id) && is_numeric($id) && is_numeric($uid)) {
+                $order = M('order')->field('pay_status')->where("uid = '$uid' and course_id = '$id'")->find();
+                if (empty($order) || $order['pay_status'] == 0 || $order['pay_status'] == 2) {
+                    $collection = M('course_collection')->field('type')->where("uid = '$uid' and course_id = '$id'")->find();
+                    $rew = M('course')->table('cmf_course as a')
+                        ->field('id,course_name,now_price,num_class,cover,people,book,introduction,detail_cover,name')
+                        ->join('left join cmf_lector as b ON a.lector_id = b.l_id')
+                        ->join('left join cmf_people as c ON a.people_id = c.p_id')
+                        ->join('left join cmf_book as d ON a.book_id = d.b_id')
+                        ->where("a.id = $id")->find();
+                    if (empty($collection) || $collection['type'] == 0) {
+                        $rew['type'] = 0;
+                    }else {
+                        $rew['type'] = 1;
+                    }
+                }else {
+                    $data = M('live')->table('cmf_live as a')
+                        ->field('a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name')
+                        ->join('left join cmf_course as b ON a.people_id = b.course_id')
+                        ->join('left join cmf_lector as c ON a.lector_id = c.l_id')
+                        ->where("a.course_id = $id")->select();
+                    $len = count($data);
+                    for ($a = 0; $a < $len; $a++) {
+                        $data[$a]['type'] = 0;
+                    }
+                    $rew = $this->classHour($uid,$data,$page);
+                }
+                if (!empty($rew)) {
+                    return json_encode([
+                        'status' => $succ[0],
+                        'msg' => $mess[0],
+                        'data' => $rew
+                    ]);
+                } else {
+                    return $model::state($succ[1], $mess[1]);
+                }
+            }else {
+                return $model::state($succ[2], $mess[2]);
+            }
+        }else {
+            return $model::state($succ[0],'暂无登录操作');
+        }
     }
 }

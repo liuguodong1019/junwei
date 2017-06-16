@@ -38,11 +38,12 @@ class CourseController extends AdminbaseController
                 $this->redirect('show');
             }
         } else {
-            $data = $course
-                ->join('left join cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                ->join('left join cmf_book ON cmf_course.book_id = cmf_book.b_id')
-                ->order('cmf_course.id DESC')->limit($Page->firstRow . ',' . $Page->listRows)->select();
+            $data = $course->table('cmf_course as a')
+                ->field('a.id,a.course_name,a.now_price,a.old_price,c.people,d.book,a.startdate,a.invaliddate')
+                ->join('left join cmf_people as c ON a.people_id = c.p_id')
+//                ->join('left join cmf_lector as b ON a.lector_id = b.l_id')
+                ->join('left join cmf_book as d ON a.book_id = d.b_id')
+                ->order('a.id DESC')->limit($Page->firstRow . ',' . $Page->listRows)->select();
         }
         $this->assign('loginName', $loginName);
         $this->assign('password', $password);
@@ -61,8 +62,8 @@ class CourseController extends AdminbaseController
             if (!empty($id)) {
                 $data = M('course')
                     ->join('left join cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                    ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('left join cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->where("id = $id")->find();
             }
         }
@@ -91,20 +92,16 @@ class CourseController extends AdminbaseController
                     $cover[] = $file['savepath'].$file['savename'];
                     $data['cover'] = $cover[0];
                 }
-
                 $junwei = M('junwei')->find();
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
                 $startDate = I('post.startDate');
                 $invalidDate = I('post.invalidDate');
-                $studentToken = time();
                 $subject = I('post.course_name');
-                $studentClientToken = $response->randNum();
                 //调用课时创建接口
-                $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate,$studentToken,$studentClientToken);
-                $data['stu_token'] = $studentClientToken;
-                $data['web_token'] = $studentToken;
+                $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
                 $data['number'] = $resource['number'];
+                $data['stu_token'] = $resource['studentClientToken'];
                 $data['class_id'] = $resource['id'];
                 if ($resource['code'] == 0) {
                     if ($course->add($data)) {
@@ -157,8 +154,8 @@ class CourseController extends AdminbaseController
             if (!empty($id)) {
                 $data = $course
                     ->join('left join cmf_people ON cmf_course.people_id = cmf_people.p_id')
-                    ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->join('left join cmf_book ON cmf_course.book_id = cmf_book.b_id')
+                    ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
                     ->where("id = $id")
                     ->find();
                 $lector = $lector->select();
@@ -256,7 +253,6 @@ class CourseController extends AdminbaseController
                     }
                 }
             }else {
-                $class_id = I('class_id');
                 $junwei = M('junwei')->find();
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
@@ -277,33 +273,20 @@ class CourseController extends AdminbaseController
 
         if (isset($_POST['ids'])) {
             $ids = join(",", $_POST['ids']);
-            $rew = $course->where("id in ($ids)")->select();
+            $rew = $course->field('class_id')->where("id in ($ids)")->select();
             $junwei = M('junwei')->find();
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             foreach ($rew as $value) {
                 $class_id[] = $value['class_id'];
-                $is_free[] = $value['is_free'];
             }
-            if (empty($class_id)) {
-                $ids = join(",", $_POST['ids']);
-                if ($course->where("id in ($ids)")->delete() !== false) {
-                    $this->success("删除成功！");
-                } else {
-                    $this->error("删除失败！");
-                }
-            }else {
-                $resourec = $response::delete($loginName, $password, $class_id);
-                $ids = join(",", $_POST['ids']);
-                if ($resourec['code'] == 0) {
-                    if ($course->where("id in ($ids)")->delete() !== false) {
-                        $this->success('删除成功');exit();
-                    } else {
-                        $this->error('删除失败');exit();
-                    }
-                } else {
-                    $this->error('删除失败');exit();
-                }
+
+            $resourec = $response::delete($loginName, $password, $class_id);
+
+            if ($course->where("id in ($ids)")->delete() !== false) {
+                $this->success('删除成功');exit();
+            } else {
+                $this->error('删除失败');exit();
             }
         }
     }

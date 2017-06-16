@@ -34,8 +34,8 @@
                                name="p_ids[]" value="{$vo.p_id}"></td>
                     <td><a>{$vo.p_id}</a></td>
                     <td>{$vo.people}</td>
-                    <td>{$vo['create_time'] |date="Y-m-d H:i:s",###}</td>
-                    <td>{$vo['update_time'] |date="Y-m-d H:i:s",###}</td>
+                    <td>{$vo['create_time']|date="Y-m-d H:i:s",###}</td>
+                    <td>{$vo['update_time']|date="Y-m-d H:i:s",###}</td>
                     <td>
                         <a href="{:U('People/update',array('id'=>$vo['p_id']))}">{:L('EDIT')}</a>|
                         <a href="{:U('People/delete',array('id'=>$vo['p_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
