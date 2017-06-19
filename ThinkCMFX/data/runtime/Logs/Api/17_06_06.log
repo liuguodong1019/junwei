@@ -1,0 +1,583 @@
+[ 2017-06-06T10:31:17+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000049s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+
+[ 2017-06-06T10:31:33+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000059s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+
+[ 2017-06-06T10:32:10+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000050s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+
+[ 2017-06-06T10:32:20+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000054s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+
+[ 2017-06-06T10:46:10+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000066s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000141s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+
+[ 2017-06-06T10:46:31+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000056s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+
+[ 2017-06-06T11:36:30+08:00 ] 115.33.35.202 /junwei/api
+ERR: 无法加载控制器:Index
+
+[ 2017-06-06T11:40:03+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000049s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0008s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+
+[ 2017-06-06T11:41:05+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000058s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+
+[ 2017-06-06T11:41:22+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000059s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+
+[ 2017-06-06T11:41:39+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000049s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+
+[ 2017-06-06T11:41:43+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000053s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+
+[ 2017-06-06T11:47:53+08:00 ] 101.226.68.197 /junwei/api
+ERR: 无法加载控制器:Index
+
+[ 2017-06-06T11:55:29+08:00 ] 115.33.35.202 /junwei/api/itembank/kmtimu&sid=9&cid=3
+ERR: 非法操作:kmtimu&sid=9&cid=3
+
+[ 2017-06-06T13:42:41+08:00 ] 115.33.24.214 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000053s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0008s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+
+[ 2017-06-06T13:44:12+08:00 ] 115.33.24.214 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000050s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+
+[ 2017-06-06T13:44:19+08:00 ] 115.33.24.214 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000055s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0008s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+
+[ 2017-06-06T13:57:42+08:00 ] 115.33.24.214 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000052s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0009s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0007s ]
+
+[ 2017-06-06T13:58:01+08:00 ] 115.33.24.214 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000050s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+
+[ 2017-06-06T13:58:04+08:00 ] 115.33.24.214 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000055s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+
+[ 2017-06-06T14:15:18+08:00 ] 115.33.24.214 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000059s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+
+[ 2017-06-06T14:15:35+08:00 ] 115.33.24.214 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000060s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SELECT `sid`,`stitle` FROM `cmf_subjects` ORDER BY sid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=7 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=8 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=9 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=10 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=11 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=12 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=13 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=14 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=15 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=16 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=18 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=19 ) ORDER BY cid asc  [ RunTime:0.0006s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=21 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=22 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`ctitle` FROM `cmf_chapter` WHERE ( sid=23 ) ORDER BY cid asc  [ RunTime:0.0005s ]
+
+[ 2017-06-06T14:29:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:30:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:31:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:32:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:33:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:34:02+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:35:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:36:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:37:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:38:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:39:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:40:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:41:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:42:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:43:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:43:19+08:00 ] 211.150.89.32 /junwei/live_status?ClassNo=L9TklmpMS9&Operator=0&Action=102&Affected=0&totalusernum=0
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:43:24+08:00 ] 211.150.89.32 /junwei/live_status?ClassNo=L9TklmpMS9&Operator=33222091&Action=101&Affected=33222091&totalusernum=1
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:43:31+08:00 ] 211.150.89.32 /junwei/live_status?ClassNo=L9TklmpMS9&Operator=0&Action=103&Affected=0&totalusernum=1
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:44:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:44:51+08:00 ] 211.150.89.32 /junwei/live_status?ClassNo=L9TklmpMS9&Operator=33222091&Action=110&Affected=33222091&totalusernum=0
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:45:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:46:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T14:47:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected '$exception' (T_VARIABLE), expecting ',' or ')'
+
+[ 2017-06-06T15:00:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'if' (T_IF)
+
+[ 2017-06-06T15:01:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'if' (T_IF)
+
+[ 2017-06-06T15:02:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'if' (T_IF)
+
+[ 2017-06-06T15:03:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'if' (T_IF)
+
+[ 2017-06-06T15:04:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'if' (T_IF)
+
+[ 2017-06-06T15:05:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'if' (T_IF)
+
+[ 2017-06-06T15:06:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'if' (T_IF)
+
+[ 2017-06-06T15:07:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'if' (T_IF)
+
+[ 2017-06-06T15:24:38+08:00 ] 115.33.24.214 /junwei/api/aser/kzjk
+ERR: 无法加载控制器:Aser
+
+[ 2017-06-06T15:24:48+08:00 ] 101.226.125.103 /junwei/api/aser/kzjk
+ERR: 无法加载控制器:Aser
+

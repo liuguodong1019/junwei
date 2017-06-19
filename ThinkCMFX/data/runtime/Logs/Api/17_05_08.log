@@ -1,0 +1,134 @@
+[ 2017-05-08T09:25:42+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:26:15+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=2
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 10,10  
+
+[ 2017-05-08T09:30:35+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:30:38+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=open_class&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startDate`,`invalidDate`,`cover`,`num_class`,`status` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = '1' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:30:41+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '3' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:30:44+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=vip&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = '2' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:30:46+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=vip&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = '2' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:30:48+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=vip&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = '2' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:34:30+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:34:32+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:34:35+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:34:37+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '3' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:34:41+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '3' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:34:44+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '3' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:34:47+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=past_live&page=2
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '3' ) ORDER BY cmf_course.id LIMIT 10,10  
+
+[ 2017-05-08T09:34:54+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '3' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:35:00+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=past_live&page=2
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,`is_free` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( status = '3' ) ORDER BY cmf_course.id LIMIT 10,10  
+
+[ 2017-05-08T09:36:57+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=open_class&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startDate`,`invalidDate`,`cover`,`num_class`,`status` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = '1' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:37:04+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=open_class&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startDate`,`invalidDate`,`cover`,`num_class`,`status` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = '1' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:37:06+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=open_class&page=1
+ERR: 1054:Unknown column 'course_name' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`now_price`,`old_price`,`name`,`startDate`,`invalidDate`,`cover`,`num_class`,`status` FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  WHERE ( is_free = '1' ) ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:37:56+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:37:58+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:38:12+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:38:54+08:00 ] 114.242.249.104 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:40:49+08:00 ] 114.242.249.104 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:43:10+08:00 ] 114.242.249.104 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:43:10+08:00 ] 114.242.249.104 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:43:14+08:00 ] 114.242.249.104 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:43:14+08:00 ] 114.242.249.104 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:43:35+08:00 ] 114.242.249.104 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:48:47+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=get_class_list&page=1
+ERR: 无法加载控制器:Get_class_list
+
+[ 2017-05-08T09:49:18+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&page=1
+ERR: 非法操作:index
+
+[ 2017-05-08T09:51:55+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+
+[ 2017-05-08T09:51:57+08:00 ] 114.242.249.104 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_course.course_name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY cmf_course.id LIMIT 0,10  
+

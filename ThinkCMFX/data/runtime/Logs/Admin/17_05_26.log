@@ -1,0 +1,4064 @@
+[ 2017-05-26T08:27:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000056s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000045s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'jiaoyan2' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0020s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0019s ]
+SQL: UPDATE `cmf_users` SET `user_login`='jiaoyan2',`user_pass`='###9e09f7a64f747d17e62c4f35a9713f15',`user_nicename`='',`user_email`='jun@163.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.66.116',`last_login_time`='2017-05-26 08:27:05',`create_time`='2017-05-08 09:45:47',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='0',`ctime`='0',`check`='0' WHERE `id` = '20' [ RunTime:0.0018s ]
+
+[ 2017-05-26T08:27:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:28:22+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2619
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:54:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:54:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:54:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2620
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:55:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:55:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:55:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2622
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:56:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:56:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:56:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2623
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:57:53+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:57:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:57:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2625
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:58:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:59:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:59:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2626
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T08:59:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:00:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:00:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2627
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:01:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:01:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:01:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2628
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:01:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:01:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:01:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2629
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:02:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:02:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:02:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:02:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2630
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:04:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:04:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:04:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2631
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:07:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:07:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:07:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2632
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:07:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:07:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:07:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2633
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:07:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2633
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:10:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:10:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:10:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2634
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:13:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:13:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:13:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2636
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:14:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:14:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:14:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2639
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:18:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:18:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2639
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:18:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:18:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:19:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:19:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2640
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:20:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:20:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:20:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2642
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:32:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:32:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:32:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2643
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:41:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:41:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:41:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2645
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:44:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:44:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:44:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2646
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:45:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:46:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:46:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2653
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:46:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:46:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:46:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2657
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:47:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:47:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:47:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2654
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:48:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:48:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:48:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2656
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:49:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:49:35+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:49:35+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2660
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:49:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:49:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:49:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2661
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:51:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:51:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:51:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2662
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:52:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:52:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:52:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2663
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:53:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:53:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:53:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2665
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:53:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:54:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:54:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2666
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:54:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:54:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:54:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2669
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:55:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:55:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:55:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2670
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:57:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:57:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:57:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2672
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:57:30+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:57:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T09:58:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2675
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:00:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:00:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:00:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2677
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:01:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:01:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:01:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2679
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:04:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:04:37+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:04:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2681
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:08:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:08:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:08:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2684
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:08:57+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T10:09:40+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T10:10:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:10:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:10:33+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:11:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:11:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:11:48+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T10:13:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:13:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2686
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:13:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2686
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:13:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2686
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:13:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2686
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:13:41+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T10:15:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:15:35+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:15:44+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:15:44+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2688
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:17:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:17:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:17:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2689
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:18:28+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:18:34+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T10:20:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:20:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2690
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:20:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2690
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:22:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:22:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:22:48+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:22:48+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2692
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:22:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2692
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:24:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:24:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:25:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:25:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:26:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:26:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2693
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:26:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2693
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:35:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:35:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2693
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:38:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:38:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:39:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:39:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2695
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:40:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:40:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:40:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2697
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:41:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:41:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:42:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2698
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:42:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:42:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:43:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:44:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2700
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:45:22+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:46:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2701
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:47:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:47:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:47:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:47:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2703
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:47:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2703
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:49:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:49:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:50:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T10:50:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2704
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:06:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:06:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:07:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:07:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:07:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2706
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:10:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:11:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:11:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2707
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:11:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:12:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:12:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2709
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:12:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2709
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:12:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2709
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:14:02+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:14:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:14:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:14:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2711
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:14:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2711
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:15:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:17:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:20:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2712
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:21:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:21:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:24:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000064s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000141s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000047s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0035s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0035s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.66.116',`last_login_time`='2017-05-26 11:24:38',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0034s ]
+
+[ 2017-05-26T11:27:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:29:41+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:29:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:30:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:30:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:31:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:31:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:31:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:31:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:31:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:32:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:34:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:34:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2720
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:37:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:37:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:38:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:38:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2722
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:38:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2722
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:38:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2722
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:38:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2722
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:38:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2722
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:39:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:39:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:39:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2713
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:39:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2713
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:39:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2713
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:40:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_itembank` SET `te_type`='0',`sid`='23',`cid`='115',`no`='5',`question`='下列哪一选项中法院的审判行为，只能发生在开庭审理阶段？（2013/3/43）',`point`='开庭审理',`parsing`='',`itime`='1495770019' WHERE ( item_id= )
+
+[ 2017-05-26T11:40:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:40:33+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2724
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:41:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:41:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:41:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2727
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T11:41:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2727
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T12:59:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T12:59:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:00:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:00:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2729
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:13:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:13:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:14:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:14:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2730
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:14:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2730
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:15:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:15:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2730
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:15:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:16:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:16:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2713
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:16:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2713
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:16:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:17:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:18:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:18:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2732
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:18:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2732
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:18:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2732
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:18:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2732
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:19:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:19:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:19:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2733
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:19:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:19:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:20:51+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:20:51+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2735
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:23:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:23:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:23:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2736
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:25:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:25:53+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:25:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:25:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:26:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:26:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2739
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:26:51+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:26:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:28:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:28:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2740
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:30:33+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:30:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:30:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2741
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:32:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:32:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:32:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:32:30+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2742
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:37:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:39:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:39:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2743
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:42:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'jiaoyan2' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0020s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0019s ]
+SQL: UPDATE `cmf_users` SET `user_login`='jiaoyan2',`user_pass`='###9e09f7a64f747d17e62c4f35a9713f15',`user_nicename`='',`user_email`='jun@163.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.66.116',`last_login_time`='2017-05-26 13:42:07',`create_time`='2017-05-08 09:45:47',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='0',`ctime`='0',`check`='0' WHERE `id` = '20' [ RunTime:0.0019s ]
+
+[ 2017-05-26T13:43:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:43:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2743
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:45:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:46:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:46:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:46:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2744
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:48:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:48:48+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:50:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:51:35+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:51:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:52:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000149s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0020s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0020s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.66.116',`last_login_time`='2017-05-26 13:52:54',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0020s ]
+
+[ 2017-05-26T13:52:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:52:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2745
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:52:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2745
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T13:59:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:00:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:00:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:00:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:00:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2747
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:03:51+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:04:02+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:04:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:05:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:05:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:06:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:11:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000104s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-05-26T14:12:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000066s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000146s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000059s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'jiaoyan2' LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0032s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0031s ]
+SQL: UPDATE `cmf_users` SET `user_login`='jiaoyan2',`user_pass`='###9e09f7a64f747d17e62c4f35a9713f15',`user_nicename`='',`user_email`='jun@163.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.66.116',`last_login_time`='2017-05-26 14:12:04',`create_time`='2017-05-08 09:45:47',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='0',`ctime`='0',`check`='0' WHERE `id` = '20' [ RunTime:0.0031s ]
+
+[ 2017-05-26T14:13:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:13:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2749
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:13:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2749
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:13:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2749
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:14:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:15:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:15:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:15:30+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2751
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:16:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:16:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:16:35+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:16:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2752
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:17:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:17:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:17:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2753
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:18:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:18:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:18:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:19:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:19:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2754
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:19:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:19:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:19:46+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:19:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2755
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:20:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:20:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:20:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:21:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:21:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2756
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:21:48+08:00 ] 115.33.66.116 /junwei/index.php?s=/route/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000062s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cmf_route` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_route` (`full_url`,`url`,`status`) VALUES ('api/course/open_class','open_class','1') [ RunTime:0.0025s ]
+
+[ 2017-05-26T14:22:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/route/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000139s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000056s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cmf_route` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_route` (`full_url`,`url`,`status`) VALUES ('api/course/vip','vip','1') [ RunTime:0.0020s ]
+
+[ 2017-05-26T14:25:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/route/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000065s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000047s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cmf_route` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_route` (`full_url`,`url`,`status`) VALUES ('api/course/past_live','past_live','1') [ RunTime:0.0029s ]
+
+[ 2017-05-26T14:26:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/route/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000094s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000046s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `cmf_route` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_route` (`full_url`,`url`,`status`) VALUES ('api/course/get_class','get_class','1') [ RunTime:0.0026s ]
+
+[ 2017-05-26T14:26:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:26:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:26:44+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:26:44+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2758
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:27:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:27:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/route/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000056s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000044s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cmf_route` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_route` (`full_url`,`url`,`status`) VALUES ('api/course/class_hour','class_hour','1') [ RunTime:0.0019s ]
+
+[ 2017-05-26T14:27:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/route/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000065s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000046s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `cmf_route` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_route` (`full_url`,`url`,`status`) VALUES ('api/course/collection','collection','1') [ RunTime:0.0023s ]
+
+[ 2017-05-26T14:28:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:31:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:31:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2760
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:32:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:33:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:33:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2765
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:33:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:33:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:34:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:34:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2761
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:34:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2761
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:36:37+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:37:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:37:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2768
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:40:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:40:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:40:46+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2771
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:41:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:41:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:41:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2769
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:41:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:41:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:41:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2774
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:45:30+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:45:37+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:45:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2776
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:45:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:46:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:51:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2778
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:55:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:55:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:55:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2790
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:56:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:56:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T14:56:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2785
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:00:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:00:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:00:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2788
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:05:37+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:05:56+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:07:24+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:07:38+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:07:38+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:07:43+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:08:54+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:08:55+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:08:56+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:08:57+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:08:57+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:08:59+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:09:00+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:09:01+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:09:01+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:09:12+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:09:27+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:10:05+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:11:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:11:30+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:11:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:11:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2793
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:14:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:14:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:14:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2794
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:14:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:15:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:15:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2796
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:16:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:16:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:16:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2799
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:17:35+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:17:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:17:53+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2801
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:18:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:18:28+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:18:28+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2803
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:18:59+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:19:01+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:19:14+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:19:18+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:19:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:19:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:19:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2804
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:19:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:19:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:20:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:20:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2807
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:20:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:21:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:21:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2808
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:21:30+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:21:31+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:21:32+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:21:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:21:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2806
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:21:43+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:21:55+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:21:56+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:23:30+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:23:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:23:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:23:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2812
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:23:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2812
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:23:52+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:23:53+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:23:54+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:23:55+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:23:55+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:23:56+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:23:57+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:23:57+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:24:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:24:07+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:24:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:24:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2813
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:24:55+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:24:55+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:24:56+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:25:05+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:25:06+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:25:08+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:25:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:25:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:25:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2814
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:26:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:26:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2814
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:26:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2814
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:26:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:26:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:26:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2816
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:27:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:27:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:27:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2817
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:28:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:28:37+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:28:37+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2818
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:28:48+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:29:10+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:29:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:29:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:29:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2820
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:29:31+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:29:38+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:30:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:30:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:30:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2821
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:30:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:31:02+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:31:02+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2822
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:31:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:31:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:31:30+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2823
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:32:48+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:32:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:33:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2824
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:33:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:33:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:33:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2825
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:34:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:34:35+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:34:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:34:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2826
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:35:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:35:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:35:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2827
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:35:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:35:48+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:35:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2829
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:36:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:36:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:37:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2830
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:38:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:38:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:38:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2832
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:39:28+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:39:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:39:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2834
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:40:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:40:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:40:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2835
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:40:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:40:53+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:41:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:41:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2837
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:41:33+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:41:44+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:41:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2885
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:42:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:42:53+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:42:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:43:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2889
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:43:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:43:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:44:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:45:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2891
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:45:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:45:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:45:46+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2892
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:47:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:47:33+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:47:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:48:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2894
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:51:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:51:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:51:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2895
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:51:45+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:51:53+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:52:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2897
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:53:22+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:53:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:53:30+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2898
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:53:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:54:02+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:54:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2900
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:54:42+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T15:56:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:56:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:56:15+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2901
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:57:51+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:58:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:58:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2902
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:59:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:59:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T15:59:18+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2906
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:00:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:00:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:00:22+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:00:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2908
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:01:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:01:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:02:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2909
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:03:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:03:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:03:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2910
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:04:53+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:05:03+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:05:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2911
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:05:33+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:05:44+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:05:44+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2913
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:06:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:06:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:06:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2915
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:06:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:07:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:08:06+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2917
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:10:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:10:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:13:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2920
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:13:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:13:33+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:13:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2924
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:17:20+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:17:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:17:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2925
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:19:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:19:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:19:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2926
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:21:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:21:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:21:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2929
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:21:51+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:22:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:22:02+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2930
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:23:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:23:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:23:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2932
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:25:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:25:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:25:27+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2934
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:25:45+08:00 ] 115.33.66.116 /junwei//junwei/Uploads/0
+ERR: 无法加载控制器:Junwei
+
+[ 2017-05-26T16:25:51+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:25:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:26:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2935
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:27:44+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:27:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:27:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2937
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:28:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:28:33+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:28:33+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2942
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:29:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:29:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:29:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2944
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:29:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:30:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:30:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2945
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:31:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:31:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:32:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2659
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:33:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:33:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:33:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:33:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2671
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:33:37+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:33:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:33:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2674
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:35:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:35:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:35:47+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2678
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:36:48+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:36:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:37:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:37:01+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2680
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:38:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:38:46+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:38:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2685
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:39:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:39:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:39:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:39:40+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2691
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:40:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:40:35+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:40:35+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2694
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:47:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:47:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:47:34+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2696
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:53:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:53:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:53:51+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:54:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2699
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:54:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:54:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:56:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:56:28+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2702
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:58:56+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:59:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T16:59:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2705
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:02:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:02:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:02:25+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2708
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:03:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:03:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:03:49+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2710
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:03:50+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2710
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:05:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:05:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:05:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2716
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:05:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:06:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:06:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2725
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:06:48+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:07:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:07:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2728
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:07:11+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:08:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:08:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:08:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2731
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:08:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:09:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:09:08+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2734
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:09:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:09:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:09:52+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2737
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:10:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:10:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:10:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2738
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:12:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:12:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:12:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2746
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:16:13+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:16:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:16:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2750
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:17:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:18:05+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:18:19+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2757
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:18:44+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:19:34+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:19:37+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:19:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:19:44+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:19:48+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:19:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:19:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2766
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:22:10+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:24:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:24:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:24:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2770
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:24:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:25:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:25:09+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2759
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:27:13+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:27:14+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:27:14+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:28:25+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:28:43+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:28:53+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:28:54+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2773
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:29:55+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:30:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:30:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2777
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:30:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2777
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:32:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:32:23+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2777
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:35:26+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:35:31+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:35:39+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:35:42+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2779
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:36:40+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:39:02+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:39:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:39:11+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2781
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:40:56+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:42:04+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:42:14+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:42:16+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2783
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:45:21+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:45:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:45:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2786
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:52:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:52:11+08:00 ] 115.33.66.116 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T17:52:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:52:17+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2789
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:53:59+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:54:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:54:07+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2791
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:58:24+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:58:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T17:58:32+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2792
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:00:15+08:00 ] 115.33.66.116 /junwei//junwei/Uploads/0
+ERR: 无法加载控制器:Junwei
+
+[ 2017-05-26T18:00:29+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:00:37+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:00:38+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2795
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:01:57+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:02:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:02:10+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2797
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:03:00+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:03:12+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:03:58+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2659
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:07:28+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:07:36+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:07:46+08:00 ] 115.33.66.116 /junwei/index.php?s=/Question/itembankedit/item_id/2671
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-26T18:10:30+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T18:10:31+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T18:10:31+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T18:10:32+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T18:10:32+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T18:10:33+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T18:10:33+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T20:34:55+08:00 ] 61.148.242.247 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T21:42:17+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T22:42:12+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T22:46:44+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T22:46:46+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T22:46:46+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T22:46:48+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T22:46:49+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T22:48:40+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T23:07:31+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-05-26T23:07:33+08:00 ] 113.44.40.106 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+

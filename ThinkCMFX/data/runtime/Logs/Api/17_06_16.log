@@ -1,0 +1,264 @@
+[ 2017-06-16T14:09:31+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=155&uid=71
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 155 ) 
+
+[ 2017-06-16T14:10:03+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=155&uid=71
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 155 ) 
+
+[ 2017-06-16T14:10:06+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=155&uid=71
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 155 ) 
+
+[ 2017-06-16T16:02:53+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18202105543169741022_1497600168865&_=1497600169137
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:09+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery182018239660763103838_1497600184838&_=1497600184858
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:13+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18203131769133915121_1497600188847&_=1497600188871
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:14+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18209402159894337638_1497600190067&_=1497600190091
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:15+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18205203077364064572_1497600190686&_=1497600190709
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:15+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18206052319019384593_1497600190923&_=1497600190946
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:15+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery182032659517312267616_1497600191126&_=1497600191151
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:18+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery182021734262786944858_1497600193386&_=1497600193407
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:18+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18201687740260347883_1497600194011&_=1497600194036
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:19+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery182032377680416404453_1497600194225&_=1497600194249
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:19+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18204625653912129992_1497600194415&_=1497600194439
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:19+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18208286909719178863_1497600194616&_=1497600194640
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:03:28+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=152&uid=49&callback=jQuery18209204024351916256_1497600203704&_=1497600203717
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 152 ) 
+
+[ 2017-06-16T16:06:22+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery182007906038097617762_1497600377676&_=1497600377724
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:06:57+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18208540612366258057_1497600481011&_=1497600481391
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:08:27+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=37&uid=49&callback=jQuery18208555981273323172_1497600502765&_=1497600502779
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 37 ) 
+
+[ 2017-06-16T16:08:29+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=37&uid=49&callback=jQuery18208825135054225326_1497600504869&_=1497600504895
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 37 ) 
+
+[ 2017-06-16T16:08:30+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=37&uid=49&callback=jQuery18206718534253437127_1497600505347&_=1497600505378
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 37 ) 
+
+[ 2017-06-16T16:08:30+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=37&uid=49&callback=jQuery18208665440540758367_1497600505561&_=1497600505587
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 37 ) 
+
+[ 2017-06-16T16:09:06+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=37&uid=49&callback=jQuery18203126168855327015_1497600610868&_=1497600610897
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 37 ) 
+
+[ 2017-06-16T16:17:11+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=123&uid=49&callback=jQuery18205132579943041959_1497601027051&_=1497601027130
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 123 ) 
+
+[ 2017-06-16T16:18:13+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18202716807563800008_1497601088811&_=1497601088830
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:18:15+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18206268859810980456_1497601090434&_=1497601090465
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:18:15+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18206150960145549369_1497601091048&_=1497601091077
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:07+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18209317057159322022_1497601442967&_=1497601442987
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:10+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18209154983736064477_1497601445429&_=1497601445453
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:11+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery182087225643594561_1497601446468&_=1497601446495
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:11+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18203651779527545542_1497601446707&_=1497601446731
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:11+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18202045640331539813_1497601446885&_=1497601446908
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:11+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18208135529678260316_1497601447122&_=1497601447150
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:12+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18205415002491614704_1497601447267&_=1497601447291
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:12+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery1820122562603144873_1497601447511&_=1497601447534
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:12+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery182026704563872260656_1497601447715&_=1497601447744
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:19+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18206290249441679421_1497601454871&_=1497601454884
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:24+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery182024187395291329605_1497601459956&_=1497601459983
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:25+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18208638541251611227_1497601460496&_=1497601460520
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:25+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18206909628199368445_1497601460901&_=1497601460925
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:26+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18207749961369743872_1497601461307&_=1497601461332
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:26+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18200703631174681818_1497601461509&_=1497601461543
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:26+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery1820001235262395430814_1497601461889&_=1497601461914
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:26+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18209497559057673619_1497601462125&_=1497601462147
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:27+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery18207863138651469661_1497601462326&_=1497601462350
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:24:27+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=104&uid=49&callback=jQuery1820730720372571565_1497601462547&_=1497601462573
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 104 ) 
+
+[ 2017-06-16T16:32:26+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=37&uid=49&callback=jQuery18209136912027757443_1497602009318&_=1497602009370
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 37 ) 
+
+[ 2017-06-16T16:33:40+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=37&uid=49&callback=jQuery18207757577942530195_1497602085169&_=1497602085195
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 37 ) 
+
+[ 2017-06-16T16:34:59+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=154&uid=49&callback=jQuery182010784249421723757_1497602094467&_=1497602094485
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 154 ) 
+
+[ 2017-06-16T16:35:03+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=154&uid=49&callback=jQuery182041702489849811264_1497602099064&_=1497602099079
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 154 ) 
+
+[ 2017-06-16T16:35:22+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=157&uid=49&callback=jQuery18209034622221635074_1497602117269&_=1497602117316
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 157 ) 
+
+[ 2017-06-16T16:35:49+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=37&uid=49&callback=jQuery18207278348451579554_1497602213906&_=1497602214063
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 37 ) 
+
+[ 2017-06-16T16:37:58+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=157&uid=49&callback=jQuery18203101130782639048_1497602343055&_=1497602343083
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 157 ) 
+
+[ 2017-06-16T16:39:51+08:00 ] 115.33.17.148 /junwei/api/course/classDesc?id=156&uid=49&callback=jQuery18206597555471543352_1497602455943&_=1497602456124
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 156 ) 
+
+[ 2017-06-16T16:58:53+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+
+[ 2017-06-16T16:59:52+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+
+[ 2017-06-16T17:00:04+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+
+[ 2017-06-16T17:00:53+08:00 ] 115.33.17.148 /junwei/api/itembank/check
+ERR: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+
+[ 2017-06-16T17:49:17+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=itembank&a=zttimu&eid=2016&etid=0&uid=49
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-16T17:49:34+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-16T17:51:39+08:00 ] 123.121.61.5 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-16T17:52:01+08:00 ] 123.121.61.5 /junwei/index.php?g=api&m=itembank&a=kmlist
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-16T17:52:19+08:00 ] 123.121.61.5 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-16T17:52:43+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=itembank&a=zttimu&eid=2014&etid=0&uid=49
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-16T17:54:19+08:00 ] 123.121.61.5 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-16T17:54:56+08:00 ] 123.121.61.5 /junwei/index.php?g=api&m=itembank&a=kmlist
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-16T19:00:26+08:00 ] 61.148.244.154 /junwei/api/course/classDesc?id=165&uid=49&callback=jQuery182009710593187406147_1497610821202&_=1497610821311
+ERR: 1054:Unknown column 'b.introduction' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 165 ) 
+
+[ 2017-06-16T19:00:29+08:00 ] 61.148.244.154 /junwei/api/course/classDesc?id=165&uid=49&callback=jQuery18206247287324078898_1497610825135&_=1497610825154
+ERR: 1054:Unknown column 'b.introduction' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 165 ) 
+
+[ 2017-06-16T19:00:30+08:00 ] 61.148.244.154 /junwei/api/course/classDesc?id=165&uid=49&callback=jQuery18208487926135898416_1497610825979&_=1497610826002
+ERR: 1054:Unknown column 'b.introduction' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 165 ) 
+

@@ -1,0 +1,162 @@
+[ 2017-05-06T10:45:22+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list
+ERR: 无法加载控制器:Course
+
+[ 2017-05-06T10:46:32+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck
+ERR: syntax error, unexpected 'Users' (T_STRING), expecting ']'
+
+[ 2017-05-06T10:46:40+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=17600320345
+ERR: syntax error, unexpected 'Users' (T_STRING), expecting ']'
+
+[ 2017-05-06T10:58:58+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=18033696192
+ERR: syntax error, unexpected 'Users' (T_STRING), expecting ']'
+
+[ 2017-05-06T10:59:08+08:00 ] 101.226.33.228 /junwei/index.php?g=api&m=user&a=rcheck&phone=18033696192
+ERR: syntax error, unexpected 'Users' (T_STRING), expecting ']'
+
+[ 2017-05-06T11:00:36+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=18033696192
+ERR: syntax error, unexpected 'Users' (T_STRING), expecting ']'
+
+[ 2017-05-06T11:23:48+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-06T12:35:30+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=151102745042.
+ERR: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+
+[ 2017-05-06T12:36:00+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=151102745042.
+ERR: 无法加载控制器:User
+
+[ 2017-05-06T12:36:05+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=151102745042
+ERR: 无法加载控制器:User
+
+[ 2017-05-06T12:36:16+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=151102745042
+ERR: 无法加载控制器:User
+
+[ 2017-05-06T12:36:54+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=18033696192
+ERR: 无法加载控制器:User
+
+[ 2017-05-06T12:46:57+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=fcheck&phone=15110274504
+ERR: Call to a member function where() on null
+
+[ 2017-05-06T12:48:22+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=fcheck&phone=15110274504
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile= ) LIMIT 1  
+
+[ 2017-05-06T12:50:15+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND check= ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile= AND check= ) LIMIT 1  
+
+[ 2017-05-06T13:28:33+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND check= ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile= AND check= ) LIMIT 1  
+
+[ 2017-05-06T13:30:06+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register&phone=18033696192
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'check= ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile=18033696192 AND check= ) LIMIT 1  
+
+[ 2017-05-06T13:30:20+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register&phone=18033696192&check=699903
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'check=699903 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile=18033696192 AND check=699903 ) LIMIT 1  
+
+[ 2017-05-06T13:34:11+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register&phone=18033696192
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'check=755268 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile=18033696192 AND check=755268 ) LIMIT 1  
+
+[ 2017-05-06T13:34:21+08:00 ] 180.153.214.190 /junwei/index.php?g=api&m=user&a=register&phone=18033696192
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'check=755268 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile=18033696192 AND check=755268 ) LIMIT 1  
+
+[ 2017-05-06T13:40:34+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register&phone=18033696192
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( Array ) LIMIT 1  
+
+[ 2017-05-06T13:45:45+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'check=755268 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile=18033696192 and check=755268 ) LIMIT 1  
+
+[ 2017-05-06T13:46:32+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'check='755268' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( mobile='18033696192' and check='755268' ) LIMIT 1  
+
+[ 2017-05-06T13:58:17+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=login
+ERR: 1054:Unknown column 'YrKlJYVrJ8QazgOGTsLz' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=YrKlJYVrJ8QazgOGTsLz ) LIMIT 1  
+
+[ 2017-05-06T14:01:33+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=login&phone=18033696192&password=123456
+ERR: 1054:Unknown column 'TrYvt2cEAZdlgWCDYse1' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=TrYvt2cEAZdlgWCDYse1 ) LIMIT 1  
+
+[ 2017-05-06T14:03:59+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=login&phone=18033696192&password=123456
+ERR: 1054:Unknown column 'i2ol1AuqCuLLg68Ty8Vo' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=i2ol1AuqCuLLg68Ty8Vo ) LIMIT 1  
+
+[ 2017-05-06T14:04:10+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=login&phone=18033696192&password=123456
+ERR: 1054:Unknown column '3ayB1M6qTw32OkIut4m3' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=3ayB1M6qTw32OkIut4m3 ) LIMIT 1  
+
+[ 2017-05-06T14:11:06+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=login&phone=18033696192&password=123456
+ERR: 1054:Unknown column 'iCgYd9n0YNe88NQ1yPWH' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=iCgYd9n0YNe88NQ1yPWH ) LIMIT 1  
+
+[ 2017-05-06T14:15:04+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=1548484646949494
+ERR: syntax error, unexpected ')'
+
+[ 2017-05-06T14:15:07+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=1548484646949494
+ERR: syntax error, unexpected ')'
+
+[ 2017-05-06T14:15:14+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=rcheck&phone=1548484646949494
+ERR: syntax error, unexpected ')'
+
+[ 2017-05-06T14:19:15+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=login
+ERR: 1054:Unknown column '21ClOkb8dqK3uUCksn8k' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=21ClOkb8dqK3uUCksn8k ) LIMIT 1  
+
+[ 2017-05-06T14:19:25+08:00 ] 112.65.193.15 /junwei/index.php?g=api&m=user&a=login
+ERR: 1054:Unknown column 'wHOBfTFlp1c9T1WFoGAG' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=wHOBfTFlp1c9T1WFoGAG ) LIMIT 1  
+
+[ 2017-05-06T14:24:08+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register&check=17704820771&password=17704820771&phone=17704820771
+ERR: 1054:Unknown column 'v7ZcTL94GNOYHFeqcP5B' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=v7ZcTL94GNOYHFeqcP5B ) LIMIT 1  
+
+[ 2017-05-06T14:24:09+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register&check=17704820771&password=17704820771&phone=17704820771
+ERR: 1054:Unknown column 'ezJ0rWFQnihp416u5OGR' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=ezJ0rWFQnihp416u5OGR ) LIMIT 1  
+
+[ 2017-05-06T14:24:16+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register&check=17704820771&password=17704820771&phone=17704820771
+ERR: 1054:Unknown column 'uF8wMDpukyCfJxzAssyr' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=uF8wMDpukyCfJxzAssyr ) LIMIT 1  
+
+[ 2017-05-06T14:29:41+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register&phone=18033696192&check=755268&password=123456
+ERR: 1054:Unknown column 'f6d2seU8eR2xMXDvMLd2' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( token=f6d2seU8eR2xMXDvMLd2 ) LIMIT 1  
+
+[ 2017-05-06T14:41:35+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=reset&token=ZMLVvZh4RhHWWRqg5sxR&oldpas=123456&newpas=654321
+ERR: 1054:Unknown column 'ZMLVvZh4RhHWWRqg5sxR' in 'where clause'
+ [ SQL语句 ] : UPDATE `cmf_users` SET `user_pass`='' WHERE ( token=ZMLVvZh4RhHWWRqg5sxR )
+
+[ 2017-05-06T14:42:23+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=reset&token=ZMLVvZh4RhHWWRqg5sxR&oldpas=123456&newpas=654321
+ERR: 1054:Unknown column 'ZMLVvZh4RhHWWRqg5sxR' in 'where clause'
+ [ SQL语句 ] : UPDATE `cmf_users` SET `user_pass`='###b14971056de15552bac4d769f88288a0' WHERE ( token=ZMLVvZh4RhHWWRqg5sxR )
+
+[ 2017-05-06T14:54:35+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=login&phone=13051529252&password=654321&check=573565
+ERR: 无法加载控制器:User
+
+[ 2017-05-06T14:58:11+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=login
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_users` SET `token`='G8THGLbKI0DvfuFAmitS' WHERE ( mobile= )
+
+[ 2017-05-06T14:58:13+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_users` SET `mobile`='',`user_pass`='###b14971056de15552bac4d769f88288a0',`token`='CpffPaitKAovxMECCf2U',`create_time`='2017-05-06 14:58:13' WHERE ( mobile= )
+
+[ 2017-05-06T14:58:13+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_users` SET `mobile`='',`user_pass`='###b14971056de15552bac4d769f88288a0',`token`='eu3juxvGgey23U3GZ3ze',`create_time`='2017-05-06 14:58:13' WHERE ( mobile= )
+
+[ 2017-05-06T14:58:13+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=fcheck&phone=15110274504
+ERR: 非法操作:fcheck
+
+[ 2017-05-06T15:19:02+08:00 ] 115.33.19.66 /junwei/index.php?g=api&m=user&a=register&check=&password=1234566&phone=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_users` SET `mobile`='',`user_pass`='###a1c9ea01c7fc1ce2f6357ea322539207',`token`='zbjIBMsrQkIj98sZ73XQ',`create_time`='2017-05-06 15:19:02' WHERE ( mobile= )
+

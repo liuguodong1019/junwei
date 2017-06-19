@@ -1,0 +1,95 @@
+[ 2017-05-19T11:22:50+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:23:24+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:23:24+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:23:25+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:23:25+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:23:25+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:23:25+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:23:25+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:24:06+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:24:07+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:24:07+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:24:07+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:24:09+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'uid' in 'field list'
+ [ SQL语句 ] : SELECT `uid` FROM `cmf_users` WHERE ( token = '' ) LIMIT 1  
+
+[ 2017-05-19T11:24:27+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'body' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`total_amount`,`subject`,`body` FROM `cmf_order` WHERE ( course_id = 1 ) LIMIT 1  
+
+[ 2017-05-19T11:24:28+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'body' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`total_amount`,`subject`,`body` FROM `cmf_order` WHERE ( course_id = 1 ) LIMIT 1  
+
+[ 2017-05-19T11:24:28+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'body' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`total_amount`,`subject`,`body` FROM `cmf_order` WHERE ( course_id = 1 ) LIMIT 1  
+
+[ 2017-05-19T11:24:28+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'body' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`total_amount`,`subject`,`body` FROM `cmf_order` WHERE ( course_id = 1 ) LIMIT 1  
+
+[ 2017-05-19T11:24:29+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'body' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`total_amount`,`subject`,`body` FROM `cmf_order` WHERE ( course_id = 1 ) LIMIT 1  
+
+[ 2017-05-19T11:24:29+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'body' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`total_amount`,`subject`,`body` FROM `cmf_order` WHERE ( course_id = 1 ) LIMIT 1  
+
+[ 2017-05-19T11:24:29+08:00 ] 127.0.0.1 /ThinkCMFX/api/alipay/order
+ERR: 1054:Unknown column 'body' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`total_amount`,`subject`,`body` FROM `cmf_order` WHERE ( course_id = 1 ) LIMIT 1  
+
+[ 2017-05-19T13:29:32+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/rew
+ERR: Class 'Api\Controller\WxPay1Controller' not found
+
+[ 2017-05-19T13:57:00+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/rew
+ERR: curl出错，错误码:60
+
+[ 2017-05-19T14:14:52+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/rew
+ERR: curl出错，错误码:60
+
+[ 2017-05-19T18:09:41+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/rew
+ERR: 非法操作:rew
+
+[ 2017-05-19T18:09:44+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/rew
+ERR: 非法操作:rew
+

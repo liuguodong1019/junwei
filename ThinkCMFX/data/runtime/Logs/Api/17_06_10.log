@@ -1,0 +1,1043 @@
+[ 2017-06-10T09:43:50+08:00 ] 115.33.48.151 /junwei/api/itembank/kmlist
+ERR: syntax error, unexpected 'as' (T_AS)
+
+[ 2017-06-10T10:03:04+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Think\Model:getlsatsql方法不存在！
+
+[ 2017-06-10T10:19:15+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:19:35+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 1054:Unknown column 'a.id' in 'on clause'
+ [ SQL语句 ] : SELECT b.id,b.cover,b.detail_cover,b.num_class,a.create_time,d.name,b.course_name,b.introduction,b.startDate,b.invalidDate,b.is_free,b.status,b.now_price,b.status,b.old_price,b.number,b.reply_url,c.pay_status FROM cmf_course_collection as a INNER JOIN cmf_course as b ON a.course_id = b.id INNER JOIN cmf_order as c ON a.id = c.course_id left join cmf_lector as d ON a.lector_id = d.l_id  WHERE ( a.uid = '49' and a.type = 1 ) 
+
+[ 2017-06-10T10:20:56+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT b.id,b.cover,b.detail_cover,b.num_class,a.create_time,d.name,b.course_name,b.introduction,b.startDate,b.invalidDate,b.is_free,b.status,b.now_price,b.status,b.old_price,b.number,b.reply_url,c.pay_status FROM cmf_course_collection as a INNER JOIN cmf_course as b ON a.course_id = b.id INNER JOIN cmf_order as c ON a.course_id = c.course_id left join cmf_lector as d ON a.lector_id = d.l_id  WHERE ( a.uid = '49' and a.type = 1 ) 
+
+[ 2017-06-10T10:21:34+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 1054:Unknown column 'd.name' in 'field list'
+ [ SQL语句 ] : SELECT b.id,b.cover,b.detail_cover,b.num_class,a.create_time,d.name,b.course_name,b.introduction,b.startDate,b.invalidDate,b.is_free,b.status,b.now_price,b.status,b.old_price,b.number,b.reply_url,c.pay_status FROM cmf_course_collection as a INNER JOIN cmf_course as b ON a.course_id = b.id INNER JOIN cmf_order as c ON a.course_id = c.course_id  WHERE ( a.uid = '49' and a.type = 1 ) 
+
+[ 2017-06-10T10:22:21+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:23:39+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 1054:Unknown column 'a.uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( a.uid = '49' and a.type = 1 ) 
+
+[ 2017-06-10T10:25:15+08:00 ] 115.33.48.151 /junwei/api/itembank/kmlist
+ERR: syntax error, unexpected '='
+
+[ 2017-06-10T10:25:49+08:00 ] 115.33.48.151 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '='
+
+[ 2017-06-10T10:25:54+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:26:19+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:26:48+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:29:25+08:00 ] 115.33.48.151 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-10T10:36:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'b.uid = '49' )' at line 1
+ [ SQL语句 ] : SELECT * FROM cmf_course_collection as a left join cmf_order as b ON a.course_id = b.course_id  WHERE ( a.uid = '49' and a.type = 1  b.uid = '49' ) 
+
+[ 2017-06-10T10:38:20+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:39:28+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:40:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:41:39+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:42:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:46:39+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:46:49+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:46:52+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:54:32+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\Controller\Response' not found
+
+[ 2017-06-10T10:55:09+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: syntax error, unexpected 'class' (T_CLASS)
+
+[ 2017-06-10T10:55:16+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'ResponseController' not found
+
+[ 2017-06-10T10:55:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Response' not found
+
+[ 2017-06-10T10:55:31+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 无法加载控制器:Usercollect
+
+[ 2017-06-10T10:55:38+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\Controller\Response' not found
+
+[ 2017-06-10T10:55:39+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\Controller\Response' not found
+
+[ 2017-06-10T10:55:41+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\Controller\Response' not found
+
+[ 2017-06-10T10:55:43+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\Controller\Response' not found
+
+[ 2017-06-10T10:56:17+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\Controller\Response' not found
+
+[ 2017-06-10T10:57:00+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T10:58:00+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Admin\Api\Response' not found
+
+[ 2017-06-10T10:58:13+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\Response' not found
+
+[ 2017-06-10T10:58:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\ResponseController' not found
+
+[ 2017-06-10T10:58:40+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\ResponseController' not found
+
+[ 2017-06-10T10:58:54+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 无法加载控制器:Usercollect
+
+[ 2017-06-10T10:58:55+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'ResponseController' not found
+
+[ 2017-06-10T10:58:56+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'ResponseController' not found
+
+[ 2017-06-10T10:58:56+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'ResponseController' not found
+
+[ 2017-06-10T10:58:57+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'ResponseController' not found
+
+[ 2017-06-10T10:59:08+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\ResponseController' not found
+
+[ 2017-06-10T10:59:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 无法加载控制器:Usercollect
+
+[ 2017-06-10T10:59:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 无法加载控制器:Usercollect
+
+[ 2017-06-10T10:59:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Admin\Api\ResponseController' not found
+
+[ 2017-06-10T10:59:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Admin\Api\ResponseController' not found
+
+[ 2017-06-10T10:59:27+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Admin\Api\ResponseController' not found
+
+[ 2017-06-10T11:00:16+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T11:00:16+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T11:01:32+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T11:21:17+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T11:27:17+08:00 ] 115.33.48.151 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '$str' (T_VARIABLE)
+
+[ 2017-06-10T14:29:07+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T14:29:22+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T14:29:38+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T14:30:11+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T14:31:07+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T14:31:21+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T14:31:38+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T14:32:10+08:00 ] 101.226.103.59 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T14:33:14+08:00 ] 58.251.80.62 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T14:35:11+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:03:16+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:05:12+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:09:26+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:09:37+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:09:53+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:10:24+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:13:25+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:19:35+08:00 ] 114.242.250.136 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-10T15:20:32+08:00 ] 115.33.48.151 /junwei/api/itembank/kmlist
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-10T15:21:40+08:00 ] 115.33.48.151 /junwei/api/itembank/kmlist
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-10T15:25:42+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:25:54+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:26:10+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:26:42+08:00 ] 58.251.80.53 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:29:44+08:00 ] 183.3.234.47 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:30:25+08:00 ] 114.242.249.251 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-10T15:32:48+08:00 ] 114.242.249.251 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 无法加载控制器:Usercollect
+
+[ 2017-06-10T15:33:18+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:34:57+08:00 ] 115.33.48.151 /junwei/api/itembank/kmlist
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-10T15:34:57+08:00 ] 115.33.48.151 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-10T15:35:13+08:00 ] 58.251.80.62 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:35:13+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:35:29+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:35:46+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:36:19+08:00 ] 183.3.234.59 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:39:20+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:39:47+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 无法加载控制器:Usercollect
+
+[ 2017-06-10T15:39:49+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 无法加载控制器:Usercollect
+
+[ 2017-06-10T15:42:09+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:42:26+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:42:42+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:43:14+08:00 ] 58.251.80.53 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:43:28+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:44:02+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:44:03+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:44:03+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:44:06+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:44:06+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:44:06+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:46:16+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T15:51:49+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:51:50+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:51:50+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:51:50+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:51:50+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:51:51+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:51:51+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:51:51+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:51:52+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T15:59:46+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:03:20+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:05:14+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:07:57+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:08:18+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:08:35+08:00 ] 58.251.80.53 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:08:41+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:08:57+08:00 ] 58.251.80.48 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:09:08+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:09:14+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:09:21+08:00 ] 101.226.103.69 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:09:47+08:00 ] 183.3.234.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:12:10+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:12:49+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:13:29+08:00 ] 101.226.103.69 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:16:19+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:20:44+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=downshow&page=1&uid=56
+ERR: syntax error, unexpected 'if' (T_IF)
+
+[ 2017-06-10T16:23:35+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:23:36+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:23:37+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:23:37+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:23:38+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:23:38+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:23:39+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:26:47+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:27:02+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:27:10+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:27:11+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:27:11+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:27:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:27:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:27:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:27:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:27:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:28:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:28:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:28:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:28:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:28:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:28:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:28:30+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:29:47+08:00 ] 58.251.80.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:30:10+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:30:11+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:30:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:30:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:30:13+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:30:14+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:30:14+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:27+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:27+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:28+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:28+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 112 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:52+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 18 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:52+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 18 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:53+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 18 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:53+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 18 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:58+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 18 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:31:59+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 18 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:32:01+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 18 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:32:01+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 18 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:32:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 46 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:32:13+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 46 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:32:15+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( course_id = 46 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:33:21+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:35:16+08:00 ] 58.251.80.48 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:35:34+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT `collection_num` FROM `cmf_course` WHERE ( id = 46 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:37:45+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT `collection_num` FROM `cmf_course` WHERE ( id = 45 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:39:23+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:42:11+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:42:21+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:22+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:42:51+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:43:30+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:45:00+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=collectitem&uid=49&status=1&live_id=48
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:45:46+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=collectitem&uid=49&status=1&live_id=48
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:45:48+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=collectitem&uid=49&status=1&live_id=48
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 49 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:46:20+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T16:46:42+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=collectitem&uid=49&status=1&live_id=48
+ERR: 1048:Column 'course_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `cmf_course_collection` (`course_id`,`create_time`,`uid`,`type`) VALUES (NULL,'1497084402','49','1')
+
+[ 2017-06-10T16:48:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=usercollect&a=collectitem&uid=49&status=1&live_id=48
+ERR: 1048:Column 'course_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `cmf_course_collection` (`course_id`,`create_time`,`uid`,`type`) VALUES (NULL,'1497084506','49','1')
+
+[ 2017-06-10T16:50:19+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT `collection_num` FROM `cmf_course` WHERE ( id = 36 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:50:41+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT `collection_num` FROM `cmf_course` WHERE ( id = 111 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:52:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:12+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:13+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:14+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:17+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:17+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:18+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:22+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:22+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:52:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T16:57:04+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT `collection_num` FROM `cmf_course` WHERE ( id = 36 AND uid = 49 ) LIMIT 1  
+
+[ 2017-06-10T16:59:50+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:00:21+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:22+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:22+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:24+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:25+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:26+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:33+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:34+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:34+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:34+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:35+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:00:35+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_clooection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_clooection`
+
+[ 2017-06-10T17:02:30+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:31+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:31+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:32+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:32+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:32+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:47+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:48+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:49+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:49+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:50+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:50+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:51+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:51+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:51+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:02:52+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectitem
+ERR: 1146:Table 'thinkcmf.cmf_course_cllection' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_course_cllection`
+
+[ 2017-06-10T17:09:24+08:00 ] 101.226.103.69 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:12:13+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:12:53+08:00 ] 58.251.80.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:13:33+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:16:21+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:29:51+08:00 ] 58.251.80.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:33:22+08:00 ] 58.251.80.53 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:35:18+08:00 ] 58.251.80.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:39:25+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:42:13+08:00 ] 61.148.242.44 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T17:42:14+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:42:55+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:46:24+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T17:59:38+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T18:05:15+08:00 ] 114.242.249.234 /junwei/index.php?g=Api&m=Personal&a=showperson&uid=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `user_nicename`,`mobile`,`user_email`,`avatar` FROM `cmf_users` WHERE ( id =  ) LIMIT 1  
+
+[ 2017-06-10T18:12:17+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T18:12:57+08:00 ] 183.3.234.55 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T18:13:35+08:00 ] 58.251.80.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T18:29:57+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T18:39:27+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T18:46:25+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T19:12:19+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-10T19:12:58+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+

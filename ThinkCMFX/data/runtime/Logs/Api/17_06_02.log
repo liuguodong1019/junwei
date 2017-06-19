@@ -1,0 +1,121 @@
+[ 2017-06-02T10:47:42+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=0&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T10:48:21+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&page=1&eid=0&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T10:48:36+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&page=1&eid=1&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T10:48:41+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=1&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T10:49:43+08:00 ] 115.33.35.202 /junwei/api/itembank/zttime&eid=1&etid=2016
+ERR: 非法操作:zttime&eid=1&etid=2016
+
+[ 2017-06-02T10:50:41+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=2016&etid=0
+ERR: 非法操作:zttime
+
+[ 2017-06-02T10:51:32+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&page=1&eid=2016&etid=0
+ERR: 非法操作:zttime
+
+[ 2017-06-02T10:52:22+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=2016&etid=0
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:19:00+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=2016&etid=0
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:19:01+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&page=1&eid=2016&etid=0
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:19:08+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=2016&etid=0
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:19:12+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=1&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:19:14+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&page=1&eid=1&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:19:14+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&page=1&eid=0&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:19:15+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=0&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:19:15+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=0&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:31:46+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=0&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:31:47+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&page=1&eid=0&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:31:47+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&page=1&eid=1&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:31:48+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=1&etid=2016
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:31:49+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=2016&etid=0
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:31:49+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&page=1&eid=2016&etid=0
+ERR: 非法操作:zttime
+
+[ 2017-06-02T14:31:50+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zttime&eid=2016&etid=0
+ERR: 非法操作:zttime
+
+[ 2017-06-02T16:26:14+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=zjtimu&sid=2&ctid=31
+ERR: 非法操作:zjtimu
+
+[ 2017-06-02T16:26:23+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=kmtimu
+ERR: 1054:Unknown column 'stitle' in 'field list'
+ [ SQL语句 ] : SELECT `stitle` FROM `cmf_chapter` WHERE ( sid='8' ) LIMIT 1  
+
+[ 2017-06-02T16:26:29+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=kmtimu
+ERR: 1054:Unknown column 'stitle' in 'field list'
+ [ SQL语句 ] : SELECT `stitle` FROM `cmf_chapter` WHERE ( sid='8' ) LIMIT 1  
+
+[ 2017-06-02T16:26:32+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=kmtimu
+ERR: 1054:Unknown column 'stitle' in 'field list'
+ [ SQL语句 ] : SELECT `stitle` FROM `cmf_chapter` WHERE ( sid='8' ) LIMIT 1  
+
+[ 2017-06-02T16:26:39+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=kmtimu&sid=2&ctid=31
+ERR: 1054:Unknown column 'stitle' in 'field list'
+ [ SQL语句 ] : SELECT `stitle` FROM `cmf_chapter` WHERE ( sid='2' ) LIMIT 1  
+
+[ 2017-06-02T16:53:06+08:00 ] 115.33.35.202 /junwei/api/itembank/check
+ERR: syntax error, unexpected '{'
+
+[ 2017-06-02T16:53:11+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '{'
+
+[ 2017-06-02T16:53:16+08:00 ] 101.226.66.177 /junwei/api/itembank/check
+ERR: syntax error, unexpected '{'
+
+[ 2017-06-02T16:53:47+08:00 ] 115.33.35.202 /junwei/api/itembank/check
+ERR: syntax error, unexpected '=', expecting ')'
+
+[ 2017-06-02T16:53:48+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=kmlist
+ERR: syntax error, unexpected '=', expecting ')'
+
+[ 2017-06-02T16:54:11+08:00 ] 115.33.35.202 /junwei/api/itembank/kmlist
+ERR: syntax error, unexpected '=', expecting ')'
+
+[ 2017-06-02T16:54:51+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '=', expecting ')'
+
+[ 2017-06-02T16:55:10+08:00 ] 115.33.35.202 /junwei/api/itembank/check
+ERR: syntax error, unexpected '=', expecting ')'
+
+[ 2017-06-02T16:55:19+08:00 ] 115.33.35.202 /junwei/index.php?g=api&m=itembank&a=kmlist
+ERR: syntax error, unexpected '=', expecting ')'
+
+[ 2017-06-02T16:55:59+08:00 ] 115.33.35.202 /junwei/api/itembank/check
+ERR: syntax error, unexpected '=', expecting ')'
+
+[ 2017-06-02T16:59:57+08:00 ] 115.33.35.202 /junwei/api/itembank/check
+ERR: syntax error, unexpected ';'
+

@@ -1,0 +1,166 @@
+[ 2017-06-15T06:45:36+08:00 ] 221.223.182.98 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-15T10:59:13+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T10:59:23+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T10:59:27+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T10:59:33+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T10:59:37+08:00 ] 223.104.3.141 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T10:59:54+08:00 ] 223.104.3.141 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T11:00:14+08:00 ] 223.104.3.141 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T11:00:22+08:00 ] 223.104.3.141 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T11:00:34+08:00 ] 223.104.3.141 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T11:00:41+08:00 ] 223.104.3.141 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T11:01:26+08:00 ] 223.104.3.141 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T11:02:40+08:00 ] 223.104.3.141 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T11:02:45+08:00 ] 223.104.3.141 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=69
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 69 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 69 ) LIMIT 1  
+
+[ 2017-06-15T11:04:47+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=73
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 73 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 73 ) LIMIT 1  
+
+[ 2017-06-15T11:04:50+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=73
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 73 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 73 ) LIMIT 1  
+
+[ 2017-06-15T11:04:53+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=73
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 73 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 73 ) LIMIT 1  
+
+[ 2017-06-15T11:04:57+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=73
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 73 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 73 ) LIMIT 1  
+
+[ 2017-06-15T11:06:18+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=73
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 73 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 73 ) LIMIT 1  
+
+[ 2017-06-15T11:06:23+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=73
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 73 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 73 ) LIMIT 1  
+
+[ 2017-06-15T11:06:26+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=73
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 73 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 73 ) LIMIT 1  
+
+[ 2017-06-15T11:19:52+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercourse&a=downshow&uid=73&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 73 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 73 ) LIMIT 1  
+
+[ 2017-06-15T13:33:12+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') ORDER BY cmf_video_record.vid desc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_lector.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid =  ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-15T13:33:12+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') ORDER BY cmf_video_record.vid desc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_lector.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid =  ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-15T14:21:16+08:00 ] 115.33.17.148 /junwei/vip?page=1
+ERR: Unsupported operand types
+
+[ 2017-06-15T14:21:54+08:00 ] 114.242.249.132 /junwei/index.php?g=Api&m=Usercollect&a=downshow&uid=49&page=1
+ERR: 无法加载控制器:Usercollect
+
+[ 2017-06-15T14:21:54+08:00 ] 114.242.249.132 /junwei/index.php?g=Api&m=Usercollect&a=downshow&uid=49&page=1
+ERR: 无法加载控制器:Usercollect
+
+[ 2017-06-15T14:22:03+08:00 ] 114.242.249.132 /junwei/index.php?g=Api&m=Usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\Controller\ResponseController' not found
+
+[ 2017-06-15T14:22:04+08:00 ] 114.242.249.132 /junwei/index.php?g=Api&m=Usercollect&a=downshow&uid=49&page=1
+ERR: Class 'Api\Controller\ResponseController' not found
+
+[ 2017-06-15T14:38:35+08:00 ] 114.242.249.132 /junwei/index.php?g=Api&m=Usercourse&a=downshow&uid=49&page=1
+ERR: 无法加载控制器:Usercourse
+
+[ 2017-06-15T15:41:09+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=course&a=get_class&id=157&uid=69
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 157 ) 
+
+[ 2017-06-15T15:41:12+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=course&a=get_class&id=157&uid=69
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 157 ) 
+
+[ 2017-06-15T15:41:20+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=course&a=get_class&id=157&uid=69
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 157 ) 
+
+[ 2017-06-15T15:53:56+08:00 ] 36.102.240.244 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 72 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 72 )
+
+[ 2017-06-15T15:56:28+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=course&a=get_class&id=155&uid=72
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 155 ) 
+
+[ 2017-06-15T15:56:31+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=course&a=get_class&id=157&uid=72
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 157 ) 
+
+[ 2017-06-15T15:56:36+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=course&a=get_class&id=156&uid=72
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 156 ) 
+
+[ 2017-06-15T15:56:46+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=course&a=get_class&id=157&uid=72
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 157 ) 
+
+[ 2017-06-15T15:56:55+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=course&a=get_class&id=156&uid=72
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 156 ) 
+
+[ 2017-06-15T15:57:52+08:00 ] 115.33.17.148 /junwei/index.php?g=api&m=course&a=get_class&id=156&uid=72
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 156 ) 
+
+[ 2017-06-15T16:07:14+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 72 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 72 )
+
+[ 2017-06-15T16:11:54+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 72 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 72 )
+
+[ 2017-06-15T16:27:36+08:00 ] 115.33.17.148 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 72 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 72 )
+

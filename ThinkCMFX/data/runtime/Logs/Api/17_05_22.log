@@ -1,0 +1,217 @@
+[ 2017-05-22T07:28:54+08:00 ] 101.40.201.44 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-22T07:48:37+08:00 ] 101.40.201.44 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-22T09:01:57+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-22T09:02:30+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-22T09:04:35+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-22T09:04:45+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-22T09:04:47+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-22T09:12:25+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-22T09:16:33+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-22T11:19:17+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=personal&a=uplaoded
+ERR: 无法加载控制器:Personal
+
+[ 2017-05-22T11:20:13+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=personal&a=uplaoded
+ERR: 无法加载控制器:Personal
+
+[ 2017-05-22T11:20:29+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=personal&a=uplaoded
+ERR: 无法加载控制器:Personal
+
+[ 2017-05-22T16:22:21+08:00 ] 52.1.11.160 /junwei/index.php?g=api&m=alipay&a=notifyUrl&payment
+ERR: Class 'AopClient' not found
+
+[ 2017-05-22T19:51:55+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=itembank&a=list
+ERR: Call to undefined function Api\Controller\array_value()
+
+[ 2017-05-22T20:39:48+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class&id=104&uid=56
+ERR: 1054:Unknown column 'type' in 'field list'
+ [ SQL语句 ] : SELECT `type` FROM `cmf_course_collection` WHERE ( uid = 56 ) LIMIT 1  
+
+[ 2017-05-22T20:40:01+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class&id=104&uid=56
+ERR: 1054:Unknown column 'type' in 'field list'
+ [ SQL语句 ] : SELECT `type` FROM `cmf_course_collection` WHERE ( uid = 56 ) LIMIT 1  
+
+[ 2017-05-22T20:40:05+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class&id=104&uid=56
+ERR: 1054:Unknown column 'type' in 'field list'
+ [ SQL语句 ] : SELECT `type` FROM `cmf_course_collection` WHERE ( uid = 56 ) LIMIT 1  
+
+[ 2017-05-22T20:40:33+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class&id=104&uid=56
+ERR: 1054:Unknown column 'type' in 'field list'
+ [ SQL语句 ] : SELECT `type` FROM `cmf_course_collection` WHERE ( uid = 56 ) LIMIT 1  
+
+[ 2017-05-22T20:43:41+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class&id=104&uid=56
+ERR: 1054:Unknown column 'type' in 'field list'
+ [ SQL语句 ] : SELECT `type` FROM `cmf_course_collection` WHERE ( uid = 56 ) LIMIT 1  
+
+[ 2017-05-22T20:44:12+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class&id=104&uid=56
+ERR: 1054:Unknown column 'type' in 'field list'
+ [ SQL语句 ] : SELECT `type` FROM `cmf_course_collection` WHERE ( uid = 56 ) LIMIT 1  
+
+[ 2017-05-22T20:44:13+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class&id=104&uid=56
+ERR: 1054:Unknown column 'type' in 'field list'
+ [ SQL语句 ] : SELECT `type` FROM `cmf_course_collection` WHERE ( uid = 56 ) LIMIT 1  
+
+[ 2017-05-22T20:44:14+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class&id=104&uid=56
+ERR: 1054:Unknown column 'type' in 'field list'
+ [ SQL语句 ] : SELECT `type` FROM `cmf_course_collection` WHERE ( uid = 56 ) LIMIT 1  
+
+[ 2017-05-22T20:44:16+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=course&a=get_class&id=104&uid=56
+ERR: 1054:Unknown column 'type' in 'field list'
+ [ SQL语句 ] : SELECT `type` FROM `cmf_course_collection` WHERE ( uid = 56 ) LIMIT 1  
+
+[ 2017-05-22T20:44:47+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:44:52+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:45:06+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:48:56+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order&uid=56&course_id=104&now_price=10&pay_ways=1&course_name=123&introduction=666
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:50:42+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order&uid=56&course_id=104&now_price=10&pay_ways=1&course_name=123&introduction=666
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:04+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:12+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:41+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:47+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:48+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:49+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:50+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:53+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:54+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:56+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:52:58+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:53:00+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:53:01+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:53:03+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:53:05+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:53:15+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:53:16+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:53:19+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:53:20+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:57:51+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:57:56+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:57:58+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:58:45+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: 1146:Table 'thinkcmf.cmf_status' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_status`
+
+[ 2017-05-22T20:59:14+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: Class 'AopClient' not found
+
+[ 2017-05-22T20:59:17+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: Class 'AopClient' not found
+
+[ 2017-05-22T20:59:18+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: Class 'AopClient' not found
+
+[ 2017-05-22T21:00:18+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order
+ERR: Class 'AopClient' not found
+
+[ 2017-05-22T21:00:47+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order&uid=56&course_id=104&now_price=10&pay_ways=1&course_name=123&introduction=666
+ERR: Class 'AopClient' not found
+
+[ 2017-05-22T21:03:09+08:00 ] 115.33.84.78 /junwei/index.php?g=api&m=alipay&a=order&uid=56&course_id=104&now_price=10&pay_ways=1&course_name=123&introduction=666
+ERR: Class 'AlipayTradeAppPayRequest' not found
+

@@ -1,0 +1,186 @@
+[ 2017-05-21T19:36:48+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:36:50+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:37:18+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:37:22+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:38:07+08:00 ] 114.242.250.84 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:38:20+08:00 ] 114.242.250.84 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:38:52+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:39:00+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:39:36+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:40:22+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:40:23+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:40:26+08:00 ] 114.242.250.84 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:41:12+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:41:20+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:44:25+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:44:25+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:45:00+08:00 ] 114.242.250.84 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:50:52+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:50:53+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:50:53+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:50:54+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:55:09+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:55:10+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:55:12+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:55:17+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:56:40+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T19:57:25+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:05:22+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:22:22+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:22:23+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:25:10+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:25:12+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:25:14+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:34:15+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:37:13+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:37:14+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:40:32+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:40:33+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:40:58+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:41:00+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:41:02+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:48:35+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T20:48:36+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:03:08+08:00 ] 114.245.255.176 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:04:05+08:00 ] 211.150.89.11 /junwei/index.php/live_status?ClassNo=XpWWoO3STa&Operator=33222091&Action=110&Affected=33222091&totalusernum=0
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:09:10+08:00 ] 211.150.89.11 /junwei/index.php/live_status?ClassNo=XpWWoO3STa&Operator=0&Action=105&Affected=0&totalusernum=0
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:11:37+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:11:40+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:15:18+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:34:23+08:00 ] 114.242.250.88 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:50:06+08:00 ] 122.71.230.147 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:50:12+08:00 ] 122.71.230.147 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:51:42+08:00 ] 122.71.230.147 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:51:46+08:00 ] 122.71.230.147 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:51:49+08:00 ] 122.71.230.147 /junwei/index.php?g=api&m=course&a=past_live&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:52:07+08:00 ] 122.71.230.147 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:53:29+08:00 ] 211.150.89.11 /junwei/index.php/live_status?ClassNo=284iqXm2bi&Operator=0&Action=102&Affected=0&totalusernum=0
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T21:53:29+08:00 ] 211.150.89.11 /junwei/index.php/live_status?ClassNo=284iqXm2bi&Operator=33222091&Action=101&Affected=33222091&totalusernum=1
+ERR: 无法加载控制器:Course
+
+[ 2017-05-21T22:47:48+08:00 ] 101.40.201.44 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-21T23:18:05+08:00 ] 101.40.201.44 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+
+[ 2017-05-21T23:18:09+08:00 ] 101.40.201.44 /junwei/index.php?g=api&m=course&a=get_class_list&page=1
+ERR: 1054:Unknown column 'cmf_create_time' in 'order clause'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.course_name,cmf_course.startDate,cmf_course.invalidDate,cmf_course.now_price,cmf_course.old_price,cmf_lector.name,cmf_course.cover,cmf_course.num_class,cmf_course.status,cmf_course.is_free,`is_payment`,cmf_course.introduction FROM `cmf_course` INNER JOIN cmf_people ON cmf_course.people_id = cmf_people.p_id INNER JOIN cmf_lector ON cmf_course.lector_id = cmf_lector.l_id INNER JOIN cmf_book ON cmf_course.book_id = cmf_book.b_id  ORDER BY UNIX_TIMESTAMP(cmf_create_time) DESC LIMIT 0,10  
+

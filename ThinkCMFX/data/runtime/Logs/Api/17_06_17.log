@@ -1,0 +1,22 @@
+[ 2017-06-17T08:42:12+08:00 ] 114.242.248.37 /junwei/api/course/classDesc?id=37&uid=49&callback=jQuery182006981795574600191_1497660130969&_=1497660131042
+ERR: 1054:Unknown column 'b.introduction' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.subject,b.introduction,a.status,a.startDate,a.invalidDate,a.reply_url,a.stu_token,a.number,c.name FROM cmf_live as a left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = 37 ) 
+
+[ 2017-06-17T10:59:28+08:00 ] 115.33.17.148 /junwei/junwei/index.php?g=api&m=user&a=reset&newpas=131415&oldpas=131415926&token=KSlulmdzN8XUjP3RTOpg
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-17T10:59:33+08:00 ] 115.33.17.148 /junwei/junwei/index.php?g=api&m=user&a=reset&newpas=131415&oldpas=131415926&token=KSlulmdzN8XUjP3RTOpg
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-17T11:03:23+08:00 ] 115.33.17.148 /junwei/junwei/index.php?g=api&m=user&a=reset&newpas=123456&oldpas=141415927&token=KSlulmdzN8XUjP3RTOpg
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-17T11:03:24+08:00 ] 115.33.17.148 /junwei/junwei/index.php?g=api&m=user&a=reset&newpas=123456&oldpas=141415927&token=KSlulmdzN8XUjP3RTOpg
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-17T11:13:55+08:00 ] 115.33.17.148 /junwei/junwei/index.php?g=api&m=user&a=reset&newpas=131415&oldpas=123557&token=KSlulmdzN8XUjP3RTOpg
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-17T11:14:26+08:00 ] 115.33.17.148 /junwei/junwei/index.php?g=api&m=user&a=reset&newpas=654321&oldpas=123456&token=nnn3Q2LBv0aK9kAqSJMz
+ERR: 无法加载控制器:Junwei
+

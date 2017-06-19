@@ -1,0 +1,357 @@
+[ 2017-06-11T04:18:30+08:00 ] 111.206.36.146 /junwei/Uploads/0
+ERR: Controller can't be loaded:Uploads
+
+[ 2017-06-11T13:02:29+08:00 ] 123.113.25.93 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000088s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000188s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000058s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='123.113.25.93',`last_login_time`='2017-06-11 13:02:29',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-06-11T13:02:45+08:00 ] 123.113.25.93 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-11T13:03:01+08:00 ] 123.113.25.93 /junwei/Question/itembankedit?item_id=464
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-11T13:03:13+08:00 ] 123.113.25.93 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-11T13:03:18+08:00 ] 123.113.25.93 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-11T13:03:27+08:00 ] 123.113.25.93 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-11T14:18:49+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T14:38:04+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T14:48:24+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T15:25:55+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T15:55:58+08:00 ] 111.194.211.133 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000082s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000056s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='111.194.211.133',`last_login_time`='2017-06-11 15:55:58',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-06-11T15:59:20+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:02:58+08:00 ] 111.194.211.133 /junwei/index.php?s=/Course/delete/id/128
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000079s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0009s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = 128 ) [ RunTime:0.0015s ]
+
+[ 2017-06-11T16:03:02+08:00 ] 111.194.211.133 /junwei/index.php?s=/Course/delete/id/127
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000068s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = 127 ) [ RunTime:0.0013s ]
+
+[ 2017-06-11T16:05:19+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:05:25+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:05:26+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:05:27+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:05:31+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:06:05+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:06:17+08:00 ] 122.71.225.41 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000082s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000194s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000068s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0009s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='122.71.225.41',`last_login_time`='2017-06-11 16:06:17',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-06-11T16:06:41+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:06:50+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:07:14+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:08+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:18+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:19+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:20+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:24+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:25+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:28+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:28+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:29+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:08:35+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:11:44+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:11:45+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:12:43+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:12:43+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:12:55+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:13:12+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:14:07+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:14:16+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:14:40+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:17:49+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:17:49+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:17:54+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:18:15+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:18:21+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:19:40+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:20:18+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:20:23+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:21:26+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:21:34+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:22:45+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:26:22+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:34:15+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:34:58+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:40:18+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:40:29+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:42:12+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:42:12+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:42:16+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:43:26+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:43:39+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:43:41+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:43:53+08:00 ] 111.194.211.133 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:44:39+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:44:45+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:47:09+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:50:18+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:50:18+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:51:45+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:55:42+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:56:58+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T16:58:01+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T17:01:21+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T17:02:39+08:00 ] 114.242.249.61 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T17:03:09+08:00 ] 111.194.211.133 /junwei/index.php?s=/Course/delete/id/129
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000165s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000058s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = 129 ) [ RunTime:0.0014s ]
+
+[ 2017-06-11T17:03:13+08:00 ] 111.194.211.133 /junwei/index.php?s=/Course/delete/id/130
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000073s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = 130 ) [ RunTime:0.0014s ]
+
+[ 2017-06-11T17:03:15+08:00 ] 111.194.211.133 /junwei/index.php?s=/Course/delete/id/131
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000141s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = 131 ) [ RunTime:0.0012s ]
+
+[ 2017-06-11T17:33:17+08:00 ] 122.71.225.41 /junwei/Uploads/0
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-11T17:36:03+08:00 ] 122.71.225.41 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+

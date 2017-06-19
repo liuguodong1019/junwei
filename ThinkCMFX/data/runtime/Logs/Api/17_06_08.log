@@ -1,0 +1,89 @@
+[ 2017-06-08T13:10:19+08:00 ] 115.33.77.240 /junwei/index.php?g=api&m=user&a=kzjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000068s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+ERR: 非法操作:kzjk
+
+[ 2017-06-08T13:55:02+08:00 ] 115.33.77.240 /junwei/index.php?g=Api&m=Usercollect&a=downshow&page=1&uid=56
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_' at line 1
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_lector.name,cmf_course.course_name,cmf_course.introduction,cmf_course. FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id INNER JOIN cmf_users ON cmf_users.id = cmf_course_collection.uid LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id  WHERE ( cmf_course_collection.uid = 56 AND cmf_course_collection.type = 1 ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-06-08T13:57:01+08:00 ] 115.33.77.240 /junwei/index.php?g=Api&m=Usercollect&a=downshow&page=1&uid=56
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_' at line 1
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_lector.name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course. FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id INNER JOIN cmf_users ON cmf_users.id = cmf_course_collection.uid LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id  WHERE ( cmf_course_collection.uid = 56 AND cmf_course_collection.type = 1 ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-06-08T14:00:26+08:00 ] 115.33.77.240 /junwei/index.php?g=Api&m=Usercollect&a=downshow&page=1&uid=56
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_' at line 1
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_lector.name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course. FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id INNER JOIN cmf_users ON cmf_users.id = cmf_course_collection.uid LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id  WHERE ( cmf_course_collection.uid = 56 AND cmf_course_collection.type = 1 ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-06-08T15:56:42+08:00 ] 115.33.84.166 /junwei/api/itembank/zttimu
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cmf_sheet` (`eid`,`etid`,`uid`,`sheet_time`) VALUES ('2013','0',NULL,'2017-06-08 15:56:42')
+
+[ 2017-06-08T15:56:52+08:00 ] 101.226.65.104 /junwei/api/itembank/zttimu
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cmf_sheet` (`eid`,`etid`,`uid`,`sheet_time`) VALUES ('2013','0',NULL,'2017-06-08 15:56:52')
+
+[ 2017-06-08T15:57:23+08:00 ] 115.33.84.166 /junwei/api/itembank/zttimu
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `cmf_sheet` (`eid`,`etid`,`uid`,`sheet_time`) VALUES ('2013','0',NULL,'2017-06-08 15:57:23')
+
+[ 2017-06-08T16:10:00+08:00 ] 115.33.84.166 /junwei/index.php?g=Api&m=downshow&a=downshow&uid=56&page=1
+ERR: 无法加载控制器:Downshow
+
+[ 2017-06-08T16:10:10+08:00 ] 61.151.226.189 /junwei/index.php?g=Api&m=downshow&a=downshow&uid=56&page=1
+ERR: 无法加载控制器:Downshow
+
+[ 2017-06-08T17:23:47+08:00 ] 115.33.55.25 /junwei/index.php?g=Api&m=video&a=sheet&page=1&uid=56
+ERR: 无法加载控制器:Video
+
+[ 2017-06-08T18:15:46+08:00 ] 115.33.111.142 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-08T18:19:13+08:00 ] 115.33.111.142 /junwei/index.php?g=api&m=itembank&a=list
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-08T18:19:26+08:00 ] 36.102.252.246 /junwei/index.php?g=api&m=itembank&a=kmtimu
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-08T18:19:32+08:00 ] 36.102.252.246 /junwei/index.php?g=api&m=itembank&a=kmtimu
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-08T18:52:51+08:00 ] 115.33.112.200 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-08T18:53:01+08:00 ] 101.226.69.246 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-08T18:53:07+08:00 ] 113.108.80.206 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-08T18:53:07+08:00 ] 113.108.80.206 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-08T18:53:17+08:00 ] 101.226.125.100 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-08T18:53:55+08:00 ] 101.226.66.180 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-08T18:53:55+08:00 ] 101.226.33.220 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-08T18:55:39+08:00 ] 115.33.112.200 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-08T19:08:44+08:00 ] 36.102.252.246 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1146:Table 'post.cmf_video_record' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `post`.`cmf_video_record`
+

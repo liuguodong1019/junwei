@@ -1,0 +1,32 @@
+[ 2017-05-05T12:39:17+08:00 ] 115.33.7.131 /junwei/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000048s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
+
+[ 2017-05-05T12:48:41+08:00 ] 115.33.7.131 /junwei/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
+
+[ 2017-05-05T13:32:32+08:00 ] 115.33.7.131 /junwei/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000051s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
+
+[ 2017-05-05T13:48:43+08:00 ] 115.33.7.131 /junwei/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000051s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: url /var/www/html/sikao/junwei/application/Common/Controller/AppframeController.class.php 第 22 行.
+

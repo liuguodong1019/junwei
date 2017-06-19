@@ -1,0 +1,534 @@
+[ 2017-06-14T10:52:33+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=2
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ( cmf_video_record.pid = 0 and cmf_video_record.uid = 49 ) ORDER BY cmf_vi' at line 1
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_lector.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id LEFT JOIN   WHERE ( cmf_video_record.pid = 0 and cmf_video_record.uid = 49 ) ORDER BY cmf_video_record.vid desc LIMIT 10,10  
+
+[ 2017-06-14T10:53:00+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ( cmf_video_record.pid = 0 and cmf_video_record.uid = 49 ) ORDER BY cmf_vi' at line 1
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_lector.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id LEFT JOIN cmf_live ON cmf_live.  WHERE ( cmf_video_record.pid = 0 and cmf_video_record.uid = 49 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-14T10:53:03+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ( cmf_video_record.pid = 0 and cmf_video_record.uid = 49 ) ORDER BY cmf_vi' at line 1
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_lector.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id LEFT JOIN cmf_live ON cmf_live.id =   WHERE ( cmf_video_record.pid = 0 and cmf_video_record.uid = 49 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-14T10:53:03+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ( cmf_video_record.pid = 0 and cmf_video_record.uid = 49 ) ORDER BY cmf_vi' at line 1
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_lector.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id LEFT JOIN cmf_live ON cmf_live.id =   WHERE ( cmf_video_record.pid = 0 and cmf_video_record.uid = 49 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-14T11:15:53+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 无法加载控制器:Video
+
+[ 2017-06-14T11:16:02+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_live` WHERE ( id = 18 AND course_id =  ) LIMIT 1  
+
+[ 2017-06-14T11:21:05+08:00 ] 61.148.242.232 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 无法加载控制器:Video
+
+[ 2017-06-14T11:21:05+08:00 ] 61.148.242.232 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 无法加载控制器:Video
+
+[ 2017-06-14T11:24:40+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: syntax error, unexpected '/'
+
+[ 2017-06-14T11:24:59+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: syntax error, unexpected '/'
+
+[ 2017-06-14T11:25:11+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 无法加载控制器:Video
+
+[ 2017-06-14T12:10:45+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:10:47+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:10:55+08:00 ] 223.104.3.135 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:10:57+08:00 ] 223.104.3.135 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:11:00+08:00 ] 223.104.3.135 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:11:12+08:00 ] 223.104.3.135 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:11:18+08:00 ] 223.104.3.135 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:11:23+08:00 ] 223.104.3.135 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:11:53+08:00 ] 223.104.3.135 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:13:01+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=17704820771
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:13:04+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=17704820771
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:13:32+08:00 ] 223.104.3.135 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:13:40+08:00 ] 223.104.3.135 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13466504181
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:22:51+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:23:00+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:23:16+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:23:48+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:25:53+08:00 ] 115.33.48.151 /junwei/api/wx_pay/updateOrder?out_trade_no=100210
+ERR: 非法操作:updateOrder
+
+[ 2017-06-14T12:26:12+08:00 ] 115.33.48.151 /junwei/api/wx_pay/update_order?out_trade_no=100210
+ERR: 非法操作:update_order
+
+[ 2017-06-14T12:26:50+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:30:31+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:30:47+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:31:03+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:31:36+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:34:38+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T12:36:09+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=18133529077
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:36:11+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=18133529077
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:36:14+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=18133529077
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T12:56:52+08:00 ] 58.251.80.53 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:04:39+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:26:54+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:34:40+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:36:51+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 71 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 71 )
+
+[ 2017-06-14T13:36:53+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 71 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 71 )
+
+[ 2017-06-14T13:36:55+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 71 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 71 )
+
+[ 2017-06-14T13:37:05+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 71 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 71 )
+
+[ 2017-06-14T13:37:40+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 71 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 71 )
+
+[ 2017-06-14T13:38:54+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:38:57+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:38:59+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:39:10+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:39:15+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:39:17+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:39:22+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:39:26+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:39:42+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:39:45+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:39:48+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:39:55+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:41:04+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:41:15+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:41:18+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:41:18+08:00 ] 58.251.80.50 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:41:20+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:41:23+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:41:28+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:41:31+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:41:33+08:00 ] 115.33.48.151 /junwei/junwei/index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: 无法加载控制器:Junwei
+
+[ 2017-06-14T13:41:36+08:00 ] 183.3.234.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:42:07+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:45:09+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:47:53+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:48:17+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:48:34+08:00 ] 101.226.103.62 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:49:07+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:51:43+08:00 ] 101.226.103.62 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:51:54+08:00 ] 58.251.80.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:52:08+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:52:10+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:52:42+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:55:23+08:00 ] 58.251.80.50 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:55:37+08:00 ] 183.3.234.55 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:55:43+08:00 ] 183.3.234.47 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:55:53+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:56:25+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:56:57+08:00 ] 183.3.234.47 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T13:59:28+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:04:41+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:06:23+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshowshow&uid=49&page=1
+ERR: 非法操作:downshowshow
+
+[ 2017-06-14T14:06:33+08:00 ] 61.151.228.22 /junwei/index.php?g=Api&m=Usercourse&a=downshowshow&uid=49&page=1
+ERR: 非法操作:downshowshow
+
+[ 2017-06-14T14:06:34+08:00 ] 101.226.125.100 /junwei/index.php?g=Api&m=Usercourse&a=downshowshow&uid=49&page=1
+ERR: 非法操作:downshowshow
+
+[ 2017-06-14T14:06:35+08:00 ] 180.153.81.212 /junwei/index.php?g=Api&m=Usercourse&a=downshowshow&uid=49&page=1
+ERR: 非法操作:downshowshow
+
+[ 2017-06-14T14:06:36+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercollect&a=collectdel
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND uid = 71 )' at line 1
+ [ SQL语句 ] : DELETE FROM `cmf_course_collection` WHERE ( course_id in () AND uid = 71 )
+
+[ 2017-06-14T14:06:47+08:00 ] 101.226.89.120 /junwei/index.php?g=Api&m=Usercourse&a=downshowshow&uid=49&page=1
+ERR: 非法操作:downshowshow
+
+[ 2017-06-14T14:07:17+08:00 ] 140.207.54.74 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:07:29+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:07:46+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:08:19+08:00 ] 58.251.80.62 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:11:00+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:11:13+08:00 ] 101.226.103.62 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:11:20+08:00 ] 58.251.80.50 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:11:30+08:00 ] 183.3.234.47 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:12:02+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:15:04+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:15:11+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:19:10+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:19:21+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:19:37+08:00 ] 101.226.103.69 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:20:08+08:00 ] 58.251.80.48 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:22:09+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:23:10+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:25:11+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:25:19+08:00 ] 58.251.80.53 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:25:36+08:00 ] 183.3.234.59 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:25:44+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:26:09+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:26:58+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:29:10+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:29:31+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:34:42+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:41:22+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:42:47+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:42:58+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:43:14+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:43:45+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:45:05+08:00 ] 58.251.80.48 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:45:13+08:00 ] 58.251.80.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:46:48+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:52:12+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:53:11+08:00 ] 183.3.234.47 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:55:45+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:59:07+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:59:11+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:59:20+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:59:32+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T14:59:36+08:00 ] 140.207.54.73 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:00:09+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:03:11+08:00 ] 183.3.234.47 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:11:25+08:00 ] 101.226.103.62 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:12:40+08:00 ] 58.251.80.58 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:12:57+08:00 ] 101.226.103.63 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:13:14+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:13:45+08:00 ] 183.3.234.52 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:15:06+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:15:15+08:00 ] 140.207.54.75 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:16:47+08:00 ] 183.3.234.55 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:16:49+08:00 ] 101.226.103.70 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:17:57+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T15:18:01+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T15:22:13+08:00 ] 140.207.54.76 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:23:13+08:00 ] 101.226.103.61 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:25:47+08:00 ] 58.251.80.62 /junwei/api/wxPay/notify
+ERR: 非法操作:notify
+
+[ 2017-06-14T15:26:15+08:00 ] 115.33.48.151 /junwei//index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-14T15:26:20+08:00 ] 115.33.48.151 /junwei//index.php?g=api&m=user&a=rcheck&phone=13051529252
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-14T15:26:24+08:00 ] 123.121.61.5 /junwei/index.php?g=api&m=user&a=login&phone=15510052307&password=123456
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-14T15:26:27+08:00 ] 123.121.61.5 /junwei/index.php?g=api&m=user&a=login&phone=15510052307&password=123456
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-14T15:26:38+08:00 ] 123.121.61.5 /junwei/index.php?g=api&m=user&a=login&phone=15510052307&password=123456
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-14T15:54:41+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T15:55:04+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T15:55:06+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T16:15:20+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T16:15:55+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T16:16:02+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T16:18:11+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T16:19:06+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T16:20:54+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T16:37:33+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+
+[ 2017-06-14T17:24:28+08:00 ] 110.75.242.158 /junwei/api/alipay/notifyUrl
+ERR: syntax error, unexpected ')'
+
+[ 2017-06-14T18:02:46+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Usercourse&a=downshow&page=1&uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND uid = 71 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( course_id =  AND uid = 71 ) LIMIT 1  
+

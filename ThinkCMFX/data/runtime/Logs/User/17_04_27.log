@@ -1,0 +1,16 @@
+[ 2017-04-27T10:04:28+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003007s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005737s ]
+NOTIC: [8] Undefined index: url D:\wampserver\wamp64\www\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2017-04-27T14:29:28+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001205s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003201s ]
+NOTIC: [8] Undefined index: url D:\wampserver\wamp64\www\ThinkCMFX\application\Common\Controller\AppframeController.class.php 第 22 行.
+

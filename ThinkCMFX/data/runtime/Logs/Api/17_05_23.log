@@ -1,0 +1,45 @@
+[ 2017-05-23T09:53:16+08:00 ] 36.102.245.164 /junwei/index.php?g=api&m=alipay&a=order
+ERR: Class 'AopClient' not found
+
+[ 2017-05-23T09:53:19+08:00 ] 36.102.245.164 /junwei/index.php?g=api&m=alipay&a=order
+ERR: Class 'AopClient' not found
+
+[ 2017-05-23T09:53:28+08:00 ] 36.102.245.164 /junwei/index.php?g=api&m=alipay&a=order
+ERR: Class 'AopClient' not found
+
+[ 2017-05-23T09:53:31+08:00 ] 36.102.245.164 /junwei/index.php?g=api&m=alipay&a=order
+ERR: Class 'AopClient' not found
+
+[ 2017-05-23T09:54:34+08:00 ] 115.33.19.61 /junwei/index.php?g=api&m=alipay&a=order&uid=56&course_id=104&now_price=10&pay_ways=1&course_name=123&introduction=666
+ERR: Class 'AopClient' not found
+
+[ 2017-05-23T12:16:23+08:00 ] 115.33.19.61 /junwei/index.php?g=api&m=wx_pay&a=order
+ERR: Class 'WxPayApi' not found
+
+[ 2017-05-23T12:51:52+08:00 ] 115.33.19.61 /junwei/api/wx_pay/order
+ERR: Class 'WxPayApi' not found
+
+[ 2017-05-23T12:53:47+08:00 ] 115.33.19.61 /junwei/api/wx_pay/order
+ERR: Class 'WxPayApi' not found
+
+[ 2017-05-23T12:58:12+08:00 ] 115.33.19.61 /junwei/api/wx_pay/order
+ERR: Class 'WxPayApi' not found
+
+[ 2017-05-23T13:01:07+08:00 ] 115.33.19.61 /junwei/api/wx_pay/order
+ERR: Class 'WxPayApi' not found
+
+[ 2017-05-23T13:01:09+08:00 ] 115.33.19.61 /junwei/api/wx_pay/order
+ERR: Class 'WxPayApi' not found
+
+[ 2017-05-23T15:39:56+08:00 ] 115.33.37.82 /junwei/index.php?g=api&m=wx_pay&a=order?uid=56&course_id=104&now_price=10&pay_ways=1&course_name=123&introduction=666
+ERR: 非法操作:order?uid=56
+
+[ 2017-05-23T15:40:00+08:00 ] 115.33.37.82 /junwei/index.php?g=api&m=wx_pay&a=order?uid=56&course_id=104&now_price=10&pay_ways=1&course_name=123&introduction=666
+ERR: 非法操作:order?uid=56
+
+[ 2017-05-23T15:40:46+08:00 ] 115.33.37.82 /junwei/index.php?g=api&m=wx_pay&a=order?uid=56&course_id=104&now_price=10&pay_ways=1&course_name=123&introduction=666
+ERR: 非法操作:order?uid=56
+
+[ 2017-05-23T15:41:49+08:00 ] 115.33.37.82 /junwei/index.php?g=api&m=wx_pay&a=order%uid=56&course_id=104&now_price=10&pay_ways=1&course_name=123&introduction=666
+ERR: 非法操作:order%uid=56
+

@@ -1,0 +1,45 @@
+[ 2017-05-20T11:03:33+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Call to a member function IsOut_trade_noSet() on array
+
+[ 2017-05-20T11:04:53+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Call to a member function IsOut_trade_noSet() on array
+
+[ 2017-05-20T11:05:56+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Call to a member function IsOut_trade_noSet() on array
+
+[ 2017-05-20T11:42:19+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Call to a member function IsOut_trade_noSet() on array
+
+[ 2017-05-20T11:47:22+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: curl出错，错误码:28
+
+[ 2017-05-20T13:36:47+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: 缺少统一支付接口必填参数body！
+
+[ 2017-05-20T15:14:30+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Think\Controller:array2xml方法不存在！
+
+[ 2017-05-20T15:15:25+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Think\Controller:array2xml方法不存在！
+
+[ 2017-05-20T15:15:26+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Think\Controller:array2xml方法不存在！
+
+[ 2017-05-20T15:15:26+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Think\Controller:array2xml方法不存在！
+
+[ 2017-05-20T15:15:27+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Think\Controller:array2xml方法不存在！
+
+[ 2017-05-20T15:15:27+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Think\Controller:array2xml方法不存在！
+
+[ 2017-05-20T15:15:27+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Think\Controller:array2xml方法不存在！
+
+[ 2017-05-20T15:15:27+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Think\Controller:array2xml方法不存在！
+
+[ 2017-05-20T15:22:04+08:00 ] 127.0.0.1 /ThinkCMFX/api/wx_pay/order
+ERR: Think\Controller:sign方法不存在！
+

@@ -1,0 +1,44 @@
+[ 2017-06-13T16:34:10+08:00 ] 115.33.48.151 /junwei/class_hour?uid=49&id=37&page=1
+ERR: 1054:Unknown column 'a.people_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,a.reply_url,a.status,a.startDate,a.invalidDate,a.number,a.stu_token,a.class_id,b.introduction,c.name FROM cmf_live as a left join cmf_course as b ON a.people_id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = '37' ) ORDER BY a.id 
+
+[ 2017-06-13T16:34:46+08:00 ] 115.33.48.151 /junwei/class_hour?uid=49&id=37&page=1
+ERR: 1054:Unknown column 'b.course_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.subject,a.reply_url,a.status,a.startDate,a.invalidDate,a.number,a.stu_token,a.class_id,b.introduction,c.name FROM cmf_live as a left join cmf_course as b ON a.id = b.course_id left join cmf_lector as c ON a.lector_id = c.l_id  WHERE ( a.course_id = '37' ) ORDER BY a.id 
+
+[ 2017-06-13T17:06:57+08:00 ] 115.33.48.151 /junwei/vip?uid=49&page=1
+ERR: 1054:Unknown column 'b.name' in 'field list'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.startDate,a.invalidDate,a.now_price,a.old_price,a.cover,a.num_class,a.status,a.is_free,a.introduction,a.number,a.stu_token,a.reply_url,b.name FROM cmf_course as a left join cmf_lector as d ON a.lector_id = d.l_id  WHERE ( a.is_free = '2' ) ORDER BY a.id DESC 
+
+[ 2017-06-13T17:28:46+08:00 ] 115.33.48.151 /junwei/index.php%22?g=Api&m=Video&a=videoinsert&uid=49&cid=111
+ERR: 无法加载控制器:Index
+
+[ 2017-06-13T17:28:56+08:00 ] 101.226.66.192 /junwei/index.php"?g=Api&m=Video&a=videoinsert&uid=49&cid=111
+ERR: 无法加载控制器:Index
+
+[ 2017-06-13T17:41:41+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-13T17:43:10+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-13T17:43:51+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-13T17:43:55+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-13T17:43:59+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_video_record` WHERE ( cid =  ) LIMIT 1  
+
+[ 2017-06-13T17:46:00+08:00 ] 115.33.48.151 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: 无法加载控制器:Video
+
+[ 2017-06-13T22:40:46+08:00 ] 113.44.40.106 /junwei/index.php%22?g=Api&m=Video&a=videoinsert&uid=49&cid=111
+ERR: 无法加载控制器:Index
+

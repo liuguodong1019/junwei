@@ -1,0 +1,1217 @@
+[ 2017-05-07T11:17:23+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000083s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000187s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000059s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='221.216.50.173',`last_login_time`='2017-05-07 11:17:23',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0002s ]
+
+[ 2017-05-07T11:17:34+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:17:37+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=26
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:17:48+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankdelete&item_id=26
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000083s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000160s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000050s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id=26 ) [ RunTime:0.0001s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=26 )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=26 )
+
+[ 2017-05-07T11:18:06+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000084s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000199s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000061s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='221.216.50.173',`last_login_time`='2017-05-07 11:18:06',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0002s ]
+
+[ 2017-05-07T11:18:11+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:18:16+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:18:19+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truedelete&item_id=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000076s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000154s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000045s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id=18 ) [ RunTime:0.0001s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=18 )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=18 )
+
+[ 2017-05-07T11:18:24+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truedelete&item_id=19
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000064s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000149s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id=19 ) [ RunTime:0.0001s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=19 )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=19 )
+
+[ 2017-05-07T11:18:28+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000064s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000050s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id in (18,19,23) ) [ RunTime:0.0002s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid in (18,19,23) )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid in (18,19,23) )
+
+[ 2017-05-07T11:18:29+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:18:37+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:18:58+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truemater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:20:17+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:20:21+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:20:24+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:20:29+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=27
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:21:30+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:21:33+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truedelete&item_id=27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000062s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000078s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id=27 ) [ RunTime:0.0002s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=27 )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=27 )
+
+[ 2017-05-07T11:21:38+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truedelete&item_id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000145s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000056s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id=28 ) [ RunTime:0.0002s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=28 )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=28 )
+
+[ 2017-05-07T11:21:40+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=27
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:21:50+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000072s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000068s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id in (27,28) ) [ RunTime:0.0001s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid in (27,28) )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid in (27,28) )
+
+[ 2017-05-07T11:21:51+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:21:58+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:21:59+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:22:00+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truemater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:22:04+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:22:40+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:22:43+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:22:48+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=29
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:24:50+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:24:54+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:24:56+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:26:45+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:26:47+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:26:51+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truedelete&item_id=29
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000066s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000146s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000047s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id=29 ) [ RunTime:0.0001s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=29 )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=29 )
+
+[ 2017-05-07T11:27:02+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truedelete&item_id=29
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000057s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000048s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id=29 ) [ RunTime:0.0001s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=29 )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid=29 )
+
+[ 2017-05-07T11:27:10+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000081s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000057s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id in (29) ) [ RunTime:0.0001s ]
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid in (29) )
+ERR: 1054:Unknown column 'qid' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_option` WHERE ( qid in (29) )
+
+[ 2017-05-07T11:27:11+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:27:25+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:27:27+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:28:06+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:28:10+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:28:12+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=30
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:28:26+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:28:29+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:29:06+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:29:09+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:29:11+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=31
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:38:47+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:38:49+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:38:52+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:38:53+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:39:27+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:39:30+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:39:32+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=1
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:40:06+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:40:08+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:40:42+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:40:44+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:40:46+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:46:48+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:46:51+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T11:47:24+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:05:45+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:05:47+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:06:40+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:06:43+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:07:10+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:08:27+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:08:30+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:12:22+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:12:52+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:15:44+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:15:49+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:26:42+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000071s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000051s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-07T12:26:58+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000075s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000066s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-07T12:27:35+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000079s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000055s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-07T12:27:45+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000061s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000050s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-07T12:28:34+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000086s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000049s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='221.216.50.173',`last_login_time`='2017-05-07 12:28:34',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0002s ]
+
+[ 2017-05-07T12:28:45+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:30:07+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:30:09+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:31:12+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:31:15+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:36:24+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:37:00+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:37:03+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:44:11+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=1
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:44:34+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:44:35+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:45:14+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:45:17+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:45:20+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:54:57+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:54:58+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:55:08+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:55:50+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:56:27+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T12:56:29+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:01:52+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:01:53+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:01:54+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=mater
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:04:35+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=materadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:04:38+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:04:41+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=1
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:05:07+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:05:11+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:05:12+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:05:12+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:05:12+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:05:14+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:05:17+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:05:19+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:05:22+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=4
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:06:16+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:06:16+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:06:19+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankdelete&item_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000060s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000148s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000046s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id=3 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `cmf_option` WHERE ( qid=3 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `cmf_answer` WHERE ( qid=3 ) [ RunTime:0.0001s ]
+
+[ 2017-05-07T13:06:19+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:06:28+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankdelete&item_id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000081s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000058s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_itembank` WHERE ( item_id=4 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `cmf_option` WHERE ( qid=4 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `cmf_answer` WHERE ( qid=4 ) [ RunTime:0.0001s ]
+
+[ 2017-05-07T13:06:28+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:25:32+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=1
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:26:10+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T13:26:13+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=1
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:15:33+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:15:34+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:15:35+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=subjective
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:15:41+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:15:42+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:15:43+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truesubjective
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:16+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:18+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=1
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:22+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:23+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:28+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:30+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:35+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:37+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:39+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:40+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:43+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:19:45+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=1
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:20:00+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:21:47+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:21:49+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=trueedit&item_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:21:53+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:21:55+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembankedit&item_id=1
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:22:01+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:38:43+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:38:44+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:38:45+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:38:46+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:38:47+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:38:48+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T17:38:50+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T19:57:00+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T19:57:03+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=subjectivelist
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T19:57:09+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T19:57:10+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truesubjectivelist
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T19:57:28+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T19:57:29+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=subjectivelist
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T19:58:26+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-07T19:58:29+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-07T19:58:43+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=menu&a=delete&id=194
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000077s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000047s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_menu` WHERE `parentid` = 194 LIMIT 1   [ RunTime:0.0001s ]
+SQL: DELETE FROM `cmf_menu` WHERE `id` = 194 [ RunTime:0.0001s ]
+
+[ 2017-05-07T19:58:43+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=menu&a=lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-05-07T19:58:51+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T19:58:56+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=subjectivelist
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:02:48+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:02:50+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=subjectivelist
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:02:57+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:03:02+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truesubjectivelist
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:03:26+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=subjectivedelete&sub_id=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000092s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000062s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_subjective` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_subjective` WHERE ( sub_id=3 ) [ RunTime:0.0001s ]
+
+[ 2017-05-07T20:03:26+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truesubjectivelist
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:03:30+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=truesubjectiveedit&sub_id=2
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:03:49+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:03:49+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:03:53+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=subjectivelist
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:03:55+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=subjectiveedit&sub_id=1
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:10:57+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-05-07T20:10:58+08:00 ] 221.216.50.173 /junwei/index.php?g=Admin&m=Question&a=true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+

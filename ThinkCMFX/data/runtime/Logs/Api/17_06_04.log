@@ -1,0 +1,4 @@
+[ 2017-06-04T13:49:02+08:00 ] 122.71.66.152 /junwei/vip?uid=56&page=1
+ERR: 1054:Unknown column 'cmf_course.is_free' in 'where clause'
+ [ SQL语句 ] : SELECT a.id,`course_name`,`now_price`,`old_price`,`name`,`startdate`,`invaliddate`,`cover`,`num_class`,`status`,a.introduction FROM cmf_course as a left join cmf_people as b ON a.people_id = b.p_id left join cmf_lector as d ON a.lector_id = d.l_id left join cmf_book as e ON a.book_id = e.b_id  WHERE ( cmf_course.is_free = '2' ) ORDER BY a.id DESC 
+
