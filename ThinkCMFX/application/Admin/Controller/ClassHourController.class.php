@@ -99,7 +99,7 @@ class ClassHourController extends AdminbaseController
             $data['number'] = $resource['number'];
             $data['stu_token'] = $resource['studentClientToken'];
             $data['class_id'] = $resource['id'];
-
+            
             if ($resource['code'] == 0) {
                 if ($live->add($data)) {
                     $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
@@ -208,14 +208,14 @@ class ClassHourController extends AdminbaseController
             foreach ($rew as $value) {
                 $class_id[] = $value['class_id'];
             }
-
+            
             $resourec = $response::delete($loginName, $password, $class_id);
-
+            
             if ($live->where("id in ($ids)")->delete() !== false) {
                 $this->success('删除成功');exit();
             } else {
                 $this->error('删除失败');exit();
-            }
+            }  
         }
     }
 

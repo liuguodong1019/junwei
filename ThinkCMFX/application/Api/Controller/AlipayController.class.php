@@ -50,11 +50,11 @@ class AlipayController extends Controller
                 $data['boy'] = $course['introduction'];
                 $data['total_amount'] = $course['now_price'];
                 if ($order->add($data)) {
-                    $dat = $order->field('id')->where("course_id = '$course_id' and uid = '$uid'")->find();
-                    $out_trade_no = $dat['id'];
-                    $total_amount = sprintf('%.2f', $data['total_amount']);
-                    $subject = $data['subject'];
-                    $boy = $data['boy'];
+                $dat = $order->field('id')->where("course_id = '$course_id' and uid = '$uid'")->find();
+                $out_trade_no = $dat['id'];
+                $total_amount = sprintf('%.2f', $data['total_amount']);
+                $subject = $data['subject'];
+                $boy = $data['boy'];
                 } else {
                     echo $resource::state(0, 'fail');
                     exit();
@@ -81,7 +81,7 @@ class AlipayController extends Controller
             $response = $aop->sdkExecute($request);
             echo json_encode(['status' => $status[0], 'msg' => $msg[0], 'data' => $response]);
             exit();
-
+            
         } else {
             echo $resource::state(403, $msg[2]);
             exit();

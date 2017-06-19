@@ -7,6 +7,6 @@
   'get_class' => 'api/course/get_class',
   'class_hour' => 'api/classHour/class_hour',
   'collection' => 'api/course/collection',
-  'zfb/queryOrder' => 'api/alipay/queryOrder',
-  'wx_pay/queryOrder' => 'api/wx_pay/queryOrder',
+  'alipay/order' => 'api/alipay/order',
+  'wx_pay/order' => 'api/wx_pay/order',
 );

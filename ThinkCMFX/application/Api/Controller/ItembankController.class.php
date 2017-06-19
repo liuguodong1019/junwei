@@ -51,16 +51,15 @@ class ItembankController extends Controller
 	public function list()
 	{ 
 	  $item=M("Itembank");
-	  $list=$item->where("type=1")->field("eid")->order("eid desc")->select();
+	  $list=$item->where("type=1")->field("eid")->order("eid desc")->select();//查询所有试卷标题
 	  if($list)
 	  { 
-        $li=$this->uniqid($list);
+        $li=$this->uniqid($list);//试卷标题去重
         foreach ($li as $key=>$value)
         {
              foreach ($value as $k=>$v)
-             {
-                $arr[$key]['eid']=$v;
-                
+             {  
+                $arr[$key]['eid']=$v;//试卷标题
              }        
         }
 		$array=array_values($arr);
@@ -68,8 +67,8 @@ class ItembankController extends Controller
 		{   
 			foreach($v as $value)
 			{
-				$re=$item->where("type='1' and eid='$value'")->field("etid")->order("etid asc")->select();
-				$re=$this->uniqid($re);
+				$re=$item->where("type='1' and eid='$value'")->field("etid")->order("etid asc")->select();//查询所有试卷类型
+				$re=$this->uniqid($re);//试卷类型去重
 				$re=array_values($re);
 				foreach($re as$n=>$e)
 				{
@@ -83,7 +82,7 @@ class ItembankController extends Controller
 					{     
 						 foreach ($b as $c)
 						 { 
-							$rec=$item->where("type='1' and eid='$value' and etid='$b'")->count();
+							$rec=$item->where("eid='$value' and etid='$c'")->count();//获取试卷下的试卷条数
 							$arra[$a]=$b;
 							$arra[$a]['count']=$rec;
 							
@@ -115,32 +114,45 @@ class ItembankController extends Controller
 	$chapter=M('chapter');
 	$item=M('itembank');
 	$res=array();
-    $res[]=$subjects->field("sid,stitle")->order("sid asc")->select();//科目
-	foreach($res as $K=>$v)
-	{   foreach($v as $a=>$b)
-		{   
-			$sid=$b['sid'];
-			$re=$chapter->where("sid='$sid'")->field("cid,ctitle")->order("cid asc")->select();//章节
-			foreach($re as $key=>$value)
-			{
-				$cid=$value['cid'];
-				$rec=$item->where("sid='$sid' and cid='$cid'")->count();
-				$arr[$key]=$value;
-				$arr[$key]['count']=$rec;
-			}
+    $res=$subjects->field("sid,stitle")->order("sid asc")->select();//科目
 
-			$arra[$a]=$b;
-			$arra[$a]['sub_items']=$arr;
-			$arra=array_values($arra);
-		}
-		
+	foreach($res as $k=>$v)
+	{       
+		    $sid=$v['sid'];
+            $stitle=$v['stitle'];			
+			$re=$chapter->where("sid='$sid'")->field("cid,ctitle")->order("cid asc")->select();//章节
+			$arr[$k]['sid']=$sid;
+			$arr[$k]['stitle']=$stitle;
+			$arr[$k]['cid']=$re;
+			
 	}
-    if($arra)
+	  foreach($arr as $key=>$value)
+	  {
+		$sid=$value['sid'];
+		$stitle=$value['stitle'];
+		$data=$value['cid'];
+		foreach($data as $k1=>$v1)
+		{
+		   $cid=$v1['cid'];
+		   $rec=$item->where("sid='$sid' and cid='$cid'")->count();
+		   //$ace[$key]['sid']=$sid;
+		   //$ace[$key]['stitle']=$stitle;
+		   $ace[$key][$k1]=$v1;
+		   $ace[$key][$k1]['count']=$rec;
+		   $data=array_values($ace[$key]);
+		   
+		   
+		} 
+        $resu[$key]['sid']=$sid;
+        $resu[$key]['stitle']=$stitle;
+        $resu[$key]['sub_items']=$data;		
+	  }
+    if($ace)
     {
-        $data['status']=1;
-        $data['data']=$arra;
-        $data['msg']="请求成功";
-        echo json_encode($data);die;
+        $dat['data']=$resu;
+		$dat['status']=1;
+        $dat['msg']="请求成功";
+        echo json_encode($dat);die;
     }
     else
     {
@@ -173,7 +185,7 @@ class ItembankController extends Controller
 	  $name=$eid."年国家司法考试".$name."试题";
 	  $sheet=M('sheet');
 	  $ic=M('item_collection');//实例化收藏表
-	  $shou=$ic->where("eid='$eid' and etid='$etid'and uid='$uid'and status=1")->getField("status");
+	  $shou=$ic->where("eid='$eid' and etid='$etid' and uid='$uid'and status=1")->getField("status");
 	  if(empty($shou)||$shou==0)
 	  {
 		$dat['collection_type']=0;  
@@ -182,23 +194,37 @@ class ItembankController extends Controller
 	  {
 		$dat['collection_type']=1;  
 	  }
-     $where="eid='$eid' and etid='$etid' and type='1'";
+     $where="eid='$eid' and etid='$etid'";
      $list=$this->timu($where);
      if($list)
         {
-          $data['eid']=$eid;
-		  $data['etid']=$etid;
-		  $data['uid']=$uid;
-		  $time=time();
-		  $time=date('Y-m-d H:i:s');
-		  $data['sheet_time']=$time;
-	      $result=$sheet->add($data);
+		  $r=$sheet->where("eid='$eid' and etid='$etid'and uid='$uid'")->select();//查询记录表
+		  if($r)
+		  {  
+	         
+			 $time=time();
+		     $time=date('Y-m-d H:i:s'); 
+			 $data['sheet_time']=$time;
+			 $result=$sheet->where("eid='$eid' and etid='$etid'and uid='$uid'")->save($data);
+		  }
+		  else
+		  {   
+	          $data['eid']=$eid;
+			  $data['etid']=$etid;
+			  $data['uid']=$uid;
+			  $time=time();
+		      $time=date('Y-m-d H:i:s');
+		      $data['sheet_time']=$time;
+	          $result=$sheet->add($data);
+		  }
+		  
 		  if($result)
 		  {
 			  $dat['data']=$list;
 			  $dat['status']=1;
 			  $dat['name']=$name;
 			  $dat['msg']="请求成功";
+			  //print_r($dat);die;
 			  echo json_encode($dat);die;  
 		  }
 		  else
@@ -246,13 +272,24 @@ class ItembankController extends Controller
      $list=$this->timu($where);
      if($list)
         { 
-	      $data['sid']=$sid;
-		  $data['cid']=$cid;
-		  $data['uid']=$uid;
-		  $time=time();
-		  $time=date('Y-m-d H:i:s');
-		  $data['sheet_time']=$time;
-	      $result=$sheet->add($data);
+		  $r=$sheet->where("sid='$sid' and cid='$cid'and uid='$uid'")->select();//查询记录表
+		  if($r)
+		  {
+			 $time=time();
+		     $time=date('Y-m-d H:i:s'); 
+			 $data['sheet_time']=$time;
+			 $result=$sheet->where("sid='$sid' and cid='$cid'and uid='$uid'")->save($data);
+		  }
+		  else
+		  {   
+	          $data['sid']=$sid;
+		      $data['cid']=$cid;
+		      $data['uid']=$uid;
+			  $time=time();
+		      $time=date('Y-m-d H:i:s');
+		      $data['sheet_time']=$time;
+	          $result=$sheet->add($data);
+		  }
 		  if($result)
 		  {
 			  $dat['data']=$list;
@@ -385,11 +422,17 @@ class ItembankController extends Controller
    */
   public function check()
   {
-    $answer=I('get.answer');
+     $answer=I('post.answer');
+	// $ceshi=M('ceshi');
+	// $data['content']=$answer;
+	// $re=$ceshi->add($data);
+	//echo json_encode($re);die;
 	$str=html_entity_decode($answer,ENT_QUOTES); //html 单双引号符号转译
+    //print_r($str);die;
 	$data=json_decode($str,true);
+    //print_r($data);die;
 	foreach($data as $k=>$v)
-	{
+	{   
 		foreach($v as $key=>$value)
 		{
 			foreach($value as $ke=>$va)
@@ -405,18 +448,18 @@ class ItembankController extends Controller
 					  $an=str_replace(array("0","1","2","3"),array("A","B","C","D"),$answ2);
 				if($answ1==$an)
 				   { 
-					 $array[$ke]=$va;
-					 $array[$ke]['type']=1;//正确
+
+					 $array[$ke]=1;//正确
 				   }
 				   elseif($answ1=='0')
 				   {  
-					  $array[$ke]=$va;
-					  $array[$ke]['type']=0;//没答
+
+					  $array[$ke]=0;//没答
 				   }
-				   else
+				   elseif($answ1=='0'||$answ1!=$an)
 				   {
-					 $array[$ke]=$va;
-					  $array[$ke]['type']=2;//错误  
+
+					  $array[$ke]=2;//错误  
 				   }
 			}
 		}
@@ -444,5 +487,21 @@ class ItembankController extends Controller
           $dat['msg']="请求失败！";
           echo json_encode($dat);die;
         }
+  }
+
+  public function ceshi()
+  {
+  	$a=ABCD;
+  	$b=BC;
+  	var_dump($a);
+  	var_dump($b);
+  	if($a==$b)
+  	{
+          echo 1;
+  	}
+  	else
+  	{
+  		echo 2;
+  	}
   }
 }    

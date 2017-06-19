@@ -1,4 +1,10 @@
 <admintpl file="header" />
+<style>
+		.kemumenu{ width: 100%; padding:10px  0px;float:left; border:#cbcbcb solid 1px;border-radius:4px; margin-bottom:10px;}
+		.kemumenu span{padding: 5px 20px;cursor: pointer;font-size: 14px;font-family: "微软雅黑"; line-height: 20px;color:#636363;display: block;float: left;}
+		.kemumenu span:hover{color: #333333;}
+		.kemu-active{ color:red!important;font-weight: bold;}
+	</style>
 </head>
 <body>
 	<div class="wrap js-check-wrap">
@@ -7,12 +13,8 @@
 			<li><a href="{:U('Question/trueadd')}">真题添加</a></li>
 			<li><a href="{:U('Question/truesubjectivelist')}">主观题列表</a></li>
 		</ul>
-		<form class="well form-search" method="post" action="{:U('Question/true')}">
-			 题干： 
-			<input type="text" name="keyword" style="width: 200px;" value="{$formget.keyword|default=''}" placeholder="请输入关键字...">
-			<input type="submit" class="btn btn-primary" value="搜索" />
-			<a class="btn btn-danger" href="{:U('Question/true')}">清空</a>
-		</form>
+		<div class="kemumenu" id="one-menu"></div>
+		<div class="kemumenu" id="two-menu"></div>
 		<form class="js-ajax-form" method="post">
 			<div class="table-actions">
 				<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Question/turedelete')}" data-subcheck="true" data-msg="{:L('DELETE_CONFIRM_MESSAGE')}">{:L('DELETE')}</button>
@@ -28,9 +30,9 @@
 						<th width="80"><span>添加时间</span></th>
 						<th width="60"><span>考题类型</span></th>
 						<th width="125">{:L('ACTIONS')}</th>
-					</tr>
+					</tr><q>			</q>
 				</thead>
-				<foreach name="item" item="vo">
+
 				<tr>
 					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="item_ids[]" value="{$vo.item_id}"></td>
 					<td><a>{$vo.no}</a></td>
@@ -47,7 +49,7 @@
 						<a href="{:U('Question/truedelete',array('item_id'=>$vo['item_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
 					</td>
 				</tr>
-				</foreach>
+
 				<tfoot>
 					<tr>
 						<th width="16"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
@@ -80,5 +82,223 @@
 			refersh_window()
 		}, 2000);
 	</script>
+
+
+	<script type="text/javascript">
+	function getLocalTime(nS) {
+      return new Date(parseInt(nS) * 1000).toLocaleString().substr(0,17)
+	  }; 
+$(document).ready(function(){
+	var onemenu="";
+	var twomenu="";
+		$.ajax({
+            type: "get",
+            url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=ztjk",
+            dataType:"jsonp",
+            jsonp: "callback",
+            jsonpCallback:"successCallback", 
+            success:function(data) {
+            	var json=eval(data);
+            	for(i in json){
+            		//console.log(json[i]);
+            		onemenu+="<span>"+json[i].eid+"年国家司法考试</span>";
+            	}
+            	$("#one-menu").html(onemenu);
+                
+               
+            },
+            error:function(st){
+            	alert ("系统错误，错误码"+st.status);　
+            }
+            
+        });
+        
+    $("#one-menu").on("click","span",function(){
+    	var thistexts=$(this).text();
+    	var thistext=thistexts.substring(0,4);
+    	//alert (thistext);
+
+
+    	$(this).addClass("kemu-active").siblings().removeClass("kemu-active");
+    	//alert ($(this).text());
+    	var twomenu="";
+    	$.ajax({
+            type: "get",
+            url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=ztjk",
+            dataType:"jsonp",
+            jsonp: "callback",
+            jsonpCallback:"successCallback", 
+            success:function(data) {
+            	var json=eval(data);
+            	var res="";
+            	for(i in json){
+            		if(thistext==json[i].eid){
+            			for(m in json[i].chapter){
+            				//console.log(json[i].chapter[m]);
+            				
+            				 if(json[i].chapter[m].etid==0)
+								  {
+								    res='卷一';
+								  }
+								  else if(json[i].chapter[m].etid==1)
+								  {
+								   res='卷二';
+								  }
+								  else if(json[i].chapter[m].etid==2)
+								  {
+								   res='卷三';
+								  };
+            				twomenu+="<span>"+res+"</span>";
+            			}
+            				
+            		}
+            		
+            		
+            	}
+            	$("#two-menu").html(twomenu);
+                
+               
+            },
+            error:function(st){
+            	alert ("系统错误，错误码"+st.status);　
+            }
+            
+        });
+    	 	
+    })
+    
+
+
+ $("#two-menu").on("click","span",function(){
+            var eid="";
+            var etid="";
+            var this2text=$(this).text();
+        	$(this).addClass("kemu-active").siblings().removeClass("kemu-active");
+            //alert (this2text);
+
+
+$.ajax({
+            type: "get",
+            url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=ztjk",
+            dataType:"jsonp",
+            jsonp: "callback",
+            jsonpCallback:"successCallback", 
+            success:function(data) {
+                var json=eval(data);
+                var res="";
+                console.log(json);
+                for(i in json){
+		                    
+                        for(m in json[i].chapter){
+
+                        		if(json[i].chapter[m].etid==0)
+								  {
+								    res='卷一';
+								  }
+								  else if(json[i].chapter[m].etid==1)
+								  {
+								   res='卷二';
+								  }
+								  else if(json[i].chapter[m].etid==2)
+								  {
+								   res='卷三';
+								  };
+
+                            if (this2text==res) {
+                               eid=json[i].eid;
+                               etid=json[i].chapter[m].etid;
+                               senddata(eid,etid);
+
+                            }
+                        }
+                     
+                }
+               
+                
+
+
+               
+            },
+            error:function(st){
+                alert ("系统错误，错误码"+st.status);　
+            }
+            
+        });
+
+  function senddata(eid,etid){
+    console.log("sid:"+eid+"cid:"+etid);
+
+    $.ajax({
+            type: "get",
+            url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=trueitembank&eid="+eid+"&etid="+etid,
+            dataType:"jsonp",
+            //jsonp: "callback",
+            //jsonpCallback:"successCallback", 
+            success:function(data) {
+                var fhdata=eval(data);
+                var tabledatahtml="";
+                var re;
+				var time;
+				var id;
+				var url;
+				var res;
+                for(i=0;i<data.length;i++){
+                    console.log(data[i]);
+				  if(data[i].te_type==1)
+				  {
+				    re='多选';
+				  }
+				  else if(data[i].te_type==0)
+				  {
+				   re='单选';
+				  };
+
+				  if(data[i].etid==0)
+				  {
+				    res='卷一';
+				  }
+				  else if(data[i].etid==1)
+				  {
+				   res='卷二';
+				  }
+				  else if(data[i].etid==2)
+				  {
+				   res='卷三';
+				  };
+				 id=data[i].item_id;
+				 delurl="Question/truedelete?item_id="+id;
+				 editurl="Question/trueedit?item_id="+id;
+				 //alert(url);
+				 time=getLocalTime(data[i].itime);
+                 
+                 // tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'>{:L('EDIT')}</a>|<a href='"+delurl+"' class='js-ajax-delete'>{:L('DELETE')}</a></td></tr>"
+
+                 tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'>{:L('EDIT')}</a>|<a href='"+delurl+"' class='js-ajax-delete'>{:L(DELETE)}</a></td></tr>"
+
+
+
+
+ 
+			   }
+                $("tbody").html(tabledatahtml);
+
+               
+               
+            },
+            error:function(st){
+                alert ("发送数据失败，错误码"+st.status);　
+            }
+            
+        });
+
+
+
+
+
+  }
+
+})        
+})
+</script>
 </body>
 </html>

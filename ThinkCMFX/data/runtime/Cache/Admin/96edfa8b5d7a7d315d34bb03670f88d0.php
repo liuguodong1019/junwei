@@ -11,32 +11,32 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/junwei/public/simpleboot/jedate/jedate.js"></script>
-    <link href="/junwei/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/junwei/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/junwei/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
-    <!--<link rel="stylesheet" href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/junwei/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <!--<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
-            ROOT: "/junwei/",
-            WEB_ROOT: "/junwei/",
+            ROOT: "/",
+            WEB_ROOT: "/",
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
-    <script src="/junwei/public/js/jquery.js"></script>
-    <script src="/junwei/public/js/wind.js"></script>
-    <script src="/junwei/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/wind.js"></script>
+    <script src="/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -88,7 +88,7 @@
             <th width="80">课时数量</th>
             <th width="80">课堂类型</th>
             <th width="80">直播状态</th>
-            <th width="80">是否收费</th>
+
 
         </tr>
         <tr>
@@ -107,34 +107,42 @@
                     <?php elseif($data["status"] == 2): ?>直播结束
                     <?php else: ?>生成回放<?php endif; ?>
             </td>
-            <td>
-                <?php if(($data["is_free"] == 1)): ?>公开课
-                    <?php else: ?>vip<?php endif; ?>
-            </td>
+
 
         </tr>
         <tr>
+            <th width="80">是否收费</th>
             <th width="80">房间号</th>
             <th width="80">学生口令</th>
             <th width="80">回放地址</th>
             <th width="80">课堂ID</th>
-            <th width="80">适用人群</th>
-            <th width="80">配发图书</th>
             <th width="80">开始时间</th>
             <th width="80">结束时间</th>
 
         </tr>
         <tr>
+            <td>
+                <?php if(($data["is_free"] == 1)): ?>公开课
+                    <?php else: ?>vip<?php endif; ?>
+            </td>
             <td><?php echo ($data["number"]); ?></td>
             <td><?php echo ($data["stu_token"]); ?></td>
             <td><?php echo ($data["reply_url"]); ?></td>
             <td><?php echo ($data["class_id"]); ?></td>
-            <td><?php echo ($data["people"]); ?></td>
-            <td><?php echo ($data["book"]); ?></td>
             <td><?php echo ($data["startdate"]); ?></td>
             <td><?php echo ($data["invaliddate"]); ?></td>
         </tr>
 
+    </table>
+    <table class="table table-hover table-bordered table-list">
+        <tr>
+            <th width="40">适用人群</th>
+            <th width="40">配发图书</th>
+        </tr>
+        <tr>
+            <td><?php echo ($data["people"]); ?></td>
+            <td><?php echo ($data["book"]); ?></td>
+        </tr>
     </table>
     <table class="table table-hover table-bordered table-list">
         <tr>
@@ -144,7 +152,6 @@
             <td><textarea style='width:50%;height:100px;'><?php echo ($data["introduction"]); ?></textarea></td>
         </tr>
     </table>
-
 </div>
 
 </body>

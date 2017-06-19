@@ -16,7 +16,7 @@
             <th width="80">课时数量</th>
             <th width="80">课堂类型</th>
             <th width="80">直播状态</th>
-            <th width="80">是否收费</th>
+
 
         </tr>
         <tr>
@@ -37,35 +37,43 @@
                     <else />生成回放
                 </if>
             </td>
-            <td>
-                <if condition = "($data.is_free eq 1)"> 公开课
-                    <else />vip
-                </if>
-            </td>
+
 
         </tr>
         <tr>
+            <th width="80">是否收费</th>
             <th width="80">房间号</th>
             <th width="80">学生口令</th>
             <th width="80">回放地址</th>
             <th width="80">课堂ID</th>
-            <th width="80">适用人群</th>
-            <th width="80">配发图书</th>
             <th width="80">开始时间</th>
             <th width="80">结束时间</th>
 
         </tr>
         <tr>
+            <td>
+                <if condition = "($data.is_free eq 1)"> 公开课
+                    <else />vip
+                </if>
+            </td>
             <td>{$data.number}</td>
             <td>{$data.stu_token}</td>
             <td>{$data.reply_url}</td>
             <td>{$data.class_id}</td>
-            <td>{$data.people}</td>
-            <td>{$data.book}</td>
             <td>{$data.startdate}</td>
             <td>{$data.invaliddate}</td>
         </tr>
 
+    </table>
+    <table class="table table-hover table-bordered table-list">
+        <tr>
+            <th width="40">适用人群</th>
+            <th width="40">配发图书</th>
+        </tr>
+        <tr>
+            <td>{$data.people}</td>
+            <td>{$data.book}</td>
+        </tr>
     </table>
     <table class="table table-hover table-bordered table-list">
         <tr>
@@ -75,7 +83,6 @@
             <td><textarea style='width:50%;height:100px;'>{$data.introduction}</textarea></td>
         </tr>
     </table>
-
 </div>
 
 </body>

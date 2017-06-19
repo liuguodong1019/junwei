@@ -25,31 +25,10 @@ class QuestionController extends AdminbaseController
     */
    public function itembank()
    {    
-   	    if(IS_POST){
-   	    	$keyword=I('keyword');
-   	    	empty($keyword)?"":$keyword;
-	   	    $item=$this->itembank_model
-			->join('cmf_chapter on cmf_itembank.cid = cmf_chapter.cid')
-			->join('cmf_subjects on cmf_itembank.sid = cmf_subjects.sid')
-			->where("'question' like '`%$keyword%`' AND type=0")
-			->select();
-			//var_dump($item);die;
-			$this->assign("item",$item);
+        
 			$this->display();
-	    }
-	    else
-	    {
-		    //$item=$this->itembank_model->where("type=0")->select();
-			 $item=$this->itembank_model
-			->join('cmf_chapter on cmf_itembank.cid = cmf_chapter.cid')
-			->join('cmf_subjects on cmf_itembank.sid = cmf_subjects.sid')
-			->order('itime asc')
-			->where("type=0")
-			->select();
-		    //var_dump($item);die;
-			$this->assign("item",$item);
-			$this->display();
-	    }
+
+	    
    }
    /**
     * 试题添加
@@ -171,7 +150,7 @@ class QuestionController extends AdminbaseController
 	  {
 	  	$id=I("get.item_id",0,'intval');
 		$item=$this->itembank_model->where(array('item_id'=>$id))->find();
-		$option=$this->option_model->where(array('qid'=>$id))->select();
+		$option=$this->option_model->where(array('qid'=>$id))->order('option_id asc')->select();
 		//var_dump($option);die;
 		$answer=$this->answer_model->where(array('qid'=>$id))->order('option_id asc')->getField('option_id',true);
 		$answ=implode(",",$answer);
@@ -837,12 +816,13 @@ public function truemateradd_post()
        $info=I('info');
        $type=I('type');
        $kword=I('kword');
+	   $no=I('no');
         $fen=array();
-			 $jian=array("sid","key","cid","question","answer","parsing","point","difficulty","score","info","type","kword","meterial_id","stime");
+			 $jian=array("sid","key","cid","question","answer","parsing","point","difficulty","score","info","type","kword","meterial_id","itime","no");
             foreach ($sid as $k=>$v)
             {
                $fen[]=array($v,$key[$k],$cid[$k],$question[$k],$answer[$k],$parsing[$k],$point[$k],$difficulty[$k],$score[$k],
-               	            $info[$k],$type[$k],$kword[$k],$m_id,time());
+               	            $info[$k],$type[$k],$kword[$k],$m_id,time(),$no[$k]);
             } 
               $item_id=array();
               foreach ($fen as $key => $value) 
@@ -907,16 +887,17 @@ public function truemateradd_post()
        $parsing=I('parsing');
        $point=I('point');
        $difficulty=I('difficulty');
+	   $no=I('no');
        $score=I('score');
        $info=I('info');
        $type=I('type');
        $kword=I('kword');
         $fen=array();
-			 $jian=array("eid","key","question","answer","parsing","point","difficulty","score","info","type","kword","meterial_id","stime");
+			 $jian=array("eid","key","question","answer","parsing","point","difficulty","score","info","type","kword","meterial_id","itime","no","difficulty");
             foreach ($eid as $k=>$v)
             {
                $fen[]=array($v,$key[$k],$question[$k],$answer[$k],$parsing[$k],$point[$k],$difficulty[$k],$score[$k],
-               	            $info[$k],$type[$k],$kword[$k],$m_id,time());
+               	            $info[$k],$type[$k],$kword[$k],$m_id,time(),$no[$k],$difficulty[$k]);
             } 
               $item_id=array();
               foreach ($fen as $key => $value) 
@@ -955,6 +936,7 @@ public function truemateradd_post()
    public function truesubedit_post()
    {
      $data=I();
+	 $data['itime']=time();
      unset( $data['sub_id'] );
      $sub=M('subjective');
      $sub_id=I('sub_id');
@@ -993,6 +975,7 @@ public function truemateradd_post()
    public function subjectiveedit_post()
    {
      $data=I();
+	 $data['itime']=time();
      unset( $data['sub_id'] );
      $sub=M('subjective');
      $sub_id=I('sub_id');

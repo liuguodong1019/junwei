@@ -12,17 +12,37 @@ class UsercourseController extends Controller{
     public function downshow(){
         $uid = I("uid");                       //判断接收过来的token是get传值还是post，token是判断用户的唯一标识符
         $page = I("page");
-        $model = M("user_course");
+        $model = M("order");
 
         if(!empty($page)){
+
             $downinfo = $model
-                ->join("cmf_course ON cmf_course.id = cmf_user_course.cid")
-                ->join("cmf_users ON cmf_users.id = cmf_user_course.uid")
-                ->where("cmf_user_course.uid = $uid AND cmf_user_course.pay_status = 1 AND cmf_user_course.uc_type = 0")
-                //->field("cmf_course.subject,cmf_course.num_class,cmf_course.cover,cmf_course_download.create_time")
-                ->order("cmf_user_course.uc_id desc")
+                ->join("INNER JOIN cmf_course ON cmf_course.id = cmf_order.course_id")
+                //->join("INNER JOIN cmf_users ON cmf_users.id = cmf_order.uid")
+                ->join("INNER JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id")
+                ->field("cmf_course.course_name,cmf_course.cover,cmf_course.num_class,cmf_course.id,cmf_lector.name,cmf_course.now_price,cmf_course.old_price")
+                ->where("cmf_order.uid = $uid AND cmf_order.pay_status = '1'")
+                ->order("cmf_order.id desc")
                 ->page($page.',10')
                 ->select();
+            //判断该课程是否收藏
+            for($i=0;$i<count($downinfo);$i++){
+                $cid=$downinfo[$i]['id'];
+                $exitcollect = M("course_collection")->where("course_id = $cid AND uid = $uid")->find();
+                if(empty($exitcollect)){
+                    $downinfo[$i]['type'] = 0;
+                }else{
+                    if($exitcollect['type'] == 0){
+                        $downinfo[$i]['type'] = 0;
+                    }else{
+                        $downinfo[$i]['type'] = 1;
+                    }
+                }
+            }
+
+            //echo $model->getlastsql()."<br>";
+            //print_r($downinfo);
+            //die;
             if (!empty($downinfo)) {
                $data['status'] = 1 ;
                 $data['msg'] = "操作成功";
@@ -31,7 +51,7 @@ class UsercourseController extends Controller{
 
             }else {
                 $data['status'] = 1 ;
-                $data['msg'] = "操作成功";
+                $data['msg'] = "您还未购买课程";
                 $data['data'] = '';
                 echo json_encode($data);die;
             }
@@ -46,7 +66,7 @@ class UsercourseController extends Controller{
 
     /*
      * 获取课程下面的课时的列表
-     * */
+     *
     public function showusercourse(){
         $courseid = I("cid");              //获取课程的ID
         $uid = I("uid");              //   获取当前登录用户的唯一标识符
@@ -82,11 +102,11 @@ class UsercourseController extends Controller{
             echo json_encode($data);die;
         }
     }
-
+*/
 
     /*
      * 将课程下面的课时加入数据库
-     * */
+     *
     public function addlive(){
         if(IS_POST){
             $data['uid'] = I("post.uid");
@@ -112,35 +132,8 @@ class UsercourseController extends Controller{
             echo json_encode($data);die;
         }
     }
+*/
 
-    /*
-     * 将课程加入数据库
-     * */
-    public function addcourse(){
-        if(IS_POST){
-            $data['uid'] = I("post.uid");
-            $data['cid'] = I("post.cid");
-            $data['live_id'] = NULL;     //课时的ID//  课程的ID
-            $data['uc_time'] = date("Y-m-d H:i:s");
-            $data['uc_type'] = 0;
-            $data['pid'] = 0;
-            $model = M("user_course");
-            if($model->add($data)){
-                $dat['status'] = 1 ;
-                $dat['msg'] = "操作成功";
-                echo json_encode($dat);die;
-            }else{
-                $dat['status'] = 0 ;
-                $dat['msg'] = "操作失败";
-                echo json_encode($dat);die;
-            }
-
-        }else{
-            $data['status'] = 102 ;
-            $data['msg'] = "请求方式错误";
-            echo json_encode($data);die;
-        }
-    }
 
     /*
     * 获取答题记录的列表

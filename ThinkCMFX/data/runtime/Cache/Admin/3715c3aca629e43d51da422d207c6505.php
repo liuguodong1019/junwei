@@ -11,32 +11,32 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/ThinkCMFX/public/simpleboot/jedate/jedate.js"></script>
-    <link href="/ThinkCMFX/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/ThinkCMFX/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/ThinkCMFX/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/junwei/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/junwei/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/junwei/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/junwei/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
-    <!--<link rel="stylesheet" href="/ThinkCMFX/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/ThinkCMFX/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <!--<link rel="stylesheet" href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/junwei/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
-            ROOT: "/ThinkCMFX/",
-            WEB_ROOT: "/ThinkCMFX/",
+            ROOT: "/junwei/",
+            WEB_ROOT: "/junwei/",
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
-    <script src="/ThinkCMFX/public/js/jquery.js"></script>
-    <script src="/ThinkCMFX/public/js/wind.js"></script>
-    <script src="/ThinkCMFX/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/junwei/public/js/jquery.js"></script>
+    <script src="/junwei/public/js/wind.js"></script>
+    <script src="/junwei/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -154,19 +154,13 @@
                 <tr>
                     <th width="80">适用人群</th>
                     <td>
-                        <select name="people_id"  class="normal_select">
-                                <option value="请选择">请选择</option>
-                                <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): ?><option value="<?php echo ($va["p_id"]); ?>"><?php echo ($va["people"]); ?></option><?php endforeach; endif; ?>
-                        </select>
+                        <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): echo ($va["people"]); ?>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="people[]" value="<?php echo ($va["people"]); ?>">&nbsp;&nbsp;&nbsp;<?php endforeach; endif; ?>
                     </td>
                 </tr>
                 <tr>
                     <th width="80">配发图书</th>
                     <td>
-                        <select name="book_id"  class="normal_select">
-                            <option value="请选择">请选择</option>
-                            <?php if(is_array($array['book'])): foreach($array['book'] as $key=>$value): ?><option value="<?php echo ($value["b_id"]); ?>"><?php echo ($value["book"]); ?></option><?php endforeach; endif; ?>
-                        </select>
+                        <?php if(is_array($array['book'])): foreach($array['book'] as $key=>$value): echo ($value["book"]); ?>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="book[]" value="<?php echo ($value["book"]); ?>">&nbsp;&nbsp;&nbsp;<?php endforeach; endif; ?>
                     </td>
                 </tr>
                 </tbody>

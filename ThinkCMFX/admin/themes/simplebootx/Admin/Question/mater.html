@@ -153,10 +153,12 @@ $(document).ready(function(){
 	function getdata(one,two){
 			$.ajax({
 				type:"get",	
-				url:"http://kf.junweiedu.cn/junwei/index.php?g=api&m=user&a=kzjk",
-				datatype:"json",
+				url:"http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=kzjk",
+				datatype:"jsonp",
+                jsonp:"jsonpCallback",
+                jsonpCallback:"successCallback",
 				success:function(data){
-					var jsondata=$.parseJSON(data); 
+					var jsondata=eval(data); 
 					var onejihtml='<option value="">请选择</option>';
 					
 			        for(i in jsondata){
@@ -169,10 +171,12 @@ $(document).ready(function(){
 				var oneval=$(this).val();
 				$.ajax({
 				type:"get",	
-				url:"http://kf.junweiedu.cn/junwei/index.php?g=api&m=user&a=kzjk",
-				datatype:"json",
+				url:"http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=kzjk",
+				datatype:"jsonp",
+                jsonp:"jsonpCallback",
+                jsonpCallback:"successCallback",
 				success:function(data){
-					var jsondata=$.parseJSON(data); 
+					var jsondata=eval(data); 
 					var twojihtml='<option value="">请选择</option>';
 			        for(i in jsondata){
 					var onejiname=jsondata[i].sid;

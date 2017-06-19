@@ -21,7 +21,7 @@
 				<thead>
 					<tr>
 						<th width="16"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
-						<th width="120">ID</th>
+						<th width="120">题号</th>
 						<th>题干</th>
 						<!-- <th>点击量</th> -->
 						<th width="80">卷名</th>
@@ -33,10 +33,10 @@
 				<foreach name="item" item="vo">
 				<tr>
 					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="sub_ids[]" value="{$vo.sub_id}"></td>
-					<td><a>{$vo.sub_id}</a></td>
+					<td><a>{$vo.no}</a></td>
 					<td><a href="#">{$vo.question}</a></td>
 					<td>{$vo.eid}年国家司法考试试题</td>
-					<td>{$vo.stime|date='Y-m-d H:i:s',###}</td>
+					<td>{$vo.itime|date='Y-m-d H:i:s',###}</td>
 					<td>
 						主观题
 					</td>

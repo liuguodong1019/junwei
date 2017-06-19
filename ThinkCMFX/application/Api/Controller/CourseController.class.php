@@ -1,6 +1,6 @@
 <?php
 namespace Api\Controller;
-
+header("Access-Control-Allow-Origin:*");
 use Think\Controller;
 use Api\Controller\ResponseController;
 use Think\Page;
@@ -239,7 +239,7 @@ class CourseController extends Controller
 
 
     /**
-     * 获取分享页面课堂信息
+     * 获取分享页面课堂详情
      */
     public function classDesc()
     {
@@ -253,6 +253,27 @@ class CourseController extends Controller
             $page = I('get.page');
             $jsonp = I('get.callback');
             $result = $res->classDesc($id,$uid,$page);
+            echo $jsonp."($result)";die;
+        } else {
+            echo $model::state($succ[3], $mess[3]);die;
+        }
+    }
+
+    /**
+     * 获取分享页面课时列表
+     */
+    public function class_hour()
+    {
+        $succ = C('status');
+        $mess = C('msg');
+        $model = new SubmitController();
+        $res = new ResponseController();
+        if (IS_GET) {
+            $id = I('get.id');
+            $uid = I('get.uid');
+            $page = I('get.page');
+            $jsonp = I('get.callback');
+            $result = $res->class_hour($id,$uid,$page);
             echo $jsonp."($result)";die;
         } else {
             echo $model::state($succ[3], $mess[3]);die;

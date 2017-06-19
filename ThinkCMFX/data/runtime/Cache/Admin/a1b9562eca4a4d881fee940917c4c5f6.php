@@ -87,25 +87,25 @@
         <div class="box-body">
             <table width="100%" cellpadding="2" cellspacing="2">
                 <!--<tr>-->
-                    <!--<td>-->
-                        <!--<input type="hidden" name="course_name"  value = "<?php echo ($array['course_name']); ?>">-->
-                        <!--<input type="hidden" name="class_id"  value = "<?php echo ($array['class_id']); ?>">-->
-                        <!--&lt;!&ndash;<input type="hidden" name="startDate" id="" value = "$array['startdate']">&ndash;&gt;-->
-                        <!--<input type="hidden" name="id"  value = "<?php echo ($id); ?>">-->
-                    <!--</td>-->
+                <!--<td>-->
+                <!--<input type="hidden" name="course_name"  value = "<?php echo ($array['course_name']); ?>">-->
+                <!--<input type="hidden" name="class_id"  value = "<?php echo ($array['class_id']); ?>">-->
+                <!--&lt;!&ndash;<input type="hidden" name="startDate" id="" value = "$array['startdate']">&ndash;&gt;-->
+                <!--<input type="hidden" name="id"  value = "<?php echo ($id); ?>">-->
+                <!--</td>-->
                 <!--</tr>-->
 
                 <!--<tr>-->
-                    <!--<th width="80">课堂类型</th>-->
-                    <!--<td>-->
-                        <!--<?php if(($data["is_free"] == 0)): ?>-->
-                        <!--<label><input name="type" type="radio" value="<?php echo ($data["type"]); ?>" checked/>&nbsp&nbsp&nbsp大讲堂-->
-                            <!--<input name="type" type="radio" value="<?php echo ($data["type"]); ?>"/>&nbsp&nbsp&nbsp小班课 </label>-->
-                            <!--<?php else: ?>-->
-                            <!--<label><input name="type" type="radio" value="<?php echo ($data["type"]); ?>"/>&nbsp&nbsp&nbsp大讲堂-->
-                                <!--<input name="type" type="radio" value="<?php echo ($data["type"]); ?>" checked/>&nbsp&nbsp&nbsp小班课 </label>-->
-                        <!--<?php endif; ?>-->
-                    <!--</td>-->
+                <!--<th width="80">课堂类型</th>-->
+                <!--<td>-->
+                <!--<?php if(($data["is_free"] == 0)): ?>-->
+                <!--<label><input name="type" type="radio" value="<?php echo ($data["type"]); ?>" checked/>&nbsp&nbsp&nbsp大讲堂-->
+                <!--<input name="type" type="radio" value="<?php echo ($data["type"]); ?>"/>&nbsp&nbsp&nbsp小班课 </label>-->
+                <!--<?php else: ?>-->
+                <!--<label><input name="type" type="radio" value="<?php echo ($data["type"]); ?>"/>&nbsp&nbsp&nbsp大讲堂-->
+                <!--<input name="type" type="radio" value="<?php echo ($data["type"]); ?>" checked/>&nbsp&nbsp&nbsp小班课 </label>-->
+                <!--<?php endif; ?>-->
+                <!--</td>-->
                 <!--</tr>-->
                 <tr>
                     <td>
@@ -159,7 +159,13 @@
                 <tr>
                     <th width="80">封面图</th>
                     <td>
-                        <input type="file" name="cover" value = "">
+                        <input type="file" name="cover" value = "<?php echo ($data["cover"]); ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">课程详情封面图</th>
+                    <td>
+                        <input type="file" name="detail_cover" value = "<?php echo ($data["detail_cover"]); ?>">
                     </td>
                 </tr>
                 <tr>
@@ -200,19 +206,13 @@
                 <tr>
                     <th width="80">适用人群</th>
                     <td>
-                        <select name="people_id" class="normal_select">
-                            <option value="<?php echo ($data["p_id"]); ?>"><?php echo ($data["people"]); ?></option>
-                            <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): ?><option value="<?php echo ($va["p_id"]); ?>"><?php echo ($va["people"]); ?></option><?php endforeach; endif; ?>
-                        </select>
+                        <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): echo ($va["people"]); ?>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="people[]" value="<?php echo ($va["people"]); ?>">&nbsp;&nbsp;&nbsp;<?php endforeach; endif; ?>
                     </td>
                 </tr>
                 <tr>
                     <th width="80">配发图书</th>
                     <td>
-                        <select name="book_id" class="normal_select">
-                            <option value="<?php echo ($data["b_id"]); ?>"><?php echo ($data["book"]); ?></option>
-                            <?php if(is_array($array['book'])): foreach($array['book'] as $key=>$value): ?><option value="<?php echo ($value["b_id"]); ?>"><?php echo ($value["book"]); ?></option><?php endforeach; endif; ?>
-                        </select>
+                        <?php if(is_array($array['book'])): foreach($array['book'] as $key=>$value): echo ($value["book"]); ?>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="book[]" value="<?php echo ($value["book"]); ?>">&nbsp;&nbsp;&nbsp;<?php endforeach; endif; ?>
                     </td>
                 </tr>
                 </tbody>

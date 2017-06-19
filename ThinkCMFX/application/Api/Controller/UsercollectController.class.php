@@ -9,80 +9,120 @@ class UsercollectController extends Controller{
     /*
     * 将收藏课程下面的课时写入数据库
     * */
+    /*
     public function collectitem(){
         if(IS_POST){
             $status = I("post.status");    //1收藏    0取消收藏
             $uid = I("post.uid");     //用户
-            $live_id = I("post.live_id");            //课时的id
-            $cid  = I("post.course_id");            //课程得 ID
+            $id = I("post.live_id");            //课时的id
+            $courseid = M("live")->where("live_id = $id")->find();
+            $course_id = $courseid['course_id'];    //vip课程的ID
             if($status == 1){
-                $data['live_id'] = $live_id ;
-                $data['create_time'] = time();                     //时间
+                //收藏
+                //查看该课时是否收藏 如果存在判断type是否为1  如果是0则改为1
+                $courexitb = M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->find();
+                if(empty($courexitb)){
+                    $data['course_id'] = $course_id;
+                    $data['live_id'] = $id;
+                    $data['uid'] = $uid;
+                    $data['create_time'] = date("Y-m-d H:i:s");
+                    $data['type'] = 1;
 
-                $data['course_id'] = $cid;
-                $data['uid'] = $uid;
-
-                $data['type'] = 1;
-                //判断下载的课程表中是否有该课程的id  如果没有则添加
-                $downcourse = M("course_collection")->where("course_id = $cid AND uid = $uid")->find();
-                if(empty($downcourse)){
-                    $dat['course_id'] = $cid;
-                    $dat['create_time'] = time();
-                    $dat['uid'] = $uid;
-                    $dat['type'] = 1;
-                    $rs = M("course_collection")->add($dat);
-                }
-
-                $model = M("live_collection");
-                //先判断download_live表中数据是否存在
-                $downlive = $model->where("uid = $uid AND live_id = $live_id AND course_id = $cid")->find();
-                if(empty($downlive)){
-                    $res = $model->add($data);
-                    //如果下载了要在在course表内的下载次数加一
-                    $course = M("course")->where("id = $cid")->field("collection_num")->find();
+                    $course = M("course")->where("id = $course_id")->field("collection_num")->find();
                     $cour['collection_num'] = $course['collection_num'] +1;
-                    $courok = M("course")->where("id = $cid")->save($cour);
+                    $courok = M("course")->where("id = $course_id")->save($cour);
 
-                    if (!empty($res && $courok)) {
-                        $arr['status'] = 1;
-                        $arr['msg'] = "操作成功";
-                        echo json_encode($arr);die;
 
-                    }else {
-                        $arr['status'] = 0;
-                        $arr['msg'] = "操作失败";
-                        echo json_encode($arr);die;
-                    }
+                    $res = M("live_collection")->add($data);
                 }else{
-                    $course = M("course")->where("id = $cid")->field("collection_num")->find();
-                    $cour['collection_num'] = $course['collection_num'] +1;
-                    $courok = M("course")->where("id = $cid")->save($cour);
-                    $datt['type'] = 1;
-                    $datt['create_time'] = time();
-                    $rrr = $model->where("uid = $uid AND live_id = $live_id AND course_id = $cid")->save($datt);
-                    if (!empty($rrr && $courok)) {
-                        $arr['status'] = 1;
-                        $arr['msg'] = "操作成功";
-                        echo json_encode($arr);die;
+                    if($courexitb['type'] == 0){
+                        $data['type'] = 1;
+                        $data['create_time'] = date("Y-m-d H:i:s");
 
-                    }else {
-                        $arr['status'] = 0;
-                        $arr['msg'] = "操作失败";
-                        echo json_encode($arr);die;
+                        $course = M("course")->where("id = $course_id")->field("collection_num")->find();
+                        $cour['collection_num'] = $course['collection_num'] +1;
+                        $courok = M("course")->where("id = $course_id")->save($cour);
+
+                        $res =  M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->save($data);
                     }
 
                 }
-            }else{
-                $model = M("live_collection");
-                $data['type'] = 0;   //取消收藏
-                if($model->where("uid = $uid AND live_id = $live_id AND course_id = $cid")->save($data)){
+
+                if(empty($res)){
+                    $arr['status'] = 0;
+                    $arr['msg'] = "操作失败aaaaa";
+                    echo json_encode($arr);die;
+                }else{
+
                     $arr['status'] = 1;
                     $arr['msg'] = "操作成功";
                     echo json_encode($arr);die;
-                }else{
+                }
+
+            }else{
+                //取消收藏
+                $data['type'] = 0;
+                $res =  M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->save($data);
+                if(empty($res)){
                     $arr['status'] = 0;
-                    $arr['msg'] = "操作失败";
+                    $arr['msg'] = "操作失败bbbb";
                     echo json_encode($arr);die;
+                }else{
+
+                    $arr['status'] = 1;
+                    $arr['msg'] = "操作成功";
+                    echo json_encode($arr);die;
+                }
+            }
+            /*
+            if($status == 1){
+                $liveexit = M("live")->where("course_id = $id")->find();  //判断课时表内是否有收到的课程的id  如果没有则受到的为课程的ID
+                if(empty($liveexit)){
+                    //加入到收藏的课程的表内  (查看该课程是否存在  如果存在判断type是否为1  如果是0则改为1)
+                    $courexitb = M("course_collection")->where("uid = $uid AND course_id = $id")->find();
+                    if(empty($courexitb)){
+                        $data['uid'] = $uid;
+                        $data['course_id'] = $id;
+                        $data['create_time'] = date("Y-m-d H:i:s");
+                        $data['type'] = 1;
+
+                        $res = M("course_collection")->add($data);
+
+                    }else{
+                        if($courexitb['type'] == 0){
+                            $qq['create_time'] = date("Y-m-d H:i:s");
+                            $qq['type'] = 1;
+                            $res = M("course_collection")->where("uid = $uid AND course_id = $id")->save($qq);
+                        }
+                    }
+                    if(empty($res)){
+                        $arr['status'] = 0;
+                        $arr['msg'] = "操作失败aaaaa";
+                        echo json_encode($arr);die;
+                    }else{
+
+                        $arr['status'] = 1;
+                        $arr['msg'] = "操作成功";
+                        echo json_encode($arr);die;
+                    }
+                }
+            }else{
+                //$data['msg'] = $status;
+                //echo json_encode($data);die;
+                //取消收藏
+                $liveexit = M("live")->where("course_id = $id")->find();  //判断课时表内是否有收到的课程的id  如果没有则受到的为课程的ID
+                if(empty($liveexit)){
+                    $data['type'] = 0;
+                    $exitcour = M("course_collection")->where("uid = $uid AND course_id = $id")->save($data);
+                    if(empty($exitcour)){
+                        $arr['status'] = 0;
+                        $arr['msg'] = "操作失败";
+                        echo json_encode($arr);die;
+                    }else{
+                        $arr['status'] = 1;
+                        $arr['msg'] = "操作成功";
+                        echo json_encode($arr);die;
+                    }
                 }
             }
 
@@ -92,67 +132,177 @@ class UsercollectController extends Controller{
             echo json_encode($arr);die;
         }
     }
-
+*/
 
 
     /*
-     * 将收藏课程的写入数据库
+     * 将收藏课程/试题的写入数据库  不同的表中
      * */
     public function coursecoll(){
         if(IS_POST){
             $uid = I("post.uid");
             $cid  = I("post.course_id");            //课程得 ID
+            //$data['msg'] = $cid;
+            //echo json_encode($data);die;
             $model = M("course_collection");
             $status = I("post.status");
             if($status == 1){
-                $data['course_id'] = $cid;
-                $data['create_time'] = time();
-                $data['uid'] = $uid;
+                if(empty($cid)){
+                    $data['uid'] = $uid;
+                    $data['ctime'] = date("Y-m-d H:i:s");
+                    $eid = I("post.eid");
+                    $model = M("item_collection");
 
-                $data['type'] = 1;
-                $res = $model->where("uid = $uid AND course_id = $cid")->find();
-                if(empty($res)){
-                    $course = M("course")->where("id = $cid")->field("collection_num")->find();
-                    $cour['collection_num'] = $course['collection_num'] +1;
-                    $courok = M("course")->where("id = $cid")->save($cour);
-                    $rs = $model->add($data);
-                    if($courok && $rs){
-                        $arr['status'] = 1;
-                        $arr['msg'] = "收藏成功";
-                        echo json_encode($arr);die;
-                    }else {
-                        $arr['status'] = 0;
-                        $arr['msg'] = "收藏失败";
-                        echo json_encode($arr);die;
+                    if(empty($eid)){    //没有年份和卷几
+                        //$data['msg'] = "eid是空的";
+                        //echo json_encode($data);
+                        $sid = I("post.sid");
+                        $data['sid'] = $sid;
+                        $cid = I("post.cid");
+                        $data['cid'] = $cid;
+                        $data['eid'] = NULL;
+                        $data['type'] = 1;
+                        $exict = $model->where("uid = $uid AND sid = $sid AND cid = $cid")->find();
+
+                        if(empty($exict)){
+                            $data['status'] = 1;
+                            if ($model->add($data)) {
+                                $dat['status'] = 1;
+                                $dat['msg'] = "操作成功";
+                                echo json_encode($dat);die;
+
+                            }else {
+                                $dat['status'] = 0;
+                                $dat['msg'] = "操作失败";
+                                echo json_encode($dat);die;
+                            }
+                        }else{
+                            $aa['ctime'] = date("Y-m-d H:i:s");
+                            $aa['status'] = 1;
+                            if ($model->where("uid = $uid AND sid = $sid AND cid = $cid")->save($aa)) {
+                                $dat['status'] = 1;
+                                $dat['msg'] = "操作成功";
+                                echo json_encode($dat);die;
+
+                            }else {
+                                $dat['status'] = 0;
+                                $dat['msg'] = "操作失败";
+                                echo json_encode($dat);die;
+                            }
+                        }
+                    }else{
+                        //$data['mag'] = "nihao";
+                        //echo json_encode($data);
+                        $etid = I("post.etid");//卷几
+                        $data['etid'] = $etid;
+
+                        $data['eid'] =  $eid;           //年份
+                        $data['type'] = 0;
+                        $exict = $model->where("uid = $uid AND eid = $eid AND etid = $etid")->find();
+                        if(empty($exict)){
+                            $data['status'] = 1;
+                            if ($model->add($data)) {
+                                $dat['status'] = 1;
+                                $dat['msg'] = "操作成功";
+                                echo json_encode($dat);die;
+
+                            }else {
+                                $dat['status'] = 0;
+                                $dat['msg'] = "操作失败";
+                                echo json_encode($dat);die;
+                            }
+                        }else{
+                            $aa['ctime'] = date("Y-m-d H:i:s");
+                            $aa['status'] = 1;
+                            if ($model->where("uid = $uid AND eid = $eid AND etid = $etid")->save($aa)) {
+                                $dat['status'] = 1;
+                                $dat['msg'] = "操作成功";
+                                echo json_encode($dat);die;
+
+                            }else {
+                                $dat['status'] = 0;
+                                $dat['msg'] = "操作失败";
+                                echo json_encode($dat);die;
+                            }
+                        }
+
+                    }
+
+                }else{
+                    $data['course_id'] = $cid;
+                    $data['create_time'] = date("Y-m-d H:i:s");
+                    $data['uid'] = $uid;
+                    $data['type'] = 1;
+                    $res = $model->where("uid = $uid AND course_id = $cid")->find();
+                    if(empty($res)){
+                        $course = M("course")->where("id = $cid")->field("collection_num")->find();
+                        $cour['collection_num'] = $course['collection_num'] +1;
+                        $courok = M("course")->where("id = $cid")->save($cour);
+                        $rs = $model->add($data);
+                        if($courok && $rs){
+                            $arr['status'] = 1;
+                            $arr['msg'] = "收藏成功";
+                            echo json_encode($arr);die;
+                        }else {
+                            $arr['status'] = 0;
+                            $arr['msg'] = "收藏失败";
+                            echo json_encode($arr);die;
+                        }
+                    }else{
+                        $daa['type'] = 1;
+                        $daa['create_time'] = date("Y-m-d H:i:s");
+                        $course = M("course")->where("id = $cid")->field("collection_num")->find();
+                        $cour['collection_num'] = $course['collection_num'] +1;
+                        $courok = M("course")->where("id = $cid")->save($cour);
+                        if($model->where("uid = $uid AND course_id = $cid")->save($daa)){
+                            $arr['status'] = 1;
+                            $arr['msg'] = "收藏成功";
+                            echo json_encode($arr);die;
+                        }else{
+                            $arr['status'] = 0;
+                            $arr['msg'] = "收藏失败";
+                            echo json_encode($arr);die;
+                        }
+
+                    }
+                }
+
+
+            }else{
+                if(empty($cid)){
+                    $eid = I("eid");            //年份
+                    $data['status'] = 0;
+                    if(empty($eid)){
+                        $sid = I("post.sid");
+                        $cid = I("post.cid");
+                        $res = M("item_collection")->where("uid = $uid AND sid = $sid AND cid = $cid ")->save($data);
+
+                    }else{
+                        $etid = I("post.etid");//卷几
+                        $res = M("item_collection")->where("uid = $uid AND eid = $eid AND etid = $etid")->save($data);
+                    }
+                    if($res){
+                        $dat['status'] = 1;
+                        $dat['msg'] = "操作成功";
+                        echo json_encode($dat);die;
+                    }else{
+                        $dat['status'] = 0;
+                        $dat['msg'] = "操作失败";
+                        echo json_encode($dat);die;
                     }
                 }else{
-                    $daa['type'] = 1;
-                    $course = M("course")->where("id = $cid")->field("collection_num")->find();
-                    $cour['collection_num'] = $course['collection_num'] +1;
-                    $courok = M("course")->where("id = $cid")->save($cour);
-                    if($model->where("uid = $uid AND course_id = $cid")->save($daa)){
+                    $data['type'] = 0;
+                    if($model->where("uid = $uid AND course_id = $cid")->save($data)){
                         $arr['status'] = 1;
-                        $arr['msg'] = "收藏成功";
+                        $arr['msg'] = "取消收藏成功";
                         echo json_encode($arr);die;
                     }else{
                         $arr['status'] = 0;
-                        $arr['msg'] = "收藏失败";
+                        $arr['msg'] = "取消收藏失败";
                         echo json_encode($arr);die;
                     }
-
                 }
 
-            }else{
-                $data['type'] = 0;
-                if($model->where("uid = $uid AND course_id = $cid")->save($data)){
-                    $arr['status'] = 1;
-                    $arr['msg'] = "取消收藏成功";
-                    echo json_encode($arr);die;
-                }else{
-                    $arr['status'] = 0;
-                    $arr['msg'] = "取消收藏失败";
-                    echo json_encode($arr);die;
-                }
             }
 
         }else{
@@ -170,19 +320,36 @@ class UsercollectController extends Controller{
         $uid = I("uid");                       //判断接收过来的token是get传值还是post，token是判断用户的唯一标识符
         $page = I("page");
         $model = M("course_collection");
+        //\Admin\Model\InfoModel();
+        $news = new ResponseController();
 
-        if(!empty($page)){
+        if(!empty($page)) {
             $downinfo = $model
                 ->join("LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id")
-                ->join("cmf_users ON cmf_users.id = cmf_course_collection.uid")
-                ->where("cmf_course_collection.uid = $uid AND cmf_course_collection.type = 1")
+                ->join("LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id")
+                ->where("cmf_course_collection.uid = $uid AND cmf_course_collection.type = 1 ")
+                ->field("cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_lector.name,
+                cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,
+                cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,
+                cmf_course.status,cmf_course.type")
                 ->order("cmf_course_collection.uc_id desc")
-                ->page($page.',10')
+                ->page($page . ',10')
                 ->select();
-            if (!empty($downinfo)) {
+            //print_r($downinfo);die;
+            $res = $news->gotten($uid, $page, $downinfo);
+            //print_r($res);
+            for($i=0;$i<count($res);$i++){
+                if($res[$i]['pay_status'] == 1){
+                    $res[$i]['pay_status'] = 1;
+                }else{
+                    $res[$i]['pay_status'] = 0;
+                }
+            }
+
+            if (!empty($res)) {
                 $arr['status'] = 1;
                 $arr['msg'] = "操作成功";
-                $arr['data'] = $downinfo;
+                $arr['data'] = $res;
                 echo json_encode($arr);die;
 
             }else {
@@ -191,11 +358,14 @@ class UsercollectController extends Controller{
                 $arr['data'] = '';
                 echo json_encode($arr);die;
             }
-        }else{
+        }
+
+        else{
             $arr['status'] = 0;
             $arr['msg'] = "操作失败";
             echo json_encode($arr);die;
         }
+
     }
 
 
@@ -246,12 +416,9 @@ class UsercollectController extends Controller{
         $model = M("live_collection");
         $id = I("ids");                          //接收传递过来的id的值或者数组(接收的主键自增的id  )
         $uid = I("uid");                    //获取用户的唯一标识
-        //判断id是数组还是一个数值
-        if(is_array($id)){
-            $where = 'ul_id in ('.implode(',',$id).') ';
-        }else{
-            $where = 'ul_id ='.$id ;
-        } //dump($where);
+
+            $where = "live_id in $id";
+
         $where .= " AND uid = $uid";
 
 
@@ -275,25 +442,8 @@ class UsercollectController extends Controller{
         $model = M("course_collection");
         $uid = I("uid");                    //获取用户的唯一标识
 
-        $id = I("ids");                          //接收传递过来的id的值或者数组（接收的课程的ids）
-
-        $mod = M("course_collection");
-        //判断id是数组还是一个数值
-        if(is_array($id)){
-            $where = 'course_id in ('.implode(',',$id).')';
-            $idss = implode(',',$id);
-            //print_r($idss);
-            $aa = M("live_collection")->where("course_id in ($idss) AND uid = $uid")->select();
-            if($aa){
-                $rs = M("live_collection")->where("course_id in ($idss) AND uid = $uid")->delete();
-            }
-        }else{
-            $where = 'course_id ='.$id;
-            $aa = M("live_collection")->where("course_id = $id AND uid = $uid")->select();
-            if($aa){
-                $rs = M("live_collection")->where("course_id = $id AND uid = $uid")->delete();
-            }
-        }
+        $id = I("ids");                          //接收传递过来的ids为字符串（接收的课程的ids）
+        $where = "course_id in ($id)";
         $where .= " AND uid = $uid";
 
         if ($model->where($where)->delete()) {
@@ -317,10 +467,13 @@ class UsercollectController extends Controller{
             ->join("LEFT JOIN cmf_users ON cmf_users.id = cmf_item_collection.uid")
             ->join("LEFT JOIN cmf_subjects ON cmf_subjects.sid = cmf_item_collection.sid")
             ->join("LEFT JOIN cmf_chapter ON cmf_chapter.cid = cmf_item_collection.cid")
-            ->field("cmf_item_collection.eid,cmf_item_collection.etid,cmf_subjects.stitle,cmf_chapter.ctitle,cmf_item_collection.sid,cmf_item_collection.cid,cmf_item_collection.ctime")
+            ->field("cmf_item_collection.collect_id,cmf_item_collection.eid,cmf_item_collection.etid,cmf_subjects.stitle,
+            cmf_chapter.ctitle,cmf_item_collection.sid,cmf_item_collection.cid,cmf_item_collection.ctime,cmf_item_collection.type")
             ->where("cmf_item_collection.uid = $uid AND cmf_item_collection.status = 1")
             ->page($page . ',10')
             ->select();
+       // echo $model->getlastsql()."<br>";
+        //print_r($res);die;
         for ($i = 0; $i < count($res); $i++) {
             if ($res[$i]['stitle'] == '') {
                 $eid = $res[$i]['eid'];
@@ -338,6 +491,8 @@ class UsercollectController extends Controller{
 
         }
 
+        //print_r($res);die;
+
         if(!empty($res)){
             $data['status'] = 1;
             $data['msg'] = '请求成功';
@@ -352,70 +507,115 @@ class UsercollectController extends Controller{
     }
 
     /*
-     * 编辑收藏的课题
+     * 编辑收藏的试题
      * */
     public function  delitem(){
+       // $aa['msg'] = "nihao";
+        //echo json_encode($aa);die;
         $uid = I("uid");                    //获取用户的唯一标识
         $id = I("ids");                          //接收传递过来的需要删除的我的收藏的课程的自增id    collect_id
+
         $model = M("item_collection");
 
-
-            if(is_array($id)){
-                $where = 'collect_id in ('.implode(',',$id).')';
-
-            }else{
-                $where = "collect_id = $id";
-            }
-
-
+        $where = "collect_id in ($id)";
+        //$aa['msg'] = $where;
+       // echo json_encode($aa);die;
         $where .= " AND uid = $uid";
-
-
-        $data=$model->where($where)->delete();
-        if (!empty($data)) {
+        if ($model->where($where)->delete()) {
            $dat['status'] = 1;
             $dat['msg'] = '操作成功';
-            echo json_encode($dat);
+            echo json_encode($dat);die;
 
         }else {
             $dat['status'] = 0;
             $dat['msg'] = '操作失败';
-            echo json_encode($dat);
+            echo json_encode($dat);die;
         }
 
     }
 
     /*
     * 将题库加入收藏
-    * */
+    *
     public function insertitem(){
         if(IS_POST){
             $status = I("post.status");
             if($status == 1){
-                $data['uid'] = I("post.uid");
+                $uid = I("post.uid");
+                $data['uid'] = $uid;
                 $data['ctime'] = date("Y-m-d H:i:s");
-                $data['eid'] = I("eid");            //年份
-                $data['status'] = 1;
-                if(empty($data['eid'])){
-                    $data['sid'] = I("post.sid");
-                    $data['cid'] = I("post.cid");
-                    $data['eid'] = NULL;
-
-                }else{
-                    $data['etid'] = I("post.etid");//卷几
-                }
-
+                $eid = I("eid");
                 $model = M("item_collection");
-                if ($model->add($data)) {
-                    $dat['status'] = 1;
-                    $dat['msg'] = "操作成功";
-                    echo json_encode($dat);die;
+                if(empty($eid)){    //没有年份和卷几
+                    $sid = I("post.sid");
+                    $data['sid'] = $sid;
+                    $cid = I("post.cid");
+                    $data['cid'] = $cid;
+                    $data['eid'] = NULL;
+                    $exict = $model->where("uid = $uid AND sid = $sid AND cid = $cid")->find();
 
-                }else {
-                    $dat['status'] = 0;
-                    $dat['msg'] = "操作失败";
-                    echo json_encode($dat);die;
+                    if(empty($exict)){
+                        $data['status'] = 1;
+                        if ($model->add($data)) {
+                            $dat['status'] = 1;
+                            $dat['msg'] = "操作成功";
+                            echo json_encode($dat);die;
+
+                        }else {
+                            $dat['status'] = 0;
+                            $dat['msg'] = "操作失败";
+                            echo json_encode($dat);die;
+                        }
+                    }else{
+                        $aa['ctime'] = date("Y-m-d H:i:s");
+                        $aa['status'] = 1;
+                        if ($model->where("uid = $uid AND sid = $sid AND cid = $cid")->save($aa)) {
+                            $dat['status'] = 1;
+                            $dat['msg'] = "操作成功";
+                            echo json_encode($dat);die;
+
+                        }else {
+                            $dat['status'] = 0;
+                            $dat['msg'] = "操作失败";
+                            echo json_encode($dat);die;
+                        }
+                    }
+                }else{
+                    $etid = I("post.etid");//卷几
+                    $data['etid'] = $etid;
+
+                    $data['eid'] =  $eid;           //年份
+
+                    $exict = $model->where("uid = $uid AND eid = $eid AND etid = $etid")->find();
+                    if(empty($exict)){
+                        $data['status'] = 1;
+                        if ($model->add($data)) {
+                            $dat['status'] = 1;
+                            $dat['msg'] = "操作成功";
+                            echo json_encode($dat);die;
+
+                        }else {
+                            $dat['status'] = 0;
+                            $dat['msg'] = "操作失败";
+                            echo json_encode($dat);die;
+                        }
+                    }else{
+                        $aa['ctime'] = date("Y-m-d H:i:s");
+                        $aa['status'] = 1;
+                        if ($model->where("uid = $uid AND eid = $eid AND etid = $etid")->save($aa)) {
+                            $dat['status'] = 1;
+                            $dat['msg'] = "操作成功";
+                            echo json_encode($dat);die;
+
+                        }else {
+                            $dat['status'] = 0;
+                            $dat['msg'] = "操作失败";
+                            echo json_encode($dat);die;
+                        }
+                    }
+
                 }
+
             }else{
                 $uid = I("post.uid");
                 $eid = I("eid");            //年份
@@ -450,7 +650,7 @@ class UsercollectController extends Controller{
     }
 
 }
-
+*/
     /*
      * 获取我的收藏的题库的接口
      *
@@ -708,3 +908,4 @@ class UsercollectController extends Controller{
     }
 
 */
+}

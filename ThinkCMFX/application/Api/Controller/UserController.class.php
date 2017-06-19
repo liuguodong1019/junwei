@@ -207,23 +207,46 @@ class UserController extends Controller
 		      $data['token']=sp_random_string(20);
 		   }
 	     $a=$user->where("mobile=$phone")->save($data);
-	     $where="mobile='$phone' and `user_pass`='$password'";
-   	     $res=$user->where($where)->find();
-   	if($res)
-   	{            
-		         // $dat['last_login_ip']=get_client_ip(0,true);
-	          //    $ip=$dat['last_login_ip']; 登陆者IP
-                 $dat['msg']="登陆成功！";
-                 $dat['data']=$res;
-                 $dat['status']=1;
-                 echo json_encode($dat);die;
-   	}
-   	else
-   	{
-   		         $dat['msg']="用户名或密码错误！";
-                 $dat['status']=0;
-                 echo json_encode($dat);die;
-   	}
+	     $result=$user->where("mobile='$phone'")->find();
+    if(empty($phone)||empty($pas))
+	{
+	  	                 $dat['msg']="账号密码不能为空！";
+						 $dat['status']=0;
+						 echo json_encode($dat);die;
+	}
+	else
+	{
+			if($result)
+		{
+			$where="mobile='$phone' and `user_pass`='$password'";
+		
+			 $res=$user->where($where)->find();
+			if($res)
+			{            
+						 // $dat['last_login_ip']=get_client_ip(0,true);
+					  //    $ip=$dat['last_login_ip']; 登陆者IP
+						 
+						 $dat['msg']="登陆成功！";
+						 $dat['data']=$res;
+						 $dat['status']=1;
+						 echo json_encode($dat);die;
+			}
+			else
+			{
+						 $dat['msg']="用户名或密码错误！";
+						 $dat['status']=0;
+						 echo json_encode($dat);die;
+			}
+		}
+		else
+		{
+						 $dat['msg']="该账号不存在，请注册！";
+						 $dat['status']=0;
+						 echo json_encode($dat);die;
+		}
+	}
+    
+	     
    }
    /**
     * 密码修改
@@ -468,36 +491,5 @@ class UserController extends Controller
 	         
 	     }
 	}
-	 /**
-	   *试题科目章节接口
-	   */
-	  public function kzjk()
-	  {  
-	  	$subjects=M('subjects');
-	  	$chapter=M('chapter');
-	  	$res=$subjects
-	  	->field('sid,stitle')
-	  	->order('sid asc')
-	  	->select();
-	  	//var_dump($res);die;
-	  	$arr=array();
-	  	$data=array();
-	  	foreach ($res as $k=>$v)
-	  	{
-           $sid=$v['sid'];
-           $re=$chapter
-		  	->field('cid,ctitle')
-		  	->where("sid=$sid")
-		  	->order('cid asc')
-		  	->select();
-            $arr[$sid]=$re;
-            $data[$sid]=$v;
-	  	}
-	  	foreach($data as $k=>$v)
-	  	{   $da[$k]=$v;
-            $da[$k]["chapter"]=$arr[$k];
-	  	}
-	    echo json_encode($da);die; 
-	  }
 	
 }
