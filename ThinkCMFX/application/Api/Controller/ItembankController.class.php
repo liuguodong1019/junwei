@@ -266,7 +266,7 @@ class ItembankController extends Controller
 	  }
 	  $stitle=$subjects->where("sid='$sid'")->getField("stitle");
 	  $ctitle=$chapter->where("cid='$cid'")->getField("ctitle");
-	  $name=$stitle.$ctitle."试题";
+	  $name=$ctitle."试题";
 
      $where="sid='$sid' and cid='$cid'";
      $list=$this->timu($where);
@@ -340,13 +340,14 @@ class ItembankController extends Controller
             ->field('content')
             ->where("material_id='$mid'")
             ->find();
+            $content=$content['content'];
             $array[$k]=$v;
             $array[$k]['content']=$content;
           }
           else
           {
             $array[$k]=$v;
-            $array[$k]['content']=array();
+            $array[$k]['content']='';
           }
           $options=$option
             ->field('option_id,options,key')
@@ -487,21 +488,5 @@ class ItembankController extends Controller
           $dat['msg']="请求失败！";
           echo json_encode($dat);die;
         }
-  }
-
-  public function ceshi()
-  {
-  	$a=ABCD;
-  	$b=BC;
-  	var_dump($a);
-  	var_dump($b);
-  	if($a==$b)
-  	{
-          echo 1;
-  	}
-  	else
-  	{
-  		echo 2;
-  	}
   }
 }    

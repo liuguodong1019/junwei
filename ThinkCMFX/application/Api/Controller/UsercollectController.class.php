@@ -9,19 +9,19 @@ class UsercollectController extends Controller{
     /*
     * 将收藏课程下面的课时写入数据库
     * */
-    /*
+
     public function collectitem(){
-        if(IS_POST){
+        if (IS_POST) {
             $status = I("post.status");    //1收藏    0取消收藏
             $uid = I("post.uid");     //用户
             $id = I("post.live_id");            //课时的id
-            $courseid = M("live")->where("live_id = $id")->find();
+            $courseid = M("live")->where("id = $id")->find();
             $course_id = $courseid['course_id'];    //vip课程的ID
-            if($status == 1){
+            if ($status == 1) {
                 //收藏
                 //查看该课时是否收藏 如果存在判断type是否为1  如果是0则改为1
                 $courexitb = M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->find();
-                if(empty($courexitb)){
+                if (empty($courexitb)) {
                     $data['course_id'] = $course_id;
                     $data['live_id'] = $id;
                     $data['uid'] = $uid;
@@ -29,110 +29,61 @@ class UsercollectController extends Controller{
                     $data['type'] = 1;
 
                     $course = M("course")->where("id = $course_id")->field("collection_num")->find();
-                    $cour['collection_num'] = $course['collection_num'] +1;
+                    $cour['collection_num'] = $course['collection_num'] + 1;
                     $courok = M("course")->where("id = $course_id")->save($cour);
 
 
                     $res = M("live_collection")->add($data);
-                }else{
-                    if($courexitb['type'] == 0){
+                } else {
+                    if ($courexitb['type'] == 0) {
+
                         $data['type'] = 1;
                         $data['create_time'] = date("Y-m-d H:i:s");
 
                         $course = M("course")->where("id = $course_id")->field("collection_num")->find();
-                        $cour['collection_num'] = $course['collection_num'] +1;
+                        $cour['collection_num'] = $course['collection_num'] + 1;
                         $courok = M("course")->where("id = $course_id")->save($cour);
 
-                        $res =  M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->save($data);
+                        $res = M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->save($data);
                     }
 
                 }
 
-                if(empty($res)){
+                if (empty($res)) {
                     $arr['status'] = 0;
-                    $arr['msg'] = "操作失败aaaaa";
-                    echo json_encode($arr);die;
-                }else{
-
+                    $arr['msg'] = "收藏失败aaaaa";
+                    echo json_encode($arr);
+                    die;
+                } else {
                     $arr['status'] = 1;
-                    $arr['msg'] = "操作成功";
-                    echo json_encode($arr);die;
+                    $arr['msg'] = "收藏成功";
+                    echo json_encode($arr);
+                    die;
                 }
 
-            }else{
+            } else {
                 //取消收藏
                 $data['type'] = 0;
-                $res =  M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->save($data);
-                if(empty($res)){
+                $res = M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->save($data);
+                if (empty($res)) {
                     $arr['status'] = 0;
-                    $arr['msg'] = "操作失败bbbb";
-                    echo json_encode($arr);die;
-                }else{
+                    $arr['msg'] = "取消收藏失败bbbb";
+                    echo json_encode($arr);
+                    die;
+                } else {
 
                     $arr['status'] = 1;
-                    $arr['msg'] = "操作成功";
-                    echo json_encode($arr);die;
+                    $arr['msg'] = "取消收藏";
+                    echo json_encode($arr);
+                    die;
                 }
             }
-            /*
-            if($status == 1){
-                $liveexit = M("live")->where("course_id = $id")->find();  //判断课时表内是否有收到的课程的id  如果没有则受到的为课程的ID
-                if(empty($liveexit)){
-                    //加入到收藏的课程的表内  (查看该课程是否存在  如果存在判断type是否为1  如果是0则改为1)
-                    $courexitb = M("course_collection")->where("uid = $uid AND course_id = $id")->find();
-                    if(empty($courexitb)){
-                        $data['uid'] = $uid;
-                        $data['course_id'] = $id;
-                        $data['create_time'] = date("Y-m-d H:i:s");
-                        $data['type'] = 1;
-
-                        $res = M("course_collection")->add($data);
-
-                    }else{
-                        if($courexitb['type'] == 0){
-                            $qq['create_time'] = date("Y-m-d H:i:s");
-                            $qq['type'] = 1;
-                            $res = M("course_collection")->where("uid = $uid AND course_id = $id")->save($qq);
-                        }
-                    }
-                    if(empty($res)){
-                        $arr['status'] = 0;
-                        $arr['msg'] = "操作失败aaaaa";
-                        echo json_encode($arr);die;
-                    }else{
-
-                        $arr['status'] = 1;
-                        $arr['msg'] = "操作成功";
-                        echo json_encode($arr);die;
-                    }
-                }
-            }else{
-                //$data['msg'] = $status;
-                //echo json_encode($data);die;
-                //取消收藏
-                $liveexit = M("live")->where("course_id = $id")->find();  //判断课时表内是否有收到的课程的id  如果没有则受到的为课程的ID
-                if(empty($liveexit)){
-                    $data['type'] = 0;
-                    $exitcour = M("course_collection")->where("uid = $uid AND course_id = $id")->save($data);
-                    if(empty($exitcour)){
-                        $arr['status'] = 0;
-                        $arr['msg'] = "操作失败";
-                        echo json_encode($arr);die;
-                    }else{
-                        $arr['status'] = 1;
-                        $arr['msg'] = "操作成功";
-                        echo json_encode($arr);die;
-                    }
-                }
-            }
-
-        }ELSE{
+        }else{
             $arr['status'] = 102;
             $arr['msg'] = "请求方式错误";
             echo json_encode($arr);die;
         }
     }
-*/
 
 
     /*
@@ -168,12 +119,12 @@ class UsercollectController extends Controller{
                             $data['status'] = 1;
                             if ($model->add($data)) {
                                 $dat['status'] = 1;
-                                $dat['msg'] = "操作成功";
+                                $dat['msg'] = "收藏成功";
                                 echo json_encode($dat);die;
 
                             }else {
                                 $dat['status'] = 0;
-                                $dat['msg'] = "操作失败";
+                                $dat['msg'] = "收藏失败";
                                 echo json_encode($dat);die;
                             }
                         }else{
@@ -181,12 +132,12 @@ class UsercollectController extends Controller{
                             $aa['status'] = 1;
                             if ($model->where("uid = $uid AND sid = $sid AND cid = $cid")->save($aa)) {
                                 $dat['status'] = 1;
-                                $dat['msg'] = "操作成功";
+                                $dat['msg'] = "收藏成功";
                                 echo json_encode($dat);die;
 
                             }else {
                                 $dat['status'] = 0;
-                                $dat['msg'] = "操作失败";
+                                $dat['msg'] = "收藏失败";
                                 echo json_encode($dat);die;
                             }
                         }
@@ -203,12 +154,12 @@ class UsercollectController extends Controller{
                             $data['status'] = 1;
                             if ($model->add($data)) {
                                 $dat['status'] = 1;
-                                $dat['msg'] = "操作成功";
+                                $dat['msg'] = "收藏成功";
                                 echo json_encode($dat);die;
 
                             }else {
                                 $dat['status'] = 0;
-                                $dat['msg'] = "操作失败";
+                                $dat['msg'] = "收藏失败";
                                 echo json_encode($dat);die;
                             }
                         }else{
@@ -216,12 +167,12 @@ class UsercollectController extends Controller{
                             $aa['status'] = 1;
                             if ($model->where("uid = $uid AND eid = $eid AND etid = $etid")->save($aa)) {
                                 $dat['status'] = 1;
-                                $dat['msg'] = "操作成功";
+                                $dat['msg'] = "收藏成功";
                                 echo json_encode($dat);die;
 
                             }else {
                                 $dat['status'] = 0;
-                                $dat['msg'] = "操作失败";
+                                $dat['msg'] = "收藏失败";
                                 echo json_encode($dat);die;
                             }
                         }
@@ -269,6 +220,7 @@ class UsercollectController extends Controller{
 
 
             }else{
+                //取消收藏
                 if(empty($cid)){
                     $eid = I("eid");            //年份
                     $data['status'] = 0;
@@ -283,18 +235,18 @@ class UsercollectController extends Controller{
                     }
                     if($res){
                         $dat['status'] = 1;
-                        $dat['msg'] = "操作成功";
+                        $dat['msg'] = "取消收藏";
                         echo json_encode($dat);die;
                     }else{
                         $dat['status'] = 0;
-                        $dat['msg'] = "操作失败";
+                        $dat['msg'] = "取消收藏失败";
                         echo json_encode($dat);die;
                     }
                 }else{
                     $data['type'] = 0;
                     if($model->where("uid = $uid AND course_id = $cid")->save($data)){
                         $arr['status'] = 1;
-                        $arr['msg'] = "取消收藏成功";
+                        $arr['msg'] = "取消收藏";
                         echo json_encode($arr);die;
                     }else{
                         $arr['status'] = 0;
@@ -326,24 +278,24 @@ class UsercollectController extends Controller{
         if(!empty($page)) {
             $downinfo = $model
                 ->join("LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id")
-                ->join("LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id")
+               // ->join("LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id")
                 ->where("cmf_course_collection.uid = $uid AND cmf_course_collection.type = 1 ")
-                ->field("cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_lector.name,
+                ->field("cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.course_name,
                 cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,
                 cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,
-                cmf_course.status,cmf_course.type")
+                cmf_course.status,cmf_course.type,cmf_course.stu_token")
                 ->order("cmf_course_collection.uc_id desc")
                 ->page($page . ',10')
                 ->select();
-            //print_r($downinfo);die;
+//            print_r($downinfo);die;
             $res = $news->gotten($uid, $page, $downinfo);
             //print_r($res);
             for($i=0;$i<count($res);$i++){
-                if($res[$i]['pay_status'] == 1){
+               if($res[$i]['pay_status'] == 1){
                     $res[$i]['pay_status'] = 1;
                 }else{
                     $res[$i]['pay_status'] = 0;
-                }
+               }
             }
 
             if (!empty($res)) {
@@ -371,12 +323,11 @@ class UsercollectController extends Controller{
 
     /*
      * 获取收藏的课程下面的课时的列表
-     * */
+     *
     public function showlive(){
         $courseid = I("cid");              //获取课程的ID
         $uid = I("uid");              //判断接收过来的token是get传值还是post，token是判断用户的唯一标识符   获取当前登录用户的唯一标识符
         $page = I("page");                 //获取页码
-
 
         $model = M("live_collection");
         if(!empty($page)) {
@@ -386,6 +337,7 @@ class UsercollectController extends Controller{
                 ->join("cmf_course ON cmf_course.id = cmf_live_collection.course_id")
                 ->where("cmf_live_collection.course_id = $courseid AND cmf_live_collection.uid = $uid AND cmf_live_collection.type = 1")
                 ->order("cmf_live_collection.ul_id desc")
+                ->field("cmf_live_collection.ul_id,cmf_live.subject,cmf_live.course_id,cmf_live.status,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url")
                 ->page($page . ',10')
                 ->select();
             if (!empty($downinfo)) {
@@ -407,17 +359,17 @@ class UsercollectController extends Controller{
         }
 
     }
-
+*/
     /*
      * 收藏课程下面的课时的批量删除
-     * */
+     *
     public function livecolldel(){
 
         $model = M("live_collection");
         $id = I("ids");                          //接收传递过来的id的值或者数组(接收的主键自增的id  )
         $uid = I("uid");                    //获取用户的唯一标识
 
-            $where = "live_id in $id";
+        $where = "ul_id in $id";
 
         $where .= " AND uid = $uid";
 
@@ -433,7 +385,7 @@ class UsercollectController extends Controller{
             echo json_encode($arr);die;
         }
     }
-
+*/
 
     /*
      * 实现收藏列表的批量删除
@@ -491,15 +443,13 @@ class UsercollectController extends Controller{
 
         }
 
-        //print_r($res);die;
-
         if(!empty($res)){
             $data['status'] = 1;
             $data['msg'] = '请求成功';
             $data['data'] = $res;
             echo json_encode($data);die;
         }else{
-            $data['status'] = 0;
+            $data['status'] = 1;
             $data['msg'] = '请求成功';
             $data['data'] = '';
             echo json_encode($data);die;

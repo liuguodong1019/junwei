@@ -25,17 +25,22 @@
             <td><a>{$data.id}</a></td>
             <td>{$data.course_name}</td>
             <td>{$data.subject}</td>
-            <td>{$data.startdate|date='Y-m-d H:i:s',###}</td>
-            <td>{$data.invaliddate|date='Y-m-d H:i:s',###}</td>
-            <td>{$data.name}</td>
+            <!--<td>{$data.startdate|date='Y-m-d H:i:s',###}</td>-->
+            <td>{$data.startDate}</td>
+            <!--<td>{$data.invalidDate|date='Y-m-d H:i:s',###}</td>-->
+            <td>{$data.invalidDate}</td>
+            <td>{$data.lector}</td>
             <td>{$data.number}</td>
             <td>{$data.class_id}</td>
             <td>{$data.stu_token}</td>
             <td>
                 <if condition="($data.status eq 1) "> 正在直播
-                    <elseif condition="$data.status eq 2"/> 直播结束
-                    <elseif condition="$data.status eq 3"/> 生成回放
-                    <else /> 未开始
+                    <elseif condition="$data.status eq 2"/>
+                    直播结束
+                    <elseif condition="$data.status eq 3"/>
+                    生成回放
+                    <else/>
+                    未开始
                 </if>
             </td>
             <td>{$data.reply_url}</td>

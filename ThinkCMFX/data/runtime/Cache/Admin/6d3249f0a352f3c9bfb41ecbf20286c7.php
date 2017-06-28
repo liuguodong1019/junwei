@@ -108,12 +108,14 @@
                     <td><a><?php echo ($vo["id"]); ?></a></td>
                     <td><?php echo ($vo["course_name"]); ?></td>
                     <td><?php echo ($vo["subject"]); ?></td>
+                    <!--<td><?php echo ($vo["startDate"]); ?></td>-->
+                    <!--<td><?php echo ($vo["invalidDate"]); ?></td>-->
                     <td><?php echo (date('Y-m-d H:i:s',$vo["startdate"])); ?></td>
                     <td><?php echo (date('Y-m-d H:i:s',$vo["invaliddate"])); ?></td>
                     <td>
                         <a href="<?php echo U('ClassHour/look',array('id'=>$vo['id']));?>"><?php echo L('LOOK');?></a>|
                         <a href="<?php echo U('ClassHour/update',array('id'=>$vo['id']));?>"><?php echo L('EDIT');?></a>|
-                        <a href="<?php echo U('ClassHour/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
+                        <a href="<?php echo U('ClassHour/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id'],'courseware_id' => $vo['courseware_id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
                     </td>
                 </tr><?php endforeach; endif; ?>
 

@@ -206,8 +206,8 @@ class UserController extends Controller
 		   {
 		      $data['token']=sp_random_string(20);
 		   }
-	     $a=$user->where("mobile=$phone")->save($data);
-	     $result=$user->where("mobile='$phone'")->find();
+		 $result=$user->where("mobile='$phone'")->find();
+	     $user->where("mobile=$phone")->save($data);
     if(empty($phone)||empty($pas))
 	{
 	  	                 $dat['msg']="账号密码不能为空！";
@@ -226,7 +226,7 @@ class UserController extends Controller
 						 // $dat['last_login_ip']=get_client_ip(0,true);
 					  //    $ip=$dat['last_login_ip']; 登陆者IP
 						 
-						 $dat['msg']="登陆成功！";
+						 $dat['msg']="登录成功！";
 						 $dat['data']=$res;
 						 $dat['status']=1;
 						 echo json_encode($dat);die;

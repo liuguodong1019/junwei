@@ -39,8 +39,10 @@
                     <td>
                         <input type="hidden" name="course_name" value="{$data.course_name}">
                         <input type="hidden" name="class_id" value="{$data.class_id}">
-                        <!--<input type="hidden" name="cover" value = "{$data.cover}">-->
+                        <input type="hidden" name="number" value = "{$data.number}">
+                        <input type="hidden" name="stu_token" value = "{$data.stu_token}">
                         <input type="hidden" name="id" value="{$id}">
+                        <input type="hidden" name="courseware_id" value="{$data.courseware_id}">
                     </td>
                 </tr>
                 <tr>
@@ -101,7 +103,9 @@
                 <tr>
                     <th width="80">开始时间</th>
                     <td>
-                        <input class="datainp" name="startDate" value="{$data.startdate}" id="datebut" type="text"
+                        <input class="datainp" name="startDate" value="<?php if (empty($data.startDate)) {
+                        echo $data['startdate'];}else {echo $data['startDate'];}
+                        ?>" id="datebut" type="text"
                                placeholder="双击选择时间"
                                onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
@@ -110,7 +114,9 @@
                 <tr>
                     <th width="80">结束时间</th>
                     <td>
-                        <input class="datainp" name="invalidDate" value="{$data.invaliddate}" id="datebut1" type="text"
+                        <input class="datainp" name="invalidDate" value="<?php if (empty($data.invalidDate)) {
+                        echo $data['invaliddate'];}else {echo $data['invalidDate'];}
+                        ?>{$data.invaliddate}" id="datebut1" type="text"
                                placeholder="双击选择时间"
                                onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
@@ -125,13 +131,11 @@
                 <tr>
                     <th width="80">讲师</th>
                     <td>
-                        <select name="lector_id" class="normal_select">
-                            <option value="{$data.l_id}">{$data.name}</option>
+                        <select name="lector" class="normal_select">
+                            <option value="{$data.lector}">{$data.lector}</option>
                             <foreach name="array['lector']" item="vo">
-                                <option value="{$vo.l_id}">{$vo.name}</option>
+                                <option value="{$vo.name}">{$vo.name}</option>
                             </foreach>
-
-
                         </select>
                     </td>
                 </tr>

@@ -88,7 +88,7 @@
                     <td>
                         <input type="hidden" name="subject"  value = "<?php echo ($data["subject"]); ?>">
                         <input type="hidden" name="class_id"  value = "<?php echo ($data["class_id"]); ?>">
-                        <!--<input type="hidden" name="startDate" id="" value = "$array['startdate']">-->
+                        <input type="hidden" name="courseware_id" id="" value = "<?php echo ($data["courseware_id"]); ?>">
                         <input type="hidden" name="id"  value = "<?php echo ($id); ?>">
                     </td>
                 </tr>
@@ -120,7 +120,7 @@
                 <tr>
                     <th width="80">开始时间</th>
                     <td>
-                        <input class="datainp" value="<?php echo (date('Y-m-d H:i:s',$data["startdate"])); ?>" name="startDate" id="datebut" type="text"
+                        <input class="datainp" value="<?php echo ($data["startDate"]); ?>" name="startDate" id="datebut" type="text"
                                placeholder="双击选择时间"
                                onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
@@ -129,7 +129,7 @@
                 <tr>
                     <th width="80">结束时间</th>
                     <td>
-                        <input class="datainp" value="<?php echo (date('Y-m-d H:i:s',$data["invaliddate"])); ?>" name="invalidDate" id="datebut1" type="text"
+                        <input class="datainp" value="<?php echo ($data["invalidDate"]); ?>" name="invalidDate" id="datebut1" type="text"
                                placeholder="双击选择时间"
                                onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
@@ -139,7 +139,7 @@
                     <td>
                         <select name="course_id" class="normal_select">
 
-                                <option value="<?php echo ($data["id"]); ?>"><?php echo ($data["course_name"]); ?></option>
+                                <option value="<?php echo ($data["course_id"]); ?>"><?php echo ($data["course_name"]); ?></option>
 
                             <?php if(is_array($array['course'])): foreach($array['course'] as $key=>$va): ?><option value="<?php echo ($va["id"]); ?>"><?php echo ($va["course_name"]); ?></option><?php endforeach; endif; ?>
                         </select>
@@ -148,11 +148,11 @@
                 <tr>
                     <th width="80">讲师名称</th>
                     <td>
-                        <select name="lector_id" class="normal_select">
-                            <option value="<?php echo ($data["l_id"]); ?>">
-                                    <?php echo ($data["name"]); ?>
+                        <select name="lector" class="normal_select">
+                            <option value="<?php echo ($data["lector"]); ?>">
+                                    <?php echo ($data["lector"]); ?>
                             </option>
-                            <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$val): ?><option value="<?php echo ($val["l_id"]); ?>"><?php echo ($val["name"]); ?></option><?php endforeach; endif; ?>
+                            <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$val): ?><option value="<?php echo ($val["name"]); ?>"><?php echo ($val["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </td>
                 </tr>

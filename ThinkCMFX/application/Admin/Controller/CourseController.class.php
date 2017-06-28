@@ -24,7 +24,32 @@ class CourseController extends AdminbaseController
      */
     public function show()
     {
+
+        $str = new CourseModel();
+        $redis = $str::redis();
+        // $redis->hDel('course',16);
+       // $rew = json_decode($redis->hGet('course',17),true);
+// //        $redis->hDel('course',4);
+       // $rew['status'] = 0;
+       // $rew['reply_url'] = 0;
+       // $list = json_encode($rew);
+       // $redis->hSet('course',7,$list);
+       // $re = json_decode($redis->hGet('course',3),true);
+//        $id = $redis->get('id');
+        // $res = $redis->HVALS('course');
+        // $len = $redis->HLEN('course');
+        // for ($a = 0; $a < $len; $a++) {
+        //     $rew[] = json_decode($res[$a],true);
+        //    if ($rew[$a]['is_free'] == 1) {
+        //        $open[] = $rew[$a];
+        //    }else {
+        //        $vip[] = $rew[$a];
+        //    }
+        // }
+        // echo '<pre>';
+        // print_r($rew);die;
         $course = D('Course');
+
         $junwei = M('junwei')->find();
         $loginName = $junwei['loginName'];
         $password = $junwei['password'];
@@ -33,7 +58,7 @@ class CourseController extends AdminbaseController
         $str = new CourseModel();
         $data = $str->show($Page);
         if (empty($data)) {
-            $this->redirect('show');
+            $this->redirect('create');
         }
         $this->assign('loginName', $loginName);
         $this->assign('password', $password);
@@ -47,12 +72,18 @@ class CourseController extends AdminbaseController
      */
     public function look()
     {
+        $str = new CourseModel();
+        $redis = $str::redis();
         if (IS_GET) {
             $id = I('get.id');
+            $rew = $redis->hGet("course",$id);
             if (!empty($id)) {
-                $data = M('course')
-                    ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                    ->where("id = $id")->find();
+                if (empty($rew)) {
+                    $data = M('course')
+                        ->where("id = $id")->find();
+                }else {
+                    $data = json_decode($rew,true);
+                }
             }
         }
         $this->assign('data', $data);
@@ -95,13 +126,19 @@ class CourseController extends AdminbaseController
         $people = M('people');
         $book = M('book');
         $str = new CourseModel();
+        $redis = $str::redis();
         if (IS_GET) {
             $id = I('get.id');
             if (!empty($id)) {
-                $data = $course
-                    ->join('left join cmf_lector ON cmf_course.lector_id = cmf_lector.l_id')
-                    ->where("id = $id")
-                    ->find();
+                $rew = $redis->hGet('course',$id);
+                if (!empty($rew)) {
+                    $data = json_decode($rew,true);
+                }else {
+                    $data = $course
+                        ->field('is_free,num_class,course_name,now_price,old_price,cover,detail_cover,startdate,invaliddate,introduction,lector,people,book,courseware_id')
+                        ->where("id = $id")
+                        ->find();
+                }
                 $lector = $lector->select();
                 $people = $people->select();
                 $book = $book->select();
@@ -132,23 +169,31 @@ class CourseController extends AdminbaseController
     {
         $course = D('Course');
         $response = new ResponseController();
+        $str = new CourseModel();
+        $redis = $str::redis();
         if (IS_GET) {
+            $id = I('get.id');
             $class_id = I('get.class_id');
-            $id = intval(I("get.id"));
+            $courseware_id = I('get.courseware_id');
             if (empty($class_id)) {
-                if ($course->where("id = $id")->delete() !== false) {
+                if ($course->where("id = '$id'")->delete() !== false) {
+                    $redis->hDel('course',$id);
                     $this->success("删除成功！");
                 } else {
                     $this->error("删除失败！");
                 }
             }else {
+                
                 $junwei = M('junwei')->find();
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
                 //调用课时删除接口
                 $resourec = $response::delete($loginName,$password,$class_id);
-                if ($resourec['code'] == 0) {
-                    if ($course->where("id = $id")->delete() !== false) {
+                $ter = $response::delete_live($loginName,$password,$courseware_id);
+                // print_r($ter);die;
+                if ($resourec['code'] == 0 && $ter['code'] == 0) {
+                    if ($course->where("id = '$id'")->delete() !== false) {
+                        $redis->hDel('course',$id);
                         $this->success('删除成功');exit();
                     } else {
                         $this->error('删除失败');exit();
@@ -159,16 +204,24 @@ class CourseController extends AdminbaseController
             }
         }
         if (isset($_POST['ids'])) {
-            $ids = join(",", $_POST['ids']);
-            $rew = $course->field('class_id')->where("id in ($ids)")->select();
+            $id = $_POST['ids'];
+            $ids = join(",", $id);
+            $rew = $course->field('class_id,courseware_id')->where("id in ($ids)")->select();
             $junwei = M('junwei')->find();
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             foreach ($rew as $value) {
                 $class_id[] = $value['class_id'];
+                $courseware_id[] = $value['courseware_id'];
             }
+            $id = intval(I("get.id"));
             $response::delete($loginName, $password, $class_id);
+            $response::delete_live($loginName,$password,$courseware_id);
             if ($course->where("id in ($ids)")->delete() !== false) {
+                $len = count($id);
+                for ($a = 0; $a < $len; $a++) {
+                    $redis->hDel('course',$id[$a]);
+                }
                 $this->success('删除成功');exit();
             } else {
                 $this->error('删除失败');exit();

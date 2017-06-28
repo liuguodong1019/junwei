@@ -15,16 +15,16 @@ class UsercourseController extends Controller{
         $model = M("order");
 
         if(!empty($page)){
-
             $downinfo = $model
                 ->join("INNER JOIN cmf_course ON cmf_course.id = cmf_order.course_id")
-                //->join("INNER JOIN cmf_users ON cmf_users.id = cmf_order.uid")
-                ->join("INNER JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id")
-                ->field("cmf_course.course_name,cmf_course.cover,cmf_course.num_class,cmf_course.id,cmf_lector.name,cmf_course.now_price,cmf_course.old_price")
+               // ->join("LEFT JOIN cmf_live ON cmf_live.course_id = cmf_course.id")
+                ->field("cmf_course.course_name,cmf_course.cover,cmf_course.num_class,cmf_course.id,
+                cmf_course.now_price,cmf_course.old_price,cmf_course.introduction,cmf_course.lector")
                 ->where("cmf_order.uid = $uid AND cmf_order.pay_status = '1'")
                 ->order("cmf_order.id desc")
                 ->page($page.',10')
                 ->select();
+            //echo $model->getlastsql()."<br>";die;
             //判断该课程是否收藏
             for($i=0;$i<count($downinfo);$i++){
                 $cid=$downinfo[$i]['id'];
@@ -39,10 +39,7 @@ class UsercourseController extends Controller{
                     }
                 }
             }
-
-            //echo $model->getlastsql()."<br>";
-            //print_r($downinfo);
-            //die;
+            //print_r($downinfo);die;
             if (!empty($downinfo)) {
                $data['status'] = 1 ;
                 $data['msg'] = "操作成功";
@@ -62,6 +59,7 @@ class UsercourseController extends Controller{
             echo json_encode($data);die;
         }
     }
+}
 
 
     /*
@@ -72,13 +70,10 @@ class UsercourseController extends Controller{
         $uid = I("uid");              //   获取当前登录用户的唯一标识符
         $page = I("page");                 //获取页码
 
-        $model = M("user_course");
+        $model = M("live");
         if(!empty($page)){
             $downinfo = $model
-                ->join("LEFT JOIN cmf_live ON cmf_live.id = cmf_user_course.live_id")
-                ->join("cmf_users ON cmf_users.id = cmf_user_course.uid")
-                ->join("LEFT JOIN cmf_course ON cmf_course.id = cmf_user_course.cid")
-                ->where("cmf_user_course.pid = $courseid AND cmf_user_course.uid = $uid AND cmf_user_course.uc_type=1 AND cmf_user_course.pay_status = 1")
+               ->join("")
                 ->order("cmf_user_course.uc_id desc")
                 ->page($page.',10')
                 ->select();
@@ -183,4 +178,3 @@ class UsercourseController extends Controller{
 
     }
  */
-}

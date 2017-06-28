@@ -9,4 +9,8 @@
   'collection' => 'api/course/collection',
   'alipay/order' => 'api/alipay/order',
   'wx_pay/order' => 'api/wx_pay/order',
+  'liveDesc' => 'api/course/liveDesc',
+  'classDesc' => 'api/course/classDesc',
+  'share' => 'api/course/share',
+  'share1' => 'api/course/share1',
 );

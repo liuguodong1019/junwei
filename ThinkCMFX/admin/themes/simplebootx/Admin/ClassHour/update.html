@@ -16,7 +16,7 @@
                     <td>
                         <input type="hidden" name="subject"  value = "{$data.subject}">
                         <input type="hidden" name="class_id"  value = "{$data.class_id}">
-                        <!--<input type="hidden" name="startDate" id="" value = "$array['startdate']">-->
+                        <input type="hidden" name="courseware_id" id="" value = "{$data.courseware_id}">
                         <input type="hidden" name="id"  value = "{$id}">
                     </td>
                 </tr>
@@ -48,7 +48,7 @@
                 <tr>
                     <th width="80">开始时间</th>
                     <td>
-                        <input class="datainp" value="{$data.startdate|date='Y-m-d H:i:s',###}" name="startDate" id="datebut" type="text"
+                        <input class="datainp" value="{$data.startDate}" name="startDate" id="datebut" type="text"
                                placeholder="双击选择时间"
                                onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
@@ -57,7 +57,7 @@
                 <tr>
                     <th width="80">结束时间</th>
                     <td>
-                        <input class="datainp" value="{$data.invaliddate|date='Y-m-d H:i:s',###}" name="invalidDate" id="datebut1" type="text"
+                        <input class="datainp" value="{$data.invalidDate}" name="invalidDate" id="datebut1" type="text"
                                placeholder="双击选择时间"
                                onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
@@ -67,7 +67,7 @@
                     <td>
                         <select name="course_id" class="normal_select">
 
-                                <option value="{$data.id}">{$data.course_name}</option>
+                                <option value="{$data.course_id}">{$data.course_name}</option>
 
                             <foreach name="array['course']" item="va">
                                 <option value="{$va.id}">{$va.course_name}</option>
@@ -78,12 +78,12 @@
                 <tr>
                     <th width="80">讲师名称</th>
                     <td>
-                        <select name="lector_id" class="normal_select">
-                            <option value="{$data.l_id}">
-                                    {$data.name}
+                        <select name="lector" class="normal_select">
+                            <option value="{$data.lector}">
+                                    {$data.lector}
                             </option>
                             <foreach name="array['lector']" item="val">
-                                <option value="{$val.l_id}">{$val.name}</option>
+                                <option value="{$val.name}">{$val.name}</option>
                             </foreach>
                         </select>
                     </td>

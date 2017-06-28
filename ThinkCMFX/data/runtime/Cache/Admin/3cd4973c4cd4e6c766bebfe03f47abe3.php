@@ -11,32 +11,32 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/public/simpleboot/jedate/jedate.js"></script>
-    <link href="/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/junwei/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/junwei/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/junwei/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/junwei/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
-    <!--<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <!--<link rel="stylesheet" href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/junwei/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
-            ROOT: "/",
-            WEB_ROOT: "/",
+            ROOT: "/junwei/",
+            WEB_ROOT: "/junwei/",
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
-    <script src="/public/js/jquery.js"></script>
-    <script src="/public/js/wind.js"></script>
-    <script src="/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/junwei/public/js/jquery.js"></script>
+    <script src="/junwei/public/js/wind.js"></script>
+    <script src="/junwei/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -98,8 +98,6 @@
                                              data-checklist="js-check-x"></label></th>
                 <th width="60">ID</th>
                 <th width="80">课堂主题</th>
-                <th width="80">现价</th>
-                <th width="80">原价</th>
                 <th width="80">讲师</th>
                 <th width="80">适用人群</th>
                 <th width="80">配发图书</th>
@@ -108,14 +106,11 @@
                 <th width="125"><?php echo L('ACTIONS');?></th>
             </tr>
             </thead>
-            <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr>
-                    <td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x"
+            <?php if(is_array($data)): foreach($data as $key=>$vo): ?><td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x"
                                name="ids[]" value="<?php echo ($vo["id"]); ?>"></td>
                     <td><a><?php echo ($vo["id"]); ?></a></td>
                     <td><?php echo ($vo["course_name"]); ?></td>
-                    <td><?php echo ($vo["now_price"]); ?></td>
-                    <td><?php echo ($vo["old_price"]); ?></td>
-                    <td><?php echo ($vo["name"]); ?></td>
+                    <td><?php echo ($vo["lector"]); ?></td>
                     <td><?php echo ($vo["people"]); ?></td>
                     <td><?php echo ($vo["book"]); ?></td>
                     <td><?php echo ($vo["startdate"]); ?></td>
@@ -123,7 +118,7 @@
                     <td>
                         <a href="<?php echo U('Course/look',array('id'=>$vo['id']));?>"><?php echo L('LOOK');?></a>|
                         <a href="<?php echo U('Course/update',array('id'=>$vo['id']));?>"><?php echo L('EDIT');?></a>|
-                        <a href="<?php echo U('Course/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
+                        <a href="<?php echo U('Course/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id'],'courseware_id' => $vo['courseware_id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
                     </td>
                 </tr><?php endforeach; endif; ?>
 
@@ -134,7 +129,7 @@
         <div class="pagination"><?php echo ($page); ?></div>
     </form>
 </div>
-<script src="/public/js/common.js"></script>
+<script src="/junwei/public/js/common.js"></script>
 <script>
     setCookie('refersh_time', 0);
     function refersh_window() {

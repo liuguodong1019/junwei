@@ -163,6 +163,7 @@
 $(document).ready(function(){
 	var onemenu="";
 	var twomenu="";
+	var onedata="";
 		$.ajax({
             type: "get",
             url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=ztjk",
@@ -188,11 +189,8 @@ $(document).ready(function(){
     $("#one-menu").on("click","span",function(){
     	var thistexts=$(this).text();
     	var thistext=thistexts.substring(0,4);
-    	//alert (thistext);
-
-
+    	onedata=thistext;
     	$(this).addClass("kemu-active").siblings().removeClass("kemu-active");
-    	//alert ($(this).text());
     	var twomenu="";
     	$.ajax({
             type: "get",
@@ -242,6 +240,7 @@ $(document).ready(function(){
 
 
  $("#two-menu").on("click","span",function(){
+
             var eid="";
             var etid="";
             var this2text=$(this).text();
@@ -258,7 +257,6 @@ $.ajax({
             success:function(data) {
                 var json=eval(data);
                 var res="";
-                console.log(json);
                 for(i in json){
 		                    
                         for(m in json[i].chapter){
@@ -277,7 +275,7 @@ $.ajax({
 								  };
 
                             if (this2text==res) {
-                               eid=json[i].eid;
+                               eid=onedata;
                                etid=json[i].chapter[m].etid;
                                senddata(eid,etid);
 
@@ -297,9 +295,17 @@ $.ajax({
             
         });
 
-  function senddata(eid,etid){
-    console.log("sid:"+eid+"cid:"+etid);
 
+
+
+
+  function senddata(eid,etid){
+   // console.log("sid:"+eid+"cid:"+etid);
+   
+   
+
+
+   
     $.ajax({
             type: "get",
             url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=trueitembank&eid="+eid+"&etid="+etid,
@@ -315,7 +321,7 @@ $.ajax({
 				var url;
 				var res;
                 for(i=0;i<data.length;i++){
-                    console.log(data[i]);
+                   // console.log(data[i]);
 				  if(data[i].te_type==1)
 				  {
 				    re='多选';
@@ -343,9 +349,12 @@ $.ajax({
 				 //alert(url);
 				 time=getLocalTime(data[i].itime);
                  
+             
                  // tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'><?php echo L('EDIT');?></a>|<a href='"+delurl+"' class='js-ajax-delete'><?php echo L('DELETE');?></a></td></tr>"
 
-                 tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'><?php echo L('EDIT');?></a>|<a href='"+delurl+"' class='js-ajax-delete'><?php echo L(DELETE);?></a></td></tr>"
+                 //tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'><?php echo L('EDIT');?></a>|<a href='javascript:;' class='js-ajax-delete' data="+data[i].item_id+"><?php echo L(DELETE);?></a></td></tr>"
+				
+				  tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'><?php echo L('EDIT');?></a>|<a href='javascript:;' class='js-ajax-delete' data="+data[i].item_id+"><?php echo L(DELETE);?></a></td></tr>"
 
 
 
@@ -362,14 +371,44 @@ $.ajax({
             }
             
         });
+        
 
 
 
 
 
   }
+  
+$(document).on("click",".js-ajax-delete",function(){
+	var data=$(this).attr("data");
+	var msg = "您真的确定要删除"+data+"吗？\n请确认！"; 
+	var delurl="Question/truedelete?item_id="+data;
+	if (confirm(msg)){
+		window.location.href=delurl;
+	}
 
-})        
+	})
+
+})
+ 
+ 
+ 
+ //删除确认
+
+	 
+
+//function p_del(id) { 
+//var msg = "您真的确定要删除"+id+"吗？\n\n请确认！"; 
+//var delurl="Question/truedelete?item_id="+id;
+//if (confirm(msg)==true){ 
+//$(this).attr("href",delurl);
+//}else{ 
+//return false; 
+//} 
+//} 
+
+
+ 
 })
 </script>
 </body>

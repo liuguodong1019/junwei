@@ -1,6 +1,7 @@
 <?php
 namespace Api\Controller;
 header("Access-Control-Allow-Origin:*");
+use Common\Model\CourseModel;
 use Think\Controller;
 use Api\Controller\ResponseController;
 use Think\Page;
@@ -14,14 +15,6 @@ class CourseController extends Controller
      */
     public function get_class_list()
     {
-//        $redis=new \Redis();
-//        $connect=$redis->pconnect("127.0.0.1",6379);
-//        if(!$connect){
-//            echo '连接异常';die;
-//        }else {
-//            echo 'OK';die;
-//        }
-
         $succ = C('status');
         $mess = C('msg');
         $model = new SubmitController();
@@ -100,6 +93,7 @@ class CourseController extends Controller
      */
     public function past_live()
     {
+    
         $succ = C('status');
         $mess = C('msg');
         $model = new SubmitController();
@@ -169,8 +163,23 @@ class CourseController extends Controller
      */
     public function reply ()
     {
+        $str = new CourseModel();
+        $redis = $str::redis();
         $course = M('course');
-        $data = $course->field('id,class_id')->where("status = '2'")->select();
+        $openClass = new CacheController();
+        $resw = $openClass->tax($is_free = 1);
+
+        foreach ($resw as $val) {
+            if ($val['status'] == 2) {
+                $ret[] = $val;
+            }
+        }
+
+        if (!empty($ret)) {
+            $data = $ret;
+        }else {
+            $data = $course->field('id,class_id')->where("status = '2'")->select();
+        }
         if (!empty($data)) {
             foreach ($data as $value) {
                 $class_id[] = $value['class_id'];
@@ -180,18 +189,25 @@ class CourseController extends Controller
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             $response = new ResponseController();
-
             $resource = $response::get_past($loginName,$password,$class_id);
             $len = count($resource);
             for ($k = 0; $k < $len; $k++) {
                 $rew[] = json_decode($resource[$k],true);
                 $res[] = $rew[$k]['coursewares'][0];
                 if ($rew[$k]['code'] == 0) {
+                    $data['courseware_id'] = $res[$k]['id'];
                     $data['number'] = $res[$k]['number'];
                     $data['reply_url'] = $res[$k]['url'];
                     $data['status'] = 3;
+                    $tr = json_decode($redis->hGet('course',$id[$k]),true);
+                    $tr['courseware_id'] = $data['courseware_id'];
+                    $tr['number'] = $data['number'];
+                    $tr['reply_url'] = $data['reply_url'];
+                    $tr['status'] = 3;
+                    $course->where("id = '$id[$k]'")->save($data);
+                    $list = json_encode($tr);
+                    $redis->hSet('course',$id[$k],$list);
                 }
-                $course->where("id = '$id[$k]'")->save($data);
             }
         }
 
@@ -203,6 +219,8 @@ class CourseController extends Controller
      */
     public function live_status ()
     {
+        $str = new CourseModel();
+        $redis = $str::redis();
         if (IS_GET) {
             $course = M('course');
             $live = M('live');
@@ -215,31 +233,51 @@ class CourseController extends Controller
                 {
                     case 103:
                         $data['status'] = 1;
+                        $rew = json_decode($redis->hGet('course',$id),true);
+                        $rew['status'] = $data['status'];
+                        $list = json_encode($rew);
+                        $redis->hSet('course',$id,$list);
                         break;
                     case 105:
                         $data['status'] = 2;
+                        $rew = json_decode($redis->hGet('course',$id),true);
+                        $rew['status'] = $data['status'];
+                        $list = json_encode($rew);
+                        $redis->hSet('course',$id,$list);
                         break;
                 }
+                
                 $course->where("id = '$id'")->save($data);
+                
             }else {
                 $ret = $live->where("class_id = '$class_id'")->find();
                 $id = $ret['id'];
                 switch ($action) {
                     case 103:
                         $data['status'] = 1;
+                        $rew = json_decode($redis->hGet('live',$id),true);
+                        $rew['status'] = $data['status'];
+                        $list = json_encode($rew);
+                        $redis->hSet('live',$id,$list);
                         break;
                     case 105:
                         $data['status'] = 2;
+                        $rew = json_decode($redis->hGet('live',$id),true);
+                        $rew['status'] = $data['status'];
+                        $list = json_encode($rew);
+                        $redis->hSet('live',$id,$list);
                         break;
                 }
+                
                 $live->where("id = '$id'")->save($data);
+                
             }
         }
     }
 
 
     /**
-     * 获取分享页面课堂详情
+     * 分享页面课堂详情
      */
     public function classDesc()
     {
@@ -247,36 +285,40 @@ class CourseController extends Controller
         $mess = C('msg');
         $model = new SubmitController();
         $res = new ResponseController();
+        $str = new CacheController();
         if (IS_GET) {
             $id = I('get.id');
-            $uid = I('get.uid');
-            $page = I('get.page');
+            $resource = $str->course($id);
+            if (!empty($resource)) {
+                $result = json_encode($resource);
+            }else {
+                $result = $res->classDesc($id);
+            }
             $jsonp = I('get.callback');
-            $result = $res->classDesc($id,$uid,$page);
             echo $jsonp."($result)";die;
         } else {
             echo $model::state($succ[3], $mess[3]);die;
         }
     }
 
+
     /**
-     * 获取分享页面课时列表
+     * 分享页面课时详情
      */
-    public function class_hour()
+    public function liveDesc ()
     {
-        $succ = C('status');
-        $mess = C('msg');
-        $model = new SubmitController();
+        $status = C('status');
+        $msg = C('msg');
+        $response = new SubmitController();
         $res = new ResponseController();
         if (IS_GET) {
             $id = I('get.id');
             $uid = I('get.uid');
-            $page = I('get.page');
             $jsonp = I('get.callback');
-            $result = $res->class_hour($id,$uid,$page);
+            $result = $res->liveDesc($id,$uid);
             echo $jsonp."($result)";die;
-        } else {
-            echo $model::state($succ[3], $mess[3]);die;
+        }else {
+            echo $response::state($status[3],$msg[3]);exit();
         }
     }
 }

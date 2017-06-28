@@ -3,9 +3,7 @@
  * 登录，注册，重置密码，忘记密码接口
  */
 namespace Api\Controller;
-
 use Think\Controller;
-
 class AserController extends Controller 
 {  
   
@@ -17,6 +15,7 @@ class AserController extends Controller
      public function rcheck()
   { 
   	    vendor('SMS.CCPRestSmsSDK');
+  	    $jsonp=I('get.callback');
 		$to=I('phone');
 		$da=rand(100000,999999);
 		$time="10分钟";
@@ -31,7 +30,7 @@ class AserController extends Controller
 		{   
 			$dat['status']=0;
             $dat['msg']="手机号已经注册！";
-			echo json_encode($dat);die;
+			echo $jsonp.'('.json_encode($dat).')';die;
 		}
 	    else
 		{   
@@ -47,7 +46,7 @@ class AserController extends Controller
 				{
 					$dat['status']=0;
 					$dat['msg']="请勿频繁请求！";
-					echo json_encode($dat);die;
+					echo $jsonp.'('.json_encode($dat).')';die;
 				}
 			
 		}
@@ -62,6 +61,7 @@ class AserController extends Controller
       */
 	  function sendTemplateSMS($to,$datas,$tempId)
 	{     
+		 $jsonp=I('get.callback');
 	     global $accountSid,$accountToken,$appId,$serverIP,$serverPort,$softVersion;
 	     $accountSid= '8a216da85967959d01597290bf7906db';
 		 $accountToken= '7437116bd490437cb14e51b070566c8a';
@@ -88,7 +88,8 @@ class AserController extends Controller
 			  $qq = json_decode($re,true);
 	     	  $data['status']=0;
 	     	  $data['msg']=$qq[0];
-	     	  echo json_encode($data);die;
+	     	  echo $jsonp.'('.json_encode($data).')';die;
+	     	  //echo json_encode($data);die;
 	         // echo "error code :" . $result->statusCode . "<br>";
 	         // echo "error msg :" . $result->statusMsg . "<br>";
 	         //TODO 添加错误处理逻辑
@@ -105,13 +106,15 @@ class AserController extends Controller
 					   $data['status']=1;
 					   $data['msg']="验证码发送成功";
 					   $data['id']=$re;
-					   echo json_encode($data);die;
+					   echo $jsonp.'('.json_encode($data).')';die;
+					   //echo json_encode($data);die;
 				   }				   
 				   else
 				   {
 					   $data['status']=0;
 					   $data['msg']="验证码发送失败";
-					   echo json_encode($data);die;
+					   echo $jsonp.'('.json_encode($data).')';die;
+					   //echo json_encode($data);die;
 				   }
 	         // echo "Sendind TemplateSMS success!<br/>";
 	         // // 获取返回信息
@@ -128,6 +131,7 @@ class AserController extends Controller
 	public function register () 
 
 	{      
+		   $jsonp=I('get.callback');
 		   $user=M('Users');
 		   $data['mobile']=I('phone');//手机号
 		   $to=$data['mobile'];
@@ -147,7 +151,8 @@ class AserController extends Controller
 		  {
 			             $dat['msg']="验证码已过期，请重新获取！";
 						 $dat['status']=0;
-						 echo json_encode($dat);die;
+						 echo $jsonp.'('.json_encode($dat).')';die;
+						 //echo json_encode($dat);die;
 		  }
 		  else
 		  {
@@ -155,7 +160,8 @@ class AserController extends Controller
 				  {
 						 $dat['msg']="该账号已存在，请重新输有效入手机号！";
 						 $dat['status']=0;
-						 echo json_encode($dat);die;
+						 echo $jsonp.'('.json_encode($dat).')';die;
+						 //echo json_encode($dat);die;
 				  }
 				  else
 				  {
@@ -166,20 +172,23 @@ class AserController extends Controller
 								  {
 									 $dat['msg']="注册成功！";
 									 $dat['status']=1;
-									 echo json_encode($dat);die;
+									 echo $jsonp.'('.json_encode($dat).')';die;
+									 //echo json_encode($dat);die;
 								  }
 								  else
 								  {
 									 $dat['msg']="注册失败！";
 									 $dat['status']=0;
-									 echo json_encode($dat);die;
+									 echo $jsonp.'('.json_encode($dat).')';die;
+									 //echo json_encode($dat);die;
 								  }
 					   }
 					   else
 					   {     
 							 $dat['msg']="手机号与验证码不符，请重新输入！";
 							 $dat['status']=0;
-							 echo json_encode($dat);die;
+							 echo $jsonp.'('.json_encode($dat).')';die;
+							 //echo json_encode($dat);die;
 					   }
 				  }
 		  }
@@ -195,6 +204,7 @@ class AserController extends Controller
 	
    public function login()
    {
+   	$jsonp=I('get.callback');
    	$user=M('Users');
    	$phone=I('phone');
    	$pas=I('password');
@@ -206,30 +216,59 @@ class AserController extends Controller
 		   {
 		      $data['token']=sp_random_string(20);
 		   }
-	     $a=$user->where("mobile=$phone")->save($data);
-	     $where="mobile='$phone' and `user_pass`='$password'";
-   	     $res=$user->where($where)->find();
-   	if($res)
-   	{            
-		         // $dat['last_login_ip']=get_client_ip(0,true);
-	          //    $ip=$dat['last_login_ip']; 登陆者IP
-                 $dat['msg']="登陆成功！";
-                 $dat['data']=$res;
-                 $dat['status']=1;
-                 echo json_encode($dat);die;
-   	}
-   	else
-   	{
-   		         $dat['msg']="用户名或密码错误！";
-                 $dat['status']=0;
-                 echo json_encode($dat);die;
-   	}
+		 $result=$user->where("mobile='$phone'")->find();
+	     $user->where("mobile=$phone")->save($data);
+    if(empty($phone)||empty($pas))
+	{
+	  	                 $dat['msg']="账号密码不能为空！";
+						 $dat['status']=0;
+						 echo $jsonp.'('.json_encode($dat).')';die;
+						 //echo json_encode($dat);die;
+	}
+	else
+	{
+			if($result)
+		{
+			$where="mobile='$phone' and `user_pass`='$password'";
+		
+			 $res=$user->where($where)->find();
+			if($res)
+			{            
+						 // $dat['last_login_ip']=get_client_ip(0,true);
+					  //    $ip=$dat['last_login_ip']; 登陆者IP
+						 
+						 $dat['msg']="登录成功！";
+						 $dat['data']=$res;
+						 $dat['status']=1;
+						 echo $jsonp.'('.json_encode($dat).')';die;
+						 //echo json_encode($dat);die;
+			}
+			else
+			{
+						 $dat['msg']="用户名或密码错误！";
+						 $dat['status']=0;
+						 $dat=json_encode($dat);
+						 echo $jsonp.'('.json_encode($dat).')';die;
+						 //echo json_encode($dat);die;
+			}
+		}
+		else
+		{
+						 $dat['msg']="该账号不存在，请注册！";
+						 $dat['status']=0;
+						 echo $jsonp.'('.json_encode($dat).')';die;
+						 //echo json_encode($dat);die;
+		}
+	}
+    
+	     
    }
    /**
     * 密码修改
     */
    public function reset()
    {
+   	$jsonp=I('get.callback');
    	$user=M('Users');
    	$token=I('token');
    	$oldpas=I('oldpas');
@@ -250,20 +289,23 @@ class AserController extends Controller
 					 $data=$user->where("token='$token'")->find();
 					 $dat['msg']="密码修改成功！";
 					 $dat['status']=1;
-					 echo json_encode($dat);die;
+					 echo $jsonp.'('.json_encode($dat).')';die;
+					 //echo json_encode($dat);die;
 			}
 			else
 			{
 					 $dat['msg']="密码修改失败！";
 					 $dat['status']=0;
-					 echo json_encode($dat);die;
+					 echo $jsonp.'('.json_encode($dat).')';die;
+					 //echo json_encode($dat);die;
 			} 
 	  }
 	  else
 	  {
 		         $dat['msg']="密码错误，请输入正确的密码";
                  $dat['status']=0;
-                 echo json_encode($dat);die;
+                 echo $jsonp.'('.json_encode($dat).')';die;
+                 //echo json_encode($dat);die;
 	  }
         
     }
@@ -271,7 +313,8 @@ class AserController extends Controller
     {
     	         $dat['msg']="身份验证失败!请重新登陆！";
                  $dat['status']=0;
-                 echo json_encode($dat);die;
+                 echo $jsonp.'('.json_encode($dat).')';die;
+                 //echo json_encode($dat);die;
     }
    }
    /**
@@ -279,6 +322,7 @@ class AserController extends Controller
 	*/
 	public function next()
 	{   
+		$jsonp=I('callback');
 	    $user=M('Users');
 		$phone=I('phone');
 		$check=I('check');
@@ -288,20 +332,24 @@ class AserController extends Controller
 			         $dat['msg']="请求成功！";
 	                 $dat['status']=1;
 					 $dat['phone']=$phone;
-	                 echo json_encode($dat);die;
+	                 echo $jsonp.'('.json_encode($dat).')';die;
+	                 //echo json_encode($dat);die;
 		}
 		else
 		{
 			        $dat['msg']="请求失败！";
 	                 $dat['status']=0;
-	                 echo json_encode($dat);die;
+	                 echo $jsonp.'('.json_encode($dat).')';die;
+	                 //echo json_encode($dat);die;
 		}
 	}
    /**
     * 忘记密码
     */
    public function forget()
-   {  $user=M('Users');
+   {  
+      $jsonp=I('get.callback');
+   	  $user=M('Users');
       $phone=I('phone');
 	   //echo json_encode($phone);die;
       $pas=I('password');
@@ -327,7 +375,8 @@ class AserController extends Controller
 				{
 					 $dat['msg']="验证码已过期，请重新获取！！";
 					 $dat['status']=0;
-					 echo json_encode($dat);die;
+					 echo $jsonp.'('.json_encode($dat).')';die;
+					 //echo json_encode($dat);die;
 				}
 				else
 				{
@@ -340,20 +389,23 @@ class AserController extends Controller
 					 {
 						 $dat['msg']="密码重置成功！";
 						 $dat['status']=1;
-						 echo json_encode($dat);die;
+						 echo $jsonp.'('.json_encode($dat).')';die;
+						 //echo json_encode($dat);die;
 					 }
 					 else
 					 {
 						 $dat['msg']="密码已存在，请重新输入！";
 						 $dat['status']=0;
-						 echo json_encode($dat);die;
+						 echo $jsonp.'('.json_encode($dat).')';die;
+						 //echo json_encode($dat);die;
 					 }
 				  }
 				  else
 				  {
 					 $dat['msg']="密码不一致！";
 					 $dat['status']=0;
-					 echo json_encode($dat);die;
+					 echo $jsonp.'('.json_encode($dat).')';die;
+					 //echo json_encode($dat);die;
 				  }   
 				}
 				  
@@ -362,7 +414,8 @@ class AserController extends Controller
 		  {
 					 $dat['msg']="账号不存在！！";
 					 $dat['status']=0;
-					 echo json_encode($dat);die;
+					 echo $jsonp.'('.json_encode($dat).')';die;
+					 //echo json_encode($dat);die;
 		  }
 	  }
 	  
@@ -372,7 +425,8 @@ class AserController extends Controller
     * 忘记密码短信接口
     */
     public function fcheck()
-  { 
+  {     
+  	    $jsonp=I('get.callback');
   	    vendor('SMS.CCPRestSmsSDK');
 		$to=I('phone');
 		$da=rand(100000,999999);
@@ -394,7 +448,8 @@ class AserController extends Controller
 				{
 					$dat['status']=0;
 					$dat['msg']="请勿频繁请求！";
-					echo json_encode($dat);die;
+					echo $jsonp.'('.json_encode($dat).')';die;
+					//echo json_encode($dat);die;
 				}	
 			
 		}
@@ -402,7 +457,8 @@ class AserController extends Controller
 		{   
 			$dat['status']=0;
             $dat['msg']="手机号不存在，注册账号";
-			echo json_encode($dat);die;	
+			echo $jsonp.'('.json_encode($dat).')';die;
+			//echo json_encode($dat);die;	
 			
 		}
   } 
@@ -457,49 +513,18 @@ class AserController extends Controller
 				   {
 					   $data['status']=1;
 					   $data['msg']="验证码发送成功";
-					   echo json_encode($data);die;
+					   echo $jsonp.'('.json_encode($data).')';die;
+					   //echo json_encode($data);die;
 				   }				   
 				   else
 				   {
 					   $data['status']=0;
 					   $data['msg']="验证码发送失败";
-					   echo json_encode($data);die;
+					   echo $jsonp.'('.json_encode($data).')';die;
+					   //echo json_encode($data);die;
 				   }
 	         
 	     }
 	}
-	 /**
-	   *试题科目章节接口
-	   */
-	  public function kzjk()
-	  { 
-        $jsonp=I('callback');	  
-	  	$subjects=M('subjects');
-	  	$chapter=M('chapter');
-	  	$res=$subjects
-	  	->field('sid,stitle')
-	  	->order('sid asc')
-	  	->select();
-	  	//var_dump($res);die;
-	  	$arr=array();
-	  	$data=array();
-	  	foreach ($res as $k=>$v)
-	  	{
-           $sid=$v['sid'];
-           $re=$chapter
-		  	->field('cid,ctitle')
-		  	->where("sid=$sid")
-		  	->order('cid asc')
-		  	->select();
-            $arr[$sid]=$re;
-            $data[$sid]=$v;
-	  	}
-	  	foreach($data as $k=>$v)
-	  	{   $da[$k]=$v;
-            $da[$k]["chapter"]=$arr[$k];
-	  	}
-		
-	    echo $jsonp.json_encode($da);die; 
-	  }
 	
 }

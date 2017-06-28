@@ -11,32 +11,32 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <script src="/public/simpleboot/jedate/jedate.js"></script>
-    <link href="/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <script src="/junwei/public/simpleboot/jedate/jedate.js"></script>
+    <link href="/junwei/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/junwei/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/junwei/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
         form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
         .table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
         .table-list{margin-bottom: 0px;}
     </style>
     <!--[if IE 7]>
-    <!--<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
-    <link  href="/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
+    <!--<link rel="stylesheet" href="/junwei/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">-->
+    <link  href="/junwei/public/simpleboot/bootstrap/css/bootstrap-responsive.min.css">
     <![endif]-->
     <script type="text/javascript">
         //全局变量
         var GV = {
-            ROOT: "/",
-            WEB_ROOT: "/",
+            ROOT: "/junwei/",
+            WEB_ROOT: "/junwei/",
             JS_ROOT: "public/js/",
             APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
         };
     </script>
-    <script src="/public/js/jquery.js"></script>
-    <script src="/public/js/wind.js"></script>
-    <script src="/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/junwei/public/js/jquery.js"></script>
+    <script src="/junwei/public/js/wind.js"></script>
+    <script src="/junwei/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -88,14 +88,12 @@
             <th width="80">课时数量</th>
             <th width="80">课堂类型</th>
             <th width="80">直播状态</th>
-
-
         </tr>
         <tr>
             <td><?php echo ($data["course_name"]); ?></td>
             <td><?php echo ($data["now_price"]); ?></td>
             <td><?php echo ($data["old_price"]); ?></td>
-            <td><?php echo ($data["name"]); ?></td>
+            <td><?php echo ($data["lector"]); ?></td>
             <td><?php echo ($data["num_class"]); ?></td>
             <td>
                 <?php if(($data["type"] == 0)): ?>大讲堂

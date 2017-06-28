@@ -26,8 +26,6 @@
                                              data-checklist="js-check-x"></label></th>
                 <th width="60">ID</th>
                 <th width="80">课堂主题</th>
-                <th width="80">现价</th>
-                <th width="80">原价</th>
                 <th width="80">讲师</th>
                 <th width="80">适用人群</th>
                 <th width="80">配发图书</th>
@@ -37,14 +35,11 @@
             </tr>
             </thead>
             <foreach name="data" item="vo">
-                <tr>
                     <td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x"
                                name="ids[]" value="{$vo.id}"></td>
                     <td><a>{$vo.id}</a></td>
                     <td>{$vo.course_name}</td>
-                    <td>{$vo.now_price}</td>
-                    <td>{$vo.old_price}</td>
-                    <td>{$vo.name}</td>
+                    <td>{$vo.lector}</td>
                     <td>{$vo.people}</td>
                     <td>{$vo.book}</td>
                     <td>{$vo.startdate}</td>
@@ -52,7 +47,7 @@
                     <td>
                         <a href="{:U('Course/look',array('id'=>$vo['id']))}">{:L('LOOK')}</a>|
                         <a href="{:U('Course/update',array('id'=>$vo['id']))}">{:L('EDIT')}</a>|
-                        <a href="{:U('Course/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+                        <a href="{:U('Course/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id'],'courseware_id' => $vo['courseware_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
                     </td>
                 </tr>
             </foreach>

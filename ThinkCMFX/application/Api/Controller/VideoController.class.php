@@ -85,10 +85,10 @@ class VideoController extends Controller{
         $info = $model
             ->join("LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid")
             ->join("LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid")
-            ->join("LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id")
+            //->join("LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id")
             ->join("LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid")
             ->where("cmf_video_record.uid = $uid")
-            ->field("cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_lector.name,
+            ->field("cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,
             cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject")
             ->page($page . ',10')
             ->order("cmf_video_record.vid desc")
@@ -132,9 +132,60 @@ class VideoController extends Controller{
         }
     }
 
+
+    /*
+     * 学习记录---答题记录
+     * */
+    public function sheet(){
+        $uid = I("uid");   //获取用户的id
+        $page = I("page");
+        $model = M("sheet");
+        $res = $model
+            ->join("LEFT JOIN cmf_users ON cmf_users.id = cmf_sheet.uid")
+            ->join("LEFT JOIN cmf_subjects ON cmf_subjects.sid = cmf_sheet.sid")
+            ->join("LEFT JOIN cmf_chapter ON cmf_chapter.cid = cmf_sheet.cid")
+            ->field("cmf_sheet.sheet_id,cmf_sheet.eid,cmf_sheet.etid,cmf_subjects.stitle,cmf_chapter.ctitle,cmf_sheet.sid,cmf_sheet.cid,cmf_sheet.sheet_time")
+            ->where("cmf_sheet.uid = $uid")
+            ->page($page . ',10')
+            ->select();
+        for ($i = 0; $i < count($res); $i++) {
+            if ($res[$i]['stitle'] == '') {
+                $eid = $res[$i]['eid'];
+                $edit = $res[$i]['etid'];
+                $eeid = $res[$i]['etid'] + 1;
+                //$res[$i]['name'] = $res[$i]['eid']."年司法考试卷卷".$res[$i]['etid'];
+                $res[$i]['name'] = $eid . "年司法考试卷卷" . $eeid;
+                $res[$i]['status'] = 0 ;
+                $res[$i]['count'] = M("itembank")->where("eid = $eid AND etid = $edit")->count();       //共多少题
+
+            } else {
+                $res[$i]['name'] = $res[$i]['ctitle'] . '----' . $res[$i]['stitle'];
+                $sid = $res[$i]['sid'];
+                $cid = $res[$i]['cid'];
+                $res[$i]['status'] = 1 ;
+                $res[$i]['count'] = M("itembank")->where("sid = $sid AND cid = $cid")->count();
+            }
+
+        }
+//print_r($res);die;
+        if(!empty($res)){
+            $data['status'] = 1;
+            $data['msg'] = '请求成功';
+            $data['data'] = $res;
+            echo json_encode($data);die;
+        }else{
+            $data['status'] = 0;
+            $data['msg'] = '请求成功';
+            $data['data'] = '';
+            echo json_encode($data);die;
+        }
+    }
+
+
+
     /*
      * 获取课程下面的课时的ID
-     * */
+     *
     public function videolive(){
         $cid = I("cid");              //获取课程的ID
         $uid = I("uid");                //判断接收过来的token是get传值还是post，token是判断用户的唯一标识符   获取当前登录用户的唯一标识符
@@ -162,7 +213,7 @@ class VideoController extends Controller{
         }
     }
 
-
+ */
 
 
 
@@ -376,52 +427,6 @@ class VideoController extends Controller{
 
     }
 */
-    /*
-     * 学习记录---答题记录
-     * */
-    public function sheet(){
-        $uid = I("uid");   //获取用户的id
-        $page = I("page");
-        $model = M("sheet");
-        $res = $model
-            ->join("LEFT JOIN cmf_users ON cmf_users.id = cmf_sheet.uid")
-            ->join("LEFT JOIN cmf_subjects ON cmf_subjects.sid = cmf_sheet.sid")
-            ->join("LEFT JOIN cmf_chapter ON cmf_chapter.cid = cmf_sheet.cid")
-            ->field("cmf_sheet.sheet_id,cmf_sheet.eid,cmf_sheet.etid,cmf_subjects.stitle,cmf_chapter.ctitle,cmf_sheet.sid,cmf_sheet.cid,cmf_sheet.sheet_time")
-            ->where("cmf_sheet.uid = $uid")
-            ->page($page . ',10')
-            ->select();
-        for ($i = 0; $i < count($res); $i++) {
-            if ($res[$i]['stitle'] == '') {
-                $eid = $res[$i]['eid'];
-                $edit = $res[$i]['etid'];
-                $eeid = $res[$i]['etid'] + 1;
-                //$res[$i]['name'] = $res[$i]['eid']."年司法考试卷卷".$res[$i]['etid'];
-                $res[$i]['name'] = $eid . "年司法考试卷卷" . $eeid;
-                $res[$i]['status'] = 0 ;
-                $res[$i]['count'] = M("itembank")->where("eid = $eid AND etid = $edit")->count();       //共多少题
 
-            } else {
-                $res[$i]['name'] = $res[$i]['ctitle'] . '----' . $res[$i]['stitle'];
-                $sid = $res[$i]['sid'];
-                $cid = $res[$i]['cid'];
-                $res[$i]['status'] = 1 ;
-                $res[$i]['count'] = M("itembank")->where("sid = $sid AND cid = $cid")->count();
-            }
-
-        }
-//print_r($res);die;
-        if(!empty($res)){
-            $data['status'] = 1;
-            $data['msg'] = '请求成功';
-            $data['data'] = $res;
-            echo json_encode($data);die;
-        }else{
-            $data['status'] = 0;
-            $data['msg'] = '请求成功';
-            $data['data'] = '';
-            echo json_encode($data);die;
-        }
-    }
 
 }

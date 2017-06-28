@@ -111,8 +111,10 @@
                     <td>
                         <input type="hidden" name="course_name" value="<?php echo ($data["course_name"]); ?>">
                         <input type="hidden" name="class_id" value="<?php echo ($data["class_id"]); ?>">
-                        <!--<input type="hidden" name="cover" value = "<?php echo ($data["cover"]); ?>">-->
+                        <input type="hidden" name="number" value = "<?php echo ($data["number"]); ?>">
+                        <input type="hidden" name="stu_token" value = "<?php echo ($data["stu_token"]); ?>">
                         <input type="hidden" name="id" value="<?php echo ($id); ?>">
+                        <input type="hidden" name="courseware_id" value="<?php echo ($data["courseware_id"]); ?>">
                     </td>
                 </tr>
                 <tr>
@@ -171,7 +173,7 @@
                 <tr>
                     <th width="80">开始时间</th>
                     <td>
-                        <input class="datainp" name="startDate" value="<?php echo ($data["startdate"]); ?>" id="datebut" type="text"
+                        <input class="datainp" name="startDate" value="<?php if (empty($data.startDate)) { echo $data['startdate'];}else {echo $data['startDate'];} ?>" id="datebut" type="text"
                                placeholder="双击选择时间"
                                onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
@@ -180,7 +182,7 @@
                 <tr>
                     <th width="80">结束时间</th>
                     <td>
-                        <input class="datainp" name="invalidDate" value="<?php echo ($data["invaliddate"]); ?>" id="datebut1" type="text"
+                        <input class="datainp" name="invalidDate" value="<?php if (empty($data.invalidDate)) { echo $data['invaliddate'];}else {echo $data['invalidDate'];} echo ($data["invaliddate"]); ?>" id="datebut1" type="text"
                                placeholder="双击选择时间"
                                onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
                     </td>
@@ -195,11 +197,9 @@
                 <tr>
                     <th width="80">讲师</th>
                     <td>
-                        <select name="lector_id" class="normal_select">
-                            <option value="<?php echo ($data["l_id"]); ?>"><?php echo ($data["name"]); ?></option>
-                            <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$vo): ?><option value="<?php echo ($vo["l_id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
-
-
+                        <select name="lector" class="normal_select">
+                            <option value="<?php echo ($data["lector"]); ?>"><?php echo ($data["lector"]); ?></option>
+                            <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$vo): ?><option value="<?php echo ($vo["name"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </td>
                 </tr>

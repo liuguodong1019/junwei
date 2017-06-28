@@ -10,6 +10,7 @@ return array (
   'ADMIN_BOOK_SHOW' => '配发图书',
   'ADMIN_CLASSHOUR_SHOW' => '课时管理',
   'ADMIN_COURSE_SHOW' => '实时课堂',
+  'ADMIN_FEEDBACK_SHOW' => '意见反馈',
   'ADMIN_LECTOR_LECTOR' => '讲师列表',
   'ADMIN_LINK_ADD_POST' => '提交添加',
   'ADMIN_LINK_EDIT_POST' => '提交编辑',

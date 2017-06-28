@@ -145,22 +145,22 @@
                 <tr>
                     <th width="80">讲师</th>
                     <td>
-                        <select name="lector_id"  class="normal_select">
+                        <select name="lector"  class="normal_select">
                                 <option value="">请选择</option>
-                            <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$vo): ?><option value="<?php echo ($vo["l_id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+                            <?php if(is_array($array['lector'])): foreach($array['lector'] as $key=>$vo): ?><option value="<?php echo ($vo["name"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <th width="80">适用人群</th>
                     <td>
-                        <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): echo ($va["people"]); ?>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="people[]" value="<?php echo ($va["people"]); ?>">&nbsp;&nbsp;&nbsp;<?php endforeach; endif; ?>
+                        <?php if(is_array($array['people'])): foreach($array['people'] as $key=>$va): ?><input type="checkbox" name="people[]" value="<?php echo ($va["people"]); ?>">&nbsp;&nbsp;&nbsp;<?php echo ($va["people"]); ?>&nbsp;&nbsp;&nbsp;<?php endforeach; endif; ?>
                     </td>
                 </tr>
                 <tr>
                     <th width="80">配发图书</th>
                     <td>
-                        <?php if(is_array($array['book'])): foreach($array['book'] as $key=>$value): echo ($value["book"]); ?>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="book[]" value="<?php echo ($value["book"]); ?>">&nbsp;&nbsp;&nbsp;<?php endforeach; endif; ?>
+                        <?php if(is_array($array['book'])): foreach($array['book'] as $key=>$value): ?><input type="checkbox" name="book[]" value="<?php echo ($value["book"]); ?>">&nbsp;&nbsp;&nbsp;<?php echo ($value["book"]); ?>&nbsp;&nbsp;&nbsp;<?php endforeach; endif; ?>
                     </td>
                 </tr>
                 </tbody>

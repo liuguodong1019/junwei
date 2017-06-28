@@ -121,9 +121,9 @@
                 <tr>
                     <th width="80">讲师</th>
                     <td>
-                        <select name="lector_id"  class="normal_select">
+                        <select name="lector"  class="normal_select">
                             <option value="请选择">请选择</option>
-                            <?php if(is_array($lector)): foreach($lector as $key=>$va): ?><option value="<?php echo ($va["l_id"]); ?>"><?php echo ($va["name"]); ?></option><?php endforeach; endif; ?>
+                            <?php if(is_array($lector)): foreach($lector as $key=>$va): ?><option value="<?php echo ($va["name"]); ?>"><?php echo ($va["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </td>
                 </tr>

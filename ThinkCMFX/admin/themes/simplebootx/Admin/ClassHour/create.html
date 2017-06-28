@@ -51,10 +51,10 @@
                 <tr>
                     <th width="80">讲师</th>
                     <td>
-                        <select name="lector_id"  class="normal_select">
+                        <select name="lector"  class="normal_select">
                             <option value="请选择">请选择</option>
                             <foreach name = "lector" item = "va">
-                                <option value="{$va.l_id}">{$va.name}</option>
+                                <option value="{$va.name}">{$va.name}</option>
                             </foreach>
                         </select>
                     </td>

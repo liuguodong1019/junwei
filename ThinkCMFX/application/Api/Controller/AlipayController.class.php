@@ -27,12 +27,15 @@ class AlipayController extends Controller
         $pay = C('alipay_config');
         $content = array();
         $resource = new SubmitController();
+//        $str = new CacheController();
         $data['uid'] = I('request.uid');
         $data['course_id'] = I('request.course_id');
         $data['pay_ways'] = I('request.pay_ways');
         $data['create_time'] = time();
         $course_id = $data['course_id'];
         $uid = $data['uid'];
+//        $con = $str->addOrder($data);
+
         $rex = $order->field('pay_status')->where("uid = '$uid' and course_id = '$course_id' and pay_status = '1'")->find();
         if (!empty($rex)) {
             echo $resource::state($status[0],'您已经支付过此课程');die;

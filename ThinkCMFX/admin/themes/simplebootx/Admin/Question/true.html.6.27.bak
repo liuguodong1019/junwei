@@ -1,0 +1,309 @@
+<admintpl file="header" />
+<style>
+		.kemumenu{ width: 100%; padding:10px  0px;float:left; border:#cbcbcb solid 1px;border-radius:4px; margin-bottom:10px;}
+		.kemumenu span{padding: 5px 20px;cursor: pointer;font-size: 14px;font-family: "微软雅黑"; line-height: 20px;color:#636363;display: block;float: left;}
+		.kemumenu span:hover{color: #333333;}
+		.kemu-active{ color:red!important;font-weight: bold;}
+	</style>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Question/true')}">真题管理</a></li>
+			<li><a href="{:U('Question/trueadd')}">真题添加</a></li>
+			<li><a href="{:U('Question/truesubjectivelist')}">主观题列表</a></li>
+		</ul>
+		<div class="kemumenu" id="one-menu"></div>
+		<div class="kemumenu" id="two-menu"></div>
+		<form class="js-ajax-form" method="post">
+			<div class="table-actions">
+				<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Question/turedelete')}" data-subcheck="true" data-msg="{:L('DELETE_CONFIRM_MESSAGE')}">{:L('DELETE')}</button>
+			</div>
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th width="16"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<th width="50">题号</th>
+						<th>题干</th>
+						<!-- <th>点击量</th> -->
+						<th width="150">卷名</th>
+						<th width="80"><span>添加时间</span></th>
+						<th width="60"><span>考题类型</span></th>
+						<th width="125">{:L('ACTIONS')}</th>
+					</tr><q>			</q>
+				</thead>
+
+				<tr>
+					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="item_ids[]" value="{$vo.item_id}"></td>
+					<td><a>{$vo.no}</a></td>
+					<td><a href="#">{$vo.question}</a></td>
+					<td>{$vo.eid}年国家司法考试<a href="#"><if condition="$vo.etid eq 0"> 卷一 
+						<elseif condition="$vo.etid eq 1" /> 卷二<elseif condition="$vo.etid eq 2" />卷三 </if></a>试题</td>
+					<td>{$vo.itime|date='Y-m-d H:i:s',###}</td>
+					<td>
+						<if condition="$vo.te_type eq 1"> 多选题 
+						<elseif condition="$vo.te_type eq 0" /> 单选题 </if>
+					</td>
+					<td>
+						<a href="{:U('Question/trueedit',array('item_id'=>$vo['item_id']))}">{:L('EDIT')}</a>|
+						<a href="{:U('Question/truedelete',array('item_id'=>$vo['item_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+					</td>
+				</tr>
+
+				<tfoot>
+					<tr>
+						<th width="16"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<th width="50">题号</th>
+						<th>题干</th>
+						<!-- <th>点击量</th> -->
+						<th width="150">卷名</th>
+						<th width="80"><span>添加时间</span></th>
+						<th width="60"><span>考题类型</span></th>
+						<th width="125">{:L('ACTIONS')}</th>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="table-actions">
+				<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Question/truedelete')}" data-subcheck="true" data-msg="你确定删除吗？">{:L('DELETE')}</button>
+			</div>
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script>
+		setCookie('refersh_time', 0);
+		function refersh_window() {
+			var refersh_time = getCookie('refersh_time');
+			if (refersh_time == 1) {
+				window.location.reload();
+			}
+		}
+		setInterval(function() {
+			refersh_window()
+		}, 2000);
+	</script>
+
+
+	<script type="text/javascript">
+	function getLocalTime(nS) {
+      return new Date(parseInt(nS) * 1000).toLocaleString().substr(0,17)
+	  }; 
+$(document).ready(function(){
+	var onemenu="";
+	var twomenu="";
+	var onedata="";
+		$.ajax({
+            type: "get",
+            url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=ztjk",
+            dataType:"jsonp",
+            jsonp: "callback",
+            jsonpCallback:"successCallback", 
+            success:function(data) {
+            	var json=eval(data);
+            	for(i in json){
+            		//console.log(json[i]);
+            		onemenu+="<span>"+json[i].eid+"年国家司法考试</span>";
+            	}
+            	$("#one-menu").html(onemenu);
+                
+               
+            },
+            error:function(st){
+            	alert ("系统错误，错误码"+st.status);　
+            }
+            
+        });
+        
+    $("#one-menu").on("click","span",function(){
+    	var thistexts=$(this).text();
+    	var thistext=thistexts.substring(0,4);
+    	onedata=thistext;
+    	$(this).addClass("kemu-active").siblings().removeClass("kemu-active");
+    	var twomenu="";
+    	$.ajax({
+            type: "get",
+            url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=ztjk",
+            dataType:"jsonp",
+            jsonp: "callback",
+            jsonpCallback:"successCallback", 
+            success:function(data) {
+            	var json=eval(data);
+            	var res="";
+            	for(i in json){
+            		if(thistext==json[i].eid){
+            			for(m in json[i].chapter){
+            				//console.log(json[i].chapter[m]);
+            				
+            				 if(json[i].chapter[m].etid==0)
+								  {
+								    res='卷一';
+								  }
+								  else if(json[i].chapter[m].etid==1)
+								  {
+								   res='卷二';
+								  }
+								  else if(json[i].chapter[m].etid==2)
+								  {
+								   res='卷三';
+								  };
+            				twomenu+="<span>"+res+"</span>";
+            			}
+            				
+            		}
+            		
+            		
+            	}
+            	$("#two-menu").html(twomenu);
+                
+               
+            },
+            error:function(st){
+            	alert ("系统错误，错误码"+st.status);　
+            }
+            
+        });
+    	 	
+    })
+    
+
+
+ $("#two-menu").on("click","span",function(){
+
+            var eid="";
+            var etid="";
+            var this2text=$(this).text();
+        	$(this).addClass("kemu-active").siblings().removeClass("kemu-active");
+            //alert (this2text);
+
+
+$.ajax({
+            type: "get",
+            url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=ztjk",
+            dataType:"jsonp",
+            jsonp: "callback",
+            jsonpCallback:"successCallback", 
+            success:function(data) {
+                var json=eval(data);
+                var res="";
+                for(i in json){
+		                    
+                        for(m in json[i].chapter){
+
+                        		if(json[i].chapter[m].etid==0)
+								  {
+								    res='卷一';
+								  }
+								  else if(json[i].chapter[m].etid==1)
+								  {
+								   res='卷二';
+								  }
+								  else if(json[i].chapter[m].etid==2)
+								  {
+								   res='卷三';
+								  };
+
+                            if (this2text==res) {
+                               eid=onedata;
+                               etid=json[i].chapter[m].etid;
+                               senddata(eid,etid);
+
+                            }
+                        }
+                     
+                }
+               
+                
+
+
+               
+            },
+            error:function(st){
+                alert ("系统错误，错误码"+st.status);　
+            }
+            
+        });
+
+  function senddata(eid,etid){
+    console.log("sid:"+eid+"cid:"+etid);
+
+    $.ajax({
+            type: "get",
+            url: "http://kf.junweiedu.cn/junwei/index.php?g=houtai&m=itembank&a=trueitembank&eid="+eid+"&etid="+etid,
+            dataType:"jsonp",
+            //jsonp: "callback",
+            //jsonpCallback:"successCallback", 
+            success:function(data) {
+                var fhdata=eval(data);
+                var tabledatahtml="";
+                var re;
+				var time;
+				var id;
+				var url;
+				var res;
+                for(i=0;i<data.length;i++){
+                   // console.log(data[i]);
+				  if(data[i].te_type==1)
+				  {
+				    re='多选';
+				  }
+				  else if(data[i].te_type==0)
+				  {
+				   re='单选';
+				  };
+
+				  if(data[i].etid==0)
+				  {
+				    res='卷一';
+				  }
+				  else if(data[i].etid==1)
+				  {
+				   res='卷二';
+				  }
+				  else if(data[i].etid==2)
+				  {
+				   res='卷三';
+				  };
+				 id=data[i].item_id;
+				 delurl="Question/truedelete?item_id="+id;
+				 editurl="Question/trueedit?item_id="+id;
+				 //alert(url);
+				 time=getLocalTime(data[i].itime);
+                 
+                 // tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'>{:L('EDIT')}</a>|<a href='"+delurl+"' class='js-ajax-delete'>{:L('DELETE')}</a></td></tr>"
+
+                 tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'>{:L('EDIT')}</a>|<a href='"+delurl+"' class='js-ajax-delete'>{:L(DELETE)}</a></td></tr>"
+
+
+
+
+ 
+			   }
+                $("tbody").html(tabledatahtml);
+
+               
+               
+            },
+            error:function(st){
+                alert ("发送数据失败，错误码"+st.status);　
+            }
+            
+        });
+
+
+
+
+
+  }
+
+})
+ 
+	$(".js-ajax-delete").click(function(){
+	var a=$(this).attr("href");
+	$(this).attr("href","javascript:;");
+	alert (a);
+	});
+ 
+})
+</script>
+</body>
+</html>

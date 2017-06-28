@@ -36,6 +36,7 @@ class ItembankController extends Controller
             $da[$k]["chapter"]=$arr[$k];
 	  	}
 		 $dac=array_values($da);
+
 	    echo $jsonp.'('.json_encode($dac).')';die; 
 	  }
 	/**
@@ -53,7 +54,7 @@ class ItembankController extends Controller
 		  $item=$it
 			->join('cmf_chapter on cmf_itembank.cid = cmf_chapter.cid')
 			->join('cmf_subjects on cmf_itembank.sid = cmf_subjects.sid')
-			->order('itime asc')
+			->order('no asc')
 			->where("cmf_itembank.sid='$sid' and cmf_itembank.cid='$cid'")
 			->select();
 		  $itemb=$jsonp.'('.json_encode($item).')';
@@ -145,5 +146,46 @@ class ItembankController extends Controller
 			->select();
 		  $itemb=$jsonp.'('.json_encode($item).')';
 		  echo $itemb;die;
+	  }
+
+      /**
+       * 测试
+       * @return [jsonp] [description]
+       */
+	   public function jk()
+	  { 
+        $jsonp=I('get.callback');	  
+	  	$subjects=M('subjects');
+	  	$chapter=M('chapter');
+	  	$res=$subjects
+	  	->field('sid,stitle')
+	  	->order('sid asc')
+	  	->select();
+	  	$arr=array();
+	  	$data=array();
+	  	foreach ($res as $k=>$v)
+	  	{
+           $sid=$v['sid'];
+           $re=$chapter
+		  	->field('cid,ctitle')
+		  	->where("sid='$sid'")
+		  	->order('cid asc')
+		  	->select();
+			foreach($re as $k1=>$v2)//章节排序
+			{
+				$a=explode(" ",$v2['ctitle']);
+				echo $a[0];
+			}
+            $arr[$sid]=$re;
+            $data[$sid]=$v;
+	  	}
+        die;
+	  	foreach($data as $k=>$v)
+	  	{   $da[$k]=$v;
+            $da[$k]["chapter"]=$arr[$k];
+	  	}
+		 $dac=array_values($da);
+
+	    echo $jsonp.'('.json_encode($dac).')';die; 
 	  }
 }

@@ -85,7 +85,6 @@
                placeholder="请输入关键字...">
         <input type="submit" class="btn btn-primary" value="搜索"/>
         <button type="reset" class="btn btn-danger">重置</button>
-
     </form>
     <form class="js-ajax-form" method="post">
 

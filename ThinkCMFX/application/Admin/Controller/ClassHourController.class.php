@@ -8,8 +8,11 @@
 
 namespace Admin\Controller;
 
+use Api\Controller\CacheController;
 use Common\Controller\AdminbaseController;
 use Api\Controller\ResponseController;
+use Common\Model\CourseModel;
+use Common\Model\LiveModel;
 
 /**
  * Class LiveController
@@ -23,29 +26,48 @@ class ClassHourController extends AdminbaseController
      */
     public function show()
     {
-        $live = M('live');
+       $str = new CourseModel();
+       $redis = $str::redis();
+//        $id = $redis->get('live_id');
+       // $rew = json_decode($redis->hGet('live',11),true);
+       // $rew['subject'] = '理论法3';
+       // $rew['startDate'] = '2017-06-28 19:00:00';
+       // $rew['invalidDate'] = '2017-06-28 21:00:00';
+       // $rew['course_id'] = '14';
+       // $rew['lector'] = '0';
+       // $rew['id'] = '11';
+       // $data['status'] = 3;
+       // $rew['status'] = $data['status'];
+       // $rew['number'] = '85429448';
+       // $rew['stu_token'] = '58eaecb94aed8';
+       // $rew['reply_url'] = 'http://junwei.gensee.com/training/site/v/43362436';
+       // $rew['class_id'] = 'P9xJu4Fu4d';
+
+       // $list = json_encode($rew);
+       // $redis->hSet('live',11,$list);
+       // $list = json_encode($rew);
+//        unset($res['book']);
+//        unset($res['people']);
+//        $list = $res;
+//        $redis->hSet('live',1,$list);
+       // $res = $redis->hVals('live');
+       // foreach ($res as $val) {
+       //     $rew[] = json_decode($val,true);
+       // }
+       // echo '<pre>';
+       // print_r($rew);die;
+        $live = D('live');
         $junwei = M('junwei')->find();
         $loginName = $junwei['loginName'];
         $password = $junwei['password'];
         $count = $live->count();
         $page = $this->page($count,20);
-        if (IS_POST) {
-            $keyword = I('post.keyword');
-            if (!empty($keyword)) {
-                $data = $live->where("subject like '%$keyword%'")
-                    ->order('startDate')->limit($page->firstRow . ',' . $page->listRows)->select();
-            } else {
-                $this->redirect('show');
-            }
-        } else {
-            $data = $live->table('cmf_live as a')
-                ->field('a.id,a.subject,b.course_name,a.startDate,a.invalidDate,a.class_id')
-                ->join('left join cmf_course as b ON a.course_id = b.id')
-                ->where("a.is_free = 2")
-                ->order('a.id')->limit($page->firstRow . ',' . $page->listRows)->order('a.id desc')->select();
-            if (empty($data)) {
-                $this->redirect('create');
-            }
+        $resource = new LiveModel();
+        $data = $resource->show($page);
+        // echo "<pre>";
+        // print_r($data);die;
+        if (empty($data)) {
+            $this->redirect('create');
         }
         $this->assign('loginName', $loginName);
         $this->assign('password', $password);
@@ -59,15 +81,23 @@ class ClassHourController extends AdminbaseController
      */
     public function look()
     {
+        $str = new CourseModel();
+        $redis = $str::redis();
+        $look = new CacheController();
         if (IS_GET) {
             $id = I('get.id');
-            $live = M('live');
+            $live = D('live');
             if (!empty($id)) {
-                $data = $live->table('cmf_live as a')
-                    ->field('a.subject,a.id,a.startDate,a.invalidDate,a.number,a.stu_token,a.class_id,b.course_name,c.name,a.status,a.reply_url')
-                    ->join('cmf_course as b ON a.course_id = b.id')
-                    ->join('cmf_lector as c ON a.lector_id = c.l_id')
-                    ->where("a.id = '$id'")->find();
+                $res = json_decode($redis->hGet('live',$id),true);
+                if (!empty($res)) {
+                    $rew = $look->live($res);
+                    $data = $rew;
+                }else {
+                    $data = $live->table('cmf_live as a')
+                        ->field('a.subject,a.id,a.startDate,a.invalidDate,a.number,a.stu_token,a.class_id,b.course_name,a.lector,a.status,a.reply_url')
+                        ->join('cmf_course as b ON a.course_id = b.id')
+                        ->where("a.id = '$id'")->find();
+                }
             }
         }
         $this->assign('data', $data);
@@ -79,40 +109,17 @@ class ClassHourController extends AdminbaseController
      */
     public function create()
     {
-        $live = M('live');
-        $course = M('course')->field('id,course_name')->where("is_free = 2")->select();
-        $junwei = M('junwei')->find();
+        $course = D('course')->field('id,course_name')->where("is_free = 2")->select();
         $lector = M('lector')->select();
-        $response = new ResponseController();
+        $create = new LiveModel();
         if (IS_POST) {
             $data = I('');
-            $loginName = $junwei['loginname'];
-            $password = sp_authcode($junwei['password']);
-            $startDate = I('post.startDate');
-            $invalidDate = I('post.invalidDate');
-            $data['startDate'] = strtotime(I('post.startDate'));
-            $data['invalidDate'] = strtotime(I('post.invalidDate'));
-            $subject = I('post.subject');
-            //调用课时创建接口
-            $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
-
-            $data['number'] = $resource['number'];
-            $data['stu_token'] = $resource['studentClientToken'];
-            $data['class_id'] = $resource['id'];
-            
-            if ($resource['code'] == 0) {
-                if ($live->add($data)) {
-                    $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
-                    exit();
-                }else {
-                    $this->error(L('ADD_FAILED'));
-                    exit();
-                }
+            $type = $create->create($data);
+            if ($type != false) {
+                $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));exit();
             }else {
-                $this->error(L('ADD_FAILED'));
-                exit();
+                $this->error(L('ADD_FAILED'));exit();
             }
-
         }
         $this->assign('course', $course);
         $this->assign('lector',$lector);
@@ -124,22 +131,29 @@ class ClassHourController extends AdminbaseController
      */
     public function update()
     {
-        $response = new ResponseController();
-        $live = M('live');
+        $live = D('live');
         $lector = M('lector');
-        $course = M('course');
-        $junwei = M('junwei')->find();
+        $course = D('course');
+        $update = new LiveModel();
+        $str = new CourseModel();
+        $rew = new CacheController();
+        $redis = $str::redis();
         if (IS_GET) {
             $id = I('get.id');
             if (!empty($id)) {
-                $data = $live
-                    ->field('cmf_course.id,cmf_course.course_name,cmf_live.subject,cmf_live.reply_url,cmf_live.is_free,cmf_lector.l_id,cmf_lector.name,cmf_live.startdate,cmf_live.invaliddate,cmf_live.class_id')
-                    ->join('cmf_course ON cmf_live.course_id = cmf_course.id')
-                    ->join('cmf_lector ON cmf_live.lector_id = cmf_lector.l_id')
-                    ->where("cmf_live.id = $id")
-                    ->find();
+                $res = json_decode($redis->hGet('live',$id),true);
+                if (!empty($res)) {
+                    $test = $rew->live($res);
+                    $data = $test;
+                }else {
+                    $data = $live->table('cmf_live as a')
+                        ->field('b.id as course_id,b.course_name,a.subject,a.reply_url,a.is_free,a.lector,a.startdate as startDate,a.invaliddate as invalidDate,a.class_id,a.courseware_id')
+                        ->join('cmf_course as b ON a.course_id = b.id')
+                        ->where("a.id = $id")
+                        ->find();
+                }
 
-                $array['course'] = $course->field('id,course_name')->select();
+                $array['course'] = $course->field('id,course_name')->where("is_free = '2'")->select();
                 $array['lector'] = $lector->field('l_id,name')->select();
             }
             $this->assign('id', $id);
@@ -149,25 +163,11 @@ class ClassHourController extends AdminbaseController
         if (IS_POST) {
             $id = I('post.id');
             $data = I('');
-            $loginName = $junwei['loginname'];
-            $password = sp_authcode($junwei['password']);
-            $realtime = I('post.realtime');
-            $startDate = strtotime(I('post.startDate'));
-            $invalidDate = strtotime(I('post.invalidDate'));
-            $data['startDate'] = $startDate;
-            $data['invalidDate'] = $invalidDate;
-            $subject = I('post.subject');
-            $class_id = I('post.class_id');
-            //调用修改课时接口
-            $resource = $response::update_course($loginName,$password,$realtime,$startDate,$invalidDate,$subject,$class_id);
-            if ($resource['code'] == 0) {
-                if ($live->where("id = $id")->save($data)) {
-                    $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));
-                    exit();
-                } else {
-                    $this->error(L("ADD_FAILED"));
-                    exit();
-                }
+            $type = $update->update($data,$id);
+            if ($type != false) {
+                $this->success(L('ADD_SUCCESS'), U("ClassHour/show"));exit();
+            }else {
+                $this->error(L("ADD_FAILED"));exit();
             }
         }
         $this->display();
@@ -180,38 +180,49 @@ class ClassHourController extends AdminbaseController
     {
         $live = M("live");
         $response = new ResponseController();
+        $str = new CourseModel();
+        $redis = $str::redis();
         if (IS_GET) {
             if (isset($_GET['id'])) {
                 $class_id = I('class_id');
+                $courseware_id = I('courseware_id');
                 $junwei = M('junwei')->find();
                 $loginName = $junwei['loginname'];
                 $password = sp_authcode($junwei['password']);
                 //调用课时删除接口
                 $resourec = $response::delete($loginName,$password,$class_id);
+                $test = $response::delPast($loginName, $password, $courseware_id);
                 $id = intval(I("get.id"));
-                if ($resourec['code'] == 0) {
+                if ($resourec['code'] == 0 && $test['code'] == 0) {
                     if ($live->where("id = $id")->delete() !== false) {
-                        $this->success(L('ADD_SUCCESS'));exit();
+                        $redis->hDel('live',$id);
+                        $this->success('删除成功');exit();
                     } else {
-                        $this->error(L("ADD_FAILED"));exit();
+                        $this->error('删除失败');exit();
                     }
                 }
 
             }
         }
         if (isset($_POST['ids'])) {
-            $ids = join(",", $_POST['ids']);
-            $rew = $live->field('class_id')->where("id in ($ids)")->select();
+            $id = $_POST['ids'];
+            $ids = join(",", $id);
+            $rew = $live->field('class_id,courseware_id')->where("id in ($ids)")->select();
+        
             $junwei = M('junwei')->find();
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             foreach ($rew as $value) {
                 $class_id[] = $value['class_id'];
+                $courseware_id = $value['courseware_id']; 
             }
-            
             $resourec = $response::delete($loginName, $password, $class_id);
-            
+            $response::delete_live($loginName, $password, $courseware_id);
             if ($live->where("id in ($ids)")->delete() !== false) {
+                $len = count($id);
+                for ($k = 0; $k < $len; $k++) {
+                    $redis->hDel('live',$id[$k]);
+                }
                 $this->success('删除成功');exit();
             } else {
                 $this->error('删除失败');exit();

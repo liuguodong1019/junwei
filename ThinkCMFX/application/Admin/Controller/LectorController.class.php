@@ -27,6 +27,8 @@ class LectorController extends AdminbaseController
                 ->join('cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id')
                 ->order('l_id')->limit($page->firstRow.','.$page->listRows)
                 ->select();
+                echo '<pre>';
+                print_r($list);die;
             if (empty($list)) {
                 $this->error('暂时还没有数据',U('Lector/create_lector'));
             }

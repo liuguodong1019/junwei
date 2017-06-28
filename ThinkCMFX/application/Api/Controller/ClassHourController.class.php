@@ -1,8 +1,9 @@
 <?php
 namespace Api\Controller;
 
+use Common\Model\CourseModel;
 use Think\Controller;
-
+use Api\Controller\CacheController;
 class ClassHourController extends Controller
 {
     /**
@@ -33,7 +34,16 @@ class ClassHourController extends Controller
     {
         $live = M('live');
         $course = M('course');
-        $data = $live->field('id,class_id,course_id')->where("status = '2'")->select();
+        $str = new CourseModel();
+        $redis = $str::redis();
+        $endLive = new CacheController();
+        $test = $endLive->live_end();
+        if (!empty($test)) {
+            $data = $test;
+        }else {
+            $data = $live->field('id,class_id,course_id')->where("status = '2'")->select();
+        }
+        
         if (!empty($data)) {
             foreach ($data as $value) {
                 $class_id[]  = $value['class_id'];
@@ -51,13 +61,18 @@ class ClassHourController extends Controller
                 $rew[] = json_decode($resource[$k],true);
                 $res[] = $rew[$k]['coursewares'][0];
                 if ($rew[$k]['code'] == 0) {
+                    $data['courseware_id'] = $res[$k]['id'];
                     $data['number']     = $res[$k]['number'];
                     $data['reply_url']  = $res[$k]['url'];
                     $data['status']     = 3;
-                }
-                if ($live->where("id = '$id[$k]'")->save($data)) {
-                    $dat['status'] = 3;
-                    $course->where("id in ($course_id)")->save($dat);
+                    $tr = json_decode($redis->hGet('live',$id[$k]),true);
+                    $tr['courseware_id'] = $data['courseware_id'];
+                    $tr['number'] = $data['number'];
+                    $tr['reply_url'] = $data['reply_url'];
+                    $tr['status'] = 3;
+                    $live->where("id = '$id[$k]'")->save($data);
+                    $list = json_encode($tr);
+                    $redis->hSet('live',$id[$k],$list);
                 }
             }
         }
@@ -67,7 +82,7 @@ class ClassHourController extends Controller
      * @return string
      * 课时分享
      */
-    public function share ()
+    public function share1 ()
     {
         $status = C('status');
         $msg = C('msg');

@@ -60,16 +60,19 @@ class PeopleController extends AdminbaseController
         if (IS_GET) {
             $id = I('get.id');
             if (!empty($id)) {
-                $people = $people->where("p_id = $id")->getField('people');;
+                $people = $people->where("p_id = '$id'")->getField('people');;
             }
             $this->assign('id',$id);
             $this->assign('people',$people);
         }
         if (IS_POST) {
             $id = I('post.id');
+        
             $data['people'] = I('post.people');
+
             $data['update_time'] = time();
-            if ($people->where("p_id = $id")->save($data)) {
+            
+            if ($people->where("p_id = '$id'")->save($data)) {
                 $this->success(L('ADD_SUCCESS'),U("People/show"));exit();
             }else {
                 $this->error(L("ADD_FAILED"));exit();
