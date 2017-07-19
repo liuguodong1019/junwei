@@ -74,7 +74,7 @@
 </head>
 <body>
 <ul class="nav nav-tabs">
-    <li class="active"><a href="<?php echo U('Lector/createLive');?>"  target="_self">添加讲师</a></li>
+    <li class="active"><a href="<?php echo U('Lector/create_lector');?>"  target="_self">添加讲师</a></li>
     <li><a href="<?php echo U('Lector/lector');?>">讲师列表</a></li>
 </ul>
 
@@ -85,13 +85,13 @@
                 <tr>
                     <th width="80">登录名称</th>
                     <td>
-                        <input type="text" name="login_name"  style="width: 200px"/>
+                        <input type="text" name="login_name"  value = '君为' style="width: 200px"/>
                     </td>
                 </tr>
                 <tr>
                     <th width="80">密码</th>
                     <td>
-                        <input type="password" name="password"  placeholder="密码最少六位" style="width: 200px"/>
+                        <input type="password" name="password" value = '888888' placeholder="密码最少六位" style="width: 200px"/>
                     </td>
                 </tr>
                 <tr>
@@ -100,15 +100,17 @@
                         <input type="text" name="name"  style="width: 200px"/>
                     </td>
                 </tr>
-                <tr>
-                    <th width="80">授课类型</th>
-                    <td>
-                        <select name="teaching_id" id="">
-                                <option value="请选择">请选择</option>
-                                <?php if(is_array($list)): foreach($list as $key=>$value): ?><option value="<?php echo ($value["t_id"]); ?>"><?php echo ($value["course_name"]); ?></option><?php endforeach; endif; ?>
-                        </select>
-                    </td>
-                </tr>
+                <!--<tr>-->
+                    <!--<th width="80">授课类型</th>-->
+                    <!--<td>-->
+                        <!--<select name="teaching_id" id="">-->
+                                <!--<option value="请选择">请选择</option>-->
+                                <!--<?php if(is_array($list)): foreach($list as $key=>$value): ?>-->
+                                    <!--<option value="<?php echo ($value["t_id"]); ?>"><?php echo ($value["course_name"]); ?></option>-->
+                                <!--<?php endforeach; endif; ?>-->
+                        <!--</select>-->
+                    <!--</td>-->
+                <!--</tr>-->
             </table>
         </div>
     </div>

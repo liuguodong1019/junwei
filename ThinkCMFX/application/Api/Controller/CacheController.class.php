@@ -91,8 +91,8 @@ class CacheController extends Controller
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
             $realtime = I('post.realtime');
-            $startDate = I('post.startDate');
-            $invalidDate = I('post.invaliddate');
+            $startDate = I('post.startDate').':00';
+            $invalidDate = I('post.invalidDate').':00';
             $subject = I('post.course_name');
             $class_id = I('post.class_id');
             $courseware_id = I('post.courseware_id');
@@ -203,8 +203,8 @@ class CacheController extends Controller
             $rew['invalidDate'] = !empty($array['invalidDate']) ? $array['invalidDate'] : $data['invalidDate'];
             $rew['course_id'] = !empty($array['course_id']) ? $array['course_id'] : $data['course_id'];
             $rew['lector'] = !empty($array['lector']) ? $array['lector'] : $data['lector'];
-            $list = json_encode($rew);
-            $redis->hSet('live',$id,$list);
+            // $list = json_encode($rew);
+            // $redis->hSet('live',$id,$list);
             return $rew;
         }
     }

@@ -1015,6 +1015,209 @@ public function truemateradd_post()
 				}
 			}
 	  }
-	  
+//---------------------------------------------------------------独家密卷---------------------------------------------
+   /**
+    * 独家密卷列表
+    */
+   public function exclusive()
+   {
+   	$it=M('itembank');
+   	$item=$it->where('type=2')->select();
+   	$this->assign('item',$item);
+   	$this->display();
+   }
+   /**
+    * 独家密卷试题添加
+    */
+   public function exclusiveadd()
+   {
+   	$ex=M('exclusive');
+   	$exc=$ex->select();
+   	$this->assign("exc",$exc);
+    $this->display();
+   }
+   /**
+    * 独家密卷试题添加提交
+    */
+   public function exclusiveadd_post()
+   {
+	   	if(IS_POST){
+					$data=I();
+					//var_dump($data);die;
+					$data['itime']=time();
+					unset($data['answer']);
+				    unset($data['options']);
+				    $answer=I('answer');
+					$an=str_replace(array("A","B","C","D"),array("0","1","2","3"),$answer);
+					$option=I('options');
+					$op=explode(PHP_EOL,$option);
+					$res=$this->itembank_model->add($data);
+					//数组去空
+					foreach( $op as $k=>$v){  
+						    if( !$v )  
+						        unset( $op[$k] );  
+						}  
+					if ($this->itembank_model->create()!==false){
+						if ($res!==false) {
+							$arr=array();
+							$key=array(0,1,2,3);
+							foreach($op as $key=>$v)
+							{ 
+		                      $arr['options']=$v;
+		                      $arr['qid']=$res;
+		                      $arr['key']=$key;
+		                      //var_dump($arr);
+		                      $rec=$this->option_model->add($arr);
+							} 
+							     if($rec)
+							     {   
+		                            $a=explode(',',$an);
+		                            $array=array();
+		                            foreach ($a as $value) 
+		                            {
+		                            	$array['qid']=$res;
+		                            	$array['option_id']=$value;
+		                            	$re=$this->answer_model->add($array);
+		                            }
+							     	if($re)
+								     {   
+								     	$this->success(L('ADD_SUCCESS'), U("Question/exclusive"));
+								     }
+								     else
+								     {
+								     	$this->error(L('ADD_FAILED'));
+								     }
+							     }
+							     else
+							     {
+							     	$this->error(L('ADD_FAILED'));
+							     }
+							
+						} else {
+							$this->error(L('ADD_FAILED'));
+						}
+					} else {
+						$this->error($this->professional_model->getError());
+					}
+				}
+	   }
+   /**
+	   * 密卷删除
+	   */
+	  public function exclusivedelete()
+	  {
+	  	  if(isset($_GET['item_id'])){
+				$id = intval(I("get.item_id"));
+				if ($this->itembank_model->where("item_id=$id")->delete()!==false&&
+                    $this->option_model->where("qid=$id")->delete()!==false&&
+                    $this->answer_model->where("qid=$id")->delete()!==false
+					) {
+					$this->success("删除成功！");
+				} else {
+					$this->error("删除失败！");
+				}
+			}
+			if(isset($_POST['item_ids'])){
+				$ids=join(",",$_POST['item_ids']);
+				if ($this->itembank_model->where("item_id in ($ids)")->delete()!==false&&
+                    $this->option_model->where("qid in ($ids)")->delete()!==false&&
+                    $this->answer_model->where("qid in ($ids)")->delete()!==false
+					) {
+					$this->success("删除成功！");
+				} else {
+					$this->error("删除失败！");
+				}
+			}
+	  }
+   /**
+	   * 密卷修改
+	   */
+	  public function exclusiveedit()
+	  {
+	  	$id=I("get.item_id",0,'intval');
+	  	$ex=M('exclusive');
+	  	$exc=$ex->select();
+		$item=$this->itembank_model->where(array('item_id'=>$id))->find();
+		$option=$this->option_model->where(array('qid'=>$id))->order('option_id asc')->select();
+		$answer=$this->answer_model->where(array('qid'=>$id))->order('option_id asc')->getField('option_id',true);
+		$answ=implode(",",$answer);
+		$an=str_replace(array("0","1","2","3"),array("A","B","C","D"),$answ);
+		$this->assign("answer",$an);
+		$this->assign("option",$option);
+   	    $this->assign("item",$item);
+   	    $this->assign("exc",$exc);
+		$this->display();
+	  }
+	 /**
+	  * 密卷修改提交
+	  */
+	 public function exclusiveedit_post()
+	 {
+	 	if (IS_POST) {
+			$data=I();
+			$id=$data['item_id'];
+			unset($data['item_id']);
+			unset($data['answer']);
+			unset($data['options']);
+			$answer=I('answer');
+			$an=str_replace(array("A","B","C","D"),array("0","1","2","3"),$answer);
+			$option=I('option');
+			$data['itime']=time();
+		    $re=$this->itembank_model->where("item_id=$id")->save($data);
+			if ($this->itembank_model->create()!==false) {
+				if ($re!==false) 
+				{
+					if($this->option_model->where("qid=$id")->delete()!==false&&
+                       $this->answer_model->where("qid=$id")->delete()!==false)
+					{
+					   //$key=array(0,1,2,3);
+						foreach($option as $key=>$v)
+						{ 
+	                      $arr['options']=$v;
+	                      $arr['qid']=$id;
+	                      $arr['key']=$key;
+	                      $rec=$this->option_model->add($arr);
+						} 
+
+					    if($rec)
+					     {   
+                            $a=explode(',',$an);
+                            $array=array();
+	                            foreach ($a as $value) 
+	                            {
+	                            	$array['qid']=$id;
+	                            	$array['option_id']=$value;
+	                            	$re=$this->answer_model->add($array);
+	                            }
+						     	if($re)
+							     {   
+							     	$this->success(L('保存成功！'), U("Question/exclusive"));
+							     }
+							     else
+							     {
+							     	$this->error(L('保存失败！'));
+							    }
+
+						} 
+						else 
+						{
+						    $this->error("保存成功！");
+					    }
+					 }
+					else 
+					{
+					    $this->error("保存失败！");
+				    }
+					
+				} 
+				else {
+					$this->error("保存失败！");
+				}
+			} else {
+				$this->error($this->itembank_model->getError());
+			}
+		}
+
+	 }
   }
   

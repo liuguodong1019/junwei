@@ -37,10 +37,20 @@
                     <td><a>{$vo.id}</a></td>
                     <td>{$vo.course_name}</td>
                     <td>{$vo.subject}</td>
-                    <!--<td>{$vo.startDate}</td>-->
-                    <!--<td>{$vo.invalidDate}</td>-->
-                    <td>{$vo.startdate|date='Y-m-d H:i:s',###}</td>
-                    <td>{$vo.invaliddate|date='Y-m-d H:i:s',###}</td>
+                    <td>
+                        <if condition="($vo.startDate eq '')">
+                             {$vo.startdate|date='Y-m-d H:i:s',###}
+                             <else />{$vo.startDate|date='Y-m-d H:i:s',###}
+                        </if>
+                    </td>
+                    <td>
+                        <if condition="($vo.invalidDate eq '')">
+                            {$vo.invaliddate|date='Y-m-d H:i:s',###}
+                            <else />{$vo.invalidDate|date='Y-m-d H:i:s',###}
+                        </if>
+                    </td>
+                    <!--<td>{$vo.startdate|date='Y-m-d H:i:s',###}</td>-->
+                    <!--<td>{$vo.invaliddate|date='Y-m-d H:i:s',###}</td>-->
                     <td>
                         <a href="{:U('ClassHour/look',array('id'=>$vo['id']))}">{:L('LOOK')}</a>|
                         <a href="{:U('ClassHour/update',array('id'=>$vo['id']))}">{:L('EDIT')}</a>|

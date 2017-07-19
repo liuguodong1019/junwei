@@ -52,11 +52,12 @@ class WxPayController extends Controller
         }
 
         if (is_numeric($course_id) && is_numeric($data['uid'])) {
+
             $rew = $order->field('id,total_amount,subject,boy')->where("uid = '$uid' and course_id = '$course_id' and pay_status = '2'")->find();
             if (!empty($rew)) {
                 $out_trade_no = $rew['id'];
                 $total_amount = $rew['total_amount'];
-                $boy = $rew['boy'];
+                $boy = "君为法考";
                 $params = array();
                 $params['body'] = $boy;
                 $params['out_trade_no'] = $out_trade_no;
@@ -71,7 +72,7 @@ class WxPayController extends Controller
                     $dat = $order->field('id')->where("course_id = '$course_id' and uid = '$uid'")->find();
                     $out_trade_no = $dat['id'];
                     $total_amount = $data['total_amount'];
-                    $boy = $data['boy'];
+                    $boy = "君为法考";
                     $params = array();
                     $params['body'] = $boy;
                     $params['out_trade_no'] = $out_trade_no;

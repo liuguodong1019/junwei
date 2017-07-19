@@ -108,10 +108,16 @@
                     <td><a><?php echo ($vo["id"]); ?></a></td>
                     <td><?php echo ($vo["course_name"]); ?></td>
                     <td><?php echo ($vo["subject"]); ?></td>
-                    <!--<td><?php echo ($vo["startDate"]); ?></td>-->
-                    <!--<td><?php echo ($vo["invalidDate"]); ?></td>-->
-                    <td><?php echo (date('Y-m-d H:i:s',$vo["startdate"])); ?></td>
-                    <td><?php echo (date('Y-m-d H:i:s',$vo["invaliddate"])); ?></td>
+                    <td>
+                        <?php if(($vo["startDate"] == '')): echo (date('Y-m-d H:i:s',$vo["startdate"])); ?>
+                             <?php else: echo (date('Y-m-d H:i:s',$vo["startDate"])); endif; ?>
+                    </td>
+                    <td>
+                        <?php if(($vo["invalidDate"] == '')): echo (date('Y-m-d H:i:s',$vo["invaliddate"])); ?>
+                            <?php else: echo (date('Y-m-d H:i:s',$vo["invalidDate"])); endif; ?>
+                    </td>
+                    <!--<td><?php echo (date('Y-m-d H:i:s',$vo["startdate"])); ?></td>-->
+                    <!--<td><?php echo (date('Y-m-d H:i:s',$vo["invaliddate"])); ?></td>-->
                     <td>
                         <a href="<?php echo U('ClassHour/look',array('id'=>$vo['id']));?>"><?php echo L('LOOK');?></a>|
                         <a href="<?php echo U('ClassHour/update',array('id'=>$vo['id']));?>"><?php echo L('EDIT');?></a>|

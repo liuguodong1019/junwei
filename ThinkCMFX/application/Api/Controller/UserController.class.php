@@ -141,6 +141,7 @@ class UserController extends Controller
            $data['user_pass']=sp_password($pas);
 		   $data['token']=sp_random_string(20);
 		   $data['create_time']=date('Y-m-d H:i:s',time());
+		   $data['avatar']="/upload/avatar/2017-07-03/1499048720.jpg";//默认头像
 		   //验证码验证
 		  $rec=$user->where("mobile=$to")->find();
 		  if($newtime-$oldtime>600)

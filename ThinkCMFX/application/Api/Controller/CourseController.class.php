@@ -290,7 +290,12 @@ class CourseController extends Controller
             $id = I('get.id');
             $resource = $str->course($id);
             if (!empty($resource)) {
-                $result = json_encode($resource);
+                $ret = $resource;
+                $result = json_encode([
+                    'status' => $succ[0],
+                    'msg' => $mess[0],
+                    'data' => $ret
+                ]);
             }else {
                 $result = $res->classDesc($id);
             }

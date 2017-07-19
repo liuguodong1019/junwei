@@ -13,4 +13,5 @@
   'classDesc' => 'api/course/classDesc',
   'share' => 'api/course/share',
   'share1' => 'api/course/share1',
+  'notify_url' => 'admin/book/notify_url',
 );

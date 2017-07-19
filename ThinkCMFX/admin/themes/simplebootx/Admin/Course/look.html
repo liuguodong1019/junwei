@@ -58,8 +58,19 @@
             <td>{$data.stu_token}</td>
             <td>{$data.reply_url}</td>
             <td>{$data.class_id}</td>
-            <td>{$data.startdate}</td>
-            <td>{$data.invaliddate}</td>
+            <td>
+                <if condition="($data.startDate eq '')">
+                {$data.startdate}
+                    <else />
+                    {$data.startDate}
+                </if>
+            </td>
+            <td>
+                <if condition="($data.invalidDate eq '')">
+                {$data.invaliddate}
+                    <else />{$data.invalidDate}
+                </if>
+            </td>
         </tr>
 
     </table>

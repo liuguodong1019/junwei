@@ -23,7 +23,7 @@ class CourseModel extends Model
             }
         } else {
             $data = $this->table('cmf_course as a')
-                ->field('a.id,a.course_name,a.now_price,a.old_price,a.people,a.book,a.lector,a.startdate,a.invaliddate,a.class_id,a.courseware_id')
+                ->field('a.id,a.course_name,a.now_price,a.old_price,a.people,a.book,a.lector,a.startdate,a.invaliddate,a.status,a.class_id,a.courseware_id')
                 ->order('a.id DESC')->limit($Page->firstRow . ',' . $Page->listRows)->select();
         }
         return $data;
@@ -45,6 +45,8 @@ class CourseModel extends Model
         }
         $data['people'] = !empty(join(",",I('post.people'))) ? join(",",I('post.people')): 0;
         $data['book'] = !empty(join(",",I('post.book'))) ? join(",",I('post.book')) : 0;
+        $startDate = !empty(I('post.startDate')) ? I('post.startDate').':00': '0000-00-00 00:00:00';
+        $invalidDate = !empty(I('post.invalidDate')) ? I('post.invalidDate').':00': '0000-00-00 00:00:00';
         $is_free = I('post.is_free');
         $upload = new \Think\Upload($photo);// 实例化上传类
         if ($is_free == 1) {
@@ -56,8 +58,7 @@ class CourseModel extends Model
             $junwei = M('junwei')->find();
             $loginName = $junwei['loginname'];
             $password = sp_authcode($junwei['password']);
-            $startDate = I('post.startDate');
-            $invalidDate = I('post.invalidDate');
+
             $subject = I('post.course_name');
             //调用课时创建接口
             $resource = $response::create_course($subject,$loginName,$password,$startDate,$invalidDate);
@@ -87,8 +88,8 @@ class CourseModel extends Model
                 $data['cover'] = $cover[0];
                 $data['detail_cover'] = $cover[1];
             }
-            $data['startDate'] = !empty(join(",",I('post.startDate'))) ? join(",",I('post.startDate')): '0000-00-00 00:00:00';
-            $data['invalidDate'] = !empty(join(",",I('post.invalidDate'))) ? join(",",I('post.invalidDate')) : '0000-00-00 00:00:00';
+            $data['startDate'] = $startDate;
+            $data['invalidDate'] = $invalidDate;
 
             if ($this->add($data)) {
                 $redis->incr('id');
@@ -117,6 +118,13 @@ class CourseModel extends Model
         if ($is_free == 1) {
             $id = I('post.id');
             $data = I('');
+            $startDate = strlen(I('post.startDate'));
+            $invalidDate = strlen(I('post.invalidDate'));
+            if ($startDate != 19) {
+                $data['startDate'] = I('post.startDate').':00';
+            }if ($invalidDate != 19) {
+                $data['invalidDate'] = I('post.invalidDate').':00';
+            }
             $data['people'] = !empty(join(",",I('post.people'))) ? join(",",I('post.people')): 0;
             $data['book'] = !empty(join(",",I('post.book'))) ? join(",",I('post.book')) : 0;
             $info = $upload->upload();
@@ -136,6 +144,14 @@ class CourseModel extends Model
         }else {
             $id = I('post.id');
             $data = I('');
+            $startDate = strlen(I('post.startDate'));
+            $invalidDate = strlen(I('post.invalidDate'));
+            if ($startDate != 19) {
+                $data['startDate'] = I('post.startDate').':00';
+            }if ($invalidDate != 19) {
+                $data['invalidDate'] = I('post.invalidDate').':00';
+            }
+
             $data['people'] = !empty(join(",",I('post.people'))) ? join(",",I('post.people')): 0;
             $data['book'] = !empty(join(",",I('post.book'))) ? join(",",I('post.book')) : 0;
             $info = $upload->upload();

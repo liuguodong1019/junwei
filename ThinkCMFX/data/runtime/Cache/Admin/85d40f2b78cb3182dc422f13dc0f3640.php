@@ -159,6 +159,13 @@
                     </select>
                 </td>
             </tr>
+			 <tr>
+                <th width="80">是否为不定项</th>
+                <td>
+                    <input type="radio" name="ncertain" value="0" <?php if($item["ncertain"] == 0): ?>checked="checked"<?php endif; ?>>否
+                    <input type="radio" name="ncertain" value="1" <?php if($item["ncertain"] == 1): ?>checked="checked"<?php endif; ?>>是
+                </td>
+            </tr>
                 <tr>
                     <th width="80">分值</th>
                     <td>

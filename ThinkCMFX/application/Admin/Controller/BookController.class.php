@@ -8,7 +8,7 @@
 namespace Admin\Controller;
 
 use Common\Controller\AdminbaseController;
-
+use Common\Model\CourseModel;
 class BookController extends AdminbaseController
 {
     /**
@@ -102,5 +102,18 @@ class BookController extends AdminbaseController
                 $this->error("删除失败！");
             }
         }
+    }
+
+    public function notify_url ()
+    {
+        $str = new CourseModel();
+        $redis = $str::redis();
+        
+        // $notifyBody = file_get_contents('php://input');
+        // $json = json_encode($notifyBody);
+        // $redis->set('name',$json);
+        $res = $redis->del('name');
+        print_r($res);die;
+        // error_log($notifyBody);
     }
 }

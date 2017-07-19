@@ -71,11 +71,25 @@
         okfun:function(val){alert(val)}
     })
 </script>
+<script src="/junwei/public/js/jquery.js"></script>
 
+<script src="/junwei/public/js/js/mobiscroll.core-2.5.2.js" type="text/javascript"></script>
+<script src="/junwei/public/js/js/mobiscroll.core-2.5.2-zh.js" type="text/javascript"></script>
+<script src="/junwei/public/js/js/mobiscroll.datetime-2.5.1.js" type="text/javascript"></script>
+<script src="/junwei/public/js/js/mobiscroll.datetime-2.5.1-zh.js" type="text/javascript"></script>
+
+<!-- S 可根据自己喜好引入样式风格文件 -->
+<script src="/junwei/public/js/js/mobiscroll.android-ics-2.5.2.js" type="text/javascript"></script>
+
+<link href="/junwei/public/js/js/mobiscroll.core-2.5.2.css" rel="stylesheet" type="text/css" />
+<link href="/junwei/public/js/js/mobiscroll.animation-2.5.2.css" rel="stylesheet" type="text/css" />
+
+<link href="/junwei/public/js/js/mobiscroll.android-ics-2.5.2.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <ul class="nav nav-tabs">
     <li class="active"><a href="<?php echo U('Course/create');?>"  target="_self">创建课堂</a></li>
+    <li ><a href="<?php echo U('Course/add');?>"  target="_self">手动添加公开课</a></li>
     <li ><a href="<?php echo U('Course/show');?>"  target="_self">课堂列表</a></li>
 
 </ul>
@@ -118,14 +132,14 @@
                 <tr>
                     <th width="80">开始时间</th>
                     <td>
-                        <input class="datainp" name = "startDate"  id="datebut" type="text" placeholder="双击选择时间"  onClick="jeDate({dateCell:'#datebut',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
+                        <input type="text" class="datainp" name="startDate" id="appDateTime" />
                     </td>
                 </tr>
 
                 <tr>
                     <th width="80">结束时间</th>
                     <td>
-                        <input class="datainp" name = "invalidDate"  id="datebut1" type="text" placeholder="双击选择时间"  onClick="jeDate({dateCell:'#datebut1',isTime:true,format:'YYYY-MM-DD hh:mm:ss'})">
+                        <input type="text" class="datainp" name="invalidDate" id="appDateTime1" />
                     </td>
                 </tr>
                 <tr>
@@ -174,3 +188,51 @@
     </form>
 </div>
 </body>
+<style type="text/css">
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: arial, verdana, sans-serif;
+        font-size: 12px;
+        background: #ddd;
+    }
+    input, select {
+        /*width: 100%;*/
+        padding: 5px;
+        margin: 5px 0;
+        /*border: 1px solid #aaa;*/
+        box-sizing: border-box;
+        border-radius: 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -webkit-border-radius: 5px;
+    }
+
+</style>
+<script>
+    $(function () {
+        var currYear = (new Date()).getFullYear();
+        var opt={};
+        opt.date = {preset : 'date'};
+        //opt.datetime = { preset : 'datetime', minDate: new Date(2012,3,10,9,22), maxDate: new Date(2014,7,30,15,44), stepMinute: 5  };
+        opt.datetime = {preset : 'datetime'};
+        opt.time = {preset : 'time'};
+        opt.default = {
+            theme: 'android-ics light', //皮肤样式
+            display: 'modal', //显示方式
+            mode: 'scroller', //日期选择模式
+            lang:'zh',
+            startYear:currYear - 10, //开始年份
+            endYear:currYear + 10 //结束年份
+        };
+
+        $("#appDate").val('').scroller('destroy').scroller($.extend(opt['date'], opt['default']));
+        var optDateTime = $.extend(opt['datetime'], opt['default']);
+        var optTime = $.extend(opt['time'], opt['default']);
+        $("#appDateTime").mobiscroll(optDateTime).datetime(optDateTime);
+        $("#appDateTime1").mobiscroll(optDateTime).datetime(optDateTime);
+        $("#appTime").mobiscroll(optTime).time(optTime);
+    });
+
+</script>

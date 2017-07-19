@@ -354,7 +354,7 @@ $.ajax({
 
                  //tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'><?php echo L('EDIT');?></a>|<a href='javascript:;' class='js-ajax-delete' data="+data[i].item_id+"><?php echo L(DELETE);?></a></td></tr>"
 				
-				  tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"' class='js-ajax-delete'><?php echo L('EDIT');?></a>|<a href='javascript:;' class='js-ajax-delete' data="+data[i].item_id+"><?php echo L(DELETE);?></a></td></tr>"
+				  tabledatahtml+="<tr><td><input type='checkbox' class='js-check' data-yid='js-check-y' data-xid='js-check-x' name='item_ids[]'' value="+data[i].item_id+"></td><td><a>"+data[i].no+"</a></td><td><a href='#'>"+data[i].question+"</a></td><td>"+data[i].eid+"年国家司法考试"+res+"试题</td><td>"+time+"</td><td>"+re+"</td><td><a href='"+editurl+"'><?php echo L('EDIT');?></a>|<a href='javascript:;' class='js-ajax-delete' data="+data[i].item_id+"><?php echo L(DELETE);?></a></td></tr>"
 
 
 
@@ -367,7 +367,7 @@ $.ajax({
                
             },
             error:function(st){
-                alert ("发送数据失败，错误码"+st.status);　
+               console.log("发送数据失败，错误码"+st.status);　
             }
             
         });
@@ -379,6 +379,7 @@ $.ajax({
 
   }
   
+ //删除确认  
 $(document).on("click",".js-ajax-delete",function(){
 	var data=$(this).attr("data");
 	var msg = "您真的确定要删除"+data+"吗？\n请确认！"; 
@@ -393,19 +394,7 @@ $(document).on("click",".js-ajax-delete",function(){
  
  
  
- //删除确认
 
-	 
-
-//function p_del(id) { 
-//var msg = "您真的确定要删除"+id+"吗？\n\n请确认！"; 
-//var delurl="Question/truedelete?item_id="+id;
-//if (confirm(msg)==true){ 
-//$(this).attr("href",delurl);
-//}else{ 
-//return false; 
-//} 
-//} 
 
 
  

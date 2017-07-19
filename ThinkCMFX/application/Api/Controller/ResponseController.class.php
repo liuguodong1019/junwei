@@ -126,6 +126,8 @@ class ResponseController extends Controller
         $mess = C('msg');
         $model = new SubmitController();
         $openClass = new CacheController();
+        $str = new CourseModel();
+        $redis = $str::redis();
         $course = M('course');
         if (is_numeric($page)) {
             $res = $openClass->tax($is_free = 1);
@@ -860,10 +862,9 @@ class ResponseController extends Controller
         $response = new SubmitController();
         if (is_numeric($id)) {
             $rew = M('course')->table('cmf_course as a')
-                ->field('a.id,a.course_name,a.now_price,a.num_class,cover,people,book,introduction,detail_cover,name,startDate,invalidDate,is_free,number,stu_token,class_id')
-                ->join('left join cmf_lector as b ON a.lector_id = b.l_id')
+                ->field('a.id,a.course_name,a.now_price,a.num_class,cover,people,book,introduction,detail_cover,lector,startDate,invalidDate,is_free,number,stu_token,class_id')
                 ->where("a.id = $id")->find();
-            return json_encode(['status' => $status[0],'msg'    => $msg[0],'data'   => $rew]);
+            return $response::state($status[3],$msg[3],$rew);
         }else {
             return $response::state($status[3],$msg[3]);
         }

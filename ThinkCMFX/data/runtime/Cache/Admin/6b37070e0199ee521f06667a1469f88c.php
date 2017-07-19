@@ -95,7 +95,7 @@
                 <th>ID</th>
                 <th>名称</th>
                 <!--<th>授课类型</th>-->
-                <!--<th width="125"><?php echo L('ACTIONS');?></th>-->
+                <th width="125"><?php echo L('ACTIONS');?></th>
             </tr>
             </thead>
             <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr>
@@ -104,17 +104,15 @@
                     <td><?php echo ($vo["l_id"]); ?></td>
                     <td><?php echo ($vo["name"]); ?></td>
                     <!--<td><?php echo ($vo["course_name"]); ?></td>-->
-                    <!--<td>-->
+                    <td>
                         <!--<a href="<?php echo U('Lector/update',array('id'=>$vo['l_id']));?>"><?php echo L('EDIT');?></a>|-->
-                        <!--<a href="<?php echo U('Lector/delete',array('id'=>$vo['l_id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>-->
-                    <!--</td>-->
+                        <a href="<?php echo U('Lector/delete',array('id'=>$vo['l_id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
+                    </td>
                 </tr><?php endforeach; endif; ?>
         </table>
-        <!--<div class="table-actions">-->
-            <!--<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="<?php echo U('Lector/delete');?>" data-subcheck="true" data-msg="你确定删除吗？"><?php echo L('DELETE');?></button>-->
-
-
-        <!--</div>-->
+        <div class="table-actions">
+            <button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="<?php echo U('Lector/delete');?>" data-subcheck="true" data-msg="你确定删除吗？"><?php echo L('DELETE');?></button>
+        </div>
 
 
         <div class="pagination"><?php echo ($page); ?></div>

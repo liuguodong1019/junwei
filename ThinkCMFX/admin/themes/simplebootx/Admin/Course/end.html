@@ -38,6 +38,7 @@
                         <a href="{:U('Course/look',array('id'=>$vo['id']))}">{:L('LOOK')}</a>|
                         <a href="{:U('Course/update',array('id'=>$vo['id']))}">{:L('EDIT')}</a>|
                         <a href="{:U('Course/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+                        <a href="{:U('Course/manage',array('id' => $vo['id']) )}" class=" icon-tasks"></a>
                     </td>
                 </tr>
             </foreach>

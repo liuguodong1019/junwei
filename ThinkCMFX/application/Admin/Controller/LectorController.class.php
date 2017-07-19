@@ -24,11 +24,8 @@ class LectorController extends AdminbaseController
             }
         }else {
             $list = $lector
-                ->join('cmf_teaching ON cmf_lector.teaching_id = cmf_teaching.t_id')
                 ->order('l_id')->limit($page->firstRow.','.$page->listRows)
                 ->select();
-                echo '<pre>';
-                print_r($list);die;
             if (empty($list)) {
                 $this->error('暂时还没有数据',U('Lector/create_lector'));
             }
@@ -51,23 +48,24 @@ class LectorController extends AdminbaseController
         $this->assign('list', $list);
         $junWei = M('junwei')->field('loginName,password')->find();
         if (IS_POST) {
-            $data = I('');
-            $data['password'] = sp_authencode(I('post.password'));
+            // $data = I('');
+
+            // $data['password'] = sp_authencode(I('post.password'));
             $data['create_time'] = date('Y-m-d H:i:s');
-            $loginName = $junWei['loginname'];
-            $password = sp_authcode($junWei['password']);
-            $name = I('post.name');
-            $teacherLoginName = I('post.login_name');
-            $teacherPassword = I('post.password');
+            // $loginName = $junWei['loginname'];
+            // $password = sp_authcode($junWei['password']);
+            $data['name'] = I('post.name').'老师';
+            // $teacherLoginName = I('post.login_name');
+            // $teacherPassword = I('post.password');
             //调用创建老师接口
-            $resource = $response::create_lector($loginName,$password,$name,$teacherLoginName,$teacherPassword);
-            if ($resource['code'] == 0) {
+            // $resource = $response::create_lector($loginName,$password,$name,$teacherLoginName,$teacherPassword);
+            // if ($resource['code'] == 0) {
                 if ($lector->add($data)) {
                     $this->success(L('ADD_SUCCESS'), U("Lector/lector"));exit();
                 } else {
                     $this->error(L('ADD_FAILED'));exit();
                 }
-            }
+            // }
         }
         $this->assign('list', $list);
         $this->display();

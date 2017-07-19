@@ -25,10 +25,18 @@
             <td><a>{$data.id}</a></td>
             <td>{$data.course_name}</td>
             <td>{$data.subject}</td>
-            <!--<td>{$data.startdate|date='Y-m-d H:i:s',###}</td>-->
-            <td>{$data.startDate}</td>
-            <!--<td>{$data.invalidDate|date='Y-m-d H:i:s',###}</td>-->
-            <td>{$data.invalidDate}</td>
+            <td>
+                <if condition="($data.startDate eq '')">
+                    {$data.startdate|date='Y-m-d H:i:s',###}
+                    <else />{$data.startDate}
+                </if>
+            </td>
+            <td>
+                <if condition="($data.invalidDate eq '')">
+                    {$data.invalidDate|date='Y-m-d H:i:s',###}
+                    <else />{$data.invalidDate}
+                </if>
+            </td>
             <td>{$data.lector}</td>
             <td>{$data.number}</td>
             <td>{$data.class_id}</td>

@@ -428,4 +428,100 @@ public function classadd_post(){
 			}
 		}
  }
+//--------------------------------------------------独家密卷-----------------------------------------------------------
+ /**
+	 * 密卷列表
+	 * @return [type] [description]
+	 */
+	public function exclusive()
+	{  
+	  $exclusive=M('exclusive');
+      $exclusive=$exclusive
+        ->order('ex_id asc')
+        ->select();
+		$this->assign("exclusive",$exclusive);
+        $this->display();
+	}
+	 /**
+    * 密卷添加
+    */
+   public function exclusiveadd()
+   {
+   	 $this->display();
+   }
+   /**
+    * 密卷添加提交
+    */
+	public function exclusiveadd_post(){
+		if(IS_POST){
+			$exclusive=M('exclusive');
+			$data=I();
+			$data['etime']=time();
+			if ($exclusive->create($data)!==false){
+				if ($exclusive->add($data)!==false) {
+					$this->success(L('ADD_SUCCESS'), U("types/exclusive"));
+				} else {
+					$this->error(L('ADD_FAILED'));
+				}
+			} else {
+				$this->error($exclusive->getError());
+			}
+		
+		}
+	}
+	 /**
+   * 密卷移除
+   */
+  public function exclusivedelete()
+  {     
+  	    $exclusive=M('exclusive');
+		if(isset($_GET['id'])){
+			$id = intval(I("get.id"));
+			if ($exclusive->where("ex_id=$id")->delete()!==false) {
+				$this->success("删除成功！");
+			} else {
+				$this->error("删除失败！");
+			}
+		}
+		if(isset($_POST['ex_ids'])){
+			$ids=join(",",$_POST['ex_ids']);
+			if ($exclusive->where("ex_id in ($ids)")->delete()!==false) {
+				$this->success("删除成功！");
+			} else {
+				$this->error("删除失败！");
+			}
+		}
+	}
+ /**
+  * 密卷编辑
+  */
+ public function exclusiveedit()
+ {      
+ 	    $exclusive=M('exclusive');
+        $id=I("get.id",0,'intval');
+		$ex=$exclusive->where(array('ex_id'=>$id))->find();
+   	    $this->assign("ex",$ex);
+		$this->display();
+ }
+ /**
+  * 密卷编辑提交
+  */
+ public function exclusiveedit_post()
+ {    
+ 	  $exclusive=M('exclusive');
+      if (IS_POST) {
+			$ex_id=I('ex_id');
+			$data=I();
+			$data['etime']=time();
+			if ($exclusive->create()!==false) {
+				if ($exclusive->where("ex_id=$ex_id")->save($data)!==false) {
+					$this->success("保存成功！", U("Types/exclusive"));
+				} else {
+					$this->error("保存失败！");
+				}
+			} else {
+				$this->error($this->chapter_model->getError());
+			}
+		}
+ }
 }

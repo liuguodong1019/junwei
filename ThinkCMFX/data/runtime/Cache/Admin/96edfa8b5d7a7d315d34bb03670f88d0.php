@@ -127,8 +127,15 @@
             <td><?php echo ($data["stu_token"]); ?></td>
             <td><?php echo ($data["reply_url"]); ?></td>
             <td><?php echo ($data["class_id"]); ?></td>
-            <td><?php echo ($data["startdate"]); ?></td>
-            <td><?php echo ($data["invaliddate"]); ?></td>
+            <td>
+                <?php if(($data["startDate"] == '')): echo ($data["startdate"]); ?>
+                    <?php else: ?>
+                    <?php echo ($data["startDate"]); endif; ?>
+            </td>
+            <td>
+                <?php if(($data["invalidDate"] == '')): echo ($data["invaliddate"]); ?>
+                    <?php else: echo ($data["invalidDate"]); endif; ?>
+            </td>
         </tr>
 
     </table>

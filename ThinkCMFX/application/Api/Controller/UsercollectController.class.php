@@ -15,9 +15,39 @@ class UsercollectController extends Controller{
             $status = I("post.status");    //1收藏    0取消收藏
             $uid = I("post.uid");     //用户
             $id = I("post.live_id");            //课时的id
+
+
             $courseid = M("live")->where("id = $id")->find();
             $course_id = $courseid['course_id'];    //vip课程的ID
+
             if ($status == 1) {
+                //先判断收藏的vip课时的课程是否存在
+                $cidexixt = M("course_collection")->where("uid = $uid AND course_id = $course_id")->find();
+                if(empty($cidexixt)){
+                    $dat['uid'] = $uid;
+                    $dat['course_id'] = $course_id;
+                    $dat['create_time'] = date("Y-m-d H:i:s");
+                    $dat['type'] = 1;
+
+                    $course = M("course")->where("id = $course_id")->field("collection_num")->find();
+                    $cour['collection_num'] = $course['collection_num'] + 1;
+                    $courok = M("course")->where("id = $course_id")->save($cour);
+
+                    $res1 = M("course_collection")->add($dat);
+                }else{
+                    if($cidexixt['type'] == 0){
+                        $qq['type'] = 1;
+                        $qq['vtime'] = date("Y-m-d H:i:s");
+
+                        $course = M("course")->where("id = $course_id")->field("collection_num")->find();
+                        $cour['collection_num'] = $course['collection_num'] + 1;
+                        $courok = M("course")->where("id = $course_id")->save($cour);
+
+                        $res1 = M("course_collection")->where("uid = $uid AND cid = $course_id")->save($qq);
+                    }
+
+                }
+
                 //收藏
                 //查看该课时是否收藏 如果存在判断type是否为1  如果是0则改为1
                 $courexitb = M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->find();
@@ -28,9 +58,11 @@ class UsercollectController extends Controller{
                     $data['create_time'] = date("Y-m-d H:i:s");
                     $data['type'] = 1;
 
-                    $course = M("course")->where("id = $course_id")->field("collection_num")->find();
-                    $cour['collection_num'] = $course['collection_num'] + 1;
-                    $courok = M("course")->where("id = $course_id")->save($cour);
+
+                    $course = M("live")->where("id = $id")->field("like_num")->find();
+                    $cour['like_num'] = $course['like_num'] + 1;
+                    $courok = M("live")->where("id = $id")->save($cour);
+
 
 
                     $res = M("live_collection")->add($data);
@@ -40,9 +72,9 @@ class UsercollectController extends Controller{
                         $data['type'] = 1;
                         $data['create_time'] = date("Y-m-d H:i:s");
 
-                        $course = M("course")->where("id = $course_id")->field("collection_num")->find();
-                        $cour['collection_num'] = $course['collection_num'] + 1;
-                        $courok = M("course")->where("id = $course_id")->save($cour);
+                        $course = M("live")->where("id = $id")->field("like_num")->find();
+                        $cour['like_num'] = $course['like_num'] + 1;
+                        $courok = M("live")->where("id = $id")->save($cour);
 
                         $res = M("live_collection")->where("uid = $uid AND course_id = $course_id AND live_id = $id ")->save($data);
                     }
@@ -278,6 +310,7 @@ class UsercollectController extends Controller{
         if(!empty($page)) {
             $downinfo = $model
                 ->join("LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id")
+                ->join("LEFT JOIN cmf_users ON cmf_users.id = cmf_course_collection.uid")
                // ->join("LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id")
                 ->where("cmf_course_collection.uid = $uid AND cmf_course_collection.type = 1 ")
                 ->field("cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.course_name,
@@ -287,17 +320,20 @@ class UsercollectController extends Controller{
                 ->order("cmf_course_collection.uc_id desc")
                 ->page($page . ',10')
                 ->select();
-//            print_r($downinfo);die;
+
             $res = $news->gotten($uid, $page, $downinfo);
             //print_r($res);
             for($i=0;$i<count($res);$i++){
                if($res[$i]['pay_status'] == 1){
                     $res[$i]['pay_status'] = 1;
+
                 }else{
                     $res[$i]['pay_status'] = 0;
                }
+                $res[$i]['startDate'] = $res[$i]['startdate'];
             }
-
+            //echo "122"."<br>";
+            //print_r($res);die;
             if (!empty($res)) {
                 $arr['status'] = 1;
                 $arr['msg'] = "操作成功";
@@ -323,7 +359,7 @@ class UsercollectController extends Controller{
 
     /*
      * 获取收藏的课程下面的课时的列表
-     *
+     **/
     public function showlive(){
         $courseid = I("cid");              //获取课程的ID
         $uid = I("uid");              //判断接收过来的token是get传值还是post，token是判断用户的唯一标识符   获取当前登录用户的唯一标识符
@@ -337,9 +373,15 @@ class UsercollectController extends Controller{
                 ->join("cmf_course ON cmf_course.id = cmf_live_collection.course_id")
                 ->where("cmf_live_collection.course_id = $courseid AND cmf_live_collection.uid = $uid AND cmf_live_collection.type = 1")
                 ->order("cmf_live_collection.ul_id desc")
-                ->field("cmf_live_collection.ul_id,cmf_live.subject,cmf_live.course_id,cmf_live.status,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url")
+                ->field("cmf_live_collection.ul_id,cmf_live.subject,cmf_live.startDate,cmf_live.course_id,
+                cmf_live.status,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url,cmf_live_collection.type")
                 ->page($page . ',10')
                 ->select();
+            for($i=0;$i<count($downinfo);$i++){
+                $downinfo[$i]['startDate'] = date("Y-m-d H:i:s",$downinfo[$i]['startdate']);
+            }
+            //echo $model->getlastsql();
+            //print_r($downinfo);die;
             if (!empty($downinfo)) {
                 $arr['status'] = 1;
                 $arr['msg'] = "操作成功";
@@ -359,10 +401,10 @@ class UsercollectController extends Controller{
         }
 
     }
-*/
+
     /*
      * 收藏课程下面的课时的批量删除
-     *
+     **/
     public function livecolldel(){
 
         $model = M("live_collection");
@@ -385,7 +427,7 @@ class UsercollectController extends Controller{
             echo json_encode($arr);die;
         }
     }
-*/
+
 
     /*
      * 实现收藏列表的批量删除

@@ -943,14 +943,14 @@ label {
 	display: inline-block;
 	margin-bottom: 10px;
 	padding: 4px 6px;
-	height: 20px;
+	/*height: 20px;*/
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	color: #95a5a6;
 	vertical-align: middle;
 	font-size: 14px;
-	line-height: 20px
+	/*line-height: 20px*/
 }
 
 .uneditable-input,input,textarea {
@@ -5650,8 +5650,8 @@ div.subnav .nav>.active>a,div.subnav .nav>.active>a:hover {
 }
 
 input[disabled],input[readonly],textarea[disabled],textarea[readonly] {
-	border-color: transparent;
-	background-color: #eaeded;
+	border-color: #dce4ec;
+	background-color: #FFFFFF;
 	color: #cad2d3;
 	cursor: default
 }

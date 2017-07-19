@@ -53,8 +53,8 @@ class LiveModel extends Model
         $junwei = M('junwei')->find();
         $loginName = $junwei['loginname'];
         $password = sp_authcode($junwei['password']);
-        $startDate = I('post.startDate');
-        $invalidDate = I('post.invalidDate');
+        $startDate = !empty(I('post.startDate')) ? I('post.startDate').':00': '0000-00-00 00:00:00';
+        $invalidDate = !empty(I('post.invalidDate')) ? I('post.invalidDate').':00': '0000-00-00 00:00:00';
         $data['startDate'] = strtotime(I('post.startDate'));
         $data['invalidDate'] = strtotime(I('post.invalidDate'));
         $subject = I('post.subject');
@@ -90,7 +90,6 @@ class LiveModel extends Model
     {
         $test = new CacheController();
         $rew = $test->liveUpdate($data,$id);
-
         if (!empty($rew)) {
             if (!is_array($rew)) {
                 if ($rew !== false) {
@@ -100,6 +99,7 @@ class LiveModel extends Model
                 $data = $rew;
             }
         }
+    
         $response = new ResponseController();
         $junwei = M('junwei')->find();
         $loginName = $junwei['loginname'];
@@ -107,17 +107,25 @@ class LiveModel extends Model
         $realtime = I('post.realtime');
         $startDate = I('post.startDate');
         $invalidDate = I('post.invalidDate');
+        if (strlen($startDate) != 19) {
+            $startDate = I('post.startDate').':00';
+        }elseif (strlen($invalidDate)) {
+            $invalidDate = I('post.invalidDate').':00';
+        }
+        
         $data['startDate'] = $startDate;
         $data['invalidDate'] = $invalidDate;
         $subject = I('post.subject');
         $class_id = I('post.class_id');
+
         $courseware_id = I('post.courseware_id');
         //调用修改课时接口
         $resource = $response::update_course($loginName,$password,$realtime,$startDate,$invalidDate,$subject,$class_id);
         $ter = $response::update_live($courseware_id,$subject,$loginName,$password);
-        if ($resource['code'] == 0 && $ter['code'] == 0) {
-            $data['startDate'] = strtotime(I('post.startDate'));
-            $data['invalidDate'] = strtotime(I('post.invalidDate'));
+    
+        if ($resource['code'] == 0 || $ter['code'] == 0) {
+            $data['startDate'] = strtotime($startDate);
+            $data['invalidDate'] = strtotime($invalidDate);
             if ($this->where("id = $id")->save($data)) {
                 return true;
             } else {

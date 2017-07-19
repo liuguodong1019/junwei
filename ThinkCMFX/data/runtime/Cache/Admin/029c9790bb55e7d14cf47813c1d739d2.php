@@ -97,17 +97,26 @@
             <td><a><?php echo ($data["id"]); ?></a></td>
             <td><?php echo ($data["course_name"]); ?></td>
             <td><?php echo ($data["subject"]); ?></td>
-            <td><?php echo (date('Y-m-d H:i:s',$data["startdate"])); ?></td>
-            <td><?php echo (date('Y-m-d H:i:s',$data["invaliddate"])); ?></td>
-            <td><?php echo ($data["name"]); ?></td>
+            <td>
+                <?php if(($data["startDate"] == '')): echo (date('Y-m-d H:i:s',$data["startdate"])); ?>
+                    <?php else: echo ($data["startDate"]); endif; ?>
+            </td>
+            <td>
+                <?php if(($data["invalidDate"] == '')): echo (date('Y-m-d H:i:s',$data["invalidDate"])); ?>
+                    <?php else: echo ($data["invalidDate"]); endif; ?>
+            </td>
+            <td><?php echo ($data["lector"]); ?></td>
             <td><?php echo ($data["number"]); ?></td>
             <td><?php echo ($data["class_id"]); ?></td>
             <td><?php echo ($data["stu_token"]); ?></td>
             <td>
                 <?php if(($data["status"] == 1) ): ?>正在直播
-                    <?php elseif($data["status"] == 2): ?> 直播结束
-                    <?php elseif($data["status"] == 3): ?> 生成回放
-                    <?php else: ?> 未开始<?php endif; ?>
+                    <?php elseif($data["status"] == 2): ?>
+                    直播结束
+                    <?php elseif($data["status"] == 3): ?>
+                    生成回放
+                    <?php else: ?>
+                    未开始<?php endif; ?>
             </td>
             <td><?php echo ($data["reply_url"]); ?></td>
         </tr>

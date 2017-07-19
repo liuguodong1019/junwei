@@ -76,6 +76,7 @@
 <div class="wrap js-check-wrap">
     <ul class="nav nav-tabs">
         <li class="active"><a href="<?php echo U('Order/show');?>">订单列表</a></li>
+        <li><a href="<?php echo U('Order/add');?>">手动录入订单信息</a></li>
     </ul>
     <form class="well form-search" method="post" action="<?php echo U('Order/show');?>">
         昵称：

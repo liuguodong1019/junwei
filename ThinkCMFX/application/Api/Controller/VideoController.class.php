@@ -8,7 +8,6 @@ use Think\Controller;
 class VideoController extends Controller{
     //插入视频记录表
     public function videoinsert(){
-
         if(IS_POST){
             //默认为get提交
             $uid = I("post.uid");              //获得用户的唯一标识符
@@ -19,13 +18,23 @@ class VideoController extends Controller{
             if(!empty($lid)){
                 //添加的是课时
                 $data['uid'] = $uid;
-                $dat['uid'] = $uid;
-                $dat['lid'] = $lid;
                 $data['pid'] = 0;
                 $data['cid'] = $cid;
-                $dat['pid'] = $cid;
                 $data['vtime'] = date("Y-m=d H:i:s");
+
+                $dat['uid'] = $uid;
+                $dat['lid'] = $lid;
+                $dat['pid'] = $cid;
                 $dat['vtime'] = date("Y-m=d H:i:s");
+
+                //看看添加课时的课程是否存在
+                $cidexixt = $model->where("uid = $uid AND cid = $cid")->find();
+                if(empty($cidexixt)){
+                    $res = $model->add($data);
+                }else{
+                    $qq['vtime'] = date("Y-m-d H:i:s");
+                    $res = $model->where("uid = $uid AND cid = $cid")->save($qq);
+                }
 
                 $bb = $model->where("lid = $lid and pid = $cid and uid = $uid")->find();
                 if(empty($bb)){
@@ -34,7 +43,7 @@ class VideoController extends Controller{
                     $qq['vtime'] = date("Y-m-d H:i:s");
                     $res1 = $model->where("lid = $lid and pid = $cid and uid = $uid")->save($qq);
                 }
-                if(empty($res1)){
+                if(empty($res1 && $res)){
                     $arr['status'] = 0;
                     $arr['msg'] = "操作失败";
                     echo json_encode($arr);die;
@@ -76,7 +85,7 @@ class VideoController extends Controller{
         }
 
     }
-    //查看我的视频记录的列表
+    //查看我的视频记录的列表 ----课程
     public function videoshow(){
         $uid = I("uid");    //获取token的值    get方式
         $page = I("page");     //获取页码
@@ -85,16 +94,21 @@ class VideoController extends Controller{
         $info = $model
             ->join("LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid")
             ->join("LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid")
-            //->join("LEFT JOIN cmf_lector ON cmf_lector.l_id = cmf_course.lector_id")
-            ->join("LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid")
-            ->where("cmf_video_record.uid = $uid")
-            ->field("cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,
-            cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject")
+            //->join("LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid")
+            ->where("cmf_video_record.uid = $uid AND cmf_video_record.pid = 0")
+            ->field("cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course.course_name,
+                cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,
+                cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,
+                cmf_course.status,cmf_course.type,cmf_course.stu_token,cmf_video_record.vtime,cmf_video_record.vid")
             ->page($page . ',10')
             ->order("cmf_video_record.vid desc")
             ->select();
+        for($i=0;$i<count($info);$i++){
 
+            $info[$i]['startDate'] = $info[$i]['startdate'];
+        }
 
+/*
         for($i=0;$i<count($info);$i++){
             if(!empty($info[$i]['lid'])){
                 $cid = $info[$i]['pid'];
@@ -109,16 +123,13 @@ class VideoController extends Controller{
                 $info[$i]['introduction'] = $res1['introduction'];
                 $info[$i]['cover'] = $res1['cover'];
                 $info[$i]['type'] = $res1['type'];
-                $lector_id = $res1['lector_id'];
-                $res2 = M("lector")->where("l_id = $lector_id")->find();
-                $info[$i]['name'] = $res2['name'];           //老师名字
                 $info[$i]['id'] = $info[$i]['pid'];      //course_id
 
             }
         }
-
+*/
        // echo $model->getlastsql()."<br>";
-       // print_r($info);die;
+        //print_r($info);die;
         if (empty($info)) {
             $arr['status'] = 1;
             $arr['msg'] = "您还未学习呢";
@@ -132,6 +143,38 @@ class VideoController extends Controller{
         }
     }
 
+
+    /*
+     * 学习记录--vip课程---获得课时的列表
+     * */
+    public function liveshow(){
+        $uid = I("uid");    //获取token的值    get方式
+        $page = I("page");     //获取页码
+        $cid = I("cid");       //课程的ID     在video_record 为id
+        $model = M("video_record");
+        $res = $model
+            ->join("cmf_live ON cmf_live.id = cmf_video_record.lid")
+            ->field("cmf_live.subject,cmf_live.course_id,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url,
+            cmf_live.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime,cmf_live.subject,cmf_live.startDate,cmf_live.status,cmf_live.cover,cmf_live.reply_url
+            ")
+            ->where("cmf_video_record.uid = $uid AND cmf_video_record.pid = $cid")
+            ->select();
+        for($i=0;$i<count($res);$i++){
+            $res[$i]['startDate'] = date("Y-m-d H:i:s",$res[$i]['startdate']);
+        }
+        //echo $model->getlastsql();
+        if (empty($res)) {
+            $arr['status'] = 1;
+            $arr['msg'] = "您还未学习呢";
+            $arr['data'] = '';
+            echo json_encode($arr);die;
+        } else {
+            $arr['status'] = 1;
+            $arr['msg'] = "操作成功";
+            $arr['data'] = $res;
+            echo json_encode($arr);die;
+        }
+    }
 
     /*
      * 学习记录---答题记录

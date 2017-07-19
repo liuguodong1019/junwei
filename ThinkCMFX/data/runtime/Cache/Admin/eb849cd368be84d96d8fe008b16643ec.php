@@ -109,6 +109,7 @@
                         <a href="<?php echo U('Course/look',array('id'=>$vo['id']));?>"><?php echo L('LOOK');?></a>|
                         <a href="<?php echo U('Course/update',array('id'=>$vo['id']));?>"><?php echo L('EDIT');?></a>|
                         <a href="<?php echo U('Course/delete',array('id'=>$vo['id'],'class_id'=>$vo['class_id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
+                        <a href="<?php echo U('Course/manage',array('id' => $vo['id']) );?>" class=" icon-tasks"></a>
                     </td>
                 </tr><?php endforeach; endif; ?>
 

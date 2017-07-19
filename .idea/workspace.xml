@@ -2,54 +2,226 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72639fc5-d982-4b8b-b01b-2af2e176eff7" name="默认" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/wechatAppPay.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/wxpay.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5937a002f0f42.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5937a002f2d75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/593904eb24fe7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/593904eb4ebbc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59390aa0a9a1a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59390aa0ac471.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59390b5db68b3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59390b5db81e7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59390bafa404c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59390bafa57dc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59390bc9a9ade.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59390bc9aba9c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/593fb88d83845.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/593fb98a0f2f4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/593fb9ca1d649.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/593fba38dd1b5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/593fba47124fa.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5943a3be9b0b7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5943a3bec0533.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5943a3fbbd82c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5943a3fbc1223.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944cd7380694.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944cfc226a8b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944cfc229703.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944d3193850c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944d32739846.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944d3273b43d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944d74144f05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944d74149f64.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944d75ed7046.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944e63433823.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944e745b95ac.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944e77764421.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944e7b0ae6fe.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944e94d27b8e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944ebb09eb6f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944ebd00e10b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5944ec2c64575.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59477959cb39b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59477be1d0d8e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59478223d9774.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5947822ec2d20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/59478283d9439.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5947829a07d55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594783446aed0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5947835cf19ba.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5947836f67915.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5947840c213b5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5947841ba0156.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594792e7c2c17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594792e7cc24f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5947931e597be.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594794c50096d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594795b86e373.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594795c5737a1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a3da76f823.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a3da786f7f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a3e5a8e268.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a3e5a90321.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a3f392db2a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a3f392f910.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a40114567a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a40114ac76.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a40a3d376d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a40a3d550e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a40b9065c2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a40b9086d9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a40f08c52b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a40f090597.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a41647819b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a4164812d1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a4195aaf0d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a4195ac9af.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a41ac31a44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594a41ac332b3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b450e24d2d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b450e3a26e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b47cf7a0cd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b47cf7bc6a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b4859a4cdc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b4859a749a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b48ee85cbc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b48ee8785a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b54e28bf0a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b54e28d9b1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b57be86d59.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b57be8942f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b5920963c6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b592098296.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b5a0fa62c1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b5a0fa7f32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b5b502cf55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b61ba11f2b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b620e8ed18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b625c8b33f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b6397b57d8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b63b1c51e8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b63dc783ce.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b641267333.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b642ff11bb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b6a75b1640.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b6af357632.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b6d53307e4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b6db61af00.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b7504660fa.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b750468735.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b7596223bf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b75cc48ccc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b75cc5b5c9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b7646d1558.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b7646d3000.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b774deb8e5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b774dedd1b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b7b7fb15ef.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b7b7fbfcda.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b83e7ee009.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594b83e81f974.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594caaa1010df.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594caaa121de6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594caddf5cad4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594caeee46590.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594caf15745a1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594caf3a0d898.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cafda648cf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cafda6651f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cb0017251a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cb00173e1f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cb16607768.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cb166092b2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cb19eedb29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cb2537b035.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cb25385e73.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cb26ed9418.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cb26edaf93.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cc433c74fc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cd4577ec30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cd5790dcdb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cd5afe0c84.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cd5db1dd77.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cdc1955922.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cdc9e1f6f1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594cdcb944d75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594ce3013855b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594ce37dac743.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/594dd1047aa01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950ab88389e1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950ab8879026.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950abf6eb2c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950abf6ecdfa.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950ac516efb4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950acd9ae2d5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950ad983f19a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950af15d6ba5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950af738620d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b079796f9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b1f426a1d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b35bea948.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b37d16447.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b3c468219.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b5ad982a6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b5e08d217.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b67885e2c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b6e9c343e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b7120ff0a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThinkCMFX/Uploads/5950b7c5a2c59.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/create.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/create.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/look.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/look.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/show.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/show.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/update.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/update.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/create.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/end.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/end.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/look.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/look.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/show.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/show.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/update.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/update.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/People/update.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/People/update.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/create_lector.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/create_lector.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/lector.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/lector.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Order/show.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Order/show.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/true.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/true.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/trueedit.html" afterPath="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Question/trueedit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/BookController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/BookController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/LectorController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/LectorController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/PeopleController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/PeopleController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/AlipayController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/AlipayController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/AserController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/AserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/OrderController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/OrderController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/QuestionController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/QuestionController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/TypesController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/TypesController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CacheController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CacheController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ItembankController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ItembankController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ResponseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ResponseController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UserController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UsercollectController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UsercollectController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UsercourseController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UsercourseController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/VideoController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/VideoController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/WxPayController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/WxPayController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CourseModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CourseModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/LiveModel.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/LiveModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/application/Houtai/Controller/ItembankController.class.php" afterPath="$PROJECT_DIR$/ThinkCMFX/application/Houtai/Controller/ItembankController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/conf/db.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/conf/db.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/conf/route.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/conf/route.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/lang/Admin/Lang/zh-cn/admin_menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/lang/Admin/Lang/zh-cn/admin_menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/14f39110225aa98f9efb6f2af8c5253a.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/14f39110225aa98f9efb6f2af8c5253a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/029c9790bb55e7d14cf47813c1d739d2.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/029c9790bb55e7d14cf47813c1d739d2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3715c3aca629e43d51da422d207c6505.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3715c3aca629e43d51da422d207c6505.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3cd4973c4cd4e6c766bebfe03f47abe3.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/3cd4973c4cd4e6c766bebfe03f47abe3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/5c727a0d35bf0cbb9566d58821aa7250.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/5c727a0d35bf0cbb9566d58821aa7250.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/5bc4feaa3508f66b2a41e25d73b7abef.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/5bc4feaa3508f66b2a41e25d73b7abef.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/5ebdad20e40b715693f275c091b164c7.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/5ebdad20e40b715693f275c091b164c7.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6815af850fbbc51e5c33d8f10fa47e79.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6815af850fbbc51e5c33d8f10fa47e79.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6b0b8ae1a82f764dcf016a5241a98fb5.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6b0b8ae1a82f764dcf016a5241a98fb5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6b37070e0199ee521f06667a1469f88c.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6b37070e0199ee521f06667a1469f88c.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6d3249f0a352f3c9bfb41ecbf20286c7.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/6d3249f0a352f3c9bfb41ecbf20286c7.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/92f738679a8b52d9d9d6545eeacc3b7f.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/92f738679a8b52d9d9d6545eeacc3b7f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/85d40f2b78cb3182dc422f13dc0f3640.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/85d40f2b78cb3182dc422f13dc0f3640.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/96edfa8b5d7a7d315d34bb03670f88d0.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/96edfa8b5d7a7d315d34bb03670f88d0.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/99926d1374d3d00b4c5e1cc9712ced98.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/99926d1374d3d00b4c5e1cc9712ced98.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/a0c60485a94b058a0263302d0de4e474.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/a0c60485a94b058a0263302d0de4e474.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/a1b9562eca4a4d881fee940917c4c5f6.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/a1b9562eca4a4d881fee940917c4c5f6.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/eb849cd368be84d96d8fe008b16643ec.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/eb849cd368be84d96d8fe008b16643ec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/fd6b6d7afdcfd2c874fa6e15c4ca7850.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Cache/Admin/fd6b6d7afdcfd2c874fa6e15c4ca7850.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/Menu.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/Menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/cmf_settings.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/cmf_settings.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/routes.php" afterPath="$PROJECT_DIR$/ThinkCMFX/data/runtime/Data/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/log.txt" afterPath="$PROJECT_DIR$/ThinkCMFX/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/themes/flat/theme.min.css" afterPath="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/themes/flat/theme.min.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,26 +236,42 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ResponseController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ResponseController.class.php">
+      <file leaf-file-name="BookController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/BookController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="706" column="32" lean-forward="true" selection-start-line="706" selection-start-column="32" selection-end-line="706" selection-end-column="32" />
-              <folding>
-                <element signature="e#34#55#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="926">
+              <caret line="108" column="20" lean-forward="false" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CacheController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CacheController.class.php">
+      <file leaf-file-name="AlipayController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/AlipayController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5520">
-              <caret line="263" column="41" lean-forward="false" selection-start-line="263" selection-start-column="41" selection-end-line="263" selection-end-column="41" />
-              <folding>
-                <element signature="e#32#53#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1748">
+              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckcodeController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CheckcodeController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1397">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassHourController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="96" column="56" lean-forward="true" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,23 +279,111 @@
       <file leaf-file-name="CourseModel.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CourseModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3680">
-              <caret line="163" column="43" lean-forward="false" selection-start-line="163" selection-start-column="43" selection-end-line="163" selection-end-column="43" />
-              <folding>
-                <element signature="e#31#66#0#PHP" expanded="true" />
-                <marker date="1498627210000" expanded="true" signature="694:799" ph="..." />
-              </folding>
+            <state relative-caret-position="-799">
+              <caret line="115" column="14" lean-forward="false" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LiveModel.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Model/LiveModel.class.php">
+      <file leaf-file-name="WxPayController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/WxPayController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2139">
-              <caret line="101" column="9" lean-forward="false" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+            <state relative-caret-position="443">
+              <caret line="194" column="0" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ResponseController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3640">
+              <caret line="569" column="31" lean-forward="false" selection-start-line="569" selection-start-column="19" selection-end-line="569" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeChatAppPay.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WeChatAppPay.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2898">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CacheController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CacheController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-69">
+              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Upload.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4554">
+              <caret line="206" column="62" lean-forward="false" selection-start-line="206" selection-start-column="62" selection-end-line="206" selection-end-column="62" />
               <folding>
-                <marker date="1498625227000" expanded="true" signature="794:860" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="6838:6888" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="6902:6922" ph=" 获取上传驱动 ..." />
+                <marker date="1493866149000" expanded="true" signature="6959:6996" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="7006:7116" ph=" 转换上传文件数组变量为正确的方式 ..." />
+                <marker date="1493866149000" expanded="true" signature="7159:7809" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="7256:7777" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="7298:7690" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="7449:7676" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="7545:7632" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="7696:7767" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="7819:7911" ph=" 设置上传驱动 ..." />
+                <marker date="1493866149000" expanded="true" signature="7977:8368" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="8319:8362" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="8378:8430" ph=" 检查上传的文件 ..." />
+                <marker date="1493866149000" expanded="true" signature="8468:9410" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="8526:8603" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="8659:8706" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="8783:8856" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="8927:9002" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="9139:9219" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="9288:9363" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="9421:9478" ph=" 获取错误代码信息 ..." />
+                <marker date="1493866149000" expanded="true" signature="9519:10214" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="9547:10208" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="9567:9671" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="9691:9790" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="9810:9878" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="9898:9964" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="9984:10051" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="10071:10136" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="10157:10199" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="10224:10279" ph=" 检查文件大小是否合法 ..." />
+                <marker date="1493866149000" expanded="true" signature="10321:10393" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="10403:10464" ph=" 检查上传的文件MIME类型是否合法 ..." />
+                <marker date="1493866149000" expanded="true" signature="10506:10608" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="10618:10674" ph=" 检查上传的文件后缀是否合法 ..." />
+                <marker date="1493866149000" expanded="true" signature="10714:10813" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="10823:10886" ph=" 根据上传文件命名规则取得保存文件名 ..." />
+                <marker date="1493866149000" expanded="true" signature="10930:11526" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="10991:11166" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="11174:11367" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="11270:11357" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="11536:11593" ph=" 获取子目录的名称 ..." />
+                <marker date="1493866149000" expanded="true" signature="11640:12042" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="11745:12011" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="11898:12001" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="12052:12194" ph=" 根据指定的规则获取文件或目录名称 ..." />
+                <marker date="1493866149000" expanded="true" signature="12293:12565" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="12417:12498" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="12593:12763" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="12641:12701" ph="..." />
+                <marker date="1493866149000" expanded="true" signature="12709:12753" ph="..." />
               </folding>
             </state>
           </provider>
@@ -124,7 +400,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HTML_FILE_SUFFIX</find>
       <find>MODULE_ALLOW_LIST</find>
       <find>rewrite</find>
       <find>mod_rewrite.so</find>
@@ -149,6 +424,12 @@
       <find>winnt_module</find>
       <find>IfModule mpm_winnt_module</find>
       <find>fastcgi_param  SCRIPT_FILENAME</find>
+      <find>appDateTime</find>
+      <find>public function UploadToken($sk ,$ak ,$param)</find>
+      <find>public function upload($config, $file)</find>
+      <find>persistentId</find>
+      <find>status</find>
+      <find>save</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,57 +438,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/WechatPayController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WxPay.Notify.php" />
-        <option value="$PROJECT_DIR$/../WxpayAPI/lib/WxPay.Config.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/tags.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_05_21.log" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Behavior/CronRunBehavior.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WxPayData.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WxPayApi.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/WxController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WxPay.Config.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WechatAppPay.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/Alipay/aop/AopClient.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Verify/Page1.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Page1.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Page.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ItembankController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/LectorController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/PeopleController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/BookController.class.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp48633/var/www/html/sikao/junwei/application/Admin/Controller/ClassHourController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/People/show.html" />
         <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WeChatAppPay.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/WxPayController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/OrderController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Api/Controller/CourseController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Order/show.html" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/end.html" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/create.html" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/look.html" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/show.html" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/update.html" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseCacheController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/create.html" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/update.html" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/look.html" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/show.html" />
         <option value="$PROJECT_DIR$/../../bin/apache/httpd-2.4.23-win32-VC14/conf/httpd.conf" />
         <option value="$PROJECT_DIR$/../../bin/apache/httpd-2.4.23-win32-VC14/conf/extra/httpd-mpm.conf" />
         <option value="$PROJECT_DIR$/../../bin/nginx-1.12.0/conf/nginx.conf" />
         <option value="$PROJECT_DIR$/../../bin/nginx-1.12.0/html/index.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/LiveModel.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CacheController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CourseModel.class.php" />
-        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/AlipayController.class.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/LectorController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/lector.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Lector/create_lector.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/public/simpleboot/themes/flat/theme.min.css" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/header.html" />
+        <option value="$USER_HOME$/Desktop/多功能jQuery日期控件 jeDate/新建文件夹 (4)/style.css" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/create.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/update.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/add.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/update.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/look.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/look.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/show.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Order/show.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Order/create.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Order/add.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/create.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/add.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/data/conf/db.php" />
         <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ResponseController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CourseModel.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/end.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/OrderController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Model/LiveModel.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Book/show.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Book/demo.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/show.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/manage.html" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/Qiniu/Processing/PersistentFop.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/Qiniu/Http/Client.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload/Driver/Qiniu.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CacheController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/BookController.class.php" />
       </list>
     </option>
   </component>
@@ -221,7 +502,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -277,6 +558,50 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="junwei1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="junwei1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThinkCMFX" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="junwei1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="junwei1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThinkCMFX" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -285,7 +610,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tp" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -433,7 +758,21 @@
       <workItem from="1498438949461" duration="17253000" />
       <workItem from="1498525581612" duration="7795000" />
       <workItem from="1498611870662" duration="3593000" />
-      <workItem from="1498632877109" duration="71000" />
+      <workItem from="1498632877109" duration="7863000" />
+      <workItem from="1498696896238" duration="10629000" />
+      <workItem from="1498715342477" duration="11004000" />
+      <workItem from="1498783854549" duration="5404000" />
+      <workItem from="1498879082092" duration="4977000" />
+      <workItem from="1498909780274" duration="2816000" />
+      <workItem from="1499043891663" duration="6013000" />
+      <workItem from="1499130751699" duration="4688000" />
+      <workItem from="1499216476073" duration="1253000" />
+      <workItem from="1499243993422" duration="4257000" />
+      <workItem from="1499303158226" duration="19668000" />
+      <workItem from="1499389168845" duration="20605000" />
+      <workItem from="1499647581549" duration="10828000" />
+      <workItem from="1499733075875" duration="7570000" />
+      <workItem from="1499935899449" duration="1520000" />
     </task>
     <task id="LOCAL-00001" summary="留言接口">
       <created>1494661292405</created>
@@ -446,19 +785,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1021260000" />
+    <option name="totallyTimeSpent" value="1140284000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2579666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24427481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -486,349 +825,431 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Page.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Api/1494924289-17_05_16.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/AdController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/SubmitController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WxPayApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="127" column="48" lean-forward="true" selection-start-line="127" selection-start-column="48" selection-end-line="127" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WxPayData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="996" column="5" lean-forward="true" selection-start-line="996" selection-start-column="5" selection-end-line="996" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WeChatAppPay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/OrderController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="103" lean-forward="false" selection-start-line="26" selection-start-column="103" selection-end-line="26" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Api/Controller/CourseController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/PersonalController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="131" column="66" lean-forward="true" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="299" column="36" lean-forward="false" selection-start-line="299" selection-start-column="36" selection-end-line="299" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/User/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Order/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-647">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Order/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Order/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        <state relative-caret-position="667">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Portal/Model/PostsModel.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-46">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Portal/Model/TermsModel.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-1495">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Model/ItembankModel.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/data/conf/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="161">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Model/AdModel.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1294">
+          <caret line="78" column="20" lean-forward="false" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/AlipayController.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/look.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="152" column="44" lean-forward="false" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="44" />
+        <state relative-caret-position="259">
+          <caret line="61" column="30" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Model/GuestbookModel.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/look.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Model.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1532">
-          <caret line="468" column="20" lean-forward="false" selection-start-line="468" selection-start-column="20" selection-end-line="468" selection-end-column="20" />
+        <state relative-caret-position="184">
+          <caret line="29" column="60" lean-forward="true" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/end.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+        <state relative-caret-position="236">
+          <caret line="40" column="106" lean-forward="false" selection-start-line="40" selection-start-column="106" selection-end-line="40" selection-end-column="106" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/UserController.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Model/LiveModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4347">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="503">
+          <caret line="135" column="1" lean-forward="false" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/SubmitController.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/OrderController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="54" column="73" lean-forward="true" selection-start-line="54" selection-start-column="73" selection-end-line="54" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/Redis.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="944" column="20" lean-forward="false" selection-start-line="944" selection-start-column="20" selection-end-line="944" selection-end-column="20" />
+        <state relative-caret-position="805">
+          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/UserController.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Book/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="233" column="13" lean-forward="true" selection-start-line="233" selection-start-column="13" selection-end-line="233" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="119" column="6" lean-forward="false" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/public/simpleboot/jedate/jedate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="262" column="358" lean-forward="false" selection-start-line="262" selection-start-column="350" selection-end-line="262" selection-end-column="358" />
+        <state relative-caret-position="161">
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <caret line="74" column="55" lean-forward="true" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="36" column="42" lean-forward="false" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/wxpay.php" />
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/wechatAppPay.php" />
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/WxPayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3703">
-          <caret line="161" column="56" lean-forward="true" selection-start-line="161" selection-start-column="56" selection-end-line="161" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/create.html">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Book/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="53" column="44" lean-forward="false" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/look.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-693">
-          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="106" column="26" lean-forward="false" selection-start-line="104" selection-start-column="71" selection-end-line="106" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/look.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="69" column="61" lean-forward="false" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../bin/apache/httpd-2.4.23-win32-VC14/conf/httpd.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="485" column="40" lean-forward="false" selection-start-line="485" selection-start-column="40" selection-end-line="485" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../bin/apache/httpd-2.4.23-win32-VC14/conf/extra/httpd-mpm.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="107" column="11" lean-forward="true" selection-start-line="107" selection-start-column="11" selection-end-line="107" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../bin/nginx-1.12.0/conf/nginx.conf" />
-    <entry file="file://$PROJECT_DIR$/../../bin/nginx-1.12.0/html/index.php" />
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CacheController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5520">
-          <caret line="263" column="41" lean-forward="false" selection-start-line="263" selection-start-column="41" selection-end-line="263" selection-end-column="41" />
-          <folding>
-            <element signature="e#32#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CourseModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3680">
-          <caret line="163" column="43" lean-forward="false" selection-start-line="163" selection-start-column="43" selection-end-line="163" selection-end-column="43" />
-          <folding>
-            <element signature="e#31#66#0#PHP" expanded="true" />
-            <marker date="1498627210000" expanded="true" signature="694:799" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/AlipayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="51" column="58" lean-forward="true" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/CourseController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        <state relative-caret-position="253">
+          <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/ClassHourController.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4732">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="503">
+          <caret line="77" column="7" lean-forward="false" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CourseController.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/ClassHour/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="186" column="57" lean-forward="true" selection-start-line="186" selection-start-column="57" selection-end-line="186" selection-end-column="57" />
+        <state relative-caret-position="466">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/admin/themes/simplebootx/Admin/Course/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="54" column="60" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="60" />
+        <state relative-caret-position="391">
+          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Model/LiveModel.class.php">
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/Qiniu/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2139">
-          <caret line="101" column="9" lean-forward="false" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+        <state relative-caret-position="239">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/Qiniu/Http/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="157" column="20" lean-forward="false" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/Qiniu/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/Qiniu/Http/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/Qiniu/Http/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/Qiniu/Processing/PersistentFop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/themes/simplewind/Core/Library/Think/Upload.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/data/runtime/Logs/Admin/17_07_07.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="210" column="67" lean-forward="true" selection-start-line="210" selection-start-column="67" selection-end-line="210" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/Nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3335">
+          <caret line="145" column="2" lean-forward="false" selection-start-line="145" selection-start-column="2" selection-end-line="145" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload/Driver/Aliyun.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2096">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload/Driver/Bcs.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4830">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload/Driver/Ftp.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3036">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload/Driver/Local.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2070">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1932">
+          <caret line="84" column="20" lean-forward="false" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload/Driver/Qiniu.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="89" column="44" lean-forward="false" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
           <folding>
-            <marker date="1498625227000" expanded="true" signature="794:860" ph="..." />
+            <marker date="1493866150000" expanded="true" signature="732:2901" ph="..." />
+            <marker date="1493866150000" expanded="true" signature="2264:2758" ph="..." />
+            <marker date="1493866150000" expanded="true" signature="2768:2821" ph=" 获取最后一次上传错误信息 ..." />
+            <marker date="1493866150000" expanded="true" signature="2855:2899" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Think/Upload.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4554">
+          <caret line="206" column="62" lean-forward="false" selection-start-line="206" selection-start-column="62" selection-end-line="206" selection-end-column="62" />
+          <folding>
+            <marker date="1493866149000" expanded="true" signature="6838:6888" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="6902:6922" ph=" 获取上传驱动 ..." />
+            <marker date="1493866149000" expanded="true" signature="6959:6996" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="7006:7116" ph=" 转换上传文件数组变量为正确的方式 ..." />
+            <marker date="1493866149000" expanded="true" signature="7159:7809" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="7256:7777" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="7298:7690" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="7449:7676" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="7545:7632" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="7696:7767" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="7819:7911" ph=" 设置上传驱动 ..." />
+            <marker date="1493866149000" expanded="true" signature="7977:8368" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="8319:8362" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="8378:8430" ph=" 检查上传的文件 ..." />
+            <marker date="1493866149000" expanded="true" signature="8468:9410" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="8526:8603" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="8659:8706" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="8783:8856" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="8927:9002" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="9139:9219" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="9288:9363" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="9421:9478" ph=" 获取错误代码信息 ..." />
+            <marker date="1493866149000" expanded="true" signature="9519:10214" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="9547:10208" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="9567:9671" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="9691:9790" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="9810:9878" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="9898:9964" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="9984:10051" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="10071:10136" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="10157:10199" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="10224:10279" ph=" 检查文件大小是否合法 ..." />
+            <marker date="1493866149000" expanded="true" signature="10321:10393" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="10403:10464" ph=" 检查上传的文件MIME类型是否合法 ..." />
+            <marker date="1493866149000" expanded="true" signature="10506:10608" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="10618:10674" ph=" 检查上传的文件后缀是否合法 ..." />
+            <marker date="1493866149000" expanded="true" signature="10714:10813" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="10823:10886" ph=" 根据上传文件命名规则取得保存文件名 ..." />
+            <marker date="1493866149000" expanded="true" signature="10930:11526" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="10991:11166" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="11174:11367" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="11270:11357" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="11536:11593" ph=" 获取子目录的名称 ..." />
+            <marker date="1493866149000" expanded="true" signature="11640:12042" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="11745:12011" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="11898:12001" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="12052:12194" ph=" 根据指定的规则获取文件或目录名称 ..." />
+            <marker date="1493866149000" expanded="true" signature="12293:12565" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="12417:12498" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="12593:12763" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="12641:12701" ph="..." />
+            <marker date="1493866149000" expanded="true" signature="12709:12753" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Admin/Controller/BookController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="926">
+          <caret line="108" column="20" lean-forward="false" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/WxPayController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="194" column="0" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ResponseController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="706" column="32" lean-forward="true" selection-start-line="706" selection-start-column="32" selection-end-line="706" selection-end-column="32" />
-          <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="3640">
+          <caret line="569" column="31" lean-forward="false" selection-start-line="569" selection-start-column="19" selection-end-line="569" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/simplewind/Core/Library/Vendor/WxpayAPI/lib/WeChatAppPay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2898">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/AlipayController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1748">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CheckcodeController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1397">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/ClassHourController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="96" column="56" lean-forward="true" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Common/Model/CourseModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="115" column="14" lean-forward="false" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCMFX/application/Api/Controller/CacheController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

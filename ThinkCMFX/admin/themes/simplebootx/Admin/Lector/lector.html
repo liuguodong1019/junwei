@@ -23,7 +23,7 @@
                 <th>ID</th>
                 <th>名称</th>
                 <!--<th>授课类型</th>-->
-                <!--<th width="125">{:L('ACTIONS')}</th>-->
+                <th width="125">{:L('ACTIONS')}</th>
             </tr>
             </thead>
             <foreach name="list" item="vo">
@@ -33,18 +33,16 @@
                     <td>{$vo.l_id}</td>
                     <td>{$vo.name}</td>
                     <!--<td>{$vo.course_name}</td>-->
-                    <!--<td>-->
+                    <td>
                         <!--<a href="{:U('Lector/update',array('id'=>$vo['l_id']))}">{:L('EDIT')}</a>|-->
-                        <!--<a href="{:U('Lector/delete',array('id'=>$vo['l_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>-->
-                    <!--</td>-->
+                        <a href="{:U('Lector/delete',array('id'=>$vo['l_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+                    </td>
                 </tr>
             </foreach>
         </table>
-        <!--<div class="table-actions">-->
-            <!--<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Lector/delete')}" data-subcheck="true" data-msg="你确定删除吗？">{:L('DELETE')}</button>-->
-
-
-        <!--</div>-->
+        <div class="table-actions">
+            <button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Lector/delete')}" data-subcheck="true" data-msg="你确定删除吗？">{:L('DELETE')}</button>
+        </div>
 
 
         <div class="pagination">{$page}</div>

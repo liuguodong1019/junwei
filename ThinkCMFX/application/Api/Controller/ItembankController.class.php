@@ -108,59 +108,91 @@ class ItembankController extends Controller
      /**
       * 法考科目试卷科目列表/章节列表
       */
-    public function kmlist()
-  { 
-    $subjects=M('subjects');
-	$chapter=M('chapter');
-	$item=M('itembank');
-	$res=array();
-    $res=$subjects->field("sid,stitle")->order("sid asc")->select();//科目
+   public function kmlist()
+		  { 
+		    $subjects=M('subjects');
+			$chapter=M('chapter');
+			$item=M('itembank');
+			$res=array();
+		    $res=$subjects->field("sid,stitle")->order("sid asc")->select();//科目
 
-	foreach($res as $k=>$v)
-	{       
-		    $sid=$v['sid'];
-            $stitle=$v['stitle'];			
-			$re=$chapter->where("sid='$sid'")->field("cid,ctitle")->order("cid asc")->select();//章节
-			$arr[$k]['sid']=$sid;
-			$arr[$k]['stitle']=$stitle;
-			$arr[$k]['cid']=$re;
-			
-	}
-	  foreach($arr as $key=>$value)
-	  {
-		$sid=$value['sid'];
-		$stitle=$value['stitle'];
-		$data=$value['cid'];
-		foreach($data as $k1=>$v1)
-		{
-		   $cid=$v1['cid'];
-		   $rec=$item->where("sid='$sid' and cid='$cid'")->count();
-		   //$ace[$key]['sid']=$sid;
-		   //$ace[$key]['stitle']=$stitle;
-		   $ace[$key][$k1]=$v1;
-		   $ace[$key][$k1]['count']=$rec;
-		   $data=array_values($ace[$key]);
-		   
-		   
-		} 
-        $resu[$key]['sid']=$sid;
-        $resu[$key]['stitle']=$stitle;
-        $resu[$key]['sub_items']=$data;		
-	  }
-    if($ace)
-    {
-        $dat['data']=$resu;
-		$dat['status']=1;
-        $dat['msg']="请求成功";
-        echo json_encode($dat);die;
-    }
-    else
-    {
-        $data['status']=0;
-        $data['msg']="请求失败";
-        echo json_encode($data);die;
-    }
-  }
+		    foreach ($res as $k=>$v)
+			  	{
+		           $sid=$v['sid'];
+		           $re=$chapter
+				  	->field('cid,ctitle')
+				  	->where("sid='$sid'")
+				  	->order('cid asc')
+				  	->select();
+				  	//print_r($re);
+				  	foreach($re as $k1=>$v1)
+				  	{ 
+				  	  //echo $k1.";";
+				  	  $a=trim($v1['ctitle']);
+		              $b=explode(" ",$a);
+
+		               $c[$k][$k1]=$b[0];
+		               $ti=array("第一章","第二章","第三章","第四章","第五章","第六章","第七章","第八章","第九章","第十章","第十一章"
+		               	,"第十二章","第十三章","第十四章","第十五章","第十六章","第十七章","第十八章","第十九章","第二十章","第二十一章","第二十二章","第二十三章"
+		               	,"第二十四章","第二十五章","第二十六章","第二十七章","第二十八章","第二十九章","第三十章","第三十一章","第三十二章","第三十三章","第三十四章","第三十五章"
+		               	,"第三十六章","第三十七章","第三十八章","第三十九章","第四十章","第四十一章","第四十二章","第四十三章","第四十四章","第四十五章","第四十六章","第四十七章"
+		               	,"第四十八章","第四十九章","第五十章");
+		               $huang=array("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"
+		               	,"25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50");
+		               //数组替换
+		               foreach($c as $k2=>$v2)
+		               {
+		                 $an=str_replace($ti,$huang,$v2);
+
+		               }
+		               $rec[$k][$k1]=$v1;
+		               $rec[$k][$k1]['key']=$an[$k1];
+				  	}
+				  	foreach($rec as $k3=>$v3)
+				  	{
+				      $sort = array_column($v3,'key');      
+		              array_multisort($sort, SORT_ASC, $v3);
+		              $arr[$sid]=$v3;
+				  	}
+		            $data[$sid]=$v;
+			  	}
+			  	foreach($data as $k=>$v)
+			  	{   $da[$k]=$v;
+		            $da[$k]["cid"]=$arr[$k];
+			  	};
+			  foreach($da as $key=>$value)
+			  {
+				$sid=$value['sid'];
+				$stitle=$value['stitle'];
+				$data=$value['cid'];
+				foreach($data as $k1=>$v1)
+				{
+				   $cid=$v1['cid'];
+				   $rec=$item->where("sid='$sid' and cid='$cid'")->count();
+				   $ace[$key][$k1]=$v1;
+				   $ace[$key][$k1]['count']=$rec;
+				   $data=array_values($ace[$key]);
+				   
+				} 
+		        $resu[$key]['sid']=$sid;
+		        $resu[$key]['stitle']=$stitle;
+		        $resu[$key]['sub_items']=$data;		
+			  }
+			  $resu=array_values($resu);
+		    if($ace)
+		    {
+		        $dat['data']=$resu;
+				$dat['status']=1;
+		        $dat['msg']="请求成功";
+		        echo json_encode($dat);die;
+		    }
+		    else
+		    {
+		        $data['status']=0;
+		        $data['msg']="请求失败";
+		        echo json_encode($data);die;
+		    }
+		  } 
    /**
     * 真题题目请求
     */

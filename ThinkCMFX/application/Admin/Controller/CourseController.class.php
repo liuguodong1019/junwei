@@ -24,30 +24,23 @@ class CourseController extends AdminbaseController
      */
     public function show()
     {
-
         $str = new CourseModel();
         $redis = $str::redis();
-        // $redis->hDel('course',16);
-       // $rew = json_decode($redis->hGet('course',17),true);
-// //        $redis->hDel('course',4);
-       // $rew['status'] = 0;
-       // $rew['reply_url'] = 0;
-       // $list = json_encode($rew);
-       // $redis->hSet('course',7,$list);
-       // $re = json_decode($redis->hGet('course',3),true);
-//        $id = $redis->get('id');
-        // $res = $redis->HVALS('course');
-        // $len = $redis->HLEN('course');
-        // for ($a = 0; $a < $len; $a++) {
-        //     $rew[] = json_decode($res[$a],true);
-        //    if ($rew[$a]['is_free'] == 1) {
-        //        $open[] = $rew[$a];
-        //    }else {
-        //        $vip[] = $rew[$a];
-        //    }
-        // }
-        // echo '<pre>';
-        // print_r($rew);die;
+//        $rew = $redis->hVals('course');
+//        foreach ($rew as $val) {
+//            $res[] = json_decode($val,true);
+//        }
+        // $redis->hDel('course',27);
+       $res = json_decode($redis->hGet('course',29),true);
+       // $res['lector'] = '';
+//        $res['status'] = 3;
+//        $res['reply_url'] = 'http://junwei.gensee.com/training/site/v/43991911';
+//        $res['number'] = '43991911';
+//        $res['courseware_id'] = 'TXvFMxUYWA';
+       // $list = json_encode($res);
+       // $redis->hSet('course',29,$list);
+       echo '<pre>';
+       print_r($res);die;
         $course = D('Course');
 
         $junwei = M('junwei')->find();
@@ -57,6 +50,7 @@ class CourseController extends AdminbaseController
         $Page = $this->page($count, 20);
         $str = new CourseModel();
         $data = $str->show($Page);
+
         if (empty($data)) {
             $this->redirect('create');
         }
@@ -77,6 +71,7 @@ class CourseController extends AdminbaseController
         if (IS_GET) {
             $id = I('get.id');
             $rew = $redis->hGet("course",$id);
+
             if (!empty($id)) {
                 if (empty($rew)) {
                     $data = M('course')
@@ -191,7 +186,7 @@ class CourseController extends AdminbaseController
                 $resourec = $response::delete($loginName,$password,$class_id);
                 $ter = $response::delete_live($loginName,$password,$courseware_id);
                 // print_r($ter);die;
-                if ($resourec['code'] == 0 && $ter['code'] == 0) {
+                if ($resourec['code'] == 0 || $ter['code'] == 0) {
                     if ($course->where("id = '$id'")->delete() !== false) {
                         $redis->hDel('course',$id);
                         $this->success('删除成功');exit();
@@ -285,5 +280,66 @@ class CourseController extends AdminbaseController
         $this->assign('url',$url);
         $this->assign('describe',$describe);
         $this->display("Course/end");
+    }
+
+    /**
+     * 手动添加公开课
+     */
+    public function add ()
+    {
+        $str = new CourseModel();
+        $redis = $str::redis();
+        $course = D('course');
+        $lector = M('lector');
+        $photo = C('upload');
+        $teacher = $lector->field('name')->select();
+        if (IS_POST) {
+            // $data = I('');
+            $data['course_name'] = htmlspecialchars(trim(I('post.course_name')));
+            $data['is_free'] = htmlspecialchars(trim(I('post.is_free')));
+            $data['number'] = htmlspecialchars(trim(I('post.number')));
+            $data['stu_token'] = htmlspecialchars(trim(I('post.stu_token')));
+            $data['class_id'] = htmlspecialchars(trim(I('post.class_id')));
+            $data['courseware_id'] = htmlspecialchars(trim(I('post.courseware_id')));
+            $data['introduction'] = htmlspecialchars(trim(I('post.introduction')));
+            $data['lector'] = !empty(htmlspecialchars(trim(I('post.lector')))) ? htmlspecialchars(trim(I('post.lector'))): 0;
+            // $lector1 = !empty(htmlspecialchars(trim(I('post.lector1')))) ? htmlspecialchars(trim(I('post.lector1'))): 0;
+            $data['startDate'] = I('post.startDate').':00';
+            $data['invalidDate'] = I('post.invalidDate').':00';
+            $data['status'] = !empty(htmlspecialchars(trim(I('post.status')))) ? htmlspecialchars(trim(I('post.status'))): 0;
+            $data['reply_url'] = !empty(htmlspecialchars(trim(I('post.reply_url')))) ? htmlspecialchars(trim(I('post.reply_url'))): 0;
+            $upload = new \Think\Upload($photo);
+            $info = $upload->upload();
+            foreach($info as $file){
+                $cover = $file['savepath'].$file['savename'];
+                $data['cover'] = $cover;
+            }
+            $redis->incr("id");
+            $id = $redis->get("id");
+            $data['startDate'] = I('post.startDate').':00';
+            $data['invalidDate'] = I('post.invalidDate').':00';
+            $data['id'] = $id;
+            if ($course->add($data)) {
+                $res = json_encode($data);
+                $redis->hSet('course',$id,$res);
+                $this->success('添加成功');exit();
+            }
+        }
+        $this->assign('teacher',$teacher);
+        $this->display();
+    }
+
+    /**
+     * 管理课程对应的课时
+     */
+    public function manage ()
+    {
+        $live = D('live');
+        if (IS_GET) {
+            $id = I('get.id');
+            $data = $live->field('subject,id,startDate,invalidDate,number,stu_token,class_id,status,reply_url')->where("course_id = '$id'")->select();
+        }
+        $this->assign('data',$data);
+        $this->display();
     }
 }
