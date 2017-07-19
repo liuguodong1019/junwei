@@ -1,0 +1,71 @@
+<admintpl file="header" />
+
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="{:U('Order/add')}"  target="_self">手动录入订单信息</a></li>
+    <li ><a href="{:U('Order/show')}"  target="_self">订单列表</a></li>
+
+</ul>
+<form action="{:U('Order/add')}" enctype="multipart/form-data" class="well form-search" method="post" >
+
+    <div class="box box-default">
+        <div class="box-body">
+            <table width="100%" cellpadding="2" cellspacing="2" >
+                <tr>
+                    <th width="80">课程</th>
+                    <td>
+                        <select name="course_id">
+                            <option value="请选择">请选择</option>
+                            <foreach name="course" item="vo">
+                                <option value="{$vo.id}">{$vo.course_name}</option>
+                            </foreach>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">用户</th>
+                    <td>
+                        <select name="uid">
+                            <option value="请选择">请选择</option>
+                            <foreach name="user" item="va">
+                                <option value="{$va.id}">{$va.user_nicename}</option>
+                            </foreach>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">支付状态</th>
+                    <td>
+                        <select name="pay_status">
+                            <option value="请选择">请选择</option>
+                            <option value="1">支付成功</option>
+                            <option value="2">待支付</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">支付方式</th>
+                    <td>
+                        <select name="pay_ways">
+                            <option value="请选择">请选择</option>
+                            <option value="1">支付宝</option>
+                            <option value="2">微信</option>
+                        </select>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="form-actions">
+        <button class="btn btn-success" type="submit">提交</button>
+        <button type="reset"  class="btn btn-danger">重置</button>
+    </div>
+</form>
+</div>
+</body>
+

@@ -1,0 +1,39 @@
+<admintpl file="header" />
+
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="{:U('Order/create')}"  target="_self">手动录入用户信息</a></li>
+    <li ><a href="{:U('Order/show')}"  target="_self">订单列表</a></li>
+
+</ul>
+<form action="{:U('Order/create')}" enctype="multipart/form-data" class="well form-search" method="post" >
+
+    <div class="box box-default">
+        <div class="box-body">
+            <table width="100%" cellpadding="2" cellspacing="2" >
+                <tr>
+                    <th width="80">用户昵称</th>
+                    <td>
+                        <input type="text" name="user_nicename" value="" style="width: 300px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="80">手机号</th>
+                    <td>
+                        <input name="mobile" type="text"  />
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="form-actions">
+        <button class="btn btn-success" type="submit">提交</button>
+        <button type="reset"  class="btn btn-danger">重置</button>
+    </div>
+</form>
+</div>
+</body>
+
