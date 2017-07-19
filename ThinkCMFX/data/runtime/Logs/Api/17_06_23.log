@@ -1,0 +1,8 @@
+[ 2017-06-23T11:37:25+08:00 ] 127.0.0.1 /ThinkCMFX/vip?uid=49&page=1
+ERR: 1054:Unknown column 'peoler' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`startDate`,`invalidDate`,`now_price`,`old_price`,`cover`,`num_class`,`status`,`is_free`,`introduction`,`number`,`stu_token`,`reply_url`,`peoler`,`book`,`lector` FROM `cmf_course` WHERE ( is_free = '2' ) ORDER BY id DESC 
+
+[ 2017-06-23T11:38:05+08:00 ] 127.0.0.1 /ThinkCMFX/vip?uid=49&page=1
+ERR: 1054:Unknown column 'peoper' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`startDate`,`invalidDate`,`now_price`,`old_price`,`cover`,`num_class`,`status`,`is_free`,`introduction`,`number`,`stu_token`,`reply_url`,`peoper`,`book`,`lector` FROM `cmf_course` WHERE ( is_free = '2' ) ORDER BY id DESC 
+

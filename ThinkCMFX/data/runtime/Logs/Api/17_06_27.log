@@ -1,0 +1,357 @@
+[ 2017-06-27T12:30:27+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=past_live&page=1&uid=49
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`introduction`,`num_class`,`status`,`is_free`,`now_price`,`old_price`,`number`,`stu_token`,`reply_url`,`class_id`,`startdate`,`invaliddate`,`cover`,`name` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.status = '3' and UNIX_TIMESTAMP(a.invaliddate) < '1498537827' ) ORDER BY a.id DESC 
+
+[ 2017-06-27T12:59:33+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT `id`,`course_name`,`introduction`,`num_class`,`status`,`is_free`,`now_price`,`old_price`,`number`,`stu_token`,`reply_url`,`class_id`,`startdate`,`invaliddate`,`cover`,`name` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.status = '3' and UNIX_TIMESTAMP(a.invaliddate) < '1498539573' ) ORDER BY a.id DESC 
+
+[ 2017-06-27T13:51:59+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 72 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-27T13:52:09+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 72 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-27T14:07:23+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=past_live&page=1&uid=72
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:08:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:09:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:10:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:11:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:11:53+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=past_live&page=1&uid=72
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:12:02+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:13:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:14:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:14:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:14:37+08:00 ] 115.33.36.173 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:15:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:15:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:15:10+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:15:24+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=past_live&page=1&uid=72
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:16:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:16:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:16:10+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:16:12+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:16:26+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=past_live&page=1&uid=0
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:17:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:17:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:17:01+08:00 ] 115.33.36.173 /junwei/api/course/open_class?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:17:03+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=open_class&page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:17:21+08:00 ] 115.33.36.173 /junwei/api/course/open_class?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:17:23+08:00 ] 115.33.36.173 /junwei/api/course/open_class?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:18:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:18:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:18:15+08:00 ] 115.33.36.173 /junwei/api/course/open_class?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:18:32+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:19:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:19:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:20:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:20:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:23+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:25+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:25+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:26+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:27+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:27+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:28+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:29+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:30+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:50+08:00 ] 115.33.36.173 /junwei/api/course/get_class?id=6
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:21:57+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:43+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:44+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:44+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:45+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:46+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:46+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:47+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:47+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:48+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:48+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:22:49+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:23:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:23:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:23:21+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:23:22+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:23:23+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:24:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:24:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:24:53+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:25:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:25:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:25:15+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:19+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:21+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:21+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:22+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:22+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:23+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:24+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:24+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:26:51+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:27:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:27:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:28:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:28:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:29:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:29:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:30:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:30:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:31:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:31:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:32:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:32:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:33:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:33:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:34:01+08:00 ] 47.93.1.53 /junwei/api/course/reply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:34:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: syntax error, unexpected 'public' (T_PUBLIC)
+
+[ 2017-06-27T14:36:04+08:00 ] 115.33.36.173 /junwei/api/course/past_live?page=1&uid=1
+ERR: Call to a member function reply() on null
+
+[ 2017-06-27T14:39:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: Think\Controller:endLive方法不存在！
+
+[ 2017-06-27T14:40:01+08:00 ] 47.93.1.53 /junwei/api/classHour/vipReply
+ERR: Think\Controller:endLive方法不存在！
+
+[ 2017-06-27T16:05:57+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Usercollect&a=downshow&uid=49&page=1
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id  WHERE ( cmf_course_collection.uid = 49 AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-06-27T16:05:57+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Usercollect&a=downshow&uid=49&page=1
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id  WHERE ( cmf_course_collection.uid = 49 AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-06-27T16:06:17+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 49 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-27T16:06:17+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 49 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-27T16:14:38+08:00 ] 210.12.48.132 /junwei/index.php?g=Api&m=Usercollect&a=downshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id  WHERE ( cmf_course_collection.uid = 72 AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-06-27T17:30:51+08:00 ] 115.33.36.173 /junwei/api/classHour/class_hour?uid=70&id=9
+ERR: [] operator not supported for strings
+
+[ 2017-06-27T17:31:59+08:00 ] 115.33.36.173 /junwei/api/classHour/class_hour?uid=70&id=9
+ERR: [] operator not supported for strings
+
+[ 2017-06-27T18:45:03+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 72 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-27T22:59:45+08:00 ] 1.202.193.116 /junwei/index.php?g=Api&m=Usercollect&a=downshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id  WHERE ( cmf_course_collection.uid = 72 AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-06-27T22:59:47+08:00 ] 1.202.193.116 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 72 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+

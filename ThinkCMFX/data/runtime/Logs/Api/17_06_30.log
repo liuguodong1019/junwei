@@ -1,0 +1,277 @@
+[ 2017-06-30T09:46:51+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=105&uid=72&callback=jQuery18207076532969727211_1498787211106&_=1498787211285
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T09:46:56+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=105&uid=72&callback=jQuery182034548972734837646_1498787216791&_=1498787216831
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T09:46:58+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=105&uid=72&callback=jQuery1820007287354633791487_1498787218416&_=1498787218440
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T09:48:51+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=105&uid=72&callback=jQuery172010171305000940079_1498787330348&_=1498787330530
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T09:48:57+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=105&uid=72&callback=jQuery17203715421799454419_1498787336577&_=1498787336597
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T09:49:00+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=105&uid=72&callback=jQuery17204943674051720499_1498787339586&_=1498787339617
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T09:49:12+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=105&uid=72&callback=jQuery1720014985770131668907_1498787350798&_=1498787350816
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T09:51:23+08:00 ] 61.148.243.244 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:52:01+08:00 ] 61.148.243.244 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:52:08+08:00 ] 61.148.243.244 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:52:18+08:00 ] 61.148.243.244 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:52:32+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:52:44+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:53:31+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:54:03+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:55:00+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:55:06+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=169&uid=70&callback=jQuery17203902467632288422_1498787703610&_=1498787703643
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 169 ) LIMIT 1  
+
+[ 2017-06-30T09:55:46+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=169&uid=70&callback=jQuery172035543204309839793_1498787744067&_=1498787744110
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 169 ) LIMIT 1  
+
+[ 2017-06-30T09:56:05+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=170&uid=72&callback=jQuery18204098286338518229_1498787763088&_=1498787763121
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 170 ) LIMIT 1  
+
+[ 2017-06-30T09:56:28+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=160&uid=72&callback=jQuery18209996185546124936_1498787785887&_=1498787785927
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 160 ) LIMIT 1  
+
+[ 2017-06-30T09:57:20+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoinsert
+ERR: syntax error, unexpected '}'
+
+[ 2017-06-30T09:57:48+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=liveshow&uid=142&page=1&cid=6\
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_v' at line 2
+ [ SQL语句 ] : SELECT cmf_live.subject,cmf_live.course_id,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url
+            cmf_live.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_video_record` INNER JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 6\ ) 
+
+[ 2017-06-30T09:57:53+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=liveshow&uid=142&page=1&cid=6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_v' at line 2
+ [ SQL语句 ] : SELECT cmf_live.subject,cmf_live.course_id,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url
+            cmf_live.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_video_record` INNER JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 6 ) 
+
+[ 2017-06-30T09:57:55+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=liveshow&uid=142&page=1&cid=6
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_v' at line 2
+ [ SQL语句 ] : SELECT cmf_live.subject,cmf_live.course_id,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url
+            cmf_live.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_video_record` INNER JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 6 ) 
+
+[ 2017-06-30T09:57:58+08:00 ] 101.226.125.100 /junwei/index.php?g=Api&m=Video&a=liveshow&uid=142&page=1&cid=6\
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_v' at line 2
+ [ SQL语句 ] : SELECT cmf_live.subject,cmf_live.course_id,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url
+            cmf_live.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_video_record` INNER JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 6\ ) 
+
+[ 2017-06-30T09:59:58+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=169&uid=70&callback=jQuery172020818895289822603_1498787991877&_=1498787991893
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 169 ) LIMIT 1  
+
+[ 2017-06-30T10:01:59+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=169&uid=70&callback=jQuery17203952010620500065_1498788113713&_=1498788113735
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 169 ) LIMIT 1  
+
+[ 2017-06-30T10:09:47+08:00 ] 115.33.36.173 /junwei/api/Video/liveshow/
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_video_record.pid =  )' at line 1
+ [ SQL语句 ] : SELECT cmf_live.subject,cmf_live.course_id,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url,cmf_live.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_video_record` INNER JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid =  AND cmf_video_record.pid =  ) 
+
+[ 2017-06-30T10:09:57+08:00 ] 101.226.89.122 /junwei/api/Video/liveshow
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_video_record.pid =  )' at line 1
+ [ SQL语句 ] : SELECT cmf_live.subject,cmf_live.course_id,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url,cmf_live.class_id,cmf_live.token,cmf_video_record.vid,cmf_video_record.vtime FROM `cmf_video_record` INNER JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid =  AND cmf_video_record.pid =  ) 
+
+[ 2017-06-30T10:17:34+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=169&uid=70&callback=jQuery172040740247766081006_1498789054382&_=1498789054636
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 169 ) LIMIT 1  
+
+[ 2017-06-30T10:18:28+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=169&uid=70&callback=jQuery172012969644734366503_1498789106930&_=1498789106952
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 169 ) LIMIT 1  
+
+[ 2017-06-30T10:23:52+08:00 ] 123.151.138.73 /junwei/api/course/classDesc?id=169&uid=70&callback=jQuery1720914446155215348_1498789432982&_=1498789433323
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 169 ) LIMIT 1  
+
+[ 2017-06-30T10:24:46+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=160&uid=72&callback=jQuery182046603419922438505_1498789483527&_=1498789483592
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 160 ) LIMIT 1  
+
+[ 2017-06-30T10:25:04+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=169&uid=70&callback=jQuery172038675359041590074_1498789501380&_=1498789501419
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 169 ) LIMIT 1  
+
+[ 2017-06-30T10:26:34+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=49&uid=70&callback=jQuery17204996699028208391_1498789591903&_=1498789591943
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 49 ) LIMIT 1  
+
+[ 2017-06-30T10:26:59+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?uid=49&id=58
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 58 ) LIMIT 1  
+
+[ 2017-06-30T10:27:09+08:00 ] 101.226.33.228 /junwei/api/course/classDesc?uid=49&id=58
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 58 ) LIMIT 1  
+
+[ 2017-06-30T10:27:14+08:00 ] 61.151.226.202 /junwei/api/course/classDesc?uid=49&id=58
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 58 ) LIMIT 1  
+
+[ 2017-06-30T10:27:32+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=105&uid=52
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T10:27:42+08:00 ] 101.226.33.202 /junwei/api/course/classDesc?id=105&uid=52
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T10:28:37+08:00 ] 101.226.33.218 /junwei/api/course/classDesc?id=105&uid=52@
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T10:28:39+08:00 ] 101.226.65.102 /junwei/api/course/classDesc?id=105&uid=52
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T10:29:49+08:00 ] 101.226.33.205 /junwei/api/course/classDesc?uid=49&id=58
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 58 ) LIMIT 1  
+
+[ 2017-06-30T10:30:04+08:00 ] 115.33.36.173 /junwei/api/course/classDesc?id=105&uid=52
+ERR: 1054:Unknown column 'a.lector_id' in 'on clause'
+ [ SQL语句 ] : SELECT a.id,a.course_name,a.now_price,a.num_class,`cover`,`people`,`book`,`introduction`,`detail_cover`,`name`,`startDate`,`invalidDate`,`is_free`,`number`,`stu_token`,`class_id` FROM cmf_course as a left join cmf_lector as b ON a.lector_id = b.l_id  WHERE ( a.id = 105 ) LIMIT 1  
+
+[ 2017-06-30T10:32:08+08:00 ] 115.33.36.173 /junwei/api/Usercollect/collectitem
+ERR: 1054:Unknown column 'cid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( uid = 142 AND cid = 6 ) LIMIT 1  
+
+[ 2017-06-30T10:32:11+08:00 ] 115.33.36.173 /junwei/api/Usercollect/collectitem
+ERR: 1054:Unknown column 'cid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( uid = 142 AND cid = 6 ) LIMIT 1  
+
+[ 2017-06-30T10:32:13+08:00 ] 115.33.36.173 /junwei/api/Usercollect/collectitem
+ERR: 1054:Unknown column 'cid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `cmf_course_collection` WHERE ( uid = 142 AND cid = 6 ) LIMIT 1  
+
+[ 2017-06-30T12:41:46+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 72 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T13:29:52+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 72 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:12:09+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=73
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 73 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:12:14+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=75
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 75 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:14:10+08:00 ] 114.242.249.103 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 49 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:14:10+08:00 ] 114.242.249.103 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=49&page=1
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 49 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:15:43+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=75
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 75 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:44:09+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=75
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 75 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:45:35+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=53&page=1
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 53 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:45:35+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=53&page=1
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 53 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:52:31+08:00 ] 123.178.43.255 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 72 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:52:36+08:00 ] 123.178.43.255 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 72 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:52:38+08:00 ] 123.178.43.255 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 72 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:53:09+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=142
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:53:14+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=142
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:53:20+08:00 ] 123.178.43.255 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 72 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:53:46+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=142&page=1
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T14:53:56+08:00 ] 101.226.66.172 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=142&page=1
+ERR: 1054:Unknown column 'cmf_live.subject' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.lector,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T15:10:39+08:00 ] 123.178.43.255 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_course_collection.create_time' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.course_name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 72 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T15:10:43+08:00 ] 123.178.43.255 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_course_collection.create_time' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.course_name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 72 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T15:11:06+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=142&page=1&cid=6
+ERR: 1054:Unknown column 'cmf_course_collection.create_time' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.course_name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T15:11:16+08:00 ] 101.226.65.104 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=142&page=1&cid=6
+ERR: 1054:Unknown column 'cmf_course_collection.create_time' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.course_name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T15:14:23+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=142&page=1&cid=6
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course.course_name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token,cmf_video_record.vtime,cmf_video_record.vid,`` FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid = 142 AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-30T15:44:59+08:00 ] 115.33.36.173 /junwei/open_class?page=1
+ERR: Call to a member function hdel() on null
+

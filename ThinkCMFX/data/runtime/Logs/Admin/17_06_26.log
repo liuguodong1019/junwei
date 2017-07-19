@@ -1,0 +1,28 @@
+[ 2017-06-26T15:03:51+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?s=/Course/update
+ERR: 1048:Column 'cover' cannot be null
+ [ SQL语句 ] : UPDATE `cmf_course` SET `course_name`='无人机公开课1',`class_id`='7jG0adjZLl',`number`='92547139',`stu_token`='730772',`id`='19',`is_free`='1',`num_class`='0',`now_price`='',`old_price`='',`startDate`='2017-06-25 14:39:49',`invalidDate`='2017-06-27 14:40:52',`introduction`='V点舍不得不会的不会的色不好的话热负荷部分人彼此彼此信任和热忱?',`lector`='苍老师',`people`='0',`book`='0',`cover`=NULL WHERE ( id = 19 )
+
+[ 2017-06-26T15:11:19+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?s=/Course/update
+ERR: 1048:Column 'cover' cannot be null
+ [ SQL语句 ] : UPDATE `cmf_course` SET `course_name`='无人机公开课',`class_id`='7jG0adjZLl',`number`='92547139',`stu_token`='730772',`id`='19',`is_free`='1',`num_class`='0',`now_price`='',`old_price`='',`startDate`='2017-06-25 15:39:49',`invalidDate`='2017-06-27 14:40:52',`introduction`='V点舍不得不会的不会的色不好的话热负荷部分人彼此彼此信任和热忱',`lector`='小泽老师',`people`='搞笑',`book`='0',`cover`=NULL WHERE ( id = 19 )
+
+[ 2017-06-26T16:12:30+08:00 ] 127.0.0.1 /ThinkCMFX/index.php?s=/ClassHour/delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001335s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003283s ]
+NOTIC: [2] Declaration of Admin\Controller\ClassHourController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\laragon\www\junwei1\ThinkCMFX\application\Admin\Controller\ClassHourController.class.php 第 22 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002362s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002414s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cmf_live` [ RunTime:0.0012s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') D:\laragon\www\junwei1\ThinkCMFX\application\Common\Model\CourseModel.class.php 第 169 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0010s ]
+SQL: SELECT `class_id` FROM `cmf_live` WHERE ( id in (16,14) )  [ RunTime:0.0182s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `cmf_live` WHERE ( id in (16,14) ) [ RunTime:0.1422s ]
+

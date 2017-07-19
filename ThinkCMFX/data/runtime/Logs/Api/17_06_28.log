@@ -1,0 +1,98 @@
+[ 2017-06-28T09:21:06+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id  WHERE ( cmf_course_collection.uid = 49 AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-06-28T09:21:16+08:00 ] 101.226.68.213 /junwei/index.php?g=Api&m=usercollect&a=downshow&uid=49&page=1
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id  WHERE ( cmf_course_collection.uid = 49 AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-06-28T09:27:14+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=usercollect&a=itemcollect&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_item_collection.status = 1 ) LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_item_collection.collect_id,cmf_item_collection.eid,cmf_item_collection.etid,cmf_subjects.stitle,cmf_chapter.ctitle,cmf_item_collection.sid,cmf_item_collection.cid,cmf_item_collection.ctime,cmf_item_collection.type FROM `cmf_item_collection` LEFT JOIN cmf_users ON cmf_users.id = cmf_item_collection.uid LEFT JOIN cmf_subjects ON cmf_subjects.sid = cmf_item_collection.sid LEFT JOIN cmf_chapter ON cmf_chapter.cid = cmf_item_collection.cid  WHERE ( cmf_item_collection.uid =  AND cmf_item_collection.status = 1 ) LIMIT 0,10  
+
+[ 2017-06-28T09:27:32+08:00 ] 101.226.89.116 /junwei/index.php?g=Api&m=usercollect&a=itemcollect&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_item_collection.status = 1 ) LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_item_collection.collect_id,cmf_item_collection.eid,cmf_item_collection.etid,cmf_subjects.stitle,cmf_chapter.ctitle,cmf_item_collection.sid,cmf_item_collection.cid,cmf_item_collection.ctime,cmf_item_collection.type FROM `cmf_item_collection` LEFT JOIN cmf_users ON cmf_users.id = cmf_item_collection.uid LEFT JOIN cmf_subjects ON cmf_subjects.sid = cmf_item_collection.sid LEFT JOIN cmf_chapter ON cmf_chapter.cid = cmf_item_collection.cid  WHERE ( cmf_item_collection.uid =  AND cmf_item_collection.status = 1 ) LIMIT 0,10  
+
+[ 2017-06-28T11:07:38+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=get_class_list&page=1&uid=72
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:07:42+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:07:46+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:07:49+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:08:02+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:08:06+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:08:08+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:08:19+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:08:21+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:08:40+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:08:42+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:08:48+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:09:01+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:09:05+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=get_class_list&page=1&uid=72
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:09:23+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=get_class_list&page=1&uid=72
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:09:40+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=get_class_list&page=1&uid=72
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:09:51+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=course&a=get_class_list&page=1&uid=72
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:09:56+08:00 ] 115.33.36.173 /junwei/index.php?g=api&m=class_hour&a=class_hour&id=9&page=1
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:10:00+08:00 ] 61.148.244.5 /junwei/index.php?g=api&m=course&a=get_class_list&page=1&uid=70
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:10:00+08:00 ] 61.148.244.5 /junwei/index.php?g=api&m=course&a=get_class_list&page=1&uid=70
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:10:11+08:00 ] 115.33.36.173 /junwei/api/classHour/class_hour?uid=70&id=14
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T11:12:12+08:00 ] 115.33.36.173 /junwei/api/classHour/class_hour?uid=70&id=14
+ERR: syntax error, unexpected 'delPast' (T_STRING), expecting '('
+
+[ 2017-06-28T16:50:23+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=73
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 73 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-28T16:56:12+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=75
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 75 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-28T17:22:42+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=Video&a=videoshow&page=1&uid=72
+ERR: 1054:Unknown column 'cmf_course.name' in 'field list'
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.num_class,cmf_course.cover,cmf_video_record.vtime,cmf_course.name,cmf_video_record.vid,cmf_course.number,cmf_course.stu_token,cmf_course.type,cmf_video_record.lid,cmf_video_record.pid,cmf_course.introduction,cmf_course.id,cmf_live.subject FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid LEFT JOIN cmf_live ON cmf_live.id = cmf_video_record.lid  WHERE ( cmf_video_record.uid = 72 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-06-28T17:47:05+08:00 ] 115.33.36.173 /junwei/index.php?g=Api&m=usercollect&a=showlive&uid=72&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_live_collection.uid = 72 AND cmf_live_collection.type = 1 ) ORDER BY cmf' at line 1
+ [ SQL语句 ] : SELECT cmf_live_collection.ul_id,cmf_live.subject,cmf_live.course_id,cmf_live.status,cmf_live.cover,cmf_live.number,cmf_live.stu_token,cmf_live.reply_url FROM `cmf_live_collection` INNER JOIN cmf_live ON cmf_live.id = cmf_live_collection.live_id INNER JOIN cmf_users ON cmf_users.id = cmf_live_collection.uid INNER JOIN cmf_course ON cmf_course.id = cmf_live_collection.course_id  WHERE ( cmf_live_collection.course_id =  AND cmf_live_collection.uid = 72 AND cmf_live_collection.type = 1 ) ORDER BY cmf_live_collection.ul_id desc LIMIT 0,10  
+

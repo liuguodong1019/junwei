@@ -1,0 +1,4 @@
+[ 2017-07-09T13:57:55+08:00 ] 110.16.7.10 /junwei/index.php?g=Api&m=Usercollect&a=coursecoll
+ERR: 1213:Deadlock found when trying to get lock; try restarting transaction
+ [ SQL语句 ] : UPDATE `cmf_course_collection` SET `type`='0' WHERE ( uid = 170 AND course_id = 28 )
+

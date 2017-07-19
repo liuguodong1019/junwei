@@ -1,0 +1,18 @@
+[ 2017-07-11T12:05:25+08:00 ] 115.33.73.8 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000056s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000046s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0202s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0071s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.73.8',`last_login_time`='2017-07-11 12:05:25',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-07-11T12:21:38+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+

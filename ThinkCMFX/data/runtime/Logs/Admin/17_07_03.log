@@ -1,0 +1,259 @@
+[ 2017-07-03T09:41:25+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:41:34+08:00 ] 115.33.36.173 /junwei/Question/trueedit?item_id=5
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:42:07+08:00 ] 115.33.36.173 /junwei/index.php?s=/Question/ture
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:42:10+08:00 ] 115.33.36.173 /junwei/index.php?s=/Question/ture
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:42:18+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:42:26+08:00 ] 115.33.36.173 /junwei/Question/trueedit?item_id=6
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:42:55+08:00 ] 115.33.36.173 /junwei/index.php?s=/Question/truedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000086s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000055s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_itembank` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_option` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+SQL: SHOW COLUMNS FROM `cmf_answer` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-07-03T09:43:00+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:43:02+08:00 ] 115.33.36.173 /junwei/index.php?s=/Question/trueadd
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:44:10+08:00 ] 115.33.36.173 /junwei/index.php?s=/Question/trueadd_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:44:15+08:00 ] 115.33.36.173 /junwei/index.php?s=/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:44:17+08:00 ] 115.33.36.173 /junwei/index.php?s=/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:44:35+08:00 ] 115.33.36.173 /junwei/Question/trueedit?item_id=4017
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:44:55+08:00 ] 115.33.36.173 /junwei/Question/trueedit?item_id=4
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:45:19+08:00 ] 115.33.36.173 /junwei/index.php?s=/Question/ture
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:46:19+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:46:35+08:00 ] 115.33.36.173 /junwei/Question/trueedit?item_id=4017
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:46:46+08:00 ] 115.33.36.173 /junwei/Question/trueedit?item_id=4
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:48:58+08:00 ] 115.33.36.173 /junwei/Question/trueedit?item_id=4
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:51:43+08:00 ] 115.33.36.173 /junwei/Question/trueedit?item_id=1184
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:51:51+08:00 ] 220.194.42.178 /junwei/index.php?s=/Question/trueedit_post
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:51:55+08:00 ] 220.194.42.178 /junwei/index.php?s=/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T09:52:02+08:00 ] 220.194.42.178 /junwei/Question/trueedit?item_id=1415
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T11:58:55+08:00 ] 115.33.36.173 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-03T12:10:30+08:00 ] 115.33.36.173 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-03T14:11:40+08:00 ] 115.33.36.173 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-03T14:13:17+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000085s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000055s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0008s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-07-03 14:13:17',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-07-03T14:13:24+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T14:13:30+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-03T14:15:02+08:00 ] 115.33.36.173 /junwei/index.php?s=/Course/delete/id/31/class_id/CVYsamZwta/courseware_id/AxfMpbTXI3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000066s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000051s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = '31' ) [ RunTime:0.0015s ]
+
+[ 2017-07-03T14:52:35+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-03T14:52:49+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-03T14:52:49+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-03T14:53:01+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-03T14:53:04+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-03T14:57:13+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-03T14:57:33+08:00 ] 115.33.36.173 /junwei/index.php?s=/Menu/add/parentid/192
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-03T14:58:04+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-03T14:58:06+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-03T14:58:48+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/edit/id/197
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-03T14:58:56+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-03T15:20:44+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000094s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000190s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0006s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-07-03 15:20:44',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-07-03T17:19:53+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000081s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000062s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0012s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-07-03 17:19:53',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0010s ]
+

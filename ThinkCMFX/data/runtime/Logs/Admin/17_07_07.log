@@ -1,0 +1,387 @@
+[ 2017-07-07T08:03:56+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T08:05:48+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T09:29:16+08:00 ] 115.33.73.8 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000068s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000047s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0006s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.73.8',`last_login_time`='2017-07-07 09:29:16',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-07-07T09:30:56+08:00 ] 115.33.73.8 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000067s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000145s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000048s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.73.8',`last_login_time`='2017-07-07 09:30:56',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-07-07T09:31:39+08:00 ] 115.33.73.8 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-07T09:31:52+08:00 ] 115.33.73.8 /junwei/Question/truedelete?item_id=4017
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-07T09:31:55+08:00 ] 115.33.73.8 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-07-07T09:32:07+08:00 ] 115.33.73.8 /junwei/index.php?s=/Course/delete/id/23/class_id/N6CT1CTImY
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000083s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000173s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000055s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0006s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = '23' ) [ RunTime:0.0008s ]
+
+[ 2017-07-07T09:32:22+08:00 ] 115.33.73.8 /junwei/index.php?s=/Course/delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000079s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000164s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000062s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SELECT `class_id`,`courseware_id` FROM `cmf_course` WHERE ( id in (27,30,32) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id in (27,30,32) ) [ RunTime:0.0015s ]
+
+[ 2017-07-07T09:35:32+08:00 ] 115.33.73.8 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000076s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000064s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.73.8',`last_login_time`='2017-07-07 09:35:32',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-07-07T09:36:09+08:00 ] 115.33.73.8 /junwei/index.php?s=/Course/delete/id/23/class_id/N6CT1CTImY
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000078s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000165s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = '23' ) [ RunTime:0.0006s ]
+
+[ 2017-07-07T09:36:58+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T09:42:05+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T09:45:25+08:00 ] 115.33.73.8 /junwei/index.php?s=/Course/delete/id/23/class_id/N6CT1CTImY
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000088s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000191s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000059s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0006s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = '23' ) [ RunTime:0.0006s ]
+
+[ 2017-07-07T09:45:45+08:00 ] 115.33.73.8 /junwei/index.php?s=/ClassHour/delete/id/23/class_id/N6CT1CTImY
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000065s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000139s ]
+NOTIC: [2] Declaration of Admin\Controller\ClassHourController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/ClassHourController.class.php 第 22 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000057s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_live` [ RunTime:0.0007s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_live` WHERE ( id = 23 ) [ RunTime:0.0014s ]
+
+[ 2017-07-07T09:45:58+08:00 ] 115.33.73.8 /junwei/index.php?s=/Course/delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000073s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000161s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000057s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0009s ]
+SQL: SELECT `class_id`,`courseware_id` FROM `cmf_course` WHERE ( id in (27,30,32) )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: class_id /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 212 行.
+NOTIC: [8] Undefined variable: courseware_id /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 213 行.
+SQL: DELETE FROM `cmf_course` WHERE ( id in (27,30,32) ) [ RunTime:0.0006s ]
+
+[ 2017-07-07T09:46:25+08:00 ] 115.33.73.8 /junwei/index.php?s=/ClassHour/delete/id/27/class_id/MRA0CLgT9O
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000072s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+NOTIC: [2] Declaration of Admin\Controller\ClassHourController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/ClassHourController.class.php 第 22 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000058s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_live` [ RunTime:0.0007s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_live` WHERE ( id = 27 ) [ RunTime:0.0025s ]
+
+[ 2017-07-07T09:47:30+08:00 ] 115.33.73.8 /junwei/index.php?s=/Course/delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000137s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000055s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0007s ]
+SQL: SELECT `class_id`,`courseware_id` FROM `cmf_course` WHERE ( id in (30,32) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: class_id /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 212 行.
+NOTIC: [8] Undefined variable: courseware_id /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 213 行.
+SQL: DELETE FROM `cmf_course` WHERE ( id in (30,32) ) [ RunTime:0.0007s ]
+
+[ 2017-07-07T09:48:31+08:00 ] 115.33.73.8 /junwei/index.php?s=/ClassHour/delete/id/30/class_id/XVBdtLdxzE
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000082s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+NOTIC: [2] Declaration of Admin\Controller\ClassHourController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/ClassHourController.class.php 第 22 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000062s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_live` [ RunTime:0.0008s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+
+[ 2017-07-07T09:49:46+08:00 ] 115.33.73.8 /junwei/index.php?s=/Course/delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000148s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000084s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SELECT `class_id`,`courseware_id` FROM `cmf_course` WHERE ( id in (30,32) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: class_id /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 212 行.
+NOTIC: [8] Undefined variable: courseware_id /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 213 行.
+SQL: DELETE FROM `cmf_course` WHERE ( id in (30,32) ) [ RunTime:0.0006s ]
+
+[ 2017-07-07T09:51:18+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T09:51:45+08:00 ] 115.33.73.8 /junwei/index.php?s=/ClassHour/delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000089s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000187s ]
+NOTIC: [2] Declaration of Admin\Controller\ClassHourController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/ClassHourController.class.php 第 22 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000058s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_live` [ RunTime:0.0008s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+
+[ 2017-07-07T09:52:09+08:00 ] 115.33.73.8 /junwei/index.php?s=/Course/delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000085s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000070s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0007s ]
+SQL: SELECT `class_id`,`courseware_id` FROM `cmf_course` WHERE ( id in (30,32) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: class_id /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 212 行.
+NOTIC: [8] Undefined variable: courseware_id /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 213 行.
+SQL: DELETE FROM `cmf_course` WHERE ( id in (30,32) ) [ RunTime:0.0007s ]
+
+[ 2017-07-07T09:52:30+08:00 ] 115.33.73.8 /junwei/index.php?s=/ClassHour/delete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000076s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+NOTIC: [2] Declaration of Admin\Controller\ClassHourController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/ClassHourController.class.php 第 22 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000058s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_live` [ RunTime:0.0007s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SELECT `class_id`,`courseware_id` FROM `cmf_live` WHERE ( id in (30,32) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `cmf_live` WHERE ( id in (30,32) ) [ RunTime:0.0016s ]
+
+[ 2017-07-07T09:56:58+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T09:59:44+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T10:35:26+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T10:47:46+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T11:11:30+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T11:18:41+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T11:30:06+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T11:40:16+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T14:41:39+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T15:39:36+08:00 ] 115.33.73.8 /junwei/Uploads/(null)
+ERR: 无法加载控制器:Uploads
+
+[ 2017-07-07T15:40:21+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T15:47:15+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T15:50:29+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T15:55:49+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T16:03:04+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T16:07:38+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T16:35:21+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T16:36:49+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-07T16:41:27+08:00 ] 115.33.73.8 /junwei//(null)
+ERR: 无法加载控制器:(null)
+

@@ -1,0 +1,46 @@
+[ 2017-07-07T09:35:00+08:00 ] 216.218.134.18 /junwei/index.php?g=Api&m=Usercourse&a=downshow&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_order.pay_status = '1' ) ORDER BY cmf_order.id desc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_course.course_name,cmf_course.cover,cmf_course.num_class,cmf_course.id,cmf_course.now_price,cmf_course.old_price,cmf_course.introduction,cmf_course.lector FROM `cmf_order` INNER JOIN cmf_course ON cmf_course.id = cmf_order.course_id  WHERE ( cmf_order.uid =  AND cmf_order.pay_status = '1' ) ORDER BY cmf_order.id desc LIMIT 0,10  
+
+[ 2017-07-07T09:35:23+08:00 ] 216.218.134.18 /junwei/index.php?g=Api&m=Usercollect&a=itemcollect&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_item_collection.status = 1 ) LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_item_collection.collect_id,cmf_item_collection.eid,cmf_item_collection.etid,cmf_subjects.stitle,cmf_chapter.ctitle,cmf_item_collection.sid,cmf_item_collection.cid,cmf_item_collection.ctime,cmf_item_collection.type FROM `cmf_item_collection` LEFT JOIN cmf_users ON cmf_users.id = cmf_item_collection.uid LEFT JOIN cmf_subjects ON cmf_subjects.sid = cmf_item_collection.sid LEFT JOIN cmf_chapter ON cmf_chapter.cid = cmf_item_collection.cid  WHERE ( cmf_item_collection.uid =  AND cmf_item_collection.status = 1 ) LIMIT 0,10  
+
+[ 2017-07-07T09:35:23+08:00 ] 216.218.134.18 /junwei/index.php?g=Api&m=Usercollect&a=itemcollect&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_item_collection.status = 1 ) LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_item_collection.collect_id,cmf_item_collection.eid,cmf_item_collection.etid,cmf_subjects.stitle,cmf_chapter.ctitle,cmf_item_collection.sid,cmf_item_collection.cid,cmf_item_collection.ctime,cmf_item_collection.type FROM `cmf_item_collection` LEFT JOIN cmf_users ON cmf_users.id = cmf_item_collection.uid LEFT JOIN cmf_subjects ON cmf_subjects.sid = cmf_item_collection.sid LEFT JOIN cmf_chapter ON cmf_chapter.cid = cmf_item_collection.cid  WHERE ( cmf_item_collection.uid =  AND cmf_item_collection.status = 1 ) LIMIT 0,10  
+
+[ 2017-07-07T09:35:23+08:00 ] 216.218.134.18 /junwei/index.php?g=Api&m=Usercollect&a=downshow&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc ' at line 1
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.course_name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id LEFT JOIN cmf_users ON cmf_users.id = cmf_course_collection.uid  WHERE ( cmf_course_collection.uid =  AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-07-07T09:35:23+08:00 ] 216.218.134.18 /junwei/index.php?g=Api&m=Usercollect&a=downshow&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc ' at line 1
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course_collection.create_time,cmf_course.course_name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token FROM `cmf_course_collection` LEFT JOIN cmf_course ON cmf_course.id = cmf_course_collection.course_id LEFT JOIN cmf_users ON cmf_users.id = cmf_course_collection.uid  WHERE ( cmf_course_collection.uid =  AND cmf_course_collection.type = 1  ) ORDER BY cmf_course_collection.uc_id desc LIMIT 0,10  
+
+[ 2017-07-07T09:35:35+08:00 ] 216.218.134.18 /junwei/index.php?g=Api&m=video&a=sheet&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_sheet.sheet_id,cmf_sheet.eid,cmf_sheet.etid,cmf_subjects.stitle,cmf_chapter.ctitle,cmf_sheet.sid,cmf_sheet.cid,cmf_sheet.sheet_time FROM `cmf_sheet` LEFT JOIN cmf_users ON cmf_users.id = cmf_sheet.uid LEFT JOIN cmf_subjects ON cmf_subjects.sid = cmf_sheet.sid LEFT JOIN cmf_chapter ON cmf_chapter.cid = cmf_sheet.cid  WHERE ( cmf_sheet.uid =  ) LIMIT 0,10  
+
+[ 2017-07-07T09:35:35+08:00 ] 216.218.134.18 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course.course_name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token,cmf_video_record.vtime,cmf_video_record.vid FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid =  AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-07-07T09:35:35+08:00 ] 216.218.134.18 /junwei/index.php?g=Api&m=Video&a=videoshow&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_course.id,cmf_course.cover,cmf_course.num_class,cmf_course.course_name,cmf_course.course_name,cmf_course.introduction,cmf_course.invalidDate,cmf_course.is_free,cmf_course.now_price,cmf_course.old_price,cmf_course.number,cmf_course.reply_url,cmf_course.startDate,cmf_course.status,cmf_course.status,cmf_course.type,cmf_course.stu_token,cmf_video_record.vtime,cmf_video_record.vid FROM `cmf_video_record` LEFT JOIN cmf_course ON cmf_course.id = cmf_video_record.cid LEFT JOIN cmf_users ON cmf_users.id = cmf_video_record.uid  WHERE ( cmf_video_record.uid =  AND cmf_video_record.pid = 0 ) ORDER BY cmf_video_record.vid desc LIMIT 0,10  
+
+[ 2017-07-07T09:35:35+08:00 ] 216.218.134.18 /junwei/index.php?g=Api&m=video&a=sheet&uid=&page=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT cmf_sheet.sheet_id,cmf_sheet.eid,cmf_sheet.etid,cmf_subjects.stitle,cmf_chapter.ctitle,cmf_sheet.sid,cmf_sheet.cid,cmf_sheet.sheet_time FROM `cmf_sheet` LEFT JOIN cmf_users ON cmf_users.id = cmf_sheet.uid LEFT JOIN cmf_subjects ON cmf_subjects.sid = cmf_sheet.sid LEFT JOIN cmf_chapter ON cmf_chapter.cid = cmf_sheet.cid  WHERE ( cmf_sheet.uid =  ) LIMIT 0,10  
+
+[ 2017-07-07T09:40:30+08:00 ] 115.33.73.8 /junwei/index.php?g=api&m=user&a=rcheck&phone=18033696192
+ERR: syntax error, unexpected '$rec' (T_VARIABLE)
+
+[ 2017-07-07T09:41:11+08:00 ] 114.242.248.94 /junwei/index.php?g=api&m=user&a=rcheck&phone=18033696192
+ERR: syntax error, unexpected '$rec' (T_VARIABLE)
+
+[ 2017-07-07T13:12:43+08:00 ] 115.33.73.8 /junwei/index.php?g=api&m=user&a=register&phone=17600510345&check=309030&password=123456
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_users` WHERE ( id= ) LIMIT 1  
+

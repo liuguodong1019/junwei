@@ -1,0 +1,1348 @@
+[ 2017-07-04T04:39:23+08:00 ] 17.200.2.214 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-07-04T11:08:35+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000086s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000059s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0011s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-07-04 11:08:35',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-07-04T11:45:02+08:00 ] 115.33.36.173 /junwei/index.php?s=/Course/delete/id/32/class_id/0/courseware_id/0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000191s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+NOTIC: [2] Declaration of Admin\Controller\CourseController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/CourseController.class.php 第 20 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000093s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: DELETE FROM `cmf_course` WHERE ( id = '32' ) [ RunTime:0.0014s ]
+
+[ 2017-07-04T14:23:01+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000079s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000171s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000051s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-07-04T14:23:17+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000104s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000191s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-07-04 14:23:17',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-07-04T14:26:06+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:26:55+08:00 ] 115.33.36.173 /junwei/index.php?s=/Menu/edit/id/188
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:32:17+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:32:22+08:00 ] 115.33.36.173 /junwei/index.php?s=/Menu/add/parentid/109
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:32:32+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:32:33+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:32:35+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:32:39+08:00 ] 115.33.36.173 /junwei/index.php?s=/Menu/add/parentid/188
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:35:31+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:35:34+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:35:44+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/edit/id/204
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:36:28+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/add
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:36:30+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:36:31+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T14:36:53+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/edit/id/190
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T15:09:46+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T15:16:40+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T15:16:41+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapteradd
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T15:16:47+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T15:16:48+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/classadd
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:00:40+08:00 ] 115.33.36.173 /junwei/index.php?s=/Menu/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000116s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000201s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Types' AND `action` = 'exclusive' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `parentid` FROM `cmf_menu` WHERE `id` = 188 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('188','独家密卷标题','admin','Types','exclusive','','caret-right','','1','1') [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/types/exclusive' LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/types/exclusive','admin','admin_url','独家密卷标题') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0010s ]
+NOTIC: [2] mkdir(): File exists /var/www/html/sikao/junwei/application/Admin/Controller/MenuController.class.php 第 247 行.
+
+[ 2017-07-04T16:00:40+08:00 ] 115.33.36.173 /junwei/index.php?s=/Menu/lists
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T16:00:55+08:00 ] 115.33.36.173 /junwei/index.php?s=/menu/edit/id/188
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-07-04T16:01:06+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+ERR: 1146:Table 'thinkcmf.cmf_$exclusive' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_$exclusive`
+
+[ 2017-07-04T16:01:20+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Types/exclusive.html
+
+[ 2017-07-04T16:01:41+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:43+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:45+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:47+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:48+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:48+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:49+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:50+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:51+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:51+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:52+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:01:52+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:09:14+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:09:18+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveadd
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:35:00+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:35:02+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapteradd
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:35:04+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:35:42+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:35:43+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/classindex
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:35:44+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/classadd
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:37:23+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:37:24+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveadd
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:37:57+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:37:59+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveadd
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:38:11+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveadd_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000091s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+NOTIC: [2] Missing argument 1 for I(), called in /var/www/html/sikao/junwei/application/Admin/Controller/TypesController.class.php on line 458 and defined /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 296 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 298 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 364 行.
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_exclusive` (`etitle`) VALUES ('1499157491') [ RunTime:0.0013s ]
+
+[ 2017-07-04T16:38:11+08:00 ] 115.33.36.173 /junwei/index.php?s=/types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:38:54+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000101s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000198s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000060s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-07-04T16:38:57+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000079s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000189s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000050s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+
+[ 2017-07-04T16:40:01+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:40:03+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveadd
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T16:40:09+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveadd_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000080s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000171s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000076s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+NOTIC: [2] Missing argument 1 for I(), called in /var/www/html/sikao/junwei/application/Admin/Controller/TypesController.class.php on line 458 and defined /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 296 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 298 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 364 行.
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_exclusive` (`etitle`,`etime`) VALUES ('不好啊','1499157609') [ RunTime:0.0012s ]
+
+[ 2017-07-04T16:40:09+08:00 ] 115.33.36.173 /junwei/index.php?s=/types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:01:27+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000118s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000205s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000060s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-07-04T17:01:37+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000078s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000056s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-07-04T17:01:40+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000083s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2017-07-04T17:01:41+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000060s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2017-07-04T17:01:41+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000037s ]
+
+[ 2017-07-04T17:01:42+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000037s ]
+
+[ 2017-07-04T17:01:45+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:01:49+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000067s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+ERR: 1054:Unknown column 'ex_id' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_chapter` WHERE ( ex_id=1 )
+ERR: 1054:Unknown column 'ex_id' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `cmf_chapter` WHERE ( ex_id=1 )
+
+[ 2017-07-04T17:02:41+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000085s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000059s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+
+[ 2017-07-04T17:06:36+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:06:40+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000081s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000059s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+SQL: DELETE FROM `cmf_exclusive` WHERE ( ex_id=1 ) [ RunTime:0.0015s ]
+
+[ 2017-07-04T17:06:40+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:06:44+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000068s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2017-07-04T17:06:47+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-07-04T17:06:49+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000059s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000065s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+
+[ 2017-07-04T17:06:52+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000171s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000055s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-07-04T17:07:08+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000055s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
+
+[ 2017-07-04T17:09:09+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapterdelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000080s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000056s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-07-04T17:09:57+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:10:31+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000087s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000060s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-07-04T17:10:39+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:10:43+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000068s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000152s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-07-04T17:11:18+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:11:22+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000073s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000159s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000061s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2017-07-04T17:25:01+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:25:06+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000082s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000070s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-07-04T17:25:13+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000081s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000057s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-07-04T17:27:16+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:27:21+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000067s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0006s ]
+
+[ 2017-07-04T17:27:24+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000072s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000072s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+
+[ 2017-07-04T17:27:27+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000066s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+
+[ 2017-07-04T17:27:27+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000061s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+
+[ 2017-07-04T17:27:28+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000060s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+
+[ 2017-07-04T17:27:28+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000061s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000054s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0006s ]
+
+[ 2017-07-04T17:27:28+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000060s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000051s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+
+[ 2017-07-04T17:27:28+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000061s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+
+[ 2017-07-04T17:27:28+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000061s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000051s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0009s ]
+
+[ 2017-07-04T17:27:29+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000067s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000060s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0006s ]
+
+[ 2017-07-04T17:27:29+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000062s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000141s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+
+[ 2017-07-04T17:27:32+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:27:37+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000075s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000060s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+
+[ 2017-07-04T17:27:58+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:28:02+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusivedelete
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000062s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+SQL: DELETE FROM `cmf_exclusive` WHERE ( ex_id in (2) ) [ RunTime:0.0101s ]
+
+[ 2017-07-04T17:28:02+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:28:17+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveadd
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:28:21+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveadd_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000066s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for I(), called in /var/www/html/sikao/junwei/application/Admin/Controller/TypesController.class.php on line 458 and defined /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 296 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 298 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 364 行.
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_exclusive` (`etitle`,`etime`) VALUES ('好不好','1499160501') [ RunTime:0.0013s ]
+
+[ 2017-07-04T17:28:21+08:00 ] 115.33.36.173 /junwei/index.php?s=/types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:28:24+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveedit/id/3
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Types/exclusiveedit.html
+
+[ 2017-07-04T17:28:29+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:44:08+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveedit/id/3
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:44:40+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveedit/id/3
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:44:42+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:44:49+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:44:51+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveedit/id/3
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:45:23+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:45:25+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveedit/id/3
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:45:30+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveedit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000083s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000060s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for I(), called in /var/www/html/sikao/junwei/application/Admin/Controller/TypesController.class.php on line 513 and defined /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 296 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 298 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 364 行.
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+
+[ 2017-07-04T17:46:21+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveedit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000087s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000063s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for I(), called in /var/www/html/sikao/junwei/application/Admin/Controller/TypesController.class.php on line 514 and defined /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 296 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 298 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 364 行.
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_exclusive` SET `etitle`='buhao',`ex_id`='3',`etime`='1499161581' WHERE ( ex_id=3 ) [ RunTime:0.0013s ]
+
+[ 2017-07-04T17:46:22+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/chapter
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:46:42+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:46:45+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveedit/id/3
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+
+[ 2017-07-04T17:46:48+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusiveedit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000057s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+SQL: SHOW COLUMNS FROM `cmf_types` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_professional` [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+SQL: SHOW COLUMNS FROM `cmf_subjects` [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+SQL: SHOW COLUMNS FROM `cmf_chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_exclusive` [ RunTime:0.0007s ]
+NOTIC: [2] Missing argument 1 for I(), called in /var/www/html/sikao/junwei/application/Admin/Controller/TypesController.class.php on line 514 and defined /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 296 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 298 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /var/www/html/sikao/junwei/simplewind/Core/Common/functions.php 第 364 行.
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_exclusive` SET `etitle`='dd',`ex_id`='3',`etime`='1499161608' WHERE ( ex_id=3 ) [ RunTime:0.0025s ]
+
+[ 2017-07-04T17:46:48+08:00 ] 115.33.36.173 /junwei/index.php?s=/Types/exclusive
+NOTIC: D方法实例化没找到模型类Common\Model\TypesModel
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+

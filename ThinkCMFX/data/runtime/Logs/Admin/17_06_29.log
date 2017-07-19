@@ -1,0 +1,394 @@
+[ 2017-06-29T08:50:53+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000085s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000072s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-06-29 08:50:53',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-06-29T09:02:24+08:00 ] 115.33.36.173 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-06-29T09:10:17+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000084s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000166s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000064s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-06-29 09:10:17',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-06-29T09:11:01+08:00 ] 115.33.36.173 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-06-29T09:11:21+08:00 ] 115.33.36.173 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-06-29T09:32:50+08:00 ] 115.33.36.173 /junwei//Uploads/(null)
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T09:53:18+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000077s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000057s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-06-29 09:53:18',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-06-29T10:50:07+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000094s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000191s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000055s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0006s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-06-29 10:50:07',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0005s ]
+
+[ 2017-06-29T12:27:01+08:00 ] 115.33.36.173 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-06-29T14:04:45+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000074s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000161s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000050s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'jiaoyan2' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='jiaoyan2',`user_pass`='###9e09f7a64f747d17e62c4f35a9713f15',`user_nicename`='',`user_email`='jun@163.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-06-29 14:04:45',`create_time`='2017-05-08 09:45:47',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='0',`ctime`='0',`check`='0' WHERE `id` = '20' [ RunTime:0.0006s ]
+
+[ 2017-06-29T14:04:57+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-29T14:04:59+08:00 ] 115.33.36.173 /junwei/index.php?s=/Question/truesubjectivelist
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-29T14:57:45+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000078s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000164s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000053s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-06-29 14:57:45',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-06-29T15:17:05+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: 无法加载控制器:ClassHour
+
+[ 2017-06-29T15:29:59+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000084s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000068s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-06-29 15:29:59',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-06-29T16:15:01+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ';', expecting ',' or ')'
+
+[ 2017-06-29T16:15:04+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ';', expecting ',' or ')'
+
+[ 2017-06-29T16:15:15+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ';', expecting ',' or ')'
+
+[ 2017-06-29T16:15:16+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ';', expecting ',' or ')'
+
+[ 2017-06-29T16:15:16+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ';', expecting ',' or ')'
+
+[ 2017-06-29T16:15:16+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ';', expecting ',' or ')'
+
+[ 2017-06-29T16:15:18+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ';', expecting ',' or ')'
+
+[ 2017-06-29T16:15:18+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ';', expecting ',' or ')'
+
+[ 2017-06-29T16:15:31+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:15:31+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:15:31+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:15:31+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:15:32+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:15:38+08:00 ] 115.33.36.173 /junwei/index.php?s=/ClassHour/add
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:16:07+08:00 ] 115.33.36.173 /junwei/index.php?s=/ClassHour/add
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:16:11+08:00 ] 115.33.36.173 /junwei/index.php?s=/ClassHour/add
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:16:14+08:00 ] 115.33.36.173 /junwei/index.php?s=/ClassHour/add
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:16:37+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:16:38+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:16:38+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:16:38+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:16:38+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:16:39+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: syntax error, unexpected ':', expecting ',' or ')'
+
+[ 2017-06-29T16:26:41+08:00 ] 115.33.36.173 /junwei/index.php?s=/ClassHour/delete/id/19/class_id/0/courseware_id/0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000073s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000152s ]
+NOTIC: [2] Declaration of Admin\Controller\ClassHourController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/html/sikao/junwei/application/Admin/Controller/ClassHourController.class.php 第 22 行.
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000052s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cmf_live` [ RunTime:0.0007s ]
+NOTIC: [2] Declaration of Common\Model\CourseModel::create($data, $photo) should be compatible with Think\Model::create($data = '', $type = '') /var/www/html/sikao/junwei/application/Common/Model/CourseModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `cmf_course` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cmf_junwei` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_junwei` LIMIT 1   [ RunTime:0.0005s ]
+ERR: Call to undefined method Api\Controller\ResponseController::delPast()
+
+[ 2017-06-29T16:44:45+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: 无法加载控制器:ClassHour
+
+[ 2017-06-29T16:44:47+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: 无法加载控制器:ClassHour
+
+[ 2017-06-29T16:54:55+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: 无法加载控制器:ClassHour
+
+[ 2017-06-29T16:54:57+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/ClassHour/show
+ERR: 无法加载控制器:ClassHour
+
+[ 2017-06-29T17:03:20+08:00 ] 115.33.36.173 /junwei//(null)
+ERR: 无法加载控制器:(null)
+
+[ 2017-06-29T17:40:26+08:00 ] 115.33.36.173 /junwei/index.php?s=/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000075s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000050s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0007s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###e9a6a1b2c468c852c57c0d86674e1f9b',`user_nicename`='admin',`user_email`='1348779449@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='115.33.36.173',`last_login_time`='2017-06-29 17:40:26',`create_time`='2017-04-17 01:37:17',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`token`='',`ctime`='0',`check`='0' WHERE `id` = '1' [ RunTime:0.0006s ]
+
+[ 2017-06-29T17:40:31+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-29T17:40:37+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-29T17:42:53+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-29T17:44:53+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/true
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-29T17:44:55+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-29T18:39:08+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-29T18:39:31+08:00 ] 115.33.36.173 /junwei/index.php?s=/Admin/Question/itembank
+NOTIC: D方法实例化没找到模型类Common\Model\SubjectsModel
+NOTIC: D方法实例化没找到模型类Common\Model\ChapterModel
+NOTIC: D方法实例化没找到模型类Common\Model\AnswerModel
+
+[ 2017-06-29T18:41:37+08:00 ] 115.33.36.173 /junwei/index.php?s=/admin/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-06-29T18:41:39+08:00 ] 115.33.36.173 /junwei/index.php?s=/Menu/add/parentid/199
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-06-29T18:41:57+08:00 ] 115.33.36.173 /junwei/index.php?s=/Menu/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000102s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000051s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cmf_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cmf_menu` [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' AND `model` = 'Order' AND `action` = 'create' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `parentid` FROM `cmf_menu` WHERE `id` = 199 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto /var/www/html/sikao/junwei/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('199','添加用户','admin','Order','create','','','','1','1') [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE `name` = 'admin/order/create' LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `cmf_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/order/create','admin','admin_url','添加用户') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_menu` WHERE `app` = 'admin' ORDER BY `listorder` ASC,`app` ASC,`model` ASC,`action` ASC  [ RunTime:0.0010s ]
+NOTIC: [2] mkdir(): File exists /var/www/html/sikao/junwei/application/Admin/Controller/MenuController.class.php 第 247 行.
+
+[ 2017-06-29T18:41:58+08:00 ] 115.33.36.173 /junwei/index.php?s=/Menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2017-06-29T19:54:38+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:54:38+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:54:38+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:54:59+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:00+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:00+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:17+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:17+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:18+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:18+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:18+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:19+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:19+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:19+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:19+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:19+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:19+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:19+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:19+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:19+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:20+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:20+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:20+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:20+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
+[ 2017-06-29T19:55:20+08:00 ] 61.148.242.86 /junwei/Uploads/null
+ERR: 无法加载控制器:Uploads
+
